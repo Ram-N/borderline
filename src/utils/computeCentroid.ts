@@ -80,10 +80,15 @@ function mainBodyBbox(d: string): Bbox | null {
   return best;
 }
 
-export function computeCentroid(d: string): { x: number; y: number } {
+export function computeCentroid(d: string): { x: number; y: number; w: number; h: number } {
   const b = mainBodyBbox(d);
-  if (!b) return { x: 0, y: 0 };
-  return { x: (b.minX + b.maxX) / 2, y: (b.minY + b.maxY) / 2 };
+  if (!b) return { x: 0, y: 0, w: 0, h: 0 };
+  return {
+    x: (b.minX + b.maxX) / 2,
+    y: (b.minY + b.maxY) / 2,
+    w: b.maxX - b.minX,
+    h: b.maxY - b.minY,
+  };
 }
 
 export function computeViewBox(paths: PathData[], paddingFactor = 0.1): string {

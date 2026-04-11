@@ -40,7 +40,8 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
 
   const vb = dynamicViewBox ?? '0 0 800 600';
   const vbParts = vb.split(' ').map(Number);
-  const fontSize = Math.min(vbParts[2], vbParts[3]) * 0.035;
+  // Cap: no label larger than 2.5% of the viewBox's smaller dimension
+  const maxFontSize = Math.min(vbParts[2], vbParts[3]) * 0.025;
 
   return (
     <div style={{ width: '100%', paddingBottom: '66%', position: 'relative' }}>
@@ -54,6 +55,11 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
         const stroke = getPathStroke(path.id, puzzle, phase);
         const labelText = getLabelText(path.id, puzzle, phase, countryNames);
         const centroid = labelText ? computeCentroid(path.d) : null;
+        // Scale font to the country's own size so small countries get small labels;
+        // cap at maxFontSize so large countries don't get enormous labels.
+        const fontSize = centroid
+          ? Math.min(Math.min(centroid.w, centroid.h) * 0.18, maxFontSize)
+          : maxFontSize;
 
         return (
           <g key={path.id}>
