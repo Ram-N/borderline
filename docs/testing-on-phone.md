@@ -37,10 +37,10 @@ Vercel will ask a few questions — accept all defaults:
 - Directory? **./**
 - Override build settings? **N**
 
-It detects Vite automatically. You'll get a URL like:
+It detects Vite automatically. Your production URL:
 
 ```
-https://borderline-abc123.vercel.app
+https://borderline-dipfjykgi-ram-ns-projects.vercel.app
 ```
 
 Open that on your phone. Done.
