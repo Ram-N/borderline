@@ -9,3 +9,12 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .score-panel { display: flex; gap: 16px; margin-bottom: 12px; }
 .mc-item { margin: 10px 0; }
 .controls { margin: 16px 0; display: flex; gap: 8px; }
+.home-divider { margin: 24px 0; border: none; border-top: 1px solid #ddd; }
+.puzzle-prompt { font-size: 1.1rem; font-weight: 600; margin: 12px 0 8px; text-align: center; }
+.puzzle-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
+.puzzle-choice { padding: 10px 14px; border: 2px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.95rem; transition: border-color 0.15s; }
+.puzzle-choice:hover:not(:disabled) { border-color: #666; }
+.puzzle-choice.selected { border-color: #1976D2; background: #E3F2FD; }
+.puzzle-choice.correct { border-color: #4CAF50; background: #E8F5E9; color: #1B5E20; }
+.puzzle-choice.wrong { border-color: #F44336; background: #FFEBEE; color: #B71C1C; }
+.puzzle-choice:disabled { cursor: default; }

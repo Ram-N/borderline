@@ -8,6 +8,7 @@ export default function Home() {
   const [manifest, setManifest] = useState<{ sets: { id: string; path: string }[] } | null>(null);
   const [selected, setSelected] = useState<string>('');
   const [count, setCount] = useState<number>(5);
+  const [puzzleCount, setPuzzleCount] = useState<number>(5);
 
   useEffect(() => {
     fetch('/data/questions.index.json')
@@ -22,6 +23,11 @@ export default function Home() {
     navigate(`/play?${params.toString()}`);
   }
 
+  function startPuzzle() {
+    const params = new URLSearchParams({ region: 'europe', n: String(puzzleCount) });
+    navigate(`/puzzle?${params.toString()}`);
+  }
+
   return (
     <div className='home'>
       <h1>Borderline</h1>
@@ -29,6 +35,19 @@ export default function Home() {
       <RegionPicker manifest={manifest} selected={selected} onChange={setSelected} />
       <StartPanel count={count} onCount={setCount} />
       <button onClick={start} disabled={!selected}>Start Quiz</button>
+
+      <hr className='home-divider' />
+
+      <h2>Puzzle Mode</h2>
+      <p>The map is the question — identify a hidden country or a missing neighbor.</p>
+      <div className='start-panel'>
+        <label>
+          Puzzles:
+          <input type='number' value={puzzleCount} min={1} max={10} onChange={e => setPuzzleCount(Number(e.target.value))} />
+        </label>
+        <small>Region: Europe</small>
+      </div>
+      <button onClick={startPuzzle}>Start Puzzle</button>
     </div>
   );
 }

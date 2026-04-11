@@ -1,6 +1,14 @@
-
 {
   "sets": [
-    { "id": "europe_france_set01_v1", "path": "/data/questions/europe_france_set01.json" }
+    { "id": "Europe",        "path": "/data/questions/europe_set.json" },
+    { "id": "Africa",        "path": "/data/questions/africa_set.json" },
+    { "id": "Asia",          "path": "/data/questions/asia_set.json" },
+    { "id": "Caribbean",     "path": "/data/questions/caribbean_set.json" },
+    { "id": "Central America","path": "/data/questions/central_america_set.json" },
+    { "id": "Latin America", "path": "/data/questions/latin_america_set.json" },
+    { "id": "Middle East",   "path": "/data/questions/middle_east_set.json" },
+    { "id": "North America", "path": "/data/questions/north_america_set.json" },
+    { "id": "Oceania",       "path": "/data/questions/oceania_set.json" },
+    { "id": "South America", "path": "/data/questions/south_america_set.json" }
   ]
 }
