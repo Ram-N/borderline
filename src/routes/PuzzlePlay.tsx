@@ -7,13 +7,26 @@ import PuzzleMapView from '../components/PuzzleMapView';
 import PuzzleChoices from '../components/PuzzleChoices';
 import ScorePanel from '../components/ScorePanel';
 
-const SVG_MAP = '/images/maps/region_world_europeLow.svg';
+const REGION_MAPS: Record<string, string> = {
+  europe: '/images/maps/region_world_europeLow.svg',
+  africa: '/images/maps/region_world_africaLow.svg',
+  asia: '/images/maps/region_world_asiaLow.svg',
+  caribbean: '/images/maps/region_world_caribbeanLow.svg',
+  'central-america': '/images/maps/region_world_centralAmericaLow.svg',
+  'latin-america': '/images/maps/region_world_latinAmericaLow.svg',
+  'middle-east': '/images/maps/region_world_middleEastLow.svg',
+  'north-america': '/images/maps/region_world_northAmericaLow.svg',
+  oceania: '/images/maps/region_world_oceaniaLow.svg',
+  'south-america': '/images/maps/region_world_southAmericaLow.svg',
+};
+
 const ADJACENCY_URL = '/data/adjacency.json';
 
 export default function PuzzlePlay() {
   const qs = new URLSearchParams(useLocation().search);
   const region = qs.get('region') ?? 'europe';
   const n = Number(qs.get('n') ?? '5');
+  const svgMap = REGION_MAPS[region] ?? REGION_MAPS.europe;
 
   const [adjacency, setAdjacency] = useState<AdjacencyData | null>(null);
   const [regionCodes, setRegionCodes] = useState<string[] | null>(null);
@@ -22,7 +35,7 @@ export default function PuzzlePlay() {
   useEffect(() => {
     Promise.all([
       fetch(ADJACENCY_URL).then(r => r.json()),
-      parseSvg(SVG_MAP),
+      parseSvg(svgMap),
     ]).then(([adj, { paths }]) => {
       setAdjacency(adj as AdjacencyData);
       setRegionCodes(paths.map(p => p.id));
@@ -42,7 +55,7 @@ export default function PuzzlePlay() {
       adjacency={adjacency}
       regionCodes={regionCodes}
       countryNames={countryNames}
-      svgMap={SVG_MAP}
+      svgMap={svgMap}
       region={region}
       n={n}
     />

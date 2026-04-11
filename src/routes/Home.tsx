@@ -9,6 +9,7 @@ export default function Home() {
   const [selected, setSelected] = useState<string>('');
   const [count, setCount] = useState<number>(5);
   const [puzzleCount, setPuzzleCount] = useState<number>(5);
+  const [puzzleRegion, setPuzzleRegion] = useState<string>('europe');
 
   useEffect(() => {
     fetch('/data/questions.index.json')
@@ -24,7 +25,7 @@ export default function Home() {
   }
 
   function startPuzzle() {
-    const params = new URLSearchParams({ region: 'europe', n: String(puzzleCount) });
+    const params = new URLSearchParams({ region: puzzleRegion, n: String(puzzleCount) });
     navigate(`/puzzle?${params.toString()}`);
   }
 
@@ -42,10 +43,24 @@ export default function Home() {
       <p>The map is the question — identify a hidden country or a missing neighbor.</p>
       <div className='start-panel'>
         <label>
+          Region:
+          <select value={puzzleRegion} onChange={e => setPuzzleRegion(e.target.value)}>
+            <option value='europe'>Europe</option>
+            <option value='africa'>Africa</option>
+            <option value='asia'>Asia</option>
+            <option value='caribbean'>Caribbean</option>
+            <option value='central-america'>Central America</option>
+            <option value='latin-america'>Latin America</option>
+            <option value='middle-east'>Middle East</option>
+            <option value='north-america'>North America</option>
+            <option value='oceania'>Oceania</option>
+            <option value='south-america'>South America</option>
+          </select>
+        </label>
+        <label>
           Puzzles:
           <input type='number' value={puzzleCount} min={1} max={10} onChange={e => setPuzzleCount(Number(e.target.value))} />
         </label>
-        <small>Region: Europe</small>
       </div>
       <button onClick={startPuzzle}>Start Puzzle</button>
     </div>
