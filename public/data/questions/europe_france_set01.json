@@ -1,0 +1,143 @@
+{
+  "questions": [
+    {
+      "id": "europe_q_fr",
+      "region": "Europe",
+      "countryOfInterest": "France",
+      "svgMap": "/images/maps/region_world_europeLow.svg",
+      "targetId": "FR",
+      "labelStyle": "numbers",
+      "neighbors": [
+        {
+          "label": "1",
+          "prompt": "Which country borders France to the northeast?",
+          "options": ["Belgium", "Portugal", "Austria", "Denmark"],
+          "answer": "Belgium"
+        },
+        {
+          "label": "2",
+          "prompt": "Which small country borders France between Belgium and Germany?",
+          "options": ["Monaco", "Andorra", "Luxembourg", "Liechtenstein"],
+          "answer": "Luxembourg"
+        },
+        {
+          "label": "3",
+          "prompt": "Which country borders France to the east, sharing the Rhine?",
+          "options": ["Austria", "Switzerland", "Germany", "Italy"],
+          "answer": "Germany"
+        }
+      ],
+      "meta": { "difficulty": "easy" }
+    },
+    {
+      "id": "europe_q_de",
+      "region": "Europe",
+      "countryOfInterest": "Germany",
+      "svgMap": "/images/maps/region_world_europeLow.svg",
+      "targetId": "DE",
+      "labelStyle": "numbers",
+      "neighbors": [
+        {
+          "label": "1",
+          "prompt": "Which country borders Germany to the north?",
+          "options": ["Sweden", "Norway", "Denmark", "Finland"],
+          "answer": "Denmark"
+        },
+        {
+          "label": "2",
+          "prompt": "Which country borders Germany to the west?",
+          "options": ["Belgium", "Spain", "Portugal", "Italy"],
+          "answer": "Belgium"
+        },
+        {
+          "label": "3",
+          "prompt": "Which country borders Germany to the southeast?",
+          "options": ["Hungary", "Slovenia", "Slovakia", "Austria"],
+          "answer": "Austria"
+        }
+      ],
+      "meta": { "difficulty": "easy" }
+    },
+    {
+      "id": "europe_q_es",
+      "region": "Europe",
+      "countryOfInterest": "Spain",
+      "svgMap": "/images/maps/region_world_europeLow.svg",
+      "targetId": "ES",
+      "labelStyle": "numbers",
+      "neighbors": [
+        {
+          "label": "1",
+          "prompt": "Which country borders Spain to the north?",
+          "options": ["Italy", "Germany", "France", "Belgium"],
+          "answer": "France"
+        },
+        {
+          "label": "2",
+          "prompt": "Which country shares the Iberian Peninsula with Spain?",
+          "options": ["Morocco", "Andorra", "Gibraltar", "Portugal"],
+          "answer": "Portugal"
+        }
+      ],
+      "meta": { "difficulty": "easy" }
+    },
+    {
+      "id": "europe_q_it",
+      "region": "Europe",
+      "countryOfInterest": "Italy",
+      "svgMap": "/images/maps/region_world_europeLow.svg",
+      "targetId": "IT",
+      "labelStyle": "numbers",
+      "neighbors": [
+        {
+          "label": "1",
+          "prompt": "Which country borders Italy to the northwest?",
+          "options": ["Spain", "Germany", "Belgium", "France"],
+          "answer": "France"
+        },
+        {
+          "label": "2",
+          "prompt": "Which country borders Italy to the north?",
+          "options": ["Hungary", "Czech Republic", "Austria", "Slovakia"],
+          "answer": "Austria"
+        },
+        {
+          "label": "3",
+          "prompt": "Which country borders Italy to the northeast?",
+          "options": ["Croatia", "Hungary", "Serbia", "Slovenia"],
+          "answer": "Slovenia"
+        }
+      ],
+      "meta": { "difficulty": "medium" }
+    },
+    {
+      "id": "europe_q_pl",
+      "region": "Europe",
+      "countryOfInterest": "Poland",
+      "svgMap": "/images/maps/region_world_europeLow.svg",
+      "targetId": "PL",
+      "labelStyle": "numbers",
+      "neighbors": [
+        {
+          "label": "1",
+          "prompt": "Which country borders Poland to the west?",
+          "options": ["France", "Austria", "Netherlands", "Germany"],
+          "answer": "Germany"
+        },
+        {
+          "label": "2",
+          "prompt": "Which country borders Poland to the south?",
+          "options": ["Hungary", "Slovakia", "Austria", "Slovenia"],
+          "answer": "Slovakia"
+        },
+        {
+          "label": "3",
+          "prompt": "Which large country borders Poland to the east?",
+          "options": ["Moldova", "Romania", "Belarus", "Estonia"],
+          "answer": "Belarus"
+        }
+      ],
+      "meta": { "difficulty": "medium" }
+    }
+  ]
+}
