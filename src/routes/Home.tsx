@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import RegionPicker from '../components/RegionPicker';
 import StartPanel from '../components/StartPanel';
+import { REGION_CONFIG } from '../data/regionConfig';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -45,16 +46,16 @@ export default function Home() {
         <label>
           Region:
           <select value={puzzleRegion} onChange={e => setPuzzleRegion(e.target.value)}>
-            <option value='europe'>Europe</option>
-            <option value='africa'>Africa</option>
-            <option value='asia'>Asia</option>
-            <option value='caribbean'>Caribbean</option>
-            <option value='central-america'>Central America</option>
-            <option value='latin-america'>Latin America</option>
-            <option value='middle-east'>Middle East</option>
-            <option value='north-america'>North America</option>
-            <option value='oceania'>Oceania</option>
-            <option value='south-america'>South America</option>
+            <optgroup label='World Regions'>
+              {Object.entries(REGION_CONFIG).filter(([, c]) => c.group === 'world').map(([key, c]) => (
+                <option key={key} value={key}>{c.label}</option>
+              ))}
+            </optgroup>
+            <optgroup label='States / Provinces'>
+              {Object.entries(REGION_CONFIG).filter(([, c]) => c.group === 'states').map(([key, c]) => (
+                <option key={key} value={key}>{c.label}</option>
+              ))}
+            </optgroup>
           </select>
         </label>
         <label>

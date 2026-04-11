@@ -2,40 +2,29 @@ import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { parseSvg } from '../utils/parseSvg';
 import { type AdjacencyData } from '../utils/generatePuzzle';
+import { REGION_CONFIG } from '../data/regionConfig';
 import usePuzzleEngine from '../hooks/usePuzzleEngine';
 import PuzzleMapView from '../components/PuzzleMapView';
 import PuzzleChoices from '../components/PuzzleChoices';
 import ScorePanel from '../components/ScorePanel';
 
-const REGION_MAPS: Record<string, string> = {
-  europe: '/images/maps/region_world_europeLow.svg',
-  africa: '/images/maps/region_world_africaLow.svg',
-  asia: '/images/maps/region_world_asiaLow.svg',
-  caribbean: '/images/maps/region_world_caribbeanLow.svg',
-  'central-america': '/images/maps/region_world_centralAmericaLow.svg',
-  'latin-america': '/images/maps/region_world_latinAmericaLow.svg',
-  'middle-east': '/images/maps/region_world_middleEastLow.svg',
-  'north-america': '/images/maps/region_world_northAmericaLow.svg',
-  oceania: '/images/maps/region_world_oceaniaLow.svg',
-  'south-america': '/images/maps/region_world_southAmericaLow.svg',
-};
-
-const ADJACENCY_URL = '/data/adjacency.json';
-
 export default function PuzzlePlay() {
   const qs = new URLSearchParams(useLocation().search);
   const region = qs.get('region') ?? 'europe';
   const n = Number(qs.get('n') ?? '5');
-  const svgMap = REGION_MAPS[region] ?? REGION_MAPS.europe;
+
+  const config = REGION_CONFIG[region] ?? REGION_CONFIG.europe;
 
   const [adjacency, setAdjacency] = useState<AdjacencyData | null>(null);
   const [regionCodes, setRegionCodes] = useState<string[] | null>(null);
   const [countryNames, setCountryNames] = useState<Record<string, string>>({});
 
   useEffect(() => {
+    setAdjacency(null);
+    setRegionCodes(null);
     Promise.all([
-      fetch(ADJACENCY_URL).then(r => r.json()),
-      parseSvg(svgMap),
+      fetch(config.adjacencyUrl).then(r => r.json()),
+      parseSvg(config.svgMap),
     ]).then(([adj, { paths }]) => {
       setAdjacency(adj as AdjacencyData);
       setRegionCodes(paths.map(p => p.id));
@@ -46,7 +35,7 @@ export default function PuzzlePlay() {
       });
       setCountryNames(names);
     });
-  }, []);
+  }, [config.svgMap, config.adjacencyUrl]);
 
   if (!adjacency || !regionCodes) return <div className='loading'>Loading puzzle…</div>;
 
@@ -55,7 +44,7 @@ export default function PuzzlePlay() {
       adjacency={adjacency}
       regionCodes={regionCodes}
       countryNames={countryNames}
-      svgMap={svgMap}
+      svgMap={config.svgMap}
       region={region}
       n={n}
     />
@@ -90,6 +79,7 @@ function PuzzleContent({
   if (total === 0) return <div>Could not generate puzzles for this region.</div>;
 
   const puzzle = puzzles[index];
+  const isState = region.endsWith('-states');
 
   return (
     <div className='play'>
@@ -103,8 +93,8 @@ function PuzzleContent({
       />
       <div className='puzzle-prompt'>
         {puzzle.type === 'hidden_country'
-          ? 'Which country is hidden in the center?'
-          : 'Which country is the missing neighbor?'}
+          ? `Which ${isState ? 'state' : 'country'} is hidden in the center?`
+          : `Which ${isState ? 'state' : 'country'} is the missing neighbor?`}
       </div>
       <PuzzleChoices
         choices={puzzle.choices}

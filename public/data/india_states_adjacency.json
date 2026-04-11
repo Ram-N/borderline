@@ -1,0 +1,314 @@
+{
+  "IN-AN": {
+    "name": "Andaman and Nicobar Islands",
+    "neighbors": []
+  },
+  "IN-AP": {
+    "name": "Andhra Pradesh",
+    "neighbors": [
+      "IN-TG",
+      "IN-OR",
+      "IN-CT",
+      "IN-MH",
+      "IN-KA",
+      "IN-TN",
+      "IN-PY"
+    ]
+  },
+  "IN-AR": {
+    "name": "Arunachal Pradesh",
+    "neighbors": [
+      "IN-AS",
+      "IN-NL"
+    ]
+  },
+  "IN-AS": {
+    "name": "Assam",
+    "neighbors": [
+      "IN-AR",
+      "IN-NL",
+      "IN-MN",
+      "IN-MZ",
+      "IN-TR",
+      "IN-ML",
+      "IN-WB"
+    ]
+  },
+  "IN-BR": {
+    "name": "Bihar",
+    "neighbors": [
+      "IN-UP",
+      "IN-JH",
+      "IN-WB"
+    ]
+  },
+  "IN-CH": {
+    "name": "Chandigarh",
+    "neighbors": [
+      "IN-HR",
+      "IN-PB"
+    ]
+  },
+  "IN-CT": {
+    "name": "Chhattisgarh",
+    "neighbors": [
+      "IN-MP",
+      "IN-UP",
+      "IN-JH",
+      "IN-OR",
+      "IN-AP",
+      "IN-TG",
+      "IN-MH"
+    ]
+  },
+  "IN-DD": {
+    "name": "Daman and Diu",
+    "neighbors": [
+      "IN-GJ"
+    ]
+  },
+  "IN-DL": {
+    "name": "Delhi",
+    "neighbors": [
+      "IN-UP",
+      "IN-HR"
+    ]
+  },
+  "IN-DN": {
+    "name": "Dadra and Nagar Haveli",
+    "neighbors": [
+      "IN-GJ",
+      "IN-MH"
+    ]
+  },
+  "IN-GA": {
+    "name": "Goa",
+    "neighbors": [
+      "IN-MH",
+      "IN-KA"
+    ]
+  },
+  "IN-GJ": {
+    "name": "Gujarat",
+    "neighbors": [
+      "IN-RJ",
+      "IN-MP",
+      "IN-MH",
+      "IN-DD",
+      "IN-DN"
+    ]
+  },
+  "IN-HP": {
+    "name": "Himachal Pradesh",
+    "neighbors": [
+      "IN-JK",
+      "IN-PB",
+      "IN-HR",
+      "IN-UT"
+    ]
+  },
+  "IN-HR": {
+    "name": "Haryana",
+    "neighbors": [
+      "IN-PB",
+      "IN-HP",
+      "IN-UT",
+      "IN-UP",
+      "IN-RJ",
+      "IN-DL",
+      "IN-CH"
+    ]
+  },
+  "IN-JH": {
+    "name": "Jharkhand",
+    "neighbors": [
+      "IN-BR",
+      "IN-WB",
+      "IN-OR",
+      "IN-CT",
+      "IN-UP"
+    ]
+  },
+  "IN-JK": {
+    "name": "Jammu and Kashmir",
+    "neighbors": [
+      "IN-HP",
+      "IN-PB"
+    ]
+  },
+  "IN-KA": {
+    "name": "Karnataka",
+    "neighbors": [
+      "IN-MH",
+      "IN-GA",
+      "IN-KL",
+      "IN-TN",
+      "IN-AP",
+      "IN-TG"
+    ]
+  },
+  "IN-KL": {
+    "name": "Kerala",
+    "neighbors": [
+      "IN-KA",
+      "IN-TN",
+      "IN-PY"
+    ]
+  },
+  "IN-LD": {
+    "name": "Lakshadweep",
+    "neighbors": []
+  },
+  "IN-MH": {
+    "name": "Maharashtra",
+    "neighbors": [
+      "IN-GJ",
+      "IN-MP",
+      "IN-CT",
+      "IN-TG",
+      "IN-AP",
+      "IN-KA",
+      "IN-GA",
+      "IN-DN"
+    ]
+  },
+  "IN-ML": {
+    "name": "Meghalaya",
+    "neighbors": [
+      "IN-AS"
+    ]
+  },
+  "IN-MN": {
+    "name": "Manipur",
+    "neighbors": [
+      "IN-NL",
+      "IN-AS",
+      "IN-MZ"
+    ]
+  },
+  "IN-MP": {
+    "name": "Madhya Pradesh",
+    "neighbors": [
+      "IN-RJ",
+      "IN-GJ",
+      "IN-MH",
+      "IN-CT",
+      "IN-UP"
+    ]
+  },
+  "IN-MZ": {
+    "name": "Mizoram",
+    "neighbors": [
+      "IN-AS",
+      "IN-MN",
+      "IN-TR"
+    ]
+  },
+  "IN-NL": {
+    "name": "Nagaland",
+    "neighbors": [
+      "IN-AR",
+      "IN-AS",
+      "IN-MN"
+    ]
+  },
+  "IN-OR": {
+    "name": "Odisha",
+    "neighbors": [
+      "IN-WB",
+      "IN-JH",
+      "IN-CT",
+      "IN-AP"
+    ]
+  },
+  "IN-PB": {
+    "name": "Punjab",
+    "neighbors": [
+      "IN-CH",
+      "IN-HP",
+      "IN-HR",
+      "IN-JK",
+      "IN-RJ"
+    ]
+  },
+  "IN-PY": {
+    "name": "Puducherry",
+    "neighbors": [
+      "IN-TN",
+      "IN-AP",
+      "IN-KL"
+    ]
+  },
+  "IN-RJ": {
+    "name": "Rajasthan",
+    "neighbors": [
+      "IN-PB",
+      "IN-HR",
+      "IN-UP",
+      "IN-MP",
+      "IN-GJ"
+    ]
+  },
+  "IN-SK": {
+    "name": "Sikkim",
+    "neighbors": [
+      "IN-WB"
+    ]
+  },
+  "IN-TG": {
+    "name": "Telangana",
+    "neighbors": [
+      "IN-MH",
+      "IN-CT",
+      "IN-AP",
+      "IN-KA"
+    ]
+  },
+  "IN-TN": {
+    "name": "Tamil Nadu",
+    "neighbors": [
+      "IN-AP",
+      "IN-KA",
+      "IN-KL",
+      "IN-PY"
+    ]
+  },
+  "IN-TR": {
+    "name": "Tripura",
+    "neighbors": [
+      "IN-AS",
+      "IN-MZ"
+    ]
+  },
+  "IN-UP": {
+    "name": "Uttar Pradesh",
+    "neighbors": [
+      "IN-UT",
+      "IN-HR",
+      "IN-DL",
+      "IN-RJ",
+      "IN-MP",
+      "IN-CT",
+      "IN-JH",
+      "IN-BR"
+    ]
+  },
+  "IN-UT": {
+    "name": "Uttarakhand",
+    "neighbors": [
+      "IN-HP",
+      "IN-HR",
+      "IN-UP"
+    ]
+  },
+  "IN-WB": {
+    "name": "West Bengal",
+    "neighbors": [
+      "IN-SK",
+      "IN-AS",
+      "IN-JH",
+      "IN-OR",
+      "IN-BR"
+    ]
+  }
+}
