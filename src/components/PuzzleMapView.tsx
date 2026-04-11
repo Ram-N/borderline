@@ -43,7 +43,12 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
   const fontSize = Math.min(vbParts[2], vbParts[3]) * 0.035;
 
   return (
-    <svg viewBox={vb} style={{ width: '100%', height: 'auto', display: 'block' }}>
+    <div style={{ width: '100%', paddingBottom: '66%', position: 'relative' }}>
+    <svg
+      viewBox={vb}
+      preserveAspectRatio="xMidYMid meet"
+      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'block' }}
+    >
       {paths.map(path => {
         const fill = getPathFill(path.id, puzzle, phase, selectedAnswer);
         const stroke = getPathStroke(path.id, puzzle, phase);
@@ -77,6 +82,7 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
         );
       })}
     </svg>
+    </div>
   );
 }
 
