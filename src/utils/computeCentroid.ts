@@ -1,10 +1,11 @@
 import type { PathData } from './parseSvg';
 
+type Bbox = { minX: number; maxX: number; minY: number; maxY: number };
+
 /**
- * Extract endpoint coordinates from an SVG path d attribute.
+ * Extract endpoint coordinates from an SVG path segment.
  * Handles arc commands correctly — skips the 5 non-coordinate arc params
- * (rx, ry, x-rotation, large-arc-flag, sweep-flag) and takes only the x,y endpoint.
- * Without this, arc flags (0 and 1) pollute the bounding box.
+ * (rx, ry, x-rotation, large-arc-flag, sweep-flag).
  */
 function extractPoints(d: string): { x: number; y: number }[] {
   const points: { x: number; y: number }[] = [];
@@ -23,17 +24,10 @@ function extractPoints(d: string): { x: number; y: number }[] {
           points.push({ x: nums[i], y: nums[i + 1] });
         break;
       case 'C':
-        // cubic bezier: cx1 cy1 cx2 cy2 x y — take endpoint only
         for (let i = 4; i + 1 < nums.length; i += 6)
           points.push({ x: nums[i], y: nums[i + 1] });
         break;
-      case 'S':
-        // smooth cubic: cx2 cy2 x y
-        for (let i = 2; i + 1 < nums.length; i += 4)
-          points.push({ x: nums[i], y: nums[i + 1] });
-        break;
-      case 'Q':
-        // quadratic: cx cy x y
+      case 'S': case 'Q':
         for (let i = 2; i + 1 < nums.length; i += 4)
           points.push({ x: nums[i], y: nums[i + 1] });
         break;
@@ -42,16 +36,13 @@ function extractPoints(d: string): { x: number; y: number }[] {
         for (let i = 5; i + 1 < nums.length; i += 7)
           points.push({ x: nums[i], y: nums[i + 1] });
         break;
-      // Relative commands (m, l, c, s, q, a) and H/V: skip — relative coords
-      // without position tracking aren't reliable for bounding box, and H/V
-      // only update one axis. Country paths start with absolute M so we still
-      // capture most points via the absolute commands above.
+      // Relative commands and H/V: skipped — unreliable without position tracking
     }
   }
   return points;
 }
 
-function bbox(points: { x: number; y: number }[]) {
+function bboxOf(points: { x: number; y: number }[]): Bbox | null {
   let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
   for (const { x, y } of points) {
     if (x < minX) minX = x;
@@ -59,26 +50,54 @@ function bbox(points: { x: number; y: number }[]) {
     if (y < minY) minY = y;
     if (y > maxY) maxY = y;
   }
-  return { minX, maxX, minY, maxY };
+  return isFinite(minX) ? { minX, maxX, minY, maxY } : null;
+}
+
+/**
+ * Split a path by Z/z into closed subpolygons and return the bbox of the
+ * LARGEST one (by area). This prevents far-flung islands/territories from
+ * inflating the bounding box — e.g. Thailand has tiny polygons near x=9 and
+ * the mainland near x=200, Russia spans Siberia to the Pacific, etc.
+ */
+function mainBodyBbox(d: string): Bbox | null {
+  const subpaths = d.split(/[Zz]/).filter(s => s.trim().length > 0);
+
+  let best: Bbox | null = null;
+  let bestArea = -1;
+
+  for (const sub of subpaths) {
+    const pts = extractPoints(sub);
+    if (pts.length < 2) continue;
+    const b = bboxOf(pts);
+    if (!b) continue;
+    const area = (b.maxX - b.minX) * (b.maxY - b.minY);
+    if (area > bestArea) {
+      bestArea = area;
+      best = b;
+    }
+  }
+
+  return best;
 }
 
 export function computeCentroid(d: string): { x: number; y: number } {
-  const points = extractPoints(d);
-  if (points.length === 0) return { x: 0, y: 0 };
-  const { minX, maxX, minY, maxY } = bbox(points);
-  if (!isFinite(minX)) return { x: 0, y: 0 };
-  return { x: (minX + maxX) / 2, y: (minY + maxY) / 2 };
+  const b = mainBodyBbox(d);
+  if (!b) return { x: 0, y: 0 };
+  return { x: (b.minX + b.maxX) / 2, y: (b.minY + b.maxY) / 2 };
 }
 
 export function computeViewBox(paths: PathData[], paddingFactor = 0.1): string {
   let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+
   for (const p of paths) {
-    const { minX: x0, maxX: x1, minY: y0, maxY: y1 } = bbox(extractPoints(p.d));
-    if (x0 < minX) minX = x0;
-    if (x1 > maxX) maxX = x1;
-    if (y0 < minY) minY = y0;
-    if (y1 > maxY) maxY = y1;
+    const b = mainBodyBbox(p.d);
+    if (!b) continue;
+    if (b.minX < minX) minX = b.minX;
+    if (b.maxX > maxX) maxX = b.maxX;
+    if (b.minY < minY) minY = b.minY;
+    if (b.maxY > maxY) maxY = b.maxY;
   }
+
   if (!isFinite(minX)) return '0 0 800 600';
   const w = maxX - minX;
   const h = maxY - minY;
