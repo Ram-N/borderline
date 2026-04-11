@@ -12,7 +12,7 @@ export default function Play() {
   const setPath = qs.get('set') ?? '';
   const n = Number(qs.get('n') ?? '5');
 
-  const { question, index, total, select, selections, check, checked, score, next, done, status } = useQuizEngine({
+  const { question, index, total, select, selections, check, checked, score, next, done, status, loaded } = useQuizEngine({
     setPath,
     maxQuestions: n,
   });
@@ -26,6 +26,7 @@ export default function Play() {
     navigate('/results', { state: { score, total } });
   }
 
+  if (loaded && total === 0) return <div className='loading'>No questions yet for this set.</div>;
   if (!question) return <div className='loading'>Loading…</div>;
 
   return (

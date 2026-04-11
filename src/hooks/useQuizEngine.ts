@@ -46,5 +46,6 @@ export default function useQuizEngine({ setPath, maxQuestions = 5 }: { setPath: 
     setStatus('hidden');
   }
 
-  return { question, index, total, select, selections, check, checked, score, next, done, status } as const;
+  const loaded = all !== null;
+  return { question, index, total, select, selections, check, checked, score, next, done, status, loaded } as const;
 }
