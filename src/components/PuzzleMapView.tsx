@@ -211,7 +211,8 @@ function getLabelText(
       return name;
     }
     if (puzzle.hiddenNeighbors.includes(id)) return phase === 'reveal' ? name : '?';
-    if (puzzle.contextCountries.includes(id)) return name; // always labeled
+    // contextCountries: shown on map for geographic reference, but NOT labeled
+    // (they appear as choices — player must identify them, same as unlabeled neighbors)
   }
   return null;
 }
