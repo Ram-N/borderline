@@ -96,7 +96,7 @@ function getPathFill(id: string, puzzle: Puzzle, phase: 'question' | 'reveal', s
   if (puzzle.type === 'hidden_country') {
     if (id === puzzle.center) {
       if (phase === 'reveal') return selected === puzzle.correctAnswer ? '#4CAF50' : '#F44336';
-      return '#444444';
+      return '#FFD54F';
     }
     if (puzzle.visibleNeighbors.includes(id)) return '#C8D8E8';
     return '#F0F0F0';
@@ -112,8 +112,13 @@ function getPathFill(id: string, puzzle: Puzzle, phase: 'question' | 'reveal', s
 }
 
 function getPathStroke(id: string, puzzle: Puzzle, phase: 'question' | 'reveal'): { color: string; width: number } {
-  if (puzzle.type === 'missing_neighbor' && puzzle.hiddenNeighbors.includes(id) && phase === 'question') {
-    return { color: '#E65100', width: 1.5 };
+  if (phase === 'question') {
+    if (puzzle.type === 'missing_neighbor' && puzzle.hiddenNeighbors.includes(id)) {
+      return { color: '#E65100', width: 1.5 };
+    }
+    if (puzzle.type === 'hidden_country' && id === puzzle.center) {
+      return { color: '#E65100', width: 1.5 };
+    }
   }
   return { color: '#FFFFFF', width: 0.5 };
 }

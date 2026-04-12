@@ -9,6 +9,7 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .score-panel { display: flex; gap: 16px; margin-bottom: 12px; }
 .mc-item { margin: 10px 0; }
 .controls { margin: 16px 0; display: flex; gap: 8px; }
+.controls button { width: 100%; padding: 12px; font-size: 1rem; font-weight: 600; }
 .home-divider { margin: 24px 0; border: none; border-top: 1px solid #ddd; }
 .puzzle-prompt { font-size: 1.1rem; font-weight: 600; margin: 12px 0 8px; text-align: center; }
 .puzzle-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }

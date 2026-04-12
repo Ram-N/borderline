@@ -91,11 +91,6 @@ function PuzzleContent({
         selectedAnswer={selected}
         countryNames={countryNames}
       />
-      <div className='puzzle-prompt'>
-        {puzzle.type === 'hidden_country'
-          ? `Which ${isState ? 'state' : 'country'} is hidden in the center?`
-          : `Which ${isState ? 'state' : 'country'} is the missing neighbor?`}
-      </div>
       <PuzzleChoices
         choices={puzzle.choices}
         countryNames={countryNames}
