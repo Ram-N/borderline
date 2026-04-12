@@ -1,13 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import { parseSvg, type PathData } from '../utils/parseSvg';
 import { computeCentroid, computeViewBox } from '../utils/computeCentroid';
+import { LABEL_DENSITY_BY_DIFFICULTY } from '../utils/generatePuzzle';
 import type { Puzzle } from '../types/puzzle';
 
 // paddingFactor per difficulty level (index = difficulty - 1)
 const PADDING_BY_DIFFICULTY = [0.35, 0.25, 0.15, 0.08, 0.04] as const;
-
-// fraction of neighbor labels to show per difficulty level
-const LABEL_DENSITY = [1.0, 0.75, 0.5, 0.0, 0.0] as const;
 
 type Props = {
   svgMap: string;
@@ -30,6 +28,7 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
     const ids = new Set([puzzle.center, ...puzzle.visibleNeighbors]);
     if (puzzle.type === 'missing_neighbor') {
       puzzle.hiddenNeighbors.forEach(id => ids.add(id));
+      puzzle.contextCountries.forEach(id => ids.add(id));
     }
     return ids;
   }, [puzzle]);
@@ -54,15 +53,21 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
     return computeViewBox(pathsForZoom, PADDING_BY_DIFFICULTY[difficulty - 1]);
   }, [difficulty, svgViewBox, zoomPaths, relevantPaths]);
 
-  // Stable subset of neighbor IDs that show labels, based on density
+  // Which neighbor IDs show labels:
+  // - hidden_country: use LABEL_DENSITY_BY_DIFFICULTY
+  // - missing_neighbor: puzzle.labeledNeighbors (computed adaptively in generatePuzzle)
   const labeledNeighborIds = useMemo(() => {
-    const density = LABEL_DENSITY[difficulty - 1];
+    if (puzzle.type === 'missing_neighbor') {
+      return new Set(puzzle.labeledNeighbors);
+    }
+    // hidden_country
+    const density = LABEL_DENSITY_BY_DIFFICULTY[difficulty - 1];
     if (density >= 1.0) return null; // show all
-    if (density <= 0.0) return new Set<string>(); // show none
+    if (density <= 0.0) return new Set<string>();
     const sorted = [...puzzle.visibleNeighbors].sort();
     const showCount = Math.round(sorted.length * density);
     return new Set(sorted.slice(0, showCount));
-  }, [puzzle.visibleNeighbors, difficulty]);
+  }, [puzzle, difficulty]);
 
   if (paths.length === 0) return <div className='loading'>Loading map…</div>;
 
@@ -168,6 +173,7 @@ function getPathFill(id: string, puzzle: Puzzle, phase: 'question' | 'reveal', s
       if (phase === 'reveal') return selected === puzzle.correctAnswer ? '#4CAF50' : '#F44336';
       return '#FFD54F';
     }
+    if (puzzle.contextCountries.includes(id)) return '#E8EEF4'; // subtle tint — context reference
     return '#F0F0F0';
   }
 }
@@ -195,9 +201,8 @@ function getLabelText(
   if (puzzle.type === 'hidden_country') {
     if (id === puzzle.center) return phase === 'reveal' ? name : null;
     if (puzzle.visibleNeighbors.includes(id)) {
-      // Check label density — null means show all
       if (labeledNeighborIds !== null && !labeledNeighborIds.has(id)) return null;
-      return phase === 'reveal' ? name : name;
+      return name;
     }
   } else {
     if (id === puzzle.center) return name;
@@ -206,6 +211,7 @@ function getLabelText(
       return name;
     }
     if (puzzle.hiddenNeighbors.includes(id)) return phase === 'reveal' ? name : '?';
+    if (puzzle.contextCountries.includes(id)) return name; // always labeled
   }
   return null;
 }
