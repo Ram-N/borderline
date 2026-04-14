@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import RegionGrid from '../components/RegionGrid';
 import CountPicker from '../components/CountPicker';
 import DifficultyPicker from '../components/DifficultyPicker';
-import { REGION_CONFIG } from '../data/regionConfig';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -12,12 +11,7 @@ export default function Home() {
   const [difficulty, setDifficulty] = useState<number>(3);
 
   function startPuzzle() {
-    let region = puzzleRegion;
-    if (region === 'any') {
-      const keys = Object.keys(REGION_CONFIG);
-      region = keys[Math.floor(Math.random() * keys.length)];
-    }
-    const params = new URLSearchParams({ region, n: String(puzzleCount), difficulty: String(difficulty) });
+    const params = new URLSearchParams({ region: puzzleRegion, n: String(puzzleCount), difficulty: String(difficulty) });
     navigate(`/puzzle?${params.toString()}`);
   }
 

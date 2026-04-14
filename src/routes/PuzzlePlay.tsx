@@ -30,17 +30,20 @@ export default function PuzzlePlay() {
     setRegionPool(null);
 
     if (region === 'any') {
-      // Load world adjacency + all regional SVGs in parallel
-      const regionKeys = Object.keys(REGION_CONFIG);
+      // Only world regions — state regions (usa-states, india-states) use a
+      // separate adjacency file and won't work with world adjacency.json
+      const worldKeys = Object.entries(REGION_CONFIG)
+        .filter(([, c]) => c.group === 'world')
+        .map(([key]) => key);
       Promise.all([
         fetch('/data/adjacency.json').then(r => r.json()),
-        ...regionKeys.map(key =>
+        ...worldKeys.map(key =>
           parseSvg(REGION_CONFIG[key].svgMap).then(({ paths }) => ({ key, paths }))
         ),
       ]).then(([adj, ...regionData]) => {
         const worldAdj = adj as AdjacencyData;
         const names: Record<string, string> = {};
-        const pool: RegionSlot[] = regionData.map(({ key, paths }) => {
+        const pool: RegionSlot[] = regionData.map(({ key, paths }: { key: string; paths: any[] }) => {
           const codes = paths.map((p: any) => p.id);
           paths.forEach((p: any) => { names[p.id] = p.title || p.id; });
           const vt = new Set(paths.filter((p: any) => {
@@ -55,9 +58,13 @@ export default function PuzzlePlay() {
         setAdjacency(worldAdj);
         setCountryNames(names);
         setRegionPool(pool);
-        setRegionCodes([]);       // not used — pool drives puzzle generation
+        setRegionCodes([]);
         setValidTargets(new Set());
         setSvgViewBox(null);
+      }).catch(() => {
+        // On failure fall back to europe
+        setRegionCodes(null);
+        setValidTargets(null);
       });
     } else {
       const config = REGION_CONFIG[region] ?? REGION_CONFIG.europe;
