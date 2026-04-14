@@ -1,10 +1,14 @@
 
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, Navigate } from 'react-router-dom';
 
 export default function Results() {
   const loc = useLocation() as any;
-  const score = loc.state?.score ?? 0;
-  const total = loc.state?.total ?? 0;
+  const score = loc.state?.score;
+  const total = loc.state?.total;
+
+  if (score == null) {
+    return <Navigate to='/' replace />;
+  }
 
   return (
     <div className='results'>
