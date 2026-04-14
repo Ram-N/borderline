@@ -91,6 +91,14 @@ function PuzzleContent({
     validTargets,
   });
 
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Enter' && phase === 'reveal') next();
+    }
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [phase, next]);
+
   if (done) {
     navigate('/results', { state: { score, total } });
     return null;
