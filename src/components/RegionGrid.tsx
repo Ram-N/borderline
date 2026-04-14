@@ -13,12 +13,6 @@ export default function RegionGrid({ value, onChange }: Props) {
     <div>
       <div className='region-section-label'>World Regions</div>
       <div className='region-grid'>
-        <button
-          className={`region-tile${value === 'any' ? ' active' : ''}`}
-          onClick={() => onChange('any')}
-        >
-          Any
-        </button>
         {worldRegions.map(([key, c]) => (
           <button
             key={key}
@@ -28,6 +22,12 @@ export default function RegionGrid({ value, onChange }: Props) {
             {c.label}
           </button>
         ))}
+        <button
+          className={`region-tile${value === 'any' ? ' active' : ''}`}
+          onClick={() => onChange('any')}
+        >
+          Any Country
+        </button>
       </div>
       <div className='region-section-label'>States / Provinces</div>
       <div className='region-grid'>

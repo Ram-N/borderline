@@ -4,7 +4,7 @@ import { parseSvg } from '../utils/parseSvg';
 import { type AdjacencyData } from '../utils/generatePuzzle';
 import { computeCentroid } from '../utils/computeCentroid';
 import { REGION_CONFIG } from '../data/regionConfig';
-import usePuzzleEngine from '../hooks/usePuzzleEngine';
+import usePuzzleEngine, { type RegionSlot } from '../hooks/usePuzzleEngine';
 import PuzzleMapView from '../components/PuzzleMapView';
 import PuzzleChoices from '../components/PuzzleChoices';
 import TextAnswer from '../components/TextAnswer';
@@ -16,59 +16,96 @@ export default function PuzzlePlay() {
   const n = Number(qs.get('n') ?? '5');
   const difficulty = (Number(qs.get('difficulty') ?? '1') as 1 | 2 | 3 | 4 | 5);
 
-  const config = REGION_CONFIG[region] ?? REGION_CONFIG.europe;
-
   const [adjacency, setAdjacency] = useState<AdjacencyData | null>(null);
   const [regionCodes, setRegionCodes] = useState<string[] | null>(null);
   const [countryNames, setCountryNames] = useState<Record<string, string>>({});
   const [svgViewBox, setSvgViewBox] = useState<string | null>(null);
   const [validTargets, setValidTargets] = useState<Set<string> | null>(null);
+  const [regionPool, setRegionPool] = useState<RegionSlot[] | null>(null);
 
   useEffect(() => {
     setAdjacency(null);
     setRegionCodes(null);
     setValidTargets(null);
-    Promise.all([
-      fetch(config.adjacencyUrl).then(r => r.json()),
-      parseSvg(config.svgMap),
-    ]).then(([adj, { paths, viewBox }]) => {
-      setAdjacency(adj as AdjacencyData);
-      setRegionCodes(paths.map(p => p.id));
-      setSvgViewBox(viewBox);
-      const names: Record<string, string> = {};
-      paths.forEach(p => { names[p.id] = p.title || p.id; });
-      Object.entries(adj as AdjacencyData).forEach(([code, data]) => {
-        if (!names[code]) names[code] = data.name;
-      });
-      setCountryNames(names);
-      // Countries with bbox area >= 100 SVG units² are large enough to identify by shape
-      const large = new Set(paths.filter(p => {
-        const c = computeCentroid(p.d);
-        return c.w * c.h >= 100;
-      }).map(p => p.id));
-      setValidTargets(large);
-    });
-  }, [config.svgMap, config.adjacencyUrl]);
+    setRegionPool(null);
 
-  if (!adjacency || !regionCodes || !validTargets) return <div className='loading'>Loading puzzle…</div>;
+    if (region === 'any') {
+      // Load world adjacency + all regional SVGs in parallel
+      const regionKeys = Object.keys(REGION_CONFIG);
+      Promise.all([
+        fetch('/data/adjacency.json').then(r => r.json()),
+        ...regionKeys.map(key =>
+          parseSvg(REGION_CONFIG[key].svgMap).then(({ paths }) => ({ key, paths }))
+        ),
+      ]).then(([adj, ...regionData]) => {
+        const worldAdj = adj as AdjacencyData;
+        const names: Record<string, string> = {};
+        const pool: RegionSlot[] = regionData.map(({ key, paths }) => {
+          const codes = paths.map((p: any) => p.id);
+          paths.forEach((p: any) => { names[p.id] = p.title || p.id; });
+          const vt = new Set(paths.filter((p: any) => {
+            const c = computeCentroid(p.d);
+            return c.w * c.h >= 100;
+          }).map((p: any) => p.id));
+          return { adjacency: worldAdj, regionCodes: codes, svgMap: REGION_CONFIG[key].svgMap, region: key, validTargets: vt };
+        });
+        Object.entries(worldAdj).forEach(([code, data]) => {
+          if (!names[code]) names[code] = data.name;
+        });
+        setAdjacency(worldAdj);
+        setCountryNames(names);
+        setRegionPool(pool);
+        setRegionCodes([]);       // not used — pool drives puzzle generation
+        setValidTargets(new Set());
+        setSvgViewBox(null);
+      });
+    } else {
+      const config = REGION_CONFIG[region] ?? REGION_CONFIG.europe;
+      Promise.all([
+        fetch(config.adjacencyUrl).then(r => r.json()),
+        parseSvg(config.svgMap),
+      ]).then(([adj, { paths, viewBox }]) => {
+        setAdjacency(adj as AdjacencyData);
+        setRegionCodes(paths.map(p => p.id));
+        setSvgViewBox(viewBox);
+        const names: Record<string, string> = {};
+        paths.forEach(p => { names[p.id] = p.title || p.id; });
+        Object.entries(adj as AdjacencyData).forEach(([code, data]) => {
+          if (!names[code]) names[code] = data.name;
+        });
+        setCountryNames(names);
+        const large = new Set(paths.filter(p => {
+          const c = computeCentroid(p.d);
+          return c.w * c.h >= 100;
+        }).map(p => p.id));
+        setValidTargets(large);
+      });
+    }
+  }, [region]);
+
+  const ready = adjacency && regionCodes !== null && validTargets !== null;
+  if (!ready) return <div className='loading'>Loading puzzle…</div>;
+
+  const config = REGION_CONFIG[region] ?? REGION_CONFIG.europe;
 
   return (
     <PuzzleContent
-      adjacency={adjacency}
-      regionCodes={regionCodes}
+      adjacency={adjacency!}
+      regionCodes={regionCodes!}
       countryNames={countryNames}
-      svgMap={config.svgMap}
+      svgMap={region === 'any' ? '' : config.svgMap}
       svgViewBox={svgViewBox ?? undefined}
       region={region}
       n={n}
       difficulty={difficulty}
-      validTargets={validTargets}
+      validTargets={validTargets!}
+      regionPool={regionPool ?? undefined}
     />
   );
 }
 
 function PuzzleContent({
-  adjacency, regionCodes, countryNames, svgMap, svgViewBox, region, n, difficulty, validTargets,
+  adjacency, regionCodes, countryNames, svgMap, svgViewBox, region, n, difficulty, validTargets, regionPool,
 }: {
   adjacency: AdjacencyData;
   regionCodes: string[];
@@ -79,6 +116,7 @@ function PuzzleContent({
   n: number;
   difficulty: 1 | 2 | 3 | 4 | 5;
   validTargets: Set<string>;
+  regionPool?: RegionSlot[];
 }) {
   const navigate = useNavigate();
   const { puzzles, index, total, phase, selected, score, done, select, next } = usePuzzleEngine({
@@ -89,6 +127,7 @@ function PuzzleContent({
     n,
     difficulty,
     validTargets,
+    regionPool,
   });
 
   useEffect(() => {
@@ -111,18 +150,22 @@ function PuzzleContent({
     ? 'Which country is highlighted?'
     : 'Name the highlighted neighbor.';
 
+  // In "any" mode each puzzle carries its own svgMap; viewBox is computed dynamically
+  const puzzleSvgMap = regionPool ? puzzle.svgMap : svgMap;
+  const puzzleSvgViewBox = regionPool ? undefined : svgViewBox;
+
   return (
     <div className='play'>
       <ScorePanel index={index} total={total} score={score} />
       <p className='puzzle-prompt'>{prompt}</p>
       <PuzzleMapView
-        svgMap={svgMap}
+        svgMap={puzzleSvgMap}
         puzzle={puzzle}
         phase={phase}
         selectedAnswer={selected}
         countryNames={countryNames}
         difficulty={difficulty}
-        svgViewBox={svgViewBox}
+        svgViewBox={puzzleSvgViewBox}
       />
       {difficulty === 5 ? (
         <TextAnswer

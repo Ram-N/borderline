@@ -2,6 +2,14 @@ import { useState } from 'react';
 import { generatePuzzle, type AdjacencyData } from '../utils/generatePuzzle';
 import type { Puzzle } from '../types/puzzle';
 
+export type RegionSlot = {
+  adjacency: AdjacencyData;
+  regionCodes: string[];
+  svgMap: string;
+  region: string;
+  validTargets?: Set<string>;
+};
+
 type Config = {
   adjacency: AdjacencyData;
   regionCodes: string[];
@@ -10,6 +18,7 @@ type Config = {
   n: number;
   difficulty: 1 | 2 | 3 | 4 | 5;
   validTargets?: Set<string>;
+  regionPool?: RegionSlot[];
 };
 
 export default function usePuzzleEngine(config: Config) {
@@ -18,7 +27,10 @@ export default function usePuzzleEngine(config: Config) {
       config.difficulty <= 2 ? 'hidden_country' : 'missing_neighbor';
     const result: Puzzle[] = [];
     for (let i = 0; i < config.n; i++) {
-      const puzzle = generatePuzzle(type, config.adjacency, config.regionCodes, config.svgMap, config.region, config.difficulty, config.validTargets);
+      const slot = config.regionPool
+        ? config.regionPool[Math.floor(Math.random() * config.regionPool.length)]
+        : config;
+      const puzzle = generatePuzzle(type, slot.adjacency, slot.regionCodes, slot.svgMap, slot.region, config.difficulty, slot.validTargets);
       if (puzzle) result.push(puzzle);
     }
     return result;
