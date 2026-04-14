@@ -8,15 +8,17 @@ type Config = {
   svgMap: string;
   region: string;
   n: number;
-  types: ('hidden_country' | 'missing_neighbor')[];
+  difficulty: 1 | 2 | 3 | 4 | 5;
+  validTargets?: Set<string>;
 };
 
 export default function usePuzzleEngine(config: Config) {
   const [puzzles] = useState<Puzzle[]>(() => {
+    const type: 'hidden_country' | 'missing_neighbor' =
+      config.difficulty <= 2 ? 'hidden_country' : 'missing_neighbor';
     const result: Puzzle[] = [];
     for (let i = 0; i < config.n; i++) {
-      const type = config.types[i % config.types.length];
-      const puzzle = generatePuzzle(type, config.adjacency, config.regionCodes, config.svgMap, config.region);
+      const puzzle = generatePuzzle(type, config.adjacency, config.regionCodes, config.svgMap, config.region, config.difficulty, config.validTargets);
       if (puzzle) result.push(puzzle);
     }
     return result;

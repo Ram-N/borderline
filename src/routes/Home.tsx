@@ -8,7 +8,7 @@ export default function Home() {
   const navigate = useNavigate();
   const [puzzleRegion, setPuzzleRegion] = useState<string>('europe');
   const [puzzleCount, setPuzzleCount] = useState<number>(5);
-  const [difficulty, setDifficulty] = useState<number>(1);
+  const [difficulty, setDifficulty] = useState<number>(3);
 
   function startPuzzle() {
     const params = new URLSearchParams({ region: puzzleRegion, n: String(puzzleCount), difficulty: String(difficulty) });
