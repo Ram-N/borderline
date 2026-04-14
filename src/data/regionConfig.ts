@@ -7,7 +7,6 @@ export type RegionConfig = {
 
 export const REGION_CONFIG: Record<string, RegionConfig> = {
   // World regions
-  world:            { label: 'Any Country',      svgMap: '/images/maps/worldChinaLow.svg',                adjacencyUrl: '/data/adjacency.json',              group: 'world' },
   europe:           { label: 'Europe',          svgMap: '/images/maps/region_world_europeLow.svg',        adjacencyUrl: '/data/adjacency.json',              group: 'world' },
   africa:           { label: 'Africa',           svgMap: '/images/maps/region_world_africaLow.svg',        adjacencyUrl: '/data/adjacency.json',              group: 'world' },
   asia:             { label: 'Asia',             svgMap: '/images/maps/region_world_asiaLow.svg',          adjacencyUrl: '/data/adjacency.json',              group: 'world' },
