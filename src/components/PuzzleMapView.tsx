@@ -112,6 +112,10 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
           const len = Math.sqrt(dx * dx + dy * dy) || 1;
           textX = centroid.x + (dx / len) * OUTSIDE_OFFSET;
           textY = centroid.y + (dy / len) * OUTSIDE_OFFSET;
+          // Clamp within viewBox so labels don't get clipped at the edge
+          const margin = OUTSIDE_OFFSET * 0.4;
+          textX = Math.max(vbParts[0] + margin, Math.min(vbParts[0] + vbParts[2] - margin, textX));
+          textY = Math.max(vbParts[1] + margin, Math.min(vbParts[1] + vbParts[3] - margin, textY));
           arrowTo = { x: textX, y: textY };
         }
 
