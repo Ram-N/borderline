@@ -154,8 +154,8 @@ function PuzzleContent({
 
   const puzzle = puzzles[index];
   const prompt = puzzle.type === 'hidden_country'
-    ? 'Which country is highlighted?'
-    : 'Name the highlighted neighbor.';
+    ? 'Which country is shown in orange?'
+    : 'Name the orange country.';
 
   // In "any" mode each puzzle carries its own svgMap; viewBox is computed dynamically
   const puzzleSvgMap = regionPool ? puzzle.svgMap : svgMap;
