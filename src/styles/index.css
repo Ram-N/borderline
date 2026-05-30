@@ -75,6 +75,12 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .text-answer-reveal.correct { background: #E8F5E9; color: #1B5E20; border: 2px solid #4CAF50; }
 .text-answer-reveal.wrong { background: #FFEBEE; color: #B71C1C; border: 2px solid #F44336; }
 
+/* Daily Puzzle CTA on Home */
+.daily-cta { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: #FF9800; color: #fff; border-radius: 10px; text-decoration: none; margin: 20px 0 0; transition: background 0.15s; }
+.daily-cta:hover { background: #F57C00; }
+.daily-cta-label { font-size: 1.15rem; font-weight: 700; }
+.daily-cta-date { font-size: 0.9rem; opacity: 0.9; }
+
 /* Daily Puzzle */
 .daily-auth-gate { max-width: 400px; margin: 60px auto; text-align: center; }
 .daily-auth-gate h2 { margin-bottom: 8px; }

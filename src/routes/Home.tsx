@@ -1,8 +1,13 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import RegionGrid from '../components/RegionGrid';
 import CountPicker from '../components/CountPicker';
 import DifficultyPicker from '../components/DifficultyPicker';
+
+function formatDate(): string {
+  const d = new Date();
+  return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
 
 export default function Home() {
   const navigate = useNavigate();
@@ -19,6 +24,13 @@ export default function Home() {
     <div className='home'>
       <h1>Borderline</h1>
       <p>Can you name a country's neighbors from the map?</p>
+
+      <Link to='/daily' className='daily-cta'>
+        <span className='daily-cta-label'>Daily Puzzle</span>
+        <span className='daily-cta-date'>{formatDate()}</span>
+      </Link>
+
+      <hr className='home-divider' />
 
       <RegionGrid value={puzzleRegion} onChange={setPuzzleRegion} />
 
