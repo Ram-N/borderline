@@ -4,6 +4,28 @@ import Play from './routes/Play';
 import PuzzlePlay from './routes/PuzzlePlay';
 import Results from './routes/Results';
 import About from './routes/About';
+import AuthCallback from './routes/AuthCallback';
+import { useAuth } from './context/AuthContext';
+
+function AuthButton() {
+  const { user, signInWithGoogle, signOut } = useAuth()
+
+  if (user) {
+    const avatar = user.user_metadata?.avatar_url as string | undefined
+    const name = (user.user_metadata?.full_name ?? user.email ?? '') as string
+    return (
+      <div className='auth-user'>
+        {avatar && <img src={avatar} alt={name} className='auth-avatar' />}
+        <span className='auth-name'>{name.split(' ')[0]}</span>
+        <button className='auth-signout' onClick={signOut}>Sign out</button>
+      </div>
+    )
+  }
+
+  return (
+    <button className='auth-signin' onClick={signInWithGoogle}>Sign in</button>
+  )
+}
 
 export default function App() {
   return (
@@ -15,6 +37,7 @@ export default function App() {
           <Link to='/results'>Results</Link>
           <Link to='/about'>About</Link>
         </nav>
+        <AuthButton />
       </header>
       <main>
         <Routes>
@@ -23,6 +46,7 @@ export default function App() {
           <Route path='/results' element={<Results />} />
           <Route path='/puzzle' element={<PuzzlePlay />} />
           <Route path='/about' element={<About />} />
+          <Route path='/auth/callback' element={<AuthCallback />} />
         </Routes>
       </main>
     </div>
