@@ -6,12 +6,9 @@ export default function AuthCallback() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      if (session) {
-        navigate('/', { replace: true })
-      }
+    supabase.auth.exchangeCodeForSession(window.location.href).finally(() => {
+      navigate('/', { replace: true })
     })
-    return () => subscription.unsubscribe()
   }, [navigate])
 
   return <p style={{ textAlign: 'center', marginTop: 40 }}>Signing in…</p>
