@@ -7,6 +7,8 @@ import Results from './routes/Results';
 import About from './routes/About';
 import AuthCallback from './routes/AuthCallback';
 import { useAuth } from './context/AuthContext';
+import StreakBadge from './components/StreakBadge';
+import ScoreCalendar from './components/ScoreCalendar';
 
 function AuthButton() {
   const { user, signInWithGoogle, signOut } = useAuth()
@@ -29,6 +31,8 @@ function AuthButton() {
 }
 
 export default function App() {
+  const { user } = useAuth();
+
   return (
     <div className='app-wrap'>
       <header className='app-header'>
@@ -39,6 +43,12 @@ export default function App() {
           <Link to='/results'>Results</Link>
           <Link to='/about'>About</Link>
         </nav>
+        {user && (
+          <div className="header-stats">
+            <StreakBadge />
+            <ScoreCalendar />
+          </div>
+        )}
         <AuthButton />
       </header>
       <main>

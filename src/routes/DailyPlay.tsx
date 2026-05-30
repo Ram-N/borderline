@@ -103,12 +103,7 @@ export default function DailyPlay() {
   // Already played today
   if (previousScore !== null) {
     return (
-      <div className='daily-already-played'>
-        <h2>Daily Puzzle</h2>
-        <p>You already played today's puzzle!</p>
-        <p className='daily-score'>Score: {previousScore} / 15</p>
-        <p>Come back tomorrow for a new puzzle.</p>
-      </div>
+      <AlreadyPlayed score={previousScore} />
     );
   }
 
@@ -119,6 +114,33 @@ export default function DailyPlay() {
       countryNames={countryNames}
       regionPool={regionPool}
     />
+  );
+}
+
+function AlreadyPlayed({ score }: { score: number }) {
+  const [streak, setStreak] = useState<{ current: number; best: number } | null>(null);
+
+  useEffect(() => {
+    supabase.rpc('get_user_stats').then(({ data }) => {
+      if (data) {
+        const d = data as unknown as { current_streak: number; max_streak: number };
+        setStreak({ current: d.current_streak, best: d.max_streak });
+      }
+    });
+  }, []);
+
+  return (
+    <div className='daily-already-played'>
+      <h2>Daily Puzzle</h2>
+      <p>You already played today's puzzle!</p>
+      <p className='daily-score'>Score: {score} / 15</p>
+      {streak && (
+        <p className='daily-streak-info'>
+          Current streak: <strong>{streak.current}</strong> &middot; Best: <strong>{streak.best}</strong>
+        </p>
+      )}
+      <p>Come back tomorrow for a new puzzle.</p>
+    </div>
   );
 }
 
@@ -154,6 +176,7 @@ function DailyPuzzleContent({
       attempt_date: today,
       attempt_score: score,
     }).then(() => {
+      window.dispatchEvent(new Event('streak-updated'));
       navigate('/results', {
         state: { score, total: 15, daily: true, results },
       });

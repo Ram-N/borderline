@@ -25,6 +25,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return () => subscription.unsubscribe()
   }, [])
 
+  // Ensure profile row exists (trigger may not have fired for early users)
+  useEffect(() => {
+    if (!user) return
+    supabase.from('profiles').upsert({ id: user.id }, { onConflict: 'id', ignoreDuplicates: true })
+      .then(() => window.dispatchEvent(new Event('profile-ready')))
+  }, [user])
+
   async function signInWithGoogle() {
     await supabase.auth.signInWithOAuth({
       provider: 'google',

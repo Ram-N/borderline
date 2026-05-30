@@ -99,3 +99,33 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .daily-levels li { display: flex; justify-content: space-between; padding: 8px 12px; border-radius: 6px; margin-bottom: 4px; font-size: 0.95rem; }
 .level-correct { background: #E8F5E9; color: #1B5E20; }
 .level-wrong { background: #FFEBEE; color: #B71C1C; }
+
+/* Header stats area */
+.header-stats { display: flex; align-items: center; gap: 8px; }
+
+/* Streak Badge */
+.streak-badge { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; font-size: 0.95rem; }
+.streak-fire { font-size: 1.1rem; line-height: 1; }
+.streak-count { color: #E65100; }
+
+/* Calendar Toggle & Dropdown */
+.calendar-wrap { position: relative; }
+.calendar-toggle { background: none; border: none; font-size: 1.1rem; cursor: pointer; padding: 4px; line-height: 1; }
+.calendar-dropdown { position: absolute; right: 0; top: 100%; margin-top: 8px; background: #fff; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); padding: 12px; z-index: 100; width: 280px; }
+.calendar-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.calendar-nav button { background: none; border: none; font-size: 1.2rem; cursor: pointer; padding: 4px 8px; border-radius: 4px; }
+.calendar-nav button:hover { background: #f0f0f0; }
+.calendar-nav span { font-weight: 600; font-size: 0.9rem; }
+.calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; text-align: center; }
+.calendar-day-label { font-size: 0.7rem; font-weight: 600; color: #888; padding: 4px 0; }
+.calendar-day { font-size: 0.8rem; padding: 6px 0; border-radius: 4px; cursor: default; }
+.calendar-day.empty { visibility: hidden; }
+.calendar-day.today { outline: 2px solid #1976D2; outline-offset: -2px; }
+.calendar-day.score-high { background: #C8E6C9; color: #1B5E20; }
+.calendar-day.score-mid { background: #FFF9C4; color: #F57F17; }
+.calendar-day.score-low { background: #FFCDD2; color: #B71C1C; }
+.calendar-day.future { color: #ccc; pointer-events: none; }
+
+/* Daily already-played streak info */
+.daily-streak-info { margin: 12px 0; font-size: 0.95rem; color: #555; }
+.daily-streak-info strong { color: #E65100; }
