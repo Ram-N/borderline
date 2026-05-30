@@ -31,3 +31,6 @@ Thumbs.db
 # TypeScript
 *.tsbuildinfo
 .vercel
+
+# Docs (local reference only)
+docs/
