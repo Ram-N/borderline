@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "US-NC_3_A",
+    "countryCode": "US-NC",
+    "countryName": "North Carolina",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.871Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-NC",
+    "visibleNeighbors": [
+      "US-GA",
+      "US-TN",
+      "US-VA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-SC"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-SC",
+      "US-VA",
+      "US-TN",
+      "US-GA"
+    ],
+    "correctAnswer": "US-SC",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

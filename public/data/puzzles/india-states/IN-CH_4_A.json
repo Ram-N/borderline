@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "IN-CH_4_A",
+    "countryCode": "IN-CH",
+    "countryName": "Chandigarh",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.926Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-CH",
+    "visibleNeighbors": [
+      "IN-HR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-PB"
+    ],
+    "contextCountries": [
+      "IN-TN",
+      "IN-BR"
+    ],
+    "choices": [
+      "IN-PB",
+      "IN-TN",
+      "IN-HR",
+      "IN-BR"
+    ],
+    "correctAnswer": "IN-PB",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

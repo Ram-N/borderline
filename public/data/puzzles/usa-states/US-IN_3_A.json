@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "US-IN_3_A",
+    "countryCode": "US-IN",
+    "countryName": "Indiana",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.862Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-IN",
+    "visibleNeighbors": [
+      "US-IL",
+      "US-KY",
+      "US-OH"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-MI"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-OH",
+      "US-MI",
+      "US-KY",
+      "US-IL"
+    ],
+    "correctAnswer": "US-MI",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

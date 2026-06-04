@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "DE_4_A",
+    "countryCode": "DE",
+    "countryName": "Germany",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 9,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.831Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "DE",
+    "visibleNeighbors": [
+      "CH",
+      "PL",
+      "NL",
+      "LU",
+      "FR",
+      "DK",
+      "BE",
+      "AT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CZ"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "PL",
+      "CH",
+      "CZ",
+      "AT"
+    ],
+    "correctAnswer": "CZ",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "IN-TN_5_B",
+    "countryCode": "IN-TN",
+    "countryName": "Tamil Nadu",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.949Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-TN",
+    "visibleNeighbors": [
+      "IN-AP",
+      "IN-KA",
+      "IN-PY"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-KL"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "IN-KL",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "US-IN_1_A",
+    "countryCode": "US-IN",
+    "countryName": "Indiana",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.861Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-IN",
+    "visibleNeighbors": [
+      "US-IL",
+      "US-KY",
+      "US-MI",
+      "US-OH"
+    ],
+    "choices": [
+      "US-CO",
+      "US-IN",
+      "US-NE",
+      "US-MN"
+    ],
+    "correctAnswer": "US-IN",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

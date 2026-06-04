@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "CH_4_A",
+    "countryCode": "CH",
+    "countryName": "Switzerland",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.834Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "CH",
+    "visibleNeighbors": [
+      "LI",
+      "IT",
+      "DE",
+      "AT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "FR"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IT",
+      "FR",
+      "LI",
+      "AT"
+    ],
+    "correctAnswer": "FR",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

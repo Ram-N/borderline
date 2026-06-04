@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "RO_3_A",
+    "countryCode": "RO",
+    "countryName": "Romania",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.805Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "RO",
+    "visibleNeighbors": [
+      "RS",
+      "MD",
+      "HU",
+      "BG"
+    ],
+    "labeledNeighbors": [
+      "BG"
+    ],
+    "hiddenNeighbors": [
+      "UA"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "UA",
+      "MD",
+      "HU",
+      "RS"
+    ],
+    "correctAnswer": "UA",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

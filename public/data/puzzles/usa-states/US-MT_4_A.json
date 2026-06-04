@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "US-MT_4_A",
+    "countryCode": "US-MT",
+    "countryName": "Montana",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.871Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-MT",
+    "visibleNeighbors": [
+      "US-ID",
+      "US-SD",
+      "US-WY"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-ND"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-ND",
+      "US-SD",
+      "US-ID",
+      "US-WY"
+    ],
+    "correctAnswer": "US-ND",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

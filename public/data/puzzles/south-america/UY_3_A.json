@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "UY_3_A",
+    "countryCode": "UY",
+    "countryName": "Uruguay",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "south-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.834Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "UY",
+    "visibleNeighbors": [
+      "AR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "BR"
+    ],
+    "contextCountries": [
+      "GF",
+      "FK"
+    ],
+    "choices": [
+      "AR",
+      "FK",
+      "BR",
+      "GF"
+    ],
+    "correctAnswer": "BR",
+    "svgMap": "/images/maps/region_world_southAmericaLow.svg",
+    "region": "south-america"
+  }
+}

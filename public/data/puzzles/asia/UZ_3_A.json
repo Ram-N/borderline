@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "UZ_3_A",
+    "countryCode": "UZ",
+    "countryName": "Uzbekistan",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.619Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "UZ",
+    "visibleNeighbors": [
+      "TM",
+      "KG",
+      "KZ",
+      "AF"
+    ],
+    "labeledNeighbors": [
+      "AF"
+    ],
+    "hiddenNeighbors": [
+      "TJ"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "KG",
+      "TM",
+      "TJ",
+      "KZ"
+    ],
+    "correctAnswer": "TJ",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

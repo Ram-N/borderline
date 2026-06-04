@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "US-ID_5_B",
+    "countryCode": "US-ID",
+    "countryName": "Idaho",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.860Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-ID",
+    "visibleNeighbors": [
+      "US-MT",
+      "US-NV",
+      "US-OR",
+      "US-UT",
+      "US-WA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-WY"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-WY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

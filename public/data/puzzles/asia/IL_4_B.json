@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "IL_4_B",
+    "countryCode": "IL",
+    "countryName": "Israel",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.669Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IL",
+    "visibleNeighbors": [
+      "LB",
+      "JO",
+      "PS"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "SY"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "PS",
+      "JO",
+      "SY",
+      "LB"
+    ],
+    "correctAnswer": "SY",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

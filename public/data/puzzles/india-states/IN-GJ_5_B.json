@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "IN-GJ_5_B",
+    "countryCode": "IN-GJ",
+    "countryName": "Gujarat",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.931Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-GJ",
+    "visibleNeighbors": [
+      "IN-RJ",
+      "IN-MP",
+      "IN-DD",
+      "IN-DN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-MH"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "IN-MH",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

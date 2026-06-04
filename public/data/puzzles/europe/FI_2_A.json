@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "FI_2_A",
+    "countryCode": "FI",
+    "countryName": "Finland",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.828Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "FI",
+    "visibleNeighbors": [
+      "SE",
+      "RU",
+      "NO"
+    ],
+    "choices": [
+      "AM",
+      "TR",
+      "FI",
+      "FR"
+    ],
+    "correctAnswer": "FI",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

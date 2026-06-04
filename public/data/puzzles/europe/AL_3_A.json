@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "AL_3_A",
+    "countryCode": "AL",
+    "countryName": "Albania",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.844Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "AL",
+    "visibleNeighbors": [
+      "ME",
+      "MK",
+      "XK"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "GR"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "MK",
+      "XK",
+      "GR",
+      "ME"
+    ],
+    "correctAnswer": "GR",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "US-UT_3_B",
+    "countryCode": "US-UT",
+    "countryName": "Utah",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.897Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-UT",
+    "visibleNeighbors": [
+      "US-CO",
+      "US-ID",
+      "US-NV",
+      "US-NM",
+      "US-WY"
+    ],
+    "labeledNeighbors": [
+      "US-CO"
+    ],
+    "hiddenNeighbors": [
+      "US-AZ"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-NM",
+      "US-NV",
+      "US-AZ",
+      "US-ID"
+    ],
+    "correctAnswer": "US-AZ",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

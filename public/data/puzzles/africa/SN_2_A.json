@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "SN_2_A",
+    "countryCode": "SN",
+    "countryName": "Senegal",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.524Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "SN",
+    "visibleNeighbors": [
+      "MR",
+      "ML",
+      "GW",
+      "GN",
+      "GM"
+    ],
+    "choices": [
+      "SN",
+      "JU",
+      "SZ",
+      "EH"
+    ],
+    "correctAnswer": "SN",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

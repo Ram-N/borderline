@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "NE_5_B",
+    "countryCode": "NE",
+    "countryName": "Niger",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 7,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.540Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "NE",
+    "visibleNeighbors": [
+      "NG",
+      "ML",
+      "LY",
+      "TD",
+      "BF",
+      "BJ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "DZ"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "DZ",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

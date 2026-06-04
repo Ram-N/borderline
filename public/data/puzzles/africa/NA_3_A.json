@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "NA_3_A",
+    "countryCode": "NA",
+    "countryName": "Namibia",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.540Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "NA",
+    "visibleNeighbors": [
+      "ZM",
+      "ZA",
+      "BW",
+      "AO"
+    ],
+    "labeledNeighbors": [
+      "AO"
+    ],
+    "hiddenNeighbors": [
+      "ZW"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "ZM",
+      "ZW",
+      "BW",
+      "ZA"
+    ],
+    "correctAnswer": "ZW",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

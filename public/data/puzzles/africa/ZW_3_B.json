@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "ZW_3_B",
+    "countryCode": "ZW",
+    "countryName": "Zimbabwe",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.486Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "ZW",
+    "visibleNeighbors": [
+      "ZM",
+      "NA",
+      "MZ",
+      "BW"
+    ],
+    "labeledNeighbors": [
+      "BW"
+    ],
+    "hiddenNeighbors": [
+      "ZA"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "NA",
+      "ZA",
+      "MZ",
+      "ZM"
+    ],
+    "correctAnswer": "ZA",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

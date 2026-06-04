@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "SK_5_B",
+    "countryCode": "SK",
+    "countryName": "Slovakia",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.804Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SK",
+    "visibleNeighbors": [
+      "UA",
+      "HU",
+      "CZ",
+      "AT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "PL"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "PL",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

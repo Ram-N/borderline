@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "US-NH_2_A",
+    "countryCode": "US-NH",
+    "countryName": "New Hampshire",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.876Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-NH",
+    "visibleNeighbors": [
+      "US-MA",
+      "US-ME",
+      "US-VT"
+    ],
+    "choices": [
+      "US-NE",
+      "US-HI",
+      "US-FL",
+      "US-NH"
+    ],
+    "correctAnswer": "US-NH",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

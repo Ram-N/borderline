@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "PK_4_B",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.643Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "PK",
+    "visibleNeighbors": [
+      "IN",
+      "CN",
+      "AF"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IR"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IR",
+      "CN",
+      "AF",
+      "IN"
+    ],
+    "correctAnswer": "IR",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

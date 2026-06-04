@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "OM_4_A",
+    "countryCode": "OM",
+    "countryName": "Oman",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "middle-east",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.768Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "OM",
+    "visibleNeighbors": [
+      "YE",
+      "SA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "AE"
+    ],
+    "contextCountries": [
+      "PS"
+    ],
+    "choices": [
+      "SA",
+      "PS",
+      "YE",
+      "AE"
+    ],
+    "correctAnswer": "AE",
+    "svgMap": "/images/maps/region_world_middleEastLow.svg",
+    "region": "middle-east"
+  }
+}

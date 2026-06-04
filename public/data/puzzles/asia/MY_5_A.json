@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "MY_5_A",
+    "countryCode": "MY",
+    "countryName": "Malaysia",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.647Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "MY",
+    "visibleNeighbors": [
+      "TH",
+      "BN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "ID"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "ID",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

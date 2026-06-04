@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "US-TX_5_A",
+    "countryCode": "US-TX",
+    "countryName": "Texas",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.895Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-TX",
+    "visibleNeighbors": [
+      "US-LA",
+      "US-NM",
+      "US-OK"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-AR"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-AR",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

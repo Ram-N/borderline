@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "LV_3_B",
+    "countryCode": "LV",
+    "countryName": "Latvia",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.816Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "LV",
+    "visibleNeighbors": [
+      "RU",
+      "LT",
+      "BY"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "EE"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "LT",
+      "BY",
+      "EE",
+      "RU"
+    ],
+    "correctAnswer": "EE",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

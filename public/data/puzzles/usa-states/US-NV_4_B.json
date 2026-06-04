@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "US-NV_4_B",
+    "countryCode": "US-NV",
+    "countryName": "Nevada",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.881Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-NV",
+    "visibleNeighbors": [
+      "US-AZ",
+      "US-ID",
+      "US-OR",
+      "US-UT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-CA"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-UT",
+      "US-AZ",
+      "US-CA",
+      "US-OR"
+    ],
+    "correctAnswer": "US-CA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

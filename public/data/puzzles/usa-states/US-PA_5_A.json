@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "US-PA_5_A",
+    "countryCode": "US-PA",
+    "countryName": "Pennsylvania",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.889Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-PA",
+    "visibleNeighbors": [
+      "US-DE",
+      "US-MD",
+      "US-NJ",
+      "US-OH",
+      "US-WV"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-NY"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-NY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "LI_5_A",
+    "countryCode": "LI",
+    "countryName": "Liechtenstein",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.818Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "LI",
+    "visibleNeighbors": [
+      "AT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CH"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "CH",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

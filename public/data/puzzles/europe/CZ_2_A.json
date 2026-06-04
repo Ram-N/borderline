@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "CZ_2_A",
+    "countryCode": "CZ",
+    "countryName": "Czechia",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.832Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "CZ",
+    "visibleNeighbors": [
+      "SK",
+      "PL",
+      "DE",
+      "AT"
+    ],
+    "choices": [
+      "BY",
+      "AM",
+      "CZ",
+      "MT"
+    ],
+    "correctAnswer": "CZ",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

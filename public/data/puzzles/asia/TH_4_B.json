@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "TH_4_B",
+    "countryCode": "TH",
+    "countryName": "Thailand",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.629Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "TH",
+    "visibleNeighbors": [
+      "MY",
+      "LA",
+      "MM"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "KH"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "KH",
+      "LA",
+      "MM",
+      "MY"
+    ],
+    "correctAnswer": "KH",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

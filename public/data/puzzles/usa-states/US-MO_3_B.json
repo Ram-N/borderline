@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "id": "US-MO_3_B",
+    "countryCode": "US-MO",
+    "countryName": "Missouri",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 8,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.869Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-MO",
+    "visibleNeighbors": [
+      "US-AR",
+      "US-IL",
+      "US-IA",
+      "US-KS",
+      "US-NE",
+      "US-OK",
+      "US-TN"
+    ],
+    "labeledNeighbors": [
+      "US-AR"
+    ],
+    "hiddenNeighbors": [
+      "US-KY"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-IA",
+      "US-TN",
+      "US-KY",
+      "US-IL"
+    ],
+    "correctAnswer": "US-KY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

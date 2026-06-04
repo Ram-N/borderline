@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "US-VT_4_A",
+    "countryCode": "US-VT",
+    "countryName": "Vermont",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.901Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-VT",
+    "visibleNeighbors": [
+      "US-MA",
+      "US-NH"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-NY"
+    ],
+    "contextCountries": [
+      "US-WV"
+    ],
+    "choices": [
+      "US-NH",
+      "US-WV",
+      "US-MA",
+      "US-NY"
+    ],
+    "correctAnswer": "US-NY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

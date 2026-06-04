@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "GR_1_A",
+    "countryCode": "GR",
+    "countryName": "Greece",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.822Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "GR",
+    "visibleNeighbors": [
+      "TR",
+      "MK",
+      "BG",
+      "AL"
+    ],
+    "choices": [
+      "GR",
+      "SE",
+      "IT",
+      "BY"
+    ],
+    "correctAnswer": "GR",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

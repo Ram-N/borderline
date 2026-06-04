@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "IN-KL_1_A",
+    "countryCode": "IN-KL",
+    "countryName": "Kerala",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.936Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "IN-KL",
+    "visibleNeighbors": [
+      "IN-KA",
+      "IN-TN",
+      "IN-PY"
+    ],
+    "choices": [
+      "IN-KL",
+      "IN-AS",
+      "IN-TG",
+      "IN-NL"
+    ],
+    "correctAnswer": "IN-KL",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "US-AL_5_B",
+    "countryCode": "US-AL",
+    "countryName": "Alabama",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.848Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-AL",
+    "visibleNeighbors": [
+      "US-FL",
+      "US-GA",
+      "US-TN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-MS"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-MS",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "CL_1_A",
+    "countryCode": "CL",
+    "countryName": "Chile",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "south-america",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.826Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "CL",
+    "visibleNeighbors": [
+      "PE",
+      "BO",
+      "AR"
+    ],
+    "choices": [
+      "SR",
+      "UY",
+      "CL",
+      "GF"
+    ],
+    "correctAnswer": "CL",
+    "svgMap": "/images/maps/region_world_southAmericaLow.svg",
+    "region": "south-america"
+  }
+}

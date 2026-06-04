@@ -19,10 +19,14 @@ type Config = {
   difficulty: 1 | 2 | 3 | 4 | 5;
   validTargets?: Set<string>;
   regionPool?: RegionSlot[];
+  preloadedPuzzles?: Puzzle[];
 };
 
 export default function usePuzzleEngine(config: Config) {
   const [puzzles] = useState<Puzzle[]>(() => {
+    if (config.preloadedPuzzles && config.preloadedPuzzles.length > 0) {
+      return config.preloadedPuzzles;
+    }
     const type: 'hidden_country' | 'missing_neighbor' =
       config.difficulty <= 2 ? 'hidden_country' : 'missing_neighbor';
     const result: Puzzle[] = [];

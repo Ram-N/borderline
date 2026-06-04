@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "IN-TR_3_A",
+    "countryCode": "IN-TR",
+    "countryName": "Tripura",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.949Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-TR",
+    "visibleNeighbors": [
+      "IN-AS"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-MZ"
+    ],
+    "contextCountries": [
+      "IN-KL",
+      "IN-TN"
+    ],
+    "choices": [
+      "IN-AS",
+      "IN-TN",
+      "IN-KL",
+      "IN-MZ"
+    ],
+    "correctAnswer": "IN-MZ",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

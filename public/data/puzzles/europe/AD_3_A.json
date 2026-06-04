@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "AD_3_A",
+    "countryCode": "AD",
+    "countryName": "Andorra",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.843Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "AD",
+    "visibleNeighbors": [
+      "FR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "ES"
+    ],
+    "contextCountries": [
+      "MC",
+      "NO"
+    ],
+    "choices": [
+      "MC",
+      "NO",
+      "ES",
+      "FR"
+    ],
+    "correctAnswer": "ES",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

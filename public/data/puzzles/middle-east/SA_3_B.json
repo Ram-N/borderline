@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "SA_3_B",
+    "countryCode": "SA",
+    "countryName": "Saudi Arabia",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "middle-east",
+    "continent": "Asia",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.767Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SA",
+    "visibleNeighbors": [
+      "YE",
+      "AE",
+      "QA",
+      "OM",
+      "JO",
+      "IQ"
+    ],
+    "labeledNeighbors": [
+      "AE"
+    ],
+    "hiddenNeighbors": [
+      "KW"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "KW",
+      "JO",
+      "YE",
+      "QA"
+    ],
+    "correctAnswer": "KW",
+    "svgMap": "/images/maps/region_world_middleEastLow.svg",
+    "region": "middle-east"
+  }
+}

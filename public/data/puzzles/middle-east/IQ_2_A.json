@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "IQ_2_A",
+    "countryCode": "IQ",
+    "countryName": "Iraq",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "middle-east",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.773Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "IQ",
+    "visibleNeighbors": [
+      "SY",
+      "SA",
+      "KW",
+      "JO",
+      "IR"
+    ],
+    "choices": [
+      "QA",
+      "LB",
+      "IQ",
+      "AE"
+    ],
+    "correctAnswer": "IQ",
+    "svgMap": "/images/maps/region_world_middleEastLow.svg",
+    "region": "middle-east"
+  }
+}

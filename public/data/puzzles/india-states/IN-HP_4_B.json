@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "IN-HP_4_B",
+    "countryCode": "IN-HP",
+    "countryName": "Himachal Pradesh",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.932Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-HP",
+    "visibleNeighbors": [
+      "IN-JK",
+      "IN-PB",
+      "IN-HR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-UT"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-HR",
+      "IN-JK",
+      "IN-PB",
+      "IN-UT"
+    ],
+    "correctAnswer": "IN-UT",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

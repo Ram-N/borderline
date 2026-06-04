@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "US-WA_5_A",
+    "countryCode": "US-WA",
+    "countryName": "Washington",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.901Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-WA",
+    "visibleNeighbors": [
+      "US-ID"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-OR"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-OR",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

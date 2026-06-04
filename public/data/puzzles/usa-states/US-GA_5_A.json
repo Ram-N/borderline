@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "US-GA_5_A",
+    "countryCode": "US-GA",
+    "countryName": "Georgia",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.856Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-GA",
+    "visibleNeighbors": [
+      "US-AL",
+      "US-FL",
+      "US-SC",
+      "US-TN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-NC"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-NC",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

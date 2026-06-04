@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "id": "BR_3_B",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "latin-america",
+    "continent": "Americas",
+    "neighborCount": 9,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.735Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BR",
+    "visibleNeighbors": [
+      "VE",
+      "UY",
+      "SR",
+      "PE",
+      "PY",
+      "GY",
+      "CO",
+      "AR"
+    ],
+    "labeledNeighbors": [
+      "AR",
+      "CO"
+    ],
+    "hiddenNeighbors": [
+      "BO"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "BO",
+      "UY",
+      "GY",
+      "SR"
+    ],
+    "correctAnswer": "BO",
+    "svgMap": "/images/maps/region_world_latinAmericaLow.svg",
+    "region": "latin-america"
+  }
+}

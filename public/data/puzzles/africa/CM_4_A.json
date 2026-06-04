@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "id": "CM_4_A",
+    "countryCode": "CM",
+    "countryName": "Cameroon",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.583Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "CM",
+    "visibleNeighbors": [
+      "NG",
+      "GQ",
+      "CG",
+      "TD",
+      "CF"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "GA"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "CG",
+      "TD",
+      "CF",
+      "GA"
+    ],
+    "correctAnswer": "GA",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "IN_1_A",
+    "countryCode": "IN",
+    "countryName": "India",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.678Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "IN",
+    "visibleNeighbors": [
+      "PK",
+      "NP",
+      "CN",
+      "MM",
+      "BT",
+      "BD"
+    ],
+    "choices": [
+      "TL",
+      "IN",
+      "MY",
+      "AF"
+    ],
+    "correctAnswer": "IN",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

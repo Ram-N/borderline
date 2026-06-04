@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "YE_5_A",
+    "countryCode": "YE",
+    "countryName": "Yemen",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.617Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "YE",
+    "visibleNeighbors": [
+      "SA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "OM"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "OM",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

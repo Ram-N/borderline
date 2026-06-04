@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "US-MD_5_B",
+    "countryCode": "US-MD",
+    "countryName": "Maryland",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.867Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-MD",
+    "visibleNeighbors": [
+      "US-DC",
+      "US-DE",
+      "US-VA",
+      "US-WV"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-PA"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-PA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

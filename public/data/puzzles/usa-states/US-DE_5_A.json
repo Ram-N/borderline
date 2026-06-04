@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "US-DE_5_A",
+    "countryCode": "US-DE",
+    "countryName": "Delaware",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.854Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-DE",
+    "visibleNeighbors": [
+      "US-MD",
+      "US-NJ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-PA"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-PA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

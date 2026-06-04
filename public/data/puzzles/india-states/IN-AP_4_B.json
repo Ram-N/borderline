@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "IN-AP_4_B",
+    "countryCode": "IN-AP",
+    "countryName": "Andhra Pradesh",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.921Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-AP",
+    "visibleNeighbors": [
+      "IN-TG",
+      "IN-OR",
+      "IN-CT",
+      "IN-MH",
+      "IN-KA",
+      "IN-PY"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-TN"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-TN",
+      "IN-TG",
+      "IN-KA",
+      "IN-CT"
+    ],
+    "correctAnswer": "IN-TN",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

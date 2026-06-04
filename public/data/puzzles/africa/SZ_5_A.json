@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "SZ_5_A",
+    "countryCode": "SZ",
+    "countryName": "eSwatini",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.518Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SZ",
+    "visibleNeighbors": [
+      "ZA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "MZ"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "MZ",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

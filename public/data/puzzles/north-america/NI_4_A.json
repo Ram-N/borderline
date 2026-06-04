@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "NI_4_A",
+    "countryCode": "NI",
+    "countryName": "Nicaragua",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "north-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.803Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "NI",
+    "visibleNeighbors": [
+      "HN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CR"
+    ],
+    "contextCountries": [
+      "BL",
+      "HT"
+    ],
+    "choices": [
+      "HT",
+      "CR",
+      "BL",
+      "HN"
+    ],
+    "correctAnswer": "CR",
+    "svgMap": "/images/maps/region_world_northAmericaLow.svg",
+    "region": "north-america"
+  }
+}

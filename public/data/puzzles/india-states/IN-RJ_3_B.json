@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "IN-RJ_3_B",
+    "countryCode": "IN-RJ",
+    "countryName": "Rajasthan",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.948Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-RJ",
+    "visibleNeighbors": [
+      "IN-PB",
+      "IN-HR",
+      "IN-UP",
+      "IN-GJ"
+    ],
+    "labeledNeighbors": [
+      "IN-GJ"
+    ],
+    "hiddenNeighbors": [
+      "IN-MP"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-UP",
+      "IN-MP",
+      "IN-HR",
+      "IN-PB"
+    ],
+    "correctAnswer": "IN-MP",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

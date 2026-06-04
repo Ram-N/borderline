@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "IN-NL_2_A",
+    "countryCode": "IN-NL",
+    "countryName": "Nagaland",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.941Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "IN-NL",
+    "visibleNeighbors": [
+      "IN-AR",
+      "IN-AS",
+      "IN-MN"
+    ],
+    "choices": [
+      "IN-OR",
+      "IN-HP",
+      "IN-NL",
+      "IN-DL"
+    ],
+    "correctAnswer": "IN-NL",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

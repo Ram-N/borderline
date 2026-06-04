@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "ZA_5_A",
+    "countryCode": "ZA",
+    "countryName": "South Africa",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.500Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "ZA",
+    "visibleNeighbors": [
+      "ZW",
+      "SZ",
+      "MZ",
+      "LS",
+      "BW"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "NA"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "NA",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

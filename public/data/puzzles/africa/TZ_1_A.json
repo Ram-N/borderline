@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "TZ_1_A",
+    "countryCode": "TZ",
+    "countryName": "Tanzania",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 8,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.504Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "TZ",
+    "visibleNeighbors": [
+      "ZM",
+      "UG",
+      "RW",
+      "MZ",
+      "MW",
+      "KE",
+      "CD",
+      "BI"
+    ],
+    "choices": [
+      "TZ",
+      "GM",
+      "SH",
+      "SN"
+    ],
+    "correctAnswer": "TZ",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

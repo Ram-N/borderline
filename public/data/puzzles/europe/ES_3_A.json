@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "ES_3_A",
+    "countryCode": "ES",
+    "countryName": "Spain",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.830Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "ES",
+    "visibleNeighbors": [
+      "PT",
+      "AD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "FR"
+    ],
+    "contextCountries": [
+      "DE"
+    ],
+    "choices": [
+      "PT",
+      "AD",
+      "FR",
+      "DE"
+    ],
+    "correctAnswer": "FR",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

@@ -7,7 +7,9 @@ import { computeCentroid } from '../utils/computeCentroid';
 import { REGION_CONFIG } from '../data/regionConfig';
 import { type AdjacencyData } from '../utils/generatePuzzle';
 import useDailyPuzzleEngine, { DIFFICULTY_LABELS } from '../hooks/useDailyPuzzleEngine';
+import { useCannedDailyPuzzles } from '../hooks/useCannedDailyEngine';
 import type { RegionSlot } from '../hooks/usePuzzleEngine';
+import type { Puzzle } from '../types/puzzle';
 import PuzzleMapView from '../components/PuzzleMapView';
 import PuzzleChoices from '../components/PuzzleChoices';
 import TextAnswer from '../components/TextAnswer';
@@ -27,6 +29,10 @@ export default function DailyPlay() {
   const [adjacency, setAdjacency] = useState<AdjacencyData | null>(null);
   const [countryNames, setCountryNames] = useState<Record<string, string>>({});
   const [regionPool, setRegionPool] = useState<RegionSlot[] | null>(null);
+
+  // Try canned daily puzzles
+  const today = todayString();
+  const cannedDaily = useCannedDailyPuzzles(today);
 
   // Auth gate
   if (!user) {
@@ -96,7 +102,11 @@ export default function DailyPlay() {
     });
   }, []);
 
-  if (loading || !seed || !adjacency || !regionPool) {
+  // Wait for auth check + canned loading; runtime data only needed if no canned puzzles
+  if (loading || cannedDaily.loading) {
+    return <div className='loading'>Loading daily puzzle…</div>;
+  }
+  if (!cannedDaily.available && (!seed || !adjacency || !regionPool)) {
     return <div className='loading'>Loading daily puzzle…</div>;
   }
 
@@ -109,10 +119,11 @@ export default function DailyPlay() {
 
   return (
     <DailyPuzzleContent
-      seed={seed}
-      adjacency={adjacency}
+      seed={seed ?? today}
+      adjacency={adjacency ?? ({} as AdjacencyData)}
       countryNames={countryNames}
-      regionPool={regionPool}
+      regionPool={regionPool ?? []}
+      preloadedPuzzles={cannedDaily.available ? cannedDaily.puzzles : undefined}
     />
   );
 }
@@ -149,15 +160,17 @@ function DailyPuzzleContent({
   adjacency,
   countryNames,
   regionPool,
+  preloadedPuzzles,
 }: {
   seed: string;
   adjacency: AdjacencyData;
   countryNames: Record<string, string>;
   regionPool: RegionSlot[];
+  preloadedPuzzles?: Puzzle[];
 }) {
   const navigate = useNavigate();
   const { user } = useAuth();
-  const engine = useDailyPuzzleEngine({ seed, regionPool, adjacency });
+  const engine = useDailyPuzzleEngine({ seed, regionPool, adjacency, preloadedPuzzles });
   const { puzzles, index, total, phase, selected, score, done, results, currentDifficulty, select, next } = engine;
 
   useEffect(() => {

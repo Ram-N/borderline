@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "id": "US-OK_4_A",
+    "countryCode": "US-OK",
+    "countryName": "Oklahoma",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.887Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-OK",
+    "visibleNeighbors": [
+      "US-AR",
+      "US-CO",
+      "US-KS",
+      "US-NM",
+      "US-TX"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-MO"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-NM",
+      "US-CO",
+      "US-MO",
+      "US-TX"
+    ],
+    "correctAnswer": "US-MO",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

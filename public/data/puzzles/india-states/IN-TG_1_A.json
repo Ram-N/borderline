@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "IN-TG_1_A",
+    "countryCode": "IN-TG",
+    "countryName": "Telangana",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.948Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "IN-TG",
+    "visibleNeighbors": [
+      "IN-MH",
+      "IN-CT",
+      "IN-AP",
+      "IN-KA"
+    ],
+    "choices": [
+      "IN-TG",
+      "IN-MZ",
+      "IN-MP",
+      "IN-ML"
+    ],
+    "correctAnswer": "IN-TG",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

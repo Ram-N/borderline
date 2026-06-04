@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "ML_3_B",
+    "countryCode": "ML",
+    "countryName": "Mali",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.548Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "ML",
+    "visibleNeighbors": [
+      "SN",
+      "NE",
+      "GN",
+      "CI",
+      "BF",
+      "DZ"
+    ],
+    "labeledNeighbors": [
+      "BF"
+    ],
+    "hiddenNeighbors": [
+      "MR"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "DZ",
+      "GN",
+      "CI",
+      "MR"
+    ],
+    "correctAnswer": "MR",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

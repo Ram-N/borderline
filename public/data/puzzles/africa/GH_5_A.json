@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "GH_5_A",
+    "countryCode": "GH",
+    "countryName": "Ghana",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.567Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "GH",
+    "visibleNeighbors": [
+      "TG",
+      "BF"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CI"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "CI",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "KE_3_B",
+    "countryCode": "KE",
+    "countryName": "Kenya",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.558Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "KE",
+    "visibleNeighbors": [
+      "UG",
+      "TZ",
+      "SO",
+      "ET"
+    ],
+    "labeledNeighbors": [
+      "ET"
+    ],
+    "hiddenNeighbors": [
+      "SS"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "TZ",
+      "SS",
+      "UG",
+      "SO"
+    ],
+    "correctAnswer": "SS",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

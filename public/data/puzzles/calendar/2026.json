@@ -1,0 +1,3655 @@
+{
+  "year": 2026,
+  "entries": [
+    {
+      "date": "2026-01-01",
+      "puzzleIds": [
+        "NG_1_A",
+        "IN-HP_2_A",
+        "US-TX_3_A",
+        "VE_4_A",
+        "US-WV_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "puzzleIds": [
+        "GT_1_A",
+        "MZ_2_A",
+        "SO_3_A",
+        "HR_4_A",
+        "LY_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-03",
+      "puzzleIds": [
+        "GY_1_A",
+        "BI_2_A",
+        "GT_3_A",
+        "LY_4_B",
+        "SY_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "puzzleIds": [
+        "ET_1_A",
+        "US-WV_2_A",
+        "US-SD_3_A",
+        "US-OR_4_B",
+        "YE_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-05",
+      "puzzleIds": [
+        "LT_1_A",
+        "AO_2_A",
+        "MK_3_A",
+        "BE_4_B",
+        "IR_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-06",
+      "puzzleIds": [
+        "ER_1_A",
+        "US-AR_2_A",
+        "LV_3_B",
+        "BZ_4_A",
+        "US-ID_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "puzzleIds": [
+        "ZA_1_A",
+        "US-NH_2_A",
+        "SY_3_B",
+        "BO_4_A",
+        "IN-MP_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "puzzleIds": [
+        "US-VT_1_A",
+        "US-NC_2_A",
+        "IN-TR_3_A",
+        "TM_4_A",
+        "GY_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-09",
+      "puzzleIds": [
+        "IN-TG_1_A",
+        "IN-OR_2_A",
+        "KW_3_A",
+        "US-PA_4_A",
+        "IN-UP_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-10",
+      "puzzleIds": [
+        "KH_1_A",
+        "LY_2_A",
+        "AD_3_A",
+        "ZM_4_A",
+        "IN-DN_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-11",
+      "puzzleIds": [
+        "HN_1_A",
+        "CF_2_A",
+        "IN-WB_3_B",
+        "MW_4_A",
+        "TG_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-12",
+      "puzzleIds": [
+        "HR_1_A",
+        "RU_2_A",
+        "BZ_3_A",
+        "CG_4_A",
+        "TD_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "puzzleIds": [
+        "OM_1_A",
+        "SN_2_A",
+        "PA_3_A",
+        "BY_4_A",
+        "SD_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-14",
+      "puzzleIds": [
+        "RO_1_A",
+        "US-MO_2_A",
+        "CD_3_A",
+        "PA_4_A",
+        "IN-AS_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "puzzleIds": [
+        "IN_1_A",
+        "US-AZ_2_A",
+        "MM_3_B",
+        "LT_4_A",
+        "MW_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-16",
+      "puzzleIds": [
+        "HN_1_A",
+        "EH_2_A",
+        "LR_3_A",
+        "US_4_A",
+        "SA_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "puzzleIds": [
+        "IN-BR_1_A",
+        "TG_2_A",
+        "GR_3_A",
+        "IN-OR_4_B",
+        "TN_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-18",
+      "puzzleIds": [
+        "US-NC_1_A",
+        "US-MS_2_A",
+        "KH_3_A",
+        "US-AR_4_B",
+        "LB_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "puzzleIds": [
+        "UA_1_A",
+        "IR_2_A",
+        "US-WY_3_A",
+        "SV_4_A",
+        "US-TN_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "puzzleIds": [
+        "US-VA_1_A",
+        "GA_2_A",
+        "US-NV_3_A",
+        "BY_4_B",
+        "LR_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "puzzleIds": [
+        "US-MD_1_A",
+        "TJ_2_A",
+        "KG_3_A",
+        "IN-RJ_4_B",
+        "SA_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "puzzleIds": [
+        "US-ID_1_A",
+        "VE_2_A",
+        "MD_3_A",
+        "IN-TG_4_A",
+        "BO_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "puzzleIds": [
+        "IQ_1_A",
+        "MY_2_A",
+        "US-MN_3_B",
+        "AZ_4_A",
+        "RO_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-24",
+      "puzzleIds": [
+        "TR_1_A",
+        "XK_2_A",
+        "BR_3_A",
+        "US-NV_4_A",
+        "BA_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "puzzleIds": [
+        "LV_1_A",
+        "AT_2_A",
+        "IN-TN_3_A",
+        "PS_4_A",
+        "IN-MH_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-26",
+      "puzzleIds": [
+        "RU_1_A",
+        "NE_2_A",
+        "MX_3_A",
+        "EC_4_A",
+        "PS_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "puzzleIds": [
+        "US-MS_1_A",
+        "IN-NL_2_A",
+        "IN-MP_3_B",
+        "TN_4_A",
+        "MX_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "puzzleIds": [
+        "US-IL_1_A",
+        "US-NJ_2_A",
+        "AR_3_B",
+        "PE_4_A",
+        "US-NJ_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "puzzleIds": [
+        "IN-AP_1_A",
+        "FR_2_A",
+        "LB_3_A",
+        "RU_4_A",
+        "SK_5_B"
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "puzzleIds": [
+        "PK_1_A",
+        "US-LA_2_A",
+        "US-MO_3_B",
+        "SN_4_A",
+        "SN_5_A"
+      ]
+    },
+    {
+      "date": "2026-01-31",
+      "puzzleIds": [
+        "US-KY_1_A",
+        "ZW_2_A",
+        "ET_3_A",
+        "US-CT_4_A",
+        "YE_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "puzzleIds": [
+        "MR_1_A",
+        "KE_2_A",
+        "US-KS_3_A",
+        "US-TN_4_A",
+        "RU_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "puzzleIds": [
+        "IN-UP_1_A",
+        "HN_2_A",
+        "US-OR_3_A",
+        "US-MN_4_B",
+        "VE_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "puzzleIds": [
+        "US-NM_1_A",
+        "US-CA_2_A",
+        "SY_3_B",
+        "HN_4_A",
+        "GE_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "puzzleIds": [
+        "RS_1_A",
+        "US-DE_2_A",
+        "US-NJ_3_A",
+        "US-AL_4_A",
+        "US-WI_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "puzzleIds": [
+        "LR_1_A",
+        "US-IA_2_A",
+        "BY_3_A",
+        "NG_4_A",
+        "CI_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "puzzleIds": [
+        "CF_1_A",
+        "US-VT_2_A",
+        "SA_3_A",
+        "BO_4_A",
+        "SY_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-07",
+      "puzzleIds": [
+        "US-WV_1_A",
+        "CD_2_A",
+        "BR_3_B",
+        "LI_4_A",
+        "PL_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-08",
+      "puzzleIds": [
+        "ZM_1_A",
+        "KG_2_A",
+        "US-WA_3_A",
+        "CH_4_B",
+        "AR_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "puzzleIds": [
+        "US-NH_1_A",
+        "IN-TN_2_A",
+        "EC_3_A",
+        "FR_4_A",
+        "MR_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "puzzleIds": [
+        "US-AL_1_A",
+        "KP_2_A",
+        "CO_3_A",
+        "SE_4_A",
+        "AR_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "puzzleIds": [
+        "BA_1_A",
+        "US-KS_2_A",
+        "CL_3_A",
+        "EE_4_A",
+        "BR_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-12",
+      "puzzleIds": [
+        "HU_1_A",
+        "IN-PB_2_A",
+        "IN-TN_3_B",
+        "NO_4_A",
+        "IN-OR_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-13",
+      "puzzleIds": [
+        "DZ_1_A",
+        "US-MT_2_A",
+        "ER_3_A",
+        "MR_4_B",
+        "DE_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-14",
+      "puzzleIds": [
+        "BR_1_A",
+        "SS_2_A",
+        "GW_3_A",
+        "US-MA_4_A",
+        "US-MI_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-15",
+      "puzzleIds": [
+        "IN-TN_1_A",
+        "BO_2_A",
+        "UY_3_A",
+        "US-MT_4_B",
+        "IN-TG_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "puzzleIds": [
+        "SK_1_A",
+        "OM_2_A",
+        "SI_3_B",
+        "DE_4_A",
+        "BF_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "puzzleIds": [
+        "US-IN_1_A",
+        "IN-PY_2_A",
+        "SK_3_A",
+        "KZ_4_B",
+        "IN-HP_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "puzzleIds": [
+        "AR_1_A",
+        "LT_2_A",
+        "CO_3_B",
+        "US-MO_4_A",
+        "US-KS_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "puzzleIds": [
+        "TG_1_A",
+        "UG_2_A",
+        "IN-OR_3_A",
+        "SV_4_A",
+        "TM_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "puzzleIds": [
+        "CL_1_A",
+        "IN-AS_2_A",
+        "SZ_3_A",
+        "IN-AS_4_B",
+        "US-LA_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-21",
+      "puzzleIds": [
+        "IN-MH_1_A",
+        "GT_2_A",
+        "PL_3_A",
+        "IN-MP_4_A",
+        "US-CO_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-22",
+      "puzzleIds": [
+        "US-CT_1_A",
+        "KH_2_A",
+        "IL_3_A",
+        "YE_4_A",
+        "IN-KA_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-23",
+      "puzzleIds": [
+        "VE_1_A",
+        "CI_2_A",
+        "IN-JH_3_A",
+        "SA_4_A",
+        "PE_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "puzzleIds": [
+        "US-OR_1_A",
+        "SA_2_A",
+        "BW_3_B",
+        "MM_4_B",
+        "IN-PB_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "puzzleIds": [
+        "AL_1_A",
+        "US-OH_2_A",
+        "TM_3_A",
+        "PE_4_B",
+        "US-MS_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "puzzleIds": [
+        "GE_1_A",
+        "NG_2_A",
+        "IN-GJ_3_B",
+        "CI_4_B",
+        "TM_5_B"
+      ]
+    },
+    {
+      "date": "2026-02-27",
+      "puzzleIds": [
+        "GH_1_A",
+        "US-MN_2_A",
+        "TG_3_A",
+        "LA_4_B",
+        "IQ_5_A"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "puzzleIds": [
+        "CI_1_A",
+        "US-NV_2_A",
+        "US-MS_3_B",
+        "AR_4_A",
+        "GT_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-01",
+      "puzzleIds": [
+        "US-LA_1_A",
+        "VN_2_A",
+        "UG_3_B",
+        "CI_4_A",
+        "IN-PB_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "puzzleIds": [
+        "RU_1_A",
+        "US-MI_2_A",
+        "SR_3_A",
+        "ML_4_A",
+        "IN-JK_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "puzzleIds": [
+        "US-MT_1_A",
+        "AR_2_A",
+        "ML_3_B",
+        "US-MD_4_A",
+        "IN-OR_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "puzzleIds": [
+        "BO_1_A",
+        "TM_2_A",
+        "CF_3_A",
+        "KG_4_B",
+        "ML_5_B"
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "puzzleIds": [
+        "GA_1_A",
+        "US-AL_2_A",
+        "US-ID_3_B",
+        "US-IN_4_B",
+        "IT_5_B"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "puzzleIds": [
+        "US-KS_1_A",
+        "RU_2_A",
+        "MM_3_A",
+        "RU_4_B",
+        "AF_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "puzzleIds": [
+        "TZ_1_A",
+        "IN-MH_2_A",
+        "IL_3_A",
+        "ET_4_A",
+        "OM_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-08",
+      "puzzleIds": [
+        "TM_1_A",
+        "UZ_2_A",
+        "LA_3_B",
+        "SL_4_A",
+        "TH_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "puzzleIds": [
+        "US-ND_1_A",
+        "TR_2_A",
+        "BJ_3_B",
+        "IN-HP_4_A",
+        "AZ_5_B"
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "puzzleIds": [
+        "IN-JH_1_A",
+        "PK_2_A",
+        "CI_3_B",
+        "MR_4_A",
+        "BI_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "puzzleIds": [
+        "KG_1_A",
+        "US-ND_2_A",
+        "TR_3_A",
+        "ZM_4_B",
+        "PL_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "puzzleIds": [
+        "US-OK_1_A",
+        "IQ_2_A",
+        "UA_3_B",
+        "TH_4_B",
+        "US-GA_5_B"
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "puzzleIds": [
+        "GR_1_A",
+        "IL_2_A",
+        "SK_3_B",
+        "US-WY_4_A",
+        "AO_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-14",
+      "puzzleIds": [
+        "OM_1_A",
+        "JO_2_A",
+        "US-VT_3_A",
+        "ZW_4_A",
+        "CR_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-15",
+      "puzzleIds": [
+        "MW_1_A",
+        "SY_2_A",
+        "US-CT_3_A",
+        "NI_4_A",
+        "EC_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "puzzleIds": [
+        "SI_1_A",
+        "US-MD_2_A",
+        "SV_3_A",
+        "IN-NL_4_A",
+        "US_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "puzzleIds": [
+        "LU_1_A",
+        "IN-TG_2_A",
+        "US-LA_3_A",
+        "IN-MH_4_A",
+        "GN_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "puzzleIds": [
+        "ID_1_A",
+        "PY_2_A",
+        "IN-KA_3_A",
+        "GN_4_B",
+        "US-NE_5_B"
+      ]
+    },
+    {
+      "date": "2026-03-19",
+      "puzzleIds": [
+        "IN-OR_1_A",
+        "IN-HR_2_A",
+        "KZ_3_A",
+        "NG_4_B",
+        "EE_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "puzzleIds": [
+        "IN-WB_1_A",
+        "ES_2_A",
+        "YE_3_A",
+        "US-CO_4_A",
+        "US-WY_5_B"
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "puzzleIds": [
+        "IN-PY_1_A",
+        "TD_2_A",
+        "GE_3_B",
+        "IN-WB_4_A",
+        "RW_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "puzzleIds": [
+        "US-UT_1_A",
+        "TZ_2_A",
+        "SN_3_B",
+        "RO_4_A",
+        "SI_5_B"
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "puzzleIds": [
+        "AM_1_A",
+        "CO_2_A",
+        "GT_3_B",
+        "US-KY_4_B",
+        "LB_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "puzzleIds": [
+        "IT_1_A",
+        "IN-MN_2_A",
+        "IQ_3_A",
+        "MK_4_B",
+        "US-FL_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-25",
+      "puzzleIds": [
+        "US-NE_1_A",
+        "PE_2_A",
+        "ME_3_A",
+        "MZ_4_B",
+        "PE_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "puzzleIds": [
+        "UZ_1_A",
+        "IN-MZ_2_A",
+        "AL_3_A",
+        "KG_4_A",
+        "MZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "puzzleIds": [
+        "US-TN_1_A",
+        "VE_2_A",
+        "CH_3_B",
+        "AL_4_B",
+        "PS_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "puzzleIds": [
+        "IN-UT_1_A",
+        "LU_2_A",
+        "GE_3_A",
+        "AL_4_A",
+        "US-OK_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-29",
+      "puzzleIds": [
+        "US-TX_1_A",
+        "US-IN_2_A",
+        "IN-HP_3_A",
+        "TZ_4_B",
+        "US-OR_5_A"
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "puzzleIds": [
+        "SS_1_A",
+        "SY_2_A",
+        "US-TX_3_B",
+        "BA_4_A",
+        "IQ_5_B"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "puzzleIds": [
+        "AR_1_A",
+        "US-NM_2_A",
+        "ZM_3_A",
+        "US-NM_4_A",
+        "AR_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "puzzleIds": [
+        "AZ_1_A",
+        "US-PA_2_A",
+        "TH_3_A",
+        "TJ_4_A",
+        "CF_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "puzzleIds": [
+        "JO_1_A",
+        "GE_2_A",
+        "SY_3_A",
+        "US-OR_4_A",
+        "BE_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "puzzleIds": [
+        "BE_1_A",
+        "US-WI_2_A",
+        "IN-RJ_3_B",
+        "HN_4_A",
+        "US-AR_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "puzzleIds": [
+        "GY_1_A",
+        "HN_2_A",
+        "MR_3_B",
+        "US-KS_4_A",
+        "OM_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "puzzleIds": [
+        "IN-KA_1_A",
+        "US-GA_2_A",
+        "IN-HR_3_A",
+        "CZ_4_B",
+        "IN-WB_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "puzzleIds": [
+        "MX_1_A",
+        "IN-UP_2_A",
+        "US-TN_3_B",
+        "TD_4_B",
+        "US-ID_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-07",
+      "puzzleIds": [
+        "ME_1_A",
+        "BO_2_A",
+        "IN-NL_3_A",
+        "US-VT_4_A",
+        "TD_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "puzzleIds": [
+        "SY_1_A",
+        "IN-GJ_2_A",
+        "IL_3_B",
+        "SS_4_B",
+        "CN_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "puzzleIds": [
+        "NO_1_A",
+        "HN_2_A",
+        "US-NV_3_B",
+        "IN-GJ_4_A",
+        "IN-HR_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-10",
+      "puzzleIds": [
+        "IN-NL_1_A",
+        "US-KY_2_A",
+        "IN-CH_3_A",
+        "NA_4_A",
+        "SR_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "puzzleIds": [
+        "IN-GJ_1_A",
+        "GR_2_A",
+        "IN-WB_3_A",
+        "CO_4_B",
+        "CZ_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "puzzleIds": [
+        "US-AZ_1_A",
+        "GH_2_A",
+        "RU_3_B",
+        "CF_4_B",
+        "CN_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "puzzleIds": [
+        "BJ_1_A",
+        "BR_2_A",
+        "US-NM_3_B",
+        "IN-AR_4_A",
+        "BY_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-14",
+      "puzzleIds": [
+        "MZ_1_A",
+        "PE_2_A",
+        "US-AZ_3_B",
+        "US-SD_4_B",
+        "XK_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-15",
+      "puzzleIds": [
+        "PE_1_A",
+        "CL_2_A",
+        "LY_3_A",
+        "RW_4_B",
+        "US-MA_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-16",
+      "puzzleIds": [
+        "FI_1_A",
+        "RS_2_A",
+        "US-IN_3_B",
+        "BJ_4_A",
+        "US-MD_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "puzzleIds": [
+        "US-MO_1_A",
+        "TH_2_A",
+        "IN-MN_3_A",
+        "HU_4_A",
+        "US-NY_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "puzzleIds": [
+        "CO_1_A",
+        "US-OK_2_A",
+        "DZ_3_A",
+        "US-NC_4_B",
+        "BO_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "puzzleIds": [
+        "US-MI_1_A",
+        "RW_2_A",
+        "CF_3_B",
+        "FI_4_A",
+        "LY_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-20",
+      "puzzleIds": [
+        "US-OH_1_A",
+        "GT_2_A",
+        "IN-AP_3_A",
+        "TH_4_A",
+        "FR_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "puzzleIds": [
+        "FR_1_A",
+        "US-TX_2_A",
+        "SD_3_A",
+        "IN-DL_4_A",
+        "GT_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-22",
+      "puzzleIds": [
+        "US-AR_1_A",
+        "US-IL_2_A",
+        "LT_3_B",
+        "OM_4_A",
+        "ET_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "puzzleIds": [
+        "MY_1_A",
+        "US-NE_2_A",
+        "ZW_3_A",
+        "BI_4_A",
+        "UY_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "puzzleIds": [
+        "GT_1_A",
+        "CN_2_A",
+        "IQ_3_B",
+        "NA_4_B",
+        "CD_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "puzzleIds": [
+        "TJ_1_A",
+        "IN-WB_2_A",
+        "TJ_3_A",
+        "IN-MH_4_B",
+        "AE_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "puzzleIds": [
+        "ZW_1_A",
+        "ER_2_A",
+        "VN_3_A",
+        "BD_4_A",
+        "GQ_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-27",
+      "puzzleIds": [
+        "GN_1_A",
+        "UA_2_A",
+        "BZ_3_A",
+        "US-NM_4_B",
+        "CG_5_B"
+      ]
+    },
+    {
+      "date": "2026-04-28",
+      "puzzleIds": [
+        "US-NJ_1_A",
+        "US-CT_2_A",
+        "GQ_3_A",
+        "BR_4_A",
+        "US-ND_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "puzzleIds": [
+        "CL_1_A",
+        "FI_2_A",
+        "EH_3_A",
+        "GE_4_B",
+        "US-CT_5_A"
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "puzzleIds": [
+        "US-CO_1_A",
+        "SD_2_A",
+        "RW_3_B",
+        "AO_4_A",
+        "IN-TR_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "puzzleIds": [
+        "NE_1_A",
+        "ML_2_A",
+        "NE_3_B",
+        "IN-MZ_4_A",
+        "IN-JH_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "puzzleIds": [
+        "UG_1_A",
+        "DZ_2_A",
+        "SS_3_A",
+        "ZA_4_A",
+        "US-UT_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "puzzleIds": [
+        "JO_1_A",
+        "HU_2_A",
+        "GY_3_A",
+        "IN-PB_4_B",
+        "ME_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "puzzleIds": [
+        "ES_1_A",
+        "IN-JH_2_A",
+        "BY_3_B",
+        "CO_4_B",
+        "NG_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "puzzleIds": [
+        "AT_1_A",
+        "IN-UT_2_A",
+        "IR_3_B",
+        "US-OK_4_A",
+        "UZ_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "puzzleIds": [
+        "IN-PB_1_A",
+        "NA_2_A",
+        "IN-GA_3_A",
+        "UA_4_B",
+        "BG_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "puzzleIds": [
+        "SD_1_A",
+        "IN-KL_2_A",
+        "IN-JH_3_B",
+        "ME_4_A",
+        "SS_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "puzzleIds": [
+        "PE_1_A",
+        "IN-BR_2_A",
+        "US-PA_3_B",
+        "NE_4_B",
+        "IL_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "puzzleIds": [
+        "RW_1_A",
+        "ME_2_A",
+        "MZ_3_B",
+        "MZ_4_A",
+        "SV_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-10",
+      "puzzleIds": [
+        "NA_1_A",
+        "MK_2_A",
+        "US-MA_3_A",
+        "CN_4_B",
+        "DJ_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "puzzleIds": [
+        "MM_1_A",
+        "US-ID_2_A",
+        "US-OR_3_B",
+        "US-GA_4_A",
+        "MK_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "puzzleIds": [
+        "IN-CT_1_A",
+        "PY_2_A",
+        "IN-KL_3_A",
+        "CL_4_A",
+        "HU_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "puzzleIds": [
+        "IN-AS_1_A",
+        "GT_2_A",
+        "AL_3_B",
+        "US-PA_4_B",
+        "US-WA_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "puzzleIds": [
+        "CG_1_A",
+        "DE_2_A",
+        "IN-MH_3_B",
+        "BW_4_B",
+        "ZA_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "puzzleIds": [
+        "SY_1_A",
+        "BJ_2_A",
+        "AO_3_B",
+        "IN-KA_4_B",
+        "SS_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "puzzleIds": [
+        "DE_1_A",
+        "US-TN_2_A",
+        "SA_3_A",
+        "US-IA_4_A",
+        "IN-MP_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "puzzleIds": [
+        "IR_1_A",
+        "IN-AP_2_A",
+        "KZ_3_B",
+        "US-DC_4_A",
+        "TJ_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "puzzleIds": [
+        "IL_1_A",
+        "MM_2_A",
+        "BI_3_A",
+        "LV_4_B",
+        "IN-MZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "puzzleIds": [
+        "IN-HP_1_A",
+        "MW_2_A",
+        "US-NY_3_B",
+        "TM_4_B",
+        "US-IA_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "puzzleIds": [
+        "PY_1_A",
+        "CO_2_A",
+        "US-OK_3_B",
+        "SA_4_A",
+        "PK_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "puzzleIds": [
+        "US-PA_1_A",
+        "GY_2_A",
+        "IN-MH_3_A",
+        "IQ_4_B",
+        "US-NM_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "puzzleIds": [
+        "US-WY_1_A",
+        "PL_2_A",
+        "MX_3_A",
+        "SZ_4_A",
+        "CH_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "puzzleIds": [
+        "GT_1_A",
+        "LR_2_A",
+        "VE_3_A",
+        "MA_4_A",
+        "BZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "puzzleIds": [
+        "IN-MP_1_A",
+        "AF_2_A",
+        "HN_3_A",
+        "CM_4_B",
+        "MR_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "puzzleIds": [
+        "BY_1_A",
+        "LV_2_A",
+        "DE_3_A",
+        "SA_4_B",
+        "IN-WB_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "puzzleIds": [
+        "US-WI_1_A",
+        "US-VA_2_A",
+        "NP_3_A",
+        "US-OH_4_A",
+        "US-TN_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "puzzleIds": [
+        "IN-RJ_1_A",
+        "ET_2_A",
+        "CD_3_B",
+        "US-CA_4_A",
+        "IN_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "puzzleIds": [
+        "AO_1_A",
+        "GN_2_A",
+        "US-WI_3_B",
+        "MK_4_A",
+        "IN-GJ_5_B"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "puzzleIds": [
+        "EH_1_A",
+        "SK_2_A",
+        "US-AR_3_A",
+        "OM_4_A",
+        "US-SD_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "puzzleIds": [
+        "CH_1_A",
+        "US-WY_2_A",
+        "HN_3_A",
+        "SO_4_A",
+        "BR_5_A"
+      ]
+    },
+    {
+      "date": "2026-05-31",
+      "puzzleIds": [
+        "VE_1_A",
+        "BG_2_A",
+        "RS_3_B",
+        "KE_4_A",
+        "US-VA_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "puzzleIds": [
+        "US-IA_1_A",
+        "CL_2_A",
+        "AR_3_A",
+        "BW_4_A",
+        "SK_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "puzzleIds": [
+        "US-MA_1_A",
+        "AM_2_A",
+        "ZM_3_B",
+        "UA_4_A",
+        "SD_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "puzzleIds": [
+        "US-CA_1_A",
+        "ZA_2_A",
+        "CL_3_A",
+        "CO_4_A",
+        "US-OK_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "puzzleIds": [
+        "US-NV_1_A",
+        "US-CO_2_A",
+        "AM_3_A",
+        "LT_4_B",
+        "SI_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "puzzleIds": [
+        "US-SD_1_A",
+        "BA_2_A",
+        "BF_3_B",
+        "AO_4_B",
+        "AL_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "puzzleIds": [
+        "CN_1_A",
+        "IN_2_A",
+        "US-MD_3_A",
+        "TD_4_A",
+        "ZW_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "puzzleIds": [
+        "TD_1_A",
+        "IL_2_A",
+        "SV_3_A",
+        "MM_4_A",
+        "US-NC_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "puzzleIds": [
+        "KZ_1_A",
+        "JO_2_A",
+        "BR_3_A",
+        "SY_4_B",
+        "TH_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "puzzleIds": [
+        "US-DE_1_A",
+        "RO_2_A",
+        "MK_3_B",
+        "CG_4_B",
+        "IQ_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "puzzleIds": [
+        "PY_1_A",
+        "MX_2_A",
+        "BO_3_B",
+        "DZ_4_B",
+        "NI_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "puzzleIds": [
+        "IN-MN_1_A",
+        "LA_2_A",
+        "PL_3_B",
+        "BZ_4_A",
+        "US-MT_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "puzzleIds": [
+        "US-GA_1_A",
+        "US-MA_2_A",
+        "BT_3_A",
+        "GT_4_B",
+        "CD_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "puzzleIds": [
+        "IL_1_A",
+        "BW_2_A",
+        "AO_3_A",
+        "IN-JH_4_A",
+        "AZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "puzzleIds": [
+        "LA_1_A",
+        "BR_2_A",
+        "NA_3_A",
+        "IT_4_A",
+        "IQ_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "puzzleIds": [
+        "SA_1_A",
+        "ZM_2_A",
+        "RO_3_A",
+        "US-VA_4_B",
+        "KW_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "puzzleIds": [
+        "HN_1_A",
+        "NO_2_A",
+        "IN-UP_3_A",
+        "IN-WB_4_B",
+        "XK_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "puzzleIds": [
+        "XK_1_A",
+        "US-NY_2_A",
+        "CN_3_A",
+        "AE_4_A",
+        "BY_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "puzzleIds": [
+        "CM_1_A",
+        "AL_2_A",
+        "US-VA_3_B",
+        "ZW_4_B",
+        "US-PA_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "puzzleIds": [
+        "IN-HR_1_A",
+        "AR_2_A",
+        "IN-PB_3_A",
+        "IN-BR_4_A",
+        "CR_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "puzzleIds": [
+        "SN_1_A",
+        "GY_2_A",
+        "NL_3_A",
+        "MN_4_A",
+        "LV_5_B"
+      ]
+    },
+    {
+      "date": "2026-06-21",
+      "puzzleIds": [
+        "CO_1_A",
+        "ID_2_A",
+        "US-SD_3_B",
+        "US-IL_4_B",
+        "AT_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "puzzleIds": [
+        "BO_1_A",
+        "US-UT_2_A",
+        "SR_3_A",
+        "AR_4_A",
+        "US-IN_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "puzzleIds": [
+        "PL_1_A",
+        "IN-MP_2_A",
+        "US-KY_3_A",
+        "IN-DN_4_A",
+        "CL_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "puzzleIds": [
+        "TH_1_A",
+        "CM_2_A",
+        "CI_3_A",
+        "AR_4_B",
+        "UY_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "puzzleIds": [
+        "BI_1_A",
+        "BF_2_A",
+        "HR_3_A",
+        "KZ_4_A",
+        "GR_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "puzzleIds": [
+        "IN-MZ_1_A",
+        "CH_2_A",
+        "NE_3_A",
+        "GT_4_A",
+        "DE_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-27",
+      "puzzleIds": [
+        "BG_1_A",
+        "KZ_2_A",
+        "MA_3_A",
+        "MX_4_A",
+        "NE_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-28",
+      "puzzleIds": [
+        "US-MN_1_A",
+        "SA_2_A",
+        "BF_3_A",
+        "PK_4_A",
+        "UA_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "puzzleIds": [
+        "ML_1_A",
+        "US-OR_2_A",
+        "US-ND_3_A",
+        "BG_4_A",
+        "ZM_5_A"
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "puzzleIds": [
+        "LY_1_A",
+        "HR_2_A",
+        "IL_3_B",
+        "US-TN_4_B",
+        "EG_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "puzzleIds": [
+        "SA_1_A",
+        "IN-KA_2_A",
+        "US-AL_3_B",
+        "US-MA_4_B",
+        "AO_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "puzzleIds": [
+        "IQ_1_A",
+        "CZ_2_A",
+        "US-CO_3_B",
+        "US-MN_4_A",
+        "SL_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "puzzleIds": [
+        "BR_1_A",
+        "OM_2_A",
+        "SA_3_B",
+        "SI_4_A",
+        "GE_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "puzzleIds": [
+        "CD_1_A",
+        "CG_2_A",
+        "LY_3_B",
+        "PY_4_A",
+        "GN_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "puzzleIds": [
+        "KE_1_A",
+        "MR_2_A",
+        "PY_3_A",
+        "JO_4_A",
+        "NP_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "puzzleIds": [
+        "BW_1_A",
+        "SI_2_A",
+        "CH_3_A",
+        "AF_4_A",
+        "SA_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "puzzleIds": [
+        "VN_1_A",
+        "AZ_2_A",
+        "AF_3_A",
+        "BE_4_A",
+        "IN-HP_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "puzzleIds": [
+        "KP_1_A",
+        "BE_2_A",
+        "PK_3_B",
+        "CF_4_A",
+        "BO_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "puzzleIds": [
+        "US-NY_1_A",
+        "IN-RJ_2_A",
+        "PE_3_A",
+        "LB_4_A",
+        "BZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "puzzleIds": [
+        "CZ_1_A",
+        "BY_2_A",
+        "IQ_3_A",
+        "US-WV_4_A",
+        "JO_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "puzzleIds": [
+        "IN-KL_1_A",
+        "IN-CT_2_A",
+        "BE_3_B",
+        "BZ_4_A",
+        "US-KS_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "puzzleIds": [
+        "BF_1_A",
+        "IQ_2_A",
+        "NI_3_A",
+        "US-VA_4_A",
+        "US-VA_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "puzzleIds": [
+        "AF_1_A",
+        "US-SD_2_A",
+        "IN-DN_3_A",
+        "IN-HR_4_B",
+        "RS_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "puzzleIds": [
+        "MK_1_A",
+        "IT_2_A",
+        "IN-CT_3_B",
+        "GT_4_A",
+        "US-IN_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "puzzleIds": [
+        "IN-RJ_1_A",
+        "IN-TG_2_A",
+        "TM_3_B",
+        "IN-OR_4_A",
+        "IN-PY_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "puzzleIds": [
+        "CO_1_A",
+        "SS_2_A",
+        "NG_3_A",
+        "US-WA_4_A",
+        "IN-AS_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "puzzleIds": [
+        "TR_1_A",
+        "US-OR_2_A",
+        "GT_3_A",
+        "RU_4_A",
+        "NA_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "puzzleIds": [
+        "IN-MN_1_A",
+        "KP_2_A",
+        "AR_3_B",
+        "EC_4_A",
+        "MD_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "puzzleIds": [
+        "RU_1_A",
+        "LR_2_A",
+        "US-NY_3_A",
+        "UY_4_A",
+        "US-WV_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "puzzleIds": [
+        "US-SD_1_A",
+        "ES_2_A",
+        "IN-RJ_3_A",
+        "IN-MP_4_B",
+        "MX_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "puzzleIds": [
+        "GT_1_A",
+        "US-MO_2_A",
+        "LA_3_A",
+        "IR_4_A",
+        "CZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "puzzleIds": [
+        "US-OH_1_A",
+        "US-ND_2_A",
+        "EC_3_A",
+        "JO_4_B",
+        "IN-GJ_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "puzzleIds": [
+        "IN-UP_1_A",
+        "IN-MZ_2_A",
+        "JO_3_A",
+        "ID_4_A",
+        "IN-BR_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "puzzleIds": [
+        "HR_1_A",
+        "US-LA_2_A",
+        "BD_3_A",
+        "CD_4_A",
+        "IN-AP_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "puzzleIds": [
+        "US-KY_1_A",
+        "PE_2_A",
+        "CO_3_A",
+        "IN-AS_4_A",
+        "TR_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "puzzleIds": [
+        "PK_1_A",
+        "BR_2_A",
+        "US-MI_3_A",
+        "US-UT_4_B",
+        "RO_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "puzzleIds": [
+        "US-MD_1_A",
+        "FR_2_A",
+        "IT_3_B",
+        "IN-CT_4_A",
+        "US-WY_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "puzzleIds": [
+        "MX_1_A",
+        "NE_2_A",
+        "SL_3_A",
+        "PL_4_B",
+        "US-KY_5_B"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "puzzleIds": [
+        "US-DE_1_A",
+        "AR_2_A",
+        "US-GA_3_A",
+        "DJ_4_A",
+        "US-NE_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "puzzleIds": [
+        "SY_1_A",
+        "SI_2_A",
+        "US-NC_3_B",
+        "SN_4_B",
+        "US-TX_5_A"
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "puzzleIds": [
+        "SN_1_A",
+        "IN-PY_2_A",
+        "US-OK_3_A",
+        "LR_4_A",
+        "AD_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "puzzleIds": [
+        "PE_1_A",
+        "GR_2_A",
+        "CZ_3_B",
+        "NP_4_A",
+        "IN-TN_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "puzzleIds": [
+        "UZ_1_A",
+        "US-NY_2_A",
+        "TH_3_B",
+        "KW_4_A",
+        "US-CA_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "puzzleIds": [
+        "IN-CT_1_A",
+        "US-DE_2_A",
+        "US-PA_3_A",
+        "NE_4_A",
+        "MN_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "puzzleIds": [
+        "ZW_1_A",
+        "NO_2_A",
+        "PY_3_A",
+        "GH_4_A",
+        "MZ_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "puzzleIds": [
+        "TZ_1_A",
+        "GH_2_A",
+        "CZ_3_A",
+        "IN-TN_4_B",
+        "US-CO_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "puzzleIds": [
+        "US-NV_1_A",
+        "KZ_2_A",
+        "BG_3_B",
+        "LV_4_A",
+        "KZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "puzzleIds": [
+        "IN-TG_1_A",
+        "IN-NL_2_A",
+        "BE_3_A",
+        "SA_4_B",
+        "PY_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "puzzleIds": [
+        "PY_1_A",
+        "US-NE_2_A",
+        "US-VA_3_A",
+        "LU_4_A",
+        "MA_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-09",
+      "puzzleIds": [
+        "MY_1_A",
+        "US-NH_2_A",
+        "CM_3_B",
+        "US-GA_4_B",
+        "AL_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "puzzleIds": [
+        "IR_1_A",
+        "ML_2_A",
+        "TJ_3_B",
+        "US-TX_4_A",
+        "RS_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "puzzleIds": [
+        "IN-OR_1_A",
+        "CG_2_A",
+        "TZ_3_B",
+        "CR_4_A",
+        "BR_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "puzzleIds": [
+        "JO_1_A",
+        "IN-HR_2_A",
+        "CG_3_B",
+        "ET_4_B",
+        "ZM_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "puzzleIds": [
+        "OM_1_A",
+        "US-CO_2_A",
+        "US-MD_3_B",
+        "VN_4_A",
+        "BE_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "puzzleIds": [
+        "IN-TN_1_A",
+        "SA_2_A",
+        "CR_3_A",
+        "LB_4_A",
+        "SO_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "puzzleIds": [
+        "US-AZ_1_A",
+        "TJ_2_A",
+        "IN-HP_3_B",
+        "PE_4_A",
+        "US-PA_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "puzzleIds": [
+        "CL_1_A",
+        "IL_2_A",
+        "IN-AS_3_B",
+        "AD_4_A",
+        "UG_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "puzzleIds": [
+        "OM_1_A",
+        "US-AR_2_A",
+        "ZA_3_A",
+        "US-MT_4_A",
+        "CG_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "puzzleIds": [
+        "IN-AS_1_A",
+        "PL_2_A",
+        "US-DC_3_A",
+        "IN-JH_4_B",
+        "US-RI_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "puzzleIds": [
+        "US-LA_1_A",
+        "GY_2_A",
+        "RS_3_A",
+        "GY_4_A",
+        "PE_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "puzzleIds": [
+        "US-TX_1_A",
+        "IN-RJ_2_A",
+        "MW_3_A",
+        "TZ_4_A",
+        "US-MS_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "puzzleIds": [
+        "UA_1_A",
+        "IN-KL_2_A",
+        "IN-PB_3_B",
+        "IN-MN_4_A",
+        "LA_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "puzzleIds": [
+        "BY_1_A",
+        "LA_2_A",
+        "KW_3_A",
+        "IL_4_B",
+        "AM_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "puzzleIds": [
+        "IT_1_A",
+        "SA_2_A",
+        "BO_3_A",
+        "CN_4_A",
+        "BZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "puzzleIds": [
+        "US-OK_1_A",
+        "HN_2_A",
+        "GA_3_A",
+        "CO_4_A",
+        "IN-HR_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "puzzleIds": [
+        "IN_1_A",
+        "IT_2_A",
+        "BZ_3_A",
+        "ZA_4_B",
+        "SA_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "puzzleIds": [
+        "BJ_1_A",
+        "MW_2_A",
+        "IN-GJ_3_A",
+        "BF_4_B",
+        "US-MN_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "puzzleIds": [
+        "KG_1_A",
+        "IN-TN_2_A",
+        "XK_3_A",
+        "CR_4_A",
+        "LA_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "puzzleIds": [
+        "SI_1_A",
+        "IN-BR_2_A",
+        "PK_3_A",
+        "GW_4_A",
+        "IL_5_B"
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "puzzleIds": [
+        "BE_1_A",
+        "US-WV_2_A",
+        "NG_3_B",
+        "PK_4_B",
+        "US-NY_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "puzzleIds": [
+        "US-NH_1_A",
+        "AL_2_A",
+        "GY_3_A",
+        "LY_4_A",
+        "VN_5_A"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "puzzleIds": [
+        "JO_1_A",
+        "TZ_2_A",
+        "US-AR_3_B",
+        "CZ_4_A",
+        "NO_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "puzzleIds": [
+        "US-MN_1_A",
+        "CL_2_A",
+        "IN-AR_3_A",
+        "US-NV_4_B",
+        "IN-KA_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "puzzleIds": [
+        "BW_1_A",
+        "IN-WB_2_A",
+        "YE_3_A",
+        "BG_4_B",
+        "MM_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "puzzleIds": [
+        "GE_1_A",
+        "IQ_2_A",
+        "SN_3_A",
+        "HN_4_A",
+        "HN_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "puzzleIds": [
+        "HU_1_A",
+        "ME_2_A",
+        "PE_3_B",
+        "VE_4_A",
+        "US-NV_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "puzzleIds": [
+        "RS_1_A",
+        "IR_2_A",
+        "LT_3_A",
+        "SY_4_A",
+        "IN-MH_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "puzzleIds": [
+        "IQ_1_A",
+        "US-OH_2_A",
+        "US-MT_3_A",
+        "KH_4_A",
+        "US-IL_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "puzzleIds": [
+        "IN-PY_1_A",
+        "PE_2_A",
+        "US-FL_3_A",
+        "IQ_4_B",
+        "NG_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "puzzleIds": [
+        "GT_1_A",
+        "ER_2_A",
+        "ID_3_A",
+        "US-RI_4_A",
+        "BJ_5_B"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "puzzleIds": [
+        "LR_1_A",
+        "HN_2_A",
+        "NO_3_A",
+        "IN-TR_4_A",
+        "GT_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "puzzleIds": [
+        "US-ND_1_A",
+        "US-MA_2_A",
+        "US-KY_3_B",
+        "GN_4_A",
+        "IN-NL_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "puzzleIds": [
+        "MM_1_A",
+        "AT_2_A",
+        "MR_3_A",
+        "US-UT_4_A",
+        "SY_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "puzzleIds": [
+        "IN-JH_1_A",
+        "PY_2_A",
+        "NA_3_B",
+        "IN_4_B",
+        "BG_5_B"
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "puzzleIds": [
+        "IN-MH_1_A",
+        "US-NM_2_A",
+        "US-CA_3_A",
+        "US-MO_4_B",
+        "US-OH_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "puzzleIds": [
+        "HN_1_A",
+        "RU_2_A",
+        "HR_3_B",
+        "US-WI_4_A",
+        "CO_5_B"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "puzzleIds": [
+        "CO_1_A",
+        "LV_2_A",
+        "SY_3_A",
+        "MX_4_A",
+        "IN-MN_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "puzzleIds": [
+        "NA_1_A",
+        "CO_2_A",
+        "FI_3_A",
+        "TG_4_A",
+        "IN-AP_5_B"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "puzzleIds": [
+        "BF_1_A",
+        "BE_2_A",
+        "SV_3_A",
+        "SK_4_B",
+        "SE_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "puzzleIds": [
+        "US-WI_1_A",
+        "BY_2_A",
+        "US-GA_3_B",
+        "IN-GA_4_A",
+        "US-OR_5_B"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "puzzleIds": [
+        "US-MA_1_A",
+        "IN-KA_2_A",
+        "AR_3_A",
+        "GA_4_A",
+        "NI_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "puzzleIds": [
+        "GH_1_A",
+        "AF_2_A",
+        "BO_3_A",
+        "EH_4_A",
+        "IL_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "puzzleIds": [
+        "ET_1_A",
+        "US-NV_2_A",
+        "CG_3_A",
+        "ME_4_B",
+        "HU_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "puzzleIds": [
+        "US-AR_1_A",
+        "US-WI_2_A",
+        "US-MO_3_A",
+        "IN-HP_4_B",
+        "IN-KL_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "puzzleIds": [
+        "IN-AP_1_A",
+        "AZ_2_A",
+        "AF_3_B",
+        "IN-RJ_4_A",
+        "PA_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "puzzleIds": [
+        "BR_1_A",
+        "KH_2_A",
+        "AZ_3_B",
+        "TR_4_B",
+        "KW_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "puzzleIds": [
+        "AT_1_A",
+        "ZA_2_A",
+        "UZ_3_A",
+        "HU_4_B",
+        "BT_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "puzzleIds": [
+        "US-MI_1_A",
+        "US-IL_2_A",
+        "IN-UT_3_A",
+        "AT_4_B",
+        "NA_5_B"
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "puzzleIds": [
+        "US-ID_1_A",
+        "UZ_2_A",
+        "IN-TG_3_A",
+        "TR_4_A",
+        "US-UT_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "puzzleIds": [
+        "AR_1_A",
+        "US-MS_2_A",
+        "IN-JK_3_A",
+        "UY_4_A",
+        "ID_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "puzzleIds": [
+        "BO_1_A",
+        "JO_2_A",
+        "RO_3_B",
+        "NL_4_A",
+        "PE_5_A"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "puzzleIds": [
+        "AL_1_A",
+        "BI_2_A",
+        "GN_3_B",
+        "US-NC_4_A",
+        "TZ_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "puzzleIds": [
+        "GA_1_A",
+        "SN_2_A",
+        "GT_3_B",
+        "IN-HR_4_A",
+        "GT_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "puzzleIds": [
+        "US-AL_1_A",
+        "GT_2_A",
+        "ZW_3_B",
+        "XK_4_B",
+        "IN-UP_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "puzzleIds": [
+        "CG_1_A",
+        "IN-AP_2_A",
+        "EE_3_A",
+        "IN-PY_4_A",
+        "SY_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "puzzleIds": [
+        "RU_1_A",
+        "XK_2_A",
+        "EG_3_A",
+        "US-NY_4_A",
+        "US-NM_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "puzzleIds": [
+        "GT_1_A",
+        "CO_2_A",
+        "MX_3_A",
+        "SD_4_A",
+        "US-MO_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "puzzleIds": [
+        "MR_1_A",
+        "US-AZ_2_A",
+        "ES_3_A",
+        "IN-CT_4_B",
+        "IN-UT_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "puzzleIds": [
+        "CI_1_A",
+        "CN_2_A",
+        "IN-DL_3_A",
+        "CR_4_A",
+        "US-MN_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "puzzleIds": [
+        "PL_1_A",
+        "NG_2_A",
+        "LB_3_A",
+        "AE_4_A",
+        "US-NH_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "puzzleIds": [
+        "KP_1_A",
+        "GY_2_A",
+        "US-UT_3_B",
+        "IQ_4_A",
+        "BF_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "puzzleIds": [
+        "KE_1_A",
+        "VN_2_A",
+        "TD_3_A",
+        "IN-TG_4_B",
+        "US-VT_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "puzzleIds": [
+        "GY_1_A",
+        "ZW_2_A",
+        "AZ_3_A",
+        "IN-KL_4_A",
+        "US-WI_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "puzzleIds": [
+        "UG_1_A",
+        "US-IN_2_A",
+        "US-NE_3_A",
+        "US-AR_4_A",
+        "AE_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "puzzleIds": [
+        "HN_1_A",
+        "AR_2_A",
+        "XK_3_B",
+        "SI_4_B",
+        "TJ_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "puzzleIds": [
+        "HN_1_A",
+        "RU_2_A",
+        "ML_3_A",
+        "US-SD_4_A",
+        "ID_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "puzzleIds": [
+        "AR_1_A",
+        "NA_2_A",
+        "SI_3_A",
+        "SD_4_B",
+        "US-MT_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "puzzleIds": [
+        "ME_1_A",
+        "GA_2_A",
+        "BR_3_B",
+        "GY_4_A",
+        "LV_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "puzzleIds": [
+        "US-VA_1_A",
+        "IN-PB_2_A",
+        "US-MT_3_B",
+        "GR_4_B",
+        "US-TX_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "puzzleIds": [
+        "SD_1_A",
+        "HU_2_A",
+        "BA_3_A",
+        "US-IN_4_A",
+        "GR_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "puzzleIds": [
+        "IL_1_A",
+        "HR_2_A",
+        "US-IA_3_B",
+        "MX_4_A",
+        "GA_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "puzzleIds": [
+        "SS_1_A",
+        "US-KY_2_A",
+        "US-UT_3_A",
+        "US-NE_4_B",
+        "US-AL_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "puzzleIds": [
+        "ZA_1_A",
+        "IN-MH_2_A",
+        "CO_3_B",
+        "US-ND_4_A",
+        "MY_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "puzzleIds": [
+        "CL_1_A",
+        "IN-UP_2_A",
+        "FR_3_B",
+        "US-NY_4_B",
+        "IT_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "puzzleIds": [
+        "US-KS_1_A",
+        "US-ID_2_A",
+        "GT_3_B",
+        "GE_4_A",
+        "IN_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "puzzleIds": [
+        "NE_1_A",
+        "US-PA_2_A",
+        "US-TN_3_A",
+        "CM_4_A",
+        "MK_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "puzzleIds": [
+        "CM_1_A",
+        "US-TN_2_A",
+        "PE_3_A",
+        "US-AZ_4_A",
+        "CL_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "puzzleIds": [
+        "US-MO_1_A",
+        "BW_2_A",
+        "IN-PY_3_A",
+        "US-OH_4_B",
+        "KH_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "puzzleIds": [
+        "BA_1_A",
+        "BO_2_A",
+        "SD_3_B",
+        "US-ID_4_B",
+        "MX_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "puzzleIds": [
+        "IN-KL_1_A",
+        "US-MT_2_A",
+        "OM_3_A",
+        "IL_4_B",
+        "IN-GA_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "puzzleIds": [
+        "US-TN_1_A",
+        "US-IA_2_A",
+        "RU_3_A",
+        "IN-AP_4_B",
+        "US-DE_5_A"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "puzzleIds": [
+        "US-IN_1_A",
+        "LY_2_A",
+        "UA_3_A",
+        "LA_4_A",
+        "IN-CT_5_B"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "puzzleIds": [
+        "RW_1_A",
+        "RO_2_A",
+        "RU_3_A",
+        "FR_4_B",
+        "FI_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "puzzleIds": [
+        "US-MT_1_A",
+        "HN_2_A",
+        "IN-TG_3_B",
+        "SY_4_A",
+        "KE_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "puzzleIds": [
+        "XK_1_A",
+        "TD_2_A",
+        "TD_3_B",
+        "SV_4_A",
+        "KZ_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "puzzleIds": [
+        "DZ_1_A",
+        "IN-CT_2_A",
+        "BO_3_B",
+        "US-IL_4_A",
+        "HN_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "puzzleIds": [
+        "RO_1_A",
+        "PY_2_A",
+        "CR_3_A",
+        "US-MI_4_A",
+        "JO_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "puzzleIds": [
+        "MK_1_A",
+        "UG_2_A",
+        "KP_3_A",
+        "GQ_4_A",
+        "TR_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "puzzleIds": [
+        "CH_1_A",
+        "OM_2_A",
+        "IN-OR_3_B",
+        "US-MD_4_B",
+        "UA_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "puzzleIds": [
+        "CF_1_A",
+        "OM_2_A",
+        "IN-HR_3_B",
+        "US-NH_4_A",
+        "PY_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "puzzleIds": [
+        "LA_1_A",
+        "LT_2_A",
+        "US-IN_3_A",
+        "US-MS_4_A",
+        "RU_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "puzzleIds": [
+        "US-IA_1_A",
+        "US-NC_2_A",
+        "BG_3_A",
+        "DE_4_B",
+        "AT_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "puzzleIds": [
+        "SA_1_A",
+        "FI_2_A",
+        "CR_3_A",
+        "IN-UP_4_B",
+        "RU_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "puzzleIds": [
+        "LV_1_A",
+        "SY_2_A",
+        "TZ_3_A",
+        "AR_4_B",
+        "IN-TG_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "puzzleIds": [
+        "US-GA_1_A",
+        "TG_2_A",
+        "SE_3_A",
+        "IN-JK_4_A",
+        "US-SD_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "puzzleIds": [
+        "US-UT_1_A",
+        "IN-MN_2_A",
+        "RU_3_B",
+        "US-LA_4_A",
+        "KE_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "puzzleIds": [
+        "US-OR_1_A",
+        "GT_2_A",
+        "AE_3_A",
+        "JO_4_A",
+        "GW_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "puzzleIds": [
+        "VE_1_A",
+        "US-AL_2_A",
+        "IN-UP_3_B",
+        "ER_4_A",
+        "KG_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "puzzleIds": [
+        "GN_1_A",
+        "IL_2_A",
+        "AE_3_A",
+        "SY_4_B",
+        "CH_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "puzzleIds": [
+        "IN-KA_1_A",
+        "RS_2_A",
+        "GR_3_B",
+        "JO_4_B",
+        "GY_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "puzzleIds": [
+        "IN-BR_1_A",
+        "BF_2_A",
+        "US-NH_3_A",
+        "ML_4_B",
+        "US-KY_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "puzzleIds": [
+        "TD_1_A",
+        "US-NJ_2_A",
+        "US-KS_3_B",
+        "BR_4_B",
+        "VE_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "puzzleIds": [
+        "TJ_1_A",
+        "IQ_2_A",
+        "IN-BR_3_A",
+        "IN-TN_4_A",
+        "US-AL_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "puzzleIds": [
+        "AZ_1_A",
+        "CZ_2_A",
+        "US-MA_3_B",
+        "ES_4_A",
+        "US-AZ_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "puzzleIds": [
+        "PY_1_A",
+        "CH_2_A",
+        "US-WY_3_B",
+        "GT_4_B",
+        "MM_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "puzzleIds": [
+        "TM_1_A",
+        "KG_2_A",
+        "KE_3_B",
+        "RW_4_A",
+        "LT_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "puzzleIds": [
+        "DE_1_A",
+        "IN-OR_2_A",
+        "TR_3_B",
+        "PL_4_A",
+        "BW_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "puzzleIds": [
+        "VN_1_A",
+        "US-TX_2_A",
+        "BW_3_A",
+        "KP_4_A",
+        "HR_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "puzzleIds": [
+        "NO_1_A",
+        "MX_2_A",
+        "ZA_3_B",
+        "US-WI_4_B",
+        "BJ_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "puzzleIds": [
+        "IN-PB_1_A",
+        "US-CA_2_A",
+        "CN_3_B",
+        "BJ_4_B",
+        "ZW_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "puzzleIds": [
+        "US-NC_1_A",
+        "LU_2_A",
+        "IN-CT_3_A",
+        "PY_4_A",
+        "DZ_5_B"
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "puzzleIds": [
+        "MZ_1_A",
+        "US-SD_2_A",
+        "IN-MP_3_A",
+        "BO_4_B",
+        "EC_5_A"
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "puzzleIds": [
+        "AF_1_A",
+        "BR_2_A",
+        "DZ_3_B",
+        "IR_4_B",
+        "US-SC_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "puzzleIds": [
+        "LY_1_A",
+        "BO_2_A",
+        "MZ_3_A",
+        "CD_4_B",
+        "US-NC_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "puzzleIds": [
+        "BI_1_A",
+        "TM_2_A",
+        "GH_3_A",
+        "PE_4_B",
+        "SR_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "puzzleIds": [
+        "CZ_1_A",
+        "CD_2_A",
+        "HN_3_A",
+        "TJ_4_B",
+        "GH_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "puzzleIds": [
+        "US-CO_1_A",
+        "CI_2_A",
+        "GN_3_A",
+        "SK_4_A",
+        "RW_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-05",
+      "puzzleIds": [
+        "ER_1_A",
+        "IN_2_A",
+        "US-OH_3_A",
+        "BO_4_B",
+        "TZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-06",
+      "puzzleIds": [
+        "AM_1_A",
+        "MK_2_A",
+        "NI_3_A",
+        "US-MS_4_B",
+        "BW_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-07",
+      "puzzleIds": [
+        "KH_1_A",
+        "JO_2_A",
+        "MN_3_A",
+        "IN_4_A",
+        "KG_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "puzzleIds": [
+        "ID_1_A",
+        "DE_2_A",
+        "ET_3_B",
+        "UZ_4_A",
+        "AR_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "puzzleIds": [
+        "SA_1_A",
+        "BJ_2_A",
+        "US-RI_3_A",
+        "IT_4_B",
+        "US-NV_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-10",
+      "puzzleIds": [
+        "VE_1_A",
+        "US-CT_2_A",
+        "IR_3_A",
+        "NI_4_A",
+        "UZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "puzzleIds": [
+        "IN-UT_1_A",
+        "CF_2_A",
+        "US-WV_3_B",
+        "RS_4_B",
+        "ET_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-12",
+      "puzzleIds": [
+        "SK_1_A",
+        "KE_2_A",
+        "IN_3_A",
+        "DZ_4_A",
+        "IN-CT_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-13",
+      "puzzleIds": [
+        "US-VT_1_A",
+        "GT_2_A",
+        "JO_3_B",
+        "US-NE_4_A",
+        "SZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-14",
+      "puzzleIds": [
+        "IN-WB_1_A",
+        "IN-UT_2_A",
+        "LV_3_A",
+        "UG_4_A",
+        "BO_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "puzzleIds": [
+        "FI_1_A",
+        "US-OK_2_A",
+        "DE_3_B",
+        "US-ID_4_A",
+        "US-IL_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-16",
+      "puzzleIds": [
+        "TG_1_A",
+        "BA_2_A",
+        "TN_3_A",
+        "UZ_4_B",
+        "ZA_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-17",
+      "puzzleIds": [
+        "PE_1_A",
+        "VE_2_A",
+        "IT_3_A",
+        "GT_4_B",
+        "CM_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-18",
+      "puzzleIds": [
+        "IL_1_A",
+        "US-GA_2_A",
+        "FR_3_A",
+        "NI_4_A",
+        "IN-DL_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-19",
+      "puzzleIds": [
+        "GY_1_A",
+        "US-WY_2_A",
+        "US-NE_3_B",
+        "SR_4_A",
+        "LI_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-20",
+      "puzzleIds": [
+        "US-NM_1_A",
+        "US-VT_2_A",
+        "GT_3_A",
+        "IN-PB_4_A",
+        "CO_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-21",
+      "puzzleIds": [
+        "US-CT_1_A",
+        "IN-GJ_2_A",
+        "PS_3_A",
+        "RS_4_A",
+        "IN-CH_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-22",
+      "puzzleIds": [
+        "AO_1_A",
+        "IN-AS_2_A",
+        "DJ_3_A",
+        "US-SC_4_A",
+        "FR_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-23",
+      "puzzleIds": [
+        "IN-HP_1_A",
+        "US-VA_2_A",
+        "KE_3_A",
+        "AT_4_A",
+        "LU_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-24",
+      "puzzleIds": [
+        "CD_1_A",
+        "VE_2_A",
+        "US-WV_3_A",
+        "MY_4_A",
+        "GT_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-25",
+      "puzzleIds": [
+        "US-NE_1_A",
+        "US-UT_2_A",
+        "US_3_A",
+        "RU_4_B",
+        "US-MA_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-26",
+      "puzzleIds": [
+        "US-NY_1_A",
+        "IN-JH_2_A",
+        "SS_3_B",
+        "US-WY_4_B",
+        "US-AZ_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-27",
+      "puzzleIds": [
+        "EH_1_A",
+        "RW_2_A",
+        "US-OH_3_B",
+        "IQ_4_A",
+        "ME_5_B"
+      ]
+    },
+    {
+      "date": "2026-12-28",
+      "puzzleIds": [
+        "IN-MP_1_A",
+        "AM_2_A",
+        "UZ_3_B",
+        "US-CO_4_B",
+        "ER_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-29",
+      "puzzleIds": [
+        "IN-NL_1_A",
+        "US-MN_2_A",
+        "IN-AS_3_A",
+        "EG_4_A",
+        "CO_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-30",
+      "puzzleIds": [
+        "CN_1_A",
+        "MY_2_A",
+        "JO_3_B",
+        "IN-UT_4_A",
+        "IN-TN_5_A"
+      ]
+    },
+    {
+      "date": "2026-12-31",
+      "puzzleIds": [
+        "ML_1_A",
+        "SY_2_A",
+        "US-NC_3_A",
+        "US-AL_4_B",
+        "AF_5_B"
+      ]
+    }
+  ]
+}

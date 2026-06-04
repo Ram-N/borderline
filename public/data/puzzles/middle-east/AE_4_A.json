@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "AE_4_A",
+    "countryCode": "AE",
+    "countryName": "United Arab Emirates",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "middle-east",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.775Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "AE",
+    "visibleNeighbors": [
+      "OM"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "SA"
+    ],
+    "contextCountries": [
+      "LB",
+      "YE"
+    ],
+    "choices": [
+      "LB",
+      "SA",
+      "OM",
+      "YE"
+    ],
+    "correctAnswer": "SA",
+    "svgMap": "/images/maps/region_world_middleEastLow.svg",
+    "region": "middle-east"
+  }
+}

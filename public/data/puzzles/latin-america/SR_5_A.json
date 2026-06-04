@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "SR_5_A",
+    "countryCode": "SR",
+    "countryName": "Suriname",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "latin-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.756Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SR",
+    "visibleNeighbors": [
+      "BR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "GY"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "GY",
+    "svgMap": "/images/maps/region_world_latinAmericaLow.svg",
+    "region": "latin-america"
+  }
+}

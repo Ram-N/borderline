@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "KG_5_B",
+    "countryCode": "KG",
+    "countryName": "Kyrgyzstan",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.664Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "KG",
+    "visibleNeighbors": [
+      "TJ",
+      "KZ",
+      "CN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "UZ"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "UZ",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

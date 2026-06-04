@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "MD_3_A",
+    "countryCode": "MD",
+    "countryName": "Moldova",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.815Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "MD",
+    "visibleNeighbors": [
+      "RO"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "UA"
+    ],
+    "contextCountries": [
+      "EE",
+      "ES"
+    ],
+    "choices": [
+      "UA",
+      "RO",
+      "ES",
+      "EE"
+    ],
+    "correctAnswer": "UA",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

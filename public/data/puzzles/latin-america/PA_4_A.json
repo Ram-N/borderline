@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "PA_4_A",
+    "countryCode": "PA",
+    "countryName": "Panama",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "latin-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.749Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "PA",
+    "visibleNeighbors": [
+      "CO"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CR"
+    ],
+    "contextCountries": [
+      "CL",
+      "BR"
+    ],
+    "choices": [
+      "CL",
+      "CO",
+      "BR",
+      "CR"
+    ],
+    "correctAnswer": "CR",
+    "svgMap": "/images/maps/region_world_latinAmericaLow.svg",
+    "region": "latin-america"
+  }
+}

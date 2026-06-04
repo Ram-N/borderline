@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "US-AR_3_A",
+    "countryCode": "US-AR",
+    "countryName": "Arkansas",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.849Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-AR",
+    "visibleNeighbors": [
+      "US-LA",
+      "US-MO",
+      "US-MS",
+      "US-TN",
+      "US-TX"
+    ],
+    "labeledNeighbors": [
+      "US-LA"
+    ],
+    "hiddenNeighbors": [
+      "US-OK"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-MS",
+      "US-OK",
+      "US-TX",
+      "US-TN"
+    ],
+    "correctAnswer": "US-OK",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

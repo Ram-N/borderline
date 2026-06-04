@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "RW_3_B",
+    "countryCode": "RW",
+    "countryName": "Rwanda",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.534Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "RW",
+    "visibleNeighbors": [
+      "UG",
+      "CD",
+      "BI"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "TZ"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "TZ",
+      "CD",
+      "UG",
+      "BI"
+    ],
+    "correctAnswer": "TZ",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

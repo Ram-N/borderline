@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "US-TN_1_A",
+    "countryCode": "US-TN",
+    "countryName": "Tennessee",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 8,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.892Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-TN",
+    "visibleNeighbors": [
+      "US-AL",
+      "US-AR",
+      "US-GA",
+      "US-KY",
+      "US-MO",
+      "US-MS",
+      "US-NC",
+      "US-VA"
+    ],
+    "choices": [
+      "US-TN",
+      "US-NV",
+      "US-WY",
+      "US-PA"
+    ],
+    "correctAnswer": "US-TN",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

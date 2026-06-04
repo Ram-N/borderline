@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "US-WV_4_B",
+    "countryCode": "US-WV",
+    "countryName": "West Virginia",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.903Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-WV",
+    "visibleNeighbors": [
+      "US-KY",
+      "US-MD",
+      "US-OH",
+      "US-VA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-PA"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-KY",
+      "US-OH",
+      "US-VA",
+      "US-PA"
+    ],
+    "correctAnswer": "US-PA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

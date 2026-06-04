@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "US-NY_5_A",
+    "countryCode": "US-NY",
+    "countryName": "New York",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.883Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-NY",
+    "visibleNeighbors": [
+      "US-MA",
+      "US-NJ",
+      "US-PA",
+      "US-VT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-CT"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-CT",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

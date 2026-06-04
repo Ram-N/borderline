@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "US-KY_3_B",
+    "countryCode": "US-KY",
+    "countryName": "Kentucky",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.864Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-KY",
+    "visibleNeighbors": [
+      "US-IL",
+      "US-IN",
+      "US-OH",
+      "US-TN",
+      "US-VA",
+      "US-WV"
+    ],
+    "labeledNeighbors": [
+      "US-IL"
+    ],
+    "hiddenNeighbors": [
+      "US-MO"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-IN",
+      "US-MO",
+      "US-VA",
+      "US-WV"
+    ],
+    "correctAnswer": "US-MO",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

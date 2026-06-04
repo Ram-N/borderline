@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "IN-UT_3_A",
+    "countryCode": "IN-UT",
+    "countryName": "Uttarakhand",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.952Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-UT",
+    "visibleNeighbors": [
+      "IN-HR",
+      "IN-UP"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-HP"
+    ],
+    "contextCountries": [
+      "IN-NL"
+    ],
+    "choices": [
+      "IN-HP",
+      "IN-NL",
+      "IN-UP",
+      "IN-HR"
+    ],
+    "correctAnswer": "IN-HP",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

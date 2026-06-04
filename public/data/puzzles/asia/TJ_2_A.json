@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "TJ_2_A",
+    "countryCode": "TJ",
+    "countryName": "Tajikistan",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.625Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "TJ",
+    "visibleNeighbors": [
+      "UZ",
+      "KG",
+      "CN",
+      "AF"
+    ],
+    "choices": [
+      "LA",
+      "IL",
+      "LK",
+      "TJ"
+    ],
+    "correctAnswer": "TJ",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

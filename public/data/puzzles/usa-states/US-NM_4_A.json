@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "US-NM_4_A",
+    "countryCode": "US-NM",
+    "countryName": "New Mexico",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.878Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-NM",
+    "visibleNeighbors": [
+      "US-AZ",
+      "US-CO",
+      "US-OK",
+      "US-TX"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-UT"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-TX",
+      "US-AZ",
+      "US-CO",
+      "US-UT"
+    ],
+    "correctAnswer": "US-UT",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

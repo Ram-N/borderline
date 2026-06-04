@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "BZ_3_A",
+    "countryCode": "BZ",
+    "countryName": "Belize",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "central-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.706Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BZ",
+    "visibleNeighbors": [
+      "MX"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "GT"
+    ],
+    "contextCountries": [
+      "SV",
+      "PA"
+    ],
+    "choices": [
+      "SV",
+      "GT",
+      "PA",
+      "MX"
+    ],
+    "correctAnswer": "GT",
+    "svgMap": "/images/maps/region_world_centralAmericaLow.svg",
+    "region": "central-america"
+  }
+}

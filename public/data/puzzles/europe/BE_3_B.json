@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "BE_3_B",
+    "countryCode": "BE",
+    "countryName": "Belgium",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.835Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BE",
+    "visibleNeighbors": [
+      "LU",
+      "DE",
+      "FR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "NL"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "NL",
+      "DE",
+      "FR",
+      "LU"
+    ],
+    "correctAnswer": "NL",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

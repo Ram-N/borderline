@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "JO_5_B",
+    "countryCode": "JO",
+    "countryName": "Jordan",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "middle-east",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.772Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "JO",
+    "visibleNeighbors": [
+      "SY",
+      "SA",
+      "IL",
+      "IQ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "PS"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "PS",
+    "svgMap": "/images/maps/region_world_middleEastLow.svg",
+    "region": "middle-east"
+  }
+}

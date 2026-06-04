@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "EE_5_A",
+    "countryCode": "EE",
+    "countryName": "Estonia",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.829Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "EE",
+    "visibleNeighbors": [
+      "LV"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "RU"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "RU",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

@@ -1,0 +1,791 @@
+{
+  "generatedAt": "2026-06-04T17:12:24.793Z",
+  "issues": [
+    {
+      "region": "europe",
+      "countryCode": "GI",
+      "countryName": "GI",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "europe",
+      "countryCode": "SJ",
+      "countryName": "SJ",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "europe",
+      "countryCode": "MT",
+      "countryName": "Malta",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "europe",
+      "countryCode": "JE",
+      "countryName": "Jersey",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "europe",
+      "countryCode": "IS",
+      "countryName": "Iceland",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "europe",
+      "countryCode": "IM",
+      "countryName": "Isle of Man",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "europe",
+      "countryCode": "GG",
+      "countryName": "Guernsey",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "europe",
+      "countryCode": "FO",
+      "countryName": "Faeroe Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "europe",
+      "countryCode": "CY",
+      "countryName": "Cyprus",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "europe",
+      "countryCode": "AX",
+      "countryName": "Åland",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "africa",
+      "countryCode": "GO",
+      "countryName": "GO",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "africa",
+      "countryCode": "JU",
+      "countryName": "JU",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "africa",
+      "countryCode": "SC",
+      "countryName": "Seychelles",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "africa",
+      "countryCode": "ST",
+      "countryName": "São Tomé and Principe",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "africa",
+      "countryCode": "SH",
+      "countryName": "Saint Helena",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "africa",
+      "countryCode": "RE",
+      "countryName": "RE",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "africa",
+      "countryCode": "YT",
+      "countryName": "YT",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "africa",
+      "countryCode": "MU",
+      "countryName": "Mauritius",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "africa",
+      "countryCode": "MG",
+      "countryName": "Madagascar",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "africa",
+      "countryCode": "CV",
+      "countryName": "Cabo Verde",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "africa",
+      "countryCode": "KM",
+      "countryName": "Comoros",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "asia",
+      "countryCode": "TW",
+      "countryName": "TW",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "asia",
+      "countryCode": "SG",
+      "countryName": "Singapore",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "asia",
+      "countryCode": "PH",
+      "countryName": "Philippines",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "asia",
+      "countryCode": "MV",
+      "countryName": "Maldives",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "asia",
+      "countryCode": "LK",
+      "countryName": "Sri Lanka",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "asia",
+      "countryCode": "JP",
+      "countryName": "Japan",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "asia",
+      "countryCode": "IO",
+      "countryName": "Br. Indian Ocean Ter.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "asia",
+      "countryCode": "BH",
+      "countryName": "Bahrain",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "AW",
+      "countryName": "Aruba",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "AG",
+      "countryName": "Antigua and Barb.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "AI",
+      "countryName": "Anguilla",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "BS",
+      "countryName": "Bahamas",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "BL",
+      "countryName": "St-Barthélemy",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "BB",
+      "countryName": "Barbados",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "CU",
+      "countryName": "Cuba",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "CW",
+      "countryName": "Curaçao",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "KY",
+      "countryName": "Cayman Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "DM",
+      "countryName": "Dominica",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "GP",
+      "countryName": "GP",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "GD",
+      "countryName": "Grenada",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "JM",
+      "countryName": "Jamaica",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "KN",
+      "countryName": "St. Kitts and Nevis",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "LC",
+      "countryName": "Saint Lucia",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "MS",
+      "countryName": "Montserrat",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "MQ",
+      "countryName": "MQ",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "PR",
+      "countryName": "Puerto Rico",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "TC",
+      "countryName": "Turks and Caicos Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "TT",
+      "countryName": "Trinidad and Tobago",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "VC",
+      "countryName": "St. Vin. and Gren.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "VG",
+      "countryName": "British Virgin Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "VI",
+      "countryName": "U.S. Virgin Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "caribbean",
+      "countryCode": "BQ",
+      "countryName": "BQ",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "AW",
+      "countryName": "Aruba",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "AG",
+      "countryName": "Antigua and Barb.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "AI",
+      "countryName": "Anguilla",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "BS",
+      "countryName": "Bahamas",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "BL",
+      "countryName": "St-Barthélemy",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "BB",
+      "countryName": "Barbados",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "CU",
+      "countryName": "Cuba",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "CW",
+      "countryName": "Curaçao",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "KY",
+      "countryName": "Cayman Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "DM",
+      "countryName": "Dominica",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "FK",
+      "countryName": "Falkland Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "GP",
+      "countryName": "GP",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "GD",
+      "countryName": "Grenada",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "GF",
+      "countryName": "GF",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "JM",
+      "countryName": "Jamaica",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "KN",
+      "countryName": "St. Kitts and Nevis",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "LC",
+      "countryName": "Saint Lucia",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "MS",
+      "countryName": "Montserrat",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "MQ",
+      "countryName": "MQ",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "PR",
+      "countryName": "Puerto Rico",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "TC",
+      "countryName": "Turks and Caicos Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "TT",
+      "countryName": "Trinidad and Tobago",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "VC",
+      "countryName": "St. Vin. and Gren.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "VG",
+      "countryName": "British Virgin Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "VI",
+      "countryName": "U.S. Virgin Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "latin-america",
+      "countryCode": "BQ",
+      "countryName": "BQ",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "middle-east",
+      "countryCode": "BH",
+      "countryName": "Bahrain",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "AW",
+      "countryName": "Aruba",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "AG",
+      "countryName": "Antigua and Barb.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "AI",
+      "countryName": "Anguilla",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "BS",
+      "countryName": "Bahamas",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "BL",
+      "countryName": "St-Barthélemy",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "BM",
+      "countryName": "Bermuda",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "BB",
+      "countryName": "Barbados",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "CU",
+      "countryName": "Cuba",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "CW",
+      "countryName": "Curaçao",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "KY",
+      "countryName": "Cayman Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "DM",
+      "countryName": "Dominica",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "GP",
+      "countryName": "GP",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "GD",
+      "countryName": "Grenada",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "GL",
+      "countryName": "Greenland",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "JM",
+      "countryName": "Jamaica",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "KN",
+      "countryName": "St. Kitts and Nevis",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "LC",
+      "countryName": "Saint Lucia",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "MS",
+      "countryName": "Montserrat",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "MQ",
+      "countryName": "MQ",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "PR",
+      "countryName": "Puerto Rico",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "PM",
+      "countryName": "St. Pierre and Miquelon",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "TC",
+      "countryName": "Turks and Caicos Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "TT",
+      "countryName": "Trinidad and Tobago",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "VC",
+      "countryName": "St. Vin. and Gren.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "VG",
+      "countryName": "British Virgin Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "VI",
+      "countryName": "U.S. Virgin Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "north-america",
+      "countryCode": "BQ",
+      "countryName": "BQ",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "TV",
+      "countryName": "Tuvalu",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "UM-WQ",
+      "countryName": "UM-WQ",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "VU",
+      "countryName": "Vanuatu",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "SB",
+      "countryName": "Solomon Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "PW",
+      "countryName": "Palau",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "NZ",
+      "countryName": "New Zealand",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "NR",
+      "countryName": "Nauru",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "NF",
+      "countryName": "Norfolk Island",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "NC",
+      "countryName": "New Caledonia",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "MP",
+      "countryName": "N. Mariana Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "MH",
+      "countryName": "Marshall Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "KI",
+      "countryName": "Kiribati",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "GU",
+      "countryName": "Guam",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "FM",
+      "countryName": "Micronesia",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "FJ",
+      "countryName": "Fiji",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "CX",
+      "countryName": "CX",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "CC",
+      "countryName": "CC",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "oceania",
+      "countryCode": "AU",
+      "countryName": "Ashmore and Cartier Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "south-america",
+      "countryCode": "FK",
+      "countryName": "Falkland Is.",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "south-america",
+      "countryCode": "GF",
+      "countryName": "GF",
+      "issue": "In SVG but missing from adjacency data"
+    },
+    {
+      "region": "usa-states",
+      "countryCode": "US-HI",
+      "countryName": "Hawaii",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "usa-states",
+      "countryCode": "US-AK",
+      "countryName": "Alaska",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "india-states",
+      "countryCode": "IN-AN",
+      "countryName": "Andaman and Nicobar Islands",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    },
+    {
+      "region": "india-states",
+      "countryCode": "IN-LD",
+      "countryName": "Lakshadweep",
+      "issue": "No in-region neighbors found (0 total neighbors, none in SVG)"
+    }
+  ]
+}

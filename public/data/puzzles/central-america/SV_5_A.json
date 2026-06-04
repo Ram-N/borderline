@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "SV_5_A",
+    "countryCode": "SV",
+    "countryName": "El Salvador",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "central-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.715Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SV",
+    "visibleNeighbors": [
+      "HN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "GT"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "GT",
+    "svgMap": "/images/maps/region_world_centralAmericaLow.svg",
+    "region": "central-america"
+  }
+}

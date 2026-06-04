@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "GT_5_B",
+    "countryCode": "GT",
+    "countryName": "Guatemala",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "central-america",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.711Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "GT",
+    "visibleNeighbors": [
+      "MX",
+      "HN",
+      "BZ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "SV"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "SV",
+    "svgMap": "/images/maps/region_world_centralAmericaLow.svg",
+    "region": "central-america"
+  }
+}

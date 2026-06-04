@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "BJ_4_B",
+    "countryCode": "BJ",
+    "countryName": "Benin",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.596Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BJ",
+    "visibleNeighbors": [
+      "NG",
+      "NE",
+      "BF"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "TG"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "NE",
+      "BF",
+      "TG",
+      "NG"
+    ],
+    "correctAnswer": "TG",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

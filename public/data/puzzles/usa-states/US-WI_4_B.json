@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "US-WI_4_B",
+    "countryCode": "US-WI",
+    "countryName": "Wisconsin",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.902Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-WI",
+    "visibleNeighbors": [
+      "US-IA",
+      "US-IL",
+      "US-MI"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-MN"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-IL",
+      "US-MN",
+      "US-MI",
+      "US-IA"
+    ],
+    "correctAnswer": "US-MN",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

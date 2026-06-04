@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "ZM_5_A",
+    "countryCode": "ZM",
+    "countryName": "Zambia",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 8,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.495Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "ZM",
+    "visibleNeighbors": [
+      "ZW",
+      "TZ",
+      "NA",
+      "MZ",
+      "MW",
+      "BW",
+      "AO"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CD"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "CD",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

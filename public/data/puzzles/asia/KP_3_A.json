@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "KP_3_A",
+    "countryCode": "KP",
+    "countryName": "North Korea",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.637Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "KP",
+    "visibleNeighbors": [
+      "KR",
+      "CN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "RU"
+    ],
+    "contextCountries": [
+      "QA"
+    ],
+    "choices": [
+      "QA",
+      "RU",
+      "CN",
+      "KR"
+    ],
+    "correctAnswer": "RU",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

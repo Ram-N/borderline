@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "id": "US-VA_4_A",
+    "countryCode": "US-VA",
+    "countryName": "Virginia",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.900Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-VA",
+    "visibleNeighbors": [
+      "US-DC",
+      "US-MD",
+      "US-NC",
+      "US-TN",
+      "US-WV"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-KY"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-DC",
+      "US-NC",
+      "US-KY",
+      "US-MD"
+    ],
+    "correctAnswer": "US-KY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

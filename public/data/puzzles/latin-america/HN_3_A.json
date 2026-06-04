@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "HN_3_A",
+    "countryCode": "HN",
+    "countryName": "Honduras",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "latin-america",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.745Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "HN",
+    "visibleNeighbors": [
+      "GT",
+      "SV"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "NI"
+    ],
+    "contextCountries": [
+      "KY"
+    ],
+    "choices": [
+      "GT",
+      "SV",
+      "KY",
+      "NI"
+    ],
+    "correctAnswer": "NI",
+    "svgMap": "/images/maps/region_world_latinAmericaLow.svg",
+    "region": "latin-america"
+  }
+}

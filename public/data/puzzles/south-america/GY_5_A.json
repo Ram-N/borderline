@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "GY_5_A",
+    "countryCode": "GY",
+    "countryName": "Guyana",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "south-america",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.829Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "GY",
+    "visibleNeighbors": [
+      "SR",
+      "BR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "VE"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "VE",
+    "svgMap": "/images/maps/region_world_southAmericaLow.svg",
+    "region": "south-america"
+  }
+}

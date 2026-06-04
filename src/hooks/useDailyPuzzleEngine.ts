@@ -11,12 +11,16 @@ type Config = {
   seed: string;
   regionPool: RegionSlot[];
   adjacency: AdjacencyData;
+  preloadedPuzzles?: Puzzle[];
 };
 
 export { DIFFICULTY_LABELS };
 
 export default function useDailyPuzzleEngine(config: Config) {
   const [puzzles] = useState<Puzzle[]>(() => {
+    if (config.preloadedPuzzles && config.preloadedPuzzles.length > 0) {
+      return config.preloadedPuzzles;
+    }
     const rng = mulberry32(hashSeed(config.seed));
     const result: Puzzle[] = [];
     const poolSize = config.regionPool.length;

@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "EC_5_A",
+    "countryCode": "EC",
+    "countryName": "Ecuador",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "south-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.829Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "EC",
+    "visibleNeighbors": [
+      "CO"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "PE"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "PE",
+    "svgMap": "/images/maps/region_world_southAmericaLow.svg",
+    "region": "south-america"
+  }
+}

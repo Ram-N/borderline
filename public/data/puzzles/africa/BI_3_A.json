@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "BI_3_A",
+    "countryCode": "BI",
+    "countryName": "Burundi",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.597Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BI",
+    "visibleNeighbors": [
+      "TZ",
+      "RW"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CD"
+    ],
+    "contextCountries": [
+      "GH"
+    ],
+    "choices": [
+      "GH",
+      "CD",
+      "RW",
+      "TZ"
+    ],
+    "correctAnswer": "CD",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

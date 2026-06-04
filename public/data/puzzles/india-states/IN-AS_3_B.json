@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "IN-AS_3_B",
+    "countryCode": "IN-AS",
+    "countryName": "Assam",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.922Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-AS",
+    "visibleNeighbors": [
+      "IN-AR",
+      "IN-MN",
+      "IN-MZ",
+      "IN-TR",
+      "IN-ML",
+      "IN-WB"
+    ],
+    "labeledNeighbors": [
+      "IN-AR"
+    ],
+    "hiddenNeighbors": [
+      "IN-NL"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-MZ",
+      "IN-NL",
+      "IN-ML",
+      "IN-TR"
+    ],
+    "correctAnswer": "IN-NL",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

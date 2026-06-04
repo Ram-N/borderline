@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "US-AL_2_A",
+    "countryCode": "US-AL",
+    "countryName": "Alabama",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.847Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-AL",
+    "visibleNeighbors": [
+      "US-FL",
+      "US-GA",
+      "US-MS",
+      "US-TN"
+    ],
+    "choices": [
+      "US-ND",
+      "US-VT",
+      "US-MI",
+      "US-AL"
+    ],
+    "correctAnswer": "US-AL",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "LR_5_A",
+    "countryCode": "LR",
+    "countryName": "Liberia",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.557Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "LR",
+    "visibleNeighbors": [
+      "SL",
+      "GN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CI"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "CI",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

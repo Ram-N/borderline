@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "IN-KA_3_B",
+    "countryCode": "IN-KA",
+    "countryName": "Karnataka",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.936Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-KA",
+    "visibleNeighbors": [
+      "IN-GA",
+      "IN-KL",
+      "IN-TN",
+      "IN-AP",
+      "IN-TG"
+    ],
+    "labeledNeighbors": [
+      "IN-AP"
+    ],
+    "hiddenNeighbors": [
+      "IN-MH"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-TG",
+      "IN-MH",
+      "IN-KL",
+      "IN-TN"
+    ],
+    "correctAnswer": "IN-MH",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

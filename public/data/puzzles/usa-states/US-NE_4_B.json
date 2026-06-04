@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "id": "US-NE_4_B",
+    "countryCode": "US-NE",
+    "countryName": "Nebraska",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.875Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-NE",
+    "visibleNeighbors": [
+      "US-CO",
+      "US-IA",
+      "US-KS",
+      "US-MO",
+      "US-SD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-WY"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-IA",
+      "US-WY",
+      "US-KS",
+      "US-CO"
+    ],
+    "correctAnswer": "US-WY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

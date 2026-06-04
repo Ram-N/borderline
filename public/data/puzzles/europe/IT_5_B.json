@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "IT_5_B",
+    "countryCode": "IT",
+    "countryName": "Italy",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:11:54.819Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IT",
+    "visibleNeighbors": [
+      "VA",
+      "CH",
+      "SI",
+      "SM",
+      "AT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "FR"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "FR",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

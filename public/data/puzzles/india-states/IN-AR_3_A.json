@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "IN-AR_3_A",
+    "countryCode": "IN-AR",
+    "countryName": "Arunachal Pradesh",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.921Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-AR",
+    "visibleNeighbors": [
+      "IN-AS"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-NL"
+    ],
+    "contextCountries": [
+      "IN-MN",
+      "IN-HR"
+    ],
+    "choices": [
+      "IN-NL",
+      "IN-AS",
+      "IN-MN",
+      "IN-HR"
+    ],
+    "correctAnswer": "IN-NL",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

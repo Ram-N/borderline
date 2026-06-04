@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "puzzles:generate": "tsx scripts/generatePuzzles.ts generate",
+    "puzzles:audit": "tsx scripts/generatePuzzles.ts audit",
+    "puzzles:calendar": "tsx scripts/generatePuzzles.ts calendar --year 2026",
+    "puzzles:stats": "tsx scripts/generatePuzzles.ts stats",
+    "puzzles:approve-all": "tsx scripts/generatePuzzles.ts approve --all"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0",
@@ -20,6 +25,8 @@
     "@types/node": "^22.5.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "fast-xml-parser": "^5.8.0",
+    "tsx": "^4.22.4",
     "typescript": "^5.5.4",
     "vite": "^5.4.2"
   }

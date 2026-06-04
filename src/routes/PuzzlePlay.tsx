@@ -5,16 +5,21 @@ import { type AdjacencyData } from '../utils/generatePuzzle';
 import { computeCentroid } from '../utils/computeCentroid';
 import { REGION_CONFIG } from '../data/regionConfig';
 import usePuzzleEngine, { type RegionSlot } from '../hooks/usePuzzleEngine';
+import { useCannedPuzzles } from '../hooks/useCannedPuzzleEngine';
 import PuzzleMapView from '../components/PuzzleMapView';
 import PuzzleChoices from '../components/PuzzleChoices';
 import TextAnswer from '../components/TextAnswer';
 import ScorePanel from '../components/ScorePanel';
+import type { Puzzle } from '../types/puzzle';
 
 export default function PuzzlePlay() {
   const qs = new URLSearchParams(useLocation().search);
   const region = qs.get('region') ?? 'europe';
   const n = Number(qs.get('n') ?? '5');
   const difficulty = (Number(qs.get('difficulty') ?? '1') as 1 | 2 | 3 | 4 | 5);
+
+  // Try canned puzzles first
+  const canned = useCannedPuzzles({ region, difficulty, n });
 
   const [adjacency, setAdjacency] = useState<AdjacencyData | null>(null);
   const [regionCodes, setRegionCodes] = useState<string[] | null>(null);
@@ -90,29 +95,34 @@ export default function PuzzlePlay() {
     }
   }, [region]);
 
+  // If canned puzzles are still loading, wait
+  if (canned.loading) return <div className='loading'>Loading puzzle…</div>;
+
+  // If canned available but runtime data not loaded yet, still need country names
   const ready = adjacency && regionCodes !== null && validTargets !== null;
-  if (!ready) return <div className='loading'>Loading puzzle…</div>;
+  if (!canned.available && !ready) return <div className='loading'>Loading puzzle…</div>;
 
   const config = REGION_CONFIG[region] ?? REGION_CONFIG.europe;
 
   return (
     <PuzzleContent
-      adjacency={adjacency!}
-      regionCodes={regionCodes!}
+      adjacency={adjacency ?? ({} as AdjacencyData)}
+      regionCodes={regionCodes ?? []}
       countryNames={countryNames}
       svgMap={region === 'any' ? '' : config.svgMap}
       svgViewBox={svgViewBox ?? undefined}
       region={region}
       n={n}
       difficulty={difficulty}
-      validTargets={validTargets!}
+      validTargets={validTargets ?? new Set()}
       regionPool={regionPool ?? undefined}
+      preloadedPuzzles={canned.available ? canned.puzzles : undefined}
     />
   );
 }
 
 function PuzzleContent({
-  adjacency, regionCodes, countryNames, svgMap, svgViewBox, region, n, difficulty, validTargets, regionPool,
+  adjacency, regionCodes, countryNames, svgMap, svgViewBox, region, n, difficulty, validTargets, regionPool, preloadedPuzzles,
 }: {
   adjacency: AdjacencyData;
   regionCodes: string[];
@@ -124,6 +134,7 @@ function PuzzleContent({
   difficulty: 1 | 2 | 3 | 4 | 5;
   validTargets: Set<string>;
   regionPool?: RegionSlot[];
+  preloadedPuzzles?: Puzzle[];
 }) {
   const navigate = useNavigate();
   const { puzzles, index, total, phase, selected, score, done, select, next } = usePuzzleEngine({
@@ -135,6 +146,7 @@ function PuzzleContent({
     difficulty,
     validTargets,
     regionPool,
+    preloadedPuzzles,
   });
 
   useEffect(() => {
@@ -157,9 +169,9 @@ function PuzzleContent({
     ? 'Which country is shown in orange?'
     : 'Name the orange country.';
 
-  // In "any" mode each puzzle carries its own svgMap; viewBox is computed dynamically
-  const puzzleSvgMap = regionPool ? puzzle.svgMap : svgMap;
-  const puzzleSvgViewBox = regionPool ? undefined : svgViewBox;
+  // In "any" mode or canned mode each puzzle carries its own svgMap; viewBox is computed dynamically
+  const puzzleSvgMap = (regionPool || preloadedPuzzles) ? puzzle.svgMap : svgMap;
+  const puzzleSvgViewBox = (regionPool || preloadedPuzzles) ? undefined : svgViewBox;
 
   return (
     <div className='play'>

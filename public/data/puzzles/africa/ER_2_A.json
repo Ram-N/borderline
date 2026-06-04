@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "ER_2_A",
+    "countryCode": "ER",
+    "countryName": "Eritrea",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.572Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "ER",
+    "visibleNeighbors": [
+      "SD",
+      "ET",
+      "DJ"
+    ],
+    "choices": [
+      "ML",
+      "AO",
+      "GO",
+      "ER"
+    ],
+    "correctAnswer": "ER",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "IN-MP_4_A",
+    "countryCode": "IN-MP",
+    "countryName": "Madhya Pradesh",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.939Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-MP",
+    "visibleNeighbors": [
+      "IN-RJ",
+      "IN-GJ",
+      "IN-CT",
+      "IN-UP"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-MH"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-GJ",
+      "IN-MH",
+      "IN-CT",
+      "IN-RJ"
+    ],
+    "correctAnswer": "IN-MH",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

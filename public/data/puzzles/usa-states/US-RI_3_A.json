@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "US-RI_3_A",
+    "countryCode": "US-RI",
+    "countryName": "Rhode Island",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.889Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-RI",
+    "visibleNeighbors": [
+      "US-MA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-CT"
+    ],
+    "contextCountries": [
+      "US-NM",
+      "US-MT"
+    ],
+    "choices": [
+      "US-CT",
+      "US-MA",
+      "US-MT",
+      "US-NM"
+    ],
+    "correctAnswer": "US-CT",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

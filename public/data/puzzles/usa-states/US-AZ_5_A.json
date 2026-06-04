@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "US-AZ_5_A",
+    "countryCode": "US-AZ",
+    "countryName": "Arizona",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T17:12:09.850Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-AZ",
+    "visibleNeighbors": [
+      "US-CA",
+      "US-CO",
+      "US-NV",
+      "US-UT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-NM"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-NM",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}
