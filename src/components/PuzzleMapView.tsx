@@ -91,28 +91,41 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
           <path d="M0,0 L0,5 L5,2.5 z" fill="#444" />
         </marker>
       </defs>
+      {/* Layer 1: all country shapes (grey background, then blue neighbors, then orange highlight) */}
       {paths.map(path => {
         const fill = getPathFill(path.id, puzzle, phase, selectedAnswer);
         const stroke = getPathStroke(path.id, puzzle, phase);
+        return (
+          <path
+            key={path.id}
+            id={path.id}
+            d={path.d}
+            fill={fill}
+            stroke={stroke.color}
+            strokeWidth={stroke.width}
+          />
+        );
+      })}
+      {/* Layer 2: all labels and arrows rendered on top of all shapes */}
+      {paths.map(path => {
         const labelText = getLabelText(path.id, puzzle, phase, countryNames, labeledNeighborIds);
-        const centroid = labelText ? computeCentroid(path.d) : null;
+        if (!labelText) return null;
+        const centroid = computeCentroid(path.d);
+        if (!centroid) return null;
 
-        const rawFontSize = centroid
-          ? Math.min(Math.min(centroid.w, centroid.h) * 0.18, maxFontSize)
-          : maxFontSize;
-        const isSmall = centroid !== null && labelText !== '?' && rawFontSize < MIN_LABEL_FONT;
+        const rawFontSize = Math.min(Math.min(centroid.w, centroid.h) * 0.18, maxFontSize);
+        const isSmall = labelText !== '?' && rawFontSize < MIN_LABEL_FONT;
         const fontSize = isSmall ? MIN_LABEL_FONT : rawFontSize;
 
-        let textX = centroid?.x ?? 0;
-        let textY = centroid?.y ?? 0;
+        let textX = centroid.x;
+        let textY = centroid.y;
         let arrowTo: { x: number; y: number } | null = null;
-        if (isSmall && centroid) {
+        if (isSmall) {
           const dx = centroid.x - mapCx;
           const dy = centroid.y - mapCy;
           const len = Math.sqrt(dx * dx + dy * dy) || 1;
           textX = centroid.x + (dx / len) * OUTSIDE_OFFSET;
           textY = centroid.y + (dy / len) * OUTSIDE_OFFSET;
-          // Clamp within viewBox so labels don't get clipped at the edge
           const margin = OUTSIDE_OFFSET * 0.4;
           textX = Math.max(vbParts[0] + margin, Math.min(vbParts[0] + vbParts[2] - margin, textX));
           textY = Math.max(vbParts[1] + margin, Math.min(vbParts[1] + vbParts[3] - margin, textY));
@@ -120,15 +133,8 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
         }
 
         return (
-          <g key={path.id}>
-            <path
-              id={path.id}
-              d={path.d}
-              fill={fill}
-              stroke={stroke.color}
-              strokeWidth={stroke.width}
-            />
-            {labelText && centroid && arrowTo && (
+          <g key={`label-${path.id}`}>
+            {arrowTo && (
               <line
                 x1={centroid.x} y1={centroid.y}
                 x2={arrowTo.x} y2={arrowTo.y}
@@ -137,23 +143,21 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
                 markerEnd="url(#arr)"
               />
             )}
-            {labelText && centroid && (
-              <text
-                x={textX}
-                y={textY}
-                textAnchor="middle"
-                dominantBaseline="middle"
-                fontSize={fontSize}
-                fill={labelText === '?' ? '#BF360C' : '#333333'}
-                fontWeight={labelText === '?' ? 'bold' : 'normal'}
-                stroke="white"
-                strokeWidth={fontSize * 0.25}
-                paintOrder="stroke"
-                pointerEvents="none"
-              >
-                {labelText}
-              </text>
-            )}
+            <text
+              x={textX}
+              y={textY}
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fontSize={fontSize}
+              fill={labelText === '?' ? '#BF360C' : '#333333'}
+              fontWeight={labelText === '?' ? 'bold' : 'normal'}
+              stroke="white"
+              strokeWidth={fontSize * 0.25}
+              paintOrder="stroke"
+              pointerEvents="none"
+            >
+              {labelText}
+            </text>
           </g>
         );
       })}
