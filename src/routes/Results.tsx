@@ -3,8 +3,17 @@ import { useLocation, Link, Navigate } from 'react-router-dom';
 
 const DIFFICULTY_LABELS = ['Tourist', 'Traveler', 'Explorer', 'Cartographer', 'Diplomat'];
 
+function scoreRating(score: number, total: number): { label: string; color: string } {
+  const pct = score / total;
+  if (pct >= 1) return { label: 'Perfect!', color: '#1B5E20' };
+  if (pct >= 0.8) return { label: 'Great job!', color: '#2E7D32' };
+  if (pct >= 0.6) return { label: 'Well done', color: '#F57F17' };
+  if (pct >= 0.4) return { label: 'Not bad', color: '#E65100' };
+  return { label: 'Keep practicing', color: '#B71C1C' };
+}
+
 function DailyBreakdown({ results, score }: { results: boolean[]; score: number }) {
-  const shareGrid = results.map((correct, i) => correct ? '\u{1f7e9}' : '\u{1f7e5}').join('');
+  const shareGrid = results.map((correct) => correct ? '\u{1f7e9}' : '\u{1f7e5}').join('');
   const shareText = `Borderline Daily ${new Date().toISOString().split('T')[0]}\n${score}/15\n${shareGrid}`;
 
   return (
@@ -19,7 +28,7 @@ function DailyBreakdown({ results, score }: { results: boolean[]; score: number 
         ))}
       </ul>
       <button
-        className='start-btn'
+        className='results-btn results-btn-secondary'
         onClick={() => navigator.clipboard.writeText(shareText)}
       >
         Copy results
@@ -39,12 +48,30 @@ export default function Results() {
     return <Navigate to='/' replace />;
   }
 
+  const rating = scoreRating(score, total);
+  const pct = Math.round((score / total) * 100);
+
   return (
-    <div className='results'>
-      <h2>{daily ? 'Daily Puzzle Results' : 'Results'}</h2>
-      <p>Score: {score} / {total}</p>
-      {daily && results && <DailyBreakdown results={results} score={score} />}
-      <Link to='/'>{daily ? 'Back to home' : 'Play again'}</Link>
+    <div className='results-page'>
+      <div className='results-card'>
+        <h2 className='results-title'>{daily ? 'Daily Puzzle' : 'Results'}</h2>
+        <div className='results-score-ring' style={{ borderColor: rating.color }}>
+          <span className='results-score-num'>{score}</span>
+          <span className='results-score-den'>/ {total}</span>
+        </div>
+        <p className='results-pct' style={{ color: rating.color }}>{pct}% — {rating.label}</p>
+        {daily && results && <DailyBreakdown results={results} score={score} />}
+        <div className='results-actions'>
+          {daily ? (
+            <Link to='/' className='results-btn results-btn-primary'>Back to home</Link>
+          ) : (
+            <>
+              <Link to='/' className='results-btn results-btn-primary'>Play again</Link>
+              <Link to='/play' className='results-btn results-btn-secondary'>Change settings</Link>
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
