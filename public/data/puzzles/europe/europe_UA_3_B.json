@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "europe_UA_3_B",
+    "countryCode": "UA",
+    "countryName": "Ukraine",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.849Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "UA",
+    "visibleNeighbors": [
+      "SK",
+      "RU",
+      "RO",
+      "PL",
+      "HU",
+      "BY"
+    ],
+    "labeledNeighbors": [
+      "BY"
+    ],
+    "hiddenNeighbors": [
+      "MD"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "SK",
+      "MD",
+      "PL",
+      "RO"
+    ],
+    "correctAnswer": "MD",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

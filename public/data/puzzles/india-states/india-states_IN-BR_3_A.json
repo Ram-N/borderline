@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "india-states_IN-BR_3_A",
+    "countryCode": "IN-BR",
+    "countryName": "Bihar",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.389Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-BR",
+    "visibleNeighbors": [
+      "IN-UP",
+      "IN-JH"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-WB"
+    ],
+    "contextCountries": [
+      "IN-DN"
+    ],
+    "choices": [
+      "IN-UP",
+      "IN-JH",
+      "IN-DN",
+      "IN-WB"
+    ],
+    "correctAnswer": "IN-WB",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

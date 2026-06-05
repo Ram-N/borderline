@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "usa-states_US-IA_3_A",
+    "countryCode": "US-IA",
+    "countryName": "Iowa",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.321Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-IA",
+    "visibleNeighbors": [
+      "US-IL",
+      "US-MN",
+      "US-NE",
+      "US-SD",
+      "US-WI"
+    ],
+    "labeledNeighbors": [
+      "US-IL"
+    ],
+    "hiddenNeighbors": [
+      "US-MO"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-WI",
+      "US-MO",
+      "US-NE",
+      "US-SD"
+    ],
+    "correctAnswer": "US-MO",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

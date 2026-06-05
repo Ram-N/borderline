@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "india-states_IN-UP_4_B",
+    "countryCode": "IN-UP",
+    "countryName": "Uttar Pradesh",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 8,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.421Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-UP",
+    "visibleNeighbors": [
+      "IN-HR",
+      "IN-DL",
+      "IN-RJ",
+      "IN-MP",
+      "IN-CT",
+      "IN-JH",
+      "IN-BR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-UT"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-RJ",
+      "IN-CT",
+      "IN-UT",
+      "IN-MP"
+    ],
+    "correctAnswer": "IN-UT",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

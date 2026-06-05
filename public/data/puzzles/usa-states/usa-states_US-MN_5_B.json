@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "usa-states_US-MN_5_B",
+    "countryCode": "US-MN",
+    "countryName": "Minnesota",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.331Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-MN",
+    "visibleNeighbors": [
+      "US-IA",
+      "US-ND",
+      "US-SD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-WI"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-WI",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

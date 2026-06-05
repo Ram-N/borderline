@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "europe_SI_2_A",
+    "countryCode": "SI",
+    "countryName": "Slovenia",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.856Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "SI",
+    "visibleNeighbors": [
+      "IT",
+      "HU",
+      "HR",
+      "AT"
+    ],
+    "choices": [
+      "FI",
+      "BA",
+      "FO",
+      "SI"
+    ],
+    "correctAnswer": "SI",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

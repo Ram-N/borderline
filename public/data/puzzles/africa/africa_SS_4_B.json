@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "id": "africa_SS_4_B",
+    "countryCode": "SS",
+    "countryName": "S. Sudan",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.996Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SS",
+    "visibleNeighbors": [
+      "SD",
+      "KE",
+      "ET",
+      "CD",
+      "CF"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "UG"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "ET",
+      "CD",
+      "SD",
+      "UG"
+    ],
+    "correctAnswer": "UG",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

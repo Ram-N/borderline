@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "usa-states_US-MT_1_A",
+    "countryCode": "US-MT",
+    "countryName": "Montana",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.334Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-MT",
+    "visibleNeighbors": [
+      "US-ID",
+      "US-ND",
+      "US-SD",
+      "US-WY"
+    ],
+    "choices": [
+      "US-NJ",
+      "US-UT",
+      "US-MT",
+      "US-SC"
+    ],
+    "correctAnswer": "US-MT",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

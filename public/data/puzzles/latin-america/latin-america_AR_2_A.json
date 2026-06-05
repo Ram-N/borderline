@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "latin-america_AR_2_A",
+    "countryCode": "AR",
+    "countryName": "Argentina",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "latin-america",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.174Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "AR",
+    "visibleNeighbors": [
+      "UY",
+      "PY",
+      "CL",
+      "BR",
+      "BO"
+    ],
+    "choices": [
+      "AR",
+      "CU",
+      "CO",
+      "KY"
+    ],
+    "correctAnswer": "AR",
+    "svgMap": "/images/maps/region_world_latinAmericaLow.svg",
+    "region": "latin-america"
+  }
+}

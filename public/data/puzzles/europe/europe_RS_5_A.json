@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "europe_RS_5_A",
+    "countryCode": "RS",
+    "countryName": "Serbia",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 8,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.868Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "RS",
+    "visibleNeighbors": [
+      "RO",
+      "ME",
+      "MK",
+      "XK",
+      "HU",
+      "HR",
+      "BG"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "BA"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "BA",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

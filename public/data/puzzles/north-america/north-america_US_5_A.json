@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "north-america_US_5_A",
+    "countryCode": "US",
+    "countryName": "United States of America",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "north-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.249Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US",
+    "visibleNeighbors": [
+      "CA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "MX"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "MX",
+    "svgMap": "/images/maps/region_world_northAmericaLow.svg",
+    "region": "north-america"
+  }
+}

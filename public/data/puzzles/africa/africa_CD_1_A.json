@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "africa_CD_1_A",
+    "countryCode": "CD",
+    "countryName": "Dem. Rep. Congo",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 9,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.045Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "CD",
+    "visibleNeighbors": [
+      "ZM",
+      "UG",
+      "TZ",
+      "SS",
+      "RW",
+      "CG",
+      "CF",
+      "BI",
+      "AO"
+    ],
+    "choices": [
+      "BJ",
+      "EH",
+      "NA",
+      "CD"
+    ],
+    "correctAnswer": "CD",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

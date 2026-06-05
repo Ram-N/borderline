@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "africa_SN_4_B",
+    "countryCode": "SN",
+    "countryName": "Senegal",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.993Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SN",
+    "visibleNeighbors": [
+      "MR",
+      "ML",
+      "GN",
+      "GM"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "GW"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "GW",
+      "ML",
+      "GN",
+      "MR"
+    ],
+    "correctAnswer": "GW",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

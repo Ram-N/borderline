@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "id": "asia_IN_4_A",
+    "countryCode": "IN",
+    "countryName": "India",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.138Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN",
+    "visibleNeighbors": [
+      "PK",
+      "NP",
+      "CN",
+      "BT",
+      "BD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "MM"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "NP",
+      "MM",
+      "CN",
+      "BT"
+    ],
+    "correctAnswer": "MM",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "europe_AM_1_A",
+    "countryCode": "AM",
+    "countryName": "Armenia",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.951Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "AM",
+    "visibleNeighbors": [
+      "TR",
+      "GE",
+      "AZ"
+    ],
+    "choices": [
+      "AD",
+      "AM",
+      "LV",
+      "CH"
+    ],
+    "correctAnswer": "AM",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

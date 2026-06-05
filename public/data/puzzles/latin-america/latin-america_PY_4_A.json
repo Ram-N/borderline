@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "latin-america_PY_4_A",
+    "countryCode": "PY",
+    "countryName": "Paraguay",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "latin-america",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.198Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "PY",
+    "visibleNeighbors": [
+      "BR",
+      "AR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "BO"
+    ],
+    "contextCountries": [
+      "GD"
+    ],
+    "choices": [
+      "BO",
+      "GD",
+      "AR",
+      "BR"
+    ],
+    "correctAnswer": "BO",
+    "svgMap": "/images/maps/region_world_latinAmericaLow.svg",
+    "region": "latin-america"
+  }
+}

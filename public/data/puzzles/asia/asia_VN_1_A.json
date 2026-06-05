@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "asia_VN_1_A",
+    "countryCode": "VN",
+    "countryName": "Vietnam",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.085Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "VN",
+    "visibleNeighbors": [
+      "LA",
+      "CN",
+      "KH"
+    ],
+    "choices": [
+      "PG",
+      "VN",
+      "MV",
+      "IR"
+    ],
+    "correctAnswer": "VN",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

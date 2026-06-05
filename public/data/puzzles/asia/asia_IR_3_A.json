@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "asia_IR_3_A",
+    "countryCode": "IR",
+    "countryName": "Iran",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.135Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IR",
+    "visibleNeighbors": [
+      "TM",
+      "PK",
+      "IQ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "AF"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "TM",
+      "IQ",
+      "AF",
+      "PK"
+    ],
+    "correctAnswer": "AF",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

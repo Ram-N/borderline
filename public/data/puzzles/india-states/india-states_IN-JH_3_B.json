@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "india-states_IN-JH_3_B",
+    "countryCode": "IN-JH",
+    "countryName": "Jharkhand",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.402Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-JH",
+    "visibleNeighbors": [
+      "IN-BR",
+      "IN-OR",
+      "IN-CT",
+      "IN-UP"
+    ],
+    "labeledNeighbors": [
+      "IN-BR"
+    ],
+    "hiddenNeighbors": [
+      "IN-WB"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-OR",
+      "IN-UP",
+      "IN-CT",
+      "IN-WB"
+    ],
+    "correctAnswer": "IN-WB",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "europe_AT_1_A",
+    "countryCode": "AT",
+    "countryName": "Austria",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 8,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.949Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "AT",
+    "visibleNeighbors": [
+      "CH",
+      "SK",
+      "SI",
+      "LI",
+      "IT",
+      "HU",
+      "DE",
+      "CZ"
+    ],
+    "choices": [
+      "AT",
+      "AX",
+      "BY",
+      "XK"
+    ],
+    "correctAnswer": "AT",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

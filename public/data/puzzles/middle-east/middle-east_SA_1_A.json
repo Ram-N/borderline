@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "middle-east_SA_1_A",
+    "countryCode": "SA",
+    "countryName": "Saudi Arabia",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "middle-east",
+    "continent": "Asia",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.211Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "SA",
+    "visibleNeighbors": [
+      "YE",
+      "AE",
+      "QA",
+      "OM",
+      "KW",
+      "JO",
+      "IQ"
+    ],
+    "choices": [
+      "SA",
+      "IL",
+      "PS",
+      "IR"
+    ],
+    "correctAnswer": "SA",
+    "svgMap": "/images/maps/region_world_middleEastLow.svg",
+    "region": "middle-east"
+  }
+}

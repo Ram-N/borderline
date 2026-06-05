@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "usa-states_US-CT_4_A",
+    "countryCode": "US-CT",
+    "countryName": "Connecticut",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.316Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-CT",
+    "visibleNeighbors": [
+      "US-NY",
+      "US-RI"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-MA"
+    ],
+    "contextCountries": [
+      "US-ME"
+    ],
+    "choices": [
+      "US-MA",
+      "US-ME",
+      "US-NY",
+      "US-RI"
+    ],
+    "correctAnswer": "US-MA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

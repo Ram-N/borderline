@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "india-states_IN-GA_4_A",
+    "countryCode": "IN-GA",
+    "countryName": "Goa",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.394Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-GA",
+    "visibleNeighbors": [
+      "IN-MH"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-KA"
+    ],
+    "contextCountries": [
+      "IN-CT",
+      "IN-DD"
+    ],
+    "choices": [
+      "IN-MH",
+      "IN-DD",
+      "IN-KA",
+      "IN-CT"
+    ],
+    "correctAnswer": "IN-KA",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

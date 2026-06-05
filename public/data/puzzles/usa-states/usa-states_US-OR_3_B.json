@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "usa-states_US-OR_3_B",
+    "countryCode": "US-OR",
+    "countryName": "Oregon",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.349Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-OR",
+    "visibleNeighbors": [
+      "US-CA",
+      "US-NV",
+      "US-WA"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-ID"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-NV",
+      "US-ID",
+      "US-WA",
+      "US-CA"
+    ],
+    "correctAnswer": "US-ID",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

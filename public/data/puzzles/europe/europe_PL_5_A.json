@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "europe_PL_5_A",
+    "countryCode": "PL",
+    "countryName": "Poland",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 7,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.878Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "PL",
+    "visibleNeighbors": [
+      "UA",
+      "RU",
+      "LT",
+      "DE",
+      "CZ",
+      "BY"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "SK"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "SK",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

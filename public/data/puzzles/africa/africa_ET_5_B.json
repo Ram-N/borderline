@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "africa_ET_5_B",
+    "countryCode": "ET",
+    "countryName": "Ethiopia",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.036Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "ET",
+    "visibleNeighbors": [
+      "SS",
+      "SD",
+      "SO",
+      "ER",
+      "DJ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "KE"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "KE",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

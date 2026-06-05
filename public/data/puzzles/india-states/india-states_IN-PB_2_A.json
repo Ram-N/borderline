@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "india-states_IN-PB_2_A",
+    "countryCode": "IN-PB",
+    "countryName": "Punjab",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.411Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "IN-PB",
+    "visibleNeighbors": [
+      "IN-CH",
+      "IN-HP",
+      "IN-HR",
+      "IN-JK",
+      "IN-RJ"
+    ],
+    "choices": [
+      "IN-JH",
+      "IN-BR",
+      "IN-KL",
+      "IN-PB"
+    ],
+    "correctAnswer": "IN-PB",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

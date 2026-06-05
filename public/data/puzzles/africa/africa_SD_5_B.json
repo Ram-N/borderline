@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "africa_SD_5_B",
+    "countryCode": "SD",
+    "countryName": "Sudan",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 7,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.000Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SD",
+    "visibleNeighbors": [
+      "SS",
+      "LY",
+      "ET",
+      "ER",
+      "EG",
+      "TD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "CF"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "CF",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

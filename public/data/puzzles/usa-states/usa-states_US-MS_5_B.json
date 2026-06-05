@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "usa-states_US-MS_5_B",
+    "countryCode": "US-MS",
+    "countryName": "Mississippi",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.334Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-MS",
+    "visibleNeighbors": [
+      "US-AR",
+      "US-LA",
+      "US-TN"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-AL"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-AL",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

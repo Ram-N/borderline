@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "south-america_BO_4_B",
+    "countryCode": "BO",
+    "countryName": "Bolivia",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "south-america",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.271Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BO",
+    "visibleNeighbors": [
+      "PY",
+      "CL",
+      "BR",
+      "AR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "PE"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "AR",
+      "PY",
+      "PE",
+      "CL"
+    ],
+    "correctAnswer": "PE",
+    "svgMap": "/images/maps/region_world_southAmericaLow.svg",
+    "region": "south-america"
+  }
+}

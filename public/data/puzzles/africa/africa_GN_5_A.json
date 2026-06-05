@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "africa_GN_5_A",
+    "countryCode": "GN",
+    "countryName": "Guinea",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.031Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "GN",
+    "visibleNeighbors": [
+      "SL",
+      "SN",
+      "LR",
+      "GW",
+      "CI"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "ML"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "ML",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

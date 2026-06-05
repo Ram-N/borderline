@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "africa_EG_4_A",
+    "countryCode": "EG",
+    "countryName": "Egypt",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.039Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "EG",
+    "visibleNeighbors": [
+      "SD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "LY"
+    ],
+    "contextCountries": [
+      "DZ",
+      "NG"
+    ],
+    "choices": [
+      "NG",
+      "DZ",
+      "SD",
+      "LY"
+    ],
+    "correctAnswer": "LY",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

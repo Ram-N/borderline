@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "europe_MK_2_A",
+    "countryCode": "MK",
+    "countryName": "North Macedonia",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.890Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "MK",
+    "visibleNeighbors": [
+      "RS",
+      "XK",
+      "GR",
+      "BG",
+      "AL"
+    ],
+    "choices": [
+      "ES",
+      "MK",
+      "VA",
+      "DE"
+    ],
+    "correctAnswer": "MK",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

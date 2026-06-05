@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "africa_TD_3_B",
+    "countryCode": "TD",
+    "countryName": "Chad",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.987Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "TD",
+    "visibleNeighbors": [
+      "SD",
+      "NG",
+      "NE",
+      "LY",
+      "CF"
+    ],
+    "labeledNeighbors": [
+      "CF"
+    ],
+    "hiddenNeighbors": [
+      "CM"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "CM",
+      "LY",
+      "NE",
+      "SD"
+    ],
+    "correctAnswer": "CM",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

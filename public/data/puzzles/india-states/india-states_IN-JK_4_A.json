@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "india-states_IN-JK_4_A",
+    "countryCode": "IN-JK",
+    "countryName": "Jammu and Kashmir",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.403Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-JK",
+    "visibleNeighbors": [
+      "IN-HP"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-PB"
+    ],
+    "contextCountries": [
+      "IN-SK",
+      "IN-MN"
+    ],
+    "choices": [
+      "IN-SK",
+      "IN-PB",
+      "IN-MN",
+      "IN-HP"
+    ],
+    "correctAnswer": "IN-PB",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

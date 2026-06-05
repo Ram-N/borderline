@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "south-america_CO_3_A",
+    "countryCode": "CO",
+    "countryName": "Colombia",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "south-america",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.274Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "CO",
+    "visibleNeighbors": [
+      "VE",
+      "PE",
+      "EC"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "BR"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "BR",
+      "PE",
+      "EC",
+      "VE"
+    ],
+    "correctAnswer": "BR",
+    "svgMap": "/images/maps/region_world_southAmericaLow.svg",
+    "region": "south-america"
+  }
+}

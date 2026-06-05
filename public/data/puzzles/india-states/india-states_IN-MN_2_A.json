@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "india-states_IN-MN_2_A",
+    "countryCode": "IN-MN",
+    "countryName": "Manipur",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.408Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "IN-MN",
+    "visibleNeighbors": [
+      "IN-NL",
+      "IN-AS",
+      "IN-MZ"
+    ],
+    "choices": [
+      "IN-DD",
+      "IN-KA",
+      "IN-KL",
+      "IN-MN"
+    ],
+    "correctAnswer": "IN-MN",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

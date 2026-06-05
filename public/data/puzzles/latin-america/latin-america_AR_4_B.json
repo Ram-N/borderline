@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "latin-america_AR_4_B",
+    "countryCode": "AR",
+    "countryName": "Argentina",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "latin-america",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.175Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "AR",
+    "visibleNeighbors": [
+      "PY",
+      "CL",
+      "BR",
+      "BO"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "UY"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "PY",
+      "UY",
+      "BR",
+      "CL"
+    ],
+    "correctAnswer": "UY",
+    "svgMap": "/images/maps/region_world_latinAmericaLow.svg",
+    "region": "latin-america"
+  }
+}

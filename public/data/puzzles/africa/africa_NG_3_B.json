@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "africa_NG_3_B",
+    "countryCode": "NG",
+    "countryName": "Nigeria",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.006Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "NG",
+    "visibleNeighbors": [
+      "NE",
+      "CM",
+      "BJ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "TD"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "BJ",
+      "NE",
+      "CM",
+      "TD"
+    ],
+    "correctAnswer": "TD",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

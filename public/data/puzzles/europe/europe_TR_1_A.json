@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "europe_TR_1_A",
+    "countryCode": "TR",
+    "countryName": "Turkey",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.850Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "TR",
+    "visibleNeighbors": [
+      "GR",
+      "GE",
+      "BG",
+      "AZ",
+      "AM"
+    ],
+    "choices": [
+      "TR",
+      "ME",
+      "SI",
+      "RS"
+    ],
+    "correctAnswer": "TR",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

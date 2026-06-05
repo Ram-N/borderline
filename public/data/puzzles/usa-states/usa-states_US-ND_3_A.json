@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "usa-states_US-ND_3_A",
+    "countryCode": "US-ND",
+    "countryName": "North Dakota",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.336Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-ND",
+    "visibleNeighbors": [
+      "US-MN",
+      "US-SD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-MT"
+    ],
+    "contextCountries": [
+      "US-CA"
+    ],
+    "choices": [
+      "US-MN",
+      "US-SD",
+      "US-CA",
+      "US-MT"
+    ],
+    "correctAnswer": "US-MT",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

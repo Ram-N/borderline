@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "latin-america_CO_1_A",
+    "countryCode": "CO",
+    "countryName": "Colombia",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "latin-america",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.185Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "CO",
+    "visibleNeighbors": [
+      "VE",
+      "PE",
+      "PA",
+      "EC",
+      "BR"
+    ],
+    "choices": [
+      "DM",
+      "PY",
+      "HT",
+      "CO"
+    ],
+    "correctAnswer": "CO",
+    "svgMap": "/images/maps/region_world_latinAmericaLow.svg",
+    "region": "latin-america"
+  }
+}

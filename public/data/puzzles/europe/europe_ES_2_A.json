@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "europe_ES_2_A",
+    "countryCode": "ES",
+    "countryName": "Spain",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.922Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "ES",
+    "visibleNeighbors": [
+      "PT",
+      "FR",
+      "AD"
+    ],
+    "choices": [
+      "VA",
+      "GE",
+      "AM",
+      "ES"
+    ],
+    "correctAnswer": "ES",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

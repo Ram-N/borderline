@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "europe_GE_3_B",
+    "countryCode": "GE",
+    "countryName": "Georgia",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.913Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "GE",
+    "visibleNeighbors": [
+      "TR",
+      "RU",
+      "AZ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "AM"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "TR",
+      "AM",
+      "RU",
+      "AZ"
+    ],
+    "correctAnswer": "AM",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

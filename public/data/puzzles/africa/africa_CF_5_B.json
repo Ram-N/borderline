@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "africa_CF_5_B",
+    "countryCode": "CF",
+    "countryName": "Central African Rep.",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.052Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "CF",
+    "visibleNeighbors": [
+      "SS",
+      "CD",
+      "CG",
+      "TD",
+      "CM"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "SD"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "SD",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

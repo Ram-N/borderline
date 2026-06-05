@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "middle-east_SA_5_B",
+    "countryCode": "SA",
+    "countryName": "Saudi Arabia",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "middle-east",
+    "continent": "Asia",
+    "neighborCount": 7,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.212Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SA",
+    "visibleNeighbors": [
+      "YE",
+      "AE",
+      "QA",
+      "OM",
+      "KW",
+      "JO"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IQ"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "IQ",
+    "svgMap": "/images/maps/region_world_middleEastLow.svg",
+    "region": "middle-east"
+  }
+}

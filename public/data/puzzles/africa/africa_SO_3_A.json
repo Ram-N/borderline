@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "africa_SO_3_A",
+    "countryCode": "SO",
+    "countryName": "Somalia",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.989Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SO",
+    "visibleNeighbors": [
+      "KE"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "ET"
+    ],
+    "contextCountries": [
+      "NA",
+      "DZ"
+    ],
+    "choices": [
+      "DZ",
+      "KE",
+      "ET",
+      "NA"
+    ],
+    "correctAnswer": "ET",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

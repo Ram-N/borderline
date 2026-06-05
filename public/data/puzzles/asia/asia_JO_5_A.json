@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "asia_JO_5_A",
+    "countryCode": "JO",
+    "countryName": "Jordan",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.129Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "JO",
+    "visibleNeighbors": [
+      "SY",
+      "SA",
+      "IL",
+      "PS"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IQ"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "IQ",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

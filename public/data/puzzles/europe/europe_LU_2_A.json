@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "europe_LU_2_A",
+    "countryCode": "LU",
+    "countryName": "Luxembourg",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.895Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "LU",
+    "visibleNeighbors": [
+      "DE",
+      "FR",
+      "BE"
+    ],
+    "choices": [
+      "GG",
+      "HU",
+      "LU",
+      "VA"
+    ],
+    "correctAnswer": "LU",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

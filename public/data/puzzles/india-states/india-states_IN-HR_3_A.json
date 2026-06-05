@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "india-states_IN-HR_3_A",
+    "countryCode": "IN-HR",
+    "countryName": "Haryana",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.399Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-HR",
+    "visibleNeighbors": [
+      "IN-PB",
+      "IN-HP",
+      "IN-UT",
+      "IN-RJ",
+      "IN-DL",
+      "IN-CH"
+    ],
+    "labeledNeighbors": [
+      "IN-CH"
+    ],
+    "hiddenNeighbors": [
+      "IN-UP"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-UP",
+      "IN-UT",
+      "IN-DL",
+      "IN-PB"
+    ],
+    "correctAnswer": "IN-UP",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

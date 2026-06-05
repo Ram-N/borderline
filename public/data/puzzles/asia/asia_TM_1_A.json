@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "asia_TM_1_A",
+    "countryCode": "TM",
+    "countryName": "Turkmenistan",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.087Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "TM",
+    "visibleNeighbors": [
+      "UZ",
+      "KZ",
+      "IR",
+      "AF"
+    ],
+    "choices": [
+      "TM",
+      "BN",
+      "JP",
+      "BH"
+    ],
+    "correctAnswer": "TM",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

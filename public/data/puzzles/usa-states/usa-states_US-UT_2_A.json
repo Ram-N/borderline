@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "usa-states_US-UT_2_A",
+    "countryCode": "US-UT",
+    "countryName": "Utah",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.360Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-UT",
+    "visibleNeighbors": [
+      "US-AZ",
+      "US-CO",
+      "US-ID",
+      "US-NV",
+      "US-NM",
+      "US-WY"
+    ],
+    "choices": [
+      "US-WV",
+      "US-NH",
+      "US-NC",
+      "US-UT"
+    ],
+    "correctAnswer": "US-UT",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

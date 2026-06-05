@@ -57,6 +57,15 @@ export default function QaPuzzlePreview() {
   return (
     <div className="qa-puzzle-preview">
       <h2>{meta.countryName} — Level {meta.difficulty} ({meta.variant})</h2>
+      <div style={{ background: '#1a1a2e', color: '#e0e0e0', padding: '8px 12px', borderRadius: '4px', marginBottom: '12px', fontSize: '0.85rem' }}>
+        <strong>Type:</strong> {puzzle.type === 'hidden_country' ? 'Hidden Country' : 'Missing Neighbor'}
+        {puzzle.type === 'missing_neighbor' && (
+          <span> — Center: <strong>{countryNames[puzzle.center] || puzzle.center}</strong>, answer is its hidden neighbor: <strong>{countryNames[puzzle.correctAnswer] || puzzle.correctAnswer}</strong></span>
+        )}
+        {puzzle.type === 'hidden_country' && (
+          <span> — The orange country IS the answer: <strong>{countryNames[puzzle.correctAnswer] || puzzle.correctAnswer}</strong></span>
+        )}
+      </div>
       <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
         <div style={{ flex: 1, minWidth: '300px' }}>
           <PuzzleMapView
@@ -93,7 +102,7 @@ export default function QaPuzzlePreview() {
         </div>
         <div style={{ flex: 1, minWidth: '250px' }}>
           <h3>Metadata</h3>
-          <pre style={{ fontSize: '0.75rem', background: '#1a1a2e', padding: '8px', borderRadius: '4px', overflow: 'auto' }}>
+          <pre style={{ fontSize: '0.75rem', background: '#1a1a2e', color: '#e0e0e0', padding: '8px', borderRadius: '4px', overflow: 'auto' }}>
             {JSON.stringify(meta, null, 2)}
           </pre>
         </div>

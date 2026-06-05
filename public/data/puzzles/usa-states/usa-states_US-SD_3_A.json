@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "usa-states_US-SD_3_A",
+    "countryCode": "US-SD",
+    "countryName": "South Dakota",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.352Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-SD",
+    "visibleNeighbors": [
+      "US-IA",
+      "US-MN",
+      "US-MT",
+      "US-ND",
+      "US-NE"
+    ],
+    "labeledNeighbors": [
+      "US-IA"
+    ],
+    "hiddenNeighbors": [
+      "US-WY"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-MN",
+      "US-MT",
+      "US-ND",
+      "US-WY"
+    ],
+    "correctAnswer": "US-WY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

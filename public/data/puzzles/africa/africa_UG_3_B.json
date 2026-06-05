@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "africa_UG_3_B",
+    "countryCode": "UG",
+    "countryName": "Uganda",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.980Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "UG",
+    "visibleNeighbors": [
+      "TZ",
+      "SS",
+      "RW",
+      "KE"
+    ],
+    "labeledNeighbors": [
+      "KE"
+    ],
+    "hiddenNeighbors": [
+      "CD"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "CD",
+      "SS",
+      "TZ",
+      "RW"
+    ],
+    "correctAnswer": "CD",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "north-america_BZ_4_A",
+    "countryCode": "BZ",
+    "countryName": "Belize",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "north-america",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.235Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BZ",
+    "visibleNeighbors": [
+      "MX"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "GT"
+    ],
+    "contextCountries": [
+      "GL",
+      "AI"
+    ],
+    "choices": [
+      "GL",
+      "AI",
+      "MX",
+      "GT"
+    ],
+    "correctAnswer": "GT",
+    "svgMap": "/images/maps/region_world_northAmericaLow.svg",
+    "region": "north-america"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "india-states_IN-AS_3_A",
+    "countryCode": "IN-AS",
+    "countryName": "Assam",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.387Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-AS",
+    "visibleNeighbors": [
+      "IN-AR",
+      "IN-NL",
+      "IN-MN",
+      "IN-TR",
+      "IN-ML",
+      "IN-WB"
+    ],
+    "labeledNeighbors": [
+      "IN-AR"
+    ],
+    "hiddenNeighbors": [
+      "IN-MZ"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-MZ",
+      "IN-WB",
+      "IN-TR",
+      "IN-ML"
+    ],
+    "correctAnswer": "IN-MZ",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

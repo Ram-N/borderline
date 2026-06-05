@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "africa_MR_4_A",
+    "countryCode": "MR",
+    "countryName": "Mauritania",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.015Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "MR",
+    "visibleNeighbors": [
+      "SN",
+      "EH",
+      "ML"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "DZ"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "DZ",
+      "ML",
+      "SN",
+      "EH"
+    ],
+    "correctAnswer": "DZ",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

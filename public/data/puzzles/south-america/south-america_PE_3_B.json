@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "south-america_PE_3_B",
+    "countryCode": "PE",
+    "countryName": "Peru",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "south-america",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.279Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "PE",
+    "visibleNeighbors": [
+      "EC",
+      "CO",
+      "BR",
+      "BO"
+    ],
+    "labeledNeighbors": [
+      "BO"
+    ],
+    "hiddenNeighbors": [
+      "CL"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "BR",
+      "CO",
+      "CL",
+      "EC"
+    ],
+    "correctAnswer": "CL",
+    "svgMap": "/images/maps/region_world_southAmericaLow.svg",
+    "region": "south-america"
+  }
+}

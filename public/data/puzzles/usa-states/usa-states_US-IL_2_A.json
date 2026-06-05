@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "usa-states_US-IL_2_A",
+    "countryCode": "US-IL",
+    "countryName": "Illinois",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.323Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-IL",
+    "visibleNeighbors": [
+      "US-IN",
+      "US-IA",
+      "US-KY",
+      "US-MO",
+      "US-WI"
+    ],
+    "choices": [
+      "US-MD",
+      "US-IL",
+      "US-OR",
+      "US-GA"
+    ],
+    "correctAnswer": "US-IL",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

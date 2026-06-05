@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "india-states_IN-MZ_4_A",
+    "countryCode": "IN-MZ",
+    "countryName": "Mizoram",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.409Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-MZ",
+    "visibleNeighbors": [
+      "IN-AS",
+      "IN-TR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-MN"
+    ],
+    "contextCountries": [
+      "IN-MH"
+    ],
+    "choices": [
+      "IN-MN",
+      "IN-TR",
+      "IN-MH",
+      "IN-AS"
+    ],
+    "correctAnswer": "IN-MN",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

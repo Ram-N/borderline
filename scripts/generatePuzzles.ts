@@ -102,7 +102,7 @@ function generate(regionFilter?: string) {
         }
 
         for (const variant of variants) {
-          const puzzleId = `${code}_${difficulty}_${variant}`;
+          const puzzleId = `${regionKey}_${code}_${difficulty}_${variant}`;
           const outPath = join(regionDir, `${puzzleId}.json`);
 
           // Skip if already exists

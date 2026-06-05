@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "usa-states_US-TX_1_A",
+    "countryCode": "US-TX",
+    "countryName": "Texas",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.356Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-TX",
+    "visibleNeighbors": [
+      "US-AR",
+      "US-LA",
+      "US-NM",
+      "US-OK"
+    ],
+    "choices": [
+      "US-CT",
+      "US-NJ",
+      "US-VA",
+      "US-TX"
+    ],
+    "correctAnswer": "US-TX",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

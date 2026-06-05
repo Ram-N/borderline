@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "usa-states_US-LA_4_A",
+    "countryCode": "US-LA",
+    "countryName": "Louisiana",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.328Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-LA",
+    "visibleNeighbors": [
+      "US-AR",
+      "US-MS"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-TX"
+    ],
+    "contextCountries": [
+      "US-NV"
+    ],
+    "choices": [
+      "US-AR",
+      "US-NV",
+      "US-MS",
+      "US-TX"
+    ],
+    "correctAnswer": "US-TX",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

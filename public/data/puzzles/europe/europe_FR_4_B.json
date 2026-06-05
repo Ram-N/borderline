@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "europe_FR_4_B",
+    "countryCode": "FR",
+    "countryName": "France",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 8,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.917Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "FR",
+    "visibleNeighbors": [
+      "CH",
+      "ES",
+      "MC",
+      "LU",
+      "IT",
+      "BE",
+      "AD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "DE"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "BE",
+      "AD",
+      "ES",
+      "DE"
+    ],
+    "correctAnswer": "DE",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "africa_ER_5_A",
+    "countryCode": "ER",
+    "countryName": "Eritrea",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.038Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "ER",
+    "visibleNeighbors": [
+      "SD",
+      "ET"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "DJ"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "DJ",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

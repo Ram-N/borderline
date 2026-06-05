@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "europe_BY_2_A",
+    "countryCode": "BY",
+    "countryName": "Belarus",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.942Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "BY",
+    "visibleNeighbors": [
+      "UA",
+      "RU",
+      "PL",
+      "LT",
+      "LV"
+    ],
+    "choices": [
+      "AT",
+      "FO",
+      "ME",
+      "BY"
+    ],
+    "correctAnswer": "BY",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

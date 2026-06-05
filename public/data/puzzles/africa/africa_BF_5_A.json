@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "africa_BF_5_A",
+    "countryCode": "BF",
+    "countryName": "Burkina Faso",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.056Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BF",
+    "visibleNeighbors": [
+      "NE",
+      "ML",
+      "GH",
+      "CI",
+      "BJ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "TG"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "TG",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

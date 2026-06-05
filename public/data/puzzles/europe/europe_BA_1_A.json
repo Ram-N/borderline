@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "europe_BA_1_A",
+    "countryCode": "BA",
+    "countryName": "Bosnia and Herz.",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.946Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "BA",
+    "visibleNeighbors": [
+      "RS",
+      "ME",
+      "HR"
+    ],
+    "choices": [
+      "AZ",
+      "LU",
+      "BA",
+      "AL"
+    ],
+    "correctAnswer": "BA",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

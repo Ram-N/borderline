@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "africa_CI_3_B",
+    "countryCode": "CI",
+    "countryName": "Côte d'Ivoire",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.048Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "CI",
+    "visibleNeighbors": [
+      "ML",
+      "LR",
+      "GN",
+      "BF"
+    ],
+    "labeledNeighbors": [
+      "BF"
+    ],
+    "hiddenNeighbors": [
+      "GH"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "GH",
+      "GN",
+      "LR",
+      "ML"
+    ],
+    "correctAnswer": "GH",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

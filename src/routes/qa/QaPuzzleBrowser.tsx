@@ -26,22 +26,29 @@ export default function QaPuzzleBrowser() {
   if (approvedFilter === 'no') puzzles = puzzles.filter(p => !p.approved);
   if (search) {
     const q = search.toLowerCase();
+    const regionLabels: Record<string, string> = {};
+    for (const [key, c] of Object.entries(REGION_CONFIG)) {
+      regionLabels[key] = c.label.toLowerCase();
+    }
     puzzles = puzzles.filter(p =>
       p.id.toLowerCase().includes(q) ||
       p.countryName.toLowerCase().includes(q) ||
-      p.countryCode.toLowerCase().includes(q)
+      p.countryCode.toLowerCase().includes(q) ||
+      p.region.toLowerCase().includes(q) ||
+      (regionLabels[p.region] ?? '').includes(q)
     );
   }
 
   return (
     <div className="qa-puzzle-browser">
       <h2>Puzzle Browser ({puzzles.length} / {index.totalCount})</h2>
-      <div style={{ display: 'flex', gap: '8px', marginBottom: '16px', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', gap: '8px', marginBottom: '16px', flexWrap: 'wrap', alignItems: 'center' }}>
         <input
           type="text"
-          placeholder="Search…"
+          placeholder="Search by country, code, or region…"
           value={search}
           onChange={e => setSearch(e.target.value)}
+          style={{ padding: '6px 10px', border: '2px solid #ccc', borderRadius: '6px', fontSize: '0.9rem', minWidth: '250px' }}
         />
         <select value={regionFilter} onChange={e => setRegionFilter(e.target.value)}>
           <option value="">All Regions</option>
@@ -72,8 +79,8 @@ export default function QaPuzzleBrowser() {
           </tr>
         </thead>
         <tbody>
-          {puzzles.slice(0, 200).map(p => (
-            <tr key={p.id}>
+          {puzzles.slice(0, 200).map((p, i) => (
+            <tr key={`${p.region}/${p.id}_${i}`}>
               <td style={{ padding: '4px', fontFamily: 'monospace' }}>{p.id}</td>
               <td style={{ padding: '4px' }}>{p.countryName}</td>
               <td style={{ padding: '4px', textAlign: 'center' }}>{p.difficulty}</td>

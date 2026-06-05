@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "usa-states_US-DC_4_A",
+    "countryCode": "US-DC",
+    "countryName": "District of Columbia",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.317Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-DC",
+    "visibleNeighbors": [
+      "US-MD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-VA"
+    ],
+    "contextCountries": [
+      "US-DE",
+      "US-MA"
+    ],
+    "choices": [
+      "US-VA",
+      "US-MA",
+      "US-MD",
+      "US-DE"
+    ],
+    "correctAnswer": "US-VA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

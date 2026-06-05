@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "north-america_HN_3_A",
+    "countryCode": "HN",
+    "countryName": "Honduras",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "north-america",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.241Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "HN",
+    "visibleNeighbors": [
+      "GT",
+      "SV"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "NI"
+    ],
+    "contextCountries": [
+      "BZ"
+    ],
+    "choices": [
+      "SV",
+      "NI",
+      "BZ",
+      "GT"
+    ],
+    "correctAnswer": "NI",
+    "svgMap": "/images/maps/region_world_northAmericaLow.svg",
+    "region": "north-america"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "usa-states_US-NJ_4_A",
+    "countryCode": "US-NJ",
+    "countryName": "New Jersey",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.339Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-NJ",
+    "visibleNeighbors": [
+      "US-DE",
+      "US-NY"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-PA"
+    ],
+    "contextCountries": [
+      "US-KS"
+    ],
+    "choices": [
+      "US-KS",
+      "US-NY",
+      "US-PA",
+      "US-DE"
+    ],
+    "correctAnswer": "US-PA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

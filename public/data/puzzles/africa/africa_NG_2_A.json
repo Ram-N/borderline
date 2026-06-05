@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "africa_NG_2_A",
+    "countryCode": "NG",
+    "countryName": "Nigeria",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.006Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "NG",
+    "visibleNeighbors": [
+      "NE",
+      "TD",
+      "CM",
+      "BJ"
+    ],
+    "choices": [
+      "MW",
+      "ET",
+      "JU",
+      "NG"
+    ],
+    "correctAnswer": "NG",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "europe_CH_2_A",
+    "countryCode": "CH",
+    "countryName": "Switzerland",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.935Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "CH",
+    "visibleNeighbors": [
+      "LI",
+      "IT",
+      "DE",
+      "FR",
+      "AT"
+    ],
+    "choices": [
+      "VA",
+      "NO",
+      "IS",
+      "CH"
+    ],
+    "correctAnswer": "CH",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

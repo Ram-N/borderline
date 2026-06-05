@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "asia_SY_3_B",
+    "countryCode": "SY",
+    "countryName": "Syria",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.099Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SY",
+    "visibleNeighbors": [
+      "LB",
+      "JO",
+      "IL"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IQ"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "JO",
+      "IL",
+      "IQ",
+      "LB"
+    ],
+    "correctAnswer": "IQ",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

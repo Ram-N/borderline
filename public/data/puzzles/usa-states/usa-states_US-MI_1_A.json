@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "id": "usa-states_US-MI_1_A",
+    "countryCode": "US-MI",
+    "countryName": "Michigan",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.329Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-MI",
+    "visibleNeighbors": [
+      "US-IN",
+      "US-OH",
+      "US-WI"
+    ],
+    "choices": [
+      "US-TX",
+      "US-NM",
+      "US-MI",
+      "US-AK"
+    ],
+    "correctAnswer": "US-MI",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

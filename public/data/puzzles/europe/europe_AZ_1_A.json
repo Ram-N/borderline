@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "europe_AZ_1_A",
+    "countryCode": "AZ",
+    "countryName": "Azerbaijan",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.948Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "AZ",
+    "visibleNeighbors": [
+      "TR",
+      "RU",
+      "GE",
+      "AM"
+    ],
+    "choices": [
+      "AZ",
+      "ME",
+      "UA",
+      "AT"
+    ],
+    "correctAnswer": "AZ",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

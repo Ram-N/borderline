@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "asia_KZ_2_A",
+    "countryCode": "KZ",
+    "countryName": "Kazakhstan",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.126Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "KZ",
+    "visibleNeighbors": [
+      "UZ",
+      "TM",
+      "RU",
+      "KG",
+      "CN"
+    ],
+    "choices": [
+      "MV",
+      "IQ",
+      "SY",
+      "KZ"
+    ],
+    "correctAnswer": "KZ",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

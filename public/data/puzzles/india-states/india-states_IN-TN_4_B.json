@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "india-states_IN-TN_4_B",
+    "countryCode": "IN-TN",
+    "countryName": "Tamil Nadu",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.419Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-TN",
+    "visibleNeighbors": [
+      "IN-KA",
+      "IN-KL",
+      "IN-PY"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-AP"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-PY",
+      "IN-KA",
+      "IN-AP",
+      "IN-KL"
+    ],
+    "correctAnswer": "IN-AP",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

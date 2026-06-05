@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "usa-states_US-KS_3_A",
+    "countryCode": "US-KS",
+    "countryName": "Kansas",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.326Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-KS",
+    "visibleNeighbors": [
+      "US-CO",
+      "US-MO",
+      "US-OK"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-NE"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-MO",
+      "US-CO",
+      "US-OK",
+      "US-NE"
+    ],
+    "correctAnswer": "US-NE",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "usa-states_US-WY_1_A",
+    "countryCode": "US-WY",
+    "countryName": "Wyoming",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.369Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-WY",
+    "visibleNeighbors": [
+      "US-CO",
+      "US-ID",
+      "US-MT",
+      "US-NE",
+      "US-SD",
+      "US-UT"
+    ],
+    "choices": [
+      "US-WY",
+      "US-WA",
+      "US-KY",
+      "US-TX"
+    ],
+    "correctAnswer": "US-WY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "africa_MZ_3_B",
+    "countryCode": "MZ",
+    "countryName": "Mozambique",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.019Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "MZ",
+    "visibleNeighbors": [
+      "ZW",
+      "ZM",
+      "TZ",
+      "SZ",
+      "ZA"
+    ],
+    "labeledNeighbors": [
+      "SZ"
+    ],
+    "hiddenNeighbors": [
+      "MW"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "ZM",
+      "MW",
+      "ZA",
+      "ZW"
+    ],
+    "correctAnswer": "MW",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

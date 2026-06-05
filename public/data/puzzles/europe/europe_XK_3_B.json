@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "id": "europe_XK_3_B",
+    "countryCode": "XK",
+    "countryName": "Kosovo",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.901Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "XK",
+    "visibleNeighbors": [
+      "RS",
+      "ME",
+      "MK"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "AL"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "ME",
+      "RS",
+      "MK",
+      "AL"
+    ],
+    "correctAnswer": "AL",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

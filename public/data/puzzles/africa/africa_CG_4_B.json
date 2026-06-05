@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "africa_CG_4_B",
+    "countryCode": "CG",
+    "countryName": "Congo",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.045Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "CG",
+    "visibleNeighbors": [
+      "GA",
+      "CD",
+      "CF",
+      "CM"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "AO"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "AO",
+      "CM",
+      "CD",
+      "GA"
+    ],
+    "correctAnswer": "AO",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

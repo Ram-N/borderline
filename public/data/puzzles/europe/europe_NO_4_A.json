@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "europe_NO_4_A",
+    "countryCode": "NO",
+    "countryName": "Norway",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.880Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "NO",
+    "visibleNeighbors": [
+      "SE",
+      "RU"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "FI"
+    ],
+    "contextCountries": [
+      "IT"
+    ],
+    "choices": [
+      "FI",
+      "RU",
+      "SE",
+      "IT"
+    ],
+    "correctAnswer": "FI",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

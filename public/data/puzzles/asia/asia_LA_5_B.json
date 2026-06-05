@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "asia_LA_5_B",
+    "countryCode": "LA",
+    "countryName": "Laos",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.122Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "LA",
+    "visibleNeighbors": [
+      "VN",
+      "TH",
+      "CN",
+      "MM"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "KH"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "KH",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

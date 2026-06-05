@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "usa-states_US-FL_4_A",
+    "countryCode": "US-FL",
+    "countryName": "Florida",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.320Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-FL",
+    "visibleNeighbors": [
+      "US-AL"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-GA"
+    ],
+    "contextCountries": [
+      "US-PA",
+      "US-MA"
+    ],
+    "choices": [
+      "US-MA",
+      "US-GA",
+      "US-PA",
+      "US-AL"
+    ],
+    "correctAnswer": "US-GA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

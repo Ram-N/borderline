@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "europe_ME_4_A",
+    "countryCode": "ME",
+    "countryName": "Montenegro",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.888Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "ME",
+    "visibleNeighbors": [
+      "RS",
+      "XK",
+      "HR",
+      "AL"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "BA"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "BA",
+      "AL",
+      "XK",
+      "HR"
+    ],
+    "correctAnswer": "BA",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

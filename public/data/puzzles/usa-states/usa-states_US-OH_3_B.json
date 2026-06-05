@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "usa-states_US-OH_3_B",
+    "countryCode": "US-OH",
+    "countryName": "Ohio",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.345Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-OH",
+    "visibleNeighbors": [
+      "US-IN",
+      "US-MI",
+      "US-PA",
+      "US-WV"
+    ],
+    "labeledNeighbors": [
+      "US-IN"
+    ],
+    "hiddenNeighbors": [
+      "US-KY"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-WV",
+      "US-MI",
+      "US-PA",
+      "US-KY"
+    ],
+    "correctAnswer": "US-KY",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

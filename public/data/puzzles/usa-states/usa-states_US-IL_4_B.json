@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "usa-states_US-IL_4_B",
+    "countryCode": "US-IL",
+    "countryName": "Illinois",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.324Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-IL",
+    "visibleNeighbors": [
+      "US-IN",
+      "US-IA",
+      "US-KY",
+      "US-MO"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-WI"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-IN",
+      "US-MO",
+      "US-IA",
+      "US-WI"
+    ],
+    "correctAnswer": "US-WI",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

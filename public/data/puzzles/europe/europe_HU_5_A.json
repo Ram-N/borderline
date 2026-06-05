@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "europe_HU_5_A",
+    "countryCode": "HU",
+    "countryName": "Hungary",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 7,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.909Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "HU",
+    "visibleNeighbors": [
+      "SK",
+      "SI",
+      "RS",
+      "RO",
+      "HR",
+      "AT"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "UA"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "UA",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

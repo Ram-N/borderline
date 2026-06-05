@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "asia_MM_4_B",
+    "countryCode": "MM",
+    "countryName": "Myanmar",
+    "difficulty": 4,
+    "variant": "B",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.114Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "MM",
+    "visibleNeighbors": [
+      "TH",
+      "IN",
+      "CN",
+      "BD"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "LA"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "BD",
+      "CN",
+      "LA",
+      "TH"
+    ],
+    "correctAnswer": "LA",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

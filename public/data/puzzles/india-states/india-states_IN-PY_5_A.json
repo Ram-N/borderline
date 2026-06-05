@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "india-states_IN-PY_5_A",
+    "countryCode": "IN-PY",
+    "countryName": "Puducherry",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.413Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-PY",
+    "visibleNeighbors": [
+      "IN-TN",
+      "IN-KL"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-AP"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "IN-AP",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

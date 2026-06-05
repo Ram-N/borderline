@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "central-america_GT_1_A",
+    "countryCode": "GT",
+    "countryName": "Guatemala",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "central-america",
+    "continent": "Americas",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.163Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "GT",
+    "visibleNeighbors": [
+      "MX",
+      "HN",
+      "SV",
+      "BZ"
+    ],
+    "choices": [
+      "CR",
+      "PA",
+      "GT",
+      "NI"
+    ],
+    "correctAnswer": "GT",
+    "svgMap": "/images/maps/region_world_centralAmericaLow.svg",
+    "region": "central-america"
+  }
+}

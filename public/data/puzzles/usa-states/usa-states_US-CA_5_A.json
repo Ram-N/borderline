@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "usa-states_US-CA_5_A",
+    "countryCode": "US-CA",
+    "countryName": "California",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.312Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-CA",
+    "visibleNeighbors": [
+      "US-NV",
+      "US-OR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-AZ"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-AZ",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

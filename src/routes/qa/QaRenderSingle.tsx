@@ -67,7 +67,7 @@ export default function QaRenderSingle() {
       {canned && (
         <div>
           <h3>{canned.meta.countryName} — L{canned.meta.difficulty} ({canned.meta.variant})</h3>
-          <pre style={{ fontSize: '0.75rem', background: '#1a1a2e', padding: '8px', borderRadius: '4px', overflow: 'auto' }}>
+          <pre style={{ fontSize: '0.75rem', background: '#1a1a2e', color: '#e0e0e0', padding: '8px', borderRadius: '4px', overflow: 'auto' }}>
             {JSON.stringify(canned.meta, null, 2)}
           </pre>
           <PuzzleMapView

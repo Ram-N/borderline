@@ -7,6 +7,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { hashSeed, mulberry32, seededShuffle } from '../../src/utils/seededRandom';
+import { REGION_CONFIG } from '../../src/data/regionConfig';
 import type { PuzzleIndex, DailyCalendar, DailyCalendarEntry } from '../../src/types/puzzleDb';
 
 function daysInYear(year: number): number {
@@ -22,10 +23,17 @@ export function buildCalendar(puzzlesDir: string, year: number): DailyCalendar {
   const indexPath = join(puzzlesDir, 'index.json');
   const index: PuzzleIndex = JSON.parse(readFileSync(indexPath, 'utf-8'));
 
-  // Group approved puzzles by difficulty
+  // Only include world regions in the daily calendar (exclude usa-states, india-states, etc.)
+  const worldRegions = new Set(
+    Object.entries(REGION_CONFIG)
+      .filter(([, c]) => c.group === 'world')
+      .map(([key]) => key)
+  );
+
+  // Group approved world-region puzzles by difficulty
   const byDifficulty: Record<number, string[]> = { 1: [], 2: [], 3: [], 4: [], 5: [] };
   for (const p of index.puzzles) {
-    if (p.approved) {
+    if (p.approved && worldRegions.has(p.region)) {
       byDifficulty[p.difficulty].push(p.id);
     }
   }

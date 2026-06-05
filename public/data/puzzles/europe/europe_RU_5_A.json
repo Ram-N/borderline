@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "europe_RU_5_A",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 10,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.845Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "RU",
+    "visibleNeighbors": [
+      "PL",
+      "NO",
+      "LT",
+      "LV",
+      "GE",
+      "FI",
+      "EE",
+      "BY",
+      "AZ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "UA"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "UA",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

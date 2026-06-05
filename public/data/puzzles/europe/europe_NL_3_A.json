@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "europe_NL_3_A",
+    "countryCode": "NL",
+    "countryName": "Netherlands",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.846Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "NL",
+    "visibleNeighbors": [
+      "BE"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "DE"
+    ],
+    "contextCountries": [
+      "PL",
+      "GB"
+    ],
+    "choices": [
+      "GB",
+      "BE",
+      "PL",
+      "DE"
+    ],
+    "correctAnswer": "DE",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

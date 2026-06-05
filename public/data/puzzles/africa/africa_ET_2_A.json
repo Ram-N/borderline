@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "africa_ET_2_A",
+    "countryCode": "ET",
+    "countryName": "Ethiopia",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.034Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "ET",
+    "visibleNeighbors": [
+      "SS",
+      "SD",
+      "SO",
+      "KE",
+      "ER",
+      "DJ"
+    ],
+    "choices": [
+      "EH",
+      "CF",
+      "ET",
+      "TZ"
+    ],
+    "correctAnswer": "ET",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

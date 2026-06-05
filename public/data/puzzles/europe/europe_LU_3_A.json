@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "europe_LU_3_A",
+    "countryCode": "LU",
+    "countryName": "Luxembourg",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 3,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.895Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "LU",
+    "visibleNeighbors": [
+      "DE",
+      "FR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "BE"
+    ],
+    "contextCountries": [
+      "MK"
+    ],
+    "choices": [
+      "FR",
+      "BE",
+      "MK",
+      "DE"
+    ],
+    "correctAnswer": "BE",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

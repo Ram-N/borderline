@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "usa-states_US-MA_3_B",
+    "countryCode": "US-MA",
+    "countryName": "Massachusetts",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.328Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-MA",
+    "visibleNeighbors": [
+      "US-CT",
+      "US-NY",
+      "US-RI",
+      "US-VT"
+    ],
+    "labeledNeighbors": [
+      "US-CT"
+    ],
+    "hiddenNeighbors": [
+      "US-NH"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "US-NY",
+      "US-VT",
+      "US-RI",
+      "US-NH"
+    ],
+    "correctAnswer": "US-NH",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

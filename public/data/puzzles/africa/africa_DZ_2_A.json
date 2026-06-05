@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "africa_DZ_2_A",
+    "countryCode": "DZ",
+    "countryName": "Algeria",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.041Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "DZ",
+    "visibleNeighbors": [
+      "TN",
+      "NE",
+      "MA",
+      "EH",
+      "MR",
+      "ML",
+      "LY"
+    ],
+    "choices": [
+      "DZ",
+      "NA",
+      "MZ",
+      "ET"
+    ],
+    "correctAnswer": "DZ",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

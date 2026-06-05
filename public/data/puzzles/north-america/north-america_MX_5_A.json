@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "id": "north-america_MX_5_A",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "north-america",
+    "continent": "Americas",
+    "neighborCount": 3,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.245Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "MX",
+    "visibleNeighbors": [
+      "US",
+      "BZ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "GT"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "GT",
+    "svgMap": "/images/maps/region_world_northAmericaLow.svg",
+    "region": "north-america"
+  }
+}

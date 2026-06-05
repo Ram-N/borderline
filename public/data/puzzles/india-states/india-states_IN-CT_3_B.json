@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "id": "india-states_IN-CT_3_B",
+    "countryCode": "IN-CT",
+    "countryName": "Chhattisgarh",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.389Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-CT",
+    "visibleNeighbors": [
+      "IN-MP",
+      "IN-UP",
+      "IN-JH",
+      "IN-OR",
+      "IN-TG",
+      "IN-MH"
+    ],
+    "labeledNeighbors": [
+      "IN-JH"
+    ],
+    "hiddenNeighbors": [
+      "IN-AP"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "IN-MP",
+      "IN-AP",
+      "IN-TG",
+      "IN-MH"
+    ],
+    "correctAnswer": "IN-AP",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

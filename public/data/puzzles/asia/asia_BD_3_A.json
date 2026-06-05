@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "asia_BD_3_A",
+    "countryCode": "BD",
+    "countryName": "Bangladesh",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.142Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BD",
+    "visibleNeighbors": [
+      "MM"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN"
+    ],
+    "contextCountries": [
+      "JP",
+      "MY"
+    ],
+    "choices": [
+      "JP",
+      "IN",
+      "MY",
+      "MM"
+    ],
+    "correctAnswer": "IN",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

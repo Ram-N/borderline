@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "europe_SE_5_A",
+    "countryCode": "SE",
+    "countryName": "Sweden",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.855Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "SE",
+    "visibleNeighbors": [
+      "FI"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "NO"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "NO",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

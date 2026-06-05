@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "india-states_IN-HP_1_A",
+    "countryCode": "IN-HP",
+    "countryName": "Himachal Pradesh",
+    "difficulty": 1,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 4,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 1,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.396Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "IN-HP",
+    "visibleNeighbors": [
+      "IN-JK",
+      "IN-PB",
+      "IN-HR",
+      "IN-UT"
+    ],
+    "choices": [
+      "IN-HP",
+      "IN-ML",
+      "IN-TN",
+      "IN-NL"
+    ],
+    "correctAnswer": "IN-HP",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

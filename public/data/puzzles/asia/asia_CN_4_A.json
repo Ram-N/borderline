@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "id": "asia_CN_4_A",
+    "countryCode": "CN",
+    "countryName": "China",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "asia",
+    "continent": "Asia",
+    "neighborCount": 16,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.140Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "CN",
+    "visibleNeighbors": [
+      "VN",
+      "TJ",
+      "RU",
+      "PK",
+      "KP",
+      "NP",
+      "MN",
+      "KG",
+      "KZ",
+      "IN",
+      "MO",
+      "HK",
+      "MM",
+      "BT",
+      "AF"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "LA"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "NP",
+      "KZ",
+      "LA",
+      "MN"
+    ],
+    "correctAnswer": "LA",
+    "svgMap": "/images/maps/region_world_asiaLow.svg",
+    "region": "asia"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "india-states_IN-DL_4_A",
+    "countryCode": "IN-DL",
+    "countryName": "Delhi",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.392Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-DL",
+    "visibleNeighbors": [
+      "IN-HR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-UP"
+    ],
+    "contextCountries": [
+      "IN-BR",
+      "IN-TG"
+    ],
+    "choices": [
+      "IN-UP",
+      "IN-TG",
+      "IN-BR",
+      "IN-HR"
+    ],
+    "correctAnswer": "IN-UP",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

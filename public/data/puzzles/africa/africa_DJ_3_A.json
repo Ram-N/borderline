@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "africa_DJ_3_A",
+    "countryCode": "DJ",
+    "countryName": "Djibouti",
+    "difficulty": 3,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.044Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "DJ",
+    "visibleNeighbors": [
+      "ET"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "ER"
+    ],
+    "contextCountries": [
+      "GN",
+      "TZ"
+    ],
+    "choices": [
+      "ER",
+      "TZ",
+      "GN",
+      "ET"
+    ],
+    "correctAnswer": "ER",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "id": "usa-states_US-CO_2_A",
+    "countryCode": "US-CO",
+    "countryName": "Colorado",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 7,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.313Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "US-CO",
+    "visibleNeighbors": [
+      "US-AZ",
+      "US-KS",
+      "US-NE",
+      "US-NM",
+      "US-OK",
+      "US-UT",
+      "US-WY"
+    ],
+    "choices": [
+      "US-CO",
+      "US-PA",
+      "US-IN",
+      "US-MO"
+    ],
+    "correctAnswer": "US-CO",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

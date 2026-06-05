@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "usa-states_US-SC_5_A",
+    "countryCode": "US-SC",
+    "countryName": "South Carolina",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "usa-states",
+    "continent": "Americas",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.352Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "US-SC",
+    "visibleNeighbors": [
+      "US-NC"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "US-GA"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "US-GA",
+    "svgMap": "/images/maps/usaAlbersLow.svg",
+    "region": "usa-states"
+  }
+}

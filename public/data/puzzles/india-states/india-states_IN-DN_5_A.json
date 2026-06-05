@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "id": "india-states_IN-DN_5_A",
+    "countryCode": "IN-DN",
+    "countryName": "Dadra and Nagar Haveli",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.393Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-DN",
+    "visibleNeighbors": [
+      "IN-GJ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-MH"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "IN-MH",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

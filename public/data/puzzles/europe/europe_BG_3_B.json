@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "id": "europe_BG_3_B",
+    "countryCode": "BG",
+    "countryName": "Bulgaria",
+    "difficulty": 3,
+    "variant": "B",
+    "region": "europe",
+    "continent": "Europe",
+    "neighborCount": 5,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.2,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:29.947Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "BG",
+    "visibleNeighbors": [
+      "RS",
+      "RO",
+      "MK",
+      "GR"
+    ],
+    "labeledNeighbors": [
+      "GR"
+    ],
+    "hiddenNeighbors": [
+      "TR"
+    ],
+    "contextCountries": [],
+    "choices": [
+      "MK",
+      "RO",
+      "RS",
+      "TR"
+    ],
+    "correctAnswer": "TR",
+    "svgMap": "/images/maps/region_world_europeLow.svg",
+    "region": "europe"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "id": "middle-east_LB_4_A",
+    "countryCode": "LB",
+    "countryName": "Lebanon",
+    "difficulty": 4,
+    "variant": "A",
+    "region": "middle-east",
+    "continent": "Asia",
+    "neighborCount": 2,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.213Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "LB",
+    "visibleNeighbors": [
+      "SY"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IL"
+    ],
+    "contextCountries": [
+      "PS",
+      "BH"
+    ],
+    "choices": [
+      "IL",
+      "PS",
+      "BH",
+      "SY"
+    ],
+    "correctAnswer": "IL",
+    "svgMap": "/images/maps/region_world_middleEastLow.svg",
+    "region": "middle-east"
+  }
+}

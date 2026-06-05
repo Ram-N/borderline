@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "id": "india-states_IN-WB_5_B",
+    "countryCode": "IN-WB",
+    "countryName": "West Bengal",
+    "difficulty": 5,
+    "variant": "B",
+    "region": "india-states",
+    "continent": "Asia",
+    "neighborCount": 5,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.424Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "IN-WB",
+    "visibleNeighbors": [
+      "IN-SK",
+      "IN-AS",
+      "IN-JH",
+      "IN-OR"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "IN-BR"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "IN-BR",
+    "svgMap": "/images/maps/indiaLow.svg",
+    "region": "india-states"
+  }
+}

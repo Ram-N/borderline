@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "africa_LY_5_A",
+    "countryCode": "LY",
+    "countryName": "Libya",
+    "difficulty": 5,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "free_text",
+    "neighborLabels": 0,
+    "choiceCount": 0,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.026Z"
+  },
+  "puzzle": {
+    "type": "missing_neighbor",
+    "center": "LY",
+    "visibleNeighbors": [
+      "TN",
+      "NE",
+      "EG",
+      "TD",
+      "DZ"
+    ],
+    "labeledNeighbors": [],
+    "hiddenNeighbors": [
+      "SD"
+    ],
+    "contextCountries": [],
+    "choices": [],
+    "correctAnswer": "SD",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

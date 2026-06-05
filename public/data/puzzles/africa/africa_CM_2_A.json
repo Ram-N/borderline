@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "id": "africa_CM_2_A",
+    "countryCode": "CM",
+    "countryName": "Cameroon",
+    "difficulty": 2,
+    "variant": "A",
+    "region": "africa",
+    "continent": "Africa",
+    "neighborCount": 6,
+    "answerMode": "multiple_choice",
+    "neighborLabels": 0.75,
+    "choiceCount": 4,
+    "distractorStrategy": "random",
+    "renderStatus": "untested",
+    "approved": true,
+    "createdAt": "2026-06-04T20:57:30.047Z"
+  },
+  "puzzle": {
+    "type": "hidden_country",
+    "center": "CM",
+    "visibleNeighbors": [
+      "NG",
+      "GA",
+      "GQ",
+      "CG",
+      "TD",
+      "CF"
+    ],
+    "choices": [
+      "CM",
+      "NA",
+      "ZM",
+      "ER"
+    ],
+    "correctAnswer": "CM",
+    "svgMap": "/images/maps/region_world_africaLow.svg",
+    "region": "africa"
+  }
+}

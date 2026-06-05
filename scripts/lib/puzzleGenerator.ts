@@ -62,7 +62,7 @@ export function generateCannedPuzzle(opts: GenerateOptions): CannedPuzzle | null
   const density = LABEL_DENSITY_BY_DIFFICULTY[difficulty - 1];
 
   const meta: PuzzleMetadata = {
-    id: `${countryCode}_${difficulty}_${variant}`,
+    id: `${region}_${countryCode}_${difficulty}_${variant}`,
     countryCode,
     countryName,
     difficulty,
