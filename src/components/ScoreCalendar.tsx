@@ -4,7 +4,10 @@ import { supabase } from '../lib/supabase';
 const DAY_LABELS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
 function toDateKey(d: Date): string {
-  return d.toISOString().split('T')[0];
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
 }
 
 export default function ScoreCalendar() {

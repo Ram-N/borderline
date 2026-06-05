@@ -16,7 +16,11 @@ import TextAnswer from '../components/TextAnswer';
 import ScorePanel from '../components/ScorePanel';
 
 function todayString(): string {
-  return new Date().toISOString().split('T')[0];
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
 }
 
 export default function DailyPlay() {

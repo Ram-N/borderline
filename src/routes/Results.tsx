@@ -14,7 +14,9 @@ function scoreRating(score: number, total: number): { label: string; color: stri
 
 function DailyBreakdown({ results, score }: { results: boolean[]; score: number }) {
   const shareGrid = results.map((correct) => correct ? '\u{1f7e9}' : '\u{1f7e5}').join('');
-  const shareText = `Borderline Daily ${new Date().toISOString().split('T')[0]}\n${score}/15\n${shareGrid}`;
+  const now = new Date();
+  const dateStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const shareText = `Borderline Daily ${dateStr}\n${score}/15\n${shareGrid}`;
 
   return (
     <div className='daily-breakdown'>
