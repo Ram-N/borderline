@@ -47,18 +47,20 @@ export default function PuzzlePlay() {
         ),
       ]).then(([adj, ...regionData]) => {
         const worldAdj = adj as AdjacencyData;
+        // Adjacency names are authoritative; SVG titles are region-specific
+        // (e.g. "ES" = "Spain" in Europe but "Canary Islands" in Africa)
         const names: Record<string, string> = {};
+        Object.entries(worldAdj).forEach(([code, data]) => {
+          names[code] = data.name;
+        });
         const pool: RegionSlot[] = regionData.map(({ key, paths }: { key: string; paths: any[] }) => {
           const codes = paths.map((p: any) => p.id);
-          paths.forEach((p: any) => { names[p.id] = p.title || p.id; });
+          paths.forEach((p: any) => { if (!names[p.id]) names[p.id] = p.title || p.id; });
           const vt = new Set(paths.filter((p: any) => {
             const c = computeCentroid(p.d);
             return c.w * c.h >= 100;
           }).map((p: any) => p.id));
           return { adjacency: worldAdj, regionCodes: codes, svgMap: REGION_CONFIG[key].svgMap, region: key, validTargets: vt };
-        });
-        Object.entries(worldAdj).forEach(([code, data]) => {
-          if (!names[code]) names[code] = data.name;
         });
         setAdjacency(worldAdj);
         setCountryNames(names);
@@ -81,10 +83,10 @@ export default function PuzzlePlay() {
         setRegionCodes(paths.map(p => p.id));
         setSvgViewBox(viewBox);
         const names: Record<string, string> = {};
-        paths.forEach(p => { names[p.id] = p.title || p.id; });
         Object.entries(adj as AdjacencyData).forEach(([code, data]) => {
-          if (!names[code]) names[code] = data.name;
+          names[code] = data.name;
         });
+        paths.forEach(p => { if (!names[p.id]) names[p.id] = p.title || p.id; });
         setCountryNames(names);
         const large = new Set(paths.filter(p => {
           const c = computeCentroid(p.d);

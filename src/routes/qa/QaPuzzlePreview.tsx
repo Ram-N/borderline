@@ -36,10 +36,10 @@ export default function QaPuzzlePreview() {
       parseSvg(config.svgMap),
     ]).then(([adj, { paths }]) => {
       const names: Record<string, string> = {};
-      paths.forEach(p => { names[p.id] = p.title || p.id; });
       Object.entries(adj as AdjacencyData).forEach(([code, data]) => {
-        if (!names[code]) names[code] = data.name;
+        names[code] = data.name;
       });
+      paths.forEach(p => { if (!names[p.id]) names[p.id] = p.title || p.id; });
       setCountryNames(names);
     });
   }, [region]);

@@ -87,18 +87,21 @@ export default function DailyPlay() {
       ),
     ]).then(([adj, ...regionData]) => {
       const worldAdj = adj as AdjacencyData;
+      // Build authoritative country names from adjacency data first,
+      // then fill gaps from SVG titles (SVG titles can be region-specific
+      // e.g. "ES" is "Spain" in Europe but "Canary Islands" in Africa)
       const names: Record<string, string> = {};
+      Object.entries(worldAdj).forEach(([code, data]) => {
+        names[code] = data.name;
+      });
       const pool: RegionSlot[] = regionData.map(({ key, paths }: any) => {
         const codes = paths.map((p: any) => p.id);
-        paths.forEach((p: any) => { names[p.id] = p.title || p.id; });
+        paths.forEach((p: any) => { if (!names[p.id]) names[p.id] = p.title || p.id; });
         const vt = new Set<string>(paths.filter((p: any) => {
           const c = computeCentroid(p.d);
           return c.w * c.h >= 100;
         }).map((p: any) => p.id as string));
         return { adjacency: worldAdj, regionCodes: codes, svgMap: REGION_CONFIG[key].svgMap, region: key, validTargets: vt };
-      });
-      Object.entries(worldAdj).forEach(([code, data]) => {
-        if (!names[code]) names[code] = data.name;
       });
       setAdjacency(worldAdj);
       setCountryNames(names);
