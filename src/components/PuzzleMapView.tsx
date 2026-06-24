@@ -5,7 +5,7 @@ import { LABEL_DENSITY_BY_DIFFICULTY } from '../utils/generatePuzzle';
 import type { Puzzle } from '../types/puzzle';
 
 // paddingFactor per difficulty level (index = difficulty - 1)
-const PADDING_BY_DIFFICULTY = [0.35, 0.25, 0.15, 0.08, 0.04] as const;
+const PADDING_BY_DIFFICULTY = [0.35, 0.25, 0.15, 0.08, 0.08] as const;
 
 type Props = {
   svgMap: string;
