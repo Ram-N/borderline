@@ -11,11 +11,14 @@ function formatDate(): string {
 
 export default function Home() {
   const navigate = useNavigate();
-  const [puzzleRegion, setPuzzleRegion] = useState<string>('europe');
-  const [puzzleCount, setPuzzleCount] = useState<number>(5);
-  const [difficulty, setDifficulty] = useState<number>(3);
+  const [puzzleRegion, setPuzzleRegion] = useState<string>(() => sessionStorage.getItem('bl_region') ?? 'europe');
+  const [puzzleCount, setPuzzleCount] = useState<number>(() => Number(sessionStorage.getItem('bl_count')) || 5);
+  const [difficulty, setDifficulty] = useState<number>(() => Number(sessionStorage.getItem('bl_difficulty')) || 3);
 
   function startPuzzle() {
+    sessionStorage.setItem('bl_region', puzzleRegion);
+    sessionStorage.setItem('bl_count', String(puzzleCount));
+    sessionStorage.setItem('bl_difficulty', String(difficulty));
     const params = new URLSearchParams({ region: puzzleRegion, n: String(puzzleCount), difficulty: String(difficulty) });
     navigate(`/puzzle?${params.toString()}`);
   }

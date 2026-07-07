@@ -74,9 +74,11 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .text-answer-input:focus { outline: none; border-color: #1976D2; }
 .text-answer-submit { padding: 10px 20px; border: none; border-radius: 6px; background: #1976D2; color: #fff; font-size: 1rem; font-weight: 600; cursor: pointer; }
 .text-answer-submit:disabled { background: #ccc; cursor: default; }
-.text-answer-reveal { padding: 12px 16px; border-radius: 6px; font-size: 1rem; font-weight: 600; }
+.text-answer-result { margin: 8px 0; }
+.text-answer-reveal { padding: 14px 18px; border-radius: 8px; font-size: 1.1rem; font-weight: 700; text-align: center; }
 .text-answer-reveal.correct { background: #E8F5E9; color: #1B5E20; border: 2px solid #4CAF50; }
 .text-answer-reveal.wrong { background: #FFEBEE; color: #B71C1C; border: 2px solid #F44336; }
+.text-answer-correct-label { text-align: center; margin-top: 8px; font-size: 1rem; color: #555; }
 
 /* Daily Puzzle CTA on Home */
 .daily-cta { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: #FF9800; color: #fff; border-radius: 10px; text-decoration: none; margin: 20px 0 0; transition: background 0.15s; }

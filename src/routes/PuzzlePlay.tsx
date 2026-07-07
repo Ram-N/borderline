@@ -153,17 +153,18 @@ function PuzzleContent({
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Enter' && phase === 'reveal') next();
+      if (e.key === 'Enter' && phase === 'reveal' && !(e.target instanceof HTMLInputElement)) next();
     }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [phase, next]);
 
-  if (done) {
+  useEffect(() => {
+    if (!done) return;
     navigate('/results', { state: { score, total } });
-    return null;
-  }
+  }, [done]);
 
+  if (done) return <div className='loading'>Loading results…</div>;
   if (total === 0) return <div>Could not generate puzzles for this region.</div>;
 
   const puzzle = puzzles[index];

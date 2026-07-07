@@ -11,26 +11,41 @@ type Props = {
 
 export default function TextAnswer({ correctAnswer, countryNames, phase, selected, onSubmit }: Props) {
   const [text, setText] = useState('');
+  const [matchedName, setMatchedName] = useState<string | null>(null);
 
   function handleSubmit() {
     if (phase === 'reveal' || !text.trim()) return;
     const entries = Object.entries(countryNames).map(([code, name]) => ({ code, name }));
     const fuse = new Fuse(entries, { keys: ['name'], threshold: 0.4 });
     const results = fuse.search(text.trim());
-    onSubmit(results.length > 0 ? results[0].item.code : '__no_match__');
+    if (results.length > 0) {
+      setMatchedName(results[0].item.name);
+      onSubmit(results[0].item.code);
+    } else {
+      setMatchedName(null);
+      onSubmit('__no_match__');
+    }
   }
 
   const correctName = countryNames[correctAnswer] ?? correctAnswer;
 
   if (phase === 'reveal') {
     const wasCorrect = selected === correctAnswer;
+    const guessLabel = matchedName
+      ? matchedName
+      : text.trim() || '(no answer)';
     return (
-      <div className='text-answer'>
+      <div className='text-answer-result'>
         <div className={`text-answer-reveal ${wasCorrect ? 'correct' : 'wrong'}`}>
           {wasCorrect
-            ? `✓ Correct — ${correctName}`
-            : `✗ The answer was ${correctName}`}
+            ? `✓ Correct! ${correctName}`
+            : `✗ Wrong — you guessed "${guessLabel}"`}
         </div>
+        {!wasCorrect && (
+          <div className='text-answer-correct-label'>
+            The answer was <strong>{correctName}</strong>
+          </div>
+        )}
       </div>
     );
   }
