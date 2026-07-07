@@ -12,7 +12,7 @@ function scoreRating(score: number, total: number): { label: string; color: stri
   return { label: 'Keep practicing', color: '#B71C1C' };
 }
 
-function DailyBreakdown({ results, score }: { results: boolean[]; score: number }) {
+function DailyBreakdown({ results, score, correctAnswers }: { results: boolean[]; score: number; correctAnswers?: string[] }) {
   const shareGrid = results.map((correct) => correct ? '\u{1f7e9}' : '\u{1f7e5}').join('');
   const now = new Date();
   const dateStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
@@ -25,7 +25,12 @@ function DailyBreakdown({ results, score }: { results: boolean[]; score: number 
         {results.map((correct, i) => (
           <li key={i} className={correct ? 'level-correct' : 'level-wrong'}>
             <span>Level {i + 1} — {DIFFICULTY_LABELS[i]}</span>
-            <span>{correct ? `+${i + 1}` : '0'} pts</span>
+            <span>
+              {correct ? `+${i + 1}` : '0'} pts
+              {!correct && correctAnswers?.[i] && (
+                <span className='level-answer'> — Answer: {correctAnswers[i]}</span>
+              )}
+            </span>
           </li>
         ))}
       </ul>
@@ -45,6 +50,7 @@ export default function Results() {
   const total = loc.state?.total;
   const daily = loc.state?.daily;
   const results: boolean[] | undefined = loc.state?.results;
+  const correctAnswers: string[] | undefined = loc.state?.correctAnswers;
 
   if (score == null) {
     return <Navigate to='/' replace />;
@@ -62,7 +68,7 @@ export default function Results() {
           <span className='results-score-den'>/ {total}</span>
         </div>
         <p className='results-pct' style={{ color: rating.color }}>{pct}% — {rating.label}</p>
-        {daily && results && <DailyBreakdown results={results} score={score} />}
+        {daily && results && <DailyBreakdown results={results} score={score} correctAnswers={correctAnswers} />}
         <div className='results-actions'>
           {daily ? (
             <Link to='/' className='results-btn results-btn-primary'>Back to home</Link>

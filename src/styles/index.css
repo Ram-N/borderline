@@ -102,6 +102,7 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .daily-levels li { display: flex; justify-content: space-between; padding: 8px 12px; border-radius: 6px; margin-bottom: 4px; font-size: 0.95rem; }
 .level-correct { background: #E8F5E9; color: #1B5E20; }
 .level-wrong { background: #FFEBEE; color: #B71C1C; }
+.level-answer { font-weight: 600; }
 
 /* Header stats area */
 .header-stats { display: flex; align-items: center; gap: 8px; }

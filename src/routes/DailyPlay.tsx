@@ -182,7 +182,7 @@ function DailyPuzzleContent({
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Enter' && phase === 'reveal') next();
+      if (e.key === 'Enter' && phase === 'reveal' && !(e.target instanceof HTMLInputElement)) next();
     }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
@@ -192,13 +192,15 @@ function DailyPuzzleContent({
     if (!done) return;
 
     const today = todayString();
+    const correctAnswers = puzzles.map(p => countryNames[p.correctAnswer] || p.correctAnswer);
+
     supabase.rpc('submit_daily_attempt', {
       attempt_date: today,
       attempt_score: score,
     }).then(() => {
       window.dispatchEvent(new Event('streak-updated'));
       navigate('/results', {
-        state: { score, total: 15, daily: true, results },
+        state: { score, total: 15, daily: true, results, correctAnswers },
       });
     });
   }, [done]);
