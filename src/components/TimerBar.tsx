@@ -14,7 +14,7 @@ export default function TimerBar({ secondsLeft, totalSeconds, isUntimed }: Props
     <div className='timer-bar-track'>
       <div
         className={`timer-bar-fill${warning ? ' timer-warning' : ''}`}
-        style={{ width: `${pct}%` }}
+        style={{ width: `${pct}%`, marginLeft: `${100 - pct}%` }}
       />
     </div>
   );
