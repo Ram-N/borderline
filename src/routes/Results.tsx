@@ -22,18 +22,20 @@ function DailyBreakdown({ results, score, correctAnswers }: { results: boolean[]
   const teaser = isPerfect ? 'Perfect score!' : 'Can you beat my score?';
   const shareText = `Borderline Daily — ${dateStr}\n${shareGrid} ${score}/15${isPerfect ? ' ⭐' : ''}\n${teaser}\nhttps://borderline.vercel.app/daily`;
 
+  async function handleCopy() {
+    await navigator.clipboard.writeText(shareText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }
+
   async function handleShare() {
     if (navigator.share) {
       try {
         await navigator.share({ title: 'Borderline Daily', text: shareText });
-        return;
       } catch {
-        // User cancelled or share failed — fall through to clipboard
+        // User cancelled — ignore
       }
     }
-    await navigator.clipboard.writeText(shareText);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
   }
 
   return (
@@ -52,12 +54,22 @@ function DailyBreakdown({ results, score, correctAnswers }: { results: boolean[]
           </li>
         ))}
       </ul>
-      <button
-        className='results-btn results-btn-secondary'
-        onClick={handleShare}
-      >
-        {copied ? 'Copied!' : '📤 Share results'}
-      </button>
+      <div className='results-share-row'>
+        <button
+          className='results-btn results-btn-secondary'
+          onClick={handleCopy}
+        >
+          {copied ? '✓ Copied!' : '📋 Copy results'}
+        </button>
+        {typeof navigator !== 'undefined' && navigator.share && (
+          <button
+            className='results-btn results-btn-secondary'
+            onClick={handleShare}
+          >
+            📤 Share
+          </button>
+        )}
+      </div>
     </div>
   );
 }

@@ -151,6 +151,8 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .results-btn-primary:hover { background: #1565C0; }
 .results-btn-secondary { background: #f5f5f5; color: #333; border: 1px solid #ddd; }
 .results-btn-secondary:hover { background: #eee; }
+.results-share-row { display: flex; gap: 8px; }
+.results-share-row .results-btn { flex: 1; }
 
 /* Timer Picker */
 .timer-picker { margin: 12px 0; }
