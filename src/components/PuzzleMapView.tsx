@@ -87,8 +87,8 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
       style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'block' }}
     >
       <defs>
-        <marker id="arr" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
-          <path d="M0,0 L0,5 L5,2.5 z" fill="#444" />
+        <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L6,3 z" fill="#1565C0" />
         </marker>
       </defs>
       {/* Layer 1: all country shapes (grey background, then blue neighbors, then orange highlight) */}
@@ -167,8 +167,8 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
               <line
                 x1={centroid.x} y1={centroid.y}
                 x2={arrowTo.x} y2={arrowTo.y}
-                stroke="#444"
-                strokeWidth={fontSize * 0.1}
+                stroke="#1565C0"
+                strokeWidth={fontSize * 0.18}
                 markerEnd="url(#arr)"
               />
             )}
