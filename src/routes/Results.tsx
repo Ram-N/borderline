@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import { useLocation, Link, Navigate } from 'react-router-dom';
 
 const DIFFICULTY_LABELS = ['Tourist', 'Traveler', 'Explorer', 'Cartographer', 'Diplomat'];
@@ -13,10 +14,27 @@ function scoreRating(score: number, total: number): { label: string; color: stri
 }
 
 function DailyBreakdown({ results, score, correctAnswers }: { results: boolean[]; score: number; correctAnswers?: string[] }) {
+  const [copied, setCopied] = useState(false);
   const shareGrid = results.map((correct) => correct ? '\u{1f7e9}' : '\u{1f7e5}').join('');
   const now = new Date();
-  const dateStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-  const shareText = `Borderline Daily ${dateStr}\n${score}/15\n${shareGrid}`;
+  const dateStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const isPerfect = results.every(Boolean);
+  const teaser = isPerfect ? 'Perfect score!' : 'Can you beat my score?';
+  const shareText = `Borderline Daily — ${dateStr}\n${shareGrid} ${score}/15${isPerfect ? ' ⭐' : ''}\n${teaser}\nhttps://borderline.vercel.app/daily`;
+
+  async function handleShare() {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'Borderline Daily', text: shareText });
+        return;
+      } catch {
+        // User cancelled or share failed — fall through to clipboard
+      }
+    }
+    await navigator.clipboard.writeText(shareText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }
 
   return (
     <div className='daily-breakdown'>
@@ -36,9 +54,9 @@ function DailyBreakdown({ results, score, correctAnswers }: { results: boolean[]
       </ul>
       <button
         className='results-btn results-btn-secondary'
-        onClick={() => navigator.clipboard.writeText(shareText)}
+        onClick={handleShare}
       >
-        Copy results
+        {copied ? 'Copied!' : '📤 Share results'}
       </button>
     </div>
   );
