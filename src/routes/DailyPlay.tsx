@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { supabase } from '../lib/supabase';
@@ -8,12 +8,14 @@ import { REGION_CONFIG } from '../data/regionConfig';
 import { type AdjacencyData } from '../utils/generatePuzzle';
 import useDailyPuzzleEngine, { DIFFICULTY_LABELS } from '../hooks/useDailyPuzzleEngine';
 import { useCannedDailyPuzzles } from '../hooks/useCannedDailyEngine';
+import useTimer, { type TimerPreset } from '../hooks/useTimer';
 import type { RegionSlot } from '../hooks/usePuzzleEngine';
 import type { Puzzle } from '../types/puzzle';
 import PuzzleMapView from '../components/PuzzleMapView';
 import PuzzleChoices from '../components/PuzzleChoices';
 import TextAnswer from '../components/TextAnswer';
 import ScorePanel from '../components/ScorePanel';
+import TimerBar from '../components/TimerBar';
 
 function todayString(): string {
   const d = new Date();
@@ -124,6 +126,8 @@ export default function DailyPlay() {
     );
   }
 
+  const dailyTimer = (sessionStorage.getItem('bl_timer') ?? 'regular') as TimerPreset;
+
   return (
     <DailyPuzzleContent
       seed={seed ?? today}
@@ -131,6 +135,7 @@ export default function DailyPlay() {
       countryNames={countryNames}
       regionPool={regionPool ?? []}
       preloadedPuzzles={cannedDaily.available ? cannedDaily.puzzles : undefined}
+      timerPreset={dailyTimer}
     />
   );
 }
@@ -168,25 +173,39 @@ function DailyPuzzleContent({
   countryNames,
   regionPool,
   preloadedPuzzles,
+  timerPreset,
 }: {
   seed: string;
   adjacency: AdjacencyData;
   countryNames: Record<string, string>;
   regionPool: RegionSlot[];
   preloadedPuzzles?: Puzzle[];
+  timerPreset: TimerPreset;
 }) {
   const navigate = useNavigate();
   const { user } = useAuth();
   const engine = useDailyPuzzleEngine({ seed, regionPool, adjacency, preloadedPuzzles });
   const { puzzles, index, total, phase, selected, score, done, results, currentDifficulty, select, next } = engine;
 
+  const onExpire = useCallback(() => select('__timeout__'), [select]);
+  const timer = useTimer(timerPreset, onExpire);
+
+  useEffect(() => {
+    if (phase === 'reveal') timer.pause();
+  }, [phase]);
+
+  const handleNext = useCallback(() => {
+    next();
+    timer.reset();
+  }, [next, timer.reset]);
+
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Enter' && phase === 'reveal' && !(e.target instanceof HTMLInputElement)) next();
+      if (e.key === 'Enter' && phase === 'reveal' && !(e.target instanceof HTMLInputElement)) handleNext();
     }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [phase, next]);
+  }, [phase, handleNext]);
 
   useEffect(() => {
     if (!done) return;
@@ -222,6 +241,7 @@ function DailyPuzzleContent({
         <span className='daily-level'>Level {currentDifficulty} — {diffLabel}</span>
       </div>
       <ScorePanel index={index} total={total} score={score} />
+      <TimerBar secondsLeft={timer.secondsLeft} totalSeconds={timer.totalSeconds} isUntimed={timer.isUntimed} />
       <p className='puzzle-prompt'>{prompt}</p>
       <PuzzleMapView
         svgMap={puzzle.svgMap}
@@ -252,7 +272,7 @@ function DailyPuzzleContent({
       )}
       {phase === 'reveal' && (
         <div className='controls'>
-          <button className='start-btn' onClick={next}>Next</button>
+          <button className='start-btn' onClick={handleNext}>Next</button>
         </div>
       )}
     </div>

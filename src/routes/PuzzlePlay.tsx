@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { parseSvg } from '../utils/parseSvg';
 import { type AdjacencyData } from '../utils/generatePuzzle';
@@ -6,10 +6,12 @@ import { computeCentroid } from '../utils/computeCentroid';
 import { REGION_CONFIG } from '../data/regionConfig';
 import usePuzzleEngine, { type RegionSlot } from '../hooks/usePuzzleEngine';
 import { useCannedPuzzles } from '../hooks/useCannedPuzzleEngine';
+import useTimer, { type TimerPreset } from '../hooks/useTimer';
 import PuzzleMapView from '../components/PuzzleMapView';
 import PuzzleChoices from '../components/PuzzleChoices';
 import TextAnswer from '../components/TextAnswer';
 import ScorePanel from '../components/ScorePanel';
+import TimerBar from '../components/TimerBar';
 import type { Puzzle } from '../types/puzzle';
 
 export default function PuzzlePlay() {
@@ -17,6 +19,7 @@ export default function PuzzlePlay() {
   const region = qs.get('region') ?? 'europe';
   const n = Number(qs.get('n') ?? '5');
   const difficulty = (Number(qs.get('difficulty') ?? '1') as 1 | 2 | 3 | 4 | 5);
+  const timerPreset = (qs.get('timer') ?? 'regular') as TimerPreset;
 
   // Try canned puzzles first
   const canned = useCannedPuzzles({ region, difficulty, n });
@@ -119,12 +122,13 @@ export default function PuzzlePlay() {
       validTargets={validTargets ?? new Set()}
       regionPool={regionPool ?? undefined}
       preloadedPuzzles={canned.available ? canned.puzzles : undefined}
+      timerPreset={timerPreset}
     />
   );
 }
 
 function PuzzleContent({
-  adjacency, regionCodes, countryNames, svgMap, svgViewBox, region, n, difficulty, validTargets, regionPool, preloadedPuzzles,
+  adjacency, regionCodes, countryNames, svgMap, svgViewBox, region, n, difficulty, validTargets, regionPool, preloadedPuzzles, timerPreset,
 }: {
   adjacency: AdjacencyData;
   regionCodes: string[];
@@ -137,6 +141,7 @@ function PuzzleContent({
   validTargets: Set<string>;
   regionPool?: RegionSlot[];
   preloadedPuzzles?: Puzzle[];
+  timerPreset: TimerPreset;
 }) {
   const navigate = useNavigate();
   const { puzzles, index, total, phase, selected, score, done, select, next } = usePuzzleEngine({
@@ -151,13 +156,25 @@ function PuzzleContent({
     preloadedPuzzles,
   });
 
+  const onExpire = useCallback(() => select('__timeout__'), [select]);
+  const timer = useTimer(timerPreset, onExpire);
+
+  useEffect(() => {
+    if (phase === 'reveal') timer.pause();
+  }, [phase]);
+
+  const handleNext = useCallback(() => {
+    next();
+    timer.reset();
+  }, [next, timer.reset]);
+
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Enter' && phase === 'reveal' && !(e.target instanceof HTMLInputElement)) next();
+      if (e.key === 'Enter' && phase === 'reveal' && !(e.target instanceof HTMLInputElement)) handleNext();
     }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [phase, next]);
+  }, [phase, handleNext]);
 
   useEffect(() => {
     if (!done) return;
@@ -179,6 +196,7 @@ function PuzzleContent({
   return (
     <div className='play'>
       <ScorePanel index={index} total={total} score={score} />
+      <TimerBar secondsLeft={timer.secondsLeft} totalSeconds={timer.totalSeconds} isUntimed={timer.isUntimed} />
       <p className='puzzle-prompt'>{prompt}</p>
       <PuzzleMapView
         svgMap={puzzleSvgMap}
@@ -210,7 +228,7 @@ function PuzzleContent({
       )}
       {phase === 'reveal' && (
         <div className='controls'>
-          <button className='start-btn' onClick={next}>Next</button>
+          <button className='start-btn' onClick={handleNext}>Next</button>
         </div>
       )}
     </div>

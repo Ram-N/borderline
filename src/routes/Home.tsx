@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import RegionGrid from '../components/RegionGrid';
 import CountPicker from '../components/CountPicker';
 import DifficultyPicker from '../components/DifficultyPicker';
+import TimerPicker from '../components/TimerPicker';
 
 function formatDate(): string {
   const d = new Date();
@@ -14,12 +15,14 @@ export default function Home() {
   const [puzzleRegion, setPuzzleRegion] = useState<string>(() => sessionStorage.getItem('bl_region') ?? 'europe');
   const [puzzleCount, setPuzzleCount] = useState<number>(() => Number(sessionStorage.getItem('bl_count')) || 5);
   const [difficulty, setDifficulty] = useState<number>(() => Number(sessionStorage.getItem('bl_difficulty')) || 3);
+  const [timer, setTimer] = useState<string>(() => sessionStorage.getItem('bl_timer') ?? 'regular');
 
   function startPuzzle() {
     sessionStorage.setItem('bl_region', puzzleRegion);
     sessionStorage.setItem('bl_count', String(puzzleCount));
     sessionStorage.setItem('bl_difficulty', String(difficulty));
-    const params = new URLSearchParams({ region: puzzleRegion, n: String(puzzleCount), difficulty: String(difficulty) });
+    sessionStorage.setItem('bl_timer', timer);
+    const params = new URLSearchParams({ region: puzzleRegion, n: String(puzzleCount), difficulty: String(difficulty), timer });
     navigate(`/puzzle?${params.toString()}`);
   }
 
@@ -40,6 +43,8 @@ export default function Home() {
       <CountPicker value={puzzleCount} onChange={setPuzzleCount} />
 
       <DifficultyPicker value={difficulty} onChange={setDifficulty} />
+
+      <TimerPicker value={timer} onChange={setTimer} />
 
       <button className='start-btn' onClick={startPuzzle}>Start</button>
     </div>

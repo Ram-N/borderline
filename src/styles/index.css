@@ -151,3 +151,19 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .results-btn-primary:hover { background: #1565C0; }
 .results-btn-secondary { background: #f5f5f5; color: #333; border: 1px solid #ddd; }
 .results-btn-secondary:hover { background: #eee; }
+
+/* Timer Picker */
+.timer-picker { margin: 12px 0; }
+.timer-picker > label { font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 6px; }
+.timer-buttons { display: flex; gap: 6px; flex-wrap: wrap; }
+.timer-btn { display: flex; flex-direction: column; align-items: center; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; min-width: 80px; transition: border-color 0.15s; }
+.timer-btn:hover { border-color: #666; }
+.timer-btn.active { border-color: #1976D2; background: #E3F2FD; }
+.timer-btn-label { font-size: 1rem; font-weight: 700; }
+.timer-btn-desc { font-size: 0.7rem; color: #555; margin-top: 2px; }
+.timer-btn.active .timer-btn-desc { color: #1976D2; }
+
+/* Timer Bar */
+.timer-bar-track { height: 6px; background: #e0e0e0; border-radius: 3px; margin: 0 0 12px; overflow: hidden; }
+.timer-bar-fill { height: 100%; background: #1976D2; border-radius: 3px; transition: width 1s linear; }
+.timer-bar-fill.timer-warning { background: #F44336; }

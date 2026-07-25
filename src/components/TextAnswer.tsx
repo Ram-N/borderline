@@ -31,15 +31,20 @@ export default function TextAnswer({ correctAnswer, countryNames, phase, selecte
 
   if (phase === 'reveal') {
     const wasCorrect = selected === correctAnswer;
-    const guessLabel = matchedName
-      ? matchedName
-      : text.trim() || '(no answer)';
+    const isTimeout = selected === '__timeout__';
+    const guessLabel = isTimeout
+      ? "Time's up!"
+      : matchedName
+        ? matchedName
+        : text.trim() || '(no answer)';
     return (
       <div className='text-answer-result'>
         <div className={`text-answer-reveal ${wasCorrect ? 'correct' : 'wrong'}`}>
           {wasCorrect
             ? `✓ Correct! ${correctName}`
-            : `✗ Wrong — you guessed "${guessLabel}"`}
+            : isTimeout
+              ? "⏱ Time's up!"
+              : `✗ Wrong — you guessed "${guessLabel}"`}
         </div>
         {!wasCorrect && (
           <div className='text-answer-correct-label'>
