@@ -176,12 +176,29 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
           }
         }
 
+        // Compute a short arrow stub from label toward the country
+        let arrowLine: { x1: number; y1: number; x2: number; y2: number } | null = null;
+        if (arrowTo) {
+          const dx = centroid.x - arrowTo.x;
+          const dy = centroid.y - arrowTo.y;
+          const fullLen = Math.sqrt(dx * dx + dy * dy);
+          if (fullLen > 0) {
+            const stubLen = Math.min(fullLen * 0.4, fontSize * 3);
+            arrowLine = {
+              x1: arrowTo.x,
+              y1: arrowTo.y,
+              x2: arrowTo.x + (dx / fullLen) * stubLen,
+              y2: arrowTo.y + (dy / fullLen) * stubLen,
+            };
+          }
+        }
+
         return (
           <g key={`label-${path.id}`}>
-            {arrowTo && (
+            {arrowLine && (
               <line
-                x1={centroid.x} y1={centroid.y}
-                x2={arrowTo.x} y2={arrowTo.y}
+                x1={arrowLine.x1} y1={arrowLine.y1}
+                x2={arrowLine.x2} y2={arrowLine.y2}
                 stroke="#1565C0"
                 strokeWidth={fontSize * 0.18}
                 markerEnd="url(#arr)"
