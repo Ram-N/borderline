@@ -40,19 +40,6 @@ export default function DailyPlay() {
   const today = todayString();
   const cannedDaily = useCannedDailyPuzzles(today);
 
-  // Auth gate
-  if (!user) {
-    return (
-      <div className='daily-auth-gate'>
-        <h2>Daily Puzzle</h2>
-        <p>Sign in to play today's puzzle and track your streak.</p>
-        <button className='start-btn' onClick={signInWithGoogle}>
-          Sign in with Google
-        </button>
-      </div>
-    );
-  }
-
   // Check for existing attempt + fetch seed
   useEffect(() => {
     if (!user) return;
@@ -110,6 +97,19 @@ export default function DailyPlay() {
       setRegionPool(pool);
     });
   }, []);
+
+  // Auth gate — placed after all hooks to avoid conditional hook calls
+  if (!user) {
+    return (
+      <div className='daily-auth-gate'>
+        <h2>Daily Puzzle</h2>
+        <p>Sign in to play today's puzzle and track your streak.</p>
+        <button className='start-btn' onClick={signInWithGoogle}>
+          Sign in with Google
+        </button>
+      </div>
+    );
+  }
 
   // Wait for auth check + canned loading; runtime data only needed if no canned puzzles
   if (loading || cannedDaily.loading) {
