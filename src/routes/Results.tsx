@@ -20,7 +20,7 @@ function DailyBreakdown({ results, score, correctAnswers }: { results: boolean[]
   const dateStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   const isPerfect = results.every(Boolean);
   const teaser = isPerfect ? 'Perfect score!' : 'Can you beat my score?';
-  const shareText = `Borderline Daily — ${dateStr}\n${shareGrid} ${score}/15${isPerfect ? ' ⭐' : ''}\n${teaser}\nhttps://borderline.vercel.app/daily`;
+  const shareText = `Borderline Daily — ${dateStr}\n${shareGrid} ${score}/15${isPerfect ? ' ⭐' : ''}\n${teaser}\nhttps://borderline-eight-eta.vercel.app/daily`;
 
   async function handleCopy() {
     await navigator.clipboard.writeText(shareText);
