@@ -75,9 +75,19 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
   const vbParts = vb.split(' ').map(Number);
   const maxFontSize = Math.min(vbParts[2], vbParts[3]) * 0.05;
   const MIN_LABEL_FONT = maxFontSize * 0.65;
-  const mapCx = vbParts[0] + vbParts[2] / 2;
-  const mapCy = vbParts[1] + vbParts[3] / 2;
-  const OUTSIDE_OFFSET = Math.min(vbParts[2], vbParts[3]) * 0.18;
+
+  // Compute bounding box around all land mass (relevant paths)
+  let landMinX = Infinity, landMinY = Infinity, landMaxX = -Infinity, landMaxY = -Infinity;
+  for (const p of paths) {
+    if (!relevantIds.has(p.id)) continue;
+    const c = computeCentroid(p.d);
+    if (!c) continue;
+    landMinX = Math.min(landMinX, c.x - c.w / 2);
+    landMinY = Math.min(landMinY, c.y - c.h / 2);
+    landMaxX = Math.max(landMaxX, c.x + c.w / 2);
+    landMaxY = Math.max(landMaxY, c.y + c.h / 2);
+  }
+  const labelMargin = maxFontSize * 1.5;
 
   return (
     <div style={{ width: '100%', paddingBottom: '66%', position: 'relative' }}>
@@ -107,121 +117,142 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
         );
       })}
       {/* Layer 2: all labels and arrows rendered on top of all shapes */}
-      {paths.map(path => {
-        const labelText = getLabelText(path.id, puzzle, phase, countryNames, labeledNeighborIds);
-        if (!labelText) return null;
-        const centroid = computeCentroid(path.d);
-        if (!centroid) return null;
-
-        const rawFontSize = Math.min(Math.min(centroid.w, centroid.h) * 0.18, maxFontSize);
-        const isSmall = labelText !== '?' && rawFontSize < MIN_LABEL_FONT;
-        const fontSize = isSmall ? MIN_LABEL_FONT : rawFontSize;
-
-        let textX = centroid.x;
-        let textY = centroid.y;
-        let arrowTo: { x: number; y: number } | null = null;
-        if (isSmall) {
-          const dx = centroid.x - mapCx;
-          const dy = centroid.y - mapCy;
-          const len = Math.sqrt(dx * dx + dy * dy) || 1;
-          textX = centroid.x + (dx / len) * OUTSIDE_OFFSET;
-          textY = centroid.y + (dy / len) * OUTSIDE_OFFSET;
-          const margin = OUTSIDE_OFFSET * 0.4;
-          textX = Math.max(vbParts[0] + margin, Math.min(vbParts[0] + vbParts[2] - margin, textX));
-          textY = Math.max(vbParts[1] + margin, Math.min(vbParts[1] + vbParts[3] - margin, textY));
-          arrowTo = { x: textX, y: textY };
+      {(() => {
+        // Pass 1: collect label info and determine placement
+        type LabelInfo = {
+          id: string; labelText: string; fontSize: number;
+          centroid: { x: number; y: number; w: number; h: number };
+          isSmall: boolean;
+        };
+        const labels: LabelInfo[] = [];
+        for (const path of paths) {
+          const labelText = getLabelText(path.id, puzzle, phase, countryNames, labeledNeighborIds);
+          if (!labelText) continue;
+          const centroid = computeCentroid(path.d);
+          if (!centroid) continue;
+          const rawFontSize = Math.min(Math.min(centroid.w, centroid.h) * 0.18, maxFontSize);
+          const isSmall = labelText !== '?' && rawFontSize < MIN_LABEL_FONT;
+          const fontSize = isSmall ? MIN_LABEL_FONT : rawFontSize;
+          labels.push({ id: path.id, labelText, fontSize, centroid, isSmall });
         }
 
-        // Nudge labels away from ALL other countries to avoid misleading overlap
-        if (labelText !== '?') {
-          const margin = OUTSIDE_OFFSET * 0.4;
-          // Collect IDs of countries whose bbox we should avoid
-          const avoidIds = new Set<string>();
-          if (puzzle.type === 'missing_neighbor') {
-            puzzle.hiddenNeighbors.forEach(id => avoidIds.add(id));
-            avoidIds.add(puzzle.center);
-            puzzle.visibleNeighbors.forEach(id => avoidIds.add(id));
-            puzzle.contextCountries.forEach(id => avoidIds.add(id));
-          } else {
-            avoidIds.add(puzzle.center);
-            puzzle.visibleNeighbors.forEach(id => avoidIds.add(id));
-          }
-          avoidIds.delete(path.id); // don't avoid own country
+        // Pass 2: for external labels, find nearest land-bbox edge and place outside
+        // Group by edge to distribute evenly
+        type Edge = 'top' | 'bottom' | 'left' | 'right';
+        const edgeLabels: Record<Edge, LabelInfo[]> = { top: [], bottom: [], left: [], right: [] };
+        const internalLabels: LabelInfo[] = [];
 
-          for (const avoidId of avoidIds) {
-            const ap = paths.find(p => p.id === avoidId);
-            if (!ap) continue;
-            const ac = computeCentroid(ap.d);
-            if (!ac) continue;
-            const pad = Math.max(ac.w, ac.h) * 0.25;
-            const inX = textX >= ac.x - ac.w / 2 - pad && textX <= ac.x + ac.w / 2 + pad;
-            const inY = textY >= ac.y - ac.h / 2 - pad && textY <= ac.y + ac.h / 2 + pad;
-            if (inX && inY) {
-              // Push label away from overlapping country
-              const dx = centroid.x - ac.x;
-              const dy = centroid.y - ac.y;
-              const len = Math.sqrt(dx * dx + dy * dy) || 1;
-              const nudge = Math.max(ac.w, ac.h) * 0.5 + pad;
-              textX = centroid.x + (dx / len) * nudge;
-              textY = centroid.y + (dy / len) * nudge;
-              textX = Math.max(vbParts[0] + margin, Math.min(vbParts[0] + vbParts[2] - margin, textX));
-              textY = Math.max(vbParts[1] + margin, Math.min(vbParts[1] + vbParts[3] - margin, textY));
+        for (const label of labels) {
+          if (!label.isSmall) {
+            internalLabels.push(label);
+            continue;
+          }
+          // Find nearest edge of land bbox from this country's centroid
+          const { centroid } = label;
+          const distTop = centroid.y - landMinY;
+          const distBottom = landMaxY - centroid.y;
+          const distLeft = centroid.x - landMinX;
+          const distRight = landMaxX - centroid.x;
+          const minDist = Math.min(distTop, distBottom, distLeft, distRight);
+
+          let edge: Edge;
+          if (minDist === distTop) edge = 'top';
+          else if (minDist === distBottom) edge = 'bottom';
+          else if (minDist === distLeft) edge = 'left';
+          else edge = 'right';
+
+          edgeLabels[edge].push(label);
+        }
+
+        // Sort labels on each edge by their position along that edge
+        edgeLabels.top.sort((a, b) => a.centroid.x - b.centroid.x);
+        edgeLabels.bottom.sort((a, b) => a.centroid.x - b.centroid.x);
+        edgeLabels.left.sort((a, b) => a.centroid.y - b.centroid.y);
+        edgeLabels.right.sort((a, b) => a.centroid.y - b.centroid.y);
+
+        // Compute positions for external labels
+        const vbMargin = labelMargin * 0.5;
+        const vbLeft = vbParts[0] + vbMargin;
+        const vbRight = vbParts[0] + vbParts[2] - vbMargin;
+        const vbTop = vbParts[1] + vbMargin;
+        const vbBottom = vbParts[1] + vbParts[3] - vbMargin;
+
+        type Positioned = LabelInfo & { textX: number; textY: number; needsArrow: boolean };
+        const positioned: Positioned[] = [];
+
+        // Internal labels: place at centroid
+        for (const label of internalLabels) {
+          positioned.push({ ...label, textX: label.centroid.x, textY: label.centroid.y, needsArrow: false });
+        }
+
+        // External labels: place outside land bbox on their assigned edge
+        function placeEdge(edge: Edge, edgeList: LabelInfo[]) {
+          if (edgeList.length === 0) return;
+          for (let i = 0; i < edgeList.length; i++) {
+            const label = edgeList[i];
+            let textX: number, textY: number;
+            const spacing = labelMargin * 2.5 * (i - (edgeList.length - 1) / 2);
+
+            if (edge === 'top') {
+              textX = Math.max(vbLeft, Math.min(vbRight, label.centroid.x + spacing));
+              textY = Math.max(vbTop, landMinY - labelMargin);
+            } else if (edge === 'bottom') {
+              textX = Math.max(vbLeft, Math.min(vbRight, label.centroid.x + spacing));
+              textY = Math.min(vbBottom, landMaxY + labelMargin);
+            } else if (edge === 'left') {
+              textX = Math.max(vbLeft, landMinX - labelMargin);
+              textY = Math.max(vbTop, Math.min(vbBottom, label.centroid.y + spacing));
+            } else {
+              textX = Math.min(vbRight, landMaxX + labelMargin);
+              textY = Math.max(vbTop, Math.min(vbBottom, label.centroid.y + spacing));
             }
-          }
 
-          // If label ended up far from centroid (from nudging), draw an arrow
-          const dist = Math.sqrt((textX - centroid.x) ** 2 + (textY - centroid.y) ** 2);
-          if (!arrowTo && dist > Math.max(centroid.w, centroid.h) * 0.5) {
-            arrowTo = { x: textX, y: textY };
+            positioned.push({ ...label, textX, textY, needsArrow: true });
           }
         }
 
-        // Compute a short arrow stub from label toward the country
-        let arrowLine: { x1: number; y1: number; x2: number; y2: number } | null = null;
-        if (arrowTo) {
-          const dx = centroid.x - arrowTo.x;
-          const dy = centroid.y - arrowTo.y;
-          const fullLen = Math.sqrt(dx * dx + dy * dy);
-          if (fullLen > 0) {
-            const stubLen = Math.min(fullLen * 0.4, fontSize * 3);
-            arrowLine = {
-              x1: arrowTo.x,
-              y1: arrowTo.y,
-              x2: arrowTo.x + (dx / fullLen) * stubLen,
-              y2: arrowTo.y + (dy / fullLen) * stubLen,
-            };
-          }
-        }
+        placeEdge('top', edgeLabels.top);
+        placeEdge('bottom', edgeLabels.bottom);
+        placeEdge('left', edgeLabels.left);
+        placeEdge('right', edgeLabels.right);
 
-        return (
-          <g key={`label-${path.id}`}>
-            {arrowLine && (
-              <line
-                x1={arrowLine.x1} y1={arrowLine.y1}
-                x2={arrowLine.x2} y2={arrowLine.y2}
-                stroke="#1565C0"
-                strokeWidth={fontSize * 0.18}
-                markerEnd="url(#arr)"
-              />
-            )}
-            <text
-              x={textX}
-              y={textY}
-              textAnchor="middle"
-              dominantBaseline="middle"
-              fontSize={fontSize}
-              fill={labelText === '?' ? '#BF360C' : '#333333'}
-              fontWeight={labelText === '?' ? 'bold' : 'normal'}
-              stroke="white"
-              strokeWidth={fontSize * 0.25}
-              paintOrder="stroke"
-              pointerEvents="none"
-            >
-              {labelText}
-            </text>
-          </g>
-        );
-      })}
+        // Pass 3: render
+        return positioned.map(({ id, labelText, fontSize, centroid, textX, textY, needsArrow }) => {
+          // Line from country centroid to label (no arrowhead — the line itself indicates connection)
+          let arrowLine: { x1: number; y1: number; x2: number; y2: number } | null = null;
+          if (needsArrow) {
+            arrowLine = { x1: centroid.x, y1: centroid.y, x2: textX, y2: textY };
+          }
+
+          return (
+            <g key={`label-${id}`}>
+              {arrowLine && (
+                <line
+                  x1={arrowLine.x1} y1={arrowLine.y1}
+                  x2={arrowLine.x2} y2={arrowLine.y2}
+                  stroke="#1565C0"
+                  strokeWidth={fontSize * 0.15}
+                />
+              )}
+              <text
+                x={textX}
+                y={textY}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fontSize={fontSize}
+                fill={labelText === '?' ? '#BF360C' : '#333333'}
+                fontWeight={labelText === '?' ? 'bold' : 'normal'}
+                stroke="white"
+                strokeWidth={fontSize * 0.25}
+                paintOrder="stroke"
+                pointerEvents="none"
+              >
+                {labelText}
+              </text>
+            </g>
+          );
+        });
+      })()}
     </svg>
     </div>
   );
