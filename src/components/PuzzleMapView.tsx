@@ -132,32 +132,47 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
           arrowTo = { x: textX, y: textY };
         }
 
-        // Nudge labels away from the hidden (orange) country to avoid misleading overlap
+        // Nudge labels away from ALL other countries to avoid misleading overlap
         if (labelText !== '?') {
-          const hiddenIds = puzzle.type === 'missing_neighbor' ? puzzle.hiddenNeighbors : [puzzle.center];
-          for (const hid of hiddenIds) {
-            if (path.id === hid) continue;
-            const hp = paths.find(p => p.id === hid);
-            if (!hp) continue;
-            const hc = computeCentroid(hp.d);
-            if (!hc) continue;
-            // Check if label position falls within or near the hidden country's bbox
-            const pad = Math.max(hc.w, hc.h) * 0.3;
-            const inX = textX >= hc.x - hc.w / 2 - pad && textX <= hc.x + hc.w / 2 + pad;
-            const inY = textY >= hc.y - hc.h / 2 - pad && textY <= hc.y + hc.h / 2 + pad;
+          const margin = OUTSIDE_OFFSET * 0.4;
+          // Collect IDs of countries whose bbox we should avoid
+          const avoidIds = new Set<string>();
+          if (puzzle.type === 'missing_neighbor') {
+            puzzle.hiddenNeighbors.forEach(id => avoidIds.add(id));
+            avoidIds.add(puzzle.center);
+            puzzle.visibleNeighbors.forEach(id => avoidIds.add(id));
+            puzzle.contextCountries.forEach(id => avoidIds.add(id));
+          } else {
+            avoidIds.add(puzzle.center);
+            puzzle.visibleNeighbors.forEach(id => avoidIds.add(id));
+          }
+          avoidIds.delete(path.id); // don't avoid own country
+
+          for (const avoidId of avoidIds) {
+            const ap = paths.find(p => p.id === avoidId);
+            if (!ap) continue;
+            const ac = computeCentroid(ap.d);
+            if (!ac) continue;
+            const pad = Math.max(ac.w, ac.h) * 0.25;
+            const inX = textX >= ac.x - ac.w / 2 - pad && textX <= ac.x + ac.w / 2 + pad;
+            const inY = textY >= ac.y - ac.h / 2 - pad && textY <= ac.y + ac.h / 2 + pad;
             if (inX && inY) {
-              // Push label away from hidden country toward own centroid's opposite side
-              const dx = centroid.x - hc.x;
-              const dy = centroid.y - hc.y;
+              // Push label away from overlapping country
+              const dx = centroid.x - ac.x;
+              const dy = centroid.y - ac.y;
               const len = Math.sqrt(dx * dx + dy * dy) || 1;
-              const nudge = Math.max(hc.w, hc.h) * 0.5 + pad;
+              const nudge = Math.max(ac.w, ac.h) * 0.5 + pad;
               textX = centroid.x + (dx / len) * nudge;
               textY = centroid.y + (dy / len) * nudge;
-              // Clamp within viewBox
-              const margin = OUTSIDE_OFFSET * 0.4;
               textX = Math.max(vbParts[0] + margin, Math.min(vbParts[0] + vbParts[2] - margin, textX));
               textY = Math.max(vbParts[1] + margin, Math.min(vbParts[1] + vbParts[3] - margin, textY));
             }
+          }
+
+          // If label ended up far from centroid (from nudging), draw an arrow
+          const dist = Math.sqrt((textX - centroid.x) ** 2 + (textY - centroid.y) ** 2);
+          if (!arrowTo && dist > Math.max(centroid.w, centroid.h) * 0.5) {
+            arrowTo = { x: textX, y: textY };
           }
         }
 
