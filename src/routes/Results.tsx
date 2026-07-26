@@ -1,6 +1,7 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation, Link, Navigate } from 'react-router-dom';
+import { supabase } from '../lib/supabase';
 
 const DIFFICULTY_LABELS = ['Tourist', 'Traveler', 'Explorer', 'Cartographer', 'Diplomat'];
 
@@ -15,12 +16,24 @@ function scoreRating(score: number, total: number): { label: string; color: stri
 
 function DailyBreakdown({ results, score, correctAnswers }: { results: boolean[]; score: number; correctAnswers?: string[] }) {
   const [copied, setCopied] = useState(false);
+  const [streak, setStreak] = useState<number | null>(null);
+
+  useEffect(() => {
+    supabase.rpc('get_user_stats').then(({ data }) => {
+      if (data) {
+        const d = data as unknown as { current_streak: number };
+        setStreak(d.current_streak);
+      }
+    });
+  }, []);
+
   const shareGrid = results.map((correct) => correct ? '\u{1f7e9}' : '\u{1f7e5}').join('');
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   const isPerfect = results.every(Boolean);
   const teaser = isPerfect ? 'Perfect score!' : 'Can you beat my score?';
-  const shareText = `Borderline Daily — ${dateStr}\n${shareGrid} ${score}/15${isPerfect ? ' ⭐' : ''}\n${teaser}\nhttps://borderline-eight-eta.vercel.app/daily`;
+  const streakLine = streak && streak > 1 ? `🔥 ${streak}-day streak\n` : '';
+  const shareText = `Borderline Daily — ${dateStr}\n${shareGrid} ${score}/15${isPerfect ? ' ⭐' : ''}\n${streakLine}${teaser}\nhttps://borderline-eight-eta.vercel.app/daily`;
 
   async function handleCopy() {
     await navigator.clipboard.writeText(shareText);

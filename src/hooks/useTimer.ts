@@ -4,7 +4,7 @@ export type TimerPreset = 'blitz' | 'regular' | 'untimed';
 
 const PRESET_SECONDS: Record<TimerPreset, number> = {
   blitz: 10,
-  regular: 20,
+  regular: 30,
   untimed: 0,
 };
 

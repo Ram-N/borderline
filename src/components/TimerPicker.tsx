@@ -1,6 +1,6 @@
 const OPTIONS = [
   { value: 'blitz', label: 'Blitz', description: '10 seconds' },
-  { value: 'regular', label: 'Regular', description: '20 seconds' },
+  { value: 'regular', label: 'Regular', description: '30 seconds' },
   { value: 'untimed', label: 'Untimed', description: 'No timer' },
 ];
 
