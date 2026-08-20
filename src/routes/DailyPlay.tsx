@@ -185,7 +185,8 @@ function DailyPuzzleContent({
   const navigate = useNavigate();
   const { user } = useAuth();
   const engine = useDailyPuzzleEngine({ seed, regionPool, adjacency, preloadedPuzzles });
-  const { puzzles, index, total, phase, selected, score, done, results, currentDifficulty, select, next } = engine;
+  const { puzzles, index, total, phase, selected, isCorrect, score, done, results, currentDifficulty, select, next } = engine;
+  const isLastPuzzle = index === total - 1;
 
   const onExpire = useCallback(() => select('__timeout__'), [select]);
   const timer = useTimer(timerPreset, onExpire);
@@ -199,13 +200,21 @@ function DailyPuzzleContent({
     timer.reset();
   }, [next, timer.reset]);
 
+  // Auto-advance after last puzzle correct answer — just flash green, skip the Next button
+  useEffect(() => {
+    if (phase === 'reveal' && isCorrect === true && isLastPuzzle) {
+      const t = setTimeout(handleNext, 700);
+      return () => clearTimeout(t);
+    }
+  }, [phase, isCorrect, isLastPuzzle]);
+
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Enter' && phase === 'reveal' && !(e.target instanceof HTMLInputElement)) handleNext();
+      if (e.key === 'Enter' && phase === 'reveal' && !(e.target instanceof HTMLInputElement) && !(isLastPuzzle && isCorrect)) handleNext();
     }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [phase, handleNext]);
+  }, [phase, isCorrect, isLastPuzzle, handleNext]);
 
   useEffect(() => {
     if (!done) return;
@@ -270,7 +279,7 @@ function DailyPuzzleContent({
           onSelect={select}
         />
       )}
-      {phase === 'reveal' && (
+      {phase === 'reveal' && !(isLastPuzzle && isCorrect) && (
         <div className='controls'>
           <button className='start-btn' onClick={handleNext}>Next</button>
         </div>
