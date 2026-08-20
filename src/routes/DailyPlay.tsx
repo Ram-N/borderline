@@ -25,8 +25,20 @@ function todayString(): string {
   return `${yyyy}-${mm}-${dd}`;
 }
 
+const LS_SCORES_KEY = 'bl_daily_scores';
+
+function getLocalScores(): Record<string, number> {
+  try { return JSON.parse(localStorage.getItem(LS_SCORES_KEY) ?? '{}'); } catch { return {}; }
+}
+
+function saveLocalScore(date: string, score: number) {
+  const scores = getLocalScores();
+  scores[date] = score;
+  localStorage.setItem(LS_SCORES_KEY, JSON.stringify(scores));
+}
+
 export default function DailyPlay() {
-  const { user, signInWithGoogle } = useAuth();
+  const { user } = useAuth();
   const navigate = useNavigate();
 
   const [loading, setLoading] = useState(true);
@@ -42,8 +54,16 @@ export default function DailyPlay() {
 
   // Check for existing attempt + fetch seed
   useEffect(() => {
-    if (!user) return;
     const today = todayString();
+
+    if (!user) {
+      // Anonymous: check localStorage for today's score, use date as seed
+      const scores = getLocalScores();
+      if (scores[today] != null) setPreviousScore(scores[today]);
+      setSeed(today);
+      setLoading(false);
+      return;
+    }
 
     Promise.all([
       supabase
@@ -97,19 +117,6 @@ export default function DailyPlay() {
       setRegionPool(pool);
     });
   }, []);
-
-  // Auth gate — placed after all hooks to avoid conditional hook calls
-  if (!user) {
-    return (
-      <div className='daily-auth-gate'>
-        <h2>Daily Puzzle</h2>
-        <p>Sign in to play today's puzzle and track your streak.</p>
-        <button className='start-btn' onClick={signInWithGoogle}>
-          Sign in with Google
-        </button>
-      </div>
-    );
-  }
 
   // Wait for auth check + canned loading; runtime data only needed if no canned puzzles
   if (loading || cannedDaily.loading) {
@@ -222,6 +229,14 @@ function DailyPuzzleContent({
     const today = todayString();
     const correctAnswers = puzzles.map(p => countryNames[p.correctAnswer] || p.correctAnswer);
 
+    if (!user) {
+      saveLocalScore(today, score);
+      navigate('/results', {
+        state: { score, total: 15, daily: true, results, correctAnswers },
+      });
+      return;
+    }
+
     supabase.rpc('submit_daily_attempt', {
       attempt_date: today,
       attempt_score: score,
@@ -234,7 +249,7 @@ function DailyPuzzleContent({
   }, [done]);
 
   if (total === 0) return <div>Could not generate daily puzzles.</div>;
-  if (done) return <div className='loading'>Saving score…</div>;
+  if (done) return <div className='loading'>{user ? 'Saving score…' : 'Loading results…'}</div>;
 
   const puzzle = puzzles[index];
   const diffLabel = DIFFICULTY_LABELS[currentDifficulty - 1];
