@@ -33,7 +33,7 @@ function DailyBreakdown({ results, score, correctAnswers }: { results: boolean[]
   const isPerfect = results.every(Boolean);
   const teaser = isPerfect ? 'Perfect score!' : 'Can you beat my score?';
   const streakLine = streak && streak > 1 ? `🔥 ${streak}-day streak\n` : '';
-  const shareText = `Borderline Daily — ${dateStr}\n${shareGrid} ${score}/15${isPerfect ? ' ⭐' : ''}\n${streakLine}${teaser}\nhttps://borderline-eight-eta.vercel.app/daily`;
+  const shareText = `Borderline Daily — ${dateStr}\n${shareGrid} ${score}/15${isPerfect ? ' ⭐' : ''}\n${streakLine}${teaser}\n${window.location.origin}/daily`;
 
   async function handleCopy() {
     await navigator.clipboard.writeText(shareText);
