@@ -18,8 +18,7 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .map-img { width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; }
 .score-panel { display: flex; gap: 16px; margin-bottom: 12px; }
 .mc-item { margin: 10px 0; }
-.play { display: flex; flex-direction: column; min-height: calc(100svh - 88px); }
-.controls { margin-top: auto; display: flex; gap: 8px; padding: 12px 0 4px; background: #fff; }
+.controls { display: flex; gap: 8px; padding: 12px 0 4px; background: #fff; }
 .controls button { width: 100%; padding: 12px; font-size: 1rem; font-weight: 600; }
 .home-divider { margin: 24px 0; border: none; border-top: 1px solid #ddd; }
 .puzzle-prompt { font-size: 1.1rem; font-weight: 600; margin: 12px 0 8px; text-align: center; }
