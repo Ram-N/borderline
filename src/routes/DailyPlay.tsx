@@ -280,10 +280,13 @@ function DailyPuzzleContent({
     ? 'Which country is shown in orange?'
     : 'Name the orange country.';
 
+  const dateLabel = new Date(activeDate + 'T00:00:00').toLocaleDateString('default', { month: 'long', day: 'numeric', year: 'numeric' });
+
   return (
     <div className='play'>
       <div className='daily-header'>
         <span className='daily-badge'>Daily Puzzle</span>
+        <span className='daily-date'>{dateLabel}</span>
         <span className='daily-level'>Level {currentDifficulty} — {diffLabel}</span>
       </div>
       <ScorePanel index={index} total={total} score={score} />
