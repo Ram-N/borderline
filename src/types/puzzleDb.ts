@@ -29,6 +29,7 @@ export type PuzzleIndexEntry = {
   id: PuzzleId;
   countryCode: string;
   countryName: string;
+  correctAnswer: string;         // ISO alpha-2 of the answer country
   difficulty: 1 | 2 | 3 | 4 | 5;
   region: string;
   continent: string;

@@ -23,6 +23,7 @@ export function buildIndex(puzzlesDir: string): PuzzleIndex {
         id: data.meta.id,
         countryCode: data.meta.countryCode,
         countryName: data.meta.countryName,
+        correctAnswer: data.puzzle.correctAnswer,
         difficulty: data.meta.difficulty,
         region: data.meta.region,
         continent: data.meta.continent,

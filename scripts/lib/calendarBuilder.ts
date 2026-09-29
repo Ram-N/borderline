@@ -53,9 +53,16 @@ export function buildCalendar(puzzlesDir: string, year: number): DailyCalendar {
     cursors[d] = 0;
   }
 
+  // Build a map from puzzle ID to correctAnswer for conflict checking
+  const answerById = new Map<string, string>();
+  for (const p of index.puzzles) {
+    if (p.correctAnswer) answerById.set(p.id, p.correctAnswer);
+  }
+
   for (let day = 0; day < totalDays; day++) {
     const date = dateString(year, day);
     const puzzleIds: string[] = [];
+    const usedAnswers = new Set<string>();
 
     for (let d = 1; d <= 5; d++) {
       const pool = shuffled[d];
@@ -68,8 +75,29 @@ export function buildCalendar(puzzlesDir: string, year: number): DailyCalendar {
         shuffled[d] = seededShuffle(pool, rng);
         cursors[d] = 0;
       }
-      puzzleIds.push(shuffled[d][cursors[d]]);
-      cursors[d]++;
+
+      // Skip puzzles whose answer is already used today (try up to pool.length candidates)
+      let picked = '';
+      const startCursor = cursors[d];
+      for (let attempt = 0; attempt < pool.length; attempt++) {
+        const idx = (startCursor + attempt) % pool.length;
+        const candidate = shuffled[d][idx];
+        const answer = answerById.get(candidate);
+        if (!answer || !usedAnswers.has(answer)) {
+          picked = candidate;
+          cursors[d] = idx + 1;
+          break;
+        }
+      }
+      if (!picked) {
+        // All candidates conflict — just take the original slot (rare edge case)
+        picked = shuffled[d][startCursor % pool.length];
+        cursors[d] = startCursor + 1;
+      }
+
+      const answer = answerById.get(picked);
+      if (answer) usedAnswers.add(answer);
+      puzzleIds.push(picked);
     }
 
     entries.push({

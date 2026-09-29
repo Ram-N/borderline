@@ -95,7 +95,7 @@
       "date": "2026-01-10",
       "puzzleIds": [
         "europe_TR_1_A",
-        "europe_TR_2_A",
+        "north-america_GT_2_A",
         "africa_CG_3_A",
         "africa_AO_4_A",
         "europe_TR_5_B"
@@ -105,9 +105,9 @@
       "date": "2026-01-11",
       "puzzleIds": [
         "europe_PL_1_A",
-        "north-america_GT_2_A",
+        "europe_AT_2_A",
         "europe_RU_3_B",
-        "europe_RU_4_A",
+        "europe_MK_4_B",
         "asia_NP_5_A"
       ]
     },
@@ -115,9 +115,9 @@
       "date": "2026-01-12",
       "puzzleIds": [
         "europe_BG_1_A",
-        "europe_AT_2_A",
+        "africa_NG_2_A",
         "central-america_CR_3_A",
-        "europe_MK_4_B",
+        "asia_KW_4_A",
         "europe_ME_5_B"
       ]
     },
@@ -125,9 +125,9 @@
       "date": "2026-01-13",
       "puzzleIds": [
         "north-america_HN_1_A",
-        "africa_NG_2_A",
+        "latin-america_GY_2_A",
         "latin-america_AR_3_A",
-        "asia_KW_4_A",
+        "europe_DE_4_A",
         "europe_AL_5_A"
       ]
     },
@@ -135,9 +135,9 @@
       "date": "2026-01-14",
       "puzzleIds": [
         "south-america_CL_1_A",
-        "latin-america_GY_2_A",
+        "asia_AF_2_A",
         "central-america_GT_3_B",
-        "europe_DE_4_A",
+        "africa_EH_4_A",
         "south-america_AR_5_A"
       ]
     },
@@ -145,9 +145,9 @@
       "date": "2026-01-15",
       "puzzleIds": [
         "south-america_PY_1_A",
-        "asia_AF_2_A",
+        "europe_NO_2_A",
         "europe_TR_3_A",
-        "africa_EH_4_A",
+        "asia_JO_4_B",
         "europe_PL_5_A"
       ]
     },
@@ -155,9 +155,9 @@
       "date": "2026-01-16",
       "puzzleIds": [
         "asia_JO_1_A",
-        "europe_NO_2_A",
+        "africa_MR_2_A",
         "africa_TD_3_B",
-        "asia_JO_4_B",
+        "asia_VN_4_A",
         "africa_SD_5_B"
       ]
     },
@@ -165,9 +165,9 @@
       "date": "2026-01-17",
       "puzzleIds": [
         "africa_CD_1_A",
-        "africa_MR_2_A",
+        "south-america_PY_2_A",
         "europe_AT_3_B",
-        "asia_VN_4_A",
+        "europe_SK_4_A",
         "asia_TJ_5_B"
       ]
     },
@@ -175,9 +175,9 @@
       "date": "2026-01-18",
       "puzzleIds": [
         "europe_CH_1_A",
-        "south-america_PY_2_A",
+        "central-america_HN_2_A",
         "oceania_ID_3_A",
-        "europe_SK_4_A",
+        "africa_BW_4_A",
         "europe_AZ_5_B"
       ]
     },
@@ -185,9 +185,9 @@
       "date": "2026-01-19",
       "puzzleIds": [
         "europe_RO_1_A",
-        "central-america_HN_2_A",
+        "asia_MY_2_A",
         "middle-east_SA_3_A",
-        "africa_BW_4_A",
+        "asia_IQ_4_B",
         "europe_FR_5_A"
       ]
     },
@@ -195,9 +195,9 @@
       "date": "2026-01-20",
       "puzzleIds": [
         "asia_KG_1_A",
-        "asia_MY_2_A",
+        "europe_ES_2_A",
         "middle-east_SY_3_B",
-        "asia_IQ_4_B",
+        "africa_CI_4_A",
         "north-america_SV_5_A"
       ]
     },
@@ -205,9 +205,9 @@
       "date": "2026-01-21",
       "puzzleIds": [
         "europe_RU_1_A",
-        "europe_ES_2_A",
+        "south-america_CO_2_A",
         "europe_SK_3_B",
-        "africa_CI_4_A",
+        "latin-america_BR_4_A",
         "europe_RS_5_B"
       ]
     },
@@ -215,9 +215,9 @@
       "date": "2026-01-22",
       "puzzleIds": [
         "europe_ES_1_A",
-        "south-america_CO_2_A",
+        "asia_IQ_2_A",
         "middle-east_PS_3_A",
-        "latin-america_BR_4_A",
+        "africa_KE_4_A",
         "north-america_MX_5_A"
       ]
     },
@@ -225,9 +225,9 @@
       "date": "2026-01-23",
       "puzzleIds": [
         "middle-east_SA_1_A",
-        "asia_IQ_2_A",
+        "latin-america_CL_2_A",
         "asia_IQ_3_A",
-        "africa_KE_4_A",
+        "europe_BE_4_B",
         "africa_RW_5_B"
       ]
     },
@@ -235,9 +235,9 @@
       "date": "2026-01-24",
       "puzzleIds": [
         "africa_ZW_1_A",
-        "latin-america_CL_2_A",
+        "latin-america_AR_2_A",
         "africa_NA_3_B",
-        "europe_BE_4_B",
+        "africa_ML_4_A",
         "middle-east_IQ_5_B"
       ]
     },
@@ -245,9 +245,9 @@
       "date": "2026-01-25",
       "puzzleIds": [
         "africa_MZ_1_A",
-        "latin-america_AR_2_A",
+        "africa_LY_2_A",
         "africa_NG_3_A",
-        "africa_ML_4_A",
+        "latin-america_BO_4_B",
         "africa_GW_5_A"
       ]
     },
@@ -255,9 +255,9 @@
       "date": "2026-01-26",
       "puzzleIds": [
         "north-america_MX_1_A",
-        "africa_LY_2_A",
+        "asia_VN_2_A",
         "europe_LI_3_A",
-        "latin-america_BO_4_B",
+        "europe_BA_4_A",
         "asia_BD_5_A"
       ]
     },
@@ -265,9 +265,9 @@
       "date": "2026-01-27",
       "puzzleIds": [
         "europe_HU_1_A",
-        "asia_VN_2_A",
+        "europe_FR_2_A",
         "africa_AO_3_B",
-        "europe_BA_4_A",
+        "south-america_UY_4_A",
         "asia_SY_5_A"
       ]
     },
@@ -275,9 +275,9 @@
       "date": "2026-01-28",
       "puzzleIds": [
         "south-america_CO_1_A",
-        "europe_FR_2_A",
+        "latin-america_HN_2_A",
         "latin-america_UY_3_A",
-        "south-america_UY_4_A",
+        "middle-east_JO_4_B",
         "africa_ER_5_A"
       ]
     },
@@ -285,9 +285,9 @@
       "date": "2026-01-29",
       "puzzleIds": [
         "latin-america_GT_1_A",
-        "latin-america_HN_2_A",
+        "latin-america_VE_2_A",
         "africa_SO_3_A",
-        "middle-east_JO_4_B",
+        "asia_BT_4_A",
         "latin-america_CL_5_A"
       ]
     },
@@ -295,9 +295,9 @@
       "date": "2026-01-30",
       "puzzleIds": [
         "europe_HR_1_A",
-        "latin-america_VE_2_A",
+        "africa_BJ_2_A",
         "africa_BJ_3_B",
-        "asia_BT_4_A",
+        "middle-east_LB_4_A",
         "north-america_US_5_A"
       ]
     },
@@ -305,9 +305,9 @@
       "date": "2026-01-31",
       "puzzleIds": [
         "latin-america_PY_1_A",
-        "africa_BJ_2_A",
+        "europe_RO_2_A",
         "europe_BG_3_A",
-        "middle-east_LB_4_A",
+        "latin-america_CO_4_B",
         "europe_UA_5_A"
       ]
     },
@@ -315,9 +315,9 @@
       "date": "2026-02-01",
       "puzzleIds": [
         "europe_CZ_1_A",
-        "europe_RO_2_A",
+        "middle-east_SA_2_A",
         "central-america_SV_3_A",
-        "latin-america_CO_4_B",
+        "latin-america_GT_4_B",
         "africa_SO_5_A"
       ]
     },
@@ -325,9 +325,9 @@
       "date": "2026-02-02",
       "puzzleIds": [
         "africa_NA_1_A",
-        "middle-east_SA_2_A",
+        "europe_MK_2_A",
         "europe_AL_3_A",
-        "latin-america_GT_4_B",
+        "asia_IR_4_B",
         "asia_BT_5_A"
       ]
     },
@@ -335,9 +335,9 @@
       "date": "2026-02-03",
       "puzzleIds": [
         "asia_UZ_1_A",
-        "europe_MK_2_A",
+        "europe_XK_2_A",
         "south-america_VE_3_A",
-        "asia_IR_4_B",
+        "africa_TD_4_B",
         "africa_CG_5_A"
       ]
     },
@@ -345,9 +345,9 @@
       "date": "2026-02-04",
       "puzzleIds": [
         "asia_KH_1_A",
-        "europe_XK_2_A",
+        "europe_SI_2_A",
         "asia_IR_3_A",
-        "africa_TD_4_B",
+        "africa_LR_4_A",
         "africa_MR_5_A"
       ]
     },
@@ -355,9 +355,9 @@
       "date": "2026-02-05",
       "puzzleIds": [
         "africa_BW_1_A",
-        "europe_SI_2_A",
+        "latin-america_PY_2_A",
         "africa_GQ_3_A",
-        "africa_LR_4_A",
+        "middle-east_OM_4_A",
         "south-america_CO_5_B"
       ]
     },
@@ -365,9 +365,9 @@
       "date": "2026-02-06",
       "puzzleIds": [
         "europe_XK_1_A",
-        "latin-america_PY_2_A",
+        "europe_RU_2_A",
         "africa_GN_3_A",
-        "middle-east_OM_4_A",
+        "asia_MM_4_A",
         "africa_SN_5_A"
       ]
     },
@@ -375,9 +375,9 @@
       "date": "2026-02-07",
       "puzzleIds": [
         "africa_ZM_1_A",
-        "europe_RU_2_A",
+        "middle-east_IQ_2_A",
         "europe_CZ_3_B",
-        "asia_MM_4_A",
+        "africa_CI_4_B",
         "asia_TH_5_A"
       ]
     },
@@ -385,9 +385,9 @@
       "date": "2026-02-08",
       "puzzleIds": [
         "africa_GA_1_A",
-        "middle-east_IQ_2_A",
+        "europe_FI_2_A",
         "south-america_GY_3_A",
-        "africa_CI_4_B",
+        "asia_NP_4_A",
         "asia_AF_5_B"
       ]
     },
@@ -395,9 +395,9 @@
       "date": "2026-02-09",
       "puzzleIds": [
         "africa_MR_1_A",
-        "europe_FI_2_A",
+        "asia_LA_2_A",
         "asia_RU_3_B",
-        "asia_NP_4_A",
+        "europe_HR_4_A",
         "south-america_BO_5_A"
       ]
     },
@@ -405,9 +405,9 @@
       "date": "2026-02-10",
       "puzzleIds": [
         "europe_MK_1_A",
-        "asia_LA_2_A",
+        "asia_OM_2_A",
         "latin-america_PE_3_B",
-        "europe_HR_4_A",
+        "latin-america_GT_4_A",
         "central-america_CR_5_A"
       ]
     },
@@ -415,9 +415,9 @@
       "date": "2026-02-11",
       "puzzleIds": [
         "africa_RW_1_A",
-        "asia_OM_2_A",
+        "asia_SA_2_A",
         "asia_AF_3_A",
-        "latin-america_GT_4_A",
+        "europe_FI_4_A",
         "africa_CD_5_B"
       ]
     },
@@ -425,9 +425,9 @@
       "date": "2026-02-12",
       "puzzleIds": [
         "africa_MW_1_A",
-        "asia_SA_2_A",
+        "africa_MZ_2_A",
         "asia_UZ_3_A",
-        "europe_FI_4_A",
+        "north-america_HN_4_A",
         "asia_IN_5_B"
       ]
     },
@@ -435,9 +435,9 @@
       "date": "2026-02-13",
       "puzzleIds": [
         "asia_MY_1_A",
-        "africa_MZ_2_A",
+        "europe_LT_2_A",
         "africa_CD_3_A",
-        "north-america_HN_4_A",
+        "middle-east_SY_4_B",
         "asia_UZ_5_B"
       ]
     },
@@ -445,9 +445,9 @@
       "date": "2026-02-14",
       "puzzleIds": [
         "europe_RS_1_A",
-        "europe_LT_2_A",
+        "central-america_GT_2_A",
         "south-america_CL_3_A",
-        "middle-east_SY_4_B",
+        "asia_LB_4_A",
         "europe_DE_5_B"
       ]
     },
@@ -455,9 +455,9 @@
       "date": "2026-02-15",
       "puzzleIds": [
         "europe_BA_1_A",
-        "central-america_GT_2_A",
+        "africa_ET_2_A",
         "africa_EG_3_A",
-        "asia_LB_4_A",
+        "south-america_AR_4_B",
         "asia_IR_5_B"
       ]
     },
@@ -465,9 +465,9 @@
       "date": "2026-02-16",
       "puzzleIds": [
         "latin-america_HN_1_A",
-        "africa_ET_2_A",
+        "africa_KE_2_A",
         "europe_AT_3_A",
-        "south-america_AR_4_B",
+        "central-america_GT_4_B",
         "south-america_EC_5_A"
       ]
     },
@@ -475,9 +475,9 @@
       "date": "2026-02-17",
       "puzzleIds": [
         "central-america_GT_1_A",
-        "africa_KE_2_A",
+        "europe_AM_2_A",
         "africa_MZ_3_B",
-        "central-america_GT_4_B",
+        "latin-america_VE_4_A",
         "europe_SI_5_A"
       ]
     },
@@ -485,9 +485,9 @@
       "date": "2026-02-18",
       "puzzleIds": [
         "latin-america_CO_1_A",
-        "europe_AM_2_A",
+        "africa_TD_2_A",
         "europe_RO_3_A",
-        "latin-america_VE_4_A",
+        "europe_HR_4_B",
         "africa_GA_5_A"
       ]
     },
@@ -495,9 +495,9 @@
       "date": "2026-02-19",
       "puzzleIds": [
         "africa_LR_1_A",
-        "africa_TD_2_A",
+        "africa_CF_2_A",
         "europe_LT_3_A",
-        "africa_LY_4_B",
+        "asia_IQ_4_A",
         "latin-america_HN_5_A"
       ]
     },
@@ -505,9 +505,9 @@
       "date": "2026-02-20",
       "puzzleIds": [
         "africa_NG_1_A",
-        "africa_CF_2_A",
+        "africa_SN_2_A",
         "north-america_US_3_A",
-        "europe_HR_4_B",
+        "africa_ZM_4_B",
         "europe_CZ_5_B"
       ]
     },
@@ -515,9 +515,9 @@
       "date": "2026-02-21",
       "puzzleIds": [
         "south-america_VE_1_A",
-        "africa_SN_2_A",
+        "africa_ZM_2_A",
         "africa_RW_3_A",
-        "asia_IQ_4_A",
+        "africa_SN_4_A",
         "africa_GH_5_A"
       ]
     },
@@ -525,9 +525,9 @@
       "date": "2026-02-22",
       "puzzleIds": [
         "africa_GH_1_A",
-        "africa_ZM_2_A",
+        "middle-east_IL_2_A",
         "asia_IL_3_B",
-        "africa_ZM_4_B",
+        "europe_ME_4_B",
         "central-america_GT_5_B"
       ]
     },
@@ -535,9 +535,9 @@
       "date": "2026-02-23",
       "puzzleIds": [
         "asia_KZ_1_A",
-        "middle-east_IL_2_A",
+        "europe_PL_2_A",
         "africa_SD_3_B",
-        "africa_SN_4_A",
+        "asia_AF_4_A",
         "asia_VN_5_A"
       ]
     },
@@ -545,9 +545,9 @@
       "date": "2026-02-24",
       "puzzleIds": [
         "africa_TG_1_A",
-        "europe_PL_2_A",
+        "africa_MW_2_A",
         "latin-america_HN_3_A",
-        "europe_ME_4_B",
+        "europe_BY_4_B",
         "africa_BI_5_A"
       ]
     },
@@ -555,9 +555,9 @@
       "date": "2026-02-25",
       "puzzleIds": [
         "latin-america_CL_1_A",
-        "africa_MW_2_A",
+        "latin-america_CO_2_A",
         "africa_AO_3_A",
-        "asia_AF_4_A",
+        "africa_MR_4_B",
         "europe_GR_5_B"
       ]
     },
@@ -565,9 +565,9 @@
       "date": "2026-02-26",
       "puzzleIds": [
         "europe_AZ_1_A",
-        "latin-america_CO_2_A",
+        "africa_LR_2_A",
         "europe_FR_3_B",
-        "europe_BY_4_B",
+        "north-america_BZ_4_A",
         "asia_KH_5_A"
       ]
     },
@@ -575,9 +575,9 @@
       "date": "2026-02-27",
       "puzzleIds": [
         "africa_BI_1_A",
-        "africa_LR_2_A",
+        "africa_NE_2_A",
         "north-america_GT_3_B",
-        "africa_MR_4_B",
+        "latin-america_BO_4_A",
         "europe_AT_5_A"
       ]
     },
@@ -585,9 +585,9 @@
       "date": "2026-02-28",
       "puzzleIds": [
         "africa_ZA_1_A",
-        "africa_NE_2_A",
+        "europe_RS_2_A",
         "africa_CF_3_A",
-        "north-america_BZ_4_A",
+        "europe_SI_4_B",
         "africa_EG_5_A"
       ]
     },
@@ -595,9 +595,9 @@
       "date": "2026-03-01",
       "puzzleIds": [
         "south-america_BR_1_A",
-        "europe_RS_2_A",
+        "south-america_CL_2_A",
         "europe_AD_3_A",
-        "latin-america_BO_4_A",
+        "north-america_SV_4_A",
         "asia_LB_5_A"
       ]
     },
@@ -605,9 +605,9 @@
       "date": "2026-03-02",
       "puzzleIds": [
         "asia_RU_1_A",
-        "south-america_CL_2_A",
+        "asia_IL_2_A",
         "europe_HR_3_A",
-        "europe_SI_4_B",
+        "europe_BG_4_B",
         "central-america_HN_5_A"
       ]
     },
@@ -615,9 +615,9 @@
       "date": "2026-03-03",
       "puzzleIds": [
         "asia_TM_1_A",
-        "asia_IL_2_A",
+        "europe_ME_2_A",
         "europe_NL_3_A",
-        "north-america_SV_4_A",
+        "asia_MY_4_A",
         "africa_ZW_5_A"
       ]
     },
@@ -625,9 +625,9 @@
       "date": "2026-03-04",
       "puzzleIds": [
         "middle-east_SY_1_A",
-        "europe_ME_2_A",
+        "asia_JO_2_A",
         "asia_SY_3_A",
-        "middle-east_PS_4_A",
+        "europe_BE_4_A",
         "africa_BF_5_A"
       ]
     },
@@ -635,9 +635,9 @@
       "date": "2026-03-05",
       "puzzleIds": [
         "asia_LA_1_A",
-        "asia_JO_2_A",
+        "africa_UG_2_A",
         "europe_RS_3_A",
-        "europe_BG_4_B",
+        "asia_IL_4_A",
         "asia_LA_5_B"
       ]
     },
@@ -645,9 +645,9 @@
       "date": "2026-03-06",
       "puzzleIds": [
         "latin-america_AR_1_A",
-        "africa_UG_2_A",
+        "middle-east_JO_2_A",
         "europe_AZ_3_B",
-        "asia_MY_4_A",
+        "south-america_PE_4_B",
         "europe_IT_5_A"
       ]
     },
@@ -655,9 +655,9 @@
       "date": "2026-03-07",
       "puzzleIds": [
         "africa_SN_1_A",
-        "middle-east_JO_2_A",
+        "africa_CI_2_A",
         "europe_BE_3_B",
-        "europe_BE_4_A",
+        "europe_MD_4_A",
         "africa_SZ_5_A"
       ]
     },
@@ -665,9 +665,9 @@
       "date": "2026-03-08",
       "puzzleIds": [
         "europe_FR_1_A",
-        "africa_CI_2_A",
+        "asia_UZ_2_A",
         "africa_CF_3_B",
-        "asia_IL_4_A",
+        "africa_SO_4_A",
         "middle-east_IL_5_B"
       ]
     },
@@ -675,9 +675,9 @@
       "date": "2026-03-09",
       "puzzleIds": [
         "europe_AT_1_A",
-        "asia_UZ_2_A",
+        "europe_CH_2_A",
         "europe_SE_3_A",
-        "south-america_PE_4_B",
+        "asia_IN_4_B",
         "europe_SK_5_B"
       ]
     },
@@ -685,9 +685,9 @@
       "date": "2026-03-10",
       "puzzleIds": [
         "europe_SK_1_A",
-        "europe_CH_2_A",
+        "latin-america_BO_2_A",
         "africa_GN_3_B",
-        "europe_MD_4_A",
+        "asia_CN_4_B",
         "middle-east_OM_5_A"
       ]
     },
@@ -695,9 +695,9 @@
       "date": "2026-03-11",
       "puzzleIds": [
         "asia_IQ_1_A",
-        "latin-america_BO_2_A",
+        "europe_CZ_2_A",
         "europe_TR_3_B",
-        "africa_SO_4_A",
+        "asia_LA_4_B",
         "latin-america_UY_5_A"
       ]
     },
@@ -705,9 +705,9 @@
       "date": "2026-03-12",
       "puzzleIds": [
         "africa_SD_1_A",
-        "europe_CZ_2_A",
+        "africa_CD_2_A",
         "asia_IR_3_B",
-        "asia_IN_4_B",
+        "europe_BY_4_A",
         "africa_MR_5_B"
       ]
     },
@@ -715,9 +715,9 @@
       "date": "2026-03-13",
       "puzzleIds": [
         "africa_TZ_1_A",
-        "africa_CD_2_A",
+        "africa_CG_2_A",
         "middle-east_IQ_3_A",
-        "asia_CN_4_B",
+        "africa_NE_4_A",
         "asia_TH_5_B"
       ]
     },
@@ -725,9 +725,9 @@
       "date": "2026-03-14",
       "puzzleIds": [
         "middle-east_OM_1_A",
-        "africa_CG_2_A",
-        "latin-america_PE_3_A",
-        "asia_LA_4_B",
+        "latin-america_BR_2_A",
+        "europe_BE_3_A",
+        "asia_PK_4_A",
         "africa_TZ_5_A"
       ]
     },
@@ -735,2920 +735,2920 @@
       "date": "2026-03-15",
       "puzzleIds": [
         "south-america_PE_1_A",
-        "latin-america_BR_2_A",
-        "latin-america_PY_3_A",
-        "europe_BY_4_A",
-        "europe_LT_5_A"
+        "europe_BG_2_A",
+        "europe_ME_3_B",
+        "europe_PL_4_B",
+        "asia_KW_5_A"
       ]
     },
     {
       "date": "2026-03-16",
       "puzzleIds": [
         "latin-america_GY_1_A",
-        "europe_BG_2_A",
-        "europe_BE_3_A",
-        "africa_NE_4_A",
-        "latin-america_BR_5_B"
+        "africa_TZ_2_A",
+        "asia_TM_3_B",
+        "europe_AT_4_B",
+        "europe_BE_5_B"
       ]
     },
     {
       "date": "2026-03-17",
       "puzzleIds": [
         "africa_NE_1_A",
-        "africa_TZ_2_A",
-        "europe_ME_3_B",
-        "asia_PK_4_A",
-        "asia_KW_5_A"
+        "europe_AZ_2_A",
+        "africa_DJ_3_A",
+        "europe_SK_4_B",
+        "africa_UG_5_A"
       ]
     },
     {
       "date": "2026-03-18",
       "puzzleIds": [
         "asia_AF_1_A",
-        "europe_AZ_2_A",
-        "asia_TM_3_B",
-        "europe_PL_4_B",
-        "europe_BE_5_B"
+        "africa_GN_2_A",
+        "latin-america_BR_3_A",
+        "europe_AT_4_A",
+        "asia_RU_5_B"
       ]
     },
     {
       "date": "2026-03-19",
       "puzzleIds": [
         "north-america_GT_1_A",
-        "africa_GN_2_A",
-        "africa_DJ_3_A",
-        "europe_AT_4_B",
-        "africa_UG_5_A"
+        "europe_IT_2_A",
+        "europe_DE_3_A",
+        "africa_CM_4_B",
+        "europe_BE_5_A"
       ]
     },
     {
       "date": "2026-03-20",
       "puzzleIds": [
         "south-america_AR_1_A",
-        "europe_IT_2_A",
-        "latin-america_BR_3_A",
-        "europe_SK_4_B",
-        "asia_RU_5_B"
+        "south-america_VE_2_A",
+        "africa_GH_3_A",
+        "middle-east_KW_4_A",
+        "north-america_GT_5_A"
       ]
     },
     {
       "date": "2026-03-21",
       "puzzleIds": [
         "asia_IN_1_A",
-        "south-america_VE_2_A",
-        "latin-america_BZ_3_A",
-        "europe_AT_4_A",
-        "europe_BE_5_A"
+        "europe_BE_2_A",
+        "africa_MR_3_B",
+        "latin-america_CO_4_A",
+        "europe_MD_5_A"
       ]
     },
     {
       "date": "2026-03-22",
       "puzzleIds": [
         "africa_BF_1_A",
-        "europe_BE_2_A",
-        "europe_DE_3_A",
-        "africa_CM_4_B",
-        "north-america_GT_5_A"
+        "south-america_BO_2_A",
+        "europe_SI_3_A",
+        "asia_KZ_4_A",
+        "europe_FI_5_A"
       ]
     },
     {
       "date": "2026-03-23",
       "puzzleIds": [
         "south-america_BO_1_A",
-        "south-america_BO_2_A",
-        "africa_GH_3_A",
-        "middle-east_KW_4_A",
-        "europe_MD_5_A"
+        "middle-east_OM_2_A",
+        "africa_CM_3_A",
+        "africa_KE_4_B",
+        "africa_NA_5_A"
       ]
     },
     {
       "date": "2026-03-24",
       "puzzleIds": [
         "africa_ET_1_A",
-        "middle-east_OM_2_A",
-        "africa_MR_3_B",
-        "latin-america_CO_4_A",
-        "europe_FI_5_A"
+        "asia_CN_2_A",
+        "africa_ZA_3_B",
+        "asia_ID_4_A",
+        "asia_UZ_5_A"
       ]
     },
     {
       "date": "2026-03-25",
       "puzzleIds": [
         "asia_MM_1_A",
-        "asia_CN_2_A",
-        "europe_SI_3_A",
-        "asia_KZ_4_A",
-        "africa_NA_5_A"
+        "asia_KZ_2_A",
+        "south-america_BR_3_A",
+        "europe_TR_4_B",
+        "asia_SY_5_B"
       ]
     },
     {
       "date": "2026-03-26",
       "puzzleIds": [
         "europe_LU_1_A",
-        "asia_KZ_2_A",
-        "africa_CM_3_A",
-        "africa_KE_4_B",
-        "asia_UZ_5_A"
+        "europe_BY_2_A",
+        "africa_DZ_3_B",
+        "africa_TD_4_A",
+        "south-america_VE_5_A"
       ]
     },
     {
       "date": "2026-03-27",
       "puzzleIds": [
         "latin-america_PE_1_A",
-        "europe_BY_2_A",
-        "africa_ZA_3_B",
-        "asia_ID_4_A",
-        "asia_SY_5_B"
+        "middle-east_SY_2_A",
+        "asia_IN_3_B",
+        "africa_AO_4_B",
+        "central-america_SV_5_A"
       ]
     },
     {
       "date": "2026-03-28",
       "puzzleIds": [
         "europe_IT_1_A",
-        "middle-east_SY_2_A",
-        "south-america_BR_3_A",
-        "europe_TR_4_B",
-        "south-america_VE_5_A"
+        "asia_KH_2_A",
+        "africa_ET_3_A",
+        "middle-east_SA_4_B",
+        "africa_MZ_5_B"
       ]
     },
     {
       "date": "2026-03-29",
       "puzzleIds": [
         "africa_CI_1_A",
-        "asia_KH_2_A",
-        "africa_DZ_3_B",
-        "africa_TD_4_A",
-        "central-america_SV_5_A"
+        "south-america_AR_2_A",
+        "europe_LT_3_B",
+        "asia_JO_4_A",
+        "asia_LA_5_A"
       ]
     },
     {
       "date": "2026-03-30",
       "puzzleIds": [
         "europe_LV_1_A",
-        "south-america_AR_2_A",
-        "asia_IN_3_B",
-        "africa_AO_4_B",
-        "africa_MZ_5_B"
+        "south-america_BR_2_A",
+        "africa_CM_3_B",
+        "asia_OM_4_A",
+        "africa_SN_5_B"
       ]
     },
     {
       "date": "2026-03-31",
       "puzzleIds": [
         "middle-east_IQ_1_A",
-        "south-america_BR_2_A",
-        "africa_ET_3_A",
-        "middle-east_SA_4_B",
-        "asia_LA_5_A"
+        "north-america_HN_2_A",
+        "europe_HR_3_B",
+        "africa_MW_4_A",
+        "asia_JO_5_B"
       ]
     },
     {
       "date": "2026-04-01",
       "puzzleIds": [
         "europe_FI_1_A",
-        "north-america_HN_2_A",
-        "europe_LT_3_B",
-        "asia_JO_4_A",
-        "africa_SN_5_B"
+        "africa_NA_2_A",
+        "africa_NG_3_B",
+        "asia_TH_4_B",
+        "africa_ET_5_B"
       ]
     },
     {
       "date": "2026-04-02",
       "puzzleIds": [
         "asia_PK_1_A",
-        "africa_NA_2_A",
-        "africa_CM_3_B",
-        "asia_OM_4_A",
-        "asia_JO_5_B"
+        "europe_HU_2_A",
+        "asia_BD_3_A",
+        "africa_BJ_4_A",
+        "europe_UA_5_B"
       ]
     },
     {
       "date": "2026-04-03",
       "puzzleIds": [
         "europe_ME_1_A",
-        "europe_HU_2_A",
-        "europe_HR_3_B",
-        "africa_MW_4_A",
-        "africa_ET_5_B"
+        "europe_HR_2_A",
+        "africa_ZM_3_B",
+        "africa_SN_4_B",
+        "south-america_PE_5_A"
       ]
     },
     {
       "date": "2026-04-04",
       "puzzleIds": [
         "europe_BE_1_A",
-        "europe_HR_2_A",
-        "africa_NG_3_B",
-        "asia_TH_4_B",
-        "europe_UA_5_B"
+        "africa_BF_2_A",
+        "south-america_SR_3_A",
+        "africa_GA_4_A",
+        "africa_ML_5_B"
       ]
     },
     {
       "date": "2026-04-05",
       "puzzleIds": [
         "latin-america_BO_1_A",
-        "africa_BF_2_A",
-        "asia_BD_3_A",
-        "africa_BJ_4_A",
-        "south-america_PE_5_A"
+        "europe_DE_2_A",
+        "africa_GW_3_A",
+        "north-america_NI_4_A",
+        "africa_ZA_5_B"
       ]
     },
     {
       "date": "2026-04-06",
       "puzzleIds": [
         "europe_NO_1_A",
-        "europe_DE_2_A",
-        "africa_ZM_3_B",
-        "africa_SN_4_B",
-        "africa_ML_5_B"
+        "asia_SY_2_A",
+        "africa_KE_3_A",
+        "latin-america_PY_4_A",
+        "europe_BY_5_A"
       ]
     },
     {
       "date": "2026-04-07",
       "puzzleIds": [
         "africa_UG_1_A",
-        "asia_SY_2_A",
-        "south-america_SR_3_A",
-        "africa_GA_4_A",
-        "africa_ZA_5_B"
+        "africa_GA_2_A",
+        "europe_XK_3_B",
+        "africa_GN_4_A",
+        "latin-america_EC_5_A"
       ]
     },
     {
       "date": "2026-04-08",
       "puzzleIds": [
         "asia_SA_1_A",
-        "africa_GA_2_A",
-        "africa_GW_3_A",
-        "north-america_NI_4_A",
-        "europe_BY_5_A"
+        "africa_AO_2_A",
+        "latin-america_EC_3_A",
+        "africa_DJ_4_A",
+        "asia_MM_5_A"
       ]
     },
     {
       "date": "2026-04-09",
       "puzzleIds": [
         "europe_DE_1_A",
-        "africa_AO_2_A",
-        "africa_KE_3_A",
-        "latin-america_PY_4_A",
-        "latin-america_EC_5_A"
+        "asia_KG_2_A",
+        "europe_UA_3_A",
+        "asia_TM_4_B",
+        "middle-east_SA_5_B"
       ]
     },
     {
       "date": "2026-04-10",
       "puzzleIds": [
         "africa_SS_1_A",
-        "asia_KG_2_A",
-        "europe_XK_3_B",
-        "africa_GN_4_A",
-        "asia_MM_5_A"
+        "north-america_MX_2_A",
+        "middle-east_AE_3_A",
+        "africa_ZW_4_B",
+        "africa_CI_5_B"
       ]
     },
     {
       "date": "2026-04-11",
       "puzzleIds": [
         "asia_IL_1_A",
-        "north-america_MX_2_A",
-        "latin-america_EC_3_A",
-        "africa_DJ_4_A",
-        "middle-east_SA_5_B"
+        "latin-america_PE_2_A",
+        "middle-east_JO_3_B",
+        "africa_SD_4_B",
+        "asia_MM_5_B"
       ]
     },
     {
       "date": "2026-04-12",
       "puzzleIds": [
         "africa_GN_1_A",
-        "latin-america_PE_2_A",
-        "europe_UA_3_A",
-        "asia_TM_4_B",
-        "africa_CI_5_B"
+        "europe_BA_2_A",
+        "africa_NE_3_A",
+        "europe_AL_4_B",
+        "south-america_PE_5_B"
       ]
     },
     {
       "date": "2026-04-13",
       "puzzleIds": [
         "asia_CN_1_A",
-        "europe_BA_2_A",
-        "middle-east_AE_3_A",
-        "africa_ZW_4_B",
-        "asia_MM_5_B"
+        "europe_GR_2_A",
+        "europe_RO_3_B",
+        "south-america_BR_4_B",
+        "europe_CH_5_A"
       ]
     },
     {
       "date": "2026-04-14",
       "puzzleIds": [
         "europe_GE_1_A",
-        "europe_GR_2_A",
-        "middle-east_JO_3_B",
-        "africa_SD_4_B",
-        "south-america_PE_5_B"
+        "asia_ID_2_A",
+        "latin-america_PA_3_A",
+        "latin-america_AR_4_A",
+        "asia_IQ_5_B"
       ]
     },
     {
       "date": "2026-04-15",
       "puzzleIds": [
         "africa_KE_1_A",
-        "asia_ID_2_A",
-        "africa_NE_3_A",
-        "europe_AL_4_B",
-        "europe_CH_5_A"
+        "africa_BW_2_A",
+        "africa_CI_3_B",
+        "latin-america_AR_4_B",
+        "africa_GQ_5_A"
       ]
     },
     {
       "date": "2026-04-16",
       "puzzleIds": [
         "africa_CM_1_A",
-        "africa_BW_2_A",
-        "europe_RO_3_B",
-        "south-america_BR_4_B",
-        "asia_IQ_5_B"
+        "africa_SD_2_A",
+        "asia_PK_3_B",
+        "africa_NA_4_B",
+        "africa_AO_5_A"
       ]
     },
     {
       "date": "2026-04-17",
       "puzzleIds": [
         "europe_BY_1_A",
-        "africa_SD_2_A",
-        "latin-america_PA_3_A",
-        "latin-america_AR_4_A",
-        "africa_GQ_5_A"
+        "africa_ML_2_A",
+        "middle-east_IQ_3_B",
+        "europe_LT_4_A",
+        "asia_TJ_5_A"
       ]
     },
     {
       "date": "2026-04-18",
       "puzzleIds": [
         "europe_LT_1_A",
-        "africa_ML_2_A",
-        "africa_CI_3_B",
-        "latin-america_AR_4_B",
-        "africa_AO_5_A"
+        "africa_DZ_2_A",
+        "asia_PK_3_A",
+        "europe_LT_4_B",
+        "latin-america_PE_5_B"
       ]
     },
     {
       "date": "2026-04-19",
       "puzzleIds": [
         "middle-east_IL_1_A",
-        "africa_DZ_2_A",
-        "asia_PK_3_B",
-        "africa_NA_4_B",
-        "asia_TJ_5_A"
+        "africa_SS_2_A",
+        "asia_IQ_3_B",
+        "europe_UA_4_B",
+        "africa_NE_5_B"
       ]
     },
     {
       "date": "2026-04-20",
       "puzzleIds": [
         "south-america_GY_1_A",
-        "africa_SS_2_A",
-        "middle-east_IQ_3_B",
-        "europe_LT_4_A",
-        "latin-america_PE_5_B"
+        "asia_PK_2_A",
+        "africa_UG_3_B",
+        "asia_AF_4_B",
+        "africa_ML_5_A"
       ]
     },
     {
       "date": "2026-04-21",
       "puzzleIds": [
         "africa_CG_1_A",
-        "asia_PK_2_A",
-        "asia_PK_3_A",
-        "europe_LT_4_B",
-        "africa_NE_5_B"
+        "africa_GH_2_A",
+        "europe_DE_3_B",
+        "europe_GE_4_B",
+        "europe_AL_5_B"
       ]
     },
     {
       "date": "2026-04-22",
       "puzzleIds": [
         "latin-america_BR_1_A",
-        "africa_GH_2_A",
-        "asia_IQ_3_B",
-        "europe_UA_4_B",
-        "africa_ML_5_A"
+        "asia_MM_2_A",
+        "africa_RW_3_B",
+        "europe_ME_4_A",
+        "europe_HR_5_B"
       ]
     },
     {
       "date": "2026-04-23",
       "puzzleIds": [
         "central-america_HN_1_A",
-        "asia_MM_2_A",
-        "africa_UG_3_B",
-        "asia_AF_4_B",
-        "europe_AL_5_B"
+        "south-america_GY_2_A",
+        "asia_KP_3_A",
+        "africa_MR_4_A",
+        "africa_GN_5_A"
       ]
     },
     {
       "date": "2026-04-24",
       "puzzleIds": [
         "asia_VN_1_A",
-        "south-america_GY_2_A",
-        "europe_DE_3_B",
-        "europe_GE_4_B",
-        "europe_HR_5_B"
+        "asia_TJ_2_A",
+        "africa_MW_3_A",
+        "africa_NG_4_A",
+        "latin-america_CO_5_A"
       ]
     },
     {
       "date": "2026-04-25",
       "puzzleIds": [
         "europe_GR_1_A",
-        "asia_TJ_2_A",
-        "africa_RW_3_B",
-        "europe_ME_4_A",
-        "africa_GN_5_A"
+        "africa_BI_2_A",
+        "africa_BW_3_B",
+        "south-america_BO_4_B",
+        "middle-east_SY_5_B"
       ]
     },
     {
       "date": "2026-04-26",
       "puzzleIds": [
         "asia_OM_1_A",
-        "africa_BI_2_A",
-        "asia_KP_3_A",
-        "africa_MR_4_A",
-        "latin-america_CO_5_A"
+        "europe_LU_2_A",
+        "latin-america_SR_3_A",
+        "asia_TJ_4_A",
+        "south-america_CO_5_A"
       ]
     },
     {
       "date": "2026-04-27",
       "puzzleIds": [
         "africa_DZ_1_A",
-        "europe_LU_2_A",
-        "africa_MW_3_A",
-        "africa_NG_4_A",
-        "middle-east_SY_5_B"
+        "europe_LV_2_A",
+        "north-america_GT_3_A",
+        "europe_AZ_4_A",
+        "africa_KE_5_A"
       ]
     },
     {
       "date": "2026-04-28",
       "puzzleIds": [
         "africa_ER_1_A",
-        "europe_LV_2_A",
-        "africa_BW_3_B",
-        "south-america_BO_4_B",
-        "south-america_CO_5_A"
+        "asia_KP_2_A",
+        "north-america_NI_3_A",
+        "latin-america_EC_4_A",
+        "europe_AD_5_A"
       ]
     },
     {
       "date": "2026-04-29",
       "puzzleIds": [
         "asia_SY_1_A",
-        "asia_KP_2_A",
-        "latin-america_SR_3_A",
-        "asia_TJ_4_A",
-        "africa_KE_5_A"
+        "europe_UA_2_A",
+        "europe_FI_3_A",
+        "europe_XK_4_B",
+        "europe_SI_5_B"
       ]
     },
     {
       "date": "2026-04-30",
       "puzzleIds": [
         "africa_EH_1_A",
-        "europe_UA_2_A",
-        "north-america_GT_3_A",
-        "europe_AZ_4_A",
-        "europe_AD_5_A"
+        "africa_ER_2_A",
+        "europe_MK_3_B",
+        "europe_LI_4_A",
+        "south-america_BR_5_B"
       ]
     },
     {
       "date": "2026-05-01",
       "puzzleIds": [
         "africa_LY_1_A",
-        "africa_ER_2_A",
-        "north-america_NI_3_A",
-        "latin-america_EC_4_A",
-        "europe_SI_5_B"
+        "asia_IR_2_A",
+        "africa_SN_3_B",
+        "europe_LU_4_A",
+        "europe_LT_5_B"
       ]
     },
     {
       "date": "2026-05-02",
       "puzzleIds": [
         "asia_TJ_1_A",
-        "asia_IR_2_A",
-        "europe_FI_3_A",
-        "europe_XK_4_B",
-        "south-america_BR_5_B"
+        "africa_RW_2_A",
+        "europe_GR_3_B",
+        "middle-east_IL_4_B",
+        "middle-east_KW_5_A"
       ]
     },
     {
       "date": "2026-05-03",
       "puzzleIds": [
         "middle-east_JO_1_A",
-        "africa_RW_2_A",
-        "europe_MK_3_B",
-        "europe_LI_4_A",
-        "europe_LT_5_B"
+        "europe_GE_2_A",
+        "asia_CN_3_B",
+        "africa_CM_4_A",
+        "africa_CF_5_B"
       ]
     },
     {
       "date": "2026-05-04",
       "puzzleIds": [
         "africa_ML_1_A",
-        "europe_GE_2_A",
-        "africa_SN_3_B",
-        "europe_LU_4_A",
-        "middle-east_KW_5_A"
+        "asia_RU_2_A",
+        "asia_TM_3_A",
+        "europe_GR_4_B",
+        "europe_LI_5_A"
       ]
     },
     {
       "date": "2026-05-05",
       "puzzleIds": [
         "asia_IR_1_A",
-        "asia_RU_2_A",
-        "europe_GR_3_B",
-        "middle-east_IL_4_B",
-        "africa_CF_5_B"
+        "africa_ZA_2_A",
+        "latin-america_BR_3_B",
+        "asia_KZ_4_B",
+        "central-america_BZ_5_A"
       ]
     },
     {
       "date": "2026-05-06",
       "puzzleIds": [
         "africa_CF_1_A",
-        "africa_ZA_2_A",
-        "asia_CN_3_B",
-        "africa_CM_4_A",
-        "europe_LI_5_A"
+        "europe_AL_2_A",
+        "latin-america_GT_3_B",
+        "south-america_VE_4_A",
+        "europe_AZ_5_A"
       ]
     },
     {
       "date": "2026-05-07",
       "puzzleIds": [
         "africa_AO_1_A",
-        "europe_AL_2_A",
-        "asia_TM_3_A",
-        "europe_GR_4_B",
-        "central-america_BZ_5_A"
+        "south-america_PE_2_A",
+        "south-america_AR_3_B",
+        "europe_RS_4_A",
+        "asia_KG_5_A"
       ]
     },
     {
       "date": "2026-05-08",
       "puzzleIds": [
         "europe_AM_1_A",
-        "south-america_PE_2_A",
-        "latin-america_BR_3_B",
-        "asia_KZ_4_B",
-        "europe_AZ_5_A"
+        "europe_HU_2_A",
+        "africa_BJ_3_A",
+        "europe_AZ_4_B",
+        "asia_IQ_5_A"
       ]
     },
     {
       "date": "2026-05-09",
       "puzzleIds": [
-        "europe_ME_1_A",
-        "europe_AT_2_A",
-        "latin-america_GT_3_B",
-        "south-america_VE_4_A",
-        "asia_KG_5_A"
+        "europe_BG_1_A",
+        "africa_ZM_2_A",
+        "south-america_CO_3_B",
+        "africa_UG_4_B",
+        "africa_CM_5_B"
       ]
     },
     {
       "date": "2026-05-10",
       "puzzleIds": [
-        "africa_GH_1_A",
+        "africa_ZA_1_A",
         "africa_NE_2_A",
-        "south-america_AR_3_B",
-        "europe_RS_4_A",
-        "asia_IQ_5_A"
+        "latin-america_CO_3_B",
+        "central-america_MX_4_A",
+        "asia_ID_5_A"
       ]
     },
     {
       "date": "2026-05-11",
       "puzzleIds": [
-        "africa_ZA_1_A",
-        "south-america_GY_2_A",
-        "africa_BJ_3_A",
-        "europe_AZ_4_B",
-        "africa_CM_5_B"
+        "asia_VN_1_A",
+        "africa_TD_2_A",
+        "asia_SY_3_B",
+        "middle-east_AE_4_A",
+        "latin-america_VE_5_A"
       ]
     },
     {
       "date": "2026-05-12",
       "puzzleIds": [
-        "africa_LR_1_A",
-        "europe_LV_2_A",
-        "south-america_CO_3_B",
-        "africa_UG_4_B",
-        "asia_ID_5_A"
+        "africa_ER_1_A",
+        "europe_LT_2_A",
+        "asia_MN_3_A",
+        "middle-east_YE_4_A",
+        "africa_BF_5_B"
       ]
     },
     {
       "date": "2026-05-13",
       "puzzleIds": [
-        "europe_RS_1_A",
-        "africa_BI_2_A",
-        "latin-america_CO_3_B",
-        "central-america_MX_4_A",
-        "latin-america_VE_5_A"
+        "asia_OM_1_A",
+        "europe_AZ_2_A",
+        "europe_UA_3_B",
+        "middle-east_IQ_4_B",
+        "europe_XK_5_B"
       ]
     },
     {
       "date": "2026-05-14",
       "puzzleIds": [
-        "asia_AF_1_A",
-        "asia_TH_2_A",
-        "asia_SY_3_B",
-        "middle-east_AE_4_A",
-        "africa_BF_5_B"
+        "asia_ID_1_A",
+        "south-america_GY_2_A",
+        "africa_ZW_3_A",
+        "asia_SY_4_B",
+        "asia_JO_5_A"
       ]
     },
     {
       "date": "2026-05-15",
       "puzzleIds": [
-        "asia_VN_1_A",
-        "africa_LY_2_A",
-        "asia_MN_3_A",
-        "middle-east_YE_4_A",
-        "europe_XK_5_B"
+        "north-america_MX_1_A",
+        "latin-america_PE_2_A",
+        "asia_MM_3_B",
+        "middle-east_SY_4_A",
+        "africa_TD_5_B"
       ]
     },
     {
       "date": "2026-05-16",
       "puzzleIds": [
-        "africa_GN_1_A",
-        "asia_SA_2_A",
-        "europe_UA_3_B",
-        "middle-east_IQ_4_B",
-        "asia_JO_5_A"
+        "africa_MW_1_A",
+        "asia_KP_2_A",
+        "europe_GE_3_B",
+        "africa_NA_4_A",
+        "asia_SA_5_A"
       ]
     },
     {
       "date": "2026-05-17",
       "puzzleIds": [
-        "asia_SY_1_A",
-        "africa_TZ_2_A",
-        "africa_ZW_3_A",
-        "asia_SY_4_B",
-        "africa_TD_5_B"
+        "africa_NE_1_A",
+        "europe_TR_2_A",
+        "europe_BY_3_B",
+        "europe_PL_4_A",
+        "latin-america_SV_5_A"
       ]
     },
     {
       "date": "2026-05-18",
       "puzzleIds": [
-        "europe_TR_1_A",
-        "africa_BF_2_A",
-        "asia_MM_3_B",
-        "middle-east_SY_4_A",
-        "asia_SA_5_A"
+        "latin-america_BO_1_A",
+        "africa_GA_2_A",
+        "africa_MA_3_A",
+        "africa_ZM_4_A",
+        "europe_DE_5_A"
       ]
     },
     {
       "date": "2026-05-19",
       "puzzleIds": [
-        "asia_SA_1_A",
-        "latin-america_CL_2_A",
-        "europe_GE_3_B",
-        "africa_NA_4_A",
-        "latin-america_SV_5_A"
+        "africa_ZW_1_A",
+        "europe_AT_2_A",
+        "central-america_NI_3_A",
+        "europe_GR_4_A",
+        "africa_ZA_5_A"
       ]
     },
     {
       "date": "2026-05-20",
       "puzzleIds": [
-        "europe_BG_1_A",
-        "asia_KH_2_A",
-        "europe_BY_3_B",
-        "europe_PL_4_A",
-        "europe_DE_5_A"
+        "africa_CI_1_A",
+        "latin-america_CL_2_A",
+        "north-america_BZ_3_A",
+        "africa_BJ_4_B",
+        "latin-america_PE_5_A"
       ]
     },
     {
       "date": "2026-05-21",
       "puzzleIds": [
-        "africa_ZW_1_A",
-        "europe_RS_2_A",
-        "africa_MA_3_A",
-        "africa_ZM_4_A",
-        "africa_ZA_5_A"
+        "south-america_BR_1_A",
+        "europe_PL_2_A",
+        "asia_OM_3_A",
+        "europe_HU_4_A",
+        "africa_MW_5_A"
       ]
     },
     {
       "date": "2026-05-22",
       "puzzleIds": [
-        "africa_TG_1_A",
-        "africa_MZ_2_A",
-        "central-america_NI_3_A",
-        "europe_GR_4_A",
-        "latin-america_PE_5_A"
+        "asia_MY_1_A",
+        "europe_GE_2_A",
+        "latin-america_AR_3_B",
+        "africa_CD_4_B",
+        "europe_TR_5_A"
       ]
     },
     {
       "date": "2026-05-23",
       "puzzleIds": [
-        "africa_ML_1_A",
-        "europe_SK_2_A",
-        "north-america_BZ_3_A",
-        "africa_BJ_4_B",
-        "africa_MW_5_A"
+        "latin-america_VE_1_A",
+        "africa_ER_2_A",
+        "africa_BW_3_A",
+        "south-america_PY_4_A",
+        "africa_ZM_5_B"
       ]
     },
     {
       "date": "2026-05-24",
       "puzzleIds": [
-        "africa_LY_1_A",
-        "africa_GH_2_A",
-        "asia_OM_3_A",
-        "europe_HU_4_A",
-        "europe_TR_5_A"
+        "latin-america_BR_1_A",
+        "europe_SK_2_A",
+        "asia_MY_3_A",
+        "africa_ZA_4_A",
+        "south-america_SR_5_A"
       ]
     },
     {
       "date": "2026-05-25",
       "puzzleIds": [
-        "latin-america_VE_1_A",
-        "europe_HR_2_A",
-        "latin-america_AR_3_B",
-        "africa_CD_4_B",
-        "africa_ZM_5_B"
+        "europe_BE_1_A",
+        "africa_MZ_2_A",
+        "africa_ET_3_B",
+        "africa_GH_4_A",
+        "africa_BJ_5_B"
       ]
     },
     {
       "date": "2026-05-26",
       "puzzleIds": [
-        "asia_MY_1_A",
-        "latin-america_GT_2_A",
-        "africa_BW_3_A",
-        "south-america_PY_4_A",
-        "south-america_SR_5_A"
+        "europe_SI_1_A",
+        "africa_SS_2_A",
+        "europe_CH_3_B",
+        "south-america_GY_4_A",
+        "europe_RO_5_B"
       ]
     },
     {
       "date": "2026-05-27",
       "puzzleIds": [
-        "south-america_GY_1_A",
-        "asia_RU_2_A",
-        "asia_MY_3_A",
-        "africa_ZA_4_A",
-        "africa_BJ_5_B"
+        "asia_IR_1_A",
+        "central-america_HN_2_A",
+        "asia_TH_3_B",
+        "europe_UA_4_A",
+        "africa_BW_5_B"
       ]
     },
     {
       "date": "2026-05-28",
       "puzzleIds": [
-        "europe_RO_1_A",
-        "africa_MW_2_A",
-        "africa_ET_3_B",
-        "africa_GH_4_A",
-        "europe_RO_5_B"
+        "latin-america_CL_1_A",
+        "europe_CH_2_A",
+        "asia_TJ_3_B",
+        "europe_CH_4_B",
+        "europe_SE_5_A"
       ]
     },
     {
       "date": "2026-05-29",
       "puzzleIds": [
-        "europe_SK_1_A",
-        "latin-america_VE_2_A",
-        "europe_CH_3_B",
-        "south-america_GY_4_A",
-        "africa_BW_5_B"
+        "europe_HR_1_A",
+        "africa_MR_2_A",
+        "latin-america_GT_3_A",
+        "africa_DZ_4_B",
+        "latin-america_GT_5_A"
       ]
     },
     {
       "date": "2026-05-30",
       "puzzleIds": [
-        "africa_CD_1_A",
-        "africa_LR_2_A",
-        "asia_TH_3_B",
-        "europe_UA_4_A",
-        "europe_SE_5_A"
+        "africa_BI_1_A",
+        "africa_GN_2_A",
+        "south-america_EC_3_A",
+        "north-america_CR_4_A",
+        "europe_MK_5_B"
       ]
     },
     {
       "date": "2026-05-31",
       "puzzleIds": [
-        "north-america_GT_1_A",
-        "africa_TD_2_A",
-        "asia_TJ_3_B",
-        "europe_CH_4_B",
-        "latin-america_GT_5_A"
+        "africa_LR_1_A",
+        "europe_FR_2_A",
+        "europe_LV_3_B",
+        "asia_PK_4_B",
+        "europe_LV_5_B"
       ]
     },
     {
       "date": "2026-06-01",
       "puzzleIds": [
-        "africa_BI_1_A",
-        "africa_BW_2_A",
-        "latin-america_GT_3_A",
-        "africa_DZ_4_B",
-        "europe_MK_5_B"
+        "africa_CM_1_A",
+        "south-america_AR_2_A",
+        "europe_GE_3_A",
+        "latin-america_GY_4_A",
+        "latin-america_GY_5_A"
       ]
     },
     {
       "date": "2026-06-02",
       "puzzleIds": [
-        "south-america_CO_1_A",
-        "europe_GR_2_A",
-        "south-america_EC_3_A",
-        "north-america_CR_4_A",
-        "europe_LV_5_B"
+        "europe_GE_1_A",
+        "middle-east_SA_2_A",
+        "europe_NO_3_A",
+        "south-america_SR_4_A",
+        "south-america_BO_5_B"
       ]
     },
     {
       "date": "2026-06-03",
       "puzzleIds": [
-        "europe_LV_1_A",
-        "asia_PK_2_A",
-        "europe_LV_3_B",
-        "asia_PK_4_B",
-        "latin-america_GY_5_A"
+        "africa_CG_1_A",
+        "africa_SD_2_A",
+        "middle-east_OM_3_A",
+        "africa_NE_4_B",
+        "asia_IN_5_A"
       ]
     },
     {
       "date": "2026-06-04",
       "puzzleIds": [
-        "africa_NA_1_A",
-        "europe_BG_2_A",
-        "europe_GE_3_A",
-        "latin-america_GY_4_A",
-        "south-america_BO_5_B"
+        "latin-america_GY_1_A",
+        "south-america_PY_2_A",
+        "latin-america_SV_3_A",
+        "africa_CG_4_B",
+        "middle-east_JO_5_A"
       ]
     },
     {
       "date": "2026-06-05",
       "puzzleIds": [
-        "europe_BY_1_A",
-        "asia_TM_2_A",
-        "europe_NO_3_A",
-        "south-america_SR_4_A",
-        "asia_IN_5_A"
+        "europe_UA_1_A",
+        "south-america_BO_2_A",
+        "asia_AF_3_B",
+        "asia_UZ_4_A",
+        "europe_BG_5_B"
       ]
     },
     {
       "date": "2026-06-06",
       "puzzleIds": [
-        "europe_CH_1_A",
-        "africa_CI_2_A",
-        "middle-east_OM_3_A",
-        "africa_NE_4_B",
-        "middle-east_JO_5_A"
+        "europe_FR_1_A",
+        "africa_ZA_2_A",
+        "asia_IL_3_A",
+        "latin-america_CL_4_A",
+        "middle-east_AE_5_A"
       ]
     },
     {
       "date": "2026-06-07",
       "puzzleIds": [
-        "south-america_BO_1_A",
-        "africa_SS_2_A",
-        "latin-america_SV_3_A",
-        "africa_CG_4_B",
-        "europe_BG_5_B"
+        "south-america_GY_1_A",
+        "africa_KE_2_A",
+        "africa_LY_3_B",
+        "north-america_MX_4_A",
+        "africa_LY_5_B"
       ]
     },
     {
       "date": "2026-06-08",
       "puzzleIds": [
-        "africa_CF_1_A",
-        "africa_DZ_2_A",
-        "asia_AF_3_B",
-        "asia_UZ_4_A",
-        "middle-east_AE_5_A"
+        "middle-east_IL_1_A",
+        "latin-america_AR_2_A",
+        "europe_MD_3_A",
+        "africa_CF_4_B",
+        "africa_AO_5_B"
       ]
     },
     {
       "date": "2026-06-09",
       "puzzleIds": [
-        "central-america_GT_1_A",
-        "north-america_GT_2_A",
-        "asia_IL_3_A",
-        "latin-america_CL_4_A",
-        "africa_LY_5_B"
+        "europe_PL_1_A",
+        "africa_CD_2_A",
+        "north-america_SV_3_A",
+        "latin-america_BR_4_B",
+        "north-america_HN_5_A"
       ]
     },
     {
       "date": "2026-06-10",
       "puzzleIds": [
-        "africa_MZ_1_A",
-        "europe_BE_2_A",
-        "africa_LY_3_B",
-        "north-america_MX_4_A",
-        "africa_AO_5_B"
+        "africa_BF_1_A",
+        "africa_ET_2_A",
+        "middle-east_SA_3_B",
+        "latin-america_UY_4_A",
+        "oceania_ID_5_A"
       ]
     },
     {
       "date": "2026-06-11",
       "puzzleIds": [
-        "africa_TZ_1_A",
-        "europe_DE_2_A",
-        "europe_MD_3_A",
-        "africa_CF_4_B",
-        "north-america_HN_5_A"
+        "europe_NO_1_A",
+        "europe_GR_2_A",
+        "africa_MZ_3_A",
+        "africa_BW_4_B",
+        "south-america_BR_5_A"
       ]
     },
     {
       "date": "2026-06-12",
       "puzzleIds": [
-        "latin-america_HN_1_A",
-        "asia_SY_2_A",
-        "north-america_SV_3_A",
-        "latin-america_BR_4_B",
-        "oceania_ID_5_A"
+        "africa_UG_1_A",
+        "africa_EH_2_A",
+        "europe_EE_3_A",
+        "south-america_CO_4_A",
+        "africa_SD_5_A"
       ]
     },
     {
       "date": "2026-06-13",
       "puzzleIds": [
-        "europe_GE_1_A",
-        "middle-east_OM_2_A",
-        "middle-east_SA_3_B",
-        "latin-america_UY_4_A",
-        "south-america_BR_5_A"
+        "africa_ET_1_A",
+        "africa_LY_2_A",
+        "europe_RU_3_A",
+        "south-america_CO_4_B",
+        "north-america_GT_5_B"
       ]
     },
     {
       "date": "2026-06-14",
       "puzzleIds": [
-        "africa_BJ_1_A",
-        "middle-east_IL_2_A",
-        "africa_MZ_3_A",
-        "africa_BW_4_B",
-        "africa_SD_5_A"
+        "asia_KZ_1_A",
+        "latin-america_BR_2_A",
+        "africa_BI_3_A",
+        "europe_AD_4_A",
+        "europe_ES_5_A"
       ]
     },
     {
       "date": "2026-06-15",
       "puzzleIds": [
-        "north-america_MX_1_A",
-        "asia_IR_2_A",
-        "europe_EE_3_A",
-        "south-america_CO_4_A",
-        "north-america_GT_5_B"
+        "asia_TJ_1_A",
+        "europe_CZ_2_A",
+        "central-america_HN_3_A",
+        "africa_LY_4_A",
+        "latin-america_AR_5_B"
       ]
     },
     {
       "date": "2026-06-16",
       "puzzleIds": [
-        "south-america_PE_1_A",
-        "africa_ER_2_A",
-        "europe_RU_3_A",
-        "south-america_CO_4_B",
-        "europe_ES_5_A"
+        "africa_LY_1_A",
+        "europe_MK_2_A",
+        "africa_NA_3_A",
+        "europe_SI_4_A",
+        "africa_SS_5_B"
       ]
     },
     {
       "date": "2026-06-17",
       "puzzleIds": [
-        "africa_SD_1_A",
-        "europe_FI_2_A",
-        "africa_BI_3_A",
-        "europe_AD_4_A",
-        "latin-america_AR_5_B"
+        "africa_MR_1_A",
+        "asia_IQ_2_A",
+        "europe_AL_3_B",
+        "africa_GW_4_A",
+        "europe_PL_5_B"
       ]
     },
     {
       "date": "2026-06-18",
       "puzzleIds": [
-        "asia_UZ_1_A",
-        "middle-east_SA_2_A",
-        "central-america_HN_3_A",
-        "africa_LY_4_A",
-        "africa_SS_5_B"
+        "africa_NA_1_A",
+        "africa_CM_2_A",
+        "europe_BG_3_B",
+        "asia_KH_4_A",
+        "europe_AT_5_B"
       ]
     },
     {
       "date": "2026-06-19",
       "puzzleIds": [
-        "middle-east_SA_1_A",
-        "latin-america_CO_2_A",
-        "africa_NA_3_A",
-        "europe_SI_4_A",
-        "europe_PL_5_B"
+        "europe_AZ_1_A",
+        "africa_AO_2_A",
+        "africa_ZW_3_B",
+        "africa_ML_4_B",
+        "asia_YE_5_A"
       ]
     },
     {
       "date": "2026-06-20",
       "puzzleIds": [
-        "asia_KP_1_A",
-        "africa_CD_2_A",
-        "europe_AL_3_B",
-        "africa_GW_4_A",
-        "europe_AT_5_B"
+        "africa_TZ_1_A",
+        "asia_SA_2_A",
+        "africa_TZ_3_A",
+        "asia_TH_4_A",
+        "central-america_NI_5_A"
       ]
     },
     {
       "date": "2026-06-21",
       "puzzleIds": [
-        "europe_DE_1_A",
-        "europe_SI_2_A",
-        "europe_BG_3_B",
-        "asia_KH_4_A",
-        "asia_YE_5_A"
+        "africa_BW_1_A",
+        "asia_JO_2_A",
+        "africa_SL_3_A",
+        "europe_IT_4_B",
+        "central-america_MX_5_A"
       ]
     },
     {
       "date": "2026-06-22",
       "puzzleIds": [
-        "africa_MW_1_A",
-        "asia_IQ_2_A",
-        "africa_ZW_3_B",
-        "africa_ML_4_B",
-        "central-america_NI_5_A"
+        "middle-east_SA_1_A",
+        "africa_NA_2_A",
+        "africa_CD_3_B",
+        "latin-america_NI_4_A",
+        "europe_LU_5_A"
       ]
     },
     {
       "date": "2026-06-23",
       "puzzleIds": [
-        "asia_LA_1_A",
-        "europe_LT_2_A",
-        "africa_TZ_3_A",
-        "africa_CD_4_A",
-        "central-america_MX_5_A"
+        "europe_RS_1_A",
+        "asia_PK_2_A",
+        "middle-east_IL_3_B",
+        "central-america_GT_4_A",
+        "europe_MK_5_A"
       ]
     },
     {
       "date": "2026-06-24",
       "puzzleIds": [
-        "asia_PK_1_A",
-        "europe_IT_2_A",
-        "africa_SL_3_A",
-        "africa_RW_4_B",
-        "europe_LU_5_A"
+        "south-america_AR_1_A",
+        "europe_BA_2_A",
+        "europe_XK_3_A",
+        "europe_FR_4_A",
+        "africa_KE_5_B"
       ]
     },
     {
       "date": "2026-06-25",
       "puzzleIds": [
-        "africa_CG_1_A",
-        "south-america_VE_2_A",
-        "africa_CD_3_B",
-        "asia_TH_4_A",
-        "europe_MK_5_A"
+        "asia_IN_1_A",
+        "africa_MW_2_A",
+        "asia_YE_3_A",
+        "europe_FR_4_B",
+        "latin-america_GT_5_B"
       ]
     },
     {
       "date": "2026-06-26",
       "puzzleIds": [
-        "asia_CN_1_A",
-        "latin-america_HN_2_A",
-        "middle-east_IL_3_B",
-        "europe_IT_4_B",
-        "africa_KE_5_B"
+        "latin-america_GT_1_A",
+        "africa_BF_2_A",
+        "latin-america_GY_3_A",
+        "africa_SS_4_B",
+        "europe_RU_5_B"
       ]
     },
     {
       "date": "2026-06-27",
       "puzzleIds": [
-        "latin-america_CL_1_A",
-        "middle-east_JO_2_A",
-        "europe_XK_3_A",
-        "latin-america_NI_4_A",
-        "latin-america_GT_5_B"
+        "africa_SN_1_A",
+        "north-america_MX_2_A",
+        "asia_KZ_3_B",
+        "asia_CN_4_A",
+        "africa_NE_5_A"
       ]
     },
     {
       "date": "2026-06-28",
       "puzzleIds": [
-        "latin-america_BO_1_A",
-        "europe_HU_2_A",
-        "asia_YE_3_A",
-        "central-america_GT_4_A",
-        "europe_RU_5_B"
+        "europe_ME_1_A",
+        "asia_OM_2_A",
+        "africa_SS_3_B",
+        "oceania_ID_4_A",
+        "africa_UG_5_B"
       ]
     },
     {
       "date": "2026-06-29",
       "puzzleIds": [
-        "asia_IL_1_A",
-        "africa_NG_2_A",
-        "latin-america_GY_3_A",
-        "europe_FR_4_A",
-        "africa_NE_5_A"
+        "north-america_HN_1_A",
+        "asia_TH_2_A",
+        "europe_CH_3_A",
+        "africa_SL_4_A",
+        "africa_ZM_5_A"
       ]
     },
     {
       "date": "2026-06-30",
       "puzzleIds": [
-        "africa_RW_1_A",
-        "latin-america_BO_2_A",
-        "asia_KZ_3_B",
-        "europe_FR_4_B",
-        "africa_UG_5_B"
+        "asia_IQ_1_A",
+        "central-america_GT_2_A",
+        "europe_LU_3_A",
+        "asia_RU_4_A",
+        "latin-america_MX_5_A"
       ]
     },
     {
       "date": "2026-07-01",
       "puzzleIds": [
-        "asia_ID_1_A",
-        "asia_ID_2_A",
-        "africa_SS_3_B",
-        "africa_SS_4_B",
-        "africa_ZM_5_A"
+        "africa_KE_1_A",
+        "south-america_CL_2_A",
+        "africa_ZM_3_A",
+        "middle-east_IQ_4_A",
+        "middle-east_PS_5_A"
       ]
     },
     {
       "date": "2026-07-02",
       "puzzleIds": [
-        "europe_BA_1_A",
-        "asia_UZ_2_A",
-        "europe_CH_3_A",
-        "asia_CN_4_A",
-        "latin-america_MX_5_A"
+        "europe_AT_1_A",
+        "africa_ML_2_A",
+        "north-america_MX_3_A",
+        "europe_NO_4_A",
+        "middle-east_JO_5_B"
       ]
     },
     {
       "date": "2026-07-03",
       "puzzleIds": [
-        "asia_RU_1_A",
-        "europe_UA_2_A",
-        "europe_LU_3_A",
-        "oceania_ID_4_A",
-        "middle-east_PS_5_A"
+        "africa_EH_1_A",
+        "europe_NO_2_A",
+        "asia_RU_3_A",
+        "africa_ER_4_A",
+        "north-america_CR_5_A"
       ]
     },
     {
       "date": "2026-07-04",
       "puzzleIds": [
-        "europe_LT_1_A",
-        "europe_XK_2_A",
-        "africa_ZM_3_A",
-        "africa_SL_4_A",
-        "middle-east_JO_5_B"
+        "asia_KH_1_A",
+        "south-america_PE_2_A",
+        "africa_UG_3_A",
+        "asia_SA_4_A",
+        "africa_SS_5_A"
       ]
     },
     {
       "date": "2026-07-05",
       "puzzleIds": [
-        "asia_JO_1_A",
-        "south-america_BR_2_A",
-        "north-america_MX_3_A",
-        "asia_RU_4_A",
-        "north-america_CR_5_A"
+        "middle-east_IQ_1_A",
+        "africa_NG_2_A",
+        "africa_SD_3_A",
+        "south-america_AR_4_A",
+        "latin-america_SR_5_A"
       ]
     },
     {
       "date": "2026-07-06",
       "puzzleIds": [
-        "europe_AM_1_A",
-        "africa_AO_2_A",
-        "asia_RU_3_A",
-        "middle-east_IQ_4_A",
-        "africa_SS_5_A"
+        "europe_DE_1_A",
+        "asia_CN_2_A",
+        "africa_BF_3_B",
+        "africa_UG_4_A",
+        "africa_SL_5_A"
       ]
     },
     {
       "date": "2026-07-07",
       "puzzleIds": [
-        "north-america_HN_1_A",
-        "africa_ZW_2_A",
-        "africa_UG_3_A",
-        "europe_NO_4_A",
-        "latin-america_SR_5_A"
+        "africa_TD_1_A",
+        "africa_BI_2_A",
+        "asia_JO_3_A",
+        "africa_BI_4_A",
+        "latin-america_PA_5_A"
       ]
     },
     {
       "date": "2026-07-08",
       "puzzleIds": [
-        "asia_MM_1_A",
-        "latin-america_PY_2_A",
-        "africa_SD_3_A",
-        "africa_ER_4_A",
-        "africa_SL_5_A"
+        "europe_XK_1_A",
+        "africa_TZ_2_A",
+        "europe_HU_3_B",
+        "south-america_CL_4_A",
+        "europe_HR_5_A"
       ]
     },
     {
       "date": "2026-07-09",
       "puzzleIds": [
-        "asia_OM_1_A",
-        "europe_ME_2_A",
-        "africa_BF_3_B",
-        "asia_SA_4_A",
-        "latin-america_PA_5_A"
+        "middle-east_SY_1_A",
+        "asia_IL_2_A",
+        "europe_BY_3_A",
+        "latin-america_BZ_4_A",
+        "europe_AM_5_A"
       ]
     },
     {
       "date": "2026-07-10",
       "puzzleIds": [
-        "africa_NE_1_A",
-        "europe_GE_2_A",
-        "asia_JO_3_A",
-        "south-america_AR_4_A",
-        "europe_HR_5_A"
+        "africa_ML_1_A",
+        "europe_AM_2_A",
+        "asia_IN_3_A",
+        "latin-america_PA_4_A",
+        "africa_MZ_5_A"
       ]
     },
     {
       "date": "2026-07-11",
       "puzzleIds": [
-        "asia_TM_1_A",
-        "europe_CH_2_A",
-        "europe_HU_3_B",
-        "africa_UG_4_A",
-        "europe_AM_5_A"
+        "europe_SK_1_A",
+        "latin-america_GY_2_A",
+        "africa_CG_3_B",
+        "africa_SD_4_A",
+        "middle-east_IL_5_A"
       ]
     },
     {
       "date": "2026-07-12",
       "puzzleIds": [
-        "latin-america_CO_1_A",
-        "europe_AZ_2_A",
-        "europe_BY_3_A",
-        "africa_BI_4_A",
-        "africa_MZ_5_A"
+        "asia_AF_1_A",
+        "europe_RS_2_A",
+        "asia_KG_3_A",
+        "africa_BF_4_B",
+        "africa_BW_5_A"
       ]
     },
     {
       "date": "2026-07-13",
       "puzzleIds": [
-        "south-america_CL_1_A",
-        "europe_PL_2_A",
-        "asia_IN_3_A",
-        "south-america_CL_4_A",
-        "middle-east_IL_5_A"
+        "africa_TG_1_A",
+        "asia_KZ_2_A",
+        "central-america_GT_3_A",
+        "latin-america_HN_4_A",
+        "asia_IL_5_B"
       ]
     },
     {
       "date": "2026-07-14",
       "puzzleIds": [
-        "south-america_BR_1_A",
-        "south-america_PY_2_A",
-        "africa_CG_3_B",
-        "latin-america_BZ_4_A",
-        "africa_BW_5_A"
+        "europe_CH_1_A",
+        "europe_ME_2_A",
+        "asia_PS_3_A",
+        "europe_RO_4_B",
+        "asia_MN_5_A"
       ]
     },
     {
       "date": "2026-07-15",
       "puzzleIds": [
-        "europe_LU_1_A",
-        "north-america_HN_2_A",
-        "asia_KG_3_A",
-        "latin-america_PA_4_A",
-        "asia_IL_5_B"
+        "europe_FI_1_A",
+        "europe_IT_2_A",
+        "europe_FR_3_A",
+        "europe_LV_4_A",
+        "asia_OM_5_A"
       ]
     },
     {
       "date": "2026-07-16",
       "puzzleIds": [
-        "middle-east_SY_1_A",
-        "south-america_CL_2_A",
-        "central-america_GT_3_A",
-        "africa_SD_4_A",
-        "asia_MN_5_A"
+        "asia_RU_1_A",
+        "africa_BW_2_A",
+        "south-america_UY_3_A",
+        "africa_EG_4_A",
+        "africa_NG_5_A"
       ]
     },
     {
       "date": "2026-07-17",
       "puzzleIds": [
-        "south-america_AR_1_A",
-        "asia_IN_2_A",
-        "asia_PS_3_A",
-        "africa_BF_4_B",
-        "asia_OM_5_A"
+        "europe_AL_1_A",
+        "europe_RO_2_A",
+        "south-america_AR_3_A",
+        "asia_SY_4_A",
+        "europe_LV_5_A"
       ]
     },
     {
       "date": "2026-07-18",
       "puzzleIds": [
-        "africa_CM_1_A",
-        "middle-east_IQ_2_A",
-        "europe_FR_3_A",
-        "latin-america_HN_4_A",
-        "africa_NG_5_A"
+        "africa_GA_1_A",
+        "africa_CI_2_A",
+        "africa_CI_3_A",
+        "central-america_NI_4_A",
+        "middle-east_LB_5_A"
       ]
     },
     {
       "date": "2026-07-19",
       "puzzleIds": [
-        "europe_CZ_1_A",
-        "africa_TG_2_A",
-        "south-america_UY_3_A",
-        "europe_RO_4_B",
-        "europe_LV_5_A"
+        "asia_TH_1_A",
+        "latin-america_VE_2_A",
+        "latin-america_CL_3_A",
+        "asia_MM_4_B",
+        "central-america_GT_5_A"
       ]
     },
     {
       "date": "2026-07-20",
       "puzzleIds": [
-        "europe_FR_1_A",
-        "africa_ML_2_A",
-        "south-america_AR_3_A",
-        "europe_LV_4_A",
-        "middle-east_LB_5_A"
+        "europe_LT_1_A",
+        "africa_RW_2_A",
+        "europe_ES_3_A",
+        "central-america_CR_4_A",
+        "north-america_BZ_5_A"
       ]
     },
     {
       "date": "2026-07-21",
       "puzzleIds": [
-        "europe_HR_1_A",
-        "asia_VN_2_A",
-        "africa_CI_3_A",
-        "africa_EG_4_A",
-        "central-america_GT_5_A"
+        "europe_HU_1_A",
+        "latin-america_BO_2_A",
+        "asia_KG_3_B",
+        "asia_LA_4_A",
+        "asia_KZ_5_A"
       ]
     },
     {
       "date": "2026-07-22",
       "puzzleIds": [
-        "middle-east_JO_1_A",
-        "central-america_HN_2_A",
-        "latin-america_CL_3_A",
-        "asia_SY_4_A",
-        "north-america_BZ_5_A"
+        "europe_RO_1_A",
+        "latin-america_CO_2_A",
+        "europe_LV_3_A",
+        "africa_CG_4_A",
+        "africa_NG_5_B"
       ]
     },
     {
       "date": "2026-07-23",
       "puzzleIds": [
-        "asia_IQ_1_A",
-        "europe_FR_2_A",
-        "europe_ES_3_A",
-        "central-america_NI_4_A",
-        "asia_KZ_5_A"
+        "south-america_CO_1_A",
+        "middle-east_OM_2_A",
+        "africa_ER_3_A",
+        "africa_MA_4_A",
+        "africa_TD_5_A"
       ]
     },
     {
       "date": "2026-07-24",
       "puzzleIds": [
-        "europe_AZ_1_A",
-        "europe_BA_2_A",
-        "asia_KG_3_B",
-        "south-america_PE_4_A",
-        "africa_NG_5_B"
+        "asia_CN_1_A",
+        "asia_MM_2_A",
+        "europe_BA_3_A",
+        "europe_GE_4_A",
+        "europe_FR_5_B"
       ]
     },
     {
       "date": "2026-07-25",
       "puzzleIds": [
-        "africa_ET_1_A",
-        "asia_KP_2_A",
-        "europe_LV_3_A",
-        "asia_MM_4_B",
-        "africa_TD_5_A"
+        "asia_SY_1_A",
+        "africa_ZW_2_A",
+        "middle-east_IL_3_A",
+        "europe_TR_4_A",
+        "europe_CH_5_B"
       ]
     },
     {
       "date": "2026-07-26",
       "puzzleIds": [
-        "central-america_HN_1_A",
-        "latin-america_BR_2_A",
-        "africa_ER_3_A",
-        "central-america_CR_4_A",
-        "europe_FR_5_B"
+        "south-america_PE_1_A",
+        "asia_ID_2_A",
+        "south-america_PE_3_B",
+        "asia_BD_4_A",
+        "asia_SA_5_B"
       ]
     },
     {
       "date": "2026-07-27",
       "puzzleIds": [
-        "africa_TD_1_A",
-        "europe_AL_2_A",
-        "europe_BA_3_A",
-        "asia_LA_4_A",
-        "europe_CH_5_B"
+        "africa_AO_1_A",
+        "south-america_CO_2_A",
+        "africa_ML_3_A",
+        "latin-america_SV_4_A",
+        "europe_RU_5_A"
       ]
     },
     {
       "date": "2026-07-28",
       "puzzleIds": [
-        "africa_KE_1_A",
-        "latin-america_GY_2_A",
-        "middle-east_IL_3_A",
-        "africa_CG_4_A",
-        "asia_SA_5_B"
+        "south-america_CL_1_A",
+        "middle-east_SY_2_A",
+        "europe_HU_3_A",
+        "latin-america_SR_4_A",
+        "africa_CM_5_A"
       ]
     },
     {
       "date": "2026-07-29",
       "puzzleIds": [
-        "europe_ES_1_A",
-        "asia_KZ_2_A",
-        "south-america_PE_3_B",
-        "africa_MA_4_A",
-        "europe_RU_5_A"
+        "europe_LU_1_A",
+        "asia_KG_2_A",
+        "africa_ML_3_B",
+        "africa_TG_4_A",
+        "europe_EE_5_A"
       ]
     },
     {
       "date": "2026-07-30",
       "puzzleIds": [
-        "europe_IT_1_A",
-        "central-america_GT_2_A",
-        "africa_ML_3_A",
-        "europe_GE_4_A",
-        "africa_CM_5_A"
+        "europe_BA_1_A",
+        "asia_TJ_2_A",
+        "asia_JO_3_B",
+        "asia_TM_4_A",
+        "africa_DJ_5_A"
       ]
     },
     {
       "date": "2026-07-31",
       "puzzleIds": [
-        "africa_SS_1_A",
+        "south-america_PY_1_A",
         "asia_AF_2_A",
-        "europe_HU_3_A",
-        "europe_TR_4_A",
-        "europe_EE_5_A"
+        "asia_LA_3_A",
+        "europe_MK_4_A",
+        "middle-east_SA_5_A"
       ]
     },
     {
       "date": "2026-08-01",
       "puzzleIds": [
-        "europe_GR_1_A",
-        "africa_BJ_2_A",
-        "africa_ML_3_B",
-        "asia_BD_4_A",
-        "africa_DJ_5_A"
+        "latin-america_PY_1_A",
+        "africa_TG_2_A",
+        "south-america_CO_3_A",
+        "europe_SE_4_A",
+        "africa_GN_5_B"
       ]
     },
     {
       "date": "2026-08-02",
       "puzzleIds": [
-        "south-america_PY_1_A",
-        "africa_NA_2_A",
-        "asia_JO_3_B",
-        "latin-america_SV_4_A",
-        "middle-east_SA_5_A"
+        "asia_PK_1_A",
+        "europe_RU_2_A",
+        "africa_NE_3_B",
+        "africa_BF_4_A",
+        "europe_CZ_5_A"
       ]
     },
     {
       "date": "2026-08-03",
       "puzzleIds": [
-        "asia_TH_1_A",
-        "europe_AM_2_A",
-        "asia_LA_3_A",
-        "latin-america_SR_4_A",
-        "africa_GN_5_B"
+        "latin-america_CO_1_A",
+        "asia_SY_2_A",
+        "europe_MK_3_A",
+        "africa_ZW_4_A",
+        "europe_RO_5_A"
       ]
     },
     {
       "date": "2026-08-04",
       "puzzleIds": [
-        "africa_ZM_1_A",
-        "latin-america_AR_2_A",
-        "south-america_CO_3_A",
-        "africa_TG_4_A",
-        "europe_CZ_5_A"
+        "africa_MZ_1_A",
+        "middle-east_JO_2_A",
+        "asia_KW_3_A",
+        "asia_YE_4_A",
+        "europe_IT_5_B"
       ]
     },
     {
       "date": "2026-08-05",
       "puzzleIds": [
-        "africa_UG_1_A",
-        "europe_LU_2_A",
-        "africa_NE_3_B",
-        "asia_TM_4_A",
-        "europe_RO_5_A"
+        "africa_DZ_1_A",
+        "africa_CG_2_A",
+        "africa_TG_3_A",
+        "latin-america_PE_4_B",
+        "africa_DZ_5_A"
       ]
     },
     {
       "date": "2026-08-06",
       "puzzleIds": [
-        "africa_SN_1_A",
-        "africa_GN_2_A",
-        "europe_MK_3_A",
-        "europe_MK_4_A",
-        "europe_IT_5_B"
+        "north-america_GT_1_A",
+        "europe_AL_2_A",
+        "middle-east_LB_3_A",
+        "africa_SZ_4_A",
+        "europe_GE_5_A"
       ]
     },
     {
       "date": "2026-08-07",
       "puzzleIds": [
-        "middle-east_OM_1_A",
-        "asia_MM_2_A",
-        "asia_KW_3_A",
-        "europe_SE_4_A",
-        "africa_DZ_5_A"
+        "central-america_HN_1_A",
+        "latin-america_GT_2_A",
+        "asia_BT_3_A",
+        "latin-america_CR_4_A",
+        "africa_ZW_5_B"
       ]
     },
     {
       "date": "2026-08-08",
       "puzzleIds": [
-        "africa_AO_1_A",
-        "south-america_PE_2_A",
-        "africa_TG_3_A",
-        "africa_BF_4_A",
-        "europe_GE_5_A"
+        "europe_AM_1_A",
+        "asia_TM_2_A",
+        "europe_PL_3_B",
+        "europe_IT_4_A",
+        "africa_LY_5_A"
       ]
     },
     {
       "date": "2026-08-09",
       "puzzleIds": [
-        "europe_SI_1_A",
-        "africa_SD_2_A",
-        "middle-east_LB_3_A",
-        "africa_ZW_4_A",
-        "africa_ZW_5_B"
+        "europe_BY_1_A",
+        "latin-america_PY_2_A",
+        "latin-america_CO_3_A",
+        "africa_ZA_4_B",
+        "asia_RU_5_A"
       ]
     },
     {
       "date": "2026-08-10",
       "puzzleIds": [
-        "europe_UA_1_A",
-        "asia_OM_2_A",
-        "asia_BT_3_A",
-        "asia_YE_4_A",
-        "africa_LY_5_A"
+        "africa_RW_1_A",
+        "asia_MY_2_A",
+        "europe_RS_3_B",
+        "africa_ET_4_B",
+        "europe_BG_5_A"
       ]
     },
     {
       "date": "2026-08-11",
       "puzzleIds": [
-        "europe_XK_1_A",
-        "africa_CM_2_A",
-        "europe_PL_3_B",
-        "latin-america_PE_4_B",
-        "asia_RU_5_A"
+        "asia_KP_1_A",
+        "europe_XK_2_A",
+        "middle-east_YE_3_A",
+        "africa_DZ_4_A",
+        "europe_GE_5_B"
       ]
     },
     {
       "date": "2026-08-12",
       "puzzleIds": [
-        "asia_KG_1_A",
-        "europe_TR_2_A",
-        "latin-america_CO_3_A",
-        "africa_SZ_4_A",
-        "europe_BG_5_A"
+        "europe_TR_1_A",
+        "asia_KH_2_A",
+        "europe_GR_3_A",
+        "europe_NL_4_A",
+        "africa_NA_5_B"
       ]
     },
     {
       "date": "2026-08-13",
       "puzzleIds": [
-        "asia_KH_1_A",
-        "asia_KG_2_A",
-        "europe_RS_3_B",
-        "latin-america_CR_4_A",
-        "europe_GE_5_B"
+        "africa_SS_1_A",
+        "asia_RU_2_A",
+        "africa_DZ_3_A",
+        "africa_SS_4_A",
+        "south-america_UY_5_A"
       ]
     },
     {
       "date": "2026-08-14",
       "puzzleIds": [
-        "africa_CI_1_A",
-        "south-america_CO_2_A",
-        "middle-east_YE_3_A",
-        "europe_IT_4_A",
-        "africa_NA_5_B"
+        "europe_ES_1_A",
+        "europe_BE_2_A",
+        "africa_KE_3_B",
+        "africa_TN_4_A",
+        "europe_SK_5_A"
       ]
     },
     {
       "date": "2026-08-15",
       "puzzleIds": [
-        "asia_IR_1_A",
-        "asia_MY_2_A",
-        "europe_GR_3_A",
-        "africa_ZA_4_B",
-        "south-america_UY_5_A"
+        "asia_KG_1_A",
+        "middle-east_IL_2_A",
+        "south-america_BR_3_B",
+        "africa_MZ_4_B",
+        "latin-america_BZ_5_A"
       ]
     },
     {
       "date": "2026-08-16",
       "puzzleIds": [
-        "africa_BF_1_A",
-        "europe_BY_2_A",
-        "africa_DZ_3_A",
-        "africa_ET_4_B",
-        "europe_SK_5_A"
+        "latin-america_PE_1_A",
+        "europe_BG_2_A",
+        "central-america_BZ_3_A",
+        "africa_RW_4_A",
+        "europe_XK_5_A"
       ]
     },
     {
       "date": "2026-08-17",
       "puzzleIds": [
-        "asia_KZ_1_A",
-        "asia_IL_2_A",
-        "africa_KE_3_B",
-        "africa_DZ_4_A",
-        "latin-america_BZ_5_A"
+        "asia_TM_1_A",
+        "africa_GH_2_A",
+        "north-america_CR_3_A",
+        "asia_KG_4_A",
+        "africa_TG_5_A"
       ]
     },
     {
       "date": "2026-08-18",
       "puzzleIds": [
-        "latin-america_GY_1_A",
-        "asia_CN_2_A",
-        "south-america_BR_3_B",
-        "europe_NL_4_A",
-        "europe_XK_5_A"
+        "asia_MM_1_A",
+        "north-america_GT_2_A",
+        "africa_SN_3_A",
+        "africa_TZ_4_B",
+        "europe_BY_5_B"
       ]
     },
     {
       "date": "2026-08-19",
       "puzzleIds": [
-        "latin-america_BR_1_A",
-        "asia_JO_2_A",
-        "central-america_BZ_3_A",
-        "africa_SS_4_A",
-        "africa_TG_5_A"
+        "asia_LA_1_A",
+        "middle-east_IQ_2_A",
+        "south-america_PY_3_A",
+        "europe_AM_4_A",
+        "europe_ME_5_A"
       ]
     },
     {
       "date": "2026-08-20",
       "puzzleIds": [
-        "europe_PL_1_A",
-        "north-america_MX_2_A",
-        "north-america_CR_3_A",
-        "africa_TN_4_A",
-        "europe_BY_5_B"
+        "asia_IL_1_A",
+        "europe_FI_2_A",
+        "africa_TD_3_A",
+        "central-america_BZ_4_A",
+        "asia_KZ_5_B"
       ]
     },
     {
       "date": "2026-08-21",
       "puzzleIds": [
-        "africa_GA_1_A",
-        "africa_SN_2_A",
-        "africa_SN_3_A",
-        "africa_MZ_4_B",
-        "europe_ME_5_A"
+        "south-america_VE_1_A",
+        "south-america_BR_2_A",
+        "europe_SK_3_A",
+        "asia_RU_4_B",
+        "middle-east_IQ_5_A"
       ]
     },
     {
       "date": "2026-08-22",
       "puzzleIds": [
-        "africa_MR_1_A",
-        "middle-east_SY_2_A",
-        "south-america_PY_3_A",
-        "africa_RW_4_A",
-        "asia_KZ_5_B"
+        "europe_IT_1_A",
+        "asia_UZ_2_A",
+        "africa_LR_3_A",
+        "south-america_BO_4_A",
+        "middle-east_YE_5_A"
       ]
     },
     {
       "date": "2026-08-23",
       "puzzleIds": [
-        "middle-east_IQ_1_A",
-        "africa_RW_2_A",
-        "africa_TD_3_A",
-        "asia_KG_4_A",
-        "middle-east_IQ_5_A"
+        "middle-east_JO_1_A",
+        "africa_SN_2_A",
+        "europe_CZ_3_A",
+        "south-america_BR_4_A",
+        "africa_CD_5_A"
       ]
     },
     {
       "date": "2026-08-24",
       "puzzleIds": [
-        "europe_AT_1_A",
-        "africa_GA_2_A",
-        "europe_SK_3_A",
-        "africa_TZ_4_B",
-        "middle-east_YE_5_A"
+        "asia_SA_1_A",
+        "africa_CF_2_A",
+        "asia_TJ_3_A",
+        "latin-america_PE_4_A",
+        "europe_BA_5_A"
       ]
     },
     {
       "date": "2026-08-25",
       "puzzleIds": [
-        "south-america_VE_1_A",
-        "asia_LA_2_A",
-        "africa_LR_3_A",
-        "europe_AM_4_A",
-        "africa_CD_5_A"
+        "europe_MK_1_A",
+        "europe_BY_2_A",
+        "central-america_MX_3_A",
+        "europe_ES_4_A",
+        "europe_HU_5_B"
       ]
     },
     {
       "date": "2026-08-26",
       "puzzleIds": [
-        "africa_NG_1_A",
-        "europe_CZ_2_A",
-        "europe_CZ_3_A",
-        "central-america_BZ_4_A",
-        "europe_BA_5_A"
+        "africa_SD_1_A",
+        "asia_LA_2_A",
+        "asia_MM_3_A",
+        "europe_RU_4_B",
+        "europe_NL_5_A"
       ]
     },
     {
       "date": "2026-08-27",
       "puzzleIds": [
-        "latin-america_PE_1_A",
-        "europe_RO_2_A",
-        "asia_TJ_3_A",
-        "asia_RU_4_B",
-        "europe_HU_5_B"
+        "europe_CZ_1_A",
+        "europe_UA_2_A",
+        "asia_KZ_3_A",
+        "africa_GN_4_B",
+        "asia_PK_5_B"
       ]
     },
     {
       "date": "2026-08-28",
       "puzzleIds": [
-        "europe_MK_1_A",
-        "africa_CF_2_A",
-        "central-america_MX_3_A",
-        "south-america_BO_4_A",
-        "europe_NL_5_A"
+        "africa_NG_1_A",
+        "europe_LV_2_A",
+        "africa_MR_3_A",
+        "asia_IR_4_A",
+        "latin-america_BR_5_A"
       ]
     },
     {
       "date": "2026-08-29",
       "puzzleIds": [
-        "africa_EH_1_A",
-        "asia_TJ_2_A",
-        "asia_MM_3_A",
-        "south-america_BR_4_A",
-        "asia_PK_5_B"
+        "europe_GR_1_A",
+        "south-america_VE_2_A",
+        "asia_ID_3_A",
+        "africa_MZ_4_A",
+        "africa_RW_5_A"
       ]
     },
     {
       "date": "2026-08-30",
       "puzzleIds": [
-        "africa_ER_1_A",
-        "africa_ET_2_A",
-        "asia_KZ_3_A",
-        "latin-america_PE_4_A",
-        "latin-america_BR_5_A"
+        "latin-america_HN_1_A",
+        "asia_VN_2_A",
+        "africa_SS_3_A",
+        "central-america_SV_4_A",
+        "asia_PK_5_A"
       ]
     },
     {
       "date": "2026-08-31",
       "puzzleIds": [
-        "asia_IN_1_A",
-        "africa_ZM_2_A",
-        "africa_MR_3_A",
-        "europe_ES_4_A",
-        "africa_RW_5_A"
+        "africa_GH_1_A",
+        "africa_UG_2_A",
+        "asia_UZ_3_B",
+        "europe_RO_4_A",
+        "latin-america_AR_5_A"
       ]
     },
     {
       "date": "2026-09-01",
       "puzzleIds": [
-        "europe_FI_1_A",
-        "africa_KE_2_A",
-        "asia_ID_3_A",
-        "europe_RU_4_B",
-        "asia_PK_5_A"
+        "central-america_GT_1_A",
+        "europe_LU_2_A",
+        "middle-east_KW_3_A",
+        "europe_EE_4_A",
+        "asia_IL_5_A"
       ]
     },
     {
       "date": "2026-09-02",
       "puzzleIds": [
-        "europe_HU_1_A",
-        "africa_ZA_2_A",
-        "africa_SS_3_A",
-        "africa_GN_4_B",
-        "latin-america_AR_5_A"
+        "africa_CF_1_A",
+        "latin-america_HN_2_A",
+        "africa_EH_3_A",
+        "middle-east_JO_4_A",
+        "asia_TM_5_B"
       ]
     },
     {
       "date": "2026-09-03",
       "puzzleIds": [
-        "latin-america_AR_1_A",
-        "europe_MK_2_A",
-        "asia_UZ_3_B",
-        "asia_IR_4_A",
-        "asia_IL_5_A"
+        "asia_UZ_1_A",
+        "europe_HR_2_A",
+        "asia_LA_3_B",
+        "asia_MN_4_A",
+        "europe_GR_5_A"
       ]
     },
     {
       "date": "2026-09-04",
       "puzzleIds": [
-        "africa_DZ_1_A",
-        "africa_EH_2_A",
-        "middle-east_KW_3_A",
-        "africa_MZ_4_A",
-        "asia_TM_5_B"
+        "africa_BJ_1_A",
+        "asia_IR_2_A",
+        "asia_LB_3_A",
+        "europe_DE_4_B",
+        "north-america_NI_5_A"
       ]
     },
     {
       "date": "2026-09-05",
       "puzzleIds": [
-        "latin-america_GT_1_A",
-        "africa_UG_2_A",
-        "africa_EH_3_A",
-        "central-america_SV_4_A",
-        "europe_GR_5_A"
+        "latin-america_AR_1_A",
+        "europe_ES_2_A",
+        "asia_TH_3_A",
+        "asia_UZ_4_B",
+        "europe_HU_5_A"
       ]
     },
     {
       "date": "2026-09-06",
       "puzzleIds": [
-        "europe_BE_1_A",
-        "europe_RU_2_A",
-        "asia_LA_3_B",
-        "europe_RO_4_A",
-        "north-america_NI_5_A"
+        "africa_ZM_1_A",
+        "africa_DZ_2_A",
+        "europe_PL_3_A",
+        "north-america_GT_4_A",
+        "europe_NO_5_A"
       ]
     },
     {
       "date": "2026-09-07",
       "puzzleIds": [
-        "asia_TJ_1_A",
-        "africa_CG_2_A",
-        "asia_LB_3_A",
-        "europe_EE_4_A",
-        "europe_HU_5_A"
+        "middle-east_OM_1_A",
+        "europe_SI_2_A",
+        "africa_BF_3_A",
+        "asia_KG_4_B",
+        "south-america_PY_5_A"
       ]
     },
     {
       "date": "2026-09-08",
       "puzzleIds": [
-        "europe_RU_1_A",
-        "africa_MR_2_A",
-        "asia_TH_3_A",
-        "middle-east_JO_4_A",
-        "europe_NO_5_A"
+        "africa_CD_1_A",
+        "europe_DE_2_A",
+        "africa_SZ_3_A",
+        "north-america_GT_4_B",
+        "asia_KG_5_B"
       ]
     },
     {
       "date": "2026-09-09",
       "puzzleIds": [
-        "middle-east_IL_1_A",
-        "south-america_AR_2_A",
-        "europe_PL_3_A",
-        "asia_MN_4_A",
-        "south-america_PY_5_A"
+        "europe_LV_1_A",
+        "asia_IN_2_A",
+        "europe_ME_3_A",
+        "europe_XK_4_A",
+        "south-america_CL_5_A"
       ]
     },
     {
       "date": "2026-09-10",
       "puzzleIds": [
-        "africa_BW_1_A",
-        "south-america_BO_2_A",
-        "africa_BF_3_A",
-        "europe_DE_4_B",
-        "asia_KG_5_B"
+        "south-america_BO_1_A",
+        "africa_BJ_2_A",
+        "asia_AE_3_A",
+        "asia_TJ_4_B",
+        "africa_EH_5_A"
       ]
     },
     {
       "date": "2026-09-11",
       "puzzleIds": [
-        "europe_NO_1_A",
-        "latin-america_PE_2_A",
-        "africa_SZ_3_A",
-        "asia_UZ_4_B",
-        "south-america_CL_5_A"
+        "africa_GN_1_A",
+        "europe_ES_2_A",
+        "south-america_PE_3_A",
+        "europe_HU_4_B",
+        "africa_ET_5_A"
       ]
     },
     {
       "date": "2026-09-12",
       "puzzleIds": [
-        "europe_AL_1_A",
-        "europe_NO_2_A",
-        "europe_ME_3_A",
-        "north-america_GT_4_A",
-        "africa_EH_5_A"
+        "asia_JO_1_A",
+        "africa_ZW_2_A",
+        "south-america_BO_3_A",
+        "south-america_EC_4_A",
+        "africa_BJ_5_A"
       ]
     },
     {
       "date": "2026-09-13",
       "puzzleIds": [
-        "latin-america_PY_1_A",
-        "europe_ES_2_A",
-        "asia_AE_3_A",
-        "asia_KG_4_B",
-        "africa_ET_5_A"
+        "europe_RU_1_A",
+        "europe_FR_2_A",
+        "asia_CN_3_A",
+        "middle-east_SA_4_A",
+        "asia_IR_5_A"
       ]
     },
     {
       "date": "2026-09-14",
       "puzzleIds": [
-        "europe_RU_1_A",
-        "africa_SD_2_A",
-        "south-america_PE_3_A",
-        "north-america_GT_4_B",
-        "africa_BJ_5_A"
+        "europe_BY_1_A",
+        "middle-east_SA_2_A",
+        "latin-america_CR_3_A",
+        "europe_CH_4_A",
+        "latin-america_CR_5_A"
       ]
     },
     {
       "date": "2026-09-15",
       "puzzleIds": [
-        "africa_TD_1_A",
-        "africa_CM_2_A",
-        "south-america_BO_3_A",
-        "europe_XK_4_A",
-        "asia_IR_5_A"
+        "asia_KP_1_A",
+        "africa_AO_2_A",
+        "latin-america_MX_3_A",
+        "middle-east_IL_4_A",
+        "africa_TN_5_A"
       ]
     },
     {
       "date": "2026-09-16",
       "puzzleIds": [
-        "south-america_CO_1_A",
-        "africa_ML_2_A",
-        "asia_CN_3_A",
-        "asia_TJ_4_B",
-        "latin-america_CR_5_A"
+        "europe_LT_1_A",
+        "africa_GN_2_A",
+        "africa_ZA_3_A",
+        "africa_ET_4_A",
+        "asia_TM_5_A"
       ]
     },
     {
       "date": "2026-09-17",
       "puzzleIds": [
-        "africa_NA_1_A",
-        "europe_DE_2_A",
-        "latin-america_CR_3_A",
-        "europe_HU_4_B",
-        "africa_TN_5_A"
+        "europe_NO_1_A",
+        "latin-america_BR_2_A",
+        "asia_SA_3_A",
+        "asia_PS_4_A",
+        "africa_CI_5_A"
       ]
     },
     {
       "date": "2026-09-18",
       "puzzleIds": [
-        "europe_DE_1_A",
-        "europe_NO_2_A",
-        "latin-america_MX_3_A",
-        "south-america_EC_4_A",
-        "asia_TM_5_A"
+        "asia_JO_1_A",
+        "africa_MW_2_A",
+        "europe_AM_3_A",
+        "asia_SA_4_B",
+        "asia_CN_5_A"
       ]
     },
     {
       "date": "2026-09-19",
       "puzzleIds": [
-        "north-america_GT_1_A",
-        "asia_VN_2_A",
-        "africa_ZA_3_A",
-        "middle-east_SA_4_A",
-        "africa_CI_5_A"
+        "europe_HU_1_A",
+        "middle-east_SY_2_A",
+        "europe_IT_3_B",
+        "asia_IN_4_A",
+        "latin-america_BO_5_B"
       ]
     },
     {
       "date": "2026-09-20",
       "puzzleIds": [
-        "south-america_PE_1_A",
-        "africa_ZM_2_A",
-        "asia_SA_3_A",
-        "europe_CH_4_A",
-        "asia_CN_5_A"
+        "africa_GH_1_A",
+        "asia_IR_2_A",
+        "latin-america_VE_3_A",
+        "central-america_HN_4_A",
+        "asia_AF_5_A"
       ]
     },
     {
       "date": "2026-09-21",
       "puzzleIds": [
-        "latin-america_CL_1_A",
-        "europe_GR_2_A",
-        "europe_AM_3_A",
-        "latin-america_MX_4_A",
-        "latin-america_BO_5_B"
+        "europe_GE_1_A",
+        "europe_MK_2_A",
+        "europe_AZ_3_A",
+        "africa_CF_4_A",
+        "africa_CF_5_A"
       ]
     },
     {
       "date": "2026-09-22",
       "puzzleIds": [
-        "europe_IT_1_A",
-        "africa_UG_2_A",
-        "europe_IT_3_B",
-        "middle-east_IL_4_A",
-        "asia_AF_5_A"
+        "latin-america_AR_1_A",
+        "asia_TM_2_A",
+        "asia_VN_3_A",
+        "africa_GQ_4_A",
+        "asia_AE_5_A"
       ]
     },
     {
       "date": "2026-09-23",
       "puzzleIds": [
-        "asia_TJ_1_A",
-        "europe_CZ_2_A",
-        "latin-america_VE_3_A",
-        "africa_ET_4_A",
-        "africa_CF_5_A"
+        "africa_SD_1_A",
+        "europe_ME_2_A",
+        "latin-america_BO_3_A",
+        "africa_NG_4_B",
+        "europe_RS_5_A"
       ]
     },
     {
       "date": "2026-09-24",
       "puzzleIds": [
-        "asia_UZ_1_A",
-        "europe_TR_2_A",
-        "europe_AZ_3_A",
-        "asia_PS_4_A",
-        "asia_AE_5_A"
+        "europe_TR_1_A",
+        "latin-america_BO_2_A",
+        "latin-america_BO_3_B",
+        "asia_IL_4_B",
+        "middle-east_SY_5_A"
       ]
     },
     {
       "date": "2026-09-25",
       "puzzleIds": [
-        "europe_UA_1_A",
-        "europe_FR_2_A",
-        "asia_VN_3_A",
-        "asia_SA_4_B",
-        "europe_RS_5_A"
+        "south-america_CO_1_A",
+        "europe_GR_2_A",
+        "europe_IT_3_A",
+        "europe_LV_4_A",
+        "africa_MA_5_A"
       ]
     },
     {
       "date": "2026-09-26",
       "puzzleIds": [
-        "middle-east_SY_1_A",
-        "africa_TZ_2_A",
-        "latin-america_BO_3_A",
-        "asia_IN_4_A",
-        "south-america_AR_5_B"
+        "africa_NE_1_A",
+        "south-america_AR_2_A",
+        "middle-east_SY_3_A",
+        "asia_IN_4_B",
+        "latin-america_CO_5_B"
       ]
     },
     {
       "date": "2026-09-27",
       "puzzleIds": [
-        "asia_IQ_1_A",
-        "africa_DZ_2_A",
-        "latin-america_BO_3_B",
-        "central-america_HN_4_A",
-        "middle-east_SY_5_A"
+        "middle-east_IL_1_A",
+        "africa_TD_2_A",
+        "asia_KH_3_A",
+        "africa_BF_4_B",
+        "latin-america_NI_5_A"
       ]
     },
     {
       "date": "2026-09-28",
       "puzzleIds": [
-        "europe_GE_1_A",
-        "central-america_GT_2_A",
-        "europe_IT_3_A",
-        "asia_KP_4_A",
-        "africa_MA_5_A"
+        "europe_BA_1_A",
+        "africa_SN_2_A",
+        "africa_TN_3_A",
+        "africa_CG_4_A",
+        "south-america_GY_5_A"
       ]
     },
     {
       "date": "2026-09-29",
       "puzzleIds": [
-        "europe_LV_1_A",
-        "asia_IL_2_A",
-        "middle-east_SY_3_A",
-        "africa_CF_4_A",
-        "latin-america_CO_5_B"
+        "asia_TM_1_A",
+        "africa_DZ_2_A",
+        "africa_GA_3_A",
+        "europe_IT_4_B",
+        "asia_PS_5_A"
       ]
     },
     {
       "date": "2026-09-30",
       "puzzleIds": [
-        "africa_LR_1_A",
-        "africa_BI_2_A",
-        "asia_KH_3_A",
-        "africa_GQ_4_A",
-        "latin-america_NI_5_A"
+        "asia_OM_1_A",
+        "africa_BW_2_A",
+        "africa_ZM_3_A",
+        "europe_SI_4_A",
+        "asia_TJ_5_B"
       ]
     },
     {
       "date": "2026-10-01",
       "puzzleIds": [
-        "south-america_VE_1_A",
-        "europe_GE_2_A",
-        "africa_TN_3_A",
-        "africa_NG_4_B",
-        "south-america_GY_5_A"
+        "africa_ML_1_A",
+        "africa_RW_2_A",
+        "europe_GE_3_A",
+        "europe_HR_4_A",
+        "europe_CH_5_B"
       ]
     },
     {
       "date": "2026-10-02",
       "puzzleIds": [
-        "middle-east_IL_1_A",
-        "latin-america_CO_2_A",
-        "africa_GA_3_A",
-        "asia_IL_4_B",
-        "asia_PS_5_A"
+        "europe_AZ_1_A",
+        "north-america_GT_2_A",
+        "africa_TN_3_A",
+        "europe_GE_4_A",
+        "africa_SD_5_B"
       ]
     },
     {
       "date": "2026-10-03",
       "puzzleIds": [
-        "africa_CM_1_A",
-        "latin-america_PE_2_A",
-        "south-america_AR_3_A",
-        "africa_SL_4_A",
-        "asia_TJ_5_B"
+        "africa_GN_1_A",
+        "africa_ER_2_A",
+        "north-america_US_3_A",
+        "europe_HU_4_A",
+        "europe_BE_5_A"
       ]
     },
     {
       "date": "2026-10-04",
       "puzzleIds": [
-        "middle-east_JO_1_A",
-        "asia_LA_2_A",
-        "europe_AZ_3_A",
-        "latin-america_GY_4_A",
-        "europe_CH_5_B"
+        "europe_MK_1_A",
+        "asia_JO_2_A",
+        "europe_DE_3_A",
+        "asia_JO_4_A",
+        "latin-america_PA_5_A"
       ]
     },
     {
       "date": "2026-10-05",
       "puzzleIds": [
-        "europe_PL_1_A",
-        "asia_UZ_2_A",
-        "asia_IR_3_B",
-        "africa_NG_4_B",
-        "europe_UA_5_B"
+        "europe_AT_1_A",
+        "north-america_MX_2_A",
+        "asia_ID_3_A",
+        "africa_MZ_4_B",
+        "africa_RW_5_B"
       ]
     },
     {
       "date": "2026-10-06",
       "puzzleIds": [
-        "africa_LY_1_A",
-        "asia_SA_2_A",
-        "asia_PS_3_A",
-        "europe_HR_4_B",
-        "africa_SD_5_B"
+        "africa_MW_1_A",
+        "africa_ML_2_A",
+        "middle-east_IL_3_B",
+        "asia_OM_4_A",
+        "africa_ZA_5_B"
       ]
     },
     {
       "date": "2026-10-07",
       "puzzleIds": [
-        "asia_LA_1_A",
-        "latin-america_BO_2_A",
-        "middle-east_IL_3_A",
-        "africa_CM_4_B",
-        "europe_BE_5_A"
+        "asia_IQ_1_A",
+        "asia_VN_2_A",
+        "latin-america_UY_3_A",
+        "africa_KE_4_B",
+        "north-america_GT_5_B"
       ]
     },
     {
       "date": "2026-10-08",
       "puzzleIds": [
-        "asia_IL_1_A",
-        "europe_BY_2_A",
-        "middle-east_IL_3_B",
-        "europe_RU_4_B",
-        "latin-america_PA_5_A"
+        "latin-america_PE_1_A",
+        "europe_LT_2_A",
+        "asia_PS_3_A",
+        "south-america_AR_4_A",
+        "africa_ER_5_A"
       ]
     },
     {
       "date": "2026-10-09",
       "puzzleIds": [
-        "europe_LT_1_A",
-        "africa_TD_2_A",
-        "africa_NA_3_A",
-        "europe_IT_4_B",
-        "africa_RW_5_B"
+        "africa_LR_1_A",
+        "europe_DE_2_A",
+        "europe_LU_3_A",
+        "europe_AD_4_A",
+        "asia_RU_5_B"
       ]
     },
     {
       "date": "2026-10-10",
       "puzzleIds": [
-        "europe_HU_1_A",
-        "africa_ET_2_A",
-        "latin-america_PE_3_B",
-        "south-america_UY_4_A",
-        "africa_ZA_5_B"
+        "latin-america_HN_1_A",
+        "south-america_GY_2_A",
+        "africa_GQ_3_A",
+        "africa_KE_4_A",
+        "africa_CI_5_A"
       ]
     },
     {
       "date": "2026-10-11",
       "puzzleIds": [
-        "europe_RS_1_A",
-        "europe_RU_2_A",
-        "africa_ML_3_A",
-        "africa_BF_4_B",
-        "north-america_GT_5_B"
+        "africa_ZM_1_A",
+        "europe_BA_2_A",
+        "africa_DJ_3_A",
+        "asia_IR_4_A",
+        "latin-america_CL_5_A"
       ]
     },
     {
       "date": "2026-10-12",
       "puzzleIds": [
-        "europe_NO_1_A",
-        "africa_ZW_2_A",
-        "asia_OM_3_A",
-        "oceania_ID_4_A",
-        "africa_ER_5_A"
+        "africa_TD_1_A",
+        "europe_IT_2_A",
+        "latin-america_EC_3_A",
+        "asia_JO_4_B",
+        "africa_SZ_5_A"
       ]
     },
     {
       "date": "2026-10-13",
       "puzzleIds": [
-        "asia_VN_1_A",
-        "europe_BA_2_A",
-        "europe_LT_3_B",
-        "africa_LR_4_A",
-        "asia_RU_5_B"
+        "asia_CN_1_A",
+        "europe_SI_2_A",
+        "europe_HR_3_A",
+        "africa_NA_4_B",
+        "africa_RW_5_A"
       ]
     },
     {
       "date": "2026-10-14",
       "puzzleIds": [
-        "asia_CN_1_A",
-        "europe_SK_2_A",
-        "africa_SN_3_A",
-        "europe_AT_4_B",
-        "africa_CI_5_A"
+        "latin-america_VE_1_A",
+        "asia_ID_2_A",
+        "africa_LR_3_A",
+        "europe_ES_4_A",
+        "asia_OM_5_A"
       ]
     },
     {
       "date": "2026-10-15",
       "puzzleIds": [
-        "south-america_AR_1_A",
-        "asia_JO_2_A",
-        "africa_CM_3_B",
-        "africa_DJ_4_A",
-        "latin-america_CL_5_A"
+        "asia_LA_1_A",
+        "europe_XK_2_A",
+        "africa_ER_3_A",
+        "europe_RS_4_A",
+        "africa_EH_5_A"
       ]
     },
     {
       "date": "2026-10-16",
       "puzzleIds": [
-        "africa_BW_1_A",
-        "asia_RU_2_A",
-        "africa_CM_3_A",
-        "europe_SI_4_B",
-        "south-america_EC_5_A"
+        "asia_IR_1_A",
+        "middle-east_IL_2_A",
+        "europe_TR_3_B",
+        "asia_CN_4_B",
+        "europe_BG_5_A"
       ]
     },
     {
       "date": "2026-10-17",
       "puzzleIds": [
-        "africa_KE_1_A",
-        "africa_BW_2_A",
-        "asia_JO_3_A",
-        "europe_AM_4_A",
-        "africa_SZ_5_A"
+        "africa_CM_1_A",
+        "africa_CF_2_A",
+        "europe_SK_3_A",
+        "south-america_UY_4_A",
+        "asia_KZ_5_A"
       ]
     },
     {
       "date": "2026-10-18",
       "puzzleIds": [
-        "asia_KH_1_A",
-        "europe_UA_2_A",
-        "africa_BI_3_A",
-        "central-america_CR_4_A",
-        "africa_RW_5_A"
+        "africa_EH_1_A",
+        "africa_TZ_2_A",
+        "europe_BY_3_A",
+        "europe_DE_4_A",
+        "middle-east_SA_5_A"
       ]
     },
     {
       "date": "2026-10-19",
       "puzzleIds": [
-        "asia_KZ_1_A",
-        "africa_SN_2_A",
-        "asia_IQ_3_A",
-        "africa_SO_4_A",
-        "asia_OM_5_A"
+        "south-america_VE_1_A",
+        "middle-east_OM_2_A",
+        "africa_ZM_3_B",
+        "europe_TR_4_B",
+        "south-america_AR_5_B"
       ]
     },
     {
       "date": "2026-10-20",
       "puzzleIds": [
-        "africa_NG_1_A",
-        "asia_KP_2_A",
-        "asia_UZ_3_B",
-        "africa_TZ_4_B",
-        "africa_EH_5_A"
+        "asia_SY_1_A",
+        "asia_IL_2_A",
+        "africa_ZW_3_B",
+        "asia_VN_4_A",
+        "europe_XK_5_B"
       ]
     },
     {
       "date": "2026-10-21",
       "puzzleIds": [
-        "africa_NE_1_A",
-        "africa_CI_2_A",
-        "africa_TD_3_B",
-        "africa_BI_4_A",
-        "europe_BG_5_A"
+        "europe_FR_1_A",
+        "central-america_HN_2_A",
+        "asia_JO_3_A",
+        "africa_NE_4_A",
+        "middle-east_JO_5_B"
       ]
     },
     {
       "date": "2026-10-22",
       "puzzleIds": [
-        "africa_ET_1_A",
-        "asia_IQ_2_A",
-        "asia_PK_3_B",
-        "africa_SN_4_B",
-        "asia_KZ_5_A"
+        "middle-east_SA_1_A",
+        "africa_MR_2_A",
+        "europe_AT_3_A",
+        "central-america_MX_4_A",
+        "latin-america_BR_5_B"
       ]
     },
     {
       "date": "2026-10-23",
       "puzzleIds": [
-        "asia_TM_1_A",
-        "asia_OM_2_A",
-        "africa_MR_3_A",
-        "africa_ZM_4_B",
-        "middle-east_SA_5_A"
+        "africa_RW_1_A",
+        "europe_NO_2_A",
+        "south-america_CO_3_B",
+        "north-america_BZ_4_A",
+        "latin-america_CO_5_B"
       ]
     },
     {
       "date": "2026-10-24",
       "puzzleIds": [
-        "europe_RO_1_A",
-        "africa_EH_2_A",
-        "south-america_AR_3_B",
-        "africa_ML_4_B",
-        "south-america_AR_5_B"
+        "africa_BJ_1_A",
+        "africa_TG_2_A",
+        "latin-america_MX_3_A",
+        "africa_AO_4_A",
+        "oceania_ID_5_A"
       ]
     },
     {
       "date": "2026-10-25",
       "puzzleIds": [
-        "africa_CD_1_A",
-        "south-america_VE_2_A",
-        "middle-east_IQ_3_A",
-        "south-america_AR_4_A",
-        "europe_XK_5_B"
+        "asia_IN_1_A",
+        "europe_BG_2_A",
+        "latin-america_PE_3_B",
+        "central-america_BZ_4_A",
+        "south-america_UY_5_A"
       ]
     },
     {
       "date": "2026-10-26",
       "puzzleIds": [
-        "asia_JO_1_A",
-        "asia_PK_2_A",
-        "latin-america_UY_3_A",
-        "south-america_AR_4_B",
-        "middle-east_JO_5_B"
+        "africa_CG_1_A",
+        "south-america_CO_2_A",
+        "south-america_SR_3_A",
+        "latin-america_PA_4_A",
+        "europe_CH_5_A"
       ]
     },
     {
       "date": "2026-10-27",
       "puzzleIds": [
-        "asia_TH_1_A",
-        "europe_RS_2_A",
-        "central-america_GT_3_B",
-        "africa_UG_4_B",
-        "latin-america_SV_5_A"
+        "south-america_BR_1_A",
+        "africa_CI_2_A",
+        "africa_MZ_3_A",
+        "africa_SN_4_A",
+        "africa_CM_5_B"
       ]
     },
     {
       "date": "2026-10-28",
       "puzzleIds": [
         "latin-america_GY_1_A",
-        "europe_BG_2_A",
-        "south-america_BR_3_A",
-        "south-america_EC_4_A",
-        "middle-east_AE_5_A"
+        "africa_GH_2_A",
+        "africa_ET_3_B",
+        "asia_CN_4_A",
+        "asia_LB_5_A"
       ]
     },
     {
       "date": "2026-10-29",
       "puzzleIds": [
-        "europe_ES_1_A",
-        "latin-america_BR_2_A",
-        "europe_AT_3_B",
-        "europe_HR_4_A",
-        "latin-america_BR_5_B"
+        "south-america_PE_1_A",
+        "europe_TR_2_A",
+        "europe_NL_3_A",
+        "africa_MR_4_B",
+        "africa_SO_5_A"
       ]
     },
     {
       "date": "2026-10-30",
       "puzzleIds": [
-        "europe_FR_1_A",
-        "asia_IN_2_A",
-        "europe_BE_3_A",
-        "africa_GA_4_A",
-        "latin-america_CO_5_B"
+        "europe_AL_1_A",
+        "europe_LU_2_A",
+        "south-america_CL_3_A",
+        "africa_GW_4_A",
+        "latin-america_BO_5_A"
       ]
     },
     {
       "date": "2026-10-31",
       "puzzleIds": [
-        "latin-america_BR_1_A",
-        "africa_ER_2_A",
-        "latin-america_CO_3_B",
-        "africa_BW_4_B",
-        "oceania_ID_5_A"
+        "africa_LY_1_A",
+        "asia_KZ_2_A",
+        "asia_VN_3_A",
+        "asia_KW_4_A",
+        "south-america_BO_5_A"
       ]
     },
     {
       "date": "2026-11-01",
       "puzzleIds": [
-        "europe_TR_1_A",
-        "south-america_GY_2_A",
-        "africa_CF_3_A",
-        "africa_GH_4_A",
-        "south-america_UY_5_A"
+        "asia_VN_1_A",
+        "south-america_BO_2_A",
+        "europe_RU_3_A",
+        "africa_SN_4_B",
+        "africa_ET_5_A"
       ]
     },
     {
       "date": "2026-11-02",
       "puzzleIds": [
-        "africa_DZ_1_A",
-        "asia_MM_2_A",
-        "africa_CG_3_A",
-        "north-america_SV_4_A",
-        "europe_CH_5_A"
+        "central-america_HN_1_A",
+        "africa_CM_2_A",
+        "africa_UG_3_B",
+        "africa_DJ_4_A",
+        "latin-america_GY_5_A"
       ]
     },
     {
       "date": "2026-11-03",
       "puzzleIds": [
-        "europe_LU_1_A",
-        "latin-america_PY_2_A",
-        "europe_CZ_3_A",
-        "middle-east_SY_4_B",
-        "africa_CM_5_B"
+        "europe_XK_1_A",
+        "south-america_BR_2_A",
+        "south-america_BO_3_A",
+        "latin-america_CR_4_A",
+        "africa_KE_5_A"
       ]
     },
     {
       "date": "2026-11-04",
       "puzzleIds": [
-        "south-america_BO_1_A",
-        "europe_ES_2_A",
-        "asia_KG_3_A",
-        "asia_SA_4_B",
-        "asia_LB_5_A"
+        "europe_RU_1_A",
+        "africa_GA_2_A",
+        "south-america_VE_3_A",
+        "latin-america_CL_4_A",
+        "europe_RO_5_A"
       ]
     },
     {
       "date": "2026-11-05",
       "puzzleIds": [
-        "asia_KP_1_A",
-        "south-america_BO_2_A",
-        "africa_SD_3_B",
-        "africa_CD_4_B",
-        "africa_SO_5_A"
+        "south-america_BO_1_A",
+        "africa_CD_2_A",
+        "europe_SE_3_A",
+        "north-america_US_4_A",
+        "africa_SN_5_A"
       ]
     },
     {
       "date": "2026-11-06",
       "puzzleIds": [
-        "middle-east_IQ_1_A",
-        "europe_AT_2_A",
-        "europe_CH_3_A",
+        "europe_BG_1_A",
+        "europe_HR_2_A",
+        "south-america_GY_3_A",
         "south-america_CO_4_B",
-        "latin-america_BO_5_A"
+        "asia_MN_5_A"
       ]
     },
     {
       "date": "2026-11-07",
       "puzzleIds": [
-        "asia_SA_1_A",
-        "middle-east_IL_2_A",
-        "north-america_GT_3_B",
-        "asia_AF_4_B",
-        "south-america_BO_5_A"
+        "asia_KZ_1_A",
+        "north-america_HN_2_A",
+        "europe_MD_3_A",
+        "latin-america_PE_4_B",
+        "africa_TG_5_A"
       ]
     },
     {
       "date": "2026-11-08",
       "puzzleIds": [
-        "africa_TZ_1_A",
-        "europe_PL_2_A",
-        "europe_AL_3_B",
-        "europe_XK_4_A",
-        "africa_ET_5_A"
+        "africa_TG_1_A",
+        "europe_CH_2_A",
+        "north-america_SV_3_A",
+        "asia_ID_4_A",
+        "latin-america_GT_5_B"
       ]
     },
     {
       "date": "2026-11-09",
       "puzzleIds": [
-        "europe_BE_1_A",
-        "africa_NG_2_A",
-        "latin-america_AR_3_A",
-        "asia_IR_4_B",
-        "latin-america_GY_5_A"
+        "north-america_HN_1_A",
+        "europe_CZ_2_A",
+        "europe_GR_3_B",
+        "africa_ER_4_A",
+        "latin-america_VE_5_A"
       ]
     },
     {
       "date": "2026-11-10",
       "puzzleIds": [
-        "europe_FI_1_A",
-        "europe_AL_2_A",
-        "africa_ZM_3_B",
-        "south-america_PE_4_B",
-        "latin-america_PY_5_A"
+        "africa_AO_1_A",
+        "asia_MM_2_A",
+        "latin-america_NI_3_A",
+        "africa_NE_4_B",
+        "europe_AZ_5_B"
       ]
     },
     {
       "date": "2026-11-11",
       "puzzleIds": [
-        "europe_SK_1_A",
-        "asia_SY_2_A",
-        "latin-america_EC_3_A",
-        "africa_CI_4_B",
-        "africa_KE_5_A"
+        "africa_UG_1_A",
+        "africa_EH_2_A",
+        "europe_FI_3_A",
+        "europe_FR_4_A",
+        "asia_AE_5_A"
       ]
     },
     {
       "date": "2026-11-12",
       "puzzleIds": [
-        "africa_SD_1_A",
-        "africa_GH_2_A",
-        "europe_RS_3_B",
-        "africa_CF_4_B",
-        "europe_RO_5_A"
+        "latin-america_BR_1_A",
+        "europe_UA_2_A",
+        "asia_AF_3_B",
+        "africa_TG_4_A",
+        "asia_IR_5_A"
       ]
     },
     {
       "date": "2026-11-13",
       "puzzleIds": [
-        "central-america_HN_1_A",
-        "europe_RO_2_A",
-        "asia_IL_3_A",
-        "latin-america_BR_4_B",
-        "africa_SN_5_A"
+        "europe_CZ_1_A",
+        "asia_KP_2_A",
+        "africa_CG_3_B",
+        "asia_MY_4_A",
+        "asia_SY_5_A"
       ]
     },
     {
       "date": "2026-11-14",
       "puzzleIds": [
-        "africa_BJ_1_A",
-        "europe_ME_2_A",
-        "north-america_HN_3_A",
-        "middle-east_IL_4_B",
-        "asia_MN_5_A"
+        "middle-east_SY_1_A",
+        "europe_LV_2_A",
+        "africa_CD_3_B",
+        "africa_TD_4_B",
+        "latin-america_PE_5_A"
       ]
     },
     {
       "date": "2026-11-15",
       "puzzleIds": [
-        "africa_EH_1_A",
-        "europe_LT_2_A",
-        "europe_RU_3_A",
-        "europe_RS_4_B",
-        "africa_TG_5_A"
+        "europe_RS_1_A",
+        "africa_LR_2_A",
+        "south-america_PE_3_B",
+        "europe_FI_4_A",
+        "africa_MW_5_A"
       ]
     },
     {
       "date": "2026-11-16",
       "puzzleIds": [
-        "asia_SY_1_A",
-        "middle-east_SY_2_A",
-        "europe_PL_3_B",
-        "europe_XK_4_B",
-        "latin-america_GT_5_B"
+        "europe_IT_1_A",
+        "asia_AF_2_A",
+        "africa_BF_3_A",
+        "north-america_MX_4_A",
+        "europe_PL_5_B"
       ]
     },
     {
       "date": "2026-11-17",
       "puzzleIds": [
-        "africa_ER_1_A",
-        "latin-america_GT_2_A",
-        "africa_ZA_3_B",
-        "asia_UZ_4_A",
-        "latin-america_VE_5_A"
+        "europe_SI_1_A",
+        "asia_RU_2_A",
+        "africa_SN_3_B",
+        "asia_YE_4_A",
+        "asia_TJ_5_A"
       ]
     },
     {
       "date": "2026-11-18",
       "puzzleIds": [
-        "africa_BI_1_A",
-        "south-america_AR_2_A",
-        "africa_SD_3_A",
-        "latin-america_BZ_4_A",
-        "europe_AZ_5_B"
+        "europe_LV_1_A",
+        "europe_HU_2_A",
+        "asia_LA_3_B",
+        "north-america_CR_4_A",
+        "africa_ML_5_B"
       ]
     },
     {
       "date": "2026-11-19",
       "puzzleIds": [
-        "south-america_PY_1_A",
-        "north-america_GT_2_A",
-        "middle-east_OM_3_A",
-        "asia_TH_4_A",
-        "asia_AE_5_A"
+        "europe_PL_1_A",
+        "latin-america_HN_2_A",
+        "africa_CI_3_A",
+        "africa_GA_4_A",
+        "europe_LV_5_B"
       ]
     },
     {
       "date": "2026-11-20",
       "puzzleIds": [
-        "asia_IR_1_A",
-        "asia_ID_2_A",
-        "latin-america_GY_3_A",
-        "africa_MA_4_A",
-        "asia_IR_5_A"
+        "africa_KE_1_A",
+        "europe_AZ_2_A",
+        "middle-east_SY_3_A",
+        "europe_BE_4_B",
+        "europe_IT_5_A"
       ]
     },
     {
       "date": "2026-11-21",
       "puzzleIds": [
-        "europe_ME_1_A",
-        "south-america_CL_2_A",
-        "south-america_CO_3_A",
-        "europe_DE_4_B",
-        "asia_SY_5_A"
+        "asia_RU_1_A",
+        "europe_BE_2_A",
+        "europe_MK_3_A",
+        "latin-america_AR_4_B",
+        "africa_NE_5_A"
       ]
     },
     {
       "date": "2026-11-22",
       "puzzleIds": [
-        "latin-america_GT_1_A",
-        "europe_BE_2_A",
-        "europe_AZ_3_B",
-        "europe_LU_4_A",
-        "latin-america_PE_5_A"
+        "africa_BF_1_A",
+        "asia_LA_2_A",
+        "africa_SD_3_A",
+        "asia_MM_4_A",
+        "africa_ZM_5_B"
       ]
     },
     {
       "date": "2026-11-23",
       "puzzleIds": [
-        "asia_AF_1_A",
-        "asia_KZ_2_A",
-        "asia_IR_3_A",
-        "europe_RO_4_A",
-        "africa_MW_5_A"
+        "europe_LU_1_A",
+        "latin-america_GT_2_A",
+        "europe_HU_3_A",
+        "europe_SE_4_A",
+        "africa_GN_5_B"
       ]
     },
     {
       "date": "2026-11-24",
       "puzzleIds": [
-        "africa_BF_1_A",
-        "europe_LV_2_A",
-        "asia_UZ_3_A",
-        "africa_EG_4_A",
-        "central-america_SV_5_A"
+        "africa_ER_1_A",
+        "europe_AM_2_A",
+        "central-america_BZ_3_A",
+        "europe_PL_4_A",
+        "africa_CM_5_A"
       ]
     },
     {
       "date": "2026-11-25",
       "puzzleIds": [
-        "europe_MK_1_A",
-        "asia_KH_2_A",
-        "africa_LY_3_B",
-        "africa_CF_4_A",
-        "europe_PL_5_B"
+        "africa_CI_1_A",
+        "middle-east_JO_2_A",
+        "latin-america_CO_3_A",
+        "asia_SA_4_B",
+        "africa_AO_5_A"
       ]
     },
     {
       "date": "2026-11-26",
       "puzzleIds": [
-        "europe_SI_1_A",
-        "latin-america_CL_2_A",
-        "asia_BT_3_A",
-        "europe_MK_4_A",
-        "asia_TJ_5_A"
+        "africa_ZW_1_A",
+        "europe_RO_2_A",
+        "africa_NG_3_B",
+        "north-america_SV_4_A",
+        "south-america_PE_5_B"
       ]
     },
     {
       "date": "2026-11-27",
       "puzzleIds": [
-        "latin-america_CO_1_A",
-        "africa_KE_2_A",
-        "south-america_EC_3_A",
-        "africa_ER_4_A",
-        "africa_ML_5_B"
+        "central-america_GT_1_A",
+        "africa_ZM_2_A",
+        "europe_BE_3_A",
+        "europe_GR_4_B",
+        "europe_LU_5_A"
       ]
     },
     {
       "date": "2026-11-28",
       "puzzleIds": [
-        "africa_SN_1_A",
-        "asia_KG_2_A",
-        "south-america_SR_3_A",
-        "europe_TR_4_A",
-        "europe_LV_5_B"
+        "africa_SS_1_A",
+        "africa_LY_2_A",
+        "africa_BW_3_A",
+        "europe_SI_4_B",
+        "europe_NO_5_A"
       ]
     },
     {
       "date": "2026-11-29",
       "puzzleIds": [
-        "europe_CZ_1_A",
-        "africa_MW_2_A",
-        "africa_NA_3_B",
-        "africa_SS_4_A",
-        "europe_IT_5_A"
+        "latin-america_CL_1_A",
+        "asia_UZ_2_A",
+        "europe_RS_3_B",
+        "africa_UG_4_A",
+        "africa_ZW_5_B"
       ]
     },
     {
       "date": "2026-11-30",
       "puzzleIds": [
-        "africa_GH_1_A",
-        "africa_CG_2_A",
-        "africa_CI_3_B",
-        "africa_SZ_4_A",
-        "europe_XK_5_A"
+        "middle-east_OM_1_A",
+        "europe_PL_2_A",
+        "africa_CD_3_A",
+        "middle-east_JO_4_B",
+        "north-america_MX_5_A"
       ]
     },
     {
       "date": "2026-12-01",
       "puzzleIds": [
-        "north-america_MX_1_A",
-        "africa_GA_2_A",
-        "europe_CZ_3_B",
-        "asia_TH_4_B",
-        "africa_NE_5_A"
+        "asia_SA_1_A",
+        "latin-america_PE_2_A",
+        "africa_BF_3_B",
+        "middle-east_IL_4_A",
+        "central-america_GT_5_A"
       ]
     },
     {
       "date": "2026-12-02",
       "puzzleIds": [
-        "europe_AT_1_A",
-        "europe_XK_2_A",
-        "asia_KW_3_A",
-        "africa_NE_4_A",
-        "africa_ZM_5_B"
+        "asia_KH_1_A",
+        "asia_CN_2_A",
+        "europe_XK_3_B",
+        "north-america_HN_4_A",
+        "middle-east_KW_5_A"
       ]
     },
     {
       "date": "2026-12-03",
       "puzzleIds": [
-        "africa_TG_1_A",
-        "africa_BJ_2_A",
-        "europe_BY_3_B",
-        "south-america_PY_4_A",
-        "africa_GN_5_B"
+        "latin-america_PY_1_A",
+        "africa_ZA_2_A",
+        "asia_UZ_3_B",
+        "south-america_SR_4_A",
+        "latin-america_AR_5_A"
       ]
     },
     {
       "date": "2026-12-04",
       "puzzleIds": [
-        "africa_GN_1_A",
-        "europe_HU_2_A",
-        "asia_VN_3_A",
-        "latin-america_CR_4_A",
-        "africa_CM_5_A"
+        "europe_ME_1_A",
+        "africa_KE_2_A",
+        "europe_GR_3_A",
+        "africa_NG_4_A",
+        "asia_IR_5_B"
       ]
     },
     {
       "date": "2026-12-05",
       "puzzleIds": [
-        "asia_MM_1_A",
-        "south-america_PE_2_A",
-        "europe_NL_3_A",
-        "north-america_HN_4_A",
-        "africa_AO_5_A"
+        "europe_AM_1_A",
+        "africa_SS_2_A",
+        "oceania_ID_3_A",
+        "europe_BG_4_B",
+        "africa_LR_5_A"
       ]
     },
     {
       "date": "2026-12-06",
       "puzzleIds": [
-        "africa_CF_1_A",
-        "asia_MY_2_A",
-        "asia_TM_3_A",
-        "asia_SA_4_A",
-        "south-america_PE_5_B"
+        "asia_KG_1_A",
+        "asia_IN_2_A",
+        "africa_GA_3_A",
+        "asia_KP_4_A",
+        "asia_AF_5_A"
       ]
     },
     {
       "date": "2026-12-07",
       "puzzleIds": [
-        "central-america_GT_1_A",
-        "africa_AO_2_A",
-        "europe_HR_3_A",
-        "africa_GN_4_A",
-        "europe_LU_5_A"
+        "europe_DE_1_A",
+        "south-america_CL_2_A",
+        "europe_RU_3_B",
+        "asia_IQ_4_A",
+        "europe_EE_5_A"
       ]
     },
     {
       "date": "2026-12-08",
       "puzzleIds": [
-        "south-america_GY_1_A",
-        "africa_ZA_2_A",
-        "europe_HU_3_B",
-        "asia_IR_4_A",
-        "europe_NO_5_A"
+        "africa_CF_1_A",
+        "latin-america_AR_2_A",
+        "south-america_EC_3_A",
+        "middle-east_PS_4_A",
+        "africa_TN_5_A"
       ]
     },
     {
       "date": "2026-12-09",
       "puzzleIds": [
-        "europe_AL_1_A",
-        "middle-east_OM_2_A",
-        "africa_SO_3_A",
-        "africa_ZA_4_B",
-        "africa_ZW_5_B"
+        "africa_ET_1_A",
+        "latin-america_PY_2_A",
+        "central-america_NI_3_A",
+        "latin-america_PE_4_A",
+        "asia_UZ_5_B"
       ]
     },
     {
       "date": "2026-12-10",
       "puzzleIds": [
-        "asia_RU_1_A",
-        "north-america_MX_2_A",
-        "europe_IT_3_B",
-        "europe_SK_4_A",
-        "north-america_MX_5_A"
+        "asia_IL_1_A",
+        "africa_NE_2_A",
+        "north-america_NI_3_A",
+        "africa_AO_4_B",
+        "africa_DZ_5_B"
       ]
     },
     {
       "date": "2026-12-11",
       "puzzleIds": [
         "africa_MZ_1_A",
-        "latin-america_AR_2_A",
-        "africa_CD_3_A",
-        "asia_IL_4_B",
-        "central-america_GT_5_A"
+        "africa_UG_2_A",
+        "south-america_CO_3_A",
+        "central-america_GT_4_A",
+        "north-america_GT_5_A"
       ]
     },
     {
       "date": "2026-12-12",
       "puzzleIds": [
-        "europe_XK_1_A",
-        "asia_AF_2_A",
-        "europe_NO_3_A",
-        "europe_RU_4_A",
-        "middle-east_KW_5_A"
+        "south-america_PY_1_A",
+        "africa_BJ_2_A",
+        "africa_SD_3_B",
+        "asia_IR_4_B",
+        "asia_IL_5_A"
       ]
     },
     {
       "date": "2026-12-13",
       "puzzleIds": [
-        "africa_ZA_1_A",
-        "africa_TG_2_A",
-        "africa_MW_3_A",
-        "north-america_CR_4_A",
-        "latin-america_AR_5_A"
+        "asia_TH_1_A",
+        "europe_GE_2_A",
+        "asia_KZ_3_A",
+        "africa_SD_4_A",
+        "middle-east_PS_5_A"
       ]
     },
     {
       "date": "2026-12-14",
       "puzzleIds": [
-        "latin-america_AR_1_A",
-        "asia_TM_2_A",
-        "europe_RS_3_A",
-        "europe_GR_4_A",
-        "asia_IR_5_B"
+        "europe_UA_1_A",
+        "latin-america_VE_2_A",
+        "latin-america_GT_3_A",
+        "europe_BE_4_A",
+        "europe_ME_5_A"
       ]
     },
     {
       "date": "2026-12-15",
       "puzzleIds": [
-        "latin-america_PY_1_A",
-        "africa_RW_2_A",
-        "europe_IT_3_A",
-        "latin-america_EC_4_A",
-        "africa_LR_5_A"
+        "middle-east_JO_1_A",
+        "latin-america_CO_2_A",
+        "europe_AL_3_A",
+        "europe_AT_4_A",
+        "europe_HU_5_A"
       ]
     },
     {
       "date": "2026-12-16",
       "puzzleIds": [
-        "africa_ML_1_A",
-        "central-america_HN_2_A",
-        "africa_RW_3_A",
-        "africa_TG_4_A",
-        "asia_AF_5_A"
+        "europe_RO_1_A",
+        "asia_PK_2_A",
+        "europe_LV_3_B",
+        "middle-east_SY_4_B",
+        "south-america_BR_5_B"
       ]
     },
     {
       "date": "2026-12-17",
       "puzzleIds": [
-        "europe_HR_1_A",
-        "africa_NA_2_A",
-        "asia_SY_3_A",
-        "africa_SN_4_A",
-        "europe_CZ_5_B"
+        "asia_PK_1_A",
+        "africa_ET_2_A",
+        "africa_BJ_3_A",
+        "asia_TJ_4_A",
+        "europe_TR_5_A"
       ]
     },
     {
       "date": "2026-12-18",
       "puzzleIds": [
-        "europe_AZ_1_A",
-        "middle-east_IQ_2_A",
-        "asia_KZ_3_A",
-        "latin-america_PE_4_A",
-        "europe_EE_5_A"
+        "africa_GA_1_A",
+        "africa_NG_2_A",
+        "africa_CI_3_B",
+        "europe_UA_4_B",
+        "asia_BD_5_A"
       ]
     },
     {
       "date": "2026-12-19",
       "puzzleIds": [
-        "africa_CG_1_A",
-        "europe_HR_2_A",
-        "asia_IN_3_B",
-        "africa_DZ_4_B",
-        "africa_TN_5_A"
+        "europe_BE_1_A",
+        "asia_MY_2_A",
+        "north-america_GT_3_A",
+        "africa_MA_4_A",
+        "africa_CF_5_A"
       ]
     },
     {
       "date": "2026-12-20",
       "puzzleIds": [
-        "latin-america_HN_1_A",
-        "europe_FI_2_A",
-        "asia_YE_3_A",
-        "latin-america_GT_4_B",
-        "asia_UZ_5_B"
+        "africa_MR_1_A",
+        "south-america_PE_2_A",
+        "africa_KE_3_A",
+        "middle-east_LB_4_A",
+        "europe_RS_5_B"
       ]
     },
     {
       "date": "2026-12-21",
       "puzzleIds": [
-        "north-america_HN_1_A",
-        "africa_NE_2_A",
-        "south-america_VE_3_A",
-        "asia_PK_4_B",
-        "africa_DZ_5_B"
+        "africa_ZA_1_A",
+        "asia_SY_2_A",
+        "central-america_SV_3_A",
+        "asia_TJ_4_B",
+        "africa_CD_5_B"
       ]
     },
     {
       "date": "2026-12-22",
       "puzzleIds": [
-        "asia_KG_1_A",
-        "latin-america_GY_2_A",
-        "central-america_GT_3_A",
-        "europe_AZ_4_B",
-        "north-america_GT_5_A"
+        "south-america_CL_1_A",
+        "asia_SA_2_A",
+        "africa_ML_3_B",
+        "central-america_GT_4_B",
+        "africa_MZ_5_A"
       ]
     },
     {
       "date": "2026-12-23",
       "puzzleIds": [
-        "europe_AM_1_A",
-        "europe_SI_2_A",
-        "europe_BE_3_B",
-        "latin-america_AR_4_B",
-        "asia_IL_5_A"
+        "africa_BW_1_A",
+        "asia_KG_2_A",
+        "africa_CF_3_A",
+        "africa_RW_4_B",
+        "middle-east_SY_5_B"
       ]
     },
     {
       "date": "2026-12-24",
       "puzzleIds": [
-        "africa_UG_1_A",
-        "south-america_BR_2_A",
-        "latin-america_BZ_3_A",
-        "europe_AZ_4_A",
-        "middle-east_PS_5_A"
+        "middle-east_IQ_1_A",
+        "africa_BI_2_A",
+        "asia_MY_3_A",
+        "central-america_HN_4_A",
+        "middle-east_YE_5_A"
       ]
     },
     {
       "date": "2026-12-25",
       "puzzleIds": [
-        "africa_MW_1_A",
-        "north-america_HN_2_A",
-        "south-america_CL_3_A",
-        "latin-america_PY_4_A",
-        "south-america_GY_5_A"
+        "europe_FI_1_A",
+        "africa_CG_2_A",
+        "africa_BI_3_A",
+        "europe_SK_4_A",
+        "europe_BA_5_A"
       ]
     },
     {
       "date": "2026-12-26",
       "puzzleIds": [
-        "africa_SS_1_A",
-        "middle-east_SA_2_A",
-        "latin-america_SR_3_A",
-        "latin-america_CO_4_B",
-        "europe_IT_5_B"
+        "africa_NA_1_A",
+        "asia_KH_2_A",
+        "europe_BG_3_A",
+        "europe_MK_4_A",
+        "central-america_NI_5_A"
       ]
     },
     {
       "date": "2026-12-27",
       "puzzleIds": [
-        "asia_OM_1_A",
-        "europe_AZ_2_A",
-        "asia_IQ_3_B",
-        "asia_BD_4_A",
-        "europe_ME_5_A"
+        "asia_AF_1_A",
+        "latin-america_CL_2_A",
+        "middle-east_IQ_3_A",
+        "oceania_ID_4_A",
+        "asia_MM_5_A"
       ]
     },
     {
       "date": "2026-12-28",
       "puzzleIds": [
-        "middle-east_OM_1_A",
-        "africa_BF_2_A",
-        "south-america_PE_3_B",
-        "europe_BE_4_B",
-        "europe_HU_5_A"
+        "latin-america_BO_1_A",
+        "asia_IQ_2_A",
+        "asia_RU_3_A",
+        "europe_LI_4_A",
+        "africa_SL_5_A"
       ]
     },
     {
       "date": "2026-12-29",
       "puzzleIds": [
-        "africa_CI_1_A",
-        "latin-america_HN_2_A",
-        "europe_BG_3_A",
-        "north-america_BZ_4_A",
-        "south-america_BR_5_B"
+        "latin-america_GT_1_A",
+        "south-america_VE_2_A",
+        "europe_BE_3_B",
+        "latin-america_EC_4_A",
+        "africa_MZ_5_B"
       ]
     },
     {
       "date": "2026-12-30",
       "puzzleIds": [
-        "africa_ZW_1_A",
-        "africa_CD_2_A",
-        "asia_CN_3_A",
-        "africa_ZA_4_A",
-        "europe_TR_5_A"
+        "africa_TZ_1_A",
+        "africa_NA_2_A",
+        "europe_ME_3_A",
+        "latin-america_NI_4_A",
+        "asia_TH_5_B"
       ]
     },
     {
       "date": "2026-12-31",
       "puzzleIds": [
-        "middle-east_SA_1_A",
-        "africa_GN_2_A",
-        "africa_MZ_3_B",
-        "europe_AD_4_A",
-        "asia_BD_5_A"
+        "north-america_GT_1_A",
+        "europe_AT_2_A",
+        "africa_SS_3_A",
+        "central-america_NI_4_A",
+        "asia_RU_5_A"
       ]
     }
   ]
