@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { supabase } from '../lib/supabase';
 import { parseSvg } from '../utils/parseSvg';
@@ -40,6 +40,10 @@ function saveLocalScore(date: string, score: number) {
 export default function DailyPlay() {
   const { user } = useAuth();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
+  const activeDate = searchParams.get('date') ?? todayString();
+  const isToday = activeDate === todayString();
 
   const [loading, setLoading] = useState(true);
   const [previousScore, setPreviousScore] = useState<number | null>(null);
@@ -49,18 +53,19 @@ export default function DailyPlay() {
   const [regionPool, setRegionPool] = useState<RegionSlot[] | null>(null);
 
   // Try canned daily puzzles
-  const today = todayString();
-  const cannedDaily = useCannedDailyPuzzles(today);
+  const cannedDaily = useCannedDailyPuzzles(activeDate);
 
   // Check for existing attempt + fetch seed
   useEffect(() => {
-    const today = todayString();
+    setLoading(true);
+    setPreviousScore(null);
+    setSeed(null);
 
     if (!user) {
-      // Anonymous: check localStorage for today's score, use date as seed
+      // Anonymous: check localStorage for this date's score, use date as seed
       const scores = getLocalScores();
-      if (scores[today] != null) setPreviousScore(scores[today]);
-      setSeed(today);
+      if (scores[activeDate] != null) setPreviousScore(scores[activeDate]);
+      setSeed(activeDate);
       setLoading(false);
       return;
     }
@@ -70,18 +75,18 @@ export default function DailyPlay() {
         .from('daily_attempts')
         .select('score')
         .eq('user_id', user.id)
-        .eq('puzzle_date', today)
+        .eq('puzzle_date', activeDate)
         .maybeSingle(),
-      supabase.rpc('get_daily_seed', { query_date: today }),
+      supabase.rpc('get_daily_seed', { query_date: activeDate }),
     ]).then(([attemptRes, seedRes]) => {
       if (attemptRes.data?.score != null) {
         setPreviousScore(attemptRes.data.score);
       }
-      const seedVal = (seedRes.data as any)?.seed ?? today;
+      const seedVal = (seedRes.data as any)?.seed ?? activeDate;
       setSeed(seedVal);
       setLoading(false);
     });
-  }, [user]);
+  }, [user, activeDate]);
 
   // Load world region data (same as "any" mode in PuzzlePlay)
   useEffect(() => {
@@ -126,18 +131,17 @@ export default function DailyPlay() {
     return <div className='loading'>Loading daily puzzle…</div>;
   }
 
-  // Already played today
+  // Already played this date
   if (previousScore !== null) {
-    return (
-      <AlreadyPlayed score={previousScore} />
-    );
+    return <AlreadyPlayed score={previousScore} isToday={isToday} />;
   }
 
   const dailyTimer = (sessionStorage.getItem('bl_timer') ?? 'regular') as TimerPreset;
 
   return (
     <DailyPuzzleContent
-      seed={seed ?? today}
+      seed={seed ?? activeDate}
+      activeDate={activeDate}
       adjacency={adjacency ?? ({} as AdjacencyData)}
       countryNames={countryNames}
       regionPool={regionPool ?? []}
@@ -147,35 +151,53 @@ export default function DailyPlay() {
   );
 }
 
-function AlreadyPlayed({ score }: { score: number }) {
+function AlreadyPlayed({ score, isToday }: { score: number; isToday: boolean }) {
+  const navigate = useNavigate();
   const [streak, setStreak] = useState<{ current: number; best: number } | null>(null);
 
   useEffect(() => {
+    if (!isToday) return;
     supabase.rpc('get_user_stats').then(({ data }) => {
       if (data) {
         const d = data as unknown as { current_streak: number; max_streak: number };
         setStreak({ current: d.current_streak, best: d.max_streak });
       }
     });
-  }, []);
+  }, [isToday]);
+
+  if (isToday) {
+    return (
+      <div className='daily-already-played'>
+        <h2>Daily Puzzle</h2>
+        <p>You already played today's puzzle!</p>
+        <p className='daily-score'>Score: {score} / 15</p>
+        {streak && (
+          <p className='daily-streak-info'>
+            Current streak: <strong>{streak.current}</strong> &middot; Best: <strong>{streak.best}</strong>
+          </p>
+        )}
+        <p>Come back tomorrow for a new puzzle.</p>
+      </div>
+    );
+  }
 
   return (
     <div className='daily-already-played'>
       <h2>Daily Puzzle</h2>
-      <p>You already played today's puzzle!</p>
+      <p>You already played this puzzle!</p>
       <p className='daily-score'>Score: {score} / 15</p>
-      {streak && (
-        <p className='daily-streak-info'>
-          Current streak: <strong>{streak.current}</strong> &middot; Best: <strong>{streak.best}</strong>
-        </p>
-      )}
-      <p>Come back tomorrow for a new puzzle.</p>
+      <p>
+        <button className='start-btn' onClick={() => navigate('/daily')}>
+          Go to today's puzzle
+        </button>
+      </p>
     </div>
   );
 }
 
 function DailyPuzzleContent({
   seed,
+  activeDate,
   adjacency,
   countryNames,
   regionPool,
@@ -183,6 +205,7 @@ function DailyPuzzleContent({
   timerPreset,
 }: {
   seed: string;
+  activeDate: string;
   adjacency: AdjacencyData;
   countryNames: Record<string, string>;
   regionPool: RegionSlot[];
@@ -226,11 +249,10 @@ function DailyPuzzleContent({
   useEffect(() => {
     if (!done) return;
 
-    const today = todayString();
     const correctAnswers = puzzles.map(p => countryNames[p.correctAnswer] || p.correctAnswer);
 
     if (!user) {
-      saveLocalScore(today, score);
+      saveLocalScore(activeDate, score);
       navigate('/results', {
         state: { score, total: 15, daily: true, results, correctAnswers },
       });
@@ -238,7 +260,7 @@ function DailyPuzzleContent({
     }
 
     supabase.rpc('submit_daily_attempt', {
-      attempt_date: today,
+      attempt_date: activeDate,
       attempt_score: score,
     }).then(() => {
       window.dispatchEvent(new Event('streak-updated'));

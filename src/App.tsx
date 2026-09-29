@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, useNavigate, useSearchParams } from 'react-router-dom';
 import Home from './routes/Home';
 import Play from './routes/Play';
 import PuzzlePlay from './routes/PuzzlePlay';
@@ -16,7 +16,7 @@ import QaDistribution from './routes/qa/QaDistribution';
 import QaCalendar from './routes/qa/QaCalendar';
 import { useAuth } from './context/AuthContext';
 import StreakBadge from './components/StreakBadge';
-import ScoreCalendar from './components/ScoreCalendar';
+import DailyCalendar from './components/DailyCalendar';
 
 function AuthButton() {
   const { user, signInWithGoogle, signOut } = useAuth()
@@ -38,8 +38,16 @@ function AuthButton() {
   )
 }
 
+function todayString(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
 export default function App() {
   const { user } = useAuth();
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const activeDateParam = searchParams.get('date');
 
   return (
     <div className='app-wrap'>
@@ -54,7 +62,11 @@ export default function App() {
         {user && (
           <div className="header-stats">
             <StreakBadge />
-            <ScoreCalendar />
+            <DailyCalendar
+              onDateSelect={(date) => navigate(`/daily?date=${date}`)}
+              selectedDate={activeDateParam ?? todayString()}
+              historyWindowDays={60}
+            />
           </div>
         )}
         <AuthButton />

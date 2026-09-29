@@ -137,6 +137,13 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .calendar-day.score-mid { background: #FFF9C4; color: #F57F17; }
 .calendar-day.score-low { background: #FFCDD2; color: #B71C1C; }
 .calendar-day.future { color: #ccc; pointer-events: none; }
+.calendar-day.clickable { cursor: pointer; }
+.calendar-day.clickable:hover { opacity: 0.75; }
+.calendar-day.too-old { color: #ccc; }
+.calendar-day.selected { box-shadow: inset 0 0 0 2px #42A5F5; background: #E3F2FD; color: #0D47A1; }
+.calendar-today-row { margin-bottom: 8px; text-align: center; }
+.calendar-today-btn { background: #1976D2; color: #fff; border: none; border-radius: 6px; padding: 4px 16px; font-size: 0.85rem; cursor: pointer; }
+.calendar-today-btn:hover { background: #1565C0; }
 
 /* Daily already-played streak info */
 .daily-streak-info { margin: 12px 0; font-size: 0.95rem; color: #555; }
