@@ -55,8 +55,7 @@ export default function App() {
         <Link to='/' className='brand'>Borderline</Link>
         <nav>
           <Link to='/daily'>Daily</Link>
-          <Link to='/play'>Play</Link>
-          <Link to='/results'>Results</Link>
+          <Link to='/'>Play</Link>
           <Link to='/about'>About</Link>
         </nav>
         {user && (
