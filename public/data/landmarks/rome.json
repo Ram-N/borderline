@@ -8,5 +8,96 @@
     "maxLon": 12.8933
   },
   "viewBox": "0 0 800 843",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "colosseum",
+      "name": "Colosseum",
+      "lat": 41.8902,
+      "lon": 12.4922,
+      "svgX": 339,
+      "svgY": 432,
+      "hint": "The world's largest ancient amphitheatre, once hosting gladiatorial contests and public spectacles"
+    },
+    {
+      "id": "st-peters-basilica",
+      "name": "St. Peter's Basilica",
+      "lat": 41.9022,
+      "lon": 12.4539,
+      "svgX": 295,
+      "svgY": 414,
+      "hint": "The largest church in the world, crowned by Michelangelo's dome in Vatican City"
+    },
+    {
+      "id": "trevi-fountain",
+      "name": "Trevi Fountain",
+      "lat": 41.9009,
+      "lon": 12.4833,
+      "svgX": 329,
+      "svgY": 416,
+      "hint": "The largest Baroque fountain in Rome; tradition says tossing a coin ensures your return"
+    },
+    {
+      "id": "spanish-steps",
+      "name": "Spanish Steps",
+      "lat": 41.9058,
+      "lon": 12.4823,
+      "svgX": 328,
+      "svgY": 408,
+      "hint": "A monumental stairway of 135 steps leading from Piazza di Spagna to the Trinità dei Monti church"
+    },
+    {
+      "id": "pantheon",
+      "name": "Pantheon",
+      "lat": 41.8986,
+      "lon": 12.4769,
+      "svgX": 322,
+      "svgY": 419,
+      "hint": "A remarkably preserved ancient temple turned church, famous for its unreinforced concrete dome"
+    },
+    {
+      "id": "roman-forum",
+      "name": "Roman Forum",
+      "lat": 41.8925,
+      "lon": 12.4853,
+      "svgX": 331,
+      "svgY": 429,
+      "hint": "The central plaza of ancient Rome, surrounded by ruins of important government buildings"
+    },
+    {
+      "id": "borghese-gallery",
+      "name": "Borghese Gallery",
+      "lat": 41.9141,
+      "lon": 12.4922,
+      "svgX": 339,
+      "svgY": 395,
+      "hint": "A magnificent art gallery inside the Villa Borghese, housing Bernini sculptures and Caravaggio paintings"
+    },
+    {
+      "id": "piazza-navona",
+      "name": "Piazza Navona",
+      "lat": 41.8990,
+      "lon": 12.4730,
+      "svgX": 317,
+      "svgY": 419,
+      "hint": "A lively Baroque piazza built over the ancient Stadium of Domitian, with Bernini's Fountain of the Four Rivers"
+    },
+    {
+      "id": "castel-santangelo",
+      "name": "Castel Sant'Angelo",
+      "lat": 41.9031,
+      "lon": 12.4663,
+      "svgX": 309,
+      "svgY": 412,
+      "hint": "A towering cylindrical mausoleum initially built for Emperor Hadrian, later a papal fortress"
+    },
+    {
+      "id": "appian-way",
+      "name": "Appian Way",
+      "lat": 41.8274,
+      "lon": 12.5262,
+      "svgX": 378,
+      "svgY": 529,
+      "hint": "One of the earliest and most important Roman roads, lined with ancient tombs and catacombs"
+    }
+  ]
 }

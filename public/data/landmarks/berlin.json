@@ -8,5 +8,96 @@
     "maxLon": 13.8015
   },
   "viewBox": "0 0 800 659",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "brandenburg-gate",
+      "name": "Brandenburg Gate",
+      "lat": 52.5163,
+      "lon": 13.3777,
+      "svgX": 350,
+      "svgY": 313,
+      "hint": "An 18th-century neoclassical monument and symbol of German reunification"
+    },
+    {
+      "id": "reichstag",
+      "name": "Reichstag",
+      "lat": 52.5186,
+      "lon": 13.3761,
+      "svgX": 348,
+      "svgY": 309,
+      "hint": "The historic parliament building with a modern glass dome, rebuilt after reunification"
+    },
+    {
+      "id": "berlin-tv-tower",
+      "name": "Berlin TV Tower",
+      "lat": 52.5209,
+      "lon": 13.4132,
+      "svgX": 388,
+      "svgY": 305,
+      "hint": "A 368-metre telecommunications tower built by the GDR, the tallest structure in Germany"
+    },
+    {
+      "id": "museum-island",
+      "name": "Museum Island",
+      "lat": 52.5169,
+      "lon": 13.4014,
+      "svgX": 375,
+      "svgY": 312,
+      "hint": "A UNESCO World Heritage Site containing five world-renowned museums on a Spree island"
+    },
+    {
+      "id": "checkpoint-charlie",
+      "name": "Checkpoint Charlie",
+      "lat": 52.5075,
+      "lon": 13.3904,
+      "svgX": 364,
+      "svgY": 328,
+      "hint": "The most famous crossing point between East and West Berlin during the Cold War"
+    },
+    {
+      "id": "berlin-wall-memorial",
+      "name": "Berlin Wall Memorial",
+      "lat": 52.5351,
+      "lon": 13.3901,
+      "svgX": 363,
+      "svgY": 280,
+      "hint": "An outdoor memorial preserving a section of the Berlin Wall at Bernauer Strasse"
+    },
+    {
+      "id": "potsdamer-platz",
+      "name": "Potsdamer Platz",
+      "lat": 52.5096,
+      "lon": 13.3761,
+      "svgX": 348,
+      "svgY": 325,
+      "hint": "A bustling public square once bisected by the Berlin Wall, now a modern commercial hub"
+    },
+    {
+      "id": "east-side-gallery",
+      "name": "East Side Gallery",
+      "lat": 52.5052,
+      "lon": 13.4395,
+      "svgX": 416,
+      "svgY": 332,
+      "hint": "The longest surviving section of the Berlin Wall, transformed into an open-air gallery of murals"
+    },
+    {
+      "id": "charlottenburg-palace",
+      "name": "Charlottenburg Palace",
+      "lat": 52.5203,
+      "lon": 13.2956,
+      "svgX": 263,
+      "svgY": 306,
+      "hint": "The largest palace in Berlin, a Baroque and Rococo masterpiece built for Queen Sophie Charlotte"
+    },
+    {
+      "id": "berlin-zoo",
+      "name": "Berlin Zoological Garden",
+      "lat": 52.5083,
+      "lon": 13.3366,
+      "svgX": 306,
+      "svgY": 327,
+      "hint": "Germany's oldest zoo, with the world's largest collection of species, next to the Tiergarten"
+    }
+  ]
 }

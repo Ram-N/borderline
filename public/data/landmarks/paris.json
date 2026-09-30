@@ -8,5 +8,96 @@
     "maxLon": 2.4845
   },
   "viewBox": "0 0 800 429",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "eiffel-tower",
+      "name": "Eiffel Tower",
+      "lat": 48.8584,
+      "lon": 2.2945,
+      "svgX": 248,
+      "svgY": 217,
+      "hint": "A wrought-iron lattice tower on the Champ de Mars, symbol of France"
+    },
+    {
+      "id": "louvre-museum",
+      "name": "Louvre Museum",
+      "lat": 48.8606,
+      "lon": 2.3376,
+      "svgX": 373,
+      "svgY": 207,
+      "hint": "The world's largest art museum and historic monument, home to the Mona Lisa"
+    },
+    {
+      "id": "notre-dame-cathedral",
+      "name": "Notre-Dame Cathedral",
+      "lat": 48.8530,
+      "lon": 2.3499,
+      "svgX": 409,
+      "svgY": 241,
+      "hint": "A medieval Catholic cathedral on the Île de la Cité, famed for its Gothic architecture"
+    },
+    {
+      "id": "arc-de-triomphe",
+      "name": "Arc de Triomphe",
+      "lat": 48.8738,
+      "lon": 2.2950,
+      "svgX": 249,
+      "svgY": 149,
+      "hint": "A triumphal arch at the western end of the Champs-Élysées, honouring those who fought for France"
+    },
+    {
+      "id": "sacre-coeur",
+      "name": "Sacré-Cœur Basilica",
+      "lat": 48.8867,
+      "lon": 2.3431,
+      "svgX": 389,
+      "svgY": 92,
+      "hint": "A white-domed basilica dedicated to the Sacred Heart of Christ, atop Montmartre hill"
+    },
+    {
+      "id": "musee-dorsay",
+      "name": "Musée d'Orsay",
+      "lat": 48.8600,
+      "lon": 2.3266,
+      "svgX": 341,
+      "svgY": 210,
+      "hint": "A museum in a former railway station on the Left Bank, housing the world's largest Impressionist collection"
+    },
+    {
+      "id": "centre-pompidou",
+      "name": "Centre Pompidou",
+      "lat": 48.8607,
+      "lon": 2.3523,
+      "svgX": 416,
+      "svgY": 207,
+      "hint": "A controversial inside-out architectural landmark housing a modern art museum in Beaubourg"
+    },
+    {
+      "id": "place-de-la-bastille",
+      "name": "Place de la Bastille",
+      "lat": 48.8533,
+      "lon": 2.3692,
+      "svgX": 465,
+      "svgY": 239,
+      "hint": "A historic square where the storming of the Bastille fortress ignited the French Revolution in 1789"
+    },
+    {
+      "id": "luxembourg-gardens",
+      "name": "Luxembourg Gardens",
+      "lat": 48.8462,
+      "lon": 2.3372,
+      "svgX": 372,
+      "svgY": 271,
+      "hint": "Beautiful gardens surrounding the Palais du Luxembourg on the Left Bank, a beloved Parisian escape"
+    },
+    {
+      "id": "pere-lachaise",
+      "name": "Père Lachaise Cemetery",
+      "lat": 48.8614,
+      "lon": 2.3952,
+      "svgX": 540,
+      "svgY": 203,
+      "hint": "The world's most visited cemetery, resting place of Chopin, Oscar Wilde, and Jim Morrison"
+    }
+  ]
 }

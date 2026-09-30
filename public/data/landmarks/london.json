@@ -8,5 +8,96 @@
     "maxLon": 0.3848
   },
   "viewBox": "0 0 800 616",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "tower-of-london",
+      "name": "Tower of London",
+      "lat": 51.5081,
+      "lon": -0.0759,
+      "svgX": 410,
+      "svgY": 282,
+      "hint": "A historic castle on the north bank of the Thames, once a royal palace and prison"
+    },
+    {
+      "id": "buckingham-palace",
+      "name": "Buckingham Palace",
+      "lat": 51.5014,
+      "lon": -0.1419,
+      "svgX": 354,
+      "svgY": 292,
+      "hint": "The official London residence and administrative headquarters of the British monarch"
+    },
+    {
+      "id": "big-ben",
+      "name": "Big Ben",
+      "lat": 51.4995,
+      "lon": -0.1248,
+      "svgX": 369,
+      "svgY": 294,
+      "hint": "The iconic clock tower at the north end of the Palace of Westminster"
+    },
+    {
+      "id": "london-eye",
+      "name": "London Eye",
+      "lat": 51.5033,
+      "lon": -0.1195,
+      "svgX": 373,
+      "svgY": 289,
+      "hint": "A giant Ferris wheel on the South Bank of the River Thames"
+    },
+    {
+      "id": "british-museum",
+      "name": "British Museum",
+      "lat": 51.5194,
+      "lon": -0.1270,
+      "svgX": 367,
+      "svgY": 267,
+      "hint": "One of the world's greatest museums of human history and culture, in Bloomsbury"
+    },
+    {
+      "id": "st-pauls-cathedral",
+      "name": "St Paul's Cathedral",
+      "lat": 51.5138,
+      "lon": -0.0984,
+      "svgX": 391,
+      "svgY": 275,
+      "hint": "Sir Christopher Wren's masterpiece cathedral, with its famous dome on Ludgate Hill"
+    },
+    {
+      "id": "tower-bridge",
+      "name": "Tower Bridge",
+      "lat": 51.5055,
+      "lon": -0.0754,
+      "svgX": 411,
+      "svgY": 286,
+      "hint": "A combined bascule and suspension bridge that crosses the Thames near the Tower of London"
+    },
+    {
+      "id": "trafalgar-square",
+      "name": "Trafalgar Square",
+      "lat": 51.5080,
+      "lon": -0.1281,
+      "svgX": 366,
+      "svgY": 283,
+      "hint": "A public square in central London commemorating the 1805 Battle of Trafalgar"
+    },
+    {
+      "id": "hyde-park",
+      "name": "Hyde Park",
+      "lat": 51.5073,
+      "lon": -0.1657,
+      "svgX": 334,
+      "svgY": 284,
+      "hint": "One of the largest royal parks in London, home to the Serpentine lake and Speaker's Corner"
+    },
+    {
+      "id": "canary-wharf",
+      "name": "Canary Wharf",
+      "lat": 51.5054,
+      "lon": -0.0235,
+      "svgX": 455,
+      "svgY": 286,
+      "hint": "London's secondary financial district, built on a former West India Docks site in east London"
+    }
+  ]
 }

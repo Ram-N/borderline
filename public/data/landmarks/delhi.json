@@ -8,5 +8,96 @@
     "maxLon": 77.378
   },
   "viewBox": "0 0 800 859",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "red-fort",
+      "name": "Red Fort",
+      "lat": 28.6562,
+      "lon": 77.2410,
+      "svgX": 608,
+      "svgY": 410,
+      "hint": "A UNESCO World Heritage red sandstone fort, the seat of Mughal power, where India's PM addresses the nation on Independence Day"
+    },
+    {
+      "id": "india-gate",
+      "name": "India Gate",
+      "lat": 28.6129,
+      "lon": 77.2295,
+      "svgX": 591,
+      "svgY": 479,
+      "hint": "A war memorial on Rajpath, dedicated to soldiers who died in World War I, with the eternal Amar Jawan Jyoti flame"
+    },
+    {
+      "id": "qutb-minar",
+      "name": "Qutb Minar",
+      "lat": 28.5245,
+      "lon": 77.1855,
+      "svgX": 530,
+      "svgY": 621,
+      "hint": "A UNESCO World Heritage minaret and victory tower, the tallest brick minaret in the world, built in 1193"
+    },
+    {
+      "id": "humayuns-tomb",
+      "name": "Humayun's Tomb",
+      "lat": 28.5933,
+      "lon": 77.2507,
+      "svgX": 621,
+      "svgY": 510,
+      "hint": "The first garden-tomb on the Indian subcontinent, a UNESCO World Heritage Site and precursor to the Taj Mahal"
+    },
+    {
+      "id": "lotus-temple",
+      "name": "Lotus Temple",
+      "lat": 28.5535,
+      "lon": 77.2588,
+      "svgX": 633,
+      "svgY": 574,
+      "hint": "A Bahá'í House of Worship shaped like a blooming lotus flower, open to people of all faiths"
+    },
+    {
+      "id": "akshardham-temple",
+      "name": "Akshardham Temple",
+      "lat": 28.6127,
+      "lon": 77.2773,
+      "svgX": 659,
+      "svgY": 479,
+      "hint": "A massive Hindu temple complex on the Yamuna bank, with intricate pink sandstone carvings and water shows"
+    },
+    {
+      "id": "jama-masjid",
+      "name": "Jama Masjid",
+      "lat": 28.6507,
+      "lon": 77.2334,
+      "svgX": 597,
+      "svgY": 419,
+      "hint": "India's largest mosque, built by Shah Jahan, with three marble domes and two minarets in Old Delhi"
+    },
+    {
+      "id": "rashtrapati-bhavan",
+      "name": "Rashtrapati Bhavan",
+      "lat": 28.6144,
+      "lon": 77.1993,
+      "svgX": 549,
+      "svgY": 477,
+      "hint": "The official residence of the President of India, a vast colonial and Mughal-inspired building on Raisina Hill"
+    },
+    {
+      "id": "connaught-place",
+      "name": "Connaught Place",
+      "lat": 28.6315,
+      "lon": 77.2167,
+      "svgX": 573,
+      "svgY": 449,
+      "hint": "The financial and commercial heart of New Delhi, a colonnaded circular plaza designed by Robert Tor Russell"
+    },
+    {
+      "id": "chandni-chowk",
+      "name": "Chandni Chowk",
+      "lat": 28.6506,
+      "lon": 77.2302,
+      "svgX": 592,
+      "svgY": 419,
+      "hint": "One of the oldest and busiest markets in Old Delhi, a labyrinth of narrow lanes with food stalls and shops"
+    }
+  ]
 }

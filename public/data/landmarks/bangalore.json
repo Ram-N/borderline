@@ -8,5 +8,96 @@
     "maxLon": 77.8038
   },
   "viewBox": "0 0 800 782",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "bangalore-palace",
+      "name": "Bangalore Palace",
+      "lat": 12.9998,
+      "lon": 77.5921,
+      "svgX": 334,
+      "svgY": 364,
+      "hint": "A royal palace modelled on Windsor Castle, built for the Wadiyar kings in 1887"
+    },
+    {
+      "id": "cubbon-park",
+      "name": "Cubbon Park",
+      "lat": 12.9763,
+      "lon": 77.5929,
+      "svgX": 336,
+      "svgY": 418,
+      "hint": "A landmark green lung of the city, spread over 300 acres in the heart of Bengaluru"
+    },
+    {
+      "id": "lalbagh-botanical-garden",
+      "name": "Lalbagh Botanical Garden",
+      "lat": 12.9507,
+      "lon": 77.5848,
+      "svgX": 318,
+      "svgY": 475,
+      "hint": "A 240-acre botanical garden with rare plants, a 3,000-million-year-old rock and a historic glasshouse"
+    },
+    {
+      "id": "vidhana-soudha",
+      "name": "Vidhana Soudha",
+      "lat": 12.9794,
+      "lon": 77.5913,
+      "svgX": 332,
+      "svgY": 411,
+      "hint": "The impressive granite seat of Karnataka's state legislature, built in neo-Dravidian style"
+    },
+    {
+      "id": "iskcon-temple",
+      "name": "ISKCON Temple",
+      "lat": 13.0097,
+      "lon": 77.5510,
+      "svgX": 243,
+      "svgY": 342,
+      "hint": "One of the largest ISKCON temples in the world, dedicated to Radha Krishnachandra on Rajajinagar hill"
+    },
+    {
+      "id": "ulsoor-lake",
+      "name": "Ulsoor Lake",
+      "lat": 12.9864,
+      "lon": 77.6219,
+      "svgX": 400,
+      "svgY": 395,
+      "hint": "A large urban lake in east Bengaluru, popular for boating and morning walks"
+    },
+    {
+      "id": "tipu-sultans-palace",
+      "name": "Tipu Sultan's Summer Palace",
+      "lat": 12.9584,
+      "lon": 77.5750,
+      "svgX": 296,
+      "svgY": 458,
+      "hint": "An exquisite example of Indo-Islamic architecture built by Tipu Sultan in the old city"
+    },
+    {
+      "id": "hal-aerospace-museum",
+      "name": "HAL Aerospace Museum",
+      "lat": 12.9582,
+      "lon": 77.6650,
+      "svgX": 494,
+      "svgY": 458,
+      "hint": "India's first aerospace museum, showcasing aircraft and aero-engines made by Hindustan Aeronautics"
+    },
+    {
+      "id": "bannerghatta-national-park",
+      "name": "Bannerghatta National Park",
+      "lat": 12.8300,
+      "lon": 77.5757,
+      "svgX": 298,
+      "svgY": 748,
+      "hint": "A national park on the southern outskirts of Bengaluru, home to tigers, lions, and elephants"
+    },
+    {
+      "id": "electronic-city",
+      "name": "Electronic City",
+      "lat": 12.8400,
+      "lon": 77.6768,
+      "svgX": 520,
+      "svgY": 725,
+      "hint": "India's first purpose-built IT township, housing major tech companies in south Bengaluru"
+    }
+  ]
 }

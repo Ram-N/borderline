@@ -8,5 +8,96 @@
     "maxLon": 80.3427
   },
   "viewBox": "0 0 800 1647",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "marina-beach",
+      "name": "Marina Beach",
+      "lat": 13.0498,
+      "lon": 80.2824,
+      "svgX": 575,
+      "svgY": 800,
+      "hint": "The world's second-longest urban beach, stretching 13 km along the Bay of Bengal"
+    },
+    {
+      "id": "kapaleeshwarar-temple",
+      "name": "Kapaleeshwarar Temple",
+      "lat": 13.0334,
+      "lon": 80.2698,
+      "svgX": 527,
+      "svgY": 863,
+      "hint": "A magnificent Dravidian-style temple dedicated to Shiva, with a soaring gopuram in Mylapore"
+    },
+    {
+      "id": "fort-st-george",
+      "name": "Fort St. George",
+      "lat": 13.0827,
+      "lon": 80.2878,
+      "svgX": 595,
+      "svgY": 673,
+      "hint": "India's first English fortress, built in 1644, now housing the Tamil Nadu state legislature"
+    },
+    {
+      "id": "valluvar-kottam",
+      "name": "Valluvar Kottam",
+      "lat": 13.0610,
+      "lon": 80.2347,
+      "svgX": 396,
+      "svgY": 757,
+      "hint": "A chariot-shaped monument dedicated to the Tamil poet-saint Thiruvalluvar in Nungambakkam"
+    },
+    {
+      "id": "anna-zoo",
+      "name": "Arignar Anna Zoological Park",
+      "lat": 12.9750,
+      "lon": 80.2221,
+      "svgX": 349,
+      "svgY": 1087,
+      "hint": "One of India's largest zoological parks, home to the white tigers, in Vandalur"
+    },
+    {
+      "id": "guindy-national-park",
+      "name": "Guindy National Park",
+      "lat": 13.0008,
+      "lon": 80.2191,
+      "svgX": 338,
+      "svgY": 988,
+      "hint": "One of the smallest national parks in India and the only one within a city, home to blackbuck"
+    },
+    {
+      "id": "santhome-cathedral",
+      "name": "Santhome Cathedral",
+      "lat": 13.0337,
+      "lon": 80.2775,
+      "svgX": 556,
+      "svgY": 861,
+      "hint": "A minor basilica built over the tomb of St. Thomas the Apostle, who reputedly brought Christianity to India"
+    },
+    {
+      "id": "elliots-beach",
+      "name": "Elliot's Beach",
+      "lat": 12.9997,
+      "lon": 80.2720,
+      "svgX": 536,
+      "svgY": 992,
+      "hint": "A quieter, cleaner beach in Besant Nagar at the southern end of the Marina Beach stretch"
+    },
+    {
+      "id": "parthasarathy-temple",
+      "name": "Parthasarathy Temple",
+      "lat": 13.0572,
+      "lon": 80.2717,
+      "svgX": 535,
+      "svgY": 771,
+      "hint": "One of the oldest Vishnu temples in Chennai, built by the Pallava kings in the 8th century in Triplicane"
+    },
+    {
+      "id": "chepauk-stadium",
+      "name": "MA Chidambaram Stadium",
+      "lat": 13.0600,
+      "lon": 80.2800,
+      "svgX": 566,
+      "svgY": 761,
+      "hint": "One of India's oldest and most celebrated cricket grounds, known as Chepauk, home of Chennai Super Kings"
+    }
+  ]
 }

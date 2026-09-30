@@ -8,5 +8,96 @@
     "maxLon": 72.9919
   },
   "viewBox": "0 0 800 1566",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "gateway-of-india",
+      "name": "Gateway of India",
+      "lat": 18.9220,
+      "lon": 72.8347,
+      "svgX": 248,
+      "svgY": 1378,
+      "hint": "A basalt arch overlooking the Arabian Sea, built to commemorate the 1911 visit of King George V"
+    },
+    {
+      "id": "marine-drive",
+      "name": "Marine Drive",
+      "lat": 18.9436,
+      "lon": 72.8233,
+      "svgX": 208,
+      "svgY": 1298,
+      "hint": "A 3-km seaside promenade along the Arabian Sea, nicknamed the Queen's Necklace for its night-time lights"
+    },
+    {
+      "id": "elephanta-caves",
+      "name": "Elephanta Caves",
+      "lat": 18.9633,
+      "lon": 72.9315,
+      "svgX": 588,
+      "svgY": 1224,
+      "hint": "A UNESCO World Heritage Site of rock-cut cave temples on Elephanta Island, dedicated to Shiva"
+    },
+    {
+      "id": "csmt",
+      "name": "Chhatrapati Shivaji Maharaj Terminus",
+      "lat": 18.9402,
+      "lon": 72.8355,
+      "svgX": 251,
+      "svgY": 1310,
+      "hint": "A UNESCO World Heritage Victorian Gothic railway station, one of the world's busiest, formerly known as VT"
+    },
+    {
+      "id": "haji-ali-dargah",
+      "name": "Haji Ali Dargah",
+      "lat": 18.9824,
+      "lon": 72.8092,
+      "svgX": 158,
+      "svgY": 1153,
+      "hint": "A revered mosque and dargah located on a small islet off the Worli coast, accessible by a narrow causeway"
+    },
+    {
+      "id": "siddhivinayak-temple",
+      "name": "Siddhivinayak Temple",
+      "lat": 19.0169,
+      "lon": 72.8309,
+      "svgX": 235,
+      "svgY": 1025,
+      "hint": "One of Mumbai's most visited Ganesha temples in Prabhadevi, attracting celebrities and commoners alike"
+    },
+    {
+      "id": "juhu-beach",
+      "name": "Juhu Beach",
+      "lat": 19.0967,
+      "lon": 72.8264,
+      "svgX": 219,
+      "svgY": 729,
+      "hint": "Mumbai's most popular beach, famous for street food, sunsets, and its proximity to Bollywood celebrities"
+    },
+    {
+      "id": "dharavi",
+      "name": "Dharavi",
+      "lat": 19.0414,
+      "lon": 72.8533,
+      "svgX": 313,
+      "svgY": 934,
+      "hint": "One of the world's largest urban slums, also a thriving informal economy producing goods exported globally"
+    },
+    {
+      "id": "bandra-worli-sea-link",
+      "name": "Bandra–Worli Sea Link",
+      "lat": 19.0397,
+      "lon": 72.8165,
+      "svgX": 184,
+      "svgY": 940,
+      "hint": "A cable-stayed bridge spanning 5.6 km across Mahim Bay, dramatically cutting travel time between Bandra and Worli"
+    },
+    {
+      "id": "chowpatty-beach",
+      "name": "Chowpatty Beach",
+      "lat": 18.9544,
+      "lon": 72.8127,
+      "svgX": 171,
+      "svgY": 1257,
+      "hint": "A historic beach at the northern end of Marine Drive, famous for Ganesh Chaturthi immersions and bhel puri"
+    }
+  ]
 }

@@ -8,5 +8,96 @@
     "maxLon": 88.472
   },
   "viewBox": "0 0 800 728",
-  "landmarks": []
+  "landmarks": [
+    {
+      "id": "victoria-memorial",
+      "name": "Victoria Memorial",
+      "lat": 22.5448,
+      "lon": 88.3426,
+      "svgX": 374,
+      "svgY": 352,
+      "hint": "A grand white marble monument built in memory of Queen Victoria, now a museum in the Maidan"
+    },
+    {
+      "id": "howrah-bridge",
+      "name": "Howrah Bridge",
+      "lat": 22.5851,
+      "lon": 88.3468,
+      "svgX": 388,
+      "svgY": 208,
+      "hint": "A cantilever bridge over the Hooghly River, one of the world's busiest, connecting Kolkata and Howrah"
+    },
+    {
+      "id": "indian-museum",
+      "name": "Indian Museum",
+      "lat": 22.5576,
+      "lon": 88.3509,
+      "svgX": 401,
+      "svgY": 306,
+      "hint": "The oldest and largest museum in India, founded in 1814, with priceless collections on natural history and art"
+    },
+    {
+      "id": "kalighat-temple",
+      "name": "Kalighat Temple",
+      "lat": 22.5269,
+      "lon": 88.3434,
+      "svgX": 376,
+      "svgY": 416,
+      "hint": "One of the 51 Shakti Peethas, this temple dedicated to Goddess Kali gave Kolkata its name"
+    },
+    {
+      "id": "eden-gardens",
+      "name": "Eden Gardens",
+      "lat": 22.5647,
+      "lon": 88.3432,
+      "svgX": 376,
+      "svgY": 281,
+      "hint": "One of the world's oldest and largest cricket stadiums, home to the Kolkata Knight Riders"
+    },
+    {
+      "id": "science-city",
+      "name": "Science City",
+      "lat": 22.5288,
+      "lon": 88.3963,
+      "svgX": 551,
+      "svgY": 409,
+      "hint": "One of the largest science centres in South Asia, with space science, evolution and dynamotion halls"
+    },
+    {
+      "id": "fort-william",
+      "name": "Fort William",
+      "lat": 22.5521,
+      "lon": 88.3319,
+      "svgX": 339,
+      "svgY": 326,
+      "hint": "A large British colonial fort on the east bank of the Hooghly, still an active military base"
+    },
+    {
+      "id": "st-pauls-cathedral",
+      "name": "St. Paul's Cathedral",
+      "lat": 22.5482,
+      "lon": 88.3499,
+      "svgX": 398,
+      "svgY": 340,
+      "hint": "The first episcopal church in Asia, built in Gothic style with a steeple modelled on Canterbury Cathedral"
+    },
+    {
+      "id": "birla-planetarium",
+      "name": "Birla Planetarium",
+      "lat": 22.5447,
+      "lon": 88.3494,
+      "svgX": 396,
+      "svgY": 352,
+      "hint": "One of the largest planetariums in Asia, built in 1963 in the shape of a Buddhist stupa"
+    },
+    {
+      "id": "belur-math",
+      "name": "Belur Math",
+      "lat": 22.6376,
+      "lon": 88.3518,
+      "svgX": 404,
+      "svgY": 21,
+      "hint": "The headquarters of the Ramakrishna Math and Mission, its unique architecture blends Hindu, Islamic and Christian motifs"
+    }
+  ]
 }
