@@ -1,0 +1,12 @@
+{
+  "id": "rome",
+  "name": "Rome",
+  "bounds": {
+    "minLat": 41.6241,
+    "maxLat": 42.1702,
+    "minLon": 12.1971,
+    "maxLon": 12.8933
+  },
+  "viewBox": "0 0 800 843",
+  "landmarks": []
+}

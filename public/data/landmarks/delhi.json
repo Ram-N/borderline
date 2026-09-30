@@ -1,0 +1,12 @@
+{
+  "id": "delhi",
+  "name": "Delhi",
+  "bounds": {
+    "minLat": 28.3755,
+    "maxLat": 28.9123,
+    "minLon": 76.8083,
+    "maxLon": 77.378
+  },
+  "viewBox": "0 0 800 859",
+  "landmarks": []
+}

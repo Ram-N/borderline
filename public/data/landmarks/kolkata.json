@@ -1,0 +1,12 @@
+{
+  "id": "kolkata",
+  "name": "Kolkata",
+  "bounds": {
+    "minLat": 22.4394,
+    "maxLat": 22.6435,
+    "minLon": 88.2291,
+    "maxLon": 88.472
+  },
+  "viewBox": "0 0 800 728",
+  "landmarks": []
+}

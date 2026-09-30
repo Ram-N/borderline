@@ -1,0 +1,12 @@
+{
+  "id": "berlin",
+  "name": "Berlin",
+  "bounds": {
+    "minLat": 52.318,
+    "maxLat": 52.6957,
+    "minLon": 13.048,
+    "maxLon": 13.8015
+  },
+  "viewBox": "0 0 800 659",
+  "landmarks": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mumbai",
+  "name": "Mumbai",
+  "bounds": {
+    "minLat": 18.8714,
+    "maxLat": 19.2927,
+    "minLon": 72.7641,
+    "maxLon": 72.9919
+  },
+  "viewBox": "0 0 800 1566",
+  "landmarks": []
+}

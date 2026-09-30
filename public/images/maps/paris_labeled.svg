@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 429">
+  <rect width="800" height="429" fill="#c8e6f5"/>
+  <path id="entrepôt" d="M 452,102 L 463,103 L 468,109 L 468,130 L 487,156 L 449,176 L 403,162 L 404,140 L 409,118 L 408,105 L 435,102 L 452,102 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
+  <path id="buttes-montmartre" d="M 455,97 L 452,102 L 435,102 L 407,105 L 379,112 L 372,111 L 350,101 L 343,105 L 338,88 L 351,29 L 467,25 L 468,48 L 472,53 L 467,59 L 458,92 L 455,97 Z" fill="#e0b8b8" stroke="#777" stroke-width="1"/>
+  <path id="opéra" d="M 379,112 L 400,106 L 408,106 L 409,118 L 404,140 L 403,162 L 380,157 L 339,167 L 342,148 L 341,141 L 343,106 L 349,101 L 379,112 Z" fill="#d4c9a8" stroke="#777" stroke-width="1"/>
+  <path id="popincourt" d="M 543,235 L 550,248 L 552,262 L 493,251 L 473,243 L 468,240 L 465,240 L 458,196 L 450,177 L 487,156 L 505,178 L 517,196 L 524,216 L 538,225 L 543,235 Z" fill="#e8dfa8" stroke="#777" stroke-width="1"/>
+  <path id="observatoire" d="M 362,295 L 386,305 L 383,331 L 384,370 L 388,381 L 393,389 L 391,405 L 385,403 L 356,400 L 358,394 L 267,364 L 322,296 L 325,299 L 327,297 L 326,294 L 335,282 L 362,295 Z" fill="#b8d4a8" stroke="#777" stroke-width="1"/>
+  <path id="hôtel-de-ville" d="M 463,229 L 464,240 L 457,265 L 451,271 L 436,256 L 409,245 L 394,236 L 404,216 L 409,201 L 429,209 L 436,217 L 443,222 L 463,229 Z" fill="#c8d4e8" stroke="#777" stroke-width="1"/>
+  <path id="panthéon" d="M 451,271 L 456,276 L 452,279 L 443,298 L 414,312 L 401,310 L 370,300 L 371,296 L 393,236 L 409,245 L 436,256 L 451,271 Z" fill="#d4c8e8" stroke="#777" stroke-width="1"/>
+  <path id="bourse" d="M 413,190 L 412,195 L 353,173 L 345,166 L 379,157 L 421,168 L 413,190 Z" fill="#e8d4c8" stroke="#777" stroke-width="1"/>
+  <path id="élysée" d="M 339,167 L 324,196 L 318,193 L 268,194 L 268,190 L 264,186 L 261,172 L 250,148 L 258,130 L 289,120 L 313,115 L 342,106 L 342,149 L 339,167 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
+  <path id="ménilmontant" d="M 591,141 L 595,170 L 595,199 L 602,259 L 601,269 L 552,262 L 550,248 L 538,225 L 524,216 L 518,196 L 505,178 L 488,157 L 526,141 L 541,142 L 562,139 L 586,128 L 591,141 Z" fill="#e0b8b8" stroke="#777" stroke-width="1"/>
+  <path id="luxembourg" d="M 393,236 L 371,296 L 370,300 L 322,275 L 312,268 L 343,247 L 346,246 L 360,217 L 358,216 L 359,213 L 373,217 L 393,236 Z" fill="#d4c9a8" stroke="#777" stroke-width="1"/>
+  <path id="vaugirard" d="M 262,244 L 285,267 L 294,263 L 303,272 L 312,268 L 319,274 L 335,282 L 326,293 L 327,297 L 326,299 L 322,296 L 267,364 L 242,355 L 203,332 L 184,351 L 170,352 L 169,336 L 176,329 L 169,322 L 156,325 L 193,267 L 229,227 L 234,217 L 262,244 Z" fill="#e8dfa8" stroke="#777" stroke-width="1"/>
+  <path id="batignolles-monceau" d="M 250,148 L 205,127 L 208,108 L 222,93 L 239,79 L 249,78 L 285,51 L 317,34 L 322,30 L 351,28 L 338,88 L 343,105 L 313,115 L 289,120 L 258,130 L 250,148 Z" fill="#b8d4a8" stroke="#777" stroke-width="1"/>
+  <path id="reuilly" d="M 595,327 L 604,325 L 619,317 L 611,287 L 613,282 L 619,278 L 627,290 L 662,294 L 665,279 L 672,279 L 673,272 L 689,273 L 689,276 L 691,277 L 723,283 L 736,287 L 746,295 L 757,314 L 755,324 L 747,332 L 744,338 L 742,353 L 747,354 L 742,372 L 737,386 L 737,391 L 725,400 L 709,399 L 699,396 L 663,394 L 663,391 L 662,389 L 657,388 L 654,390 L 654,386 L 649,380 L 650,379 L 649,378 L 648,379 L 642,371 L 631,368 L 613,368 L 603,365 L 585,364 L 579,360 L 568,348 L 562,344 L 539,353 L 526,361 L 493,322 L 476,300 L 451,271 L 457,265 L 464,240 L 468,239 L 477,245 L 497,252 L 507,253 L 542,261 L 601,269 L 590,322 L 587,325 L 595,327 Z" fill="#c8d4e8" stroke="#777" stroke-width="1"/>
+  <path id="passy" d="M 189,128 L 198,130 L 204,127 L 249,149 L 256,161 L 261,172 L 263,186 L 268,190 L 268,194 L 261,195 L 253,199 L 239,211 L 232,220 L 229,227 L 193,267 L 156,325 L 133,321 L 123,303 L 122,285 L 125,274 L 96,264 L 88,254 L 43,239 L 44,228 L 48,211 L 55,187 L 66,167 L 90,157 L 106,137 L 132,147 L 144,120 L 189,128 Z" fill="#d4c8e8" stroke="#777" stroke-width="1"/>
+  <path id="buttes-chaumont" d="M 524,27 L 527,28 L 541,40 L 548,57 L 552,84 L 552,97 L 555,104 L 559,110 L 568,116 L 582,120 L 585,127 L 562,139 L 541,142 L 526,141 L 509,149 L 487,156 L 468,131 L 468,109 L 462,103 L 452,102 L 458,92 L 467,59 L 472,53 L 468,48 L 468,25 L 509,23 L 524,27 Z" fill="#e8d4c8" stroke="#777" stroke-width="1"/>
+  <path id="gobelins" d="M 481,307 L 526,361 L 501,376 L 498,379 L 448,404 L 426,404 L 416,393 L 400,405 L 393,404 L 393,406 L 391,405 L 393,389 L 388,381 L 384,370 L 383,331 L 386,305 L 400,310 L 414,312 L 417,311 L 443,298 L 453,279 L 456,276 L 481,307 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
+  <path id="palais-bourbon" d="M 266,249 L 234,217 L 247,203 L 258,196 L 268,194 L 317,193 L 359,213 L 358,216 L 360,217 L 346,246 L 343,247 L 320,263 L 304,272 L 294,263 L 285,267 L 266,249 Z" fill="#e0b8b8" stroke="#777" stroke-width="1"/>
+  <path id="louvre" d="M 345,166 L 353,173 L 412,195 L 402,221 L 393,236 L 373,217 L 351,209 L 325,196 L 337,170 L 337,168 L 345,166 Z" fill="#d4c9a8" stroke="#777" stroke-width="1"/>
+  <path id="temple" d="M 449,176 L 458,196 L 463,228 L 451,226 L 443,222 L 436,217 L 429,209 L 409,201 L 421,168 L 449,176 Z" fill="#e8dfa8" stroke="#777" stroke-width="1"/>
+  <text x="445" y="139" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Entrepôt</text>
+  <text x="405" y="69" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Buttes-Montmartre</text>
+  <text x="374" y="134" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Opéra</text>
+  <text x="501" y="209" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Popincourt</text>
+  <text x="330" y="344" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Observatoire</text>
+  <text x="429" y="236" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Hôtel-de-Ville</text>
+  <text x="413" y="274" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Panthéon</text>
+  <text x="383" y="176" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Bourse</text>
+  <text x="296" y="151" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Élysée</text>
+  <text x="545" y="199" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Ménilmontant</text>
+  <text x="353" y="257" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Luxembourg</text>
+  <text x="246" y="291" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Vaugirard</text>
+  <text x="278" y="88" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Batignolles-Monceau</text>
+  <text x="604" y="320" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Reuilly</text>
+  <text x="156" y="223" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Passy</text>
+  <text x="519" y="90" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Buttes-Chaumont</text>
+  <text x="455" y="341" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Gobelins</text>
+  <text x="297" y="233" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Palais-Bourbon</text>
+  <text x="369" y="201" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Louvre</text>
+  <text x="436" y="198" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Temple</text>
+  <g transform="translate(760,397)">
+    <circle r="14" fill="white" stroke="#aaa" stroke-width="1"/>
+    <text x="0" y="-3" font-family="sans-serif" font-size="9" fill="#555" text-anchor="middle">N</text>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#888" stroke-width="1"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#888" stroke-width="1"/>
+  </g>
+</svg>

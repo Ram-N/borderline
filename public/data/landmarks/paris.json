@@ -1,0 +1,12 @@
+{
+  "id": "paris",
+  "name": "Paris",
+  "bounds": {
+    "minLat": 48.8104,
+    "maxLat": 48.9074,
+    "minLon": 2.2093,
+    "maxLon": 2.4845
+  },
+  "viewBox": "0 0 800 429",
+  "landmarks": []
+}

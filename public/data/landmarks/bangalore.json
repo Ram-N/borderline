@@ -1,0 +1,12 @@
+{
+  "id": "bangalore",
+  "name": "Bangalore",
+  "bounds": {
+    "minLat": 12.8149,
+    "maxLat": 13.1612,
+    "minLon": 77.4404,
+    "maxLon": 77.8038
+  },
+  "viewBox": "0 0 800 782",
+  "landmarks": []
+}

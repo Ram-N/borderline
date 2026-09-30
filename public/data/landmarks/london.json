@@ -1,0 +1,12 @@
+{
+  "id": "london",
+  "name": "London",
+  "bounds": {
+    "minLat": 51.2624,
+    "maxLat": 51.7162,
+    "minLon": -0.561,
+    "maxLon": 0.3848
+  },
+  "viewBox": "0 0 800 616",
+  "landmarks": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "chennai",
+  "name": "Chennai",
+  "bounds": {
+    "minLat": 12.829,
+    "maxLat": 13.2582,
+    "minLon": 80.1287,
+    "maxLon": 80.3427
+  },
+  "viewBox": "0 0 800 1647",
+  "landmarks": []
+}

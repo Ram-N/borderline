@@ -43,8 +43,13 @@ type MapSpec = {
   geojsonPath: string;
   /** GeoJSON feature property that holds the region name. */
   featureNameProp: string;
-  /** Fill colours keyed by region name. */
+  /** Fill colours keyed by region name. Takes priority over palette. */
   fills: Record<string, string>;
+  /**
+   * Fallback colour palette — cycled through features not in `fills`.
+   * If omitted, unlisted features fall back to '#cccccc'.
+   */
+  palette?: string[];
   /** Output path for the labeled SVG. */
   outputLabeled: string;
   /** Output path for the blank SVG. */
@@ -54,6 +59,15 @@ type MapSpec = {
 };
 
 type Point = { x: number; y: number };
+
+// ---------------------------------------------------------------------------
+// Default palette — 8 muted map colours, cycled for cities with many features
+// ---------------------------------------------------------------------------
+
+const DEFAULT_PALETTE = [
+  '#e8c8a8', '#e0b8b8', '#d4c9a8', '#e8dfa8',
+  '#b8d4a8', '#c8d4e8', '#d4c8e8', '#e8d4c8',
+];
 
 // ---------------------------------------------------------------------------
 // Map specifications — add new cities/countries here
@@ -74,6 +88,96 @@ const MAP_SPECS: Record<string, MapSpec> = {
     outputLabeled: 'public/images/maps/nyc_labeled.svg',
     outputBlank: 'public/images/maps/nyc_blank.svg',
     tolerance: 2,
+  },
+  london: {
+    datasetPath: 'public/data/landmarks/london.json',
+    geojsonPath: 'scripts/geojson/london_boroughs.geojson',
+    featureNameProp: 'name',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/london_labeled.svg',
+    outputBlank: 'public/images/maps/london_blank.svg',
+    tolerance: 2,
+  },
+  paris: {
+    datasetPath: 'public/data/landmarks/paris.json',
+    geojsonPath: 'scripts/geojson/paris_arrondissements.geojson',
+    featureNameProp: 'l_aroff',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/paris_labeled.svg',
+    outputBlank: 'public/images/maps/paris_blank.svg',
+    tolerance: 1,
+  },
+  rome: {
+    datasetPath: 'public/data/landmarks/rome.json',
+    geojsonPath: 'scripts/geojson/rome_municipi.geojson',
+    featureNameProp: 'etichetta_2',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/rome_labeled.svg',
+    outputBlank: 'public/images/maps/rome_blank.svg',
+    tolerance: 3,
+  },
+  berlin: {
+    datasetPath: 'public/data/landmarks/berlin.json',
+    geojsonPath: 'scripts/geojson/berlin_bezirke.geojson',
+    featureNameProp: 'Gemeinde_name',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/berlin_labeled.svg',
+    outputBlank: 'public/images/maps/berlin_blank.svg',
+    tolerance: 2,
+  },
+  bangalore: {
+    datasetPath: 'public/data/landmarks/bangalore.json',
+    geojsonPath: 'scripts/geojson/india_bangalore.geojson',
+    featureNameProp: 'KGISWardName',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/bangalore_labeled.svg',
+    outputBlank: 'public/images/maps/bangalore_blank.svg',
+    tolerance: 1,
+  },
+  chennai: {
+    datasetPath: 'public/data/landmarks/chennai.json',
+    geojsonPath: 'scripts/geojson/india_chennai.geojson',
+    featureNameProp: 'Zone Name',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/chennai_labeled.svg',
+    outputBlank: 'public/images/maps/chennai_blank.svg',
+    tolerance: 1,
+  },
+  delhi: {
+    datasetPath: 'public/data/landmarks/delhi.json',
+    geojsonPath: 'scripts/geojson/india_delhi.geojson',
+    featureNameProp: 'Ward_Name',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/delhi_labeled.svg',
+    outputBlank: 'public/images/maps/delhi_blank.svg',
+    tolerance: 1,
+  },
+  mumbai: {
+    datasetPath: 'public/data/landmarks/mumbai.json',
+    geojsonPath: 'scripts/geojson/india_mumbai.geojson',
+    featureNameProp: 'name',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/mumbai_labeled.svg',
+    outputBlank: 'public/images/maps/mumbai_blank.svg',
+    tolerance: 1,
+  },
+  kolkata: {
+    datasetPath: 'public/data/landmarks/kolkata.json',
+    geojsonPath: 'scripts/geojson/india_kolkata.geojson',
+    featureNameProp: 'WARD',
+    fills: {},
+    palette: DEFAULT_PALETTE,
+    outputLabeled: 'public/images/maps/kolkata_labeled.svg',
+    outputBlank: 'public/images/maps/kolkata_blank.svg',
+    tolerance: 1,
   },
 };
 
@@ -271,12 +375,24 @@ function buildMap(mapKey: string, spec: MapSpec, toleranceOverride?: number): vo
   const geojson = JSON.parse(fs.readFileSync(geojsonAbs, 'utf-8'));
 
   const features: Array<{ id: string; name: string; fill: string; pathD: string }> = [];
+  let paletteIndex = 0;
+  const paletteCache: Record<string, string> = {};
+
+  function pickFill(name: string): string {
+    if (spec.fills[name]) return spec.fills[name];
+    if (!spec.palette) return '#cccccc';
+    if (!paletteCache[name]) {
+      paletteCache[name] = spec.palette[paletteIndex % spec.palette.length];
+      paletteIndex++;
+    }
+    return paletteCache[name];
+  }
 
   for (const feature of geojson.features) {
     const name: string = feature.properties[spec.featureNameProp] ?? '';
     if (!name) continue;
 
-    const fill = spec.fills[name] ?? '#cccccc';
+    const fill = pickFill(name);
     const pathD = geometryToPathD(feature.geometry, bounds, dims, tolerance);
     if (!pathD) {
       console.warn(`[${mapKey}] Empty path for feature: ${name}`);
