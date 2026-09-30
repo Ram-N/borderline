@@ -183,3 +183,87 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .timer-bar-track { height: 6px; background: #e0e0e0; border-radius: 3px; margin: 0 0 12px; overflow: hidden; }
 .timer-bar-fill { height: 100%; background: #1976D2; border-radius: 3px; transition: width 1s linear; }
 .timer-bar-fill.timer-warning { background: #F44336; }
+
+/* ── LandMark ─────────────────────────────────────────────── */
+
+/* Home grid */
+.landmark-home { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+.landmark-home-header { margin-bottom: 28px; }
+.landmark-home-header h1 { font-size: 2rem; margin: 0 0 6px; }
+.landmark-home-header p { color: #555; margin: 0; }
+.landmark-game-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 520px) { .landmark-game-grid { grid-template-columns: 1fr; } }
+
+.landmark-game-card { border: 2px solid #ddd; border-radius: 10px; padding: 18px; background: #fff; }
+.landmark-game-card--coming-soon { opacity: 0.55; }
+.landmark-game-card h2 { margin: 0 0 6px; font-size: 1rem; }
+.landmark-game-card p { margin: 0 0 12px; font-size: 0.88rem; color: #555; }
+.landmark-card-link { text-decoration: none; color: inherit; display: block; }
+.landmark-card-link:hover .landmark-play-btn { background: #1565c0; }
+.landmark-play-btn { display: inline-block; background: #1976D2; color: #fff; font-size: 0.85rem; font-weight: 600; padding: 6px 16px; border-radius: 6px; }
+.landmark-coming-soon { font-size: 0.8rem; color: #999; font-style: italic; }
+
+/* Where Is It game */
+.where-is-it { max-width: 720px; margin: 0 auto; padding: 12px 16px 24px; }
+.wii-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 0.9rem; color: #555; }
+.wii-progress { font-weight: 600; }
+.wii-difficulty { background: #f0f0f0; border-radius: 4px; padding: 2px 8px; font-size: 0.8rem; }
+.wii-score { font-weight: 700; color: #1976D2; }
+.wii-prompt { text-align: center; margin-bottom: 12px; }
+.wii-landmark-name { font-size: 1.5rem; margin: 0 0 4px; }
+.wii-hint { color: #666; font-size: 0.9rem; margin: 0; }
+
+/* Confidence picker */
+.confidence-picker { margin-bottom: 14px; text-align: center; }
+.confidence-label { font-size: 0.85rem; font-weight: 600; color: #444; margin: 0 0 8px; }
+.confidence-buttons { display: flex; justify-content: center; gap: 10px; }
+.confidence-btn { display: flex; flex-direction: column; align-items: center; padding: 8px 18px; border: 2px solid #ccc; border-radius: 8px; background: #fff; cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+.confidence-btn:hover:not(:disabled) { border-color: #888; }
+.confidence-btn.selected { border-color: #1976D2; background: #E3F2FD; }
+.confidence-btn-label { font-size: 0.9rem; font-weight: 700; }
+.confidence-btn-mult { font-size: 0.75rem; color: #666; margin-top: 2px; }
+.confidence-btn.selected .confidence-btn-mult { color: #1976D2; }
+
+/* Map view */
+.map-view-wrapper { width: 100%; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #c8e6f5; }
+.map-svg { display: block; width: 100%; height: auto; }
+.map-svg--clickable { cursor: crosshair; }
+
+/* Actions row */
+.wii-actions { margin-top: 14px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.wii-btn { padding: 11px 28px; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+.wii-btn-confirm { background: #1976D2; color: #fff; }
+.wii-btn-confirm:disabled { background: #90caf9; cursor: default; }
+.wii-btn-next { background: #4CAF50; color: #fff; }
+.wii-btn-next:hover { background: #43A047; }
+
+/* Distance feedback */
+.distance-feedback { text-align: center; }
+.feedback-distance { font-size: 1.3rem; font-weight: 700; }
+.feedback-dist-label { font-size: 1rem; font-weight: 400; color: #555; }
+.feedback-scores { display: flex; gap: 12px; justify-content: center; font-size: 0.88rem; color: #555; margin-top: 4px; align-items: center; }
+.feedback-final { font-weight: 700; font-size: 1rem; color: #1976D2; }
+.feedback-confidence.bonus { color: #4CAF50; font-weight: 600; }
+.feedback-confidence.penalty { color: #F44336; font-weight: 600; }
+
+/* Results */
+.landmark-results { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
+.landmark-results h1 { font-size: 1.8rem; margin: 0 0 16px; }
+.results-summary { font-size: 1.5rem; margin-bottom: 24px; }
+.results-total-score { font-size: 2.5rem; font-weight: 800; color: #1976D2; }
+.results-max { color: #555; }
+.results-pct { color: #888; font-size: 1.1rem; margin-left: 8px; }
+.results-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 24px; }
+.results-table th { border-bottom: 2px solid #ddd; padding: 8px 10px; text-align: left; color: #555; font-size: 0.8rem; text-transform: uppercase; }
+.results-table td { border-bottom: 1px solid #eee; padding: 8px 10px; }
+.results-score-cell { font-weight: 700; color: #1976D2; }
+.conf-high { color: #e65100; }
+.conf-low  { color: #555; }
+.results-actions { display: flex; gap: 12px; }
+.results-btn { padding: 10px 24px; background: #1976D2; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+.results-btn--secondary { background: #f0f0f0; color: #333; }
+
+/* Shared stubs / error / loading */
+.landmark-stub { padding: 40px; text-align: center; color: #888; }
+.landmark-error { padding: 40px; text-align: center; color: #c62828; }
+.landmark-loading { padding: 40px; text-align: center; color: #555; }

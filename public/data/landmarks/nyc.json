@@ -1,0 +1,76 @@
+{
+  "id": "nyc",
+  "name": "New York City",
+  "bounds": {
+    "minLat": 40.477,
+    "maxLat": 40.917,
+    "minLon": -74.259,
+    "maxLon": -73.700
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    {
+      "id": "central-park",
+      "name": "Central Park",
+      "lat": 40.7851,
+      "lon": -73.9683,
+      "svgX": 416,
+      "svgY": 210,
+      "hint": "A massive rectangular park in the heart of Manhattan"
+    },
+    {
+      "id": "brooklyn-bridge",
+      "name": "Brooklyn Bridge",
+      "lat": 40.7061,
+      "lon": -73.9969,
+      "svgX": 375,
+      "svgY": 336,
+      "hint": "An iconic suspension bridge connecting two boroughs"
+    },
+    {
+      "id": "yankee-stadium",
+      "name": "Yankee Stadium",
+      "lat": 40.8296,
+      "lon": -73.9262,
+      "svgX": 476,
+      "svgY": 139,
+      "hint": "Home of the New York Yankees, in the South Bronx"
+    },
+    {
+      "id": "coney-island",
+      "name": "Coney Island",
+      "lat": 40.5755,
+      "lon": -73.9888,
+      "svgX": 387,
+      "svgY": 543,
+      "hint": "A famous beachfront amusement park in southern Brooklyn"
+    },
+    {
+      "id": "laguardia-airport",
+      "name": "LaGuardia Airport",
+      "lat": 40.7769,
+      "lon": -73.8740,
+      "svgX": 551,
+      "svgY": 223,
+      "hint": "A major airport on the western shore of Queens"
+    },
+    {
+      "id": "staten-island-ferry",
+      "name": "Staten Island Ferry Terminal",
+      "lat": 40.6437,
+      "lon": -74.0754,
+      "svgX": 263,
+      "svgY": 435,
+      "hint": "The northern terminal of a famous free ferry in Staten Island"
+    },
+    {
+      "id": "flushing-meadows",
+      "name": "Flushing Meadows-Corona Park",
+      "lat": 40.7282,
+      "lon": -73.8458,
+      "svgX": 592,
+      "svgY": 300,
+      "hint": "A large Queens park that hosted two World's Fairs"
+    }
+  ]
+}

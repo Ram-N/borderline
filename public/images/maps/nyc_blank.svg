@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700">
+  <!-- Water background -->
+  <rect width="800" height="700" fill="#c8e6f5"/>
+
+  <!-- Staten Island -->
+  <path id="staten-island"
+        d="M 265,435 L 271,448 L 267,487 L 256,541 L 152,571 L 119,608 L 11,643 L 70,541 L 151,455 L 167,448 L 202,441 L 235,437 Z"
+        fill="#b8d4a8" stroke="#777" stroke-width="1.5"/>
+
+  <!-- Brooklyn -->
+  <path id="brooklyn"
+        d="M 375,342 L 407,339 L 438,323 L 518,347 L 539,390 L 512,434 L 451,511 L 428,542 L 396,547 L 376,546 L 366,514 L 340,471 L 336,450 L 353,384 Z"
+        fill="#d4c9a8" stroke="#777" stroke-width="1.5"/>
+
+  <!-- Queens -->
+  <path id="queens"
+        d="M 442,277 L 471,226 L 495,202 L 590,207 L 630,183 L 750,258 L 735,320 L 688,380 L 688,439 L 602,474 L 541,414 L 515,344 L 440,328 Z"
+        fill="#e8dfa8" stroke="#777" stroke-width="1.5"/>
+
+  <!-- Bronx -->
+  <path id="bronx"
+        d="M 485,64 L 472,100 L 472,139 L 485,173 L 534,171 L 601,179 L 700,72 L 627,9 L 504,9 Z"
+        fill="#e0b8b8" stroke="#777" stroke-width="1.5"/>
+
+  <!-- Manhattan -->
+  <path id="manhattan"
+        d="M 346,341 L 375,336 L 402,318 L 411,296 L 411,272 L 418,251 L 440,226 L 445,212
+           L 461,173 L 471,154 L 485,130 L 499,64
+           L 472,75 L 462,105 L 448,130 L 439,173
+           L 416,201 L 391,226 L 381,243 L 379,269 L 368,286 L 362,295 L 352,333 Z"
+        fill="#e8c8a8" stroke="#777" stroke-width="1.5"/>
+
+  <!-- Compass rose -->
+  <g transform="translate(760,668)">
+    <circle r="14" fill="white" stroke="#aaa" stroke-width="1"/>
+    <text x="0" y="-3" font-family="sans-serif" font-size="9" fill="#555" text-anchor="middle">N</text>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#888" stroke-width="1"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#888" stroke-width="1"/>
+  </g>
+</svg>
