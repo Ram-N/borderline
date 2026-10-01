@@ -36,7 +36,7 @@ function GameContent({
   useEffect(() => {
     if (engine.done) {
       navigate('/landmark/results', {
-        state: { rounds: engine.rounds, totalScore: engine.totalScore, difficulty },
+        state: { rounds: engine.rounds, totalScore: engine.totalScore, difficulty, city: mapKey },
       });
     }
   }, [engine.done, engine.rounds, engine.totalScore, difficulty, navigate]);

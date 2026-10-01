@@ -1,11 +1,22 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import type { WhereIsItRound } from '../../types/landmark/game';
 import type { Difficulty } from '../../types/landmark/game';
+import { LANDMARK_MAP_CONFIG } from '../../data/landmarkMapConfig';
+
+const DIFFICULTY_LABELS: Record<Difficulty, string> = {
+  1: 'Tourist',
+  2: 'Traveler',
+  3: 'Explorer',
+  4: 'Cartographer',
+  5: 'Navigator',
+};
 
 type LocationState = {
   rounds: WhereIsItRound[];
   totalScore: number;
   difficulty: Difficulty;
+  city: string;
 };
 
 function formatDistance(km: number): string {
@@ -13,9 +24,17 @@ function formatDistance(km: number): string {
   return `${km.toFixed(2)} km`;
 }
 
+function scoreEmoji(pct: number): string {
+  if (pct >= 90) return '🟢';
+  if (pct >= 70) return '🟡';
+  if (pct >= 50) return '🟠';
+  return '🔴';
+}
+
 export default function LandMarkResults() {
   const location = useLocation();
   const state = location.state as LocationState | null;
+  const [copied, setCopied] = useState(false);
 
   if (!state) {
     return (
@@ -26,9 +45,33 @@ export default function LandMarkResults() {
     );
   }
 
-  const { rounds, totalScore } = state;
+  const { rounds, totalScore, difficulty, city } = state;
   const maxScore = rounds.length * 100;
   const pct = Math.round((totalScore / maxScore) * 100);
+  const cityLabel = LANDMARK_MAP_CONFIG[city]?.label ?? city;
+  const diffLabel = DIFFICULTY_LABELS[difficulty];
+  const emoji = scoreEmoji(pct);
+
+  const shareText =
+    `🗺️ LandMark — ${cityLabel}\n` +
+    `Level: ${diffLabel} · Score: ${totalScore}/${maxScore} pts ${emoji}\n\n` +
+    `Think you can beat that? Try it at landmark.genwise.in`;
+
+  async function handleCopy() {
+    await navigator.clipboard.writeText(shareText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }
+
+  async function handleShare() {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'LandMark', text: shareText });
+      } catch {
+        // user cancelled
+      }
+    }
+  }
 
   return (
     <div className="landmark-results">
@@ -71,6 +114,17 @@ export default function LandMarkResults() {
           ))}
         </tbody>
       </table>
+
+      <div className="results-share-row" style={{ marginTop: '20px' }}>
+        <button className="results-btn results-btn--secondary" onClick={handleCopy}>
+          {copied ? '✓ Copied!' : '📋 Copy results'}
+        </button>
+        {typeof navigator !== 'undefined' && navigator.share && (
+          <button className="results-btn results-btn--secondary" onClick={handleShare}>
+            📤 Share
+          </button>
+        )}
+      </div>
 
       <div className="results-actions">
         <Link to="/landmark/games/where-is-it" className="results-btn">
