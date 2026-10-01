@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:landmark": "tsc -b && vite build --config vite.config.landmark.ts",
     "preview": "vite preview",
     "puzzles:generate": "tsx scripts/generatePuzzles.ts generate",
     "puzzles:audit": "tsx scripts/generatePuzzles.ts audit",
@@ -27,6 +28,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "fast-xml-parser": "^5.8.0",
+    "shapefile": "^0.6.6",
     "simplify-js": "^1.2.4",
     "tsx": "^4.22.4",
     "typescript": "^5.5.4",
