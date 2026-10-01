@@ -56,6 +56,16 @@ type MapSpec = {
   outputBlank: string;
   /** Douglas-Peucker tolerance in SVG pixels. */
   tolerance: number;
+  /**
+   * When true, the labeled SVG omits the auto-generated per-feature text
+   * labels. Use together with customLabels to supply a hand-curated layer.
+   */
+  suppressFeatureLabels?: boolean;
+  /**
+   * Hand-curated neighbourhood labels projected from lat/lon and rendered
+   * as an overlay on the labeled SVG only.
+   */
+  customLabels?: Array<{ name: string; lat: number; lon: number }>;
 };
 
 type Point = { x: number; y: number };
@@ -158,6 +168,23 @@ const MAP_SPECS: Record<string, MapSpec> = {
     outputLabeled: 'public/images/maps/delhi_labeled.svg',
     outputBlank: 'public/images/maps/delhi_blank.svg',
     tolerance: 1,
+    suppressFeatureLabels: true,
+    customLabels: [
+      { name: 'Old Delhi',        lat: 28.6562, lon: 77.2302 },
+      { name: 'Connaught Place',  lat: 28.6315, lon: 77.2167 },
+      { name: 'Karol Bagh',       lat: 28.6519, lon: 77.1909 },
+      { name: 'Lajpat Nagar',     lat: 28.5678, lon: 77.2431 },
+      { name: 'Saket',            lat: 28.5244, lon: 77.2167 },
+      { name: 'Mehrauli',         lat: 28.5197, lon: 77.1855 },
+      { name: 'Hauz Khas',        lat: 28.5494, lon: 77.2001 },
+      { name: 'Nehru Place',      lat: 28.5490, lon: 77.2503 },
+      { name: 'Janakpuri',        lat: 28.6289, lon: 77.0833 },
+      { name: 'Dwarka',           lat: 28.5823, lon: 77.0500 },
+      { name: 'Rohini',           lat: 28.7495, lon: 77.0947 },
+      { name: 'Pitampura',        lat: 28.6999, lon: 77.1334 },
+      { name: 'Shahdara',         lat: 28.6725, lon: 77.2940 },
+      { name: 'Vasant Kunj',      lat: 28.5234, lon: 77.1565 },
+    ],
   },
   mumbai: {
     datasetPath: 'public/data/landmarks/mumbai.json',
@@ -178,6 +205,22 @@ const MAP_SPECS: Record<string, MapSpec> = {
     outputLabeled: 'public/images/maps/kolkata_labeled.svg',
     outputBlank: 'public/images/maps/kolkata_blank.svg',
     tolerance: 1,
+    suppressFeatureLabels: true,
+    customLabels: [
+      { name: 'Shyambazar',   lat: 22.5922, lon: 88.3688 },
+      { name: 'Dum Dum',      lat: 22.6340, lon: 88.3956 },
+      { name: 'Ultadanga',    lat: 22.5775, lon: 88.3906 },
+      { name: 'New Market',   lat: 22.5626, lon: 88.3516 },
+      { name: 'Park Street',  lat: 22.5508, lon: 88.3521 },
+      { name: 'Alipore',      lat: 22.5398, lon: 88.3299 },
+      { name: 'Ballygunge',   lat: 22.5263, lon: 88.3636 },
+      { name: 'Kasba',        lat: 22.5133, lon: 88.3771 },
+      { name: 'Jadavpur',     lat: 22.4967, lon: 88.3701 },
+      { name: 'Tollygunge',   lat: 22.4934, lon: 88.3448 },
+      { name: 'Behala',       lat: 22.4967, lon: 88.3097 },
+      { name: 'Salt Lake',    lat: 22.5795, lon: 88.4169 },
+      { name: 'Gariahat',     lat: 22.5197, lon: 88.3681 },
+    ],
   },
 };
 
@@ -302,6 +345,7 @@ function buildSvg(
   features: Array<{ id: string; name: string; fill: string; pathD: string }>,
   dims: SvgDimensions,
   labeled: boolean,
+  opts: { suppressFeatureLabels?: boolean; customLabelsSvg?: string } = {},
 ): string {
   const W = dims.width;
   const H = dims.height;
@@ -313,7 +357,7 @@ function buildSvg(
     )
     .join('\n');
 
-  const labels = labeled
+  const featureLabels = labeled && !opts.suppressFeatureLabels
     ? features
         .map(({ name, pathD }) => {
           const c = featureCentroid(pathD);
@@ -338,7 +382,8 @@ function buildSvg(
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">`,
     `  <rect width="${W}" height="${H}" fill="#c8e6f5"/>`,
     paths,
-    ...(labeled && labels ? [labels] : []),
+    ...(featureLabels ? [featureLabels] : []),
+    ...(labeled && opts.customLabelsSvg ? [opts.customLabelsSvg] : []),
     compass,
     `</svg>`,
   ];
@@ -408,7 +453,27 @@ function buildMap(mapKey: string, spec: MapSpec, toleranceOverride?: number): vo
     process.exit(1);
   }
 
-  const labeledSvg = buildSvg(features, dims, true);
+  // Build optional custom-label overlay (projected from lat/lon, labeled SVG only)
+  let customLabelsSvg = '';
+  if (spec.customLabels) {
+    customLabelsSvg = spec.customLabels
+      .map(({ name, lat, lon }) => {
+        const pt = project(lon, lat, bounds, dims);
+        const x = Math.round(pt.x);
+        const y = Math.round(pt.y);
+        return (
+          `  <text x="${x}" y="${y}" font-family="sans-serif" font-size="13" font-weight="bold" ` +
+          `fill="#333" text-anchor="middle" ` +
+          `paint-order="stroke" stroke="#fff" stroke-width="3" stroke-linejoin="round">${name}</text>`
+        );
+      })
+      .join('\n');
+  }
+
+  const labeledSvg = buildSvg(features, dims, true, {
+    suppressFeatureLabels: spec.suppressFeatureLabels,
+    customLabelsSvg,
+  });
   const blankSvg = buildSvg(features, dims, false);
 
   const outLabeled = path.resolve(root, spec.outputLabeled);
