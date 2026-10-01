@@ -242,15 +242,19 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .wii-hint { color: #666; font-size: 0.9rem; margin: 0; }
 
 /* Confidence picker */
-.confidence-picker { margin-bottom: 14px; text-align: center; }
-.confidence-label { font-size: 0.85rem; font-weight: 600; color: #444; margin: 0 0 8px; }
-.confidence-buttons { display: flex; justify-content: center; gap: 10px; }
-.confidence-btn { display: flex; flex-direction: column; align-items: center; padding: 8px 18px; border: 2px solid #ccc; border-radius: 8px; background: #fff; cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+.confidence-picker { text-align: center; }
+.confidence-label { font-size: 0.8rem; font-weight: 600; color: #666; margin: 0 0 6px; }
+.confidence-buttons { display: flex; justify-content: center; gap: 8px; }
+.confidence-btn { display: flex; flex-direction: column; align-items: center; padding: 7px 14px; border: 2px solid #ccc; border-radius: 8px; background: #fff; cursor: pointer; transition: border-color 0.15s, background 0.15s; }
 .confidence-btn:hover:not(:disabled) { border-color: #888; }
 .confidence-btn.selected { border-color: #1976D2; background: #E3F2FD; }
-.confidence-btn-label { font-size: 0.9rem; font-weight: 700; }
-.confidence-btn-mult { font-size: 0.75rem; color: #666; margin-top: 2px; }
+.confidence-btn-label { font-size: 0.88rem; font-weight: 700; }
+.confidence-btn-mult { font-size: 0.72rem; color: #666; margin-top: 1px; }
 .confidence-btn.selected .confidence-btn-mult { color: #1976D2; }
+
+/* Question action row: confidence + confirm side by side */
+.wii-question-row { display: flex; align-items: center; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.wii-question-row .confidence-picker { margin: 0; }
 
 /* Map view */
 .map-view-wrapper { width: 100%; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #c8e6f5; }

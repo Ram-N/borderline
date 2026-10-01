@@ -66,14 +66,6 @@ function GameContent({
         )}
       </div>
 
-      {/* Confidence picker — shown in question phase before pin is confirmed */}
-      {engine.phase === 'question' && (
-        <ConfidencePicker
-          value={engine.pendingConfidence}
-          onChange={engine.setConfidence}
-        />
-      )}
-
       {/* Map */}
       <WhereIsItMapView
         svgSrc={svgSrc}
@@ -88,16 +80,22 @@ function GameContent({
         onMapClick={engine.placePin}
       />
 
-      {/* Action buttons */}
+      {/* Action row */}
       <div className="wii-actions">
         {engine.phase === 'question' ? (
-          <button
-            className="wii-btn wii-btn-confirm"
-            onClick={engine.confirm}
-            disabled={!engine.pendingPin || !engine.pendingConfidence}
-          >
-            Confirm Pin
-          </button>
+          <div className="wii-question-row">
+            <ConfidencePicker
+              value={engine.pendingConfidence}
+              onChange={engine.setConfidence}
+            />
+            <button
+              className="wii-btn wii-btn-confirm"
+              onClick={engine.confirm}
+              disabled={!engine.pendingPin || !engine.pendingConfidence}
+            >
+              Confirm Pin
+            </button>
+          </div>
         ) : (
           <>
             {revealedRound?.distanceKm !== undefined && (
