@@ -1,101 +1,90 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import CityPicker from '../../components/landmark/CityPicker';
 
-type GameCard = {
-  id: string;
-  title: string;
-  description: string;
-  path: string;
-  available: boolean;
-};
+const DIFFICULTY_LEVELS = [
+  { value: 1, name: 'Tourist',      description: 'Labeled map, hints shown' },
+  { value: 2, name: 'Traveler',     description: 'Labeled map, no hints' },
+  { value: 3, name: 'Explorer',     description: 'Labeled map, no hints' },
+  { value: 4, name: 'Cartographer', description: 'Blank map, no hints' },
+  { value: 5, name: 'Navigator',    description: 'Blank map, no hints' },
+];
 
-const GAMES: GameCard[] = [
-  {
-    id: 'where-is-it',
-    title: 'Where Is It?',
-    description: 'Drop a pin on the map to locate a landmark.',
-    path: '/landmark/games/where-is-it',
-    available: true,
-  },
-  {
-    id: 'match-the-map',
-    title: 'Match the Map',
-    description: 'Match labeled outlines to their correct positions.',
-    path: '/landmark/games/match-the-map',
-    available: false,
-  },
-  {
-    id: 'whats-between',
-    title: "What's Between?",
-    description: 'Identify the landmark that lies between two others.',
-    path: '/landmark/games/whats-between',
-    available: false,
-  },
-  {
-    id: 'put-them-in-order',
-    title: 'Put Them in Order',
-    description: 'Sort landmarks by direction, distance, or latitude.',
-    path: '/landmark/games/put-them-in-order',
-    available: false,
-  },
-  {
-    id: 'connect-the-dots',
-    title: 'Connect the Dots',
-    description: 'Draw the correct route between a series of landmarks.',
-    path: '/landmark/games/connect-the-dots',
-    available: false,
-  },
-  {
-    id: 'which-doesnt-belong',
-    title: "Which One Doesn't Belong?",
-    description: 'Pick the landmark that is out of place geographically.',
-    path: '/landmark/games/which-doesnt-belong',
-    available: false,
-  },
-  {
-    id: 'build-the-map',
-    title: 'Build the Map',
-    description: 'Place all the landmarks onto a blank map from memory.',
-    path: '/landmark/games/build-the-map',
-    available: false,
-  },
-  {
-    id: 'zoom-in',
-    title: 'Zoom In',
-    description: 'Identify a landmark from a progressively revealed close-up.',
-    path: '/landmark/games/zoom-in',
-    available: false,
-  },
+const GAMES: { id: string; title: string; description: string; available: boolean }[] = [
+  { id: 'where-is-it',          title: 'Where Is It?',            description: 'Drop a pin on the map to locate a landmark.',                    available: true  },
+  { id: 'match-the-map',        title: 'Match the Map',           description: 'Match labeled outlines to their correct positions.',              available: false },
+  { id: 'whats-between',        title: "What's Between?",         description: 'Identify the landmark that lies between two others.',             available: false },
+  { id: 'put-them-in-order',    title: 'Put Them in Order',       description: 'Sort landmarks by direction, distance, or latitude.',            available: false },
+  { id: 'connect-the-dots',     title: 'Connect the Dots',        description: 'Draw the correct route between a series of landmarks.',          available: false },
+  { id: 'which-doesnt-belong',  title: "Which One Doesn't Belong?", description: 'Pick the landmark that is out of place geographically.',       available: false },
+  { id: 'build-the-map',        title: 'Build the Map',           description: 'Place all the landmarks onto a blank map from memory.',          available: false },
+  { id: 'zoom-in',              title: 'Zoom In',                 description: 'Identify a landmark from a progressively revealed close-up.',    available: false },
 ];
 
 export default function LandMarkHome() {
+  const navigate = useNavigate();
+
+  const [city, setCity]           = useState<string>(() => sessionStorage.getItem('lm_city')       ?? 'nyc');
+  const [gameId, setGameId]       = useState<string>(() => sessionStorage.getItem('lm_game')       ?? 'where-is-it');
+  const [difficulty, setDifficulty] = useState<number>(() => Number(sessionStorage.getItem('lm_difficulty')) || 1);
+
+  function startGame() {
+    sessionStorage.setItem('lm_city',       city);
+    sessionStorage.setItem('lm_game',       gameId);
+    sessionStorage.setItem('lm_difficulty', String(difficulty));
+    const params = new URLSearchParams({ map: city, difficulty: String(difficulty) });
+    navigate(`/landmark/games/${gameId}?${params.toString()}`);
+  }
+
   return (
-    <div className="landmark-home">
-      <div className="landmark-home-header">
+    <div className="lm-home">
+      <div className="lm-home-header">
         <h1>LandMark</h1>
         <p>Eight spatial-reasoning games to sharpen your geography skills.</p>
       </div>
-      <div className="landmark-game-grid">
+
+      <hr className="home-divider" />
+
+      <CityPicker value={city} onChange={setCity} />
+
+      <hr className="home-divider" />
+
+      <div className="lm-section-label">Game Mode</div>
+      <div className="lm-game-grid">
         {GAMES.map((game) => (
-          <div
+          <button
             key={game.id}
-            className={`landmark-game-card${game.available ? '' : ' landmark-game-card--coming-soon'}`}
+            disabled={!game.available}
+            className={`lm-game-tile${!game.available ? ' lm-game-tile--soon' : ''}${gameId === game.id ? ' active' : ''}`}
+            onClick={() => game.available && setGameId(game.id)}
+            title={game.available ? game.description : 'Coming soon'}
           >
-            {game.available ? (
-              <Link to={game.path} className="landmark-card-link">
-                <h2>{game.title}</h2>
-                <p>{game.description}</p>
-                <span className="landmark-play-btn">Play</span>
-              </Link>
-            ) : (
-              <>
-                <h2>{game.title}</h2>
-                <p>{game.description}</p>
-                <span className="landmark-coming-soon">Coming soon</span>
-              </>
-            )}
-          </div>
+            <span className="lm-game-title">{game.title}</span>
+            {!game.available && <span className="lm-game-soon-badge">Soon</span>}
+          </button>
         ))}
       </div>
+
+      <hr className="home-divider" />
+
+      <div className="lm-section-label">Difficulty</div>
+      <div className="lm-difficulty-buttons">
+        {DIFFICULTY_LEVELS.map((level) => (
+          <button
+            key={level.value}
+            className={`difficulty-btn${difficulty === level.value ? ' active' : ''}`}
+            onClick={() => setDifficulty(level.value)}
+            title={level.description}
+          >
+            <span className="level-num">{level.value}</span>
+            <span className="level-name">{level.name}</span>
+          </button>
+        ))}
+      </div>
+
+      <button className="start-btn" onClick={startGame}>
+        Start
+      </button>
     </div>
   );
 }

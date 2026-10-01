@@ -186,14 +186,42 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 
 /* ── LandMark ─────────────────────────────────────────────── */
 
-/* Home grid */
+/* LandMark setup home */
+.lm-home { max-width: 560px; margin: 0 auto; padding: 20px 16px; }
+.lm-home-header { margin-bottom: 4px; }
+.lm-home-header h1 { font-size: 2rem; margin: 0 0 4px; }
+.lm-home-header p { color: #666; margin: 0; }
+
+.lm-section-label { font-size: 0.8rem; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin: 16px 0 8px; }
+
+/* City picker */
+.lm-city-picker { }
+.lm-city-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+@media (max-width: 520px) { .lm-city-grid { grid-template-columns: 1fr 1fr; } }
+.lm-city-tile { padding: 10px 6px; border: 2px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; font-size: 0.88rem; font-weight: 500; text-align: center; transition: border-color 0.15s; }
+.lm-city-tile:hover { border-color: #999; }
+.lm-city-tile.active { border-color: #1976D2; background: #E3F2FD; color: #1976D2; font-weight: 600; }
+
+/* Game mode picker */
+.lm-game-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 520px) { .lm-game-grid { grid-template-columns: 1fr; } }
+.lm-game-tile { position: relative; padding: 10px 14px; border: 2px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; font-size: 0.9rem; text-align: left; transition: border-color 0.15s; }
+.lm-game-tile:not(:disabled):hover { border-color: #999; }
+.lm-game-tile.active { border-color: #1976D2; background: #E3F2FD; color: #1976D2; font-weight: 600; }
+.lm-game-tile--soon { opacity: 0.45; cursor: default; }
+.lm-game-title { display: block; }
+.lm-game-soon-badge { position: absolute; top: 6px; right: 8px; font-size: 0.7rem; color: #999; font-style: italic; }
+
+/* Difficulty row (reuse .difficulty-btn but override row layout) */
+.lm-difficulty-buttons { display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* Keep old landmark-* classes for any pages still referencing them */
 .landmark-home { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
 .landmark-home-header { margin-bottom: 28px; }
 .landmark-home-header h1 { font-size: 2rem; margin: 0 0 6px; }
 .landmark-home-header p { color: #555; margin: 0; }
 .landmark-game-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 @media (max-width: 520px) { .landmark-game-grid { grid-template-columns: 1fr; } }
-
 .landmark-game-card { border: 2px solid #ddd; border-radius: 10px; padding: 18px; background: #fff; }
 .landmark-game-card--coming-soon { opacity: 0.55; }
 .landmark-game-card h2 { margin: 0 0 6px; font-size: 1rem; }
