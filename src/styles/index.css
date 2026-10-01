@@ -257,8 +257,8 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .wii-question-row .confidence-picker { margin: 0; }
 
 /* Map view */
-.map-view-wrapper { width: 100%; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #c8e6f5; }
-.map-svg { display: block; width: 100%; height: auto; }
+.map-view-wrapper { display: flex; justify-content: center; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #c8e6f5; }
+.map-svg { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100vh - 230px); min-height: 200px; }
 .map-svg--clickable { cursor: crosshair; }
 
 /* Actions row */
