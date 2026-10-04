@@ -215,6 +215,63 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 /* Difficulty row (reuse .difficulty-btn but override row layout) */
 .lm-difficulty-buttons { display: flex; gap: 6px; flex-wrap: wrap; }
 
+/* ── LandMark Home — Wizard redesign ─────────────────────── */
+.lm-title { font-size: 2rem; font-weight: 800; margin: 0 0 24px; }
+
+.lm-wizard-step { margin-bottom: 8px; }
+.lm-wizard-step--reveal { border-top: 2px solid #eee; padding-top: 20px; margin-top: 20px; }
+
+.lm-step-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.lm-step-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: #1976D2; color: #fff;
+  font-size: 0.75rem; font-weight: 700; flex-shrink: 0;
+}
+.lm-step-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #666; }
+
+/* Game cards */
+.lm-game-list { display: flex; flex-direction: column; gap: 8px; }
+.lm-game-card {
+  display: flex; flex-direction: column; align-items: flex-start;
+  padding: 12px 16px; border: 2px solid #ddd; border-radius: 10px;
+  background: #fff; cursor: pointer; text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+}
+.lm-game-card:hover { border-color: #999; }
+.lm-game-card.active { border-color: #1976D2; background: #E3F2FD; }
+.lm-game-card-title { font-size: 1rem; font-weight: 700; color: #222; }
+.lm-game-card.active .lm-game-card-title { color: #1565C0; }
+.lm-game-card-desc { font-size: 0.82rem; color: #888; margin-top: 3px; }
+.lm-game-card.active .lm-game-card-desc { color: #1976D2; opacity: 0.85; }
+
+/* Map / region tiles */
+.lm-tile-group { margin-bottom: 14px; }
+.lm-tile-group-label { font-size: 0.74rem; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+.lm-tile-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.lm-tile {
+  padding: 8px 16px; border: 2px solid #ddd; border-radius: 8px;
+  background: #fff; cursor: pointer; font-size: 0.9rem; font-weight: 500;
+  transition: border-color 0.15s, background 0.15s;
+}
+.lm-tile:hover { border-color: #999; }
+.lm-tile.active { border-color: #1976D2; background: #E3F2FD; color: #1565C0; font-weight: 600; }
+
+/* Difficulty */
+.lm-diff-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.lm-diff-btn {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 8px 12px; border: 2px solid #ddd; border-radius: 8px;
+  background: #fff; cursor: pointer; min-width: 72px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.lm-diff-btn:hover { border-color: #999; }
+.lm-diff-btn.active { border-color: #1976D2; background: #E3F2FD; }
+.lm-diff-num { font-size: 1.1rem; font-weight: 700; color: #333; }
+.lm-diff-btn.active .lm-diff-num { color: #1565C0; }
+.lm-diff-name { font-size: 0.72rem; color: #888; margin-top: 2px; }
+.lm-diff-btn.active .lm-diff-name { color: #1976D2; }
+
 /* Keep old landmark-* classes for any pages still referencing them */
 .landmark-home { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
 .landmark-home-header { margin-bottom: 28px; }
