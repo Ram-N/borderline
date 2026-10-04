@@ -142,11 +142,8 @@ export default function LandMarkResults() {
       </div>
 
       <div className="results-actions">
-        <Link to="/landmark/games/where-is-it" className="results-btn">
+        <Link to="/landmark" className="results-btn">
           Play Again
-        </Link>
-        <Link to="/landmark" className="results-btn results-btn--secondary">
-          All Games
         </Link>
       </div>
     </div>
