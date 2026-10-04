@@ -4,6 +4,7 @@ export type LandmarkMapConfig = {
   labeledSvg: string;       // SVG with borough/area labels
   blankSvg: string;         // SVG without labels (difficulty 4-5)
   defaultDifficulty: 1 | 2 | 3 | 4 | 5;
+  diagonalKm?: number;      // if set, scoring thresholds scale as fractions of this diagonal
 };
 
 export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
@@ -83,5 +84,6 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     labeledSvg: '/images/maps/africa_boundaries.svg',
     blankSvg: '/images/maps/africa_outline.svg',
     defaultDifficulty: 1,
+    diagonalKm: 10924,  // haversine(-35.5,-18.5 → 38.0,52.0)
   },
 };

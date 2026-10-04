@@ -13,6 +13,7 @@ type Config = {
   dataset: LandmarkDataset;
   difficulty: Difficulty;
   n: number; // number of rounds
+  diagonalKm?: number; // if provided, score thresholds scale with map size
 };
 
 type State = {
@@ -55,6 +56,7 @@ export default function useWhereIsItEngine({
   dataset,
   difficulty,
   n,
+  diagonalKm,
 }: Config): Engine {
   const [state, setState] = useState<State>(() => ({
     rounds: pickLandmarks(dataset, n),
@@ -89,7 +91,7 @@ export default function useWhereIsItEngine({
 
       const { lat: correctLat, lon: correctLon } = round.landmark;
       const distanceKm = haversineKm(pinLat, pinLon, correctLat, correctLon);
-      const baseScore = distanceToScore(distanceKm, difficulty);
+      const baseScore = distanceToScore(distanceKm, difficulty, diagonalKm);
       const finalScore = applyConfidence(baseScore, prev.pendingConfidence);
 
       const updatedRound: WhereIsItRound = {

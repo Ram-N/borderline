@@ -31,7 +31,7 @@ function GameContent({
   const cfg = LANDMARK_MAP_CONFIG[mapKey];
   const svgSrc = difficulty >= 4 ? cfg.blankSvg : cfg.labeledSvg;
 
-  const engine = useWhereIsItEngine({ dataset, difficulty, n });
+  const engine = useWhereIsItEngine({ dataset, difficulty, n, diagonalKm: cfg.diagonalKm });
 
   useEffect(() => {
     if (engine.done) {
