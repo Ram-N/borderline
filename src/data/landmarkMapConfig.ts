@@ -77,4 +77,11 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     blankSvg: '/images/maps/kolkata_blank.svg',
     defaultDifficulty: 1,
   },
+  africa_cities: {
+    label: 'African Cities',
+    dataUrl: '/data/landmarks/africa_cities.json',
+    labeledSvg: '/images/maps/africa_boundaries.svg',
+    blankSvg: '/images/maps/africa_outline.svg',
+    defaultDifficulty: 1,
+  },
 };

@@ -9,8 +9,9 @@ const GAMES = [
 ];
 
 const CITY_GROUPS = [
-  { label: 'World Cities',  keys: ['nyc', 'london', 'paris', 'rome', 'berlin'] },
-  { label: 'Indian Cities', keys: ['bangalore', 'chennai', 'delhi', 'mumbai', 'kolkata'] },
+  { label: 'World Cities',   keys: ['nyc', 'london', 'paris', 'rome', 'berlin'] },
+  { label: 'Indian Cities',  keys: ['bangalore', 'chennai', 'delhi', 'mumbai', 'kolkata'] },
+  { label: 'African Cities', keys: ['africa_cities'] },
 ];
 
 const REGION_MAPS = [

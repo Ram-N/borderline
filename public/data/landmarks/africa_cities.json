@@ -1,0 +1,193 @@
+{
+  "id": "africa_cities",
+  "name": "African Cities",
+  "bounds": {
+    "minLat": -35.5,
+    "maxLat": 38,
+    "minLon": -18.5,
+    "maxLon": 52
+  },
+  "viewBox": "0 0 950 1000",
+  "landmarks": [
+    {
+      "id": "cairo",
+      "name": "Cairo",
+      "lat": 30.065,
+      "lon": 31.25,
+      "svgX": 670,
+      "svgY": 108,
+      "hint": "Africa's largest city, home to the Pyramids of Giza"
+    },
+    {
+      "id": "lagos",
+      "name": "Lagos",
+      "lat": 6.524,
+      "lon": 3.379,
+      "svgX": 295,
+      "svgY": 428,
+      "hint": "Nigeria's commercial capital, Africa's most populous city"
+    },
+    {
+      "id": "kinshasa",
+      "name": "Kinshasa",
+      "lat": -4.322,
+      "lon": 15.322,
+      "svgX": 456,
+      "svgY": 576,
+      "hint": "Capital of DR Congo on the Congo River"
+    },
+    {
+      "id": "johannesburg",
+      "name": "Johannesburg",
+      "lat": -26.204,
+      "lon": 28.045,
+      "svgX": 627,
+      "svgY": 874,
+      "hint": "South Africa's largest city and economic hub"
+    },
+    {
+      "id": "nairobi",
+      "name": "Nairobi",
+      "lat": -1.286,
+      "lon": 36.82,
+      "svgX": 745,
+      "svgY": 535,
+      "hint": "The Green City in the Sun, Kenya's capital"
+    },
+    {
+      "id": "dar-es-salaam",
+      "name": "Dar es Salaam",
+      "lat": -6.793,
+      "lon": 39.208,
+      "svgX": 778,
+      "svgY": 609,
+      "hint": "Tanzania's largest port city"
+    },
+    {
+      "id": "addis-ababa",
+      "name": "Addis Ababa",
+      "lat": 9.025,
+      "lon": 38.747,
+      "svgX": 771,
+      "svgY": 394,
+      "hint": "Ethiopia's capital and seat of the African Union"
+    },
+    {
+      "id": "casablanca",
+      "name": "Casablanca",
+      "lat": 33.573,
+      "lon": -7.589,
+      "svgX": 147,
+      "svgY": 60,
+      "hint": "Morocco's largest city and economic capital"
+    },
+    {
+      "id": "khartoum",
+      "name": "Khartoum",
+      "lat": 15.551,
+      "lon": 32.532,
+      "svgX": 688,
+      "svgY": 305,
+      "hint": "Sudan's capital at the confluence of the two Niles"
+    },
+    {
+      "id": "accra",
+      "name": "Accra",
+      "lat": 5.558,
+      "lon": -0.201,
+      "svgX": 247,
+      "svgY": 441,
+      "hint": "Capital of Ghana on the Gulf of Guinea"
+    },
+    {
+      "id": "abidjan",
+      "name": "Abidjan",
+      "lat": 5.354,
+      "lon": -4.001,
+      "svgX": 195,
+      "svgY": 444,
+      "hint": "C\u00f4te d'Ivoire's largest city"
+    },
+    {
+      "id": "dakar",
+      "name": "Dakar",
+      "lat": 14.716,
+      "lon": -17.467,
+      "svgX": 14,
+      "svgY": 317,
+      "hint": "Senegal's capital on Africa's westernmost point"
+    },
+    {
+      "id": "kampala",
+      "name": "Kampala",
+      "lat": 0.347,
+      "lon": 32.582,
+      "svgX": 688,
+      "svgY": 512,
+      "hint": "Uganda's capital, city of seven hills"
+    },
+    {
+      "id": "tunis",
+      "name": "Tunis",
+      "lat": 36.818,
+      "lon": 10.165,
+      "svgX": 386,
+      "svgY": 16,
+      "hint": "Capital of Tunisia, near ancient Carthage"
+    },
+    {
+      "id": "algiers",
+      "name": "Algiers",
+      "lat": 36.737,
+      "lon": 3.086,
+      "svgX": 291,
+      "svgY": 17,
+      "hint": "Algeria's capital, known as La Blanche (The White)"
+    },
+    {
+      "id": "lusaka",
+      "name": "Lusaka",
+      "lat": -15.416,
+      "lon": 28.283,
+      "svgX": 630,
+      "svgY": 727,
+      "hint": "Capital of Zambia in south-central Africa"
+    },
+    {
+      "id": "luanda",
+      "name": "Luanda",
+      "lat": -8.838,
+      "lon": 13.234,
+      "svgX": 428,
+      "svgY": 637,
+      "hint": "Angola's coastal capital"
+    },
+    {
+      "id": "harare",
+      "name": "Harare",
+      "lat": -17.829,
+      "lon": 31.053,
+      "svgX": 668,
+      "svgY": 760,
+      "hint": "Capital of Zimbabwe, formerly Salisbury"
+    },
+    {
+      "id": "mogadishu",
+      "name": "Mogadishu",
+      "lat": 2.046,
+      "lon": 45.341,
+      "svgX": 860,
+      "svgY": 489,
+      "hint": "Somalia's capital on the Indian Ocean"
+    },
+    {
+      "id": "tripoli",
+      "name": "Tripoli",
+      "lat": 32.902,
+      "lon": 13.18,
+      "svgX": 427,
+      "svgY": 69,
+      "hint": "Libya's capital on the Mediterranean coast"
+    }
+  ]
+}
