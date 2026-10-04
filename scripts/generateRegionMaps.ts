@@ -128,7 +128,8 @@ const REGION_SPECS: Record<string, RegionSpec> = {
     geojsonPath: 'scripts/geojson/ne_50m_countries.geojson',
     featureNameProp: 'NAME',
     featureFilter: (props) =>
-      props['CONTINENT'] === 'Africa' && props['NAME'] !== 'Somaliland',
+      props['CONTINENT'] === 'Africa' &&
+      !['Somaliland', 'Cabo Verde', 'Comoros', 'São Tomé and Principe'].includes(props['NAME'] as string),
     nameOverrides: {
       'Central African Rep.': 'Central African Republic',
       'Dem. Rep. Congo':       'DR Congo',
