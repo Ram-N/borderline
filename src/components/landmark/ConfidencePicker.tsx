@@ -7,9 +7,9 @@ type Props = {
 };
 
 const OPTIONS: { level: ConfidenceLevel; label: string; multiplier: string; note: string }[] = [
-  { level: 'low',    label: 'Low',    multiplier: '0.7×', note: 'plays it safe' },
-  { level: 'medium', label: 'Medium', multiplier: '1.0×', note: 'standard' },
-  { level: 'high',   label: 'High',   multiplier: '1.4×', note: '0 pts if score < 50' },
+  { level: 'low',    label: 'Low',    multiplier: '≥15',  note: '0.5× score, but guaranteed 15 pts minimum' },
+  { level: 'medium', label: 'Medium', multiplier: '1.0×', note: 'standard — no risk, no bonus' },
+  { level: 'high',   label: 'High',   multiplier: '1.4×', note: '0 pts if score < 25 (overconfidence penalty)' },
 ];
 
 export default function ConfidencePicker({ value, onChange, disabled }: Props) {

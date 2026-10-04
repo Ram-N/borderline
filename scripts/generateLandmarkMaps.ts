@@ -62,6 +62,18 @@ type MapSpec = {
    */
   suppressFeatureLabels?: boolean;
   /**
+   * Limit auto-generated feature labels to the N largest features by
+   * bounding-box area. Useful for maps with many small sub-regions (e.g.
+   * 200+ wards) where labelling every feature is unreadable.
+   * Ignored when suppressFeatureLabels is true.
+   */
+  maxLabels?: number;
+  /**
+   * SVG stroke-width for region borders. Defaults to 1.
+   * Use 0.5 for dense maps where thin borders look cleaner.
+   */
+  strokeWidth?: number;
+  /**
    * Hand-curated neighbourhood labels projected from lat/lon and rendered
    * as an overlay on the labeled SVG only.
    */
@@ -148,6 +160,8 @@ const MAP_SPECS: Record<string, MapSpec> = {
     outputLabeled: 'public/images/maps/bangalore_labeled.svg',
     outputBlank: 'public/images/maps/bangalore_blank.svg',
     tolerance: 1,
+    maxLabels: 8,   // 243 wards — only label the 8 largest by area
+    strokeWidth: 0.5,
   },
   chennai: {
     datasetPath: 'public/data/landmarks/chennai.json',
@@ -332,6 +346,20 @@ function featureCentroid(pathD: string): Point {
   return { x: (minX + maxX) / 2, y: (minY + maxY) / 2 };
 }
 
+/** Bounding-box area of a path — used to rank features by size for label selection. */
+function pathBboxArea(pathD: string): number {
+  const nums = [...pathD.matchAll(/([-\d.]+),([-\d.]+)/g)].map((m) => ({
+    x: parseFloat(m[1]),
+    y: parseFloat(m[2]),
+  }));
+  if (nums.length === 0) return 0;
+  const minX = Math.min(...nums.map((p) => p.x));
+  const maxX = Math.max(...nums.map((p) => p.x));
+  const minY = Math.min(...nums.map((p) => p.y));
+  const maxY = Math.max(...nums.map((p) => p.y));
+  return (maxX - minX) * (maxY - minY);
+}
+
 /** Convert a feature name to a kebab-case id (e.g. "Staten Island" → "staten-island"). */
 function toKebab(name: string): string {
   return name.toLowerCase().replace(/\s+/g, '-');
@@ -345,20 +373,36 @@ function buildSvg(
   features: Array<{ id: string; name: string; fill: string; pathD: string }>,
   dims: SvgDimensions,
   labeled: boolean,
-  opts: { suppressFeatureLabels?: boolean; customLabelsSvg?: string } = {},
+  opts: {
+    suppressFeatureLabels?: boolean;
+    customLabelsSvg?: string;
+    /** Only label the N largest features by bounding-box area. */
+    maxLabels?: number;
+    /** SVG stroke-width for region borders. Defaults to 1. */
+    strokeWidth?: number;
+  } = {},
 ): string {
   const W = dims.width;
   const H = dims.height;
+  const sw = opts.strokeWidth ?? 1;
 
   const paths = features
     .map(
       ({ id, fill, pathD }) =>
-        `  <path id="${id}" d="${pathD}" fill="${fill}" stroke="#777" stroke-width="1"/>`,
+        `  <path id="${id}" d="${pathD}" fill="${fill}" stroke="#777" stroke-width="${sw}"/>`,
     )
     .join('\n');
 
+  // When maxLabels is set, rank features by area and keep only the largest N.
+  const labelFeatures =
+    labeled && !opts.suppressFeatureLabels && opts.maxLabels !== undefined
+      ? [...features]
+          .sort((a, b) => pathBboxArea(b.pathD) - pathBboxArea(a.pathD))
+          .slice(0, opts.maxLabels)
+      : features;
+
   const featureLabels = labeled && !opts.suppressFeatureLabels
-    ? features
+    ? labelFeatures
         .map(({ name, pathD }) => {
           const c = featureCentroid(pathD);
           return (
@@ -473,8 +517,10 @@ function buildMap(mapKey: string, spec: MapSpec, toleranceOverride?: number): vo
   const labeledSvg = buildSvg(features, dims, true, {
     suppressFeatureLabels: spec.suppressFeatureLabels,
     customLabelsSvg,
+    maxLabels: spec.maxLabels,
+    strokeWidth: spec.strokeWidth,
   });
-  const blankSvg = buildSvg(features, dims, false);
+  const blankSvg = buildSvg(features, dims, false, { strokeWidth: spec.strokeWidth });
 
   const outLabeled = path.resolve(root, spec.outputLabeled);
   const outBlank = path.resolve(root, spec.outputBlank);
