@@ -54,6 +54,10 @@ type RegionSpec = {
   geojsonPath: string;
   /** GeoJSON feature property that holds the region/state name. */
   featureNameProp: string;
+  /** Optional filter — only features where this returns true are included. */
+  featureFilter?: (properties: Record<string, unknown>) => boolean;
+  /** Override abbreviated or non-standard names from the GeoJSON. */
+  nameOverrides?: Record<string, string>;
   /** Geographic bounds — defines the equirectangular projection extent. */
   bounds: GeoBounds;
   /** SVG viewBox string, e.g. "0 0 1000 900". */
@@ -118,6 +122,53 @@ const REGION_SPECS: Record<string, RegionSpec> = {
       { id: 'coimbatore',        name: 'Coimbatore',        lat: 11.017, lon: 76.955, hint: 'Manchester of South India, known for textiles' },
       { id: 'madurai',           name: 'Madurai',           lat: 9.919,  lon: 78.119, hint: 'Temple city, one of the oldest living cities in the world' },
       { id: 'visakhapatnam',     name: 'Visakhapatnam',     lat: 17.686, lon: 83.218, hint: 'Jewel of the East Coast, major port city' },
+    ],
+  },
+  africa: {
+    geojsonPath: 'scripts/geojson/ne_50m_countries.geojson',
+    featureNameProp: 'NAME',
+    featureFilter: (props) =>
+      props['CONTINENT'] === 'Africa' && props['NAME'] !== 'Somaliland',
+    nameOverrides: {
+      'Central African Rep.': 'Central African Republic',
+      'Dem. Rep. Congo':       'DR Congo',
+      'Eq. Guinea':            'Equatorial Guinea',
+      'S. Sudan':              'South Sudan',
+      'W. Sahara':             'Western Sahara',
+      'Swaziland':             'Eswatini',
+      'Congo':                 'Republic of Congo',
+      'Cabo Verde':            'Cape Verde',
+      'Gambia':                'The Gambia',
+    },
+    bounds: { minLat: -35.5, maxLat: 38.0, minLon: -18.5, maxLon: 52.0 },
+    viewBox: '0 0 950 1000',
+    tolerance: 2,
+    geoTolerance: 0.05,
+    palette: DEFAULT_PALETTE,
+    outputBoundaries: 'public/images/maps/africa_boundaries.svg',
+    outputOutline:    'public/images/maps/africa_outline.svg',
+    outputData:       'public/data/regions/africa.json',
+    cities: [
+      { id: 'cairo',         name: 'Cairo',         lat: 30.065,  lon: 31.250,  hint: "Africa's largest city, home to the Pyramids of Giza" },
+      { id: 'lagos',         name: 'Lagos',         lat: 6.524,   lon: 3.379,   hint: "Nigeria's commercial capital, Africa's most populous city" },
+      { id: 'kinshasa',      name: 'Kinshasa',      lat: -4.322,  lon: 15.322,  hint: 'Capital of DR Congo on the Congo River' },
+      { id: 'johannesburg',  name: 'Johannesburg',  lat: -26.204, lon: 28.045,  hint: "South Africa's largest city and economic hub" },
+      { id: 'nairobi',       name: 'Nairobi',       lat: -1.286,  lon: 36.820,  hint: 'The Green City in the Sun, Kenya\'s capital' },
+      { id: 'dar-es-salaam', name: 'Dar es Salaam', lat: -6.793,  lon: 39.208,  hint: "Tanzania's largest port city" },
+      { id: 'addis-ababa',   name: 'Addis Ababa',   lat: 9.025,   lon: 38.747,  hint: "Ethiopia's capital and seat of the African Union" },
+      { id: 'casablanca',    name: 'Casablanca',    lat: 33.573,  lon: -7.589,  hint: "Morocco's largest city and economic capital" },
+      { id: 'khartoum',      name: 'Khartoum',      lat: 15.551,  lon: 32.532,  hint: "Sudan's capital at the confluence of the two Niles" },
+      { id: 'accra',         name: 'Accra',         lat: 5.558,   lon: -0.201,  hint: 'Capital of Ghana on the Gulf of Guinea' },
+      { id: 'abidjan',       name: 'Abidjan',       lat: 5.354,   lon: -4.001,  hint: "Côte d'Ivoire's largest city" },
+      { id: 'dakar',         name: 'Dakar',         lat: 14.716,  lon: -17.467, hint: "Senegal's capital on Africa's westernmost point" },
+      { id: 'kampala',       name: 'Kampala',       lat: 0.347,   lon: 32.582,  hint: "Uganda's capital, city of seven hills" },
+      { id: 'tunis',         name: 'Tunis',         lat: 36.818,  lon: 10.165,  hint: 'Capital of Tunisia, near ancient Carthage' },
+      { id: 'algiers',       name: 'Algiers',       lat: 36.737,  lon: 3.086,   hint: 'Algeria\'s capital, known as La Blanche (The White)' },
+      { id: 'lusaka',        name: 'Lusaka',        lat: -15.416, lon: 28.283,  hint: "Capital of Zambia in south-central Africa" },
+      { id: 'luanda',        name: 'Luanda',        lat: -8.838,  lon: 13.234,  hint: "Angola's coastal capital" },
+      { id: 'harare',        name: 'Harare',        lat: -17.829, lon: 31.053,  hint: 'Capital of Zimbabwe, formerly Salisbury' },
+      { id: 'mogadishu',     name: 'Mogadishu',     lat: 2.046,   lon: 45.341,  hint: "Somalia's capital on the Indian Ocean" },
+      { id: 'tripoli',       name: 'Tripoli',       lat: 32.902,  lon: 13.180,  hint: "Libya's capital on the Mediterranean coast" },
     ],
   },
   // Add more regions here:
@@ -310,8 +361,13 @@ function buildRegionMap(mapKey: string, spec: RegionSpec, toleranceOverride?: nu
     return paletteCache[name];
   }
 
-  for (const feature of geojson.features) {
-    const name: string = feature.properties[spec.featureNameProp] ?? '';
+  const filteredFeatures = spec.featureFilter
+    ? geojson.features.filter((f: { properties: Record<string, unknown> }) => spec.featureFilter!(f.properties))
+    : geojson.features;
+
+  for (const feature of filteredFeatures) {
+    const rawName: string = feature.properties[spec.featureNameProp] ?? '';
+    const name = spec.nameOverrides?.[rawName] ?? rawName;
     if (!name) continue;
 
     const ring = mainOuterRing(feature.geometry);

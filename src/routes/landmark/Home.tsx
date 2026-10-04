@@ -22,21 +22,27 @@ const GAMES: { id: string; title: string; description: string; available: boolea
   { id: 'zoom-in',              title: 'Zoom In',                 description: 'Identify a landmark from a progressively revealed close-up.',    available: false },
 ];
 
+const REGION_MAPS: { key: string; label: string }[] = [
+  { key: 'india',  label: 'India' },
+  { key: 'africa', label: 'Africa' },
+];
+
 export default function LandMarkHome() {
   const navigate = useNavigate();
 
   const [city, setCity]           = useState<string>(() => sessionStorage.getItem('lm_city')       ?? 'nyc');
   const [gameId, setGameId]       = useState<string>(() => sessionStorage.getItem('lm_game')       ?? 'where-is-it');
   const [difficulty, setDifficulty] = useState<number>(() => Number(sessionStorage.getItem('lm_difficulty')) || 1);
+  const [regionMap, setRegionMap] = useState<string>(() => sessionStorage.getItem('lm_region')     ?? 'india');
 
   function startGame() {
     sessionStorage.setItem('lm_city',       city);
     sessionStorage.setItem('lm_game',       gameId);
     sessionStorage.setItem('lm_difficulty', String(difficulty));
+    sessionStorage.setItem('lm_region',     regionMap);
     let params: URLSearchParams;
     if (gameId === 'where-is-region') {
-      // Region game uses a country map and supports regions/cities modes
-      params = new URLSearchParams({ map: 'india', mode: 'regions', difficulty: String(difficulty) });
+      params = new URLSearchParams({ map: regionMap, mode: 'regions', difficulty: String(difficulty) });
     } else {
       params = new URLSearchParams({ map: city, difficulty: String(difficulty) });
     }
@@ -71,6 +77,24 @@ export default function LandMarkHome() {
           </button>
         ))}
       </div>
+
+      {gameId === 'where-is-region' && (
+        <>
+          <hr className="home-divider" />
+          <div className="lm-section-label">Region</div>
+          <div className="lm-region-picker">
+            {REGION_MAPS.map((rm) => (
+              <button
+                key={rm.key}
+                className={`lm-region-btn${regionMap === rm.key ? ' active' : ''}`}
+                onClick={() => setRegionMap(rm.key)}
+              >
+                {rm.label}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
 
       <hr className="home-divider" />
 

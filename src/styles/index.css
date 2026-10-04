@@ -373,3 +373,9 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .mtm-reveal-wrong   .mtm-reveal-pts { color: #dc2626; }
 
 .mtm-reveal-summary { text-align: center; font-size: 1.2rem; font-weight: 700; margin-top: 16px; color: #333; }
+
+/* Region picker (Find the Region game) */
+.lm-region-picker { display: flex; gap: 8px; flex-wrap: wrap; }
+.lm-region-btn { padding: 10px 20px; border: 2px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; font-size: 0.95rem; font-weight: 500; transition: border-color 0.15s; }
+.lm-region-btn:hover { border-color: #999; }
+.lm-region-btn.active { border-color: #1976D2; background: #E3F2FD; color: #1976D2; font-weight: 600; }
