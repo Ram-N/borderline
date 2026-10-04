@@ -299,3 +299,77 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .landmark-stub { padding: 40px; text-align: center; color: #888; }
 .landmark-error { padding: 40px; text-align: center; color: #c62828; }
 .landmark-loading { padding: 40px; text-align: center; color: #555; }
+
+/* ============================================================
+   Match the Map
+   ============================================================ */
+.mtm-game { max-width: 700px; margin: 0 auto; padding: 0 16px 24px; }
+.mtm-instruction { font-size: 0.9rem; color: #555; margin: 6px 0 10px; text-align: center; }
+
+/* Chip row */
+.mtm-chip-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 14px; }
+.mtm-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: border-color 0.15s, background 0.15s;
+}
+.mtm-chip:hover { border-color: #999; }
+.mtm-chip--selected { border-color: #f59e0b; background: #fffbeb; }
+.mtm-chip--assigned { border-color: #7c3aed; background: #f5f3ff; }
+.mtm-chip-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+/* Reveal list */
+.mtm-reveal-list { margin-top: 14px; display: flex; flex-direction: column; gap: 6px; }
+.mtm-reveal-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.mtm-reveal-correct { background: #f0fdf4; border: 1px solid #bbf7d0; }
+.mtm-reveal-wrong   { background: #fef2f2; border: 1px solid #fecaca; }
+.mtm-reveal-num {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+.mtm-reveal-correct .mtm-reveal-num { background: #16a34a; }
+.mtm-reveal-wrong   .mtm-reveal-num { background: #dc2626; }
+.mtm-reveal-name   { font-weight: 600; flex: 1; }
+.mtm-reveal-arrow  { color: #aaa; }
+.mtm-reveal-answer { flex: 1; color: #555; font-style: italic; }
+.mtm-reveal-pts    { font-weight: 700; margin-left: auto; }
+.mtm-reveal-correct .mtm-reveal-pts { color: #16a34a; }
+.mtm-reveal-wrong   .mtm-reveal-pts { color: #dc2626; }
+
+.mtm-reveal-summary { text-align: center; font-size: 1.2rem; font-weight: 700; margin-top: 16px; color: #333; }
