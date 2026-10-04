@@ -90,7 +90,7 @@ function GameContent({
         <div className="wii-header">
           <span className="wii-difficulty">{DIFFICULTY_LABELS[difficulty]}</span>
           <span className="wii-score">
-            {correct}/{total} correct · {engine.totalScore} pts
+            {correct}/{total} correct · {engine.totalScore}/{total * engine.pointsPerMatch} pts
           </span>
         </div>
 
@@ -127,14 +127,14 @@ function GameContent({
                     <span className="mtm-reveal-answer">{assignedChip?.name ?? '—'}</span>
                   </>
                 )}
-                <span className="mtm-reveal-pts">{isCorrect ? '+20' : '+0'}</span>
+                <span className="mtm-reveal-pts">{isCorrect ? `+${engine.pointsPerMatch}` : '+0'}</span>
               </div>
             );
           })}
         </div>
 
         <div className="mtm-reveal-summary">
-          {engine.totalScore} / {total * 20} pts
+          {engine.totalScore} / {total * engine.pointsPerMatch} pts
         </div>
 
         <div className="results-actions" style={{ justifyContent: 'center', marginTop: '16px' }}>
