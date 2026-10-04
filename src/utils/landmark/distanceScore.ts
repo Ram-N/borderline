@@ -95,7 +95,7 @@ export function applyConfidence(
     case 'medium':
       return baseScore;
     case 'high':
-      if (baseScore < 50) return 0;
+      if (baseScore < 25) return 0;
       return Math.min(100, Math.round(baseScore * 1.4));
   }
 }
