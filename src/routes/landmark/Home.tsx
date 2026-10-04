@@ -12,6 +12,7 @@ const DIFFICULTY_LEVELS = [
 
 const GAMES: { id: string; title: string; description: string; available: boolean }[] = [
   { id: 'where-is-it',          title: 'Where Is It?',            description: 'Drop a pin on the map to locate a landmark.',                    available: true  },
+  { id: 'where-is-region',      title: 'Find the Region',         description: 'Drop a pin on a named state, province, or city on a country map.', available: true },
   { id: 'match-the-map',        title: 'Match the Map',           description: 'Match labeled outlines to their correct positions.',              available: false },
   { id: 'whats-between',        title: "What's Between?",         description: 'Identify the landmark that lies between two others.',             available: false },
   { id: 'put-them-in-order',    title: 'Put Them in Order',       description: 'Sort landmarks by direction, distance, or latitude.',            available: false },
@@ -32,7 +33,13 @@ export default function LandMarkHome() {
     sessionStorage.setItem('lm_city',       city);
     sessionStorage.setItem('lm_game',       gameId);
     sessionStorage.setItem('lm_difficulty', String(difficulty));
-    const params = new URLSearchParams({ map: city, difficulty: String(difficulty) });
+    let params: URLSearchParams;
+    if (gameId === 'where-is-region') {
+      // Region game uses a country map and supports regions/cities modes
+      params = new URLSearchParams({ map: 'india', mode: 'regions', difficulty: String(difficulty) });
+    } else {
+      params = new URLSearchParams({ map: city, difficulty: String(difficulty) });
+    }
     navigate(`/landmark/games/${gameId}?${params.toString()}`);
   }
 

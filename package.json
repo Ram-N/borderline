@@ -13,7 +13,9 @@
     "puzzles:calendar": "tsx scripts/generatePuzzles.ts calendar --year 2026",
     "puzzles:stats": "tsx scripts/generatePuzzles.ts stats",
     "puzzles:approve-all": "tsx scripts/generatePuzzles.ts approve --all",
-    "landmark:maps": "tsx scripts/generateLandmarkMaps.ts"
+    "landmark:maps": "tsx scripts/generateLandmarkMaps.ts",
+    "region:maps": "tsx scripts/generateRegionMaps.ts",
+    "region:maps:india": "tsx scripts/generateRegionMaps.ts --map india"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0",

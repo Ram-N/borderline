@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import type { WhereIsItRound } from '../../types/landmark/game';
 import type { Difficulty } from '../../types/landmark/game';
+import type { WhereIsRegionRound } from '../../types/landmark/region';
 import { LANDMARK_MAP_CONFIG } from '../../data/landmarkMapConfig';
+import { REGION_MAP_CONFIG } from '../../data/regionMapConfig';
 
 const DIFFICULTY_LABELS: Record<Difficulty, string> = {
   1: 'Tourist',
@@ -12,12 +14,24 @@ const DIFFICULTY_LABELS: Record<Difficulty, string> = {
   5: 'Navigator',
 };
 
+type AnyRound = WhereIsItRound | WhereIsRegionRound;
+
 type LocationState = {
-  rounds: WhereIsItRound[];
+  rounds: AnyRound[];
   totalScore: number;
   difficulty: Difficulty;
   city: string;
 };
+
+/** Normalise the target name/id across both round types. */
+function roundName(round: AnyRound): string {
+  if ('landmark' in round) return round.landmark.name;
+  return round.target.name;
+}
+function roundId(round: AnyRound, i: number): string {
+  if ('landmark' in round) return round.landmark.id;
+  return round.target.id ?? String(i);
+}
 
 function formatDistance(km: number): string {
   if (km < 1) return `${Math.round(km * 1000)} m`;
@@ -48,7 +62,8 @@ export default function LandMarkResults() {
   const { rounds, totalScore, difficulty, city } = state;
   const maxScore = rounds.length * 100;
   const pct = Math.round((totalScore / maxScore) * 100);
-  const cityLabel = LANDMARK_MAP_CONFIG[city]?.label ?? city;
+  const cityLabel =
+    LANDMARK_MAP_CONFIG[city]?.label ?? REGION_MAP_CONFIG[city]?.label ?? city;
   const diffLabel = DIFFICULTY_LABELS[difficulty];
   const emoji = scoreEmoji(pct);
 
@@ -95,9 +110,9 @@ export default function LandMarkResults() {
         </thead>
         <tbody>
           {rounds.map((round, i) => (
-            <tr key={round.landmark.id}>
+            <tr key={roundId(round, i)}>
               <td>{i + 1}</td>
-              <td>{round.landmark.name}</td>
+              <td>{roundName(round)}</td>
               <td className={`conf-${round.confidence ?? 'none'}`}>
                 {round.confidence ?? '—'}
               </td>

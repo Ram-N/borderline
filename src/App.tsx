@@ -20,6 +20,7 @@ import DailyCalendar from './components/DailyCalendar';
 // LandMark routes
 import LandMarkHome from './routes/landmark/Home';
 import WhereIsIt from './routes/landmark/WhereIsIt';
+import WhereIsRegion from './routes/landmark/WhereIsRegion';
 import LandMarkResults from './routes/landmark/Results';
 import MatchTheMap from './routes/landmark/MatchTheMap';
 import WhatsBetween from './routes/landmark/WhatsBetween';
@@ -102,6 +103,7 @@ export default function App() {
           {/* LandMark routes */}
           <Route path='/landmark' element={<LandMarkHome />} />
           <Route path='/landmark/games/where-is-it' element={<WhereIsIt />} />
+          <Route path='/landmark/games/where-is-region' element={<WhereIsRegion />} />
           <Route path='/landmark/games/match-the-map' element={<MatchTheMap />} />
           <Route path='/landmark/games/whats-between' element={<WhatsBetween />} />
           <Route path='/landmark/games/put-them-in-order' element={<PutThemInOrder />} />

@@ -23,6 +23,7 @@ export function haversineKm(
  * Scoring thresholds per difficulty level.
  * perfectKm: distance at which score = 100
  * zeroKm:    distance at which score = 0
+ * Used when no diagonalKm is provided (city-scale maps).
  */
 const THRESHOLDS: Record<Difficulty, { perfectKm: number; zeroKm: number }> = {
   1: { perfectKm: 5,   zeroKm: 50  }, // Tourist
@@ -32,9 +33,44 @@ const THRESHOLDS: Record<Difficulty, { perfectKm: number; zeroKm: number }> = {
   5: { perfectKm: 0.2, zeroKm: 5   }, // Navigator
 };
 
-/** Convert a distance (km) to a 0–100 base score for a given difficulty. */
-export function distanceToScore(distanceKm: number, difficulty: Difficulty): number {
-  const { perfectKm, zeroKm } = THRESHOLDS[difficulty];
+/**
+ * Fractions of the map diagonal used for threshold computation on region maps.
+ * zeroFraction:    fraction at which score = 0
+ * perfectFraction: fraction at which score = 100 (cities mode only)
+ */
+const THRESHOLD_FRACTIONS: Record<Difficulty, { zeroFraction: number; perfectFraction: number }> = {
+  1: { zeroFraction: 0.12, perfectFraction: 0.020 }, // Tourist
+  2: { zeroFraction: 0.10, perfectFraction: 0.015 }, // Traveler
+  3: { zeroFraction: 0.08, perfectFraction: 0.010 }, // Explorer
+  4: { zeroFraction: 0.06, perfectFraction: 0.005 }, // Cartographer
+  5: { zeroFraction: 0.04, perfectFraction: 0.003 }, // Navigator
+};
+
+/**
+ * Convert a distance (km) to a 0–100 base score for a given difficulty.
+ *
+ * @param distanceKm  Haversine distance from pin to target.
+ * @param difficulty  Game difficulty level (1–5).
+ * @param diagonalKm  Optional map diagonal in km. When provided, thresholds are
+ *                    derived as fractions of the diagonal (region maps). When
+ *                    omitted, the hardcoded city-scale thresholds are used.
+ */
+export function distanceToScore(
+  distanceKm: number,
+  difficulty: Difficulty,
+  diagonalKm?: number,
+): number {
+  let perfectKm: number;
+  let zeroKm: number;
+
+  if (diagonalKm !== undefined) {
+    const { zeroFraction, perfectFraction } = THRESHOLD_FRACTIONS[difficulty];
+    zeroKm = diagonalKm * zeroFraction;
+    perfectKm = diagonalKm * perfectFraction;
+  } else {
+    ({ perfectKm, zeroKm } = THRESHOLDS[difficulty]);
+  }
+
   if (distanceKm <= perfectKm) return 100;
   if (distanceKm >= zeroKm) return 0;
   // Linear interpolation between perfectKm (100) and zeroKm (0)

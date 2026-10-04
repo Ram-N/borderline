@@ -3,6 +3,8 @@ type Props = {
   baseScore: number;
   finalScore: number;
   confidence: string;
+  /** When true, shows "Inside!" instead of the distance — used for region polygon hits. */
+  insideRegion?: boolean;
 };
 
 function formatDistance(km: number): string {
@@ -15,6 +17,7 @@ export default function DistanceFeedback({
   baseScore,
   finalScore,
   confidence,
+  insideRegion,
 }: Props) {
   const wasBonus = confidence === 'high' && finalScore > baseScore;
   const wasPenalty = confidence === 'high' && finalScore === 0 && baseScore > 0;
@@ -22,8 +25,14 @@ export default function DistanceFeedback({
   return (
     <div className="distance-feedback">
       <div className="feedback-distance">
-        <span className="feedback-dist-value">{formatDistance(distanceKm)}</span>
-        <span className="feedback-dist-label"> away</span>
+        {insideRegion ? (
+          <span className="feedback-dist-value feedback-inside">Inside!</span>
+        ) : (
+          <>
+            <span className="feedback-dist-value">{formatDistance(distanceKm)}</span>
+            <span className="feedback-dist-label"> away</span>
+          </>
+        )}
       </div>
       <div className="feedback-scores">
         <span className="feedback-base">Base: {baseScore}</span>
