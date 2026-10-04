@@ -240,11 +240,15 @@ function buildSvg(
   const W = dims.width;
   const H = dims.height;
 
+  // Outline SVG: all features share one flat fill so no state edges are visible.
+  const OUTLINE_FILL = '#d4c9a8';
+
   const paths = features
     .map(({ id, fill, pathD }) => {
-      const stroke = showBorders ? '#666' : fill;
+      const f = showBorders ? fill : OUTLINE_FILL;
+      const stroke = showBorders ? '#666' : OUTLINE_FILL;
       const strokeWidth = showBorders ? '1' : '0.5';
-      return `  <path id="${id}" d="${pathD}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}"/>`;
+      return `  <path id="${id}" d="${pathD}" fill="${f}" stroke="${stroke}" stroke-width="${strokeWidth}"/>`;
     })
     .join('\n');
 
