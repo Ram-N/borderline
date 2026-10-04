@@ -90,7 +90,7 @@ function GameContent({
         <div className="wii-header">
           <span className="wii-difficulty">{DIFFICULTY_LABELS[difficulty]}</span>
           <span className="wii-score">
-            {correct}/{total} correct · {engine.totalScore}/{total * engine.pointsPerMatch} pts
+            {correct}/{total} correct · {engine.totalScore}/100 pts
           </span>
         </div>
 
@@ -134,7 +134,7 @@ function GameContent({
         </div>
 
         <div className="mtm-reveal-summary">
-          {engine.totalScore} / {total * engine.pointsPerMatch} pts
+          {engine.totalScore} / 100 pts
         </div>
 
         <div className="results-actions" style={{ justifyContent: 'center', marginTop: '16px' }}>

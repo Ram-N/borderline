@@ -20,7 +20,8 @@ type State = {
   selectedPin: string | null;
   selectedChip: string | null;
   phase: 'matching' | 'reveal';
-  pointsPerMatch: number;              // = round(100 / N) so total always ≈ 100
+  pointsPerMatch: number;              // = floor(100 / N)
+  freeBonus: number;                   // = 100 % N, always added so max = exactly 100
 };
 
 export type MatchTheMapEngine = {
@@ -33,6 +34,7 @@ export type MatchTheMapEngine = {
   allAssigned: boolean;
   totalScore: number;
   pointsPerMatch: number;
+  freeBonus: number;
   clickPin: (id: string) => void;
   clickChip: (id: string) => void;
   deselect: () => void;
@@ -55,7 +57,8 @@ export default function useMatchTheMapEngine(
       selectedPin: null,
       selectedChip: null,
       phase: 'matching',
-      pointsPerMatch: Math.round(100 / pool.length),
+      pointsPerMatch: Math.floor(100 / pool.length),
+      freeBonus: 100 % pool.length,
     };
   });
 
@@ -117,7 +120,7 @@ export default function useMatchTheMapEngine(
     state.phase === 'reveal'
       ? state.pins.reduce((sum, pin) => {
           return sum + (state.assignments[pin.id] === pin.id ? state.pointsPerMatch : 0);
-        }, 0)
+        }, 0) + state.freeBonus
       : 0;
 
   return {
