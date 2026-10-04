@@ -81,9 +81,9 @@ export function distanceToScore(
 
 /**
  * Apply confidence multiplier to a base score.
- * - low:    0.7× (no penalty)
+ * - low:    0.5× but guaranteed floor of 15 pts ("I'm guessing — give me something")
  * - medium: 1.0×
- * - high:   1.4×, but 0 if baseScore < 50 (overconfidence penalty)
+ * - high:   1.4×, but 0 if baseScore < 25 (overconfidence penalty)
  */
 export function applyConfidence(
   baseScore: number,
@@ -91,7 +91,7 @@ export function applyConfidence(
 ): number {
   switch (confidence) {
     case 'low':
-      return Math.round(baseScore * 0.7);
+      return Math.max(15, Math.round(baseScore * 0.5));
     case 'medium':
       return baseScore;
     case 'high':

@@ -21,6 +21,7 @@ export default function DistanceFeedback({
 }: Props) {
   const wasBonus = confidence === 'high' && finalScore > baseScore;
   const wasPenalty = confidence === 'high' && finalScore === 0 && baseScore > 0;
+  const lowFloorApplied = confidence === 'low' && finalScore === 15 && baseScore < 30;
 
   return (
     <div className="distance-feedback">
@@ -38,7 +39,11 @@ export default function DistanceFeedback({
         <span className="feedback-base">Base: {baseScore}</span>
         {confidence !== 'medium' && (
           <span className={`feedback-confidence ${wasPenalty ? 'penalty' : wasBonus ? 'bonus' : ''}`}>
-            {confidence === 'low' ? '×0.7 (Low)' : wasBonus ? '×1.4 (High)' : wasPenalty ? 'Overconfidence! ×0' : ''}
+            {confidence === 'low'
+              ? (lowFloorApplied ? 'Floor 15 (Low)' : '×0.5 (Low)')
+              : wasBonus ? '×1.4 (High)'
+              : wasPenalty ? 'Overconfidence! ×0'
+              : ''}
           </span>
         )}
         <span className="feedback-final">+{finalScore} pts</span>
