@@ -160,7 +160,7 @@ const MAP_SPECS: Record<string, MapSpec> = {
     outputLabeled: 'public/images/maps/bangalore_labeled.svg',
     outputBlank: 'public/images/maps/bangalore_blank.svg',
     tolerance: 1,
-    maxLabels: 8,   // 243 wards — only label the 8 largest by area
+    maxLabels: 15,  // 243 wards — only label the 15 largest by area
     strokeWidth: 0.5,
   },
   chennai: {
