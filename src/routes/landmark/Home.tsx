@@ -27,26 +27,38 @@ const DIFFICULTIES = [
   { value: 5, name: 'Navigator' },
 ];
 
+type Step = 1 | 2 | 3;
+
 export default function LandMarkHome() {
   const navigate = useNavigate();
+  const [step,       setStep]       = useState<Step>(1);
   const [gameId,     setGameId]     = useState<string | null>(null);
   const [mapKey,     setMapKey]     = useState<string | null>(null);
   const [difficulty, setDifficulty] = useState<number | null>(null);
 
+  const isRegionGame = gameId === 'where-is-region';
+  const gameLabel = GAMES.find((g) => g.id === gameId)?.title ?? '';
+  const mapLabel  = isRegionGame
+    ? REGION_MAPS.find((r) => r.key === mapKey)?.label ?? ''
+    : LANDMARK_MAP_CONFIG[mapKey ?? '']?.label ?? '';
+
   function pickGame(id: string) {
-    setGameId(id);
-    setMapKey(null);
-    setDifficulty(null);
+    setGameId(id); setMapKey(null); setDifficulty(null); setStep(2);
   }
-
   function pickMap(key: string) {
-    setMapKey(key);
-    setDifficulty(null);
+    setMapKey(key); setDifficulty(null); setStep(3);
   }
-
+  function pickDiff(d: number) {
+    setDifficulty(d);
+  }
+  function goBack(toStep: Step) {
+    setStep(toStep);
+    if (toStep <= 2) { setMapKey(null); setDifficulty(null); }
+    if (toStep === 1) { setGameId(null); }
+  }
   function start() {
     if (!gameId || !mapKey || !difficulty) return;
-    const params = gameId === 'where-is-region'
+    const params = isRegionGame
       ? new URLSearchParams({ map: mapKey, mode: 'regions', difficulty: String(difficulty) })
       : new URLSearchParams({ map: mapKey, difficulty: String(difficulty) });
     navigate(`/landmark/games/${gameId}?${params}`);
@@ -56,70 +68,73 @@ export default function LandMarkHome() {
     <div className="lm-home">
       <h1 className="lm-title">LandMark</h1>
 
-      {/* Step 1 — Game Mode */}
-      <div className="lm-wizard-step">
-        <div className="lm-step-header">
-          <span className="lm-step-badge">1</span>
-          <span className="lm-step-label">Game Mode</span>
-        </div>
-        <div className="lm-game-list">
-          {GAMES.map((g) => (
-            <button
-              key={g.id}
-              className={`lm-game-card${gameId === g.id ? ' active' : ''}`}
-              onClick={() => pickGame(g.id)}
-            >
-              <span className="lm-game-card-title">{g.title}</span>
-              <span className="lm-game-card-desc">{g.desc}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Step 2 — City / Region (reveals once game chosen) */}
-      {gameId && (
-        <div className="lm-wizard-step lm-wizard-step--reveal">
+      {/* ── Step 1: Game Mode ── */}
+      {step === 1 ? (
+        <div className="lm-wizard-step">
           <div className="lm-step-header">
-            <span className="lm-step-badge">2</span>
-            <span className="lm-step-label">
-              {gameId === 'where-is-region' ? 'Region' : 'City'}
-            </span>
+            <span className="lm-step-badge">1</span>
+            <span className="lm-step-label">Game Mode</span>
           </div>
-
-          {gameId === 'where-is-region' ? (
-            <div className="lm-tile-row">
-              {REGION_MAPS.map((rm) => (
-                <button
-                  key={rm.key}
-                  className={`lm-tile${mapKey === rm.key ? ' active' : ''}`}
-                  onClick={() => pickMap(rm.key)}
-                >
-                  {rm.label}
-                </button>
-              ))}
-            </div>
-          ) : (
-            CITY_GROUPS.map((group) => (
-              <div key={group.label} className="lm-tile-group">
-                <div className="lm-tile-group-label">{group.label}</div>
-                <div className="lm-tile-row">
-                  {group.keys.map((key) => (
-                    <button
-                      key={key}
-                      className={`lm-tile${mapKey === key ? ' active' : ''}`}
-                      onClick={() => pickMap(key)}
-                    >
-                      {LANDMARK_MAP_CONFIG[key].label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ))
-          )}
+          <div className="lm-game-list">
+            {GAMES.map((g) => (
+              <button key={g.id} className="lm-game-card" onClick={() => pickGame(g.id)}>
+                <span className="lm-game-card-title">{g.title}</span>
+                <span className="lm-game-card-desc">{g.desc}</span>
+              </button>
+            ))}
+          </div>
         </div>
+      ) : (
+        <button className="lm-done-row" onClick={() => goBack(1)}>
+          <span className="lm-step-badge lm-step-badge--done">✓</span>
+          <span className="lm-done-label">Game</span>
+          <span className="lm-done-value">{gameLabel}</span>
+          <span className="lm-done-change">change</span>
+        </button>
       )}
 
-      {/* Step 3 — Difficulty (reveals once map chosen) */}
+      {/* ── Step 2: City / Region ── */}
+      {gameId && (
+        step === 2 ? (
+          <div className="lm-wizard-step lm-wizard-step--reveal">
+            <div className="lm-step-header">
+              <span className="lm-step-badge">2</span>
+              <span className="lm-step-label">{isRegionGame ? 'Region' : 'City'}</span>
+            </div>
+            {isRegionGame ? (
+              <div className="lm-tile-row">
+                {REGION_MAPS.map((rm) => (
+                  <button key={rm.key} className="lm-tile" onClick={() => pickMap(rm.key)}>
+                    {rm.label}
+                  </button>
+                ))}
+              </div>
+            ) : (
+              CITY_GROUPS.map((group) => (
+                <div key={group.label} className="lm-tile-group">
+                  <div className="lm-tile-group-label">{group.label}</div>
+                  <div className="lm-tile-row">
+                    {group.keys.map((key) => (
+                      <button key={key} className="lm-tile" onClick={() => pickMap(key)}>
+                        {LANDMARK_MAP_CONFIG[key].label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        ) : mapKey ? (
+          <button className="lm-done-row" onClick={() => goBack(2)}>
+            <span className="lm-step-badge lm-step-badge--done">✓</span>
+            <span className="lm-done-label">{isRegionGame ? 'Region' : 'City'}</span>
+            <span className="lm-done-value">{mapLabel}</span>
+            <span className="lm-done-change">change</span>
+          </button>
+        ) : null
+      )}
+
+      {/* ── Step 3: Difficulty ── */}
       {mapKey && (
         <div className="lm-wizard-step lm-wizard-step--reveal">
           <div className="lm-step-header">
@@ -131,7 +146,7 @@ export default function LandMarkHome() {
               <button
                 key={d.value}
                 className={`lm-diff-btn${difficulty === d.value ? ' active' : ''}`}
-                onClick={() => setDifficulty(d.value)}
+                onClick={() => pickDiff(d.value)}
               >
                 <span className="lm-diff-num">{d.value}</span>
                 <span className="lm-diff-name">{d.name}</span>
@@ -141,11 +156,9 @@ export default function LandMarkHome() {
         </div>
       )}
 
-      {/* Start (reveals once difficulty chosen) */}
+      {/* ── Start ── */}
       {difficulty && (
-        <button className="start-btn" onClick={start}>
-          Start →
-        </button>
+        <button className="start-btn" onClick={start}>Start →</button>
       )}
     </div>
   );

@@ -272,6 +272,20 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .lm-diff-name { font-size: 0.72rem; color: #888; margin-top: 2px; }
 .lm-diff-btn.active .lm-diff-name { color: #1976D2; }
 
+/* Completed step — collapsed summary row */
+.lm-done-row {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%; padding: 7px 0;
+  border: none; border-bottom: 1px solid #f0f0f0;
+  background: none; cursor: pointer; text-align: left;
+  margin-bottom: 4px;
+}
+.lm-done-row:hover .lm-done-change { opacity: 1; }
+.lm-step-badge--done { background: #4CAF50 !important; }
+.lm-done-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #aaa; white-space: nowrap; }
+.lm-done-value { font-size: 0.95rem; font-weight: 600; color: #222; flex: 1; }
+.lm-done-change { font-size: 0.78rem; color: #1976D2; opacity: 0.5; white-space: nowrap; }
+
 /* Keep old landmark-* classes for any pages still referencing them */
 .landmark-home { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
 .landmark-home-header { margin-bottom: 28px; }
