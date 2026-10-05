@@ -98,12 +98,22 @@ function GameContent({
           <svg viewBox={dataset.viewBox} className="map-svg">
             <image href={svgSrc} x={0} y={0} width={vbWidth} height={vbHeight} />
             {engine.pins.map((pin, i) => (
-              <NumberedPin
-                key={pin.id}
-                pin={pin}
-                index={i}
-                fill={revealPinFill(pin)}
-              />
+              <g key={pin.id}>
+                <NumberedPin pin={pin} index={i} fill={revealPinFill(pin)} />
+                <text
+                  x={pin.svgX + 16}
+                  y={pin.svgY + 5}
+                  fontSize={11}
+                  fontWeight="bold"
+                  fill={revealPinFill(pin)}
+                  stroke="white"
+                  strokeWidth={3}
+                  paintOrder="stroke"
+                  style={{ pointerEvents: 'none', userSelect: 'none' }}
+                >
+                  {pin.name}
+                </text>
+              </g>
             ))}
           </svg>
         </div>
