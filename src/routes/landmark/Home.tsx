@@ -6,7 +6,7 @@ import { CITY_GROUPS, REGION_MAPS } from '../../generated/geoRegistry';
 const GAMES = [
   { id: 'match-the-map',   title: 'Match the Map',   desc: 'Match numbered pins to their landmark names.' },
   { id: 'where-is-it',     title: 'Where Is It?',    desc: 'Drop a pin on the map to locate a landmark.' },
-  { id: 'where-is-region', title: 'Find the Region', desc: 'Pin a named country or state on a continent map.' },
+  { id: 'where-is-region', title: 'Plant the Flag', desc: 'Pin a named country or state on a continent map.' },
 ];
 
 const DIFFICULTIES = [

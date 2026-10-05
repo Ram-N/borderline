@@ -82,6 +82,14 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     "blankSvg": "/images/maps/africa_outline.svg",
     "defaultDifficulty": 1,
     "diagonalKm": 10924
+  },
+  "europe_cities": {
+    "label": "European Cities",
+    "dataUrl": "/data/landmarks/europe_cities.json",
+    "labeledSvg": "/images/maps/europe_boundaries.svg",
+    "blankSvg": "/images/maps/europe_outline.svg",
+    "defaultDifficulty": 1,
+    "diagonalKm": 5902
   }
 };
 
@@ -91,6 +99,12 @@ export const REGION_MAP_CONFIG: Record<string, RegionMapConfig> = {
     "dataUrl": "/data/regions/india.json",
     "boundariesSvg": "/images/maps/india_boundaries.svg",
     "outlineSvg": "/images/maps/india_outline.svg"
+  },
+  "europe": {
+    "label": "Europe",
+    "dataUrl": "/data/regions/europe.json",
+    "boundariesSvg": "/images/maps/europe_boundaries.svg",
+    "outlineSvg": "/images/maps/europe_outline.svg"
   },
   "africa": {
     "label": "Africa",
@@ -126,6 +140,12 @@ export const CITY_GROUPS: { label: string; keys: string[] }[] = [
     "keys": [
       "africa_cities"
     ]
+  },
+  {
+    "label": "European Cities",
+    "keys": [
+      "europe_cities"
+    ]
   }
 ];
 
@@ -133,6 +153,10 @@ export const REGION_MAPS: { key: string; label: string }[] = [
   {
     "key": "india",
     "label": "India"
+  },
+  {
+    "key": "europe",
+    "label": "Europe"
   },
   {
     "key": "africa",

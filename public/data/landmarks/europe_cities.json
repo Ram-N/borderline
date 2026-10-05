@@ -1,0 +1,33 @@
+{
+  "id": "europe_cities",
+  "name": "European Cities",
+  "bounds": {
+    "minLat": 33.0,
+    "maxLat": 73.0,
+    "minLon": -28.0,
+    "maxLon": 43.0
+  },
+  "viewBox": "0 0 800 750",
+  "landmarks": [
+    { "id": "london",     "name": "London",     "lat": 51.507, "lon":  -0.128, "svgX": 314, "svgY": 403, "hint": "Capital of the UK on the Thames" },
+    { "id": "paris",      "name": "Paris",      "lat": 48.857, "lon":   2.352, "svgX": 342, "svgY": 453, "hint": "The City of Light on the Seine" },
+    { "id": "berlin",     "name": "Berlin",     "lat": 52.520, "lon":  13.405, "svgX": 467, "svgY": 384, "hint": "Germany's capital, reunified in 1990" },
+    { "id": "madrid",     "name": "Madrid",     "lat": 40.417, "lon":  -3.704, "svgX": 274, "svgY": 611, "hint": "The highest-altitude capital in the EU" },
+    { "id": "rome",       "name": "Rome",       "lat": 41.902, "lon":  12.496, "svgX": 456, "svgY": 583, "hint": "The Eternal City, once the heart of an empire" },
+    { "id": "warsaw",     "name": "Warsaw",     "lat": 52.229, "lon":  21.012, "svgX": 552, "svgY": 389, "hint": "Poland's capital, rebuilt after WWII" },
+    { "id": "kyiv",       "name": "Kyiv",       "lat": 50.450, "lon":  30.523, "svgX": 659, "svgY": 423, "hint": "Ukraine's ancient capital on the Dnieper" },
+    { "id": "athens",     "name": "Athens",     "lat": 37.984, "lon":  23.728, "svgX": 583, "svgY": 657, "hint": "Birthplace of democracy" },
+    { "id": "stockholm",  "name": "Stockholm",  "lat": 59.330, "lon":  18.069, "svgX": 519, "svgY": 256, "hint": "The Venice of the North, spread across 14 islands" },
+    { "id": "amsterdam",  "name": "Amsterdam",  "lat": 52.370, "lon":   4.895, "svgX": 371, "svgY": 387, "hint": "City of canals and bikes" },
+    { "id": "vienna",     "name": "Vienna",     "lat": 48.208, "lon":  16.373, "svgX": 500, "svgY": 465, "hint": "City of music, once heart of the Habsburg empire" },
+    { "id": "prague",     "name": "Prague",     "lat": 50.076, "lon":  14.437, "svgX": 478, "svgY": 430, "hint": "The City of a Hundred Spires on the Vltava" },
+    { "id": "budapest",   "name": "Budapest",   "lat": 47.498, "lon":  19.040, "svgX": 530, "svgY": 478, "hint": "The Pearl of the Danube" },
+    { "id": "bucharest",  "name": "Bucharest",  "lat": 44.436, "lon":  26.103, "svgX": 610, "svgY": 536, "hint": "The Little Paris of the East" },
+    { "id": "oslo",       "name": "Oslo",       "lat": 59.913, "lon":  10.752, "svgX": 437, "svgY": 245, "hint": "Norway's capital at the head of the Oslofjord" },
+    { "id": "helsinki",   "name": "Helsinki",   "lat": 60.169, "lon":  24.935, "svgX": 596, "svgY": 241, "hint": "The Daughter of the Baltic" },
+    { "id": "dublin",     "name": "Dublin",     "lat": 53.350, "lon":  -6.260, "svgX": 245, "svgY": 368, "hint": "Ireland's capital on the River Liffey" },
+    { "id": "lisbon",     "name": "Lisbon",     "lat": 38.717, "lon":  -9.139, "svgX": 213, "svgY": 643, "hint": "The City of Seven Hills on the Atlantic" },
+    { "id": "brussels",   "name": "Brussels",   "lat": 50.850, "lon":   4.352, "svgX": 365, "svgY": 415, "hint": "De facto capital of the European Union" },
+    { "id": "copenhagen", "name": "Copenhagen", "lat": 55.676, "lon":  12.568, "svgX": 457, "svgY": 325, "hint": "Home of the Little Mermaid" }
+  ]
+}
