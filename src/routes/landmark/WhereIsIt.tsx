@@ -76,6 +76,7 @@ function GameContent({
             ? { svgX: landmark.svgX, svgY: landmark.svgY }
             : undefined
         }
+        correctLabel={landmark.name}
         phase={engine.phase}
         onMapClick={engine.placePin}
       />

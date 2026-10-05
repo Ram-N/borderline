@@ -6,6 +6,7 @@ type Props = {
   viewBox: string;           // e.g. "0 0 800 700"
   playerPin: { svgX: number; svgY: number } | null;
   correctPin?: { svgX: number; svgY: number }; // shown on reveal phase
+  correctLabel?: string;     // label for the correct pin (default: "Correct")
   phase: 'question' | 'reveal';
   onMapClick: (svgX: number, svgY: number) => void;
 };
@@ -20,6 +21,7 @@ export default function WhereIsItMapView({
   viewBox,
   playerPin,
   correctPin,
+  correctLabel = 'Correct',
   phase,
   onMapClick,
 }: Props) {
@@ -85,7 +87,7 @@ export default function WhereIsItMapView({
             svgX={correctPin.svgX}
             svgY={correctPin.svgY}
             variant="correct"
-            label="Correct"
+            label={correctLabel}
           />
         )}
       </svg>
