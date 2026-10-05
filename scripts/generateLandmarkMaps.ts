@@ -92,151 +92,49 @@ const DEFAULT_PALETTE = [
 ];
 
 // ---------------------------------------------------------------------------
-// Map specifications — add new cities/countries here
+// Load map specifications from manifest
 // ---------------------------------------------------------------------------
 
-const MAP_SPECS: Record<string, MapSpec> = {
-  nyc: {
-    datasetPath: 'public/data/landmarks/nyc.json',
-    geojsonPath: 'scripts/geojson/nyc_boroughs.geojson',
-    featureNameProp: 'name',
-    fills: {
-      Manhattan: '#e8c8a8',
-      Bronx: '#e0b8b8',
-      Brooklyn: '#d4c9a8',
-      Queens: '#e8dfa8',
-      'Staten Island': '#b8d4a8',
-    },
-    outputLabeled: 'public/images/maps/nyc_labeled.svg',
-    outputBlank: 'public/images/maps/nyc_blank.svg',
-    tolerance: 2,
-  },
-  london: {
-    datasetPath: 'public/data/landmarks/london.json',
-    geojsonPath: 'scripts/geojson/london_boroughs.geojson',
-    featureNameProp: 'name',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/london_labeled.svg',
-    outputBlank: 'public/images/maps/london_blank.svg',
-    tolerance: 2,
-  },
-  paris: {
-    datasetPath: 'public/data/landmarks/paris.json',
-    geojsonPath: 'scripts/geojson/paris_arrondissements.geojson',
-    featureNameProp: 'l_aroff',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/paris_labeled.svg',
-    outputBlank: 'public/images/maps/paris_blank.svg',
-    tolerance: 1,
-  },
-  rome: {
-    datasetPath: 'public/data/landmarks/rome.json',
-    geojsonPath: 'scripts/geojson/rome_municipi.geojson',
-    featureNameProp: 'etichetta_2',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/rome_labeled.svg',
-    outputBlank: 'public/images/maps/rome_blank.svg',
-    tolerance: 3,
-  },
-  berlin: {
-    datasetPath: 'public/data/landmarks/berlin.json',
-    geojsonPath: 'scripts/geojson/berlin_bezirke.geojson',
-    featureNameProp: 'Gemeinde_name',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/berlin_labeled.svg',
-    outputBlank: 'public/images/maps/berlin_blank.svg',
-    tolerance: 2,
-  },
-  bangalore: {
-    datasetPath: 'public/data/landmarks/bangalore.json',
-    geojsonPath: 'scripts/geojson/india_bangalore.geojson',
-    featureNameProp: 'KGISWardName',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/bangalore_labeled.svg',
-    outputBlank: 'public/images/maps/bangalore_blank.svg',
-    tolerance: 1,
-    maxLabels: 15,  // 243 wards — only label the 15 largest by area
-    strokeWidth: 0.5,
-  },
-  chennai: {
-    datasetPath: 'public/data/landmarks/chennai.json',
-    geojsonPath: 'scripts/geojson/india_chennai.geojson',
-    featureNameProp: 'Zone Name',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/chennai_labeled.svg',
-    outputBlank: 'public/images/maps/chennai_blank.svg',
-    tolerance: 1,
-  },
-  delhi: {
-    datasetPath: 'public/data/landmarks/delhi.json',
-    geojsonPath: 'scripts/geojson/india_delhi.geojson',
-    featureNameProp: 'Ward_Name',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/delhi_labeled.svg',
-    outputBlank: 'public/images/maps/delhi_blank.svg',
-    tolerance: 1,
-    suppressFeatureLabels: true,
-    customLabels: [
-      { name: 'Old Delhi',        lat: 28.6562, lon: 77.2302 },
-      { name: 'Connaught Place',  lat: 28.6315, lon: 77.2167 },
-      { name: 'Karol Bagh',       lat: 28.6519, lon: 77.1909 },
-      { name: 'Lajpat Nagar',     lat: 28.5678, lon: 77.2431 },
-      { name: 'Saket',            lat: 28.5244, lon: 77.2167 },
-      { name: 'Mehrauli',         lat: 28.5197, lon: 77.1855 },
-      { name: 'Hauz Khas',        lat: 28.5494, lon: 77.2001 },
-      { name: 'Nehru Place',      lat: 28.5490, lon: 77.2503 },
-      { name: 'Janakpuri',        lat: 28.6289, lon: 77.0833 },
-      { name: 'Dwarka',           lat: 28.5823, lon: 77.0500 },
-      { name: 'Rohini',           lat: 28.7495, lon: 77.0947 },
-      { name: 'Pitampura',        lat: 28.6999, lon: 77.1334 },
-      { name: 'Shahdara',         lat: 28.6725, lon: 77.2940 },
-      { name: 'Vasant Kunj',      lat: 28.5234, lon: 77.1565 },
-    ],
-  },
-  mumbai: {
-    datasetPath: 'public/data/landmarks/mumbai.json',
-    geojsonPath: 'scripts/geojson/india_mumbai.geojson',
-    featureNameProp: 'name',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/mumbai_labeled.svg',
-    outputBlank: 'public/images/maps/mumbai_blank.svg',
-    tolerance: 1,
-  },
-  kolkata: {
-    datasetPath: 'public/data/landmarks/kolkata.json',
-    geojsonPath: 'scripts/geojson/india_kolkata.geojson',
-    featureNameProp: 'WARD',
-    fills: {},
-    palette: DEFAULT_PALETTE,
-    outputLabeled: 'public/images/maps/kolkata_labeled.svg',
-    outputBlank: 'public/images/maps/kolkata_blank.svg',
-    tolerance: 1,
-    suppressFeatureLabels: true,
-    customLabels: [
-      { name: 'Shyambazar',   lat: 22.5922, lon: 88.3688 },
-      { name: 'Dum Dum',      lat: 22.6340, lon: 88.3956 },
-      { name: 'Ultadanga',    lat: 22.5775, lon: 88.3906 },
-      { name: 'New Market',   lat: 22.5626, lon: 88.3516 },
-      { name: 'Park Street',  lat: 22.5508, lon: 88.3521 },
-      { name: 'Alipore',      lat: 22.5398, lon: 88.3299 },
-      { name: 'Ballygunge',   lat: 22.5263, lon: 88.3636 },
-      { name: 'Kasba',        lat: 22.5133, lon: 88.3771 },
-      { name: 'Jadavpur',     lat: 22.4967, lon: 88.3701 },
-      { name: 'Tollygunge',   lat: 22.4934, lon: 88.3448 },
-      { name: 'Behala',       lat: 22.4967, lon: 88.3097 },
-      { name: 'Salt Lake',    lat: 22.5795, lon: 88.4169 },
-      { name: 'Gariahat',     lat: 22.5197, lon: 88.3681 },
-    ],
-  },
-};
+function loadMapSpecs(): Record<string, MapSpec> {
+  const root = path.resolve(import.meta.dirname, '..');
+  const manifestPath = path.resolve(root, 'scripts/geo-data/manifest.json');
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8')) as {
+    cities: Array<{
+      id: string;
+      geojson: string | null;
+      featureNameProp: string;
+      fills: Record<string, string> | null;
+      palette: string[] | null;
+      tolerance: number;
+      strokeWidth: number | null;
+      maxLabels: number | null;
+      suppressFeatureLabels: boolean;
+      customLabels: Array<{ name: string; lat: number; lon: number }> | null;
+    }>;
+  };
+
+  const specs: Record<string, MapSpec> = {};
+  for (const entry of manifest.cities) {
+    if (!entry.geojson) continue; // skip entries with no GeoJSON (e.g. africa_cities)
+    specs[entry.id] = {
+      datasetPath: `public/data/landmarks/${entry.id}.json`,
+      geojsonPath: entry.geojson,
+      featureNameProp: entry.featureNameProp,
+      fills: entry.fills ?? {},
+      palette: entry.palette ?? DEFAULT_PALETTE,
+      outputLabeled: `public/images/maps/${entry.id}_labeled.svg`,
+      outputBlank: `public/images/maps/${entry.id}_blank.svg`,
+      tolerance: entry.tolerance,
+      ...(entry.strokeWidth !== null ? { strokeWidth: entry.strokeWidth } : {}),
+      ...(entry.maxLabels !== null ? { maxLabels: entry.maxLabels } : {}),
+      ...(entry.suppressFeatureLabels ? { suppressFeatureLabels: true } : {}),
+      ...(entry.customLabels ? { customLabels: entry.customLabels } : {}),
+    };
+  }
+  return specs;
+}
+
+const MAP_SPECS: Record<string, MapSpec> = loadMapSpecs();
 
 // ---------------------------------------------------------------------------
 // Coordinate helpers

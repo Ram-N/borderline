@@ -1,15 +1,5 @@
 import { LANDMARK_MAP_CONFIG } from '../../data/landmarkMapConfig';
-
-const CITY_GROUPS: { label: string; keys: string[] }[] = [
-  {
-    label: 'World Cities',
-    keys: ['nyc', 'london', 'paris', 'rome', 'berlin'],
-  },
-  {
-    label: 'Indian Cities',
-    keys: ['bangalore', 'chennai', 'delhi', 'mumbai', 'kolkata'],
-  },
-];
+import { CITY_GROUPS } from '../../generated/geoRegistry';
 
 interface Props {
   value: string;

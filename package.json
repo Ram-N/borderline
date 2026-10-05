@@ -13,6 +13,7 @@
     "puzzles:calendar": "tsx scripts/generatePuzzles.ts calendar --year 2026",
     "puzzles:stats": "tsx scripts/generatePuzzles.ts stats",
     "puzzles:approve-all": "tsx scripts/generatePuzzles.ts approve --all",
+    "geo:build": "tsx scripts/generateLandmarkMaps.ts && tsx scripts/generateRegionMaps.ts && tsx scripts/geo/generateRegistry.ts",
     "landmark:maps": "tsx scripts/generateLandmarkMaps.ts",
     "region:maps": "tsx scripts/generateRegionMaps.ts",
     "region:maps:india": "tsx scripts/generateRegionMaps.ts --map india"

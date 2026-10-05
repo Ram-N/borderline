@@ -1,22 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LANDMARK_MAP_CONFIG } from '../../data/landmarkMapConfig';
+import { CITY_GROUPS, REGION_MAPS } from '../../generated/geoRegistry';
 
 const GAMES = [
   { id: 'match-the-map',   title: 'Match the Map',   desc: 'Match numbered pins to their landmark names.' },
   { id: 'where-is-it',     title: 'Where Is It?',    desc: 'Drop a pin on the map to locate a landmark.' },
   { id: 'where-is-region', title: 'Find the Region', desc: 'Pin a named country or state on a continent map.' },
-];
-
-const CITY_GROUPS = [
-  { label: 'World Cities',   keys: ['nyc', 'london', 'paris', 'rome', 'berlin'] },
-  { label: 'Indian Cities',  keys: ['bangalore', 'chennai', 'delhi', 'mumbai', 'kolkata'] },
-  { label: 'African Cities', keys: ['africa_cities'] },
-];
-
-const REGION_MAPS = [
-  { key: 'india',  label: 'India' },
-  { key: 'africa', label: 'Africa' },
 ];
 
 const DIFFICULTIES = [
@@ -46,7 +36,7 @@ export default function LandMarkHome() {
     setGameId(id); setMapKey(null); setDifficulty(null); setStep(2);
   }
   function pickMap(key: string) {
-    setMapKey(key); setDifficulty(null); setStep(3);
+    setMapKey(key); setDifficulty(3); setStep(3);
   }
   function pickDiff(d: number) {
     setDifficulty(d);

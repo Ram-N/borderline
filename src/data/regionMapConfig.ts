@@ -9,20 +9,4 @@ export type RegionMapConfig = {
   outlineSvg: string;
 };
 
-export const REGION_MAP_CONFIG: Record<string, RegionMapConfig> = {
-  india: {
-    label: 'India',
-    dataUrl: '/data/regions/india.json',
-    boundariesSvg: '/images/maps/india_boundaries.svg',
-    outlineSvg: '/images/maps/india_outline.svg',
-  },
-  africa: {
-    label: 'Africa',
-    dataUrl: '/data/regions/africa.json',
-    boundariesSvg: '/images/maps/africa_boundaries.svg',
-    outlineSvg: '/images/maps/africa_outline.svg',
-  },
-  // Additional regions can be added here as their maps are generated:
-  // usa: { label: 'United States', ... },
-  // europe: { label: 'Europe', ... },
-};
+export { REGION_MAP_CONFIG } from '../generated/geoRegistry';
