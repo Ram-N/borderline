@@ -438,11 +438,11 @@ function buildMap(mapKey: string, spec: MapSpec, toleranceOverride?: number): vo
 
 function printPins(
   mapKey: string,
-  spec: MapSpec,
+  datasetPath: string,
   pinArgs: string[],
 ): void {
   const root = path.resolve(import.meta.dirname, '..');
-  const datasetAbs = path.resolve(root, spec.datasetPath);
+  const datasetAbs = path.resolve(root, datasetPath);
   const dataset = JSON.parse(fs.readFileSync(datasetAbs, 'utf-8'));
   const bounds: GeoBounds = dataset.bounds;
   const dims: SvgDimensions = parseViewBox(dataset.viewBox);
@@ -495,11 +495,13 @@ const args = parseArgs(process.argv.slice(2));
 if (args.printPins.length > 0) {
   const key = args.mapKey ?? Object.keys(MAP_SPECS)[0];
   const spec = MAP_SPECS[key];
-  if (!spec) {
+  const datasetPath = spec?.datasetPath ?? `public/data/landmarks/${key}.json`;
+  const root = path.resolve(import.meta.dirname, '..');
+  if (!spec && !fs.existsSync(path.resolve(root, datasetPath))) {
     console.error(`Unknown map: ${key}`);
     process.exit(1);
   }
-  printPins(key, spec, args.printPins);
+  printPins(key, datasetPath, args.printPins);
 } else {
   const toProcess = args.mapKey
     ? { [args.mapKey]: MAP_SPECS[args.mapKey] }
