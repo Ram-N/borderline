@@ -94,6 +94,8 @@ type FeatureFilterSpec = {
   equalsValue?: string;
   excludeByProp?: string;
   excludeValues?: string[];
+  includeByProp?: string;
+  includeValues?: string[];
 } | null;
 
 function buildFeatureFilter(
@@ -101,6 +103,9 @@ function buildFeatureFilter(
 ): ((props: Record<string, unknown>) => boolean) | undefined {
   if (!filterSpec) return undefined;
   return (props) => {
+    if (filterSpec.includeByProp && filterSpec.includeValues) {
+      if (!filterSpec.includeValues.includes(props[filterSpec.includeByProp] as string)) return false;
+    }
     if (filterSpec.equalsProp && filterSpec.equalsValue) {
       if (props[filterSpec.equalsProp] !== filterSpec.equalsValue) return false;
     }

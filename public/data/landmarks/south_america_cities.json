@@ -1,0 +1,25 @@
+{
+  "id": "south_america_cities",
+  "name": "South American Cities",
+  "bounds": {
+    "minLat": -56.0,
+    "maxLat": 13.0,
+    "minLon": -82.0,
+    "maxLon": -34.0
+  },
+  "viewBox": "0 0 600 920",
+  "landmarks": [
+    { "id": "brasilia",     "name": "Brasília",     "lat": -15.780, "lon": -47.930, "svgX": 426, "svgY": 384, "hint": "Planned capital built from scratch in the 1960s" },
+    { "id": "buenos-aires", "name": "Buenos Aires", "lat": -34.603, "lon": -58.381, "svgX": 295, "svgY": 635, "hint": "The Paris of South America" },
+    { "id": "lima",         "name": "Lima",         "lat": -12.046, "lon": -77.043, "svgX": 62,  "svgY": 334, "hint": "The City of Kings, Peru's coastal capital" },
+    { "id": "bogota",       "name": "Bogotá",       "lat": 4.711,   "lon": -74.073, "svgX": 99,  "svgY": 111, "hint": "One of the highest capital cities in the world" },
+    { "id": "santiago",     "name": "Santiago",     "lat": -33.457, "lon": -70.648, "svgX": 142, "svgY": 620, "hint": "Capital at the foot of the Andes" },
+    { "id": "caracas",      "name": "Caracas",      "lat": 10.480,  "lon": -66.904, "svgX": 189, "svgY": 34,  "hint": "Venezuela's capital surrounded by mountains" },
+    { "id": "quito",        "name": "Quito",        "lat": -0.220,  "lon": -78.512, "svgX": 44,  "svgY": 176, "hint": "Second highest capital city in the world" },
+    { "id": "la-paz",       "name": "La Paz",       "lat": -16.500, "lon": -68.147, "svgX": 173, "svgY": 394, "hint": "Highest capital city in the world" },
+    { "id": "montevideo",   "name": "Montevideo",   "lat": -34.901, "lon": -56.188, "svgX": 323, "svgY": 640, "hint": "Uruguay's capital on the Río de la Plata" },
+    { "id": "asuncion",     "name": "Asunción",     "lat": -25.286, "lon": -57.647, "svgX": 304, "svgY": 511, "hint": "Paraguay's capital, the Mother of Cities" },
+    { "id": "paramaribo",   "name": "Paramaribo",   "lat": 5.852,   "lon": -55.204, "svgX": 335, "svgY": 95,  "hint": "Capital of South America's smallest country" },
+    { "id": "georgetown",   "name": "Georgetown",   "lat": 6.806,   "lon": -58.156, "svgX": 298, "svgY": 83,  "hint": "Guyana's capital, the Garden City" }
+  ]
+}

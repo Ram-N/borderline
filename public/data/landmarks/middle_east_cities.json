@@ -1,0 +1,31 @@
+{
+  "id": "middle_east_cities",
+  "name": "Middle East Cities",
+  "bounds": {
+    "minLat": 12.0,
+    "maxLat": 43.0,
+    "minLon": 25.0,
+    "maxLon": 64.0
+  },
+  "viewBox": "0 0 750 640",
+  "landmarks": [
+    { "id": "cairo",       "name": "Cairo",       "lat": 30.065,  "lon": 31.250,  "svgX": 120, "svgY": 267, "hint": "Africa's largest city, near the Pyramids of Giza" },
+    { "id": "jerusalem",   "name": "Jerusalem",   "lat": 31.769,  "lon": 35.216,  "svgX": 196, "svgY": 234, "hint": "One of the oldest cities in the world, sacred to three religions" },
+    { "id": "amman",       "name": "Amman",       "lat": 31.957,  "lon": 35.945,  "svgX": 210, "svgY": 231, "hint": "Jordan's capital, built on seven hills" },
+    { "id": "beirut",      "name": "Beirut",      "lat": 33.889,  "lon": 35.501,  "svgX": 203, "svgY": 177, "hint": "The Paris of the Middle East" },
+    { "id": "damascus",    "name": "Damascus",    "lat": 33.510,  "lon": 36.292,  "svgX": 218, "svgY": 185, "hint": "One of the oldest continuously inhabited cities in the world" },
+    { "id": "baghdad",     "name": "Baghdad",     "lat": 33.341,  "lon": 44.401,  "svgX": 374, "svgY": 188, "hint": "Capital on the Tigris, once centre of the Islamic Golden Age" },
+    { "id": "tehran",      "name": "Tehran",      "lat": 35.694,  "lon": 51.421,  "svgX": 510, "svgY": 143, "hint": "Capital in the shadow of Mount Damavand" },
+    { "id": "riyadh",      "name": "Riyadh",      "lat": 24.688,  "lon": 46.724,  "svgX": 418, "svgY": 357, "hint": "Capital of the birthplace of Islam" },
+    { "id": "kuwait-city", "name": "Kuwait City", "lat": 29.378,  "lon": 47.990,  "svgX": 442, "svgY": 271, "hint": "Capital of one of the wealthiest countries per capita" },
+    { "id": "manama",      "name": "Manama",      "lat": 26.215,  "lon": 50.586,  "svgX": 492, "svgY": 330, "hint": "Capital of the island kingdom of Bahrain" },
+    { "id": "doha",        "name": "Doha",        "lat": 25.286,  "lon": 51.533,  "svgX": 510, "svgY": 348, "hint": "Hosted the 2022 FIFA World Cup" },
+    { "id": "abu-dhabi",   "name": "Abu Dhabi",   "lat": 24.453,  "lon": 54.377,  "svgX": 564, "svgY": 364, "hint": "Capital of the UAE on the Arabian Gulf" },
+    { "id": "muscat",      "name": "Muscat",      "lat": 23.614,  "lon": 58.593,  "svgX": 645, "svgY": 380, "hint": "Capital of Oman on the Gulf of Oman" },
+    { "id": "sanaa",       "name": "Sana'a",      "lat": 15.369,  "lon": 44.191,  "svgX": 369, "svgY": 495, "hint": "One of the world's oldest continuously inhabited cities" },
+    { "id": "ankara",      "name": "Ankara",      "lat": 39.921,  "lon": 32.854,  "svgX": 152, "svgY": 62,  "hint": "Turkey's capital, not Istanbul" },
+    { "id": "tbilisi",     "name": "Tbilisi",     "lat": 41.694,  "lon": 44.834,  "svgX": 382, "svgY": 27,  "hint": "Georgia's capital on the Kura River" },
+    { "id": "yerevan",     "name": "Yerevan",     "lat": 40.179,  "lon": 44.499,  "svgX": 375, "svgY": 58,  "hint": "One of the world's oldest cities, at the foot of Mount Ararat" },
+    { "id": "baku",        "name": "Baku",        "lat": 40.409,  "lon": 49.867,  "svgX": 478, "svgY": 53,  "hint": "Capital on the Caspian Sea, known for its oil wealth" }
+  ]
+}

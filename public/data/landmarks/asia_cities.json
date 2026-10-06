@@ -1,0 +1,33 @@
+{
+  "id": "asia_cities",
+  "name": "Asian Cities",
+  "bounds": {
+    "minLat": -11.0,
+    "maxLat": 55.0,
+    "minLon": 25.0,
+    "maxLon": 146.0
+  },
+  "viewBox": "0 0 800 470",
+  "landmarks": [
+    { "id": "beijing",      "name": "Beijing",      "lat": 39.909,  "lon": 116.391, "svgX": 604, "svgY": 108, "hint": "Capital of the world's most populous country" },
+    { "id": "tokyo",        "name": "Tokyo",        "lat": 35.690,  "lon": 139.692, "svgX": 758, "svgY": 138, "hint": "World's largest metropolitan area" },
+    { "id": "new-delhi",    "name": "New Delhi",    "lat": 28.635,  "lon": 77.224,  "svgX": 345, "svgY": 188, "hint": "Capital of the world's largest democracy" },
+    { "id": "jakarta",      "name": "Jakarta",      "lat": -6.200,  "lon": 106.816, "svgX": 541, "svgY": 436, "hint": "Largest city in Southeast Asia" },
+    { "id": "seoul",        "name": "Seoul",        "lat": 37.566,  "lon": 126.978, "svgX": 674, "svgY": 124, "hint": "Ultra-modern capital on the Han River" },
+    { "id": "bangkok",      "name": "Bangkok",      "lat": 13.751,  "lon": 100.493, "svgX": 499, "svgY": 294, "hint": "City of Angels, Southeast Asia's cultural hub" },
+    { "id": "kuala-lumpur", "name": "Kuala Lumpur", "lat": 3.148,   "lon": 101.686, "svgX": 507, "svgY": 369, "hint": "Home of the Petronas Twin Towers" },
+    { "id": "manila",       "name": "Manila",       "lat": 14.600,  "lon": 121.003, "svgX": 634, "svgY": 288, "hint": "Pearl of the Orient Seas" },
+    { "id": "hanoi",        "name": "Hanoi",        "lat": 21.028,  "lon": 105.854, "svgX": 534, "svgY": 242, "hint": "Capital of Vietnam on the Red River Delta" },
+    { "id": "dhaka",        "name": "Dhaka",        "lat": 23.724,  "lon": 90.407,  "svgX": 432, "svgY": 223, "hint": "One of the world's most densely populated cities" },
+    { "id": "tehran",       "name": "Tehran",       "lat": 35.694,  "lon": 51.421,  "svgX": 175, "svgY": 138, "hint": "Capital in the shadow of Mount Damavand" },
+    { "id": "riyadh",       "name": "Riyadh",       "lat": 24.688,  "lon": 46.724,  "svgX": 144, "svgY": 216, "hint": "Capital of the birthplace of Islam" },
+    { "id": "ankara",       "name": "Ankara",       "lat": 39.921,  "lon": 32.854,  "svgX": 52,  "svgY": 107, "hint": "Turkey's capital, not Istanbul" },
+    { "id": "kathmandu",    "name": "Kathmandu",    "lat": 27.717,  "lon": 85.319,  "svgX": 399, "svgY": 194, "hint": "Gateway to the Himalayas" },
+    { "id": "islamabad",    "name": "Islamabad",    "lat": 33.738,  "lon": 73.060,  "svgX": 318, "svgY": 152, "hint": "Pakistan's planned capital in the Margalla Hills" },
+    { "id": "taipei",       "name": "Taipei",       "lat": 25.032,  "lon": 121.565, "svgX": 638, "svgY": 214, "hint": "Capital of Taiwan, known for night markets and temples" },
+    { "id": "singapore",    "name": "Singapore",    "lat": 1.352,   "lon": 103.820, "svgX": 521, "svgY": 382, "hint": "City-state at the southern tip of the Malay Peninsula" },
+    { "id": "ulaanbaatar",  "name": "Ulaanbaatar",  "lat": 47.906,  "lon": 106.917, "svgX": 541, "svgY": 51,  "hint": "World's coldest capital city" },
+    { "id": "abu-dhabi",    "name": "Abu Dhabi",    "lat": 24.453,  "lon": 54.377,  "svgX": 194, "svgY": 218, "hint": "Capital of the UAE on the Arabian Gulf" },
+    { "id": "naypyidaw",    "name": "Naypyidaw",    "lat": 19.745,  "lon": 96.115,  "svgX": 470, "svgY": 251, "hint": "Myanmar's purpose-built capital city" }
+  ]
+}

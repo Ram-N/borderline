@@ -90,6 +90,38 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     "blankSvg": "/images/maps/europe_outline.svg",
     "defaultDifficulty": 1,
     "diagonalKm": 5902
+  },
+  "north_america_cities": {
+    "label": "North American Cities",
+    "dataUrl": "/data/landmarks/north_america_cities.json",
+    "labeledSvg": "/images/maps/north_america_boundaries.svg",
+    "blankSvg": "/images/maps/north_america_outline.svg",
+    "defaultDifficulty": 1,
+    "diagonalKm": 8200
+  },
+  "middle_east_cities": {
+    "label": "Middle East Cities",
+    "dataUrl": "/data/landmarks/middle_east_cities.json",
+    "labeledSvg": "/images/maps/middle_east_boundaries.svg",
+    "blankSvg": "/images/maps/middle_east_outline.svg",
+    "defaultDifficulty": 1,
+    "diagonalKm": 5500
+  },
+  "asia_cities": {
+    "label": "Asian Cities",
+    "dataUrl": "/data/landmarks/asia_cities.json",
+    "labeledSvg": "/images/maps/asia_boundaries.svg",
+    "blankSvg": "/images/maps/asia_outline.svg",
+    "defaultDifficulty": 1,
+    "diagonalKm": 14000
+  },
+  "south_america_cities": {
+    "label": "South American Cities",
+    "dataUrl": "/data/landmarks/south_america_cities.json",
+    "labeledSvg": "/images/maps/south_america_boundaries.svg",
+    "blankSvg": "/images/maps/south_america_outline.svg",
+    "defaultDifficulty": 1,
+    "diagonalKm": 9100
   }
 };
 
@@ -111,6 +143,30 @@ export const REGION_MAP_CONFIG: Record<string, RegionMapConfig> = {
     "dataUrl": "/data/regions/africa.json",
     "boundariesSvg": "/images/maps/africa_boundaries.svg",
     "outlineSvg": "/images/maps/africa_outline.svg"
+  },
+  "north_america": {
+    "label": "North America",
+    "dataUrl": "/data/regions/north_america.json",
+    "boundariesSvg": "/images/maps/north_america_boundaries.svg",
+    "outlineSvg": "/images/maps/north_america_outline.svg"
+  },
+  "middle_east": {
+    "label": "Middle East",
+    "dataUrl": "/data/regions/middle_east.json",
+    "boundariesSvg": "/images/maps/middle_east_boundaries.svg",
+    "outlineSvg": "/images/maps/middle_east_outline.svg"
+  },
+  "asia": {
+    "label": "Asia",
+    "dataUrl": "/data/regions/asia.json",
+    "boundariesSvg": "/images/maps/asia_boundaries.svg",
+    "outlineSvg": "/images/maps/asia_outline.svg"
+  },
+  "south_america": {
+    "label": "South America",
+    "dataUrl": "/data/regions/south_america.json",
+    "boundariesSvg": "/images/maps/south_america_boundaries.svg",
+    "outlineSvg": "/images/maps/south_america_outline.svg"
   }
 };
 
@@ -146,6 +202,30 @@ export const CITY_GROUPS: { label: string; keys: string[] }[] = [
     "keys": [
       "europe_cities"
     ]
+  },
+  {
+    "label": "North American Cities",
+    "keys": [
+      "north_america_cities"
+    ]
+  },
+  {
+    "label": "Middle East Cities",
+    "keys": [
+      "middle_east_cities"
+    ]
+  },
+  {
+    "label": "Asian Cities",
+    "keys": [
+      "asia_cities"
+    ]
+  },
+  {
+    "label": "South American Cities",
+    "keys": [
+      "south_america_cities"
+    ]
   }
 ];
 
@@ -161,5 +241,21 @@ export const REGION_MAPS: { key: string; label: string }[] = [
   {
     "key": "africa",
     "label": "Africa"
+  },
+  {
+    "key": "north_america",
+    "label": "North America"
+  },
+  {
+    "key": "middle_east",
+    "label": "Middle East"
+  },
+  {
+    "key": "asia",
+    "label": "Asia"
+  },
+  {
+    "key": "south_america",
+    "label": "South America"
   }
 ];

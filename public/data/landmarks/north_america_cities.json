@@ -1,0 +1,29 @@
+{
+  "id": "north_america_cities",
+  "name": "North American Cities",
+  "bounds": {
+    "minLat": 7.0,
+    "maxLat": 50.0,
+    "minLon": -120.0,
+    "maxLon": -60.0
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "washington-dc",  "name": "Washington D.C.",  "lat": 38.895,  "lon": -77.036,  "svgX": 572, "svgY": 156, "hint": "Capital of the United States on the Potomac River" },
+    { "id": "ottawa",         "name": "Ottawa",           "lat": 45.421,  "lon": -75.697,  "svgX": 590, "svgY": 68,  "hint": "Canada's capital, not Toronto or Montreal" },
+    { "id": "mexico-city",    "name": "Mexico City",      "lat": 19.433,  "lon": -99.133,  "svgX": 279, "svgY": 358, "hint": "One of the world's largest cities, at 2,240 m altitude" },
+    { "id": "havana",         "name": "Havana",           "lat": 23.136,  "lon": -82.359,  "svgX": 503, "svgY": 308, "hint": "Capital of the largest island in the Caribbean" },
+    { "id": "panama-city",    "name": "Panama City",      "lat": 8.994,   "lon": -79.519,  "svgX": 541, "svgY": 565, "hint": "Capital at the southern end of Central America" },
+    { "id": "san-jose",       "name": "San José",         "lat": 9.933,   "lon": -84.083,  "svgX": 479, "svgY": 551, "hint": "Capital of the most visited country in Central America" },
+    { "id": "managua",        "name": "Managua",          "lat": 12.136,  "lon": -86.291,  "svgX": 451, "svgY": 521, "hint": "Capital of the largest country in Central America" },
+    { "id": "tegucigalpa",    "name": "Tegucigalpa",      "lat": 14.093,  "lon": -87.207,  "svgX": 439, "svgY": 494, "hint": "Capital of Honduras in a mountainous valley" },
+    { "id": "guatemala-city", "name": "Guatemala City",   "lat": 14.641,  "lon": -90.513,  "svgX": 395, "svgY": 487, "hint": "Largest city in Central America" },
+    { "id": "san-salvador",   "name": "San Salvador",     "lat": 13.700,  "lon": -89.191,  "svgX": 412, "svgY": 500, "hint": "Capital of the smallest country in mainland America" },
+    { "id": "belmopan",       "name": "Belmopan",         "lat": 17.251,  "lon": -88.767,  "svgX": 418, "svgY": 443, "hint": "Capital of the only English-speaking country in Central America" },
+    { "id": "port-au-prince", "name": "Port-au-Prince",   "lat": 18.543,  "lon": -72.340,  "svgX": 627, "svgY": 425, "hint": "Capital of the first Black republic in the world" },
+    { "id": "santo-domingo",  "name": "Santo Domingo",    "lat": 18.476,  "lon": -69.951,  "svgX": 667, "svgY": 426, "hint": "Oldest continuously inhabited European settlement in the Americas" },
+    { "id": "kingston",       "name": "Kingston",         "lat": 17.997,  "lon": -76.793,  "svgX": 576, "svgY": 432, "hint": "Capital of the birthplace of reggae" },
+    { "id": "nassau",         "name": "Nassau",           "lat": 25.048,  "lon": -77.354,  "svgX": 570, "svgY": 313, "hint": "Capital of the Bahamas" },
+    { "id": "port-of-spain",  "name": "Port of Spain",    "lat": 10.652,  "lon": -61.518,  "svgX": 778, "svgY": 541, "hint": "Capital of Trinidad and Tobago" }
+  ]
+}
