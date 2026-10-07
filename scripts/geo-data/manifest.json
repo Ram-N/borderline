@@ -282,6 +282,44 @@
       "diagonalKm": 5500
     },
     {
+      "id": "south_asia_cities",
+      "label": "South Asian Cities",
+      "geojson": null,
+      "labeledSvgOverride": "/images/maps/south_asia_boundaries.svg",
+      "blankSvgOverride": "/images/maps/south_asia_outline.svg",
+      "featureNameProp": null,
+      "fills": {},
+      "palette": null,
+      "tolerance": null,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "group": "Continents",
+      "gameModes": ["where-is-it", "match-the-map"],
+      "defaultDifficulty": 1,
+      "diagonalKm": 5500
+    },
+    {
+      "id": "south_east_asia_cities",
+      "label": "South East Asian Cities",
+      "geojson": null,
+      "labeledSvgOverride": "/images/maps/south_east_asia_boundaries.svg",
+      "blankSvgOverride": "/images/maps/south_east_asia_outline.svg",
+      "featureNameProp": null,
+      "fills": {},
+      "palette": null,
+      "tolerance": null,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "group": "Continents",
+      "gameModes": ["where-is-it", "match-the-map"],
+      "defaultDifficulty": 1,
+      "diagonalKm": 7000
+    },
+    {
       "id": "asia_cities",
       "label": "Asian Cities",
       "geojson": null,
@@ -548,6 +586,76 @@
         { "id": "tbilisi",     "name": "Tbilisi",     "lat": 41.694,  "lon": 44.834,  "hint": "Georgia's capital on the Kura River" },
         { "id": "yerevan",     "name": "Yerevan",     "lat": 40.179,  "lon": 44.499,  "hint": "One of the world's oldest cities, at the foot of Mount Ararat" },
         { "id": "baku",        "name": "Baku",        "lat": 40.409,  "lon": 49.867,  "hint": "Capital on the Caspian Sea, known for its oil wealth" }
+      ]
+    },
+    {
+      "id": "south_asia",
+      "label": "South Asia",
+      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "featureNameProp": "NAME",
+      "featureFilter": {
+        "includeByProp": "NAME",
+        "includeValues": [
+          "Afghanistan", "Pakistan", "India", "Nepal", "Bhutan",
+          "Bangladesh", "Sri Lanka", "Maldives"
+        ]
+      },
+      "nameOverrides": null,
+      "bounds": { "minLat": 3.0, "maxLat": 38.5, "minLon": 60.0, "maxLon": 97.5 },
+      "viewBox": "0 0 800 760",
+      "tolerance": 1,
+      "geoTolerance": 0.04,
+      "fills": null,
+      "palette": null,
+      "gameModes": ["where-is-region"],
+      "cities": [
+        { "id": "new-delhi",  "name": "New Delhi",  "lat": 28.635, "lon": 77.224, "hint": "Capital of the world's largest democracy" },
+        { "id": "islamabad",  "name": "Islamabad",  "lat": 33.738, "lon": 73.060, "hint": "Pakistan's planned capital in the Margalla Hills" },
+        { "id": "dhaka",      "name": "Dhaka",      "lat": 23.724, "lon": 90.407, "hint": "One of the world's most densely populated cities" },
+        { "id": "colombo",    "name": "Colombo",    "lat": 6.927,  "lon": 79.861, "hint": "Sri Lanka's largest city and commercial capital" },
+        { "id": "kathmandu",  "name": "Kathmandu",  "lat": 27.717, "lon": 85.319, "hint": "Gateway to the Himalayas, Nepal's capital" },
+        { "id": "thimphu",    "name": "Thimphu",    "lat": 27.467, "lon": 89.639, "hint": "One of the world's highest capital cities, capital of Bhutan" },
+        { "id": "male",       "name": "Malé",       "lat": 4.175,  "lon": 73.509, "hint": "Capital of the Maldives, one of the world's smallest capitals" },
+        { "id": "kabul",      "name": "Kabul",      "lat": 34.528, "lon": 69.172, "hint": "Afghanistan's capital in the Hindu Kush mountains" },
+        { "id": "mumbai",     "name": "Mumbai",     "lat": 19.076, "lon": 72.877, "hint": "India's financial capital and home of Bollywood" },
+        { "id": "karachi",    "name": "Karachi",    "lat": 24.861, "lon": 67.010, "hint": "Pakistan's largest city on the Arabian Sea" },
+        { "id": "lahore",     "name": "Lahore",     "lat": 31.549, "lon": 74.343, "hint": "Pakistan's cultural capital and City of Gardens" },
+        { "id": "chittagong", "name": "Chittagong", "lat": 22.329, "lon": 91.834, "hint": "Bangladesh's main port city on the Bay of Bengal" }
+      ]
+    },
+    {
+      "id": "south_east_asia",
+      "label": "South East Asia",
+      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "featureNameProp": "NAME",
+      "featureFilter": {
+        "includeByProp": "NAME",
+        "includeValues": [
+          "Myanmar", "Thailand", "Laos", "Cambodia", "Vietnam",
+          "Malaysia", "Singapore", "Brunei", "Indonesia", "Philippines", "Timor-Leste"
+        ]
+      },
+      "nameOverrides": null,
+      "bounds": { "minLat": -11.0, "maxLat": 28.5, "minLon": 92.0, "maxLon": 141.0 },
+      "viewBox": "0 0 900 730",
+      "tolerance": 1,
+      "geoTolerance": 0.04,
+      "fills": null,
+      "palette": null,
+      "gameModes": ["where-is-region"],
+      "cities": [
+        { "id": "naypyidaw",             "name": "Naypyidaw",             "lat": 19.745, "lon": 96.115,  "hint": "Myanmar's purpose-built capital city" },
+        { "id": "bangkok",               "name": "Bangkok",               "lat": 13.751, "lon": 100.493, "hint": "City of Angels, Thailand's vibrant capital" },
+        { "id": "vientiane",             "name": "Vientiane",             "lat": 17.975, "lon": 102.633, "hint": "One of the world's quietest capital cities" },
+        { "id": "phnom-penh",            "name": "Phnom Penh",            "lat": 11.569, "lon": 104.916, "hint": "Cambodia's capital at the confluence of three rivers" },
+        { "id": "hanoi",                 "name": "Hanoi",                 "lat": 21.028, "lon": 105.854, "hint": "Vietnam's capital on the Red River Delta" },
+        { "id": "ho-chi-minh-city",      "name": "Ho Chi Minh City",      "lat": 10.823, "lon": 106.629, "hint": "Vietnam's largest city, formerly Saigon" },
+        { "id": "kuala-lumpur",          "name": "Kuala Lumpur",          "lat": 3.148,  "lon": 101.686, "hint": "Home of the Petronas Twin Towers" },
+        { "id": "singapore",             "name": "Singapore",             "lat": 1.352,  "lon": 103.820, "hint": "City-state at the southern tip of the Malay Peninsula" },
+        { "id": "bandar-seri-begawan",   "name": "Bandar Seri Begawan",   "lat": 4.943,  "lon": 114.948, "hint": "Capital of the oil-rich sultanate of Brunei" },
+        { "id": "jakarta",               "name": "Jakarta",               "lat": -6.200, "lon": 106.816, "hint": "Largest city in Southeast Asia, Indonesia's capital" },
+        { "id": "manila",                "name": "Manila",                "lat": 14.600, "lon": 121.003, "hint": "Pearl of the Orient Seas, capital of the Philippines" },
+        { "id": "dili",                  "name": "Dili",                  "lat": -8.559, "lon": 125.579, "hint": "Capital of Timor-Leste, one of Asia's youngest nations" }
       ]
     },
     {

@@ -107,6 +107,22 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     "defaultDifficulty": 1,
     "diagonalKm": 5500
   },
+  "south_asia_cities": {
+    "label": "South Asian Cities",
+    "dataUrl": "/data/landmarks/south_asia_cities.json",
+    "labeledSvg": "/images/maps/south_asia_boundaries.svg",
+    "blankSvg": "/images/maps/south_asia_outline.svg",
+    "defaultDifficulty": 1,
+    "diagonalKm": 5500
+  },
+  "south_east_asia_cities": {
+    "label": "South East Asian Cities",
+    "dataUrl": "/data/landmarks/south_east_asia_cities.json",
+    "labeledSvg": "/images/maps/south_east_asia_boundaries.svg",
+    "blankSvg": "/images/maps/south_east_asia_outline.svg",
+    "defaultDifficulty": 1,
+    "diagonalKm": 7000
+  },
   "asia_cities": {
     "label": "Asian Cities",
     "dataUrl": "/data/landmarks/asia_cities.json",
@@ -156,6 +172,18 @@ export const REGION_MAP_CONFIG: Record<string, RegionMapConfig> = {
     "boundariesSvg": "/images/maps/middle_east_boundaries.svg",
     "outlineSvg": "/images/maps/middle_east_outline.svg"
   },
+  "south_asia": {
+    "label": "South Asia",
+    "dataUrl": "/data/regions/south_asia.json",
+    "boundariesSvg": "/images/maps/south_asia_boundaries.svg",
+    "outlineSvg": "/images/maps/south_asia_outline.svg"
+  },
+  "south_east_asia": {
+    "label": "South East Asia",
+    "dataUrl": "/data/regions/south_east_asia.json",
+    "boundariesSvg": "/images/maps/south_east_asia_boundaries.svg",
+    "outlineSvg": "/images/maps/south_east_asia_outline.svg"
+  },
   "asia": {
     "label": "Asia",
     "dataUrl": "/data/regions/asia.json",
@@ -198,6 +226,8 @@ export const CITY_GROUPS: { label: string; keys: string[] }[] = [
       "europe_cities",
       "north_america_cities",
       "middle_east_cities",
+      "south_asia_cities",
+      "south_east_asia_cities",
       "asia_cities",
       "south_america_cities"
     ]
@@ -224,6 +254,14 @@ export const REGION_MAPS: { key: string; label: string }[] = [
   {
     "key": "middle_east",
     "label": "Middle East"
+  },
+  {
+    "key": "south_asia",
+    "label": "South Asia"
+  },
+  {
+    "key": "south_east_asia",
+    "label": "South East Asia"
   },
   {
     "key": "asia",

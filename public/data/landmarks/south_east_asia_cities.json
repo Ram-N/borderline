@@ -1,0 +1,25 @@
+{
+  "id": "south_east_asia_cities",
+  "name": "South East Asian Cities",
+  "bounds": {
+    "minLat": -11.0,
+    "maxLat": 28.5,
+    "minLon": 92.0,
+    "maxLon": 141.0
+  },
+  "viewBox": "0 0 900 730",
+  "landmarks": [
+    { "id": "naypyidaw",           "name": "Naypyidaw",           "lat": 19.745, "lon": 96.115,  "svgX": 76,  "svgY": 162, "hint": "Myanmar's purpose-built capital city" },
+    { "id": "bangkok",             "name": "Bangkok",             "lat": 13.751, "lon": 100.493, "svgX": 156, "svgY": 273, "hint": "City of Angels, Thailand's vibrant capital" },
+    { "id": "vientiane",           "name": "Vientiane",           "lat": 17.975, "lon": 102.633, "svgX": 195, "svgY": 195, "hint": "One of the world's quietest capital cities" },
+    { "id": "phnom-penh",          "name": "Phnom Penh",          "lat": 11.569, "lon": 104.916, "svgX": 237, "svgY": 313, "hint": "Cambodia's capital at the confluence of three rivers" },
+    { "id": "hanoi",               "name": "Hanoi",               "lat": 21.028, "lon": 105.854, "svgX": 254, "svgY": 138, "hint": "Vietnam's capital on the Red River Delta" },
+    { "id": "ho-chi-minh-city",    "name": "Ho Chi Minh City",    "lat": 10.823, "lon": 106.629, "svgX": 269, "svgY": 327, "hint": "Vietnam's largest city, formerly Saigon" },
+    { "id": "kuala-lumpur",        "name": "Kuala Lumpur",        "lat": 3.148,  "lon": 101.686, "svgX": 178, "svgY": 469, "hint": "Home of the Petronas Twin Towers" },
+    { "id": "singapore",           "name": "Singapore",           "lat": 1.352,  "lon": 103.820, "svgX": 217, "svgY": 502, "hint": "City-state at the southern tip of the Malay Peninsula" },
+    { "id": "bandar-seri-begawan", "name": "Bandar Seri Begawan", "lat": 4.943,  "lon": 114.948, "svgX": 421, "svgY": 435, "hint": "Capital of the oil-rich sultanate of Brunei" },
+    { "id": "jakarta",             "name": "Jakarta",             "lat": -6.200, "lon": 106.816, "svgX": 272, "svgY": 641, "hint": "Largest city in Southeast Asia, Indonesia's capital" },
+    { "id": "manila",              "name": "Manila",              "lat": 14.600, "lon": 121.003, "svgX": 533, "svgY": 257, "hint": "Pearl of the Orient Seas, capital of the Philippines" },
+    { "id": "dili",                "name": "Dili",                "lat": -8.559, "lon": 125.579, "svgX": 617, "svgY": 685, "hint": "Capital of Timor-Leste, one of Asia's youngest nations" }
+  ]
+}

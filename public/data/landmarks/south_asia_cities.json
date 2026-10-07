@@ -1,0 +1,25 @@
+{
+  "id": "south_asia_cities",
+  "name": "South Asian Cities",
+  "bounds": {
+    "minLat": 3.0,
+    "maxLat": 38.5,
+    "minLon": 60.0,
+    "maxLon": 97.5
+  },
+  "viewBox": "0 0 800 760",
+  "landmarks": [
+    { "id": "new-delhi",  "name": "New Delhi",  "lat": 28.635, "lon": 77.224, "svgX": 367, "svgY": 211, "hint": "Capital of the world's largest democracy" },
+    { "id": "islamabad",  "name": "Islamabad",  "lat": 33.738, "lon": 73.060, "svgX": 279, "svgY": 102, "hint": "Pakistan's planned capital in the Margalla Hills" },
+    { "id": "dhaka",      "name": "Dhaka",      "lat": 23.724, "lon": 90.407, "svgX": 649, "svgY": 316, "hint": "One of the world's most densely populated cities" },
+    { "id": "colombo",    "name": "Colombo",    "lat": 6.927,  "lon": 79.861, "svgX": 424, "svgY": 675, "hint": "Sri Lanka's largest city and commercial capital" },
+    { "id": "kathmandu",  "name": "Kathmandu",  "lat": 27.717, "lon": 85.319, "svgX": 541, "svgY": 231, "hint": "Gateway to the Himalayas, Nepal's capital" },
+    { "id": "thimphu",    "name": "Thimphu",    "lat": 27.467, "lon": 89.639, "svgX": 633, "svgY": 236, "hint": "One of the world's highest capital cities, capital of Bhutan" },
+    { "id": "male",       "name": "Malé",       "lat": 4.175,  "lon": 73.509, "svgX": 288, "svgY": 734, "hint": "Capital of the Maldives, one of the world's smallest capitals" },
+    { "id": "kabul",      "name": "Kabul",      "lat": 34.528, "lon": 69.172, "svgX": 196, "svgY": 85,  "hint": "Afghanistan's capital in the Hindu Kush mountains" },
+    { "id": "mumbai",     "name": "Mumbai",     "lat": 19.076, "lon": 72.877, "svgX": 275, "svgY": 415, "hint": "India's financial capital and home of Bollywood" },
+    { "id": "karachi",    "name": "Karachi",    "lat": 24.861, "lon": 67.010, "svgX": 150, "svgY": 292, "hint": "Pakistan's largest city on the Arabian Sea" },
+    { "id": "lahore",     "name": "Lahore",     "lat": 31.549, "lon": 74.343, "svgX": 306, "svgY": 149, "hint": "Pakistan's cultural capital and City of Gardens" },
+    { "id": "chittagong", "name": "Chittagong", "lat": 22.329, "lon": 91.834, "svgX": 680, "svgY": 346, "hint": "Bangladesh's main port city on the Bay of Bengal" }
+  ]
+}
