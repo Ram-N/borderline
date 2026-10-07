@@ -219,7 +219,7 @@
       "maxLabels": null,
       "suppressFeatureLabels": false,
       "customLabels": null,
-      "group": "African Cities",
+      "group": "Continents",
       "gameModes": ["where-is-it", "match-the-map"],
       "defaultDifficulty": 1,
       "diagonalKm": 10924
@@ -238,7 +238,7 @@
       "maxLabels": null,
       "suppressFeatureLabels": false,
       "customLabels": null,
-      "group": "European Cities",
+      "group": "Continents",
       "gameModes": ["where-is-it", "match-the-map"],
       "defaultDifficulty": 1,
       "diagonalKm": 5902
@@ -257,7 +257,7 @@
       "maxLabels": null,
       "suppressFeatureLabels": false,
       "customLabels": null,
-      "group": "North American Cities",
+      "group": "Continents",
       "gameModes": ["where-is-it", "match-the-map"],
       "defaultDifficulty": 1,
       "diagonalKm": 8200
@@ -276,7 +276,7 @@
       "maxLabels": null,
       "suppressFeatureLabels": false,
       "customLabels": null,
-      "group": "Middle East Cities",
+      "group": "Continents",
       "gameModes": ["where-is-it", "match-the-map"],
       "defaultDifficulty": 1,
       "diagonalKm": 5500
@@ -295,7 +295,7 @@
       "maxLabels": null,
       "suppressFeatureLabels": false,
       "customLabels": null,
-      "group": "Asian Cities",
+      "group": "Continents",
       "gameModes": ["where-is-it", "match-the-map"],
       "defaultDifficulty": 1,
       "diagonalKm": 14000
@@ -314,7 +314,7 @@
       "maxLabels": null,
       "suppressFeatureLabels": false,
       "customLabels": null,
-      "group": "South American Cities",
+      "group": "Continents",
       "gameModes": ["where-is-it", "match-the-map"],
       "defaultDifficulty": 1,
       "diagonalKm": 9100

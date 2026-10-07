@@ -192,38 +192,13 @@ export const CITY_GROUPS: { label: string; keys: string[] }[] = [
     ]
   },
   {
-    "label": "African Cities",
+    "label": "Continents",
     "keys": [
-      "africa_cities"
-    ]
-  },
-  {
-    "label": "European Cities",
-    "keys": [
-      "europe_cities"
-    ]
-  },
-  {
-    "label": "North American Cities",
-    "keys": [
-      "north_america_cities"
-    ]
-  },
-  {
-    "label": "Middle East Cities",
-    "keys": [
-      "middle_east_cities"
-    ]
-  },
-  {
-    "label": "Asian Cities",
-    "keys": [
-      "asia_cities"
-    ]
-  },
-  {
-    "label": "South American Cities",
-    "keys": [
+      "africa_cities",
+      "europe_cities",
+      "north_america_cities",
+      "middle_east_cities",
+      "asia_cities",
       "south_america_cities"
     ]
   }
