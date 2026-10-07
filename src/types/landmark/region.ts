@@ -10,8 +10,9 @@ export type RegionTarget = {
   /** SVG pixel coordinates of the centroid in the map's viewBox. */
   svgX: number;
   svgY: number;
-  /** Simplified boundary polygon as [lat, lon] pairs. */
-  polygon: [number, number][];
+  /** Simplified boundary polygons as arrays of [lat, lon] pairs.
+   *  Multi-part countries (e.g. Malaysia, Indonesia) have multiple entries. */
+  polygons: [number, number][][];
   hint?: string;
 };
 

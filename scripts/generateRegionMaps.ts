@@ -207,16 +207,15 @@ function largestRing(rings: number[][][]): number[][] {
   return best;
 }
 
-/** Get the main outer ring from a GeoJSON Polygon or MultiPolygon geometry. */
-function mainOuterRing(geometry: { type: string; coordinates: unknown }): number[][] | null {
+/** Get ALL outer rings from a GeoJSON Polygon or MultiPolygon geometry. */
+function allOuterRings(geometry: { type: string; coordinates: unknown }): number[][][] {
   if (geometry.type === 'Polygon') {
-    return (geometry.coordinates as number[][][])[0];
+    return [(geometry.coordinates as number[][][])[0]];
   }
   if (geometry.type === 'MultiPolygon') {
-    const outerRings = (geometry.coordinates as number[][][][]).map((poly) => poly[0]);
-    return largestRing(outerRings);
+    return (geometry.coordinates as number[][][][]).map((poly) => poly[0]);
   }
-  return null;
+  return [];
 }
 
 /** Project a ring to SVG, simplify, return SVG path `d` string. */
@@ -330,7 +329,7 @@ function buildRegionMap(mapKey: string, spec: RegionSpec, toleranceOverride?: nu
     fill: string;
     pathD: string;
     centroidSvg: Point;
-    polygon: [number, number][];
+    polygons: [number, number][][];
   }> = [];
 
   let paletteIndex = 0;
@@ -355,17 +354,23 @@ function buildRegionMap(mapKey: string, spec: RegionSpec, toleranceOverride?: nu
     const name = spec.nameOverrides?.[rawName] ?? rawName;
     if (!name) continue;
 
-    const ring = mainOuterRing(feature.geometry);
-    if (!ring) { console.warn(`[${mapKey}] No ring for: ${name}`); continue; }
+    const rings = allOuterRings(feature.geometry);
+    if (rings.length === 0) { console.warn(`[${mapKey}] No rings for: ${name}`); continue; }
 
-    const pathD = ringToPathD(ring, bounds, dims, tolerance);
-    if (!pathD) { console.warn(`[${mapKey}] Empty path for: ${name}`); continue; }
+    // Build combined SVG path from all rings (so fragmented countries show fully)
+    const pathParts = rings.map(r => ringToPathD(r, bounds, dims, tolerance)).filter(Boolean);
+    if (pathParts.length === 0) { console.warn(`[${mapKey}] Empty paths for: ${name}`); continue; }
+    const pathD = pathParts.join(' ');
 
-    const centroidSvg = svgPathCentroid(pathD);
-    const polygon = simplifyRingGeo(ring, geoTolerance);
+    // Use largest ring for centroid label placement
+    const mainRing = largestRing(rings);
+    const mainPathD = ringToPathD(mainRing, bounds, dims, tolerance) || pathParts[0];
+    const centroidSvg = svgPathCentroid(mainPathD);
+
+    const polygons = rings.map(r => simplifyRingGeo(r, geoTolerance));
     const fill = pickFill(name);
 
-    features.push({ id: toKebab(name), name, fill, pathD, centroidSvg, polygon });
+    features.push({ id: toKebab(name), name, fill, pathD, centroidSvg, polygons });
   }
 
   if (features.length === 0) {
@@ -393,7 +398,7 @@ function buildRegionMap(mapKey: string, spec: RegionSpec, toleranceOverride?: nu
       lon: parseFloat(geo.lon.toFixed(4)),
       svgX: Math.round(f.centroidSvg.x),
       svgY: Math.round(f.centroidSvg.y),
-      polygon: f.polygon,
+      polygons: f.polygons,
     };
   });
 

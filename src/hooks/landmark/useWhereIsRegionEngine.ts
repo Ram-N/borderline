@@ -101,7 +101,7 @@ export default function useWhereIsRegionEngine({
 
       if (round.mode === 'regions') {
         const regionTarget = target as RegionTarget;
-        insideRegion = pointInPolygon(pinLat, pinLon, regionTarget.polygon);
+        insideRegion = regionTarget.polygons.some(poly => pointInPolygon(pinLat, pinLon, poly));
         if (insideRegion) {
           distanceKm = 0;
           baseScore = 100;
