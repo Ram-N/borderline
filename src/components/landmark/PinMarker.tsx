@@ -16,6 +16,39 @@ const COLORS = {
  */
 export default function PinMarker({ svgX, svgY, variant, label }: Props) {
   const color = COLORS[variant];
+
+  if (variant === 'correct') {
+    return (
+      <g>
+        <text
+          x={svgX}
+          y={svgY}
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fontSize={20}
+        >
+          🎯
+        </text>
+        {label && (
+          <text
+            x={svgX}
+            y={svgY - 18}
+            textAnchor="middle"
+            fontSize={11}
+            fontFamily="sans-serif"
+            fill={color}
+            stroke="white"
+            strokeWidth={3}
+            paintOrder="stroke"
+            fontWeight="bold"
+          >
+            {label}
+          </text>
+        )}
+      </g>
+    );
+  }
+
   // Pin is drawn so its tip points down at (svgX, svgY)
   const tipY = svgY;
   const bodyY = tipY - 24;
