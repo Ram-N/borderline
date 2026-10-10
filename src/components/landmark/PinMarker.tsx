@@ -25,14 +25,15 @@ export default function PinMarker({ svgX, svgY, variant, label }: Props) {
           y={svgY}
           textAnchor="middle"
           dominantBaseline="middle"
-          fontSize={20}
+          fontSize={30}
+          transform={`rotate(0, ${svgX}, ${svgY})`}
         >
           🎯
         </text>
         {label && (
           <text
             x={svgX}
-            y={svgY - 18}
+            y={svgY - 26}
             textAnchor="middle"
             fontSize={11}
             fontFamily="sans-serif"
