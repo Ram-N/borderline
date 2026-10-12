@@ -29,6 +29,7 @@ import ConnectTheDots from './routes/landmark/ConnectTheDots';
 import WhichOneDoesntBelong from './routes/landmark/WhichOneDoesntBelong';
 import BuildTheMap from './routes/landmark/BuildTheMap';
 import ZoomIn from './routes/landmark/ZoomIn';
+import DailyLandmarkSelect from './routes/landmark/DailyLandmarkSelect';
 
 function AuthButton() {
   const { user, signInWithGoogle, signOut } = useAuth()
@@ -111,6 +112,7 @@ export default function App() {
           <Route path='/landmark/games/which-doesnt-belong' element={<WhichOneDoesntBelong />} />
           <Route path='/landmark/games/build-the-map' element={<BuildTheMap />} />
           <Route path='/landmark/games/zoom-in' element={<ZoomIn />} />
+          <Route path='/landmark/daily' element={<DailyLandmarkSelect />} />
           <Route path='/landmark/results' element={<LandMarkResults />} />
         </Routes>
       </main>

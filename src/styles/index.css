@@ -445,6 +445,53 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 
 .mtm-reveal-summary { text-align: center; font-size: 1.2rem; font-weight: 700; margin-top: 16px; color: #333; }
 
+/* ── Daily Landmark Select ──────────────────────────────────────────────────── */
+.lm-daily-cta { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: #1565C0; color: #fff; border-radius: 10px; text-decoration: none; margin-bottom: 24px; transition: background 0.15s; }
+.lm-daily-cta:hover { background: #0d47a1; }
+.lm-daily-cta-icon { font-size: 1.4rem; flex-shrink: 0; }
+.lm-daily-cta-text { display: flex; flex-direction: column; flex: 1; gap: 2px; }
+.lm-daily-cta-label { font-size: 1rem; font-weight: 700; }
+.lm-daily-cta-desc { font-size: 0.8rem; opacity: 0.85; }
+.lm-daily-cta-date { font-size: 0.8rem; opacity: 0.75; white-space: nowrap; flex-shrink: 0; }
+
+.dls-game { max-width: 700px; margin: 0 auto; padding: 0 16px 24px; }
+.dls-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+.dls-title { font-size: 1.1rem; font-weight: 700; color: #222; flex: 1; }
+.dls-date { font-size: 0.85rem; color: #1976D2; font-weight: 600; }
+
+.dls-phase { }
+.dls-phase-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.dls-phase-badge { background: #1976D2; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+.dls-phase-name { font-size: 0.9rem; color: #555; font-weight: 500; }
+.dls-instruction { font-size: 0.9rem; color: #666; margin: 0 0 10px; text-align: center; }
+
+.dls-chip { padding: 8px 14px; border: 2px solid #ddd; border-radius: 20px; background: #fff; cursor: pointer; font-size: 0.9rem; font-weight: 500; transition: border-color 0.12s, background 0.12s; }
+.dls-chip:hover:not(:disabled) { border-color: #999; }
+.dls-chip:disabled { opacity: 0.45; cursor: default; }
+.dls-chip--selected { border-color: #f59e0b; background: #fffbeb; color: #92400e; }
+.dls-chip--correct { border-color: #16a34a; background: #f0fdf4; color: #14532d; font-weight: 700; }
+.dls-chip--wrong { border-color: #dc2626; background: #fef2f2; color: #7f1d1d; }
+.dls-chip--missed { border-color: #16a34a; background: #fff; color: #16a34a; opacity: 0.7; }
+
+.dls-reveal { margin-top: 14px; text-align: center; }
+.dls-reveal-score { font-size: 1.1rem; font-weight: 700; color: #333; margin-bottom: 12px; }
+
+.dls-final { max-width: 420px; margin: 40px auto; padding: 24px 20px; text-align: center; }
+.dls-final-badge { display: inline-block; background: #1565C0; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+.dls-final-date { font-size: 0.9rem; color: #888; margin-bottom: 16px; }
+.dls-final-score { font-size: 2.8rem; font-weight: 800; color: #1565C0; line-height: 1; margin-bottom: 20px; }
+.dls-final-breakdown { background: #f8f8f8; border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; }
+.dls-final-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; font-size: 0.9rem; border-bottom: 1px solid #eee; }
+.dls-final-row:last-child { border-bottom: none; }
+.dls-final-actions { display: flex; gap: 10px; justify-content: center; }
+.dls-btn { padding: 10px 22px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; text-decoration: none; border: none; display: inline-block; }
+.dls-btn--share { background: #1976D2; color: #fff; }
+.dls-btn--share:hover { background: #1565C0; }
+.dls-btn--copy { background: #f0f0f0; color: #333; }
+.dls-btn--copy:hover { background: #e0e0e0; }
+.dls-btn--home { background: #f0f0f0; color: #333; }
+.dls-btn--home:hover { background: #e0e0e0; }
+
 /* Region picker (Find the Region game) */
 .lm-region-picker { display: flex; gap: 8px; flex-wrap: wrap; }
 .lm-region-btn { padding: 10px 20px; border: 2px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; font-size: 0.95rem; font-weight: 500; transition: border-color 0.15s; }

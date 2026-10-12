@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { LANDMARK_MAP_CONFIG } from '../../data/landmarkMapConfig';
 import { CITY_GROUPS, REGION_MAPS } from '../../generated/geoRegistry';
 
@@ -54,9 +54,21 @@ export default function LandMarkHome() {
     navigate(`/landmark/games/${gameId}?${params}`);
   }
 
+  const today = new Date();
+  const dateStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+
   return (
     <div className="lm-home">
       <h1 className="lm-title">LandMark</h1>
+
+      <Link to="/landmark/daily" className="lm-daily-cta">
+        <span className="lm-daily-cta-icon">📅</span>
+        <span className="lm-daily-cta-text">
+          <span className="lm-daily-cta-label">Daily Landmark Select</span>
+          <span className="lm-daily-cta-desc">Two maps, identify the pins — 12 pts max</span>
+        </span>
+        <span className="lm-daily-cta-date">{dateStr}</span>
+      </Link>
 
       {/* ── Step 1: Game Mode ── */}
       {step === 1 ? (
