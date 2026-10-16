@@ -91,16 +91,30 @@ export function computeCentroid(d: string): { x: number; y: number; w: number; h
   };
 }
 
-export function computeViewBox(paths: PathData[], paddingFactor = 0.1): string {
+type ClipBounds = { minX: number; maxX: number; minY: number; maxY: number };
+
+/**
+ * Compute a viewBox string that tightly frames the given paths.
+ * Pass `clip` (the SVG's own viewBox bounds) to prevent out-of-bounds
+ * sub-polygons (e.g. Siberia on a Europe map) from inflating the result.
+ */
+export function computeViewBox(paths: PathData[], paddingFactor = 0.1, clip?: ClipBounds): string {
   let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
 
   for (const p of paths) {
     const b = mainBodyBbox(p.d);
     if (!b) continue;
-    if (b.minX < minX) minX = b.minX;
-    if (b.maxX > maxX) maxX = b.maxX;
-    if (b.minY < minY) minY = b.minY;
-    if (b.maxY > maxY) maxY = b.maxY;
+
+    const bMinX = clip ? Math.max(b.minX, clip.minX) : b.minX;
+    const bMaxX = clip ? Math.min(b.maxX, clip.maxX) : b.maxX;
+    const bMinY = clip ? Math.max(b.minY, clip.minY) : b.minY;
+    const bMaxY = clip ? Math.min(b.maxY, clip.maxY) : b.maxY;
+    if (bMinX > bMaxX || bMinY > bMaxY) continue; // entirely outside clip region
+
+    if (bMinX < minX) minX = bMinX;
+    if (bMaxX > maxX) maxX = bMaxX;
+    if (bMinY < minY) minY = bMinY;
+    if (bMaxY > maxY) maxY = bMaxY;
   }
 
   if (!isFinite(minX)) return '0 0 800 600';

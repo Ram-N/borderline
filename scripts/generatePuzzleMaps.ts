@@ -67,6 +67,15 @@ function ringToPathD(ring: Ring, bounds: GeoBounds, dims: SvgDims, tol: number):
     ? (simplify(pts, tol, true) as Point[])
     : pts;
   if (simplified.length < 2) return '';
+  // Skip rings with no point inside the SVG viewport — they are invisible and
+  // would corrupt downstream bounding-box calculations (e.g. Baja California
+  // on a Central America map, or Clipperton Island on a Europe map).
+  const margin = 5; // small tolerance for coastlines that just touch the edge
+  const hasVisiblePoint = simplified.some(
+    p => p.x >= -margin && p.x <= dims.width + margin &&
+         p.y >= -margin && p.y <= dims.height + margin
+  );
+  if (!hasVisiblePoint) return '';
   return 'M ' + simplified.map(p => `${Math.round(p.x)},${Math.round(p.y)}`).join(' L ') + ' Z';
 }
 
@@ -90,6 +99,25 @@ function featureToPathD(feat: GeoFeature, bounds: GeoBounds, dims: SvgDims, tol:
 
 // ── Country lookup ───────────────────────────────────────────────────────────
 
+function countCoords(f: GeoFeature): number {
+  if (f.geometry.type === 'Polygon') {
+    return (f.geometry.coordinates as Ring[]).reduce((s, r) => s + r.length, 0);
+  }
+  return (f.geometry.coordinates as Ring[][]).reduce(
+    (s, poly) => s + poly.reduce((t, r) => t + r.length, 0), 0
+  );
+}
+
+// When two features share the same ISO code (e.g. France and Clipperton Island
+// both have ISO_A2_EH='FR'), keep the one with more coordinate points — the
+// main country polygon is always larger than any dependent territory.
+function setIfLarger(map: Map<string, GeoFeature>, code: string, f: GeoFeature) {
+  const existing = map.get(code);
+  if (!existing || countCoords(f) > countCoords(existing)) {
+    map.set(code, f);
+  }
+}
+
 function buildLookup(features: GeoFeature[]): Map<string, GeoFeature> {
   const map = new Map<string, GeoFeature>();
   for (const f of features) {
@@ -98,9 +126,9 @@ function buildLookup(features: GeoFeature[]): Map<string, GeoFeature> {
     const name   = ((f.properties['NAME'] as string) ?? '').toLowerCase();
 
     if (iso2 && iso2 !== '-99') {
-      map.set(iso2, f);
+      setIfLarger(map, iso2, f);
     } else if (iso2eh && iso2eh !== '-99') {
-      map.set(iso2eh, f);
+      setIfLarger(map, iso2eh, f);
     }
     // Special cases where ISO_A2 is missing in NE data
     if (name === 'kosovo') map.set('XK', f);

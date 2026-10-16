@@ -19,9 +19,14 @@ type Props = {
 
 export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, countryNames, difficulty, svgViewBox }: Props) {
   const [paths, setPaths] = useState<PathData[]>([]);
+  const [svgFileBounds, setSvgFileBounds] = useState<{ minX: number; maxX: number; minY: number; maxY: number } | undefined>();
 
   useEffect(() => {
-    parseSvg(svgMap).then(({ paths }) => setPaths(paths));
+    parseSvg(svgMap).then(({ paths, viewBox }) => {
+      setPaths(paths);
+      const [x, y, w, h] = viewBox.split(' ').map(Number);
+      setSvgFileBounds({ minX: x, maxX: x + w, minY: y, maxY: y + h });
+    });
   }, [svgMap]);
 
   const relevantIds = useMemo(() => {
@@ -50,8 +55,8 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
     if (difficulty === 1 && svgViewBox) return svgViewBox;
     const pathsForZoom = zoomPaths.length > 0 ? zoomPaths : relevantPaths;
     if (pathsForZoom.length === 0) return null;
-    return computeViewBox(pathsForZoom, PADDING_BY_DIFFICULTY[difficulty - 1]);
-  }, [difficulty, svgViewBox, zoomPaths, relevantPaths]);
+    return computeViewBox(pathsForZoom, PADDING_BY_DIFFICULTY[difficulty - 1], svgFileBounds);
+  }, [difficulty, svgViewBox, zoomPaths, relevantPaths, svgFileBounds]);
 
   // Which neighbor IDs show labels:
   // - hidden_country: use LABEL_DENSITY_BY_DIFFICULTY
