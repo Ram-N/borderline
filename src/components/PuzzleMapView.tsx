@@ -101,6 +101,8 @@ export default function PuzzleMapView({ svgMap, puzzle, phase, selectedAnswer, c
           <path d="M0,0 L0,6 L6,3 z" fill="#1565C0" />
         </marker>
       </defs>
+      {/* Ocean background */}
+      <rect x={vbParts[0]} y={vbParts[1]} width={vbParts[2]} height={vbParts[3]} fill="#6ab4d8" />
       {/* Layer 1: all country shapes (grey background, then blue neighbors, then orange highlight) */}
       {paths.map(path => {
         const fill = getPathFill(path.id, puzzle, phase, selectedAnswer);
@@ -264,16 +266,16 @@ function getPathFill(id: string, puzzle: Puzzle, phase: 'question' | 'reveal', s
       if (phase === 'reveal') return selected === puzzle.correctAnswer ? '#4CAF50' : '#F44336';
       return '#FFD54F';
     }
-    if (puzzle.visibleNeighbors.includes(id)) return '#C8D8E8';
+    if (puzzle.visibleNeighbors.includes(id)) return '#d8e8c8';
     return '#F0F0F0';
   } else {
     if (id === puzzle.center) return '#888888';
-    if (puzzle.visibleNeighbors.includes(id)) return '#C8D8E8';
+    if (puzzle.visibleNeighbors.includes(id)) return '#d8e8c8';
     if (puzzle.hiddenNeighbors.includes(id)) {
       if (phase === 'reveal') return selected === puzzle.correctAnswer ? '#4CAF50' : '#F44336';
       return '#FFD54F';
     }
-    if (puzzle.contextCountries.includes(id)) return '#E8EEF4'; // subtle tint — context reference
+    if (puzzle.contextCountries.includes(id)) return '#eaeae8'; // subtle tint — context reference
     return '#F0F0F0';
   }
 }

@@ -81,8 +81,14 @@ type RegionSpec = {
 // ---------------------------------------------------------------------------
 
 const DEFAULT_PALETTE = [
-  '#e8c8a8', '#e0b8b8', '#d4c9a8', '#e8dfa8',
-  '#b8d4a8', '#c8d4e8', '#d4c8e8', '#e8d4c8',
+  '#f5e07a', // amber yellow
+  '#9dd48a', // sage green
+  '#f5a96e', // warm orange
+  '#d4a8e0', // soft purple
+  '#7dcbb8', // teal
+  '#f5c88a', // peach
+  '#b8e07a', // yellow-green
+  '#f09090', // soft rose
 ];
 
 // ---------------------------------------------------------------------------
@@ -169,19 +175,47 @@ function parseViewBox(viewBox: string): SvgDimensions {
   return { width: parts[2], height: parts[3] };
 }
 
-/** Equirectangular projection: (lon, lat) → SVG pixel (x, y). */
+/**
+ * Compute effective drawing area within the SVG viewBox for a cosine-corrected
+ * equirectangular projection centred at the map's midpoint latitude.
+ */
+function projectionLayout(bounds: GeoBounds, dims: SvgDimensions) {
+  const centerLat = (bounds.minLat + bounds.maxLat) / 2;
+  const cosLat = Math.cos(centerLat * Math.PI / 180);
+  const lonRange = bounds.maxLon - bounds.minLon;
+  const latRange = bounds.maxLat - bounds.minLat;
+  const geoAspect = (lonRange * cosLat) / latRange;
+  const svgAspect = dims.width / dims.height;
+  let usedWidth: number, usedHeight: number, offsetX: number, offsetY: number;
+  if (geoAspect <= svgAspect) {
+    usedHeight = dims.height;
+    usedWidth = geoAspect * dims.height;
+    offsetX = (dims.width - usedWidth) / 2;
+    offsetY = 0;
+  } else {
+    usedWidth = dims.width;
+    usedHeight = dims.width / geoAspect;
+    offsetX = 0;
+    offsetY = (dims.height - usedHeight) / 2;
+  }
+  return { usedWidth, usedHeight, offsetX, offsetY, lonRange, latRange };
+}
+
+/** Cosine-corrected projection: (lon, lat) → SVG pixel (x, y). */
 function project(lon: number, lat: number, bounds: GeoBounds, dims: SvgDimensions): Point {
+  const { usedWidth, usedHeight, offsetX, offsetY, lonRange, latRange } = projectionLayout(bounds, dims);
   return {
-    x: ((lon - bounds.minLon) / (bounds.maxLon - bounds.minLon)) * dims.width,
-    y: ((bounds.maxLat - lat) / (bounds.maxLat - bounds.minLat)) * dims.height,
+    x: offsetX + ((lon - bounds.minLon) / lonRange) * usedWidth,
+    y: offsetY + ((bounds.maxLat - lat) / latRange) * usedHeight,
   };
 }
 
 /** Reverse: SVG pixel (x, y) → (lon, lat). */
 function unproject(x: number, y: number, bounds: GeoBounds, dims: SvgDimensions): { lon: number; lat: number } {
+  const { usedWidth, usedHeight, offsetX, offsetY, lonRange, latRange } = projectionLayout(bounds, dims);
   return {
-    lon: bounds.minLon + (x / dims.width) * (bounds.maxLon - bounds.minLon),
-    lat: bounds.maxLat - (y / dims.height) * (bounds.maxLat - bounds.minLat),
+    lon: bounds.minLon + ((x - offsetX) / usedWidth) * lonRange,
+    lat: bounds.maxLat - ((y - offsetY) / usedHeight) * latRange,
   };
 }
 
@@ -276,7 +310,7 @@ function buildSvg(
   const H = dims.height;
 
   // Outline SVG: all features share one flat fill so no state edges are visible.
-  const OUTLINE_FILL = '#d4c9a8';
+  const OUTLINE_FILL = '#e8d4a0';
 
   const paths = features
     .map(({ id, fill, pathD }) => {
@@ -297,7 +331,7 @@ function buildSvg(
 
   return [
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">`,
-    `  <rect width="${W}" height="${H}" fill="#c8e6f5"/>`,
+    `  <rect width="${W}" height="${H}" fill="#6ab4d8"/>`,
     paths,
     compass,
     `</svg>`,

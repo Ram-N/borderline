@@ -140,16 +140,43 @@ const MAP_SPECS: Record<string, MapSpec> = loadMapSpecs();
 // Coordinate helpers
 // ---------------------------------------------------------------------------
 
-/** Affine transform: geographic (lon, lat) → SVG pixel (x, y). */
+/**
+ * Compute effective drawing area within the SVG viewBox for a cosine-corrected
+ * equirectangular projection centred at the map's midpoint latitude.
+ */
+function projectionLayout(bounds: GeoBounds, dims: SvgDimensions) {
+  const centerLat = (bounds.minLat + bounds.maxLat) / 2;
+  const cosLat = Math.cos(centerLat * Math.PI / 180);
+  const lonRange = bounds.maxLon - bounds.minLon;
+  const latRange = bounds.maxLat - bounds.minLat;
+  const geoAspect = (lonRange * cosLat) / latRange;
+  const svgAspect = dims.width / dims.height;
+  let usedWidth: number, usedHeight: number, offsetX: number, offsetY: number;
+  if (geoAspect <= svgAspect) {
+    usedHeight = dims.height;
+    usedWidth = geoAspect * dims.height;
+    offsetX = (dims.width - usedWidth) / 2;
+    offsetY = 0;
+  } else {
+    usedWidth = dims.width;
+    usedHeight = dims.width / geoAspect;
+    offsetX = 0;
+    offsetY = (dims.height - usedHeight) / 2;
+  }
+  return { usedWidth, usedHeight, offsetX, offsetY, lonRange, latRange };
+}
+
+/** Cosine-corrected projection: geographic (lon, lat) → SVG pixel (x, y). */
 function project(
   lon: number,
   lat: number,
   bounds: GeoBounds,
   dims: SvgDimensions,
 ): Point {
+  const { usedWidth, usedHeight, offsetX, offsetY, lonRange, latRange } = projectionLayout(bounds, dims);
   return {
-    x: ((lon - bounds.minLon) / (bounds.maxLon - bounds.minLon)) * dims.width,
-    y: ((bounds.maxLat - lat) / (bounds.maxLat - bounds.minLat)) * dims.height,
+    x: offsetX + ((lon - bounds.minLon) / lonRange) * usedWidth,
+    y: offsetY + ((bounds.maxLat - lat) / latRange) * usedHeight,
   };
 }
 

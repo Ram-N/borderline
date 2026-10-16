@@ -12,9 +12,9 @@
     {
       "id": "andaman-and-nicobar",
       "name": "Andaman and Nicobar",
-      "lat": 13.232,
-      "lon": 92.9318,
-      "svgX": 848,
+      "lat": 13.249,
+      "lon": 92.93,
+      "svgX": 778,
       "svgY": 702,
       "polygons": [
         [
@@ -2430,9 +2430,9 @@
     {
       "id": "andhra-pradesh",
       "name": "Andhra Pradesh",
-      "lat": 16.258,
-      "lon": 80.7429,
-      "svgX": 432,
+      "lat": 16.275,
+      "lon": 80.7543,
+      "svgX": 446,
       "svgY": 613,
       "polygons": [
         [
@@ -3380,9 +3380,9 @@
     {
       "id": "arunachal-pradesh",
       "name": "Arunachal Pradesh",
-      "lat": 28.056,
-      "lon": 94.4993,
-      "svgX": 901,
+      "lat": 28.073,
+      "lon": 94.4863,
+      "svgX": 821,
       "svgY": 266,
       "polygons": [
         [
@@ -3685,8 +3685,8 @@
       "id": "assam",
       "name": "Assam",
       "lat": 26.05,
-      "lon": 92.8292,
-      "svgX": 844,
+      "lon": 92.8385,
+      "svgX": 776,
       "svgY": 325,
       "polygons": [
         [
@@ -4041,8 +4041,8 @@
       "id": "bihar",
       "name": "Bihar",
       "lat": 25.914,
-      "lon": 85.8119,
-      "svgX": 605,
+      "lon": 85.8077,
+      "svgX": 584,
       "svgY": 329,
       "polygons": [
         [
@@ -4408,10 +4408,10 @@
     {
       "id": "chandigarh",
       "name": "Chandigarh",
-      "lat": 30.725,
-      "lon": 76.7728,
-      "svgX": 296,
-      "svgY": 188,
+      "lat": 30.742,
+      "lon": 76.7811,
+      "svgX": 337,
+      "svgY": 187,
       "polygons": [
         [
           [
@@ -4437,8 +4437,8 @@
       "id": "chhattisgarh",
       "name": "Chhattisgarh",
       "lat": 20.95,
-      "lon": 82.3105,
-      "svgX": 485,
+      "lon": 82.3106,
+      "svgX": 488,
       "svgY": 475,
       "polygons": [
         [
@@ -4860,10 +4860,10 @@
     {
       "id": "dadra-and-nagar-haveli",
       "name": "Dadra and Nagar Haveli",
-      "lat": 20.185,
-      "lon": 73.0663,
-      "svgX": 170,
-      "svgY": 498,
+      "lat": 20.202,
+      "lon": 73.101,
+      "svgX": 237,
+      "svgY": 497,
       "polygons": [
         [
           [
@@ -4905,8 +4905,8 @@
       "id": "daman-and-diu",
       "name": "Daman and Diu",
       "lat": 20.831,
-      "lon": 70.7809,
-      "svgX": 92,
+      "lon": 70.7757,
+      "svgX": 173,
       "svgY": 479,
       "polygons": [
         [
@@ -4983,8 +4983,8 @@
       "id": "delhi",
       "name": "Delhi",
       "lat": 28.634,
-      "lon": 77.0951,
-      "svgX": 307,
+      "lon": 77.0924,
+      "svgX": 346,
       "svgY": 249,
       "polygons": [
         [
@@ -5019,8 +5019,8 @@
       "id": "goa",
       "name": "Goa",
       "lat": 15.357,
-      "lon": 74.0186,
-      "svgX": 202,
+      "lon": 74.0164,
+      "svgX": 262,
       "svgY": 640,
       "polygons": [
         [
@@ -5108,10 +5108,10 @@
     {
       "id": "gujarat",
       "name": "Gujarat",
-      "lat": 22.395,
-      "lon": 71.4841,
-      "svgX": 116,
-      "svgY": 433,
+      "lat": 22.412,
+      "lon": 71.4897,
+      "svgX": 193,
+      "svgY": 432,
       "polygons": [
         [
           [
@@ -7540,10 +7540,10 @@
     {
       "id": "haryana",
       "name": "Haryana",
-      "lat": 29.263,
-      "lon": 76.0403,
-      "svgX": 271,
-      "svgY": 231,
+      "lat": 29.28,
+      "lon": 76.0305,
+      "svgX": 317,
+      "svgY": 230,
       "polygons": [
         [
           [
@@ -7816,9 +7816,9 @@
     {
       "id": "himachal-pradesh",
       "name": "Himachal Pradesh",
-      "lat": 31.813,
-      "lon": 77.3002,
-      "svgX": 314,
+      "lat": 31.796,
+      "lon": 77.3121,
+      "svgX": 352,
       "svgY": 156,
       "polygons": [
         [
@@ -7985,8 +7985,8 @@
       "id": "jammu-and-kashmir",
       "name": "Jammu and Kashmir",
       "lat": 33.904,
-      "lon": 76.6702,
-      "svgX": 293,
+      "lon": 76.6713,
+      "svgX": 334,
       "svgY": 94,
       "polygons": [
         [
@@ -8221,8 +8221,8 @@
       "id": "jharkhand",
       "name": "Jharkhand",
       "lat": 23.636,
-      "lon": 85.6654,
-      "svgX": 600,
+      "lon": 85.6978,
+      "svgX": 581,
       "svgY": 396,
       "polygons": [
         [
@@ -8581,8 +8581,8 @@
       "id": "karnataka",
       "name": "Karnataka",
       "lat": 15.017,
-      "lon": 76.3333,
-      "svgX": 281,
+      "lon": 76.3417,
+      "svgX": 325,
       "svgY": 650,
       "polygons": [
         [
@@ -9335,8 +9335,8 @@
       "id": "kerala",
       "name": "Kerala",
       "lat": 10.546,
-      "lon": 76.1282,
-      "svgX": 274,
+      "lon": 76.122,
+      "svgX": 319,
       "svgY": 781,
       "polygons": [
         [
@@ -10031,8 +10031,8 @@
       "id": "lakshadweep",
       "name": "Lakshadweep",
       "lat": 8.302,
-      "lon": 73.0663,
-      "svgX": 170,
+      "lon": 73.0643,
+      "svgX": 236,
       "svgY": 847,
       "polygons": [
         [
@@ -10293,8 +10293,8 @@
       "id": "madhya-pradesh",
       "name": "Madhya Pradesh",
       "lat": 23.976,
-      "lon": 78.4282,
-      "svgX": 353,
+      "lon": 78.429,
+      "svgX": 382,
       "svgY": 386,
       "polygons": [
         [
@@ -11081,8 +11081,8 @@
       "id": "maharashtra",
       "name": "Maharashtra",
       "lat": 18.825,
-      "lon": 76.7728,
-      "svgX": 296,
+      "lon": 76.7628,
+      "svgX": 337,
       "svgY": 538,
       "polygons": [
         [
@@ -11888,10 +11888,10 @@
     {
       "id": "manipur",
       "name": "Manipur",
-      "lat": 24.741,
-      "lon": 93.8693,
-      "svgX": 880,
-      "svgY": 364,
+      "lat": 24.758,
+      "lon": 93.9004,
+      "svgX": 805,
+      "svgY": 363,
       "polygons": [
         [
           [
@@ -11985,8 +11985,8 @@
       "id": "meghalaya",
       "name": "Meghalaya",
       "lat": 25.574,
-      "lon": 91.3056,
-      "svgX": 792,
+      "lon": 91.3188,
+      "svgX": 734,
       "svgY": 339,
       "polygons": [
         [
@@ -12141,8 +12141,8 @@
       "id": "mizoram",
       "name": "Mizoram",
       "lat": 23.228,
-      "lon": 92.8585,
-      "svgX": 845,
+      "lon": 92.8568,
+      "svgX": 776,
       "svgY": 408,
       "polygons": [
         [
@@ -12240,9 +12240,9 @@
     {
       "id": "nagaland",
       "name": "Nagaland",
-      "lat": 26.118,
-      "lon": 94.2796,
-      "svgX": 894,
+      "lat": 26.135,
+      "lon": 94.3032,
+      "svgX": 816,
       "svgY": 323,
       "polygons": [
         [
@@ -12373,8 +12373,8 @@
       "id": "orissa",
       "name": "Orissa",
       "lat": 20.168,
-      "lon": 84.4348,
-      "svgX": 558,
+      "lon": 84.4345,
+      "svgX": 546,
       "svgY": 498,
       "polygons": [
         [
@@ -13265,8 +13265,8 @@
       "id": "puducherry",
       "name": "Puducherry",
       "lat": 11.923,
-      "lon": 79.7467,
-      "svgX": 398,
+      "lon": 79.7473,
+      "svgX": 418,
       "svgY": 741,
       "polygons": [
         [
@@ -13371,8 +13371,8 @@
       "id": "punjab",
       "name": "Punjab",
       "lat": 31.065,
-      "lon": 75.3811,
-      "svgX": 249,
+      "lon": 75.3896,
+      "svgX": 299,
       "svgY": 178,
       "polygons": [
         [
@@ -13586,10 +13586,10 @@
     {
       "id": "rajasthan",
       "name": "Rajasthan",
-      "lat": 26.628,
-      "lon": 73.8575,
-      "svgX": 197,
-      "svgY": 308,
+      "lat": 26.611,
+      "lon": 73.8516,
+      "svgX": 257,
+      "svgY": 309,
       "polygons": [
         [
           [
@@ -14166,10 +14166,10 @@
     {
       "id": "sikkim",
       "name": "Sikkim",
-      "lat": 27.597,
-      "lon": 88.4489,
-      "svgX": 695,
-      "svgY": 280,
+      "lat": 27.614,
+      "lon": 88.4991,
+      "svgX": 657,
+      "svgY": 279,
       "polygons": [
         [
           [
@@ -14230,10 +14230,10 @@
     {
       "id": "tamil-nadu",
       "name": "Tamil Nadu",
-      "lat": 10.818,
-      "lon": 78.2818,
-      "svgX": 348,
-      "svgY": 773,
+      "lat": 10.801,
+      "lon": 78.2825,
+      "svgX": 378,
+      "svgY": 774,
       "polygons": [
         [
           [
@@ -15091,8 +15091,8 @@
       "id": "tripura",
       "name": "Tripura",
       "lat": 23.738,
-      "lon": 91.7451,
-      "svgX": 807,
+      "lon": 91.7582,
+      "svgX": 746,
       "svgY": 393,
       "polygons": [
         [
@@ -15194,9 +15194,9 @@
     {
       "id": "uttar-pradesh",
       "name": "Uttar Pradesh",
-      "lat": 27.138,
-      "lon": 80.8602,
-      "svgX": 436,
+      "lat": 27.155,
+      "lon": 80.8641,
+      "svgX": 449,
       "svgY": 293,
       "polygons": [
         [
@@ -15790,9 +15790,9 @@
     {
       "id": "uttaranchal",
       "name": "Uttaranchal",
-      "lat": 30.079,
-      "lon": 79.278,
-      "svgX": 382,
+      "lat": 30.062,
+      "lon": 79.2895,
+      "svgX": 406,
       "svgY": 207,
       "polygons": [
         [
@@ -15947,8 +15947,8 @@
       "id": "west-bengal",
       "name": "West Bengal",
       "lat": 24.418,
-      "lon": 87.8482,
-      "svgX": 674,
+      "lon": 87.84,
+      "svgX": 639,
       "svgY": 373,
       "polygons": [
         [
@@ -17992,7 +17992,7 @@
       "name": "Mumbai",
       "lat": 19.076,
       "lon": 72.877,
-      "svgX": 163,
+      "svgX": 230,
       "svgY": 530,
       "hint": "Financial capital on the west coast"
     },
@@ -18001,7 +18001,7 @@
       "name": "Delhi",
       "lat": 28.635,
       "lon": 77.224,
-      "svgX": 311,
+      "svgX": 349,
       "svgY": 249,
       "hint": "National capital territory in the north"
     },
@@ -18010,7 +18010,7 @@
       "name": "Bangalore",
       "lat": 12.972,
       "lon": 77.594,
-      "svgX": 324,
+      "svgX": 359,
       "svgY": 710,
       "hint": "India's Silicon Valley in the south"
     },
@@ -18019,7 +18019,7 @@
       "name": "Hyderabad",
       "lat": 17.385,
       "lon": 78.487,
-      "svgX": 355,
+      "svgX": 384,
       "svgY": 580,
       "hint": "City of pearls and biryani"
     },
@@ -18028,7 +18028,7 @@
       "name": "Ahmedabad",
       "lat": 23.022,
       "lon": 72.572,
-      "svgX": 153,
+      "svgX": 222,
       "svgY": 414,
       "hint": "Largest city in Gujarat"
     },
@@ -18037,7 +18037,7 @@
       "name": "Chennai",
       "lat": 13.083,
       "lon": 80.27,
-      "svgX": 415,
+      "svgX": 432,
       "svgY": 706,
       "hint": "Gateway to South India on the Coromandel Coast"
     },
@@ -18046,7 +18046,7 @@
       "name": "Kolkata",
       "lat": 22.572,
       "lon": 88.363,
-      "svgX": 692,
+      "svgX": 653,
       "svgY": 427,
       "hint": "City of Joy, former colonial capital"
     },
@@ -18055,7 +18055,7 @@
       "name": "Pune",
       "lat": 18.52,
       "lon": 73.856,
-      "svgX": 196,
+      "svgX": 257,
       "svgY": 546,
       "hint": "Oxford of the East in Maharashtra"
     },
@@ -18064,7 +18064,7 @@
       "name": "Jaipur",
       "lat": 26.912,
       "lon": 75.787,
-      "svgX": 262,
+      "svgX": 310,
       "svgY": 300,
       "hint": "The Pink City, capital of Rajasthan"
     },
@@ -18073,7 +18073,7 @@
       "name": "Lucknow",
       "lat": 26.846,
       "lon": 80.946,
-      "svgX": 438,
+      "svgX": 451,
       "svgY": 302,
       "hint": "City of Nawabs, capital of Uttar Pradesh"
     },
@@ -18082,7 +18082,7 @@
       "name": "Surat",
       "lat": 21.17,
       "lon": 72.831,
-      "svgX": 161,
+      "svgX": 229,
       "svgY": 469,
       "hint": "Diamond cutting capital of the world"
     },
@@ -18091,7 +18091,7 @@
       "name": "Patna",
       "lat": 25.594,
       "lon": 85.137,
-      "svgX": 581,
+      "svgX": 565,
       "svgY": 338,
       "hint": "Ancient city on the Ganges, capital of Bihar"
     },
@@ -18100,7 +18100,7 @@
       "name": "Bhopal",
       "lat": 23.259,
       "lon": 77.412,
-      "svgX": 318,
+      "svgX": 354,
       "svgY": 407,
       "hint": "City of Lakes, capital of Madhya Pradesh"
     },
@@ -18109,7 +18109,7 @@
       "name": "Chandigarh",
       "lat": 30.733,
       "lon": 76.779,
-      "svgX": 296,
+      "svgX": 337,
       "svgY": 187,
       "hint": "Planned city designed by Le Corbusier"
     },
@@ -18118,7 +18118,7 @@
       "name": "Guwahati",
       "lat": 26.144,
       "lon": 91.736,
-      "svgX": 807,
+      "svgX": 745,
       "svgY": 322,
       "hint": "Gateway to Northeast India"
     },
@@ -18127,7 +18127,7 @@
       "name": "Kochi",
       "lat": 9.931,
       "lon": 76.267,
-      "svgX": 279,
+      "svgX": 323,
       "svgY": 799,
       "hint": "Spice trading port on the Arabian Sea"
     },
@@ -18136,7 +18136,7 @@
       "name": "Thiruvananthapuram",
       "lat": 8.524,
       "lon": 76.936,
-      "svgX": 302,
+      "svgX": 341,
       "svgY": 840,
       "hint": "Coastal capital of Kerala, city of the sacred snake"
     },
@@ -18145,7 +18145,7 @@
       "name": "Coimbatore",
       "lat": 11.017,
       "lon": 76.955,
-      "svgX": 302,
+      "svgX": 342,
       "svgY": 767,
       "hint": "Manchester of South India, known for textiles"
     },
@@ -18154,7 +18154,7 @@
       "name": "Madurai",
       "lat": 9.919,
       "lon": 78.119,
-      "svgX": 342,
+      "svgX": 374,
       "svgY": 799,
       "hint": "Temple city, one of the oldest living cities in the world"
     },
@@ -18163,7 +18163,7 @@
       "name": "Visakhapatnam",
       "lat": 17.686,
       "lon": 83.218,
-      "svgX": 516,
+      "svgX": 513,
       "svgY": 571,
       "hint": "Jewel of the East Coast, major port city"
     }

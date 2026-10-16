@@ -399,7 +399,7 @@
     {
       "id": "europe",
       "label": "Europe",
-      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "geojson": "scripts/geo-data/world/ne_10m_countries.geojson",
       "featureNameProp": "NAME",
       "featureFilter": {
         "equalsProp": "CONTINENT",
@@ -445,7 +445,7 @@
     {
       "id": "africa",
       "label": "Africa",
-      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "geojson": "scripts/geo-data/world/ne_10m_countries.geojson",
       "featureNameProp": "NAME",
       "featureFilter": {
         "equalsProp": "CONTINENT",
@@ -497,7 +497,7 @@
     {
       "id": "north_america",
       "label": "North America",
-      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "geojson": "scripts/geo-data/world/ne_10m_countries.geojson",
       "featureNameProp": "NAME",
       "featureFilter": {
         "equalsProp": "CONTINENT",
@@ -546,7 +546,7 @@
     {
       "id": "middle_east",
       "label": "Middle East",
-      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "geojson": "scripts/geo-data/world/ne_10m_countries.geojson",
       "featureNameProp": "NAME",
       "featureFilter": {
         "includeByProp": "NAME",
@@ -591,7 +591,7 @@
     {
       "id": "south_asia",
       "label": "South Asia",
-      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "geojson": "scripts/geo-data/world/ne_10m_countries.geojson",
       "featureNameProp": "NAME",
       "featureFilter": {
         "includeByProp": "NAME",
@@ -626,7 +626,7 @@
     {
       "id": "south_east_asia",
       "label": "South East Asia",
-      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "geojson": "scripts/geo-data/world/ne_10m_countries.geojson",
       "featureNameProp": "NAME",
       "featureFilter": {
         "includeByProp": "NAME",
@@ -661,7 +661,7 @@
     {
       "id": "asia",
       "label": "Asia",
-      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "geojson": "scripts/geo-data/world/ne_10m_countries.geojson",
       "featureNameProp": "NAME",
       "featureFilter": {
         "equalsProp": "CONTINENT",
@@ -705,7 +705,7 @@
     {
       "id": "south_america",
       "label": "South America",
-      "geojson": "scripts/geo-data/world/ne_50m_countries.geojson",
+      "geojson": "scripts/geo-data/world/ne_10m_countries.geojson",
       "featureNameProp": "NAME",
       "featureFilter": {
         "equalsProp": "CONTINENT",
