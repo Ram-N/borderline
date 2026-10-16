@@ -3,6 +3,34 @@ import { LANDMARK_MAP_CONFIG } from '../../data/landmarkMapConfig';
 import { hashSeed, mulberry32, seededShuffle } from '../../utils/seededRandom';
 import type { Landmark, LandmarkDataset } from '../../types/landmark/landmark';
 
+/**
+ * Pick `count` landmarks from `pool` with maximum visual spread.
+ * The first pin comes from the front of the (already seeded-shuffled) pool
+ * so randomness is preserved; subsequent pins are chosen greedily to
+ * maximise the minimum SVG-pixel distance from all already-selected pins.
+ * This prevents multiple pins from stacking on the same spot (e.g. Rome's
+ * historic centre has many landmarks within 20 px of each other).
+ */
+function pickSpread(pool: Landmark[], count: number): Landmark[] {
+  if (pool.length <= count) return pool.slice(0, count);
+  const selected: Landmark[] = [pool[0]];
+  const remaining = pool.slice(1);
+  while (selected.length < count && remaining.length > 0) {
+    let bestIdx = 0;
+    let bestMinDist = -1;
+    for (let i = 0; i < remaining.length; i++) {
+      const minDist = Math.min(
+        ...selected.map(s =>
+          Math.hypot(s.svgX - remaining[i].svgX, s.svgY - remaining[i].svgY)
+        )
+      );
+      if (minDist > bestMinDist) { bestMinDist = minDist; bestIdx = i; }
+    }
+    selected.push(remaining.splice(bestIdx, 1)[0]);
+  }
+  return selected;
+}
+
 export interface LandmarkChoice {
   id: string;
   name: string;
@@ -58,20 +86,22 @@ export default function useDailyLandmarkSelectEngine(date: string): {
           fetch(LANDMARK_MAP_CONFIG[phase2Key].dataUrl).then((r) => r.json()),
         ]);
 
-        // Phase 1: 3 pins + 3 distractors
+        // Phase 1: 3 pins + 3 distractors (pins spread for visual clarity)
         const shuffledP1 = seededShuffle([...ds1.landmarks], rng);
-        const p1Pins = shuffledP1.slice(0, 3);
-        const p1Distractors = shuffledP1.slice(3, 6);
+        const p1Pins = pickSpread(shuffledP1, 3);
+        const p1PinIds = new Set(p1Pins.map(l => l.id));
+        const p1Distractors = shuffledP1.filter(l => !p1PinIds.has(l.id)).slice(0, 3);
         const p1ChoicesRaw: LandmarkChoice[] = [
           ...p1Pins.map((l) => ({ id: l.id, name: l.name, isCorrect: true })),
           ...p1Distractors.map((l) => ({ id: l.id, name: l.name, isCorrect: false })),
         ];
         const p1Choices = seededShuffle(p1ChoicesRaw, rng);
 
-        // Phase 2: 2 pins + 3 distractors
+        // Phase 2: 2 pins + 3 distractors (pins spread for visual clarity)
         const shuffledP2 = seededShuffle([...ds2.landmarks], rng);
-        const p2Pins = shuffledP2.slice(0, 2);
-        const p2Distractors = shuffledP2.slice(2, 5);
+        const p2Pins = pickSpread(shuffledP2, 2);
+        const p2PinIds = new Set(p2Pins.map(l => l.id));
+        const p2Distractors = shuffledP2.filter(l => !p2PinIds.has(l.id)).slice(0, 3);
         const p2ChoicesRaw: LandmarkChoice[] = [
           ...p2Pins.map((l) => ({ id: l.id, name: l.name, isCorrect: true })),
           ...p2Distractors.map((l) => ({ id: l.id, name: l.name, isCorrect: false })),
