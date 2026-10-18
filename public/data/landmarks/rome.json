@@ -2,10 +2,10 @@
   "id": "rome",
   "name": "Rome",
   "bounds": {
-    "minLat": 41.6241,
-    "maxLat": 42.1702,
-    "minLon": 12.1971,
-    "maxLon": 12.8933
+    "minLat": 41.865,
+    "maxLat": 41.925,
+    "minLon": 12.440,
+    "maxLon": 12.530
   },
   "viewBox": "0 0 800 843",
   "landmarks": [
@@ -14,8 +14,8 @@
       "name": "Colosseum",
       "lat": 41.8902,
       "lon": 12.4922,
-      "svgX": 339,
-      "svgY": 432,
+      "svgX": 464,
+      "svgY": 479,
       "hint": "The world's largest ancient amphitheatre, once hosting gladiatorial contests and public spectacles"
     },
     {
@@ -23,8 +23,8 @@
       "name": "St. Peter's Basilica",
       "lat": 41.9022,
       "lon": 12.4539,
-      "svgX": 295,
-      "svgY": 414,
+      "svgX": 124,
+      "svgY": 336,
       "hint": "The largest church in the world, crowned by Michelangelo's dome in Vatican City"
     },
     {
@@ -32,8 +32,8 @@
       "name": "Trevi Fountain",
       "lat": 41.9009,
       "lon": 12.4833,
-      "svgX": 329,
-      "svgY": 416,
+      "svgX": 385,
+      "svgY": 351,
       "hint": "The largest Baroque fountain in Rome; tradition says tossing a coin ensures your return"
     },
     {
@@ -41,8 +41,8 @@
       "name": "Spanish Steps",
       "lat": 41.9058,
       "lon": 12.4823,
-      "svgX": 328,
-      "svgY": 408,
+      "svgX": 376,
+      "svgY": 293,
       "hint": "A monumental stairway of 135 steps leading from Piazza di Spagna to the Trinità dei Monti church"
     },
     {
@@ -50,8 +50,8 @@
       "name": "Pantheon",
       "lat": 41.8986,
       "lon": 12.4769,
-      "svgX": 322,
-      "svgY": 419,
+      "svgX": 328,
+      "svgY": 379,
       "hint": "A remarkably preserved ancient temple turned church, famous for its unreinforced concrete dome"
     },
     {
@@ -59,26 +59,26 @@
       "name": "Roman Forum",
       "lat": 41.8925,
       "lon": 12.4853,
-      "svgX": 331,
-      "svgY": 429,
+      "svgX": 403,
+      "svgY": 451,
       "hint": "The central plaza of ancient Rome, surrounded by ruins of important government buildings"
     },
     {
-      "id": "borghese-gallery",
-      "name": "Borghese Gallery",
-      "lat": 41.9141,
-      "lon": 12.4922,
-      "svgX": 339,
-      "svgY": 395,
-      "hint": "A magnificent art gallery inside the Villa Borghese, housing Bernini sculptures and Caravaggio paintings"
+      "id": "piazza-del-popolo",
+      "name": "Piazza del Popolo",
+      "lat": 41.9108,
+      "lon": 12.4760,
+      "svgX": 320,
+      "svgY": 233,
+      "hint": "A grand twin-churched piazza at the northern gate of ancient Rome, once the arrival point for travellers from the north"
     },
     {
       "id": "piazza-navona",
       "name": "Piazza Navona",
       "lat": 41.8990,
       "lon": 12.4730,
-      "svgX": 317,
-      "svgY": 419,
+      "svgX": 293,
+      "svgY": 374,
       "hint": "A lively Baroque piazza built over the ancient Stadium of Domitian, with Bernini's Fountain of the Four Rivers"
     },
     {
@@ -86,18 +86,18 @@
       "name": "Castel Sant'Angelo",
       "lat": 41.9031,
       "lon": 12.4663,
-      "svgX": 309,
-      "svgY": 412,
+      "svgX": 234,
+      "svgY": 325,
       "hint": "A towering cylindrical mausoleum initially built for Emperor Hadrian, later a papal fortress"
     },
     {
-      "id": "appian-way",
-      "name": "Appian Way",
-      "lat": 41.8274,
-      "lon": 12.5262,
-      "svgX": 378,
-      "svgY": 529,
-      "hint": "One of the earliest and most important Roman roads, lined with ancient tombs and catacombs"
+      "id": "campo-de-fiori",
+      "name": "Campo de' Fiori",
+      "lat": 41.8957,
+      "lon": 12.4724,
+      "svgX": 288,
+      "svgY": 413,
+      "hint": "A lively market square and social hub in the heart of Rome, home to a daily flower and food market"
     }
   ]
 }
