@@ -330,9 +330,30 @@ function buildSvg(
     ? labelFeatures
         .map(({ name, pathD }) => {
           const c = featureCentroid(pathD);
+          const cx = Math.round(c.x);
+          const cy = Math.round(c.y);
+          const area = pathBboxArea(pathD);
+          const fontSize = area < 800 ? 10 : 13;
+
+          // Split compound names at " and " or " upon " to reduce horizontal width.
+          const splitMatch = name.match(/^(.+?)\s+(and|upon)\s+(.+)$/i);
+          if (splitMatch) {
+            const line1 = splitMatch[1];
+            const line2 = `${splitMatch[2]} ${splitMatch[3]}`;
+            const dy = Math.round(fontSize * 0.6);
+            return (
+              `  <text x="${cx}" y="${cy - dy}" ` +
+              `font-family="sans-serif" font-size="${fontSize}" font-weight="bold" ` +
+              `fill="#444" text-anchor="middle">` +
+              `<tspan x="${cx}" dy="0">${line1}</tspan>` +
+              `<tspan x="${cx}" dy="${fontSize + 1}">${line2}</tspan>` +
+              `</text>`
+            );
+          }
+
           return (
-            `  <text x="${Math.round(c.x)}" y="${Math.round(c.y)}" ` +
-            `font-family="sans-serif" font-size="13" font-weight="bold" ` +
+            `  <text x="${cx}" y="${cy}" ` +
+            `font-family="sans-serif" font-size="${fontSize}" font-weight="bold" ` +
             `fill="#444" text-anchor="middle">${name}</text>`
           );
         })

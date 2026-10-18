@@ -33,33 +33,33 @@
   <path id="waltham-forest" d="M 493,118 L 496,111 L 494,103 L 475,101 L 465,95 L 461,111 L 445,139 L 446,145 L 432,163 L 430,175 L 422,184 L 425,195 L 435,209 L 450,211 L 460,222 L 467,223 L 467,226 L 481,224 L 486,219 L 493,219 L 487,212 L 491,196 L 485,168 L 493,143 L 483,133 L 490,127 L 493,118 Z" fill="#d4c8e8" stroke="#777" stroke-width="1"/>
   <path id="wandsworth" d="M 357,402 L 358,389 L 360,388 L 356,380 L 360,372 L 353,372 L 354,360 L 350,358 L 347,340 L 361,329 L 368,315 L 365,313 L 327,320 L 319,338 L 314,342 L 301,341 L 288,332 L 278,331 L 277,342 L 262,341 L 259,343 L 256,354 L 270,371 L 260,378 L 262,385 L 279,377 L 294,378 L 314,373 L 313,384 L 317,384 L 320,395 L 336,402 L 339,400 L 351,405 L 357,402 Z" fill="#e8d4c8" stroke="#777" stroke-width="1"/>
   <path id="westminster" d="M 380,273 L 365,275 L 351,259 L 345,243 L 336,244 L 324,239 L 311,247 L 307,256 L 303,249 L 294,250 L 292,254 L 304,263 L 306,274 L 309,273 L 317,283 L 323,295 L 334,294 L 340,291 L 343,306 L 349,314 L 360,315 L 367,310 L 372,286 L 380,279 L 380,273 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
-  <text x="583" y="220" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Barking and Dagenham</text>
+  <text x="583" y="212" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle"><tspan x="583" dy="0">Barking</tspan><tspan x="583" dy="14">and Dagenham</tspan></text>
   <text x="291" y="141" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Barnet</text>
   <text x="601" y="346" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Bexley</text>
   <text x="252" y="207" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Brent</text>
   <text x="508" y="474" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Bromley</text>
   <text x="340" y="236" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Camden</text>
-  <text x="396" y="273" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">City of London</text>
+  <text x="396" y="273" font-family="sans-serif" font-size="10" font-weight="bold" fill="#444" text-anchor="middle">City of London</text>
   <text x="408" y="491" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Croydon</text>
   <text x="194" y="260" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Ealing</text>
   <text x="393" y="92" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Enfield</text>
   <text x="516" y="337" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Greenwich</text>
   <text x="424" y="228" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Hackney</text>
-  <text x="292" y="296" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Hammersmith and Fulham</text>
+  <text x="292" y="288" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle"><tspan x="292" dy="0">Hammersmith</tspan><tspan x="292" dy="14">and Fulham</tspan></text>
   <text x="385" y="175" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Haringey</text>
   <text x="192" y="162" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Harrow</text>
   <text x="675" y="215" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Havering</text>
   <text x="100" y="236" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Hillingdon</text>
   <text x="176" y="346" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Hounslow</text>
   <text x="382" y="230" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Islington</text>
-  <text x="314" y="289" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Kensington and Chelsea</text>
-  <text x="234" y="455" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Kingston upon Thames</text>
+  <text x="314" y="281" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle"><tspan x="314" dy="0">Kensington</tspan><tspan x="314" dy="14">and Chelsea</tspan></text>
+  <text x="234" y="447" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle"><tspan x="234" dy="0">Kingston</tspan><tspan x="234" dy="14">upon Thames</tspan></text>
   <text x="378" y="347" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Lambeth</text>
   <text x="459" y="357" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Lewisham</text>
   <text x="315" y="414" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Merton</text>
   <text x="508" y="253" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Newham</text>
   <text x="542" y="177" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Redbridge</text>
-  <text x="214" y="375" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Richmond upon Thames</text>
+  <text x="214" y="367" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle"><tspan x="214" dy="0">Richmond</tspan><tspan x="214" dy="14">upon Thames</tspan></text>
   <text x="416" y="340" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Southwark</text>
   <text x="321" y="487" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Sutton</text>
   <text x="445" y="274" font-family="sans-serif" font-size="13" font-weight="bold" fill="#444" text-anchor="middle">Tower Hamlets</text>
