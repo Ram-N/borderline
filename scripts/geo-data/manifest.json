@@ -20,7 +20,7 @@
       "customLabels": null,
       "group": "World Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -40,7 +40,7 @@
       "customLabels": null,
       "group": "World Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -60,7 +60,7 @@
       "customLabels": null,
       "group": "World Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -80,7 +80,7 @@
       "customLabels": null,
       "group": "World Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -100,7 +100,27 @@
       "customLabels": null,
       "group": "World Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1,
+      "diagonalKm": null
+    },
+    {
+      "id": "sf",
+      "label": "San Francisco",
+      "geojson": "scripts/geo-data/cities/sf_neighborhoods.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 2,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "group": "World Cities",
+      "gameModes": [
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -120,7 +140,7 @@
       "customLabels": null,
       "group": "Indian Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -140,7 +160,7 @@
       "customLabels": null,
       "group": "Indian Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -231,7 +251,7 @@
       ],
       "group": "Indian Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -251,7 +271,7 @@
       "customLabels": null,
       "group": "Indian Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -337,7 +357,7 @@
       ],
       "group": "Indian Cities",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -359,7 +379,7 @@
       "customLabels": null,
       "group": "Continents",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -381,7 +401,7 @@
       "customLabels": null,
       "group": "Continents",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -403,7 +423,7 @@
       "customLabels": null,
       "group": "Continents",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -425,7 +445,7 @@
       "customLabels": null,
       "group": "Continents",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -447,7 +467,7 @@
       "customLabels": null,
       "group": "Continents",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -469,7 +489,7 @@
       "customLabels": null,
       "group": "Continents",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -491,7 +511,7 @@
       "customLabels": null,
       "group": "Continents",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,
@@ -513,7 +533,7 @@
       "customLabels": null,
       "group": "Continents",
       "gameModes": [
-        "where-is-it",
+        "pinpoint",
         "match-the-map"
       ],
       "defaultDifficulty": 1,

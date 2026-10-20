@@ -1,0 +1,103 @@
+{
+  "id": "sf",
+  "name": "San Francisco",
+  "bounds": {
+    "minLat": 37.700,
+    "maxLat": 37.840,
+    "minLon": -122.525,
+    "maxLon": -122.350
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    {
+      "id": "golden-gate-bridge",
+      "name": "Golden Gate Bridge",
+      "lat": 37.8199,
+      "lon": -122.4783,
+      "svgX": 239,
+      "svgY": 101,
+      "hint": "The iconic international-orange suspension bridge at the mouth of the bay"
+    },
+    {
+      "id": "alcatraz-island",
+      "name": "Alcatraz Island",
+      "lat": 37.8267,
+      "lon": -122.4230,
+      "svgX": 457,
+      "svgY": 67,
+      "hint": "A rocky island in the bay that housed a notorious federal penitentiary"
+    },
+    {
+      "id": "fishermans-wharf",
+      "name": "Fisherman's Wharf",
+      "lat": 37.8080,
+      "lon": -122.4177,
+      "svgX": 478,
+      "svgY": 160,
+      "hint": "A waterfront neighbourhood famous for sourdough bread and sea lions at Pier 39"
+    },
+    {
+      "id": "coit-tower",
+      "name": "Coit Tower",
+      "lat": 37.8024,
+      "lon": -122.4058,
+      "svgX": 525,
+      "svgY": 188,
+      "hint": "A fluted concrete tower atop Telegraph Hill with panoramic views of the bay"
+    },
+    {
+      "id": "palace-of-fine-arts",
+      "name": "Palace of Fine Arts",
+      "lat": 37.8029,
+      "lon": -122.4481,
+      "svgX": 358,
+      "svgY": 186,
+      "hint": "A Roman-style rotunda and colonnade in the Marina, built for the 1915 World Exposition"
+    },
+    {
+      "id": "ferry-building",
+      "name": "Ferry Building",
+      "lat": 37.7956,
+      "lon": -122.3937,
+      "svgX": 573,
+      "svgY": 222,
+      "hint": "A landmark clock-tower terminal on the Embarcadero where ferries cross the bay"
+    },
+    {
+      "id": "oracle-park",
+      "name": "Oracle Park",
+      "lat": 37.7786,
+      "lon": -122.3893,
+      "svgX": 591,
+      "svgY": 307,
+      "hint": "Home of the San Francisco Giants, with views of McCovey Cove beyond right field"
+    },
+    {
+      "id": "city-hall",
+      "name": "City Hall",
+      "lat": 37.7793,
+      "lon": -122.4193,
+      "svgX": 472,
+      "svgY": 304,
+      "hint": "A Beaux-Arts civic building with one of the largest domes in the United States"
+    },
+    {
+      "id": "golden-gate-park",
+      "name": "Golden Gate Park",
+      "lat": 37.7694,
+      "lon": -122.4862,
+      "svgX": 208,
+      "svgY": 353,
+      "hint": "A vast urban park stretching to the Pacific, larger than Central Park"
+    },
+    {
+      "id": "twin-peaks",
+      "name": "Twin Peaks",
+      "lat": 37.7517,
+      "lon": -122.4477,
+      "svgX": 360,
+      "svgY": 442,
+      "hint": "Two prominent hills near the geographic centre of the city, with sweeping 360° views"
+    }
+  ]
+}
