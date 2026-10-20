@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700">
+  <rect width="800" height="700" fill="#c8e6f5"/>
+  <path id="sydney" d="M 230,223 L 235,232 L 243,230 L 248,209 L 241,206 L 243,199 L 240,174 L 253,170 L 252,153 L 260,154 L 263,162 L 280,163 L 281,149 L 285,140 L 295,139 L 296,133 L 296,138 L 299,133 L 299,138 L 302,133 L 302,139 L 305,134 L 306,139 L 308,139 L 308,134 L 309,139 L 311,138 L 313,123 L 319,117 L 325,100 L 333,102 L 331,116 L 341,129 L 340,145 L 346,154 L 353,155 L 358,151 L 369,126 L 372,123 L 376,124 L 378,148 L 354,179 L 352,195 L 347,197 L 347,206 L 333,223 L 327,219 L 315,219 L 309,258 L 301,271 L 250,260 L 234,265 L 225,253 L 214,229 L 220,198 L 224,194 L 228,194 L 230,223 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
+  <path id="woollahra" d="M 435,347 L 435,347 Z" fill="#e0b8b8" stroke="#777" stroke-width="1"/>
+  <path id="barangaroo" d="M 250,110 L 253,170 L 242,174 L 233,108 L 234,95 L 250,94 L 250,110 Z" fill="#d4c9a8" stroke="#777" stroke-width="1"/>
+  <path id="beaconsfield" d="M 224,538 L 218,534 L 233,509 L 228,507 L 235,497 L 251,500 L 239,544 L 229,543 L 223,540 L 224,538 Z" fill="#e8dfa8" stroke="#777" stroke-width="1"/>
+  <path id="erskineville" d="M 117,487 L 108,465 L 113,463 L 123,426 L 115,417 L 141,410 L 142,416 L 145,416 L 141,433 L 144,434 L 145,429 L 172,418 L 171,436 L 184,448 L 151,491 L 117,487 Z" fill="#b8d4a8" stroke="#777" stroke-width="1"/>
+  <path id="newtown" d="M 128,415 L 117,416 L 122,429 L 113,463 L 108,465 L 93,428 L 104,409 L 114,401 L 102,365 L 119,369 L 160,367 L 156,372 L 161,372 L 166,388 L 157,392 L 159,402 L 128,415 Z" fill="#c8d4e8" stroke="#777" stroke-width="1"/>
+  <path id="rushcutters-bay" d="M 387,249 L 391,237 L 396,245 L 402,243 L 413,223 L 419,223 L 423,229 L 426,237 L 417,254 L 419,257 L 406,256 L 405,253 L 387,251 L 387,249 Z" fill="#d4c8e8" stroke="#777" stroke-width="1"/>
+  <path id="edgecliff" d="M 419,257 L 419,257 Z" fill="#e8d4c8" stroke="#777" stroke-width="1"/>
+  <path id="zetland" d="M 270,514 L 248,511 L 251,476 L 254,474 L 278,458 L 323,464 L 315,526 L 270,514 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
+  <path id="st-peters" d="M 116,535 L 143,555 L 145,565 L 115,577 L 105,588 L 86,569 L 100,557 L 115,554 L 116,535 Z" fill="#e0b8b8" stroke="#777" stroke-width="1"/>
+  <path id="chippendale" d="M 203,343 L 191,341 L 201,316 L 204,315 L 240,313 L 255,308 L 257,310 L 253,318 L 257,322 L 276,325 L 276,328 L 243,350 L 203,343 Z" fill="#d4c9a8" stroke="#777" stroke-width="1"/>
+  <path id="alexandria" d="M 145,559 L 139,551 L 115,535 L 116,489 L 125,487 L 149,491 L 155,487 L 184,448 L 171,436 L 172,418 L 205,415 L 217,412 L 217,397 L 228,396 L 228,408 L 249,465 L 252,482 L 251,499 L 236,497 L 231,503 L 228,507 L 233,509 L 218,534 L 224,538 L 223,540 L 238,545 L 230,573 L 211,596 L 112,579 L 145,565 L 145,559 Z" fill="#e8dfa8" stroke="#777" stroke-width="1"/>
+  <path id="annandale" d="M 77,224 L 83,223 L 90,226 L 88,266 L 83,256 L 75,249 L 77,224 Z" fill="#b8d4a8" stroke="#777" stroke-width="1"/>
+  <path id="haymarket" d="M 251,311 L 233,264 L 241,265 L 249,260 L 300,271 L 290,280 L 285,308 L 277,324 L 257,322 L 253,319 L 257,310 L 251,311 Z" fill="#c8d4e8" stroke="#777" stroke-width="1"/>
+  <path id="darlinghurst" d="M 345,313 L 341,291 L 327,288 L 328,282 L 321,279 L 321,268 L 310,258 L 312,234 L 365,244 L 377,250 L 406,254 L 406,256 L 418,258 L 408,275 L 389,274 L 368,292 L 354,294 L 348,319 L 345,313 Z" fill="#d4c8e8" stroke="#777" stroke-width="1"/>
+  <path id="camperdown" d="M 85,333 L 77,305 L 82,301 L 105,309 L 120,324 L 152,317 L 199,315 L 200,318 L 192,338 L 173,352 L 161,368 L 119,369 L 105,365 L 97,367 L 85,333 Z" fill="#e8d4c8" stroke="#777" stroke-width="1"/>
+  <path id="dawes-point" d="M 276,95 L 272,83 L 275,82 L 279,94 L 284,81 L 292,84 L 273,121 L 266,119 L 272,112 L 268,112 L 266,106 L 253,104 L 256,103 L 253,94 L 255,93 L 261,105 L 264,105 L 259,90 L 262,89 L 267,103 L 270,100 L 266,87 L 268,86 L 272,97 L 276,95 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
+  <path id="centennial-park" d="M 422,370 L 412,359 L 415,354 L 440,356 L 439,367 L 420,404 L 413,410 L 405,411 L 403,409 L 418,391 L 420,380 L 417,377 L 422,370 Z" fill="#e0b8b8" stroke="#777" stroke-width="1"/>
+  <path id="darlington" d="M 156,372 L 173,353 L 190,340 L 226,347 L 210,366 L 212,372 L 204,374 L 205,377 L 198,376 L 167,388 L 161,372 L 156,372 Z" fill="#d4c9a8" stroke="#777" stroke-width="1"/>
+  <path id="eveleigh" d="M 227,370 L 217,378 L 220,379 L 217,411 L 207,415 L 166,419 L 145,429 L 142,433 L 145,421 L 141,410 L 159,403 L 157,393 L 201,375 L 201,379 L 205,377 L 206,373 L 218,374 L 227,370 Z" fill="#e8dfa8" stroke="#777" stroke-width="1"/>
+  <path id="waterloo" d="M 228,408 L 227,398 L 232,397 L 233,400 L 273,404 L 331,415 L 323,463 L 279,457 L 251,475 L 228,408 Z" fill="#b8d4a8" stroke="#777" stroke-width="1"/>
+  <path id="elizabeth-bay" d="M 393,238 L 391,237 L 395,232 L 390,229 L 395,194 L 407,191 L 408,199 L 418,207 L 425,206 L 433,216 L 430,224 L 424,228 L 420,229 L 419,224 L 411,224 L 402,243 L 396,246 L 393,238 Z" fill="#c8d4e8" stroke="#777" stroke-width="1"/>
+  <path id="moore-park" d="M 419,368 L 422,370 L 418,375 L 421,380 L 415,394 L 383,434 L 374,432 L 381,461 L 380,469 L 373,468 L 372,471 L 323,463 L 346,328 L 394,341 L 414,353 L 413,358 L 419,368 Z" fill="#d4c8e8" stroke="#777" stroke-width="1"/>
+  <path id="forest-lodge" d="M 114,317 L 105,309 L 83,302 L 80,281 L 88,265 L 87,252 L 99,250 L 104,258 L 105,268 L 112,277 L 110,278 L 108,276 L 110,281 L 121,298 L 129,303 L 128,306 L 141,302 L 145,308 L 143,309 L 152,316 L 120,324 L 114,317 Z" fill="#e8d4c8" stroke="#777" stroke-width="1"/>
+  <path id="millers-point" d="M 273,121 L 260,153 L 253,154 L 248,105 L 251,102 L 265,106 L 268,112 L 272,112 L 266,119 L 273,121 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
+  <path id="rosebery" d="M 211,596 L 230,573 L 248,511 L 283,516 L 296,523 L 314,526 L 304,594 L 309,605 L 323,618 L 303,612 L 211,596 Z" fill="#e0b8b8" stroke="#777" stroke-width="1"/>
+  <path id="glebe" d="M 110,274 L 104,267 L 104,259 L 99,250 L 89,252 L 87,248 L 90,227 L 110,215 L 124,223 L 137,212 L 145,228 L 158,233 L 166,250 L 165,242 L 167,240 L 171,245 L 173,242 L 170,238 L 174,241 L 182,234 L 189,239 L 206,275 L 199,278 L 202,314 L 152,317 L 148,311 L 143,310 L 145,308 L 141,303 L 128,307 L 129,303 L 121,298 L 107,277 L 112,277 L 110,274 Z" fill="#d4c9a8" stroke="#777" stroke-width="1"/>
+  <path id="paddington" d="M 434,346 L 444,354 L 435,357 L 420,355 L 388,339 L 347,329 L 354,294 L 368,309 L 408,322 L 434,346 Z" fill="#e8dfa8" stroke="#777" stroke-width="1"/>
+  <path id="potts-point" d="M 390,229 L 395,232 L 389,241 L 387,251 L 368,245 L 376,199 L 367,201 L 368,198 L 380,180 L 393,145 L 399,156 L 407,154 L 403,142 L 407,123 L 414,115 L 418,115 L 427,124 L 415,138 L 412,162 L 415,181 L 407,190 L 396,194 L 390,229 Z" fill="#b8d4a8" stroke="#777" stroke-width="1"/>
+  <path id="surry-hills" d="M 328,282 L 327,288 L 341,291 L 348,320 L 338,373 L 307,368 L 283,357 L 246,351 L 276,326 L 285,308 L 290,280 L 304,268 L 309,259 L 323,270 L 321,279 L 328,282 Z" fill="#c8d4e8" stroke="#777" stroke-width="1"/>
+  <path id="pyrmont" d="M 177,172 L 175,160 L 195,148 L 197,149 L 192,162 L 203,149 L 209,150 L 197,169 L 198,171 L 212,156 L 217,159 L 217,156 L 209,187 L 215,189 L 219,170 L 227,172 L 214,229 L 220,240 L 195,252 L 175,218 L 153,204 L 153,197 L 146,194 L 153,195 L 151,193 L 160,185 L 158,183 L 164,175 L 170,171 L 177,172 Z" fill="#d4c8e8" stroke="#777" stroke-width="1"/>
+  <path id="redfern" d="M 243,350 L 282,357 L 307,368 L 338,373 L 332,415 L 273,404 L 233,400 L 233,397 L 217,395 L 220,379 L 217,378 L 227,370 L 214,374 L 212,364 L 226,347 L 243,350 Z" fill="#e8d4c8" stroke="#777" stroke-width="1"/>
+  <path id="the-rocks" d="M 268,134 L 292,85 L 300,97 L 291,101 L 294,107 L 298,107 L 295,138 L 286,138 L 281,149 L 280,162 L 277,163 L 263,163 L 261,156 L 268,134 Z" fill="#e8c8a8" stroke="#777" stroke-width="1"/>
+  <path id="ultimo" d="M 214,244 L 219,240 L 232,263 L 245,291 L 250,311 L 201,315 L 199,278 L 206,275 L 195,252 L 214,244 Z" fill="#e0b8b8" stroke="#777" stroke-width="1"/>
+  <path id="woolloomooloo" d="M 359,179 L 357,195 L 371,173 L 375,175 L 363,199 L 376,199 L 368,245 L 312,234 L 314,219 L 326,219 L 333,223 L 347,205 L 353,180 L 358,175 L 359,179 Z" fill="#d4c9a8" stroke="#777" stroke-width="1"/>
+  <g transform="translate(760,668)">
+    <circle r="14" fill="white" stroke="#aaa" stroke-width="1"/>
+    <text x="0" y="-3" font-family="sans-serif" font-size="9" fill="#555" text-anchor="middle">N</text>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#888" stroke-width="1"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#888" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,103 @@
+{
+  "id": "sydney",
+  "name": "Sydney",
+  "bounds": {
+    "minLat": -33.935,
+    "maxLat": -33.843,
+    "minLon": 151.163,
+    "maxLon": 151.290
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    {
+      "id": "sydney-opera-house",
+      "name": "Sydney Opera House",
+      "lat": -33.8568,
+      "lon": 151.2153,
+      "svgX": 329,
+      "svgY": 106,
+      "hint": "A sail-shaped performing arts complex on a harbourside peninsula, a UNESCO World Heritage Site"
+    },
+    {
+      "id": "sydney-harbour-bridge",
+      "name": "Sydney Harbour Bridge",
+      "lat": -33.8523,
+      "lon": 151.2108,
+      "svgX": 301,
+      "svgY": 72,
+      "hint": "The world's largest steel arch bridge, nicknamed 'the Coathanger' by locals"
+    },
+    {
+      "id": "the-rocks",
+      "name": "The Rocks",
+      "lat": -33.8597,
+      "lon": 151.2084,
+      "svgX": 286,
+      "svgY": 128,
+      "hint": "Sydney's oldest neighbourhood, a sandstone precinct at the base of the harbour bridge"
+    },
+    {
+      "id": "darling-harbour",
+      "name": "Darling Harbour",
+      "lat": -33.8731,
+      "lon": 151.1988,
+      "svgX": 226,
+      "svgY": 229,
+      "hint": "A waterfront leisure precinct on the western edge of the CBD, home to an aquarium and IMAX cinema"
+    },
+    {
+      "id": "sydney-town-hall",
+      "name": "Sydney Town Hall",
+      "lat": -33.8738,
+      "lon": 151.2050,
+      "svgX": 265,
+      "svgY": 235,
+      "hint": "A Victorian-era civic building with a grand clock tower, at the heart of the city grid"
+    },
+    {
+      "id": "central-station",
+      "name": "Central Station",
+      "lat": -33.8839,
+      "lon": 151.2005,
+      "svgX": 236,
+      "svgY": 311,
+      "hint": "Sydney's main railway terminus, marked by a grand sandstone clock tower built in 1906"
+    },
+    {
+      "id": "sydney-cricket-ground",
+      "name": "Sydney Cricket Ground",
+      "lat": -33.8915,
+      "lon": 151.2217,
+      "svgX": 370,
+      "svgY": 369,
+      "hint": "A historic oval sports ground that has hosted Test cricket since 1882"
+    },
+    {
+      "id": "bondi-beach",
+      "name": "Bondi Beach",
+      "lat": -33.8902,
+      "lon": 151.2743,
+      "svgX": 701,
+      "svgY": 359,
+      "hint": "Australia's most famous beach, a crescent of white sand just 8 km from the city centre"
+    },
+    {
+      "id": "centennial-park",
+      "name": "Centennial Park",
+      "lat": -33.8986,
+      "lon": 151.2339,
+      "svgX": 447,
+      "svgY": 423,
+      "hint": "A grand Victorian parkland opened in 1888 to mark the centenary of European settlement"
+    },
+    {
+      "id": "newtown",
+      "name": "Newtown",
+      "lat": -33.8966,
+      "lon": 151.1790,
+      "svgX": 101,
+      "svgY": 408,
+      "hint": "An eclectic inner suburb known for King Street, vintage shops, and a thriving live music scene"
+    }
+  ]
+}

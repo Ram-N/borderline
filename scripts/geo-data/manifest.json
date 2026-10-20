@@ -147,6 +147,26 @@
       "diagonalKm": null
     },
     {
+      "id": "sydney",
+      "label": "Sydney",
+      "geojson": "scripts/geo-data/cities/sydney_neighborhoods.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 2,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "group": "World Cities",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1,
+      "diagonalKm": null
+    },
+    {
       "id": "bangalore",
       "label": "Bangalore",
       "geojson": "scripts/geo-data/cities/india_bangalore.geojson",
