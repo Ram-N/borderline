@@ -1,0 +1,103 @@
+{
+  "id": "tokyo",
+  "name": "Tokyo",
+  "bounds": {
+    "minLat": 35.510,
+    "maxLat": 35.830,
+    "minLon": 139.550,
+    "maxLon": 139.930
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    {
+      "id": "shinjuku-station",
+      "name": "Shinjuku Station",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "svgX": 241,
+      "svgY": 336,
+      "hint": "The world's busiest railway station, surrounded by skyscrapers and a sprawling nightlife district"
+    },
+    {
+      "id": "tokyo-tower",
+      "name": "Tokyo Tower",
+      "lat": 35.6586,
+      "lon": 139.7454,
+      "svgX": 410,
+      "svgY": 375,
+      "hint": "A red-and-white lattice communications tower modelled after the Eiffel Tower"
+    },
+    {
+      "id": "tokyo-skytree",
+      "name": "Tokyo Skytree",
+      "lat": 35.7101,
+      "lon": 139.8107,
+      "svgX": 526,
+      "svgY": 262,
+      "hint": "The world's tallest broadcasting tower, rising over the old shitamachi district"
+    },
+    {
+      "id": "tsukiji-market",
+      "name": "Tsukiji Outer Market",
+      "lat": 35.6652,
+      "lon": 139.7731,
+      "svgX": 459,
+      "svgY": 360,
+      "hint": "A famous seafood market that once handled the world's largest tuna auctions"
+    },
+    {
+      "id": "imperial-palace",
+      "name": "Imperial Palace",
+      "lat": 35.6894,
+      "lon": 139.6917,
+      "svgX": 314,
+      "svgY": 308,
+      "hint": "The primary residence of Japan's Emperor, surrounded by moats and ancient stone walls in the city centre"
+    },
+    {
+      "id": "ueno-park",
+      "name": "Ueno Park",
+      "lat": 35.7148,
+      "lon": 139.7967,
+      "svgX": 501,
+      "svgY": 252,
+      "hint": "A large public park housing Japan's oldest zoo and several major national museums"
+    },
+    {
+      "id": "shibuya-crossing",
+      "name": "Shibuya Crossing",
+      "lat": 35.6595,
+      "lon": 139.7006,
+      "svgX": 330,
+      "svgY": 373,
+      "hint": "The world's busiest pedestrian scramble intersection, surrounded by giant video screens"
+    },
+    {
+      "id": "akihabara",
+      "name": "Akihabara",
+      "lat": 35.6813,
+      "lon": 139.7660,
+      "svgX": 446,
+      "svgY": 325,
+      "hint": "A district famous for multi-storey electronics shops, anime, and manga culture"
+    },
+    {
+      "id": "disneyland-tokyo",
+      "name": "Tokyo Disneyland",
+      "lat": 35.6328,
+      "lon": 139.8815,
+      "svgX": 651,
+      "svgY": 431,
+      "hint": "The first Disney theme park to open outside the United States, built on reclaimed bay land"
+    },
+    {
+      "id": "sensoji-temple",
+      "name": "Senso-ji Temple",
+      "lat": 35.7120,
+      "lon": 139.7740,
+      "svgX": 460,
+      "svgY": 258,
+      "hint": "Tokyo's oldest Buddhist temple, approached through a gate hung with a giant paper lantern"
+    }
+  ]
+}

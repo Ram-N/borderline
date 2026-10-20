@@ -47,6 +47,13 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     "blankSvg": "/images/maps/sf_blank.svg",
     "defaultDifficulty": 1
   },
+  "tokyo": {
+    "label": "Tokyo",
+    "dataUrl": "/data/landmarks/tokyo.json",
+    "labeledSvg": "/images/maps/tokyo_labeled.svg",
+    "blankSvg": "/images/maps/tokyo_blank.svg",
+    "defaultDifficulty": 1
+  },
   "bangalore": {
     "label": "Bangalore",
     "dataUrl": "/data/landmarks/bangalore.json",
@@ -214,7 +221,8 @@ export const CITY_GROUPS: { label: string; keys: string[] }[] = [
       "paris",
       "rome",
       "berlin",
-      "sf"
+      "sf",
+      "tokyo"
     ]
   },
   {
