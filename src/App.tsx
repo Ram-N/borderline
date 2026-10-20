@@ -19,7 +19,7 @@ import StreakBadge from './components/StreakBadge';
 import DailyCalendar from './components/DailyCalendar';
 // LandMark routes
 import LandMarkHome from './routes/landmark/Home';
-import WhereIsIt from './routes/landmark/WhereIsIt';
+import PinPoint from './routes/landmark/PinPoint';
 import WhereIsRegion from './routes/landmark/WhereIsRegion';
 import LandMarkResults from './routes/landmark/Results';
 import MatchTheMap from './routes/landmark/MatchTheMap';
@@ -103,7 +103,7 @@ export default function App() {
           <Route path='/qa/calendar' element={<QaCalendar />} />
           {/* LandMark routes */}
           <Route path='/landmark' element={<LandMarkHome />} />
-          <Route path='/landmark/games/where-is-it' element={<WhereIsIt />} />
+          <Route path='/landmark/games/pinpoint' element={<PinPoint />} />
           <Route path='/landmark/games/where-is-region' element={<WhereIsRegion />} />
           <Route path='/landmark/games/match-the-map' element={<MatchTheMap />} />
           <Route path='/landmark/games/whats-between' element={<WhatsBetween />} />

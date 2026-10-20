@@ -48,7 +48,7 @@ function GameContent({
   const revealedRound = engine.phase === 'reveal' ? currentRound : null;
 
   return (
-    <div className="where-is-it">
+    <div className="pinpoint">
       {/* Header row */}
       <div className="wii-header">
         <span className="wii-progress">
@@ -117,7 +117,7 @@ function GameContent({
   );
 }
 
-export default function WhereIsIt() {
+export default function PinPoint() {
   const [searchParams] = useSearchParams();
   const mapKey = searchParams.get('map') ?? 'nyc';
   const difficulty = (Number(searchParams.get('difficulty') ?? '1') as Difficulty) || 1;

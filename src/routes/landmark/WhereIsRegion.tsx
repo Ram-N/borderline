@@ -56,7 +56,7 @@ function GameContent({
   const revealedRound = engine.phase === 'reveal' ? currentRound : null;
 
   return (
-    <div className="where-is-it">
+    <div className="pinpoint">
       {/* Header row */}
       <div className="wii-header">
         <span className="wii-progress">

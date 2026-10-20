@@ -302,8 +302,8 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .landmark-play-btn { display: inline-block; background: #1976D2; color: #fff; font-size: 0.85rem; font-weight: 600; padding: 6px 16px; border-radius: 6px; }
 .landmark-coming-soon { font-size: 0.8rem; color: #999; font-style: italic; }
 
-/* Where Is It game */
-.where-is-it { max-width: 720px; margin: 0 auto; padding: 12px 16px 24px; }
+/* PinPoint game */
+.pinpoint { max-width: 720px; margin: 0 auto; padding: 12px 16px 24px; }
 .wii-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 0.9rem; color: #555; }
 .wii-progress { font-weight: 600; }
 .wii-difficulty { background: #f0f0f0; border-radius: 4px; padding: 2px 8px; font-size: 0.8rem; }

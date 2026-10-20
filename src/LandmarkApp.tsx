@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import LandMarkHome from './routes/landmark/Home';
-import WhereIsIt from './routes/landmark/WhereIsIt';
+import PinPoint from './routes/landmark/PinPoint';
 import WhereIsRegion from './routes/landmark/WhereIsRegion';
 import LandMarkResults from './routes/landmark/Results';
 import MatchTheMap from './routes/landmark/MatchTheMap';
@@ -23,7 +23,7 @@ export default function LandmarkApp() {
           {/* Redirect root to /landmark so internal navigation paths are unchanged */}
           <Route path='/' element={<Navigate to='/landmark' replace />} />
           <Route path='/landmark' element={<LandMarkHome />} />
-          <Route path='/landmark/games/where-is-it' element={<WhereIsIt />} />
+          <Route path='/landmark/games/pinpoint' element={<PinPoint />} />
           <Route path='/landmark/games/where-is-region' element={<WhereIsRegion />} />
           <Route path='/landmark/games/match-the-map' element={<MatchTheMap />} />
           <Route path='/landmark/games/whats-between' element={<WhatsBetween />} />
