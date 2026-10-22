@@ -1,0 +1,23 @@
+{
+  "id": "china",
+  "name": "China",
+  "bounds": {
+    "minLat": 17.7,
+    "maxLat": 54.1,
+    "minLon": 73.1,
+    "maxLon": 135.3
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "beijing",   "name": "Beijing",   "lat": 39.904, "lon": 116.407, "svgX": 557, "svgY": 286, "hint": "The capital, home of the Forbidden City and Tiananmen Square" },
+    { "id": "shanghai",  "name": "Shanghai",  "lat": 31.230, "lon": 121.474, "svgX": 622, "svgY": 424, "hint": "China's biggest city, a skyscraper-filled port at the mouth of the Yangtze" },
+    { "id": "guangzhou", "name": "Guangzhou", "lat": 23.129, "lon": 113.264, "svgX": 517, "svgY": 553, "hint": "Southern trading city on the Pearl River, famous for Cantonese food" },
+    { "id": "xian",      "name": "Xi'an",     "lat": 34.341, "lon": 108.940, "svgX": 461, "svgY": 375, "hint": "Ancient capital where the Terracotta Army was discovered" },
+    { "id": "chengdu",   "name": "Chengdu",   "lat": 30.573, "lon": 104.066, "svgX": 398, "svgY": 435, "hint": "Sichuan city famous for giant pandas and spicy food" },
+    { "id": "wuhan",     "name": "Wuhan",     "lat": 30.593, "lon": 114.305, "svgX": 530, "svgY": 434, "hint": "Central China's biggest city, where the Han river meets the Yangtze" },
+    { "id": "harbin",    "name": "Harbin",    "lat": 45.803, "lon": 126.535, "svgX": 687, "svgY": 193, "hint": "Frosty north-eastern city famous for its winter Ice Festival" },
+    { "id": "lhasa",     "name": "Lhasa",     "lat": 29.652, "lon":  91.172, "svgX": 232, "svgY": 449, "hint": "High-altitude Tibetan city of the Potala Palace" },
+    { "id": "urumqi",    "name": "Ürümqi",    "lat": 43.825, "lon":  87.617, "svgX": 187, "svgY": 224, "hint": "Far-western Xinjiang city, the most inland major city on Earth" },
+    { "id": "kunming",   "name": "Kunming",   "lat": 25.039, "lon": 102.718, "svgX": 381, "svgY": 522, "hint": "The City of Eternal Spring in the south-western Yunnan province" }
+  ]
+}

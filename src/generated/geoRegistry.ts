@@ -117,6 +117,20 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     "blankSvg": "/images/maps/uk_blank.svg",
     "defaultDifficulty": 1
   },
+  "india": {
+    "label": "India",
+    "dataUrl": "/data/landmarks/india.json",
+    "labeledSvg": "/images/maps/india_labeled.svg",
+    "blankSvg": "/images/maps/india_blank.svg",
+    "defaultDifficulty": 1
+  },
+  "china": {
+    "label": "China",
+    "dataUrl": "/data/landmarks/china.json",
+    "labeledSvg": "/images/maps/china_labeled.svg",
+    "blankSvg": "/images/maps/china_blank.svg",
+    "defaultDifficulty": 1
+  },
   "africa_cities": {
     "label": "African Cities",
     "dataUrl": "/data/landmarks/africa_cities.json",
@@ -261,7 +275,9 @@ export const CITY_GROUPS: { label: string; keys: string[] }[] = [
     "keys": [
       "france",
       "germany",
-      "uk"
+      "uk",
+      "india",
+      "china"
     ]
   },
   {

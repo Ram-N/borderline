@@ -88,6 +88,8 @@ Use `"strokeWidth": 0.5` and `"maxLabels": 15` for maps with 100+ features.
 
 **Adding a country instead of a city** (e.g. France): the same pipeline works. Use a regions/states GeoJSON in Step 1 (e.g. `https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/regions-version-simplifiee.geojson`), pad bounds by ~0.2° instead of 0.01°, use group `"Countries"`. Scoring scales automatically with the map size, so no other changes are needed.
 - **European countries:** the EU's GISCO NUTS-1 file has first-level regions for every EU/EFTA country — `https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_10M_2016_4326_LEVL_1.geojson` (the 2016 edition is the last that includes the UK). Filter by `CNTR_CODE`, and save a trimmed copy with a clean `name` property.
+- **Other countries:** Natural Earth's admin-1 file has current states/provinces for every country, drawn by on-the-ground control in disputed areas — `https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson` (~40 MB; download to the scratchpad, filter by `adm0_a3`, save a trimmed copy with a `name` property). Used for India and China.
+- **Cluttered labels:** `"maxLabels": N` keeps only the N largest regions' labels; `"hideLabels": ["Name", ...]` hides specific ones (e.g. India's Puducherry, whose scattered pieces put its label inside Tamil Nadu).
 - **Islands:** the map generator draws only the largest piece of each region by default. If a country has islands that matter (UK, Greece, Denmark…), add `"keepIslands": true` to its manifest entry.
 
 ### Step 4 — Generate the SVG maps

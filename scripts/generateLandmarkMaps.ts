@@ -68,6 +68,8 @@ type MapSpec = {
    * Ignored when suppressFeatureLabels is true.
    */
   maxLabels?: number;
+  /** Feature names to leave unlabeled (e.g. scattered territories whose label lands in a neighbour). */
+  hideLabels?: string[];
   /**
    * SVG stroke-width for region borders. Defaults to 1.
    * Use 0.5 for dense maps where thin borders look cleaner.
@@ -113,6 +115,7 @@ function loadMapSpecs(): Record<string, MapSpec> {
       tolerance: number;
       strokeWidth: number | null;
       maxLabels: number | null;
+      hideLabels?: string[];
       suppressFeatureLabels: boolean;
       customLabels: Array<{ name: string; lat: number; lon: number }> | null;
       keepIslands?: boolean;
@@ -133,6 +136,7 @@ function loadMapSpecs(): Record<string, MapSpec> {
       tolerance: entry.tolerance,
       ...(entry.strokeWidth !== null ? { strokeWidth: entry.strokeWidth } : {}),
       ...(entry.maxLabels !== null ? { maxLabels: entry.maxLabels } : {}),
+      ...(entry.hideLabels ? { hideLabels: entry.hideLabels } : {}),
       ...(entry.suppressFeatureLabels ? { suppressFeatureLabels: true } : {}),
       ...(entry.customLabels ? { customLabels: entry.customLabels } : {}),
       ...(entry.keepIslands ? { keepIslands: true } : {}),
@@ -318,6 +322,8 @@ function buildSvg(
     customLabelsSvg?: string;
     /** Only label the N largest features by bounding-box area. */
     maxLabels?: number;
+    /** Feature names to leave unlabeled. */
+    hideLabels?: string[];
     /** SVG stroke-width for region borders. Defaults to 1. */
     strokeWidth?: number;
   } = {},
@@ -343,6 +349,7 @@ function buildSvg(
 
   const featureLabels = labeled && !opts.suppressFeatureLabels
     ? labelFeatures
+        .filter(({ name }) => !opts.hideLabels?.includes(name))
         .map(({ name, pathD }) => {
           const c = featureCentroid(pathD);
           const cx = Math.round(c.x);
@@ -479,6 +486,7 @@ function buildMap(mapKey: string, spec: MapSpec, toleranceOverride?: number): vo
     suppressFeatureLabels: spec.suppressFeatureLabels,
     customLabelsSvg,
     maxLabels: spec.maxLabels,
+    hideLabels: spec.hideLabels,
     strokeWidth: spec.strokeWidth,
   });
   const blankSvg = buildSvg(features, dims, false, { strokeWidth: spec.strokeWidth });

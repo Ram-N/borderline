@@ -449,6 +449,47 @@
       "defaultDifficulty": 1
     },
     {
+      "id": "india",
+      "label": "India",
+      "geojson": "scripts/geo-data/cities/india_states.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": 34,
+      "hideLabels": ["Puducherry"],
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "keepIslands": true,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
+    },
+    {
+      "id": "china",
+      "label": "China",
+      "geojson": "scripts/geo-data/cities/china_provinces.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "keepIslands": true,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
+    },
+    {
       "id": "africa_cities",
       "label": "African Cities",
       "geojson": null,
@@ -621,15 +662,15 @@
     {
       "id": "india",
       "label": "India",
-      "geojson": "scripts/geo-data/regions/india_states.geojson",
-      "featureNameProp": "NAME_1",
+      "geojson": "scripts/geo-data/cities/india_states.geojson",
+      "featureNameProp": "name",
       "featureFilter": null,
       "nameOverrides": null,
       "bounds": {
-        "minLat": 6.5,
-        "maxLat": 37.1,
-        "minLon": 68.1,
-        "maxLon": 97.4
+        "minLat": 6.25,
+        "maxLat": 36.0,
+        "minLon": 67.6,
+        "maxLon": 97.9
       },
       "viewBox": "0 0 1000 900",
       "tolerance": 2,

@@ -1,0 +1,23 @@
+{
+  "id": "india",
+  "name": "India",
+  "bounds": {
+    "minLat": 6.25,
+    "maxLat": 36.0,
+    "minLon": 67.6,
+    "maxLon": 97.9
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "delhi",     "name": "Delhi",     "lat": 28.614, "lon":  77.209, "svgX": 278, "svgY": 174, "hint": "The national capital, home of the Red Fort and India Gate" },
+    { "id": "mumbai",    "name": "Mumbai",    "lat": 19.076, "lon":  72.877, "svgX": 183, "svgY": 398, "hint": "West-coast financial capital and home of Bollywood" },
+    { "id": "kolkata",   "name": "Kolkata",   "lat": 22.572, "lon":  88.363, "svgX": 523, "svgY": 316, "hint": "The City of Joy on the Hooghly, former capital of British India" },
+    { "id": "chennai",   "name": "Chennai",   "lat": 13.083, "lon":  80.270, "svgX": 346, "svgY": 539, "hint": "South-eastern port on the Bay of Bengal with one of the world's longest beaches" },
+    { "id": "bengaluru", "name": "Bengaluru", "lat": 12.972, "lon":  77.594, "svgX": 287, "svgY": 542, "hint": "India's Silicon Valley, a garden city on the Deccan plateau" },
+    { "id": "hyderabad", "name": "Hyderabad", "lat": 17.385, "lon":  78.487, "svgX": 306, "svgY": 438, "hint": "City of pearls and biryani, built around the Charminar" },
+    { "id": "jaipur",    "name": "Jaipur",    "lat": 26.912, "lon":  75.787, "svgX": 247, "svgY": 214, "hint": "The Pink City, capital of Rajasthan, famous for its palaces" },
+    { "id": "varanasi",  "name": "Varanasi",  "lat": 25.318, "lon":  82.973, "svgX": 405, "svgY": 251, "hint": "Ancient holy city of ghats on the banks of the Ganges" },
+    { "id": "kochi",     "name": "Kochi",     "lat": 9.931, "lon":  76.267, "svgX": 258, "svgY": 613, "hint": "Spice-trading port in Kerala known for its Chinese fishing nets" },
+    { "id": "guwahati",  "name": "Guwahati",  "lat": 26.144, "lon":  91.736, "svgX": 597, "svgY": 232, "hint": "Gateway to the Northeast, on the mighty Brahmaputra river" }
+  ]
+}
