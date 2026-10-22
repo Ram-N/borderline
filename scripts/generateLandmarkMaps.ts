@@ -78,6 +78,11 @@ type MapSpec = {
    * as an overlay on the labeled SVG only.
    */
   customLabels?: Array<{ name: string; lat: number; lon: number }>;
+  /**
+   * When true, MultiPolygon features draw every outer ring instead of only
+   * the largest — use for countries where islands matter (e.g. UK).
+   */
+  keepIslands?: boolean;
 };
 
 type Point = { x: number; y: number };
@@ -110,6 +115,7 @@ function loadMapSpecs(): Record<string, MapSpec> {
       maxLabels: number | null;
       suppressFeatureLabels: boolean;
       customLabels: Array<{ name: string; lat: number; lon: number }> | null;
+      keepIslands?: boolean;
     }>;
   };
 
@@ -129,6 +135,7 @@ function loadMapSpecs(): Record<string, MapSpec> {
       ...(entry.maxLabels !== null ? { maxLabels: entry.maxLabels } : {}),
       ...(entry.suppressFeatureLabels ? { suppressFeatureLabels: true } : {}),
       ...(entry.customLabels ? { customLabels: entry.customLabels } : {}),
+      ...(entry.keepIslands ? { keepIslands: true } : {}),
     };
   }
   return specs;
@@ -233,13 +240,15 @@ function ringToPath(
  * Convert a GeoJSON Polygon or MultiPolygon geometry to a single `d` string.
  * For each polygon takes only the outer ring (index 0); holes are skipped.
  * For MultiPolygon, keeps only the ring with the largest bounding-box area
- * among all polygons' outer rings (avoids tiny offshore islands dominating).
+ * among all polygons' outer rings (avoids tiny offshore islands dominating),
+ * unless keepIslands is set, in which case every outer ring is drawn.
  */
 function geometryToPathD(
   geometry: { type: string; coordinates: unknown },
   bounds: GeoBounds,
   dims: SvgDimensions,
   tolerance: number,
+  keepIslands = false,
 ): string {
   if (geometry.type === 'Polygon') {
     const rings = geometry.coordinates as number[][][];
@@ -250,6 +259,12 @@ function geometryToPathD(
     const polygons = geometry.coordinates as number[][][][];
     // Collect all outer rings and pick the largest
     const outerRings = polygons.map((poly) => poly[0]);
+    if (keepIslands) {
+      return outerRings
+        .map((ring) => ringToPath(ring, bounds, dims, tolerance))
+        .filter(Boolean)
+        .join(' ');
+    }
     const main = largestRing(outerRings);
     return ringToPath(main, bounds, dims, tolerance);
   }
@@ -428,7 +443,7 @@ function buildMap(mapKey: string, spec: MapSpec, toleranceOverride?: number): vo
     if (!name) continue;
 
     const fill = pickFill(name);
-    const pathD = geometryToPathD(feature.geometry, bounds, dims, tolerance);
+    const pathD = geometryToPathD(feature.geometry, bounds, dims, tolerance, spec.keepIslands);
     if (!pathD) {
       console.warn(`[${mapKey}] Empty path for feature: ${name}`);
       continue;

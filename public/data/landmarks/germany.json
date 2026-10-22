@@ -1,0 +1,23 @@
+{
+  "id": "germany",
+  "name": "Germany",
+  "bounds": {
+    "minLat": 47.07,
+    "maxLat": 55.26,
+    "minLon": 5.67,
+    "maxLon": 15.24
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "berlin",     "name": "Berlin",     "lat": 52.520, "lon":  13.405, "svgX": 558, "svgY": 234, "hint": "The capital, once divided by a wall that fell in 1989" },
+    { "id": "hamburg",    "name": "Hamburg",    "lat": 53.551, "lon":   9.994, "svgX": 375, "svgY": 146, "hint": "Germany's biggest port, on the Elbe river near the North Sea" },
+    { "id": "munich",     "name": "Munich",     "lat": 48.137, "lon":  11.575, "svgX": 460, "svgY": 609, "hint": "Bavarian capital, home of Oktoberfest and the Alps on its doorstep" },
+    { "id": "cologne",    "name": "Cologne",    "lat": 50.938, "lon":   6.960, "svgX": 213, "svgY": 369, "hint": "Rhine city famous for its huge twin-spired Gothic cathedral" },
+    { "id": "frankfurt",  "name": "Frankfurt",  "lat": 50.110, "lon":   8.682, "svgX": 305, "svgY": 440, "hint": "Skyscraper-filled banking hub, home of the European Central Bank" },
+    { "id": "stuttgart",  "name": "Stuttgart",  "lat": 48.776, "lon":   9.183, "svgX": 332, "svgY": 554, "hint": "Car-making city, headquarters of Mercedes-Benz and Porsche" },
+    { "id": "dresden",    "name": "Dresden",    "lat": 51.050, "lon":  13.738, "svgX": 576, "svgY": 360, "hint": "Baroque 'Florence on the Elbe', rebuilt after wartime bombing" },
+    { "id": "leipzig",    "name": "Leipzig",    "lat": 51.340, "lon":  12.375, "svgX": 503, "svgY": 335, "hint": "City of music where Bach worked; its 1989 protests helped end East Germany" },
+    { "id": "hanover",    "name": "Hanover",    "lat": 52.375, "lon":   9.732, "svgX": 361, "svgY": 247, "hint": "Northern trade-fair city with famous royal baroque gardens" },
+    { "id": "nuremberg",  "name": "Nuremberg",  "lat": 49.452, "lon":  11.077, "svgX": 433, "svgY": 496, "hint": "Medieval walled city known for its Christmas market and gingerbread" }
+  ]
+}

@@ -1,8 +1,11 @@
+import type { ConfidenceLevel } from '../../types/landmark/game';
+import { CONFIDENCE_TIERS } from '../../utils/landmark/distanceScore';
+
 type Props = {
   distanceKm: number;
-  baseScore: number;
+  radiusKm: number;
   finalScore: number;
-  confidence: string;
+  confidence: ConfidenceLevel;
   /** When true, shows "Inside!" instead of the distance — used for region polygon hits. */
   insideRegion?: boolean;
 };
@@ -14,14 +17,12 @@ function formatDistance(km: number): string {
 
 export default function DistanceFeedback({
   distanceKm,
-  baseScore,
+  radiusKm,
   finalScore,
   confidence,
   insideRegion,
 }: Props) {
-  const wasBonus = confidence === 'high' && finalScore > baseScore;
-  const wasPenalty = confidence === 'high' && finalScore === 0 && baseScore > 0;
-  const lowFloorApplied = confidence === 'low' && finalScore === 15 && baseScore < 30;
+  const hit = insideRegion || distanceKm <= radiusKm;
 
   return (
     <div className="distance-feedback">
@@ -36,16 +37,10 @@ export default function DistanceFeedback({
         )}
       </div>
       <div className="feedback-scores">
-        <span className="feedback-base">Base: {baseScore}</span>
-        {confidence !== 'medium' && (
-          <span className={`feedback-confidence ${wasPenalty ? 'penalty' : wasBonus ? 'bonus' : ''}`}>
-            {confidence === 'low'
-              ? (lowFloorApplied ? 'Floor 15 (Low)' : '×0.5 (Low)')
-              : wasBonus ? '×1.4 (High)'
-              : wasPenalty ? 'Overconfidence! ×0'
-              : ''}
-          </span>
-        )}
+        <span className="feedback-base">{CONFIDENCE_TIERS[confidence].label}</span>
+        <span className={`feedback-confidence ${hit ? 'bonus' : 'penalty'}`}>
+          {hit ? 'Inside' : 'Missed'} your {formatDistance(radiusKm)} circle
+        </span>
         <span className="feedback-final">+{finalScore} pts</span>
       </div>
     </div>

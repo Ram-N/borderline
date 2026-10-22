@@ -96,69 +96,82 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     "blankSvg": "/images/maps/kolkata_blank.svg",
     "defaultDifficulty": 1
   },
+  "france": {
+    "label": "France",
+    "dataUrl": "/data/landmarks/france.json",
+    "labeledSvg": "/images/maps/france_labeled.svg",
+    "blankSvg": "/images/maps/france_blank.svg",
+    "defaultDifficulty": 1
+  },
+  "germany": {
+    "label": "Germany",
+    "dataUrl": "/data/landmarks/germany.json",
+    "labeledSvg": "/images/maps/germany_labeled.svg",
+    "blankSvg": "/images/maps/germany_blank.svg",
+    "defaultDifficulty": 1
+  },
+  "uk": {
+    "label": "United Kingdom",
+    "dataUrl": "/data/landmarks/uk.json",
+    "labeledSvg": "/images/maps/uk_labeled.svg",
+    "blankSvg": "/images/maps/uk_blank.svg",
+    "defaultDifficulty": 1
+  },
   "africa_cities": {
     "label": "African Cities",
     "dataUrl": "/data/landmarks/africa_cities.json",
     "labeledSvg": "/images/maps/africa_boundaries.svg",
     "blankSvg": "/images/maps/africa_outline.svg",
-    "defaultDifficulty": 1,
-    "diagonalKm": 10924
+    "defaultDifficulty": 1
   },
   "europe_cities": {
     "label": "European Cities",
     "dataUrl": "/data/landmarks/europe_cities.json",
     "labeledSvg": "/images/maps/europe_boundaries.svg",
     "blankSvg": "/images/maps/europe_outline.svg",
-    "defaultDifficulty": 1,
-    "diagonalKm": 5902
+    "defaultDifficulty": 1
   },
   "north_america_cities": {
     "label": "North American Cities",
     "dataUrl": "/data/landmarks/north_america_cities.json",
     "labeledSvg": "/images/maps/north_america_boundaries.svg",
     "blankSvg": "/images/maps/north_america_outline.svg",
-    "defaultDifficulty": 1,
-    "diagonalKm": 8200
+    "defaultDifficulty": 1
   },
   "middle_east_cities": {
     "label": "Middle East Cities",
     "dataUrl": "/data/landmarks/middle_east_cities.json",
     "labeledSvg": "/images/maps/middle_east_boundaries.svg",
     "blankSvg": "/images/maps/middle_east_outline.svg",
-    "defaultDifficulty": 1,
-    "diagonalKm": 5500
+    "defaultDifficulty": 1
   },
   "south_asia_cities": {
     "label": "South Asian Cities",
     "dataUrl": "/data/landmarks/south_asia_cities.json",
     "labeledSvg": "/images/maps/south_asia_boundaries.svg",
     "blankSvg": "/images/maps/south_asia_outline.svg",
-    "defaultDifficulty": 1,
-    "diagonalKm": 5500
+    "defaultDifficulty": 1
   },
   "south_east_asia_cities": {
     "label": "South East Asian Cities",
     "dataUrl": "/data/landmarks/south_east_asia_cities.json",
     "labeledSvg": "/images/maps/south_east_asia_boundaries.svg",
     "blankSvg": "/images/maps/south_east_asia_outline.svg",
-    "defaultDifficulty": 1,
-    "diagonalKm": 7000
+    "defaultDifficulty": 1
   },
   "asia_cities": {
     "label": "Asian Cities",
     "dataUrl": "/data/landmarks/asia_cities.json",
     "labeledSvg": "/images/maps/asia_boundaries.svg",
     "blankSvg": "/images/maps/asia_outline.svg",
-    "defaultDifficulty": 1,
-    "diagonalKm": 14000
+    "defaultDifficulty": 1
   },
   "south_america_cities": {
     "label": "South American Cities",
     "dataUrl": "/data/landmarks/south_america_cities.json",
     "labeledSvg": "/images/maps/south_america_boundaries.svg",
     "blankSvg": "/images/maps/south_america_outline.svg",
-    "defaultDifficulty": 1,
-    "diagonalKm": 9100
+    "defaultDifficulty": 1
   }
 };
 
@@ -241,6 +254,14 @@ export const CITY_GROUPS: { label: string; keys: string[] }[] = [
       "delhi",
       "mumbai",
       "kolkata"
+    ]
+  },
+  {
+    "label": "Countries",
+    "keys": [
+      "france",
+      "germany",
+      "uk"
     ]
   },
   {

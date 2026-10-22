@@ -7,6 +7,7 @@ import useWhereIsRegionEngine from '../../hooks/landmark/useWhereIsRegionEngine'
 import WhereIsItMapView from '../../components/landmark/WhereIsItMapView';
 import ConfidencePicker from '../../components/landmark/ConfidencePicker';
 import DistanceFeedback from '../../components/landmark/DistanceFeedback';
+import { kmToSvgPx, parseViewBox } from '../../utils/landmark/coordTransform';
 
 const DIFFICULTY_LABELS: Record<Difficulty, string> = {
   1: 'Tourist',
@@ -55,6 +56,14 @@ function GameContent({
   const target = currentRound.target;
   const revealedRound = engine.phase === 'reveal' ? currentRound : null;
 
+  // Confidence circle: preview while choosing, the claimed one on reveal
+  const circleKm = revealedRound?.radiusKm
+    ?? (engine.pendingConfidence ? engine.radiusKmFor(engine.pendingConfidence) : null);
+  const claimRadiusPx = circleKm !== null
+    ? kmToSvgPx(circleKm, dataset.bounds, parseViewBox(dataset.viewBox))
+    : null;
+  const claimHit = revealedRound?.finalScore !== undefined && revealedRound.finalScore > 0;
+
   return (
     <div className="pinpoint">
       {/* Header row */}
@@ -88,6 +97,8 @@ function GameContent({
             : undefined
         }
         phase={engine.phase}
+        claimRadius={claimRadiusPx}
+        claimHit={claimHit}
         onMapClick={engine.placePin}
       />
 
@@ -109,10 +120,10 @@ function GameContent({
           </div>
         ) : (
           <>
-            {revealedRound?.baseScore !== undefined && (
+            {revealedRound?.radiusKm !== undefined && (
               <DistanceFeedback
                 distanceKm={revealedRound.distanceKm ?? 0}
-                baseScore={revealedRound.baseScore!}
+                radiusKm={revealedRound.radiusKm!}
                 finalScore={revealedRound.finalScore!}
                 confidence={revealedRound.confidence!}
                 insideRegion={revealedRound.insideRegion}

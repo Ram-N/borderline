@@ -25,7 +25,6 @@ const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8')) as {
     labeledSvgOverride?: string;
     blankSvgOverride?: string;
     defaultDifficulty: number;
-    diagonalKm: number | null;
     group: string;
   }>;
   regions: Array<{
@@ -51,9 +50,6 @@ for (const entry of manifest.cities) {
       : `/images/maps/${entry.id}_blank.svg`,
     defaultDifficulty: entry.defaultDifficulty,
   };
-  if (entry.diagonalKm !== null) {
-    config.diagonalKm = entry.diagonalKm;
-  }
   landmarkEntries[entry.id] = config;
 }
 

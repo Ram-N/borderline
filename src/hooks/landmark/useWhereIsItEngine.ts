@@ -7,13 +7,12 @@ import type {
   WhereIsItRound,
 } from '../../types/landmark/game';
 import { svgToGeo, parseViewBox } from '../../utils/landmark/coordTransform';
-import { haversineKm, distanceToScore, applyConfidence } from '../../utils/landmark/distanceScore';
+import { haversineKm, mapDiagonalKm, claimRadiusKm, scoreGuess } from '../../utils/landmark/distanceScore';
 
 type Config = {
   dataset: LandmarkDataset;
   difficulty: Difficulty;
   n: number; // number of rounds
-  diagonalKm?: number; // if provided, score thresholds scale with map size
 };
 
 type State = {
@@ -35,6 +34,7 @@ type Engine = {
   pendingConfidence: ConfidenceLevel | null;
   pendingPin: { svgX: number; svgY: number } | null;
   done: boolean;
+  radiusKmFor: (level: ConfidenceLevel) => number;
   setConfidence: (level: ConfidenceLevel) => void;
   placePin: (svgX: number, svgY: number) => void;
   confirm: () => void;
@@ -56,7 +56,6 @@ export default function useWhereIsItEngine({
   dataset,
   difficulty,
   n,
-  diagonalKm,
 }: Config): Engine {
   const [state, setState] = useState<State>(() => ({
     rounds: pickLandmarks(dataset, n),
@@ -66,6 +65,11 @@ export default function useWhereIsItEngine({
     pendingConfidence: null,
     pendingPin: null,
   }));
+
+  const radiusKmFor = useCallback(
+    (level: ConfidenceLevel) => claimRadiusKm(mapDiagonalKm(dataset.bounds), difficulty, level),
+    [dataset, difficulty],
+  );
 
   const setConfidence = useCallback((level: ConfidenceLevel) => {
     setState((prev) => ({ ...prev, pendingConfidence: level }));
@@ -91,15 +95,15 @@ export default function useWhereIsItEngine({
 
       const { lat: correctLat, lon: correctLon } = round.landmark;
       const distanceKm = haversineKm(pinLat, pinLon, correctLat, correctLon);
-      const baseScore = distanceToScore(distanceKm, difficulty, diagonalKm);
-      const finalScore = applyConfidence(baseScore, prev.pendingConfidence);
+      const radiusKm = radiusKmFor(prev.pendingConfidence);
+      const finalScore = scoreGuess(distanceKm, radiusKm, prev.pendingConfidence);
 
       const updatedRound: WhereIsItRound = {
         ...round,
         confidence: prev.pendingConfidence,
         placedPin: prev.pendingPin,
         distanceKm,
-        baseScore,
+        radiusKm,
         finalScore,
       };
 
@@ -113,7 +117,7 @@ export default function useWhereIsItEngine({
         totalScore: prev.totalScore + finalScore,
       };
     });
-  }, [dataset, difficulty]);
+  }, [dataset, radiusKmFor]);
 
   const next = useCallback(() => {
     setState((prev) => ({
@@ -134,6 +138,7 @@ export default function useWhereIsItEngine({
     pendingConfidence: state.pendingConfidence,
     pendingPin: state.pendingPin,
     done: state.currentIndex >= state.rounds.length,
+    radiusKmFor,
     setConfidence,
     placePin,
     confirm,

@@ -11,6 +11,6 @@ export type WhereIsItRound = {
   confidence?: ConfidenceLevel;
   placedPin?: { svgX: number; svgY: number };
   distanceKm?: number;
-  baseScore?: number;
+  radiusKm?: number; // radius of the confidence circle the player claimed
   finalScore?: number;
 };

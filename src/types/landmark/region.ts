@@ -51,6 +51,6 @@ export type WhereIsRegionRound = {
   placedPin?: { svgX: number; svgY: number };
   distanceKm?: number;
   insideRegion?: boolean;
-  baseScore?: number;
+  radiusKm?: number; // radius of the confidence circle the player claimed
   finalScore?: number;
 };

@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 import type { RegionDataset, RegionTarget, CityTarget, RegionMode, WhereIsRegionRound } from '../../types/landmark/region';
 import type { Difficulty, GamePhase, ConfidenceLevel } from '../../types/landmark/game';
 import { svgToGeo, parseViewBox } from '../../utils/landmark/coordTransform';
-import { haversineKm, distanceToScore, applyConfidence } from '../../utils/landmark/distanceScore';
+import { haversineKm, mapDiagonalKm, claimRadiusKm, scoreGuess, CONFIDENCE_TIERS } from '../../utils/landmark/distanceScore';
 import { pointInPolygon } from '../../utils/landmark/pointInPolygon';
 
 type Config = {
@@ -32,6 +32,7 @@ type Engine = {
   pendingConfidence: ConfidenceLevel | null;
   pendingPin: { svgX: number; svgY: number } | null;
   done: boolean;
+  radiusKmFor: (level: ConfidenceLevel) => number;
   setConfidence: (level: ConfidenceLevel) => void;
   placePin: (svgX: number, svgY: number) => void;
   confirm: () => void;
@@ -55,11 +56,9 @@ export default function useWhereIsRegionEngine({
   mode,
   n,
 }: Config): Engine {
-  const [state] = useState<Pick<State, 'diagonalKm'>>(() => {
-    const { minLat, maxLat, minLon, maxLon } = dataset.bounds;
-    const diagonalKm = haversineKm(minLat, minLon, maxLat, maxLon);
-    return { diagonalKm };
-  });
+  const [state] = useState<Pick<State, 'diagonalKm'>>(() => ({
+    diagonalKm: mapDiagonalKm(dataset.bounds),
+  }));
 
   const [gameState, setGameState] = useState<Omit<State, 'diagonalKm'>>(() => ({
     rounds: pickTargets(dataset, mode, n),
@@ -71,6 +70,11 @@ export default function useWhereIsRegionEngine({
   }));
 
   const diagonalKm = state.diagonalKm;
+
+  const radiusKmFor = useCallback(
+    (level: ConfidenceLevel) => claimRadiusKm(diagonalKm, difficulty, level),
+    [diagonalKm, difficulty],
+  );
 
   const setConfidence = useCallback((level: ConfidenceLevel) => {
     setGameState((prev) => ({ ...prev, pendingConfidence: level }));
@@ -97,24 +101,22 @@ export default function useWhereIsRegionEngine({
       const target = round.target;
       let distanceKm: number;
       let insideRegion: boolean | undefined;
-      let baseScore: number;
+      const confidence = prev.pendingConfidence;
+      const radiusKm = radiusKmFor(confidence);
+      let finalScore: number;
 
       if (round.mode === 'regions') {
         const regionTarget = target as RegionTarget;
         insideRegion = regionTarget.polygons.some(poly => pointInPolygon(pinLat, pinLon, poly));
-        if (insideRegion) {
-          distanceKm = 0;
-          baseScore = 100;
-        } else {
-          distanceKm = haversineKm(pinLat, pinLon, target.lat, target.lon);
-          baseScore = distanceToScore(distanceKm, difficulty, diagonalKm);
-        }
+      }
+      if (insideRegion) {
+        // A pin inside the target region is a dead-centre hit for any confidence
+        distanceKm = 0;
+        finalScore = CONFIDENCE_TIERS[confidence].maxPoints;
       } else {
         distanceKm = haversineKm(pinLat, pinLon, target.lat, target.lon);
-        baseScore = distanceToScore(distanceKm, difficulty, diagonalKm);
+        finalScore = scoreGuess(distanceKm, radiusKm, confidence);
       }
-
-      const finalScore = applyConfidence(baseScore, prev.pendingConfidence);
 
       const updatedRound: WhereIsRegionRound = {
         ...round,
@@ -122,7 +124,7 @@ export default function useWhereIsRegionEngine({
         placedPin: prev.pendingPin,
         distanceKm,
         insideRegion,
-        baseScore,
+        radiusKm,
         finalScore,
       };
 
@@ -136,7 +138,7 @@ export default function useWhereIsRegionEngine({
         totalScore: prev.totalScore + finalScore,
       };
     });
-  }, [dataset, difficulty, diagonalKm]);
+  }, [dataset, radiusKmFor]);
 
   const next = useCallback(() => {
     setGameState((prev) => ({
@@ -158,6 +160,7 @@ export default function useWhereIsRegionEngine({
     pendingConfidence: gameState.pendingConfidence,
     pendingPin: gameState.pendingPin,
     done: gameState.currentIndex >= gameState.rounds.length,
+    radiusKmFor,
     setConfidence,
     placePin,
     confirm,

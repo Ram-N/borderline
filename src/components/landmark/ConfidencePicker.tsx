@@ -1,4 +1,5 @@
 import type { ConfidenceLevel } from '../../types/landmark/game';
+import { CONFIDENCE_TIERS } from '../../utils/landmark/distanceScore';
 
 type Props = {
   value: ConfidenceLevel | null;
@@ -6,10 +7,10 @@ type Props = {
   disabled?: boolean;
 };
 
-const OPTIONS: { level: ConfidenceLevel; label: string; multiplier: string; note: string }[] = [
-  { level: 'low',    label: 'Low',    multiplier: '≥15',  note: '0.5× score, but guaranteed 15 pts minimum' },
-  { level: 'medium', label: 'Medium', multiplier: '1.0×', note: 'standard — no risk, no bonus' },
-  { level: 'high',   label: 'High',   multiplier: '1.4×', note: '0 pts if score < 25 (overconfidence penalty)' },
+const OPTIONS: { level: ConfidenceLevel; note: string }[] = [
+  { level: 'low',    note: 'Big circle — up to 25 pts if the answer is inside it' },
+  { level: 'medium', note: 'Medium circle — up to 60 pts if the answer is inside it' },
+  { level: 'high',   note: 'Small circle — up to 100 pts, but 0 if you miss it' },
 ];
 
 export default function ConfidencePicker({ value, onChange, disabled }: Props) {
@@ -17,7 +18,7 @@ export default function ConfidencePicker({ value, onChange, disabled }: Props) {
     <div className="confidence-picker">
       <p className="confidence-label">How confident are you?</p>
       <div className="confidence-buttons">
-        {OPTIONS.map(({ level, label, multiplier, note }) => (
+        {OPTIONS.map(({ level, note }) => (
           <button
             key={level}
             className={`confidence-btn confidence-${level}${value === level ? ' selected' : ''}`}
@@ -25,8 +26,8 @@ export default function ConfidencePicker({ value, onChange, disabled }: Props) {
             disabled={disabled}
             title={note}
           >
-            <span className="confidence-btn-label">{label}</span>
-            <span className="confidence-btn-mult">{multiplier}</span>
+            <span className="confidence-btn-label">{CONFIDENCE_TIERS[level].label}</span>
+            <span className="confidence-btn-mult">up to {CONFIDENCE_TIERS[level].maxPoints}</span>
           </button>
         ))}
       </div>

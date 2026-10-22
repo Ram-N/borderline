@@ -8,6 +8,10 @@ type Props = {
   correctPin?: { svgX: number; svgY: number }; // shown on reveal phase
   correctLabel?: string;     // label for the correct pin (default: "Correct")
   phase: 'question' | 'reveal';
+  /** Confidence circle around the player pin, in SVG units. */
+  claimRadius?: number | null;
+  /** Reveal phase only: whether the answer fell inside the circle (colours it green/red). */
+  claimHit?: boolean;
   onMapClick: (svgX: number, svgY: number) => void;
 };
 
@@ -23,6 +27,8 @@ export default function WhereIsItMapView({
   correctPin,
   correctLabel = 'Correct',
   phase,
+  claimRadius,
+  claimHit,
   onMapClick,
 }: Props) {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -86,6 +92,16 @@ export default function WhereIsItMapView({
       >
         {/* Background map image */}
         <image href={svgSrc} x={0} y={0} width={vbWidth} height={vbHeight} />
+
+        {/* Confidence circle around the player pin */}
+        {playerPin && claimRadius && (
+          <circle
+            cx={playerPin.svgX}
+            cy={playerPin.svgY}
+            r={claimRadius}
+            className={`claim-circle${phase === 'reveal' ? (claimHit ? ' claim-circle--hit' : ' claim-circle--miss') : ''}`}
+          />
+        )}
 
         {/* Dashed line from player pin to correct location (reveal phase) */}
         {phase === 'reveal' && playerPin && correctPin && (

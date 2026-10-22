@@ -7,6 +7,7 @@ import useWhereIsItEngine from '../../hooks/landmark/useWhereIsItEngine';
 import WhereIsItMapView from '../../components/landmark/WhereIsItMapView';
 import ConfidencePicker from '../../components/landmark/ConfidencePicker';
 import DistanceFeedback from '../../components/landmark/DistanceFeedback';
+import { kmToSvgPx, parseViewBox } from '../../utils/landmark/coordTransform';
 
 const DIFFICULTY_LABELS: Record<Difficulty, string> = {
   1: 'Tourist',
@@ -31,7 +32,7 @@ function GameContent({
   const cfg = LANDMARK_MAP_CONFIG[mapKey];
   const svgSrc = difficulty >= 4 ? cfg.blankSvg : cfg.labeledSvg;
 
-  const engine = useWhereIsItEngine({ dataset, difficulty, n, diagonalKm: cfg.diagonalKm });
+  const engine = useWhereIsItEngine({ dataset, difficulty, n });
 
   useEffect(() => {
     if (engine.done) {
@@ -46,6 +47,14 @@ function GameContent({
   const currentRound = engine.rounds[engine.currentIndex];
   const landmark = currentRound.landmark;
   const revealedRound = engine.phase === 'reveal' ? currentRound : null;
+
+  // Confidence circle: preview while choosing, the claimed one on reveal
+  const circleKm = revealedRound?.radiusKm
+    ?? (engine.pendingConfidence ? engine.radiusKmFor(engine.pendingConfidence) : null);
+  const claimRadiusPx = circleKm !== null
+    ? kmToSvgPx(circleKm, dataset.bounds, parseViewBox(dataset.viewBox))
+    : null;
+  const claimHit = revealedRound?.finalScore !== undefined && revealedRound.finalScore > 0;
 
   return (
     <div className="pinpoint">
@@ -78,6 +87,8 @@ function GameContent({
         }
         correctLabel={landmark.name}
         phase={engine.phase}
+        claimRadius={claimRadiusPx}
+        claimHit={claimHit}
         onMapClick={engine.placePin}
       />
 
@@ -102,7 +113,7 @@ function GameContent({
             {revealedRound?.distanceKm !== undefined && (
               <DistanceFeedback
                 distanceKm={revealedRound.distanceKm!}
-                baseScore={revealedRound.baseScore!}
+                radiusKm={revealedRound.radiusKm!}
                 finalScore={revealedRound.finalScore!}
                 confidence={revealedRound.confidence!}
               />

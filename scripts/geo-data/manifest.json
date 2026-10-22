@@ -23,8 +23,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "london",
@@ -43,8 +42,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "paris",
@@ -63,8 +61,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "rome",
@@ -83,8 +80,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "berlin",
@@ -103,8 +99,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "sf",
@@ -123,8 +118,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "tokyo",
@@ -143,8 +137,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "sydney",
@@ -163,8 +156,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "bangalore",
@@ -183,8 +175,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "chennai",
@@ -203,8 +194,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "delhi",
@@ -294,8 +284,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "mumbai",
@@ -314,8 +303,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
     },
     {
       "id": "kolkata",
@@ -400,8 +388,65 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": null
+      "defaultDifficulty": 1
+    },
+    {
+      "id": "france",
+      "label": "France",
+      "geojson": "scripts/geo-data/cities/france_regions.geojson",
+      "featureNameProp": "nom",
+      "fills": {},
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
+    },
+    {
+      "id": "germany",
+      "label": "Germany",
+      "geojson": "scripts/geo-data/cities/germany_states.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
+    },
+    {
+      "id": "uk",
+      "label": "United Kingdom",
+      "geojson": "scripts/geo-data/cities/uk_regions.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "keepIslands": true,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
     },
     {
       "id": "africa_cities",
@@ -422,8 +467,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": 10924
+      "defaultDifficulty": 1
     },
     {
       "id": "europe_cities",
@@ -444,8 +488,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": 5902
+      "defaultDifficulty": 1
     },
     {
       "id": "north_america_cities",
@@ -466,8 +509,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": 8200
+      "defaultDifficulty": 1
     },
     {
       "id": "middle_east_cities",
@@ -488,8 +530,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": 5500
+      "defaultDifficulty": 1
     },
     {
       "id": "south_asia_cities",
@@ -510,8 +551,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": 5500
+      "defaultDifficulty": 1
     },
     {
       "id": "south_east_asia_cities",
@@ -532,8 +572,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": 7000
+      "defaultDifficulty": 1
     },
     {
       "id": "asia_cities",
@@ -554,8 +593,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": 14000
+      "defaultDifficulty": 1
     },
     {
       "id": "south_america_cities",
@@ -576,8 +614,7 @@
         "pinpoint",
         "match-the-map"
       ],
-      "defaultDifficulty": 1,
-      "diagonalKm": 9100
+      "defaultDifficulty": 1
     }
   ],
   "regions": [

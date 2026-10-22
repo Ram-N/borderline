@@ -82,3 +82,9 @@ export function parseViewBox(viewBox: string): SvgDimensions {
   const parts = viewBox.trim().split(/\s+/).map(Number);
   return { width: parts[2], height: parts[3] };
 }
+
+/** Convert a distance in km to SVG pixels (exact vertically; the projection is cosine-corrected so horizontal matches at the centre latitude). */
+export function kmToSvgPx(km: number, bounds: GeoBounds, svgDims: SvgDimensions): number {
+  const { usedHeight, latRange } = projectionLayout(bounds, svgDims);
+  return (km / 111.32) * (usedHeight / latRange);
+}

@@ -1,0 +1,23 @@
+{
+  "id": "uk",
+  "name": "United Kingdom",
+  "bounds": {
+    "minLat": 49.71,
+    "maxLat": 61.04,
+    "minLon": -8.82,
+    "maxLon": 1.94
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "london",      "name": "London",      "lat": 51.507, "lon":  -0.128, "svgX": 516, "svgY": 589, "hint": "The capital on the Thames, home of Big Ben and Buckingham Palace" },
+    { "id": "edinburgh",   "name": "Edinburgh",   "lat": 55.953, "lon":  -3.188, "svgX": 409, "svgY": 314, "hint": "Scotland's capital, with a castle perched on an extinct volcano" },
+    { "id": "manchester",  "name": "Manchester",  "lat": 53.480, "lon":  -2.242, "svgX": 442, "svgY": 467, "hint": "Northern city that powered the Industrial Revolution, famous for football" },
+    { "id": "birmingham",  "name": "Birmingham",  "lat": 52.486, "lon":  -1.890, "svgX": 454, "svgY": 528, "hint": "Britain's second-biggest city, in the heart of the Midlands" },
+    { "id": "cardiff",     "name": "Cardiff",     "lat": 51.481, "lon":  -3.179, "svgX": 409, "svgY": 591, "hint": "Capital of Wales, home to a castle and a huge rugby stadium" },
+    { "id": "belfast",     "name": "Belfast",     "lat": 54.597, "lon":  -5.930, "svgX": 313, "svgY": 398, "hint": "Northern Ireland's capital, where the Titanic was built" },
+    { "id": "newcastle",   "name": "Newcastle",   "lat": 54.978, "lon":  -1.618, "svgX": 464, "svgY": 375, "hint": "North-east city on the Tyne, known for its many bridges" },
+    { "id": "inverness",   "name": "Inverness",   "lat": 57.478, "lon":  -4.225, "svgX": 372, "svgY": 220, "hint": "Gateway to the Highlands, near the legendary Loch Ness" },
+    { "id": "plymouth",    "name": "Plymouth",    "lat": 50.376, "lon":  -4.143, "svgX": 375, "svgY": 659, "hint": "Devon port where the Mayflower set sail for America in 1620" },
+    { "id": "norwich",     "name": "Norwich",     "lat": 52.630, "lon":   1.297, "svgX": 566, "svgY": 520, "hint": "East Anglian cathedral city near the Norfolk Broads waterways" }
+  ]
+}

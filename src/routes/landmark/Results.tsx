@@ -104,7 +104,7 @@ export default function LandMarkResults() {
             <th>Landmark</th>
             <th>Confidence</th>
             <th>Distance</th>
-            <th>Base</th>
+            <th>Circle</th>
             <th>Score</th>
           </tr>
         </thead>
@@ -121,7 +121,11 @@ export default function LandMarkResults() {
                   ? formatDistance(round.distanceKm)
                   : '—'}
               </td>
-              <td>{round.baseScore ?? '—'}</td>
+              <td>
+                {round.radiusKm !== undefined
+                  ? formatDistance(round.radiusKm)
+                  : '—'}
+              </td>
               <td className="results-score-cell">
                 {round.finalScore ?? '—'}
               </td>

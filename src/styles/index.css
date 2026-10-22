@@ -497,3 +497,8 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .lm-region-btn { padding: 10px 20px; border: 2px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; font-size: 0.95rem; font-weight: 500; transition: border-color 0.15s; }
 .lm-region-btn:hover { border-color: #999; }
 .lm-region-btn.active { border-color: #1976D2; background: #E3F2FD; color: #1976D2; font-weight: 600; }
+
+/* Confidence circle around the player pin (LandMark games) */
+.claim-circle { fill: rgba(33, 150, 243, 0.12); stroke: #2196F3; stroke-width: 2; stroke-dasharray: 6 4; pointer-events: none; }
+.claim-circle--hit { fill: rgba(76, 175, 80, 0.15); stroke: #4CAF50; }
+.claim-circle--miss { fill: rgba(244, 67, 54, 0.12); stroke: #F44336; }
