@@ -490,6 +490,45 @@
       "defaultDifficulty": 1
     },
     {
+      "id": "spain",
+      "label": "Spain",
+      "geojson": "scripts/geo-data/cities/spain_regions.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "keepIslands": true,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
+    },
+    {
+      "id": "japan",
+      "label": "Japan",
+      "geojson": "scripts/geo-data/cities/japan_prefectures.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": 20,
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
+    },
+    {
       "id": "africa_cities",
       "label": "African Cities",
       "geojson": null,

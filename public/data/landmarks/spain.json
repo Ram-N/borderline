@@ -1,0 +1,23 @@
+{
+  "id": "spain",
+  "name": "Spain",
+  "bounds": {
+    "minLat": 35.82,
+    "maxLat": 43.95,
+    "minLon": -9.48,
+    "maxLon": 4.51
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "madrid", "name": "Madrid", "lat": 40.417, "lon": -3.704, "svgX": 330, "svgY": 310, "hint": "The capital, home of the Prado museum and Real Madrid" },
+    { "id": "barcelona", "name": "Barcelona", "lat": 41.387, "lon": 2.17, "svgX": 666, "svgY": 238, "hint": "Catalan port city famous for Gaudí's Sagrada Família" },
+    { "id": "seville", "name": "Seville", "lat": 37.389, "lon": -5.984, "svgX": 200, "svgY": 536, "hint": "Andalusian capital of flamenco, orange trees and the Alcázar palace" },
+    { "id": "valencia", "name": "Valencia", "lat": 39.47, "lon": -0.376, "svgX": 521, "svgY": 381, "hint": "Mediterranean city where paella was born" },
+    { "id": "bilbao", "name": "Bilbao", "lat": 43.263, "lon": -2.935, "svgX": 374, "svgY": 98, "hint": "Basque city transformed by its titanium-clad Guggenheim Museum" },
+    { "id": "granada", "name": "Granada", "lat": 37.177, "lon": -3.599, "svgX": 336, "svgY": 552, "hint": "Home of the Alhambra, a Moorish palace below the Sierra Nevada" },
+    { "id": "santiago-de-compostela", "name": "Santiago de Compostela", "lat": 42.878, "lon": -8.545, "svgX": 53, "svgY": 127, "hint": "Cathedral city at the end of the Camino pilgrimage route" },
+    { "id": "palma", "name": "Palma", "lat": 39.57, "lon": 2.65, "svgX": 694, "svgY": 373, "hint": "Island capital of Mallorca with a Gothic seafront cathedral" },
+    { "id": "zaragoza", "name": "Zaragoza", "lat": 41.649, "lon": -0.889, "svgX": 491, "svgY": 219, "hint": "Ebro river city halfway between Madrid and Barcelona" },
+    { "id": "malaga", "name": "Málaga", "lat": 36.721, "lon": -4.421, "svgX": 289, "svgY": 586, "hint": "Costa del Sol gateway and birthplace of Pablo Picasso" }
+  ]
+}

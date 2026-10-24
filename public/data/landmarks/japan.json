@@ -1,0 +1,22 @@
+{
+  "id": "japan",
+  "name": "Japan",
+  "bounds": {
+    "minLat": 30.8,
+    "maxLat": 45.72,
+    "minLon": 129.35,
+    "maxLon": 146.02
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "tokyo", "name": "Tokyo", "lat": 35.676, "lon": 139.65, "svgX": 472, "svgY": 471, "hint": "The capital and the most populous metropolitan area on Earth" },
+    { "id": "kyoto", "name": "Kyoto", "lat": 35.012, "lon": 135.768, "svgX": 329, "svgY": 502, "hint": "Former imperial capital filled with temples, shrines and geisha districts" },
+    { "id": "hiroshima", "name": "Hiroshima", "lat": 34.385, "lon": 132.455, "svgX": 207, "svgY": 532, "hint": "City rebuilt after the 1945 atomic bomb, with a Peace Memorial Park" },
+    { "id": "sapporo", "name": "Sapporo", "lat": 43.062, "lon": 141.354, "svgX": 535, "svgY": 125, "hint": "Northern city known for its snow festival, beer and ramen" },
+    { "id": "fukuoka", "name": "Fukuoka", "lat": 33.59, "lon": 130.402, "svgX": 132, "svgY": 569, "hint": "Kyushu's largest city, famous for tonkotsu ramen street stalls" },
+    { "id": "sendai", "name": "Sendai", "lat": 38.268, "lon": 140.87, "svgX": 517, "svgY": 350, "hint": "Tree-lined \"City of Trees\", the largest city in the Tohoku region" },
+    { "id": "nagoya", "name": "Nagoya", "lat": 35.181, "lon": 136.906, "svgX": 371, "svgY": 494, "hint": "Industrial hub that is home to Toyota and a famous golden-dolphin castle" },
+    { "id": "kanazawa", "name": "Kanazawa", "lat": 36.561, "lon": 136.656, "svgX": 362, "svgY": 430, "hint": "Sea of Japan city with the celebrated Kenroku-en garden" },
+    { "id": "nagasaki", "name": "Nagasaki", "lat": 32.75, "lon": 129.878, "svgX": 112, "svgY": 609, "hint": "Port that was Japan's only window to the West for two centuries" }
+  ]
+}
