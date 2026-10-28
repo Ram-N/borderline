@@ -4,7 +4,7 @@ import { LANDMARK_MAP_CONFIG } from '../../data/landmarkMapConfig';
 import { CITY_GROUPS, REGION_MAPS } from '../../generated/geoRegistry';
 
 const GAMES = [
-  { id: 'match-the-map',   title: 'Match the Map',   desc: 'Match numbered pins to their landmark names.' },
+  { id: 'match-the-map',   title: 'MatchPoint',      desc: 'Match numbered pins to their landmark names.' },
   { id: 'pinpoint',         title: 'PinPoint',         desc: 'Drop a pin on the map to locate a landmark.' },
   { id: 'where-is-region', title: 'InBounds', desc: 'Land your pin inside a named country, state or city.' },
 ];
