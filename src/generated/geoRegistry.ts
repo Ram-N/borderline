@@ -152,6 +152,13 @@ export const LANDMARK_MAP_CONFIG: Record<string, LandmarkMapConfig> = {
     "blankSvg": "/images/maps/usa_blank.svg",
     "defaultDifficulty": 1
   },
+  "brazil": {
+    "label": "Brazil",
+    "dataUrl": "/data/landmarks/brazil.json",
+    "labeledSvg": "/images/maps/brazil_labeled.svg",
+    "blankSvg": "/images/maps/brazil_blank.svg",
+    "defaultDifficulty": 1
+  },
   "africa_cities": {
     "label": "African Cities",
     "dataUrl": "/data/landmarks/africa_cities.json",
@@ -222,6 +229,12 @@ export const REGION_MAP_CONFIG: Record<string, RegionMapConfig> = {
     "dataUrl": "/data/regions/usa.json",
     "boundariesSvg": "/images/maps/usa_boundaries.svg",
     "outlineSvg": "/images/maps/usa_outline.svg"
+  },
+  "brazil": {
+    "label": "Brazil",
+    "dataUrl": "/data/regions/brazil.json",
+    "boundariesSvg": "/images/maps/brazil_boundaries.svg",
+    "outlineSvg": "/images/maps/brazil_outline.svg"
   },
   "europe": {
     "label": "Europe",
@@ -307,7 +320,8 @@ export const CITY_GROUPS: { label: string; keys: string[] }[] = [
       "china",
       "spain",
       "japan",
-      "usa"
+      "usa",
+      "brazil"
     ]
   },
   {
@@ -333,6 +347,10 @@ export const REGION_MAPS: { key: string; label: string }[] = [
   {
     "key": "usa",
     "label": "United States"
+  },
+  {
+    "key": "brazil",
+    "label": "Brazil"
   },
   {
     "key": "europe",

@@ -1,0 +1,25 @@
+{
+  "id": "brazil",
+  "name": "Brazil",
+  "bounds": {
+    "minLat": -33.94,
+    "maxLat": 5.47,
+    "minLon": -74.22,
+    "maxLon": -34.59
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "christ-the-redeemer", "name": "Christ the Redeemer", "lat": -22.952, "lon": -43.211, "svgX": 593, "svgY": 505, "hint": "Giant open-armed statue on Corcovado mountain above Guanabara Bay" },
+    { "id": "iguazu-falls", "name": "Iguaçu Falls", "lat": -25.695, "lon": -54.437, "svgX": 399, "svgY": 554, "hint": "Hundreds of waterfalls thundering on the border with Argentina" },
+    { "id": "teatro-amazonas", "name": "Teatro Amazonas", "lat": -3.13, "lon": -60.023, "svgX": 303, "svgY": 153, "hint": "Domed rubber-boom opera house deep in the rainforest" },
+    { "id": "cathedral-of-brasilia", "name": "Cathedral of Brasília", "lat": -15.798, "lon": -47.876, "svgX": 512, "svgY": 378, "hint": "Crown-shaped modernist church by Oscar Niemeyer in the planned capital" },
+    { "id": "pelourinho", "name": "Pelourinho", "lat": -12.972, "lon": -38.508, "svgX": 674, "svgY": 328, "hint": "Pastel colonial old town and heart of Afro-Brazilian culture" },
+    { "id": "lencois-maranhenses", "name": "Lençóis Maranhenses", "lat": -2.53, "lon": -43.12, "svgX": 594, "svgY": 142, "hint": "White sand dunes dotted with turquoise rainwater lagoons" },
+    { "id": "pantanal", "name": "Pantanal", "lat": -16.3, "lon": -56.5, "svgX": 364, "svgY": 387, "hint": "World's largest tropical wetland, famous for jaguars and caimans" },
+    { "id": "avenida-paulista", "name": "Avenida Paulista", "lat": -23.561, "lon": -46.656, "svgX": 533, "svgY": 516, "hint": "Skyscraper-lined avenue at the heart of the biggest city" },
+    { "id": "chapada-diamantina", "name": "Chapada Diamantina", "lat": -12.58, "lon": -41.39, "svgX": 624, "svgY": 321, "hint": "Table-top mountains and caves in an old diamond-mining region" },
+    { "id": "recife-old-town", "name": "Recife Old Town", "lat": -8.063, "lon": -34.871, "svgX": 736, "svgY": 240, "hint": "Island old town in the 'Venice of Brazil', founded by the Dutch" },
+    { "id": "ver-o-peso", "name": "Ver-o-Peso Market", "lat": -1.453, "lon": -48.503, "svgX": 502, "svgY": 123, "hint": "Riverside market near the Amazon's mouth, selling açaí and river fish" },
+    { "id": "hercilio-luz-bridge", "name": "Hercílio Luz Bridge", "lat": -27.594, "lon": -48.565, "svgX": 501, "svgY": 587, "hint": "Suspension bridge linking the mainland to an island state capital" }
+  ]
+}

@@ -550,6 +550,55 @@
       "defaultDifficulty": 1
     },
     {
+      "id": "brazil",
+      "label": "Brazil",
+      "geojson": "scripts/geo-data/cities/brazil_states.geojson",
+      "featureNameProp": "name",
+      "fills": {
+        "Acre": "#e8dfa8",
+        "Alagoas": "#b8d4a8",
+        "Amapá": "#e8c8a8",
+        "Amazonas": "#d4c8e8",
+        "Bahia": "#e8c8a8",
+        "Ceará": "#e8c8a8",
+        "Distrito Federal": "#b8d4a8",
+        "Espírito Santo": "#c8d4e8",
+        "Goiás": "#d4c9a8",
+        "Maranhão": "#d4c8e8",
+        "Mato Grosso": "#e8dfa8",
+        "Mato Grosso do Sul": "#e8d4c8",
+        "Minas Gerais": "#e0b8b8",
+        "Paraná": "#e8c8a8",
+        "Paraíba": "#e8d4c8",
+        "Pará": "#b8d4a8",
+        "Pernambuco": "#e0b8b8",
+        "Piauí": "#d4c9a8",
+        "Rio Grande do Norte": "#c8d4e8",
+        "Rio Grande do Sul": "#d4c9a8",
+        "Rio de Janeiro": "#d4c9a8",
+        "Rondônia": "#e0b8b8",
+        "Roraima": "#e8d4c8",
+        "Santa Catarina": "#d4c8e8",
+        "Sergipe": "#e0b8b8",
+        "São Paulo": "#e8dfa8",
+        "Tocantins": "#c8d4e8"
+      },
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "hideLabels": ["Distrito Federal", "Rio Grande do Norte"],
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "keepIslands": true,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
+    },
+    {
       "id": "africa_cities",
       "label": "African Cities",
       "geojson": null,
@@ -1044,6 +1093,170 @@
           "lat": 42.36,
           "lon": -71.059,
           "hint": "Historic New England city of the famous Tea Party"
+        }
+      ]
+    },
+    {
+      "id": "brazil",
+      "label": "Brazil",
+      "geojson": "scripts/geo-data/cities/brazil_states.geojson",
+      "featureNameProp": "name",
+      "featureFilter": null,
+      "nameOverrides": null,
+      "bounds": {
+        "minLat": -33.94,
+        "maxLat": 5.47,
+        "minLon": -74.22,
+        "maxLon": -34.59
+      },
+      "viewBox": "0 0 1000 900",
+      "tolerance": 2,
+      "geoTolerance": 0.05,
+      "fills": null,
+      "palette": null,
+      "gameModes": [
+        "where-is-region"
+      ],
+      "cities": [
+        {
+          "id": "sao-paulo",
+          "name": "São Paulo",
+          "lat": -23.551,
+          "lon": -46.633,
+          "hint": "Brazil's biggest city and business engine"
+        },
+        {
+          "id": "rio-de-janeiro",
+          "name": "Rio de Janeiro",
+          "lat": -22.907,
+          "lon": -43.173,
+          "hint": "Carnival city of Copacabana beach and Sugarloaf Mountain"
+        },
+        {
+          "id": "brasilia",
+          "name": "Brasília",
+          "lat": -15.794,
+          "lon": -47.882,
+          "hint": "Planned modernist capital built in the 1950s"
+        },
+        {
+          "id": "salvador",
+          "name": "Salvador",
+          "lat": -12.972,
+          "lon": -38.501,
+          "hint": "First colonial capital, heart of Afro-Brazilian culture"
+        },
+        {
+          "id": "fortaleza",
+          "name": "Fortaleza",
+          "lat": -3.732,
+          "lon": -38.527,
+          "hint": "Sunny northeastern beach city on the Atlantic"
+        },
+        {
+          "id": "belo-horizonte",
+          "name": "Belo Horizonte",
+          "lat": -19.917,
+          "lon": -43.935,
+          "hint": "Hill-ringed capital of a big mining state"
+        },
+        {
+          "id": "manaus",
+          "name": "Manaus",
+          "lat": -3.119,
+          "lon": -60.022,
+          "hint": "Rainforest metropolis where two rivers meet"
+        },
+        {
+          "id": "curitiba",
+          "name": "Curitiba",
+          "lat": -25.429,
+          "lon": -49.271,
+          "hint": "Southern city famous for its bus rapid transit"
+        },
+        {
+          "id": "recife",
+          "name": "Recife",
+          "lat": -8.048,
+          "lon": -34.877,
+          "hint": "Bridge-filled port known as the Venice of Brazil"
+        },
+        {
+          "id": "porto-alegre",
+          "name": "Porto Alegre",
+          "lat": -30.035,
+          "lon": -51.218,
+          "hint": "Gaúcho capital in the far south"
+        },
+        {
+          "id": "belem",
+          "name": "Belém",
+          "lat": -1.456,
+          "lon": -48.502,
+          "hint": "Gateway city near the mouth of the Amazon"
+        },
+        {
+          "id": "goiania",
+          "name": "Goiânia",
+          "lat": -16.686,
+          "lon": -49.265,
+          "hint": "Planned Art Deco city in the central highlands"
+        },
+        {
+          "id": "florianopolis",
+          "name": "Florianópolis",
+          "lat": -27.595,
+          "lon": -48.548,
+          "hint": "Island capital with dozens of beaches"
+        },
+        {
+          "id": "natal",
+          "name": "Natal",
+          "lat": -5.795,
+          "lon": -35.211,
+          "hint": "Dune-backed city on the northeastern corner of the continent"
+        },
+        {
+          "id": "cuiaba",
+          "name": "Cuiabá",
+          "lat": -15.601,
+          "lon": -56.097,
+          "hint": "Hot inland gateway to the Pantanal"
+        },
+        {
+          "id": "campo-grande",
+          "name": "Campo Grande",
+          "lat": -20.469,
+          "lon": -54.62,
+          "hint": "Ranching capital on the southern edge of the Pantanal"
+        },
+        {
+          "id": "sao-luis",
+          "name": "São Luís",
+          "lat": -2.53,
+          "lon": -44.303,
+          "hint": "Island city of blue-tiled colonial facades"
+        },
+        {
+          "id": "porto-velho",
+          "name": "Porto Velho",
+          "lat": -8.761,
+          "lon": -63.904,
+          "hint": "Western Amazon city on the Madeira River"
+        },
+        {
+          "id": "vitoria",
+          "name": "Vitória",
+          "lat": -20.315,
+          "lon": -40.312,
+          "hint": "Island capital of a small coastal state"
+        },
+        {
+          "id": "foz-do-iguacu",
+          "name": "Foz do Iguaçu",
+          "lat": -25.547,
+          "lon": -54.588,
+          "hint": "Border town beside famous thundering waterfalls"
         }
       ]
     },
