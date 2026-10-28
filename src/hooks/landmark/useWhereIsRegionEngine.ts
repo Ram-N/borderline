@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 import type { RegionDataset, RegionTarget, CityTarget, RegionMode, WhereIsRegionRound } from '../../types/landmark/region';
 import type { Difficulty, GamePhase, ConfidenceLevel } from '../../types/landmark/game';
 import { svgToGeo, parseViewBox } from '../../utils/landmark/coordTransform';
-import { haversineKm, mapDiagonalKm, claimRadiusKm, scoreGuess, CONFIDENCE_TIERS } from '../../utils/landmark/distanceScore';
+import { haversineKm, distanceToPolygonsKm, mapDiagonalKm, claimRadiusKm, scoreGuess } from '../../utils/landmark/distanceScore';
 import { pointInPolygon } from '../../utils/landmark/pointInPolygon';
 
 type Config = {
@@ -38,6 +38,9 @@ type Engine = {
   confirm: () => void;
   next: () => void;
 };
+
+/** Points for a pin inside the target region, regardless of confidence. */
+const INSIDE_REGION_POINTS = 100;
 
 function pickTargets(dataset: RegionDataset, mode: RegionMode, n: number): WhereIsRegionRound[] {
   const pool: Array<RegionTarget | CityTarget> =
@@ -106,17 +109,14 @@ export default function useWhereIsRegionEngine({
       let finalScore: number;
 
       if (round.mode === 'regions') {
-        const regionTarget = target as RegionTarget;
-        insideRegion = regionTarget.polygons.some(poly => pointInPolygon(pinLat, pinLon, poly));
-      }
-      if (insideRegion) {
-        // A pin inside the target region is a dead-centre hit for any confidence
-        distanceKm = 0;
-        finalScore = CONFIDENCE_TIERS[confidence].maxPoints;
+        // Regions are areas: inside is a full hit, otherwise measure to the nearest border
+        const { polygons } = target as RegionTarget;
+        insideRegion = polygons.some(poly => pointInPolygon(pinLat, pinLon, poly));
+        distanceKm = insideRegion ? 0 : distanceToPolygonsKm(pinLat, pinLon, polygons);
       } else {
         distanceKm = haversineKm(pinLat, pinLon, target.lat, target.lon);
-        finalScore = scoreGuess(distanceKm, radiusKm, confidence);
       }
+      finalScore = insideRegion ? INSIDE_REGION_POINTS : scoreGuess(distanceKm, radiusKm, confidence);
 
       const updatedRound: WhereIsRegionRound = {
         ...round,

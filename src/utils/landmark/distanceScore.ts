@@ -20,6 +20,30 @@ export function haversineKm(
   return 2 * EARTH_RADIUS_KM * Math.asin(Math.sqrt(a));
 }
 
+/**
+ * Distance in km from a point to the nearest edge of any polygon ([lat, lon] rings).
+ * Uses a flat projection centred on the point — accurate enough at game scales.
+ */
+export function distanceToPolygonsKm(lat: number, lon: number, polygons: [number, number][][]): number {
+  const kmPerDegLat = (Math.PI / 180) * EARTH_RADIUS_KM;
+  const kmPerDegLon = kmPerDegLat * Math.cos((lat * Math.PI) / 180);
+  let best = Infinity;
+  for (const poly of polygons) {
+    for (let i = 0; i < poly.length; i++) {
+      const [aLat, aLon] = poly[i];
+      const [bLat, bLon] = poly[(i + 1) % poly.length];
+      // Segment endpoints in km, relative to the point
+      const ax = (aLon - lon) * kmPerDegLon, ay = (aLat - lat) * kmPerDegLat;
+      const bx = (bLon - lon) * kmPerDegLon, by = (bLat - lat) * kmPerDegLat;
+      const dx = bx - ax, dy = by - ay;
+      const lenSq = dx * dx + dy * dy;
+      const t = lenSq ? Math.max(0, Math.min(1, -(ax * dx + ay * dy) / lenSq)) : 0;
+      best = Math.min(best, Math.hypot(ax + t * dx, ay + t * dy));
+    }
+  }
+  return best;
+}
+
 /** Corner-to-corner distance of a map's bounds, in km. */
 export function mapDiagonalKm(bounds: GeoBounds): number {
   return haversineKm(bounds.minLat, bounds.minLon, bounds.maxLat, bounds.maxLon);

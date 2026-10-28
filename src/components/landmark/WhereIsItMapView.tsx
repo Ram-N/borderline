@@ -7,6 +7,8 @@ type Props = {
   playerPin: { svgX: number; svgY: number } | null;
   correctPin?: { svgX: number; svgY: number }; // shown on reveal phase
   correctLabel?: string;     // label for the correct pin (default: "Correct")
+  /** Reveal phase only: SVG path of the answer area, drawn instead of the correct pin. */
+  correctArea?: { d: string; hit: boolean };
   phase: 'question' | 'reveal';
   /** Confidence circle around the player pin, in SVG units. */
   claimRadius?: number | null;
@@ -26,6 +28,7 @@ export default function WhereIsItMapView({
   playerPin,
   correctPin,
   correctLabel = 'Correct',
+  correctArea,
   phase,
   claimRadius,
   claimHit,
@@ -37,7 +40,7 @@ export default function WhereIsItMapView({
 
   // Zoomed inset: shown in reveal phase when the two pins are close together
   const inset = useMemo(() => {
-    if (phase !== 'reveal' || !playerPin || !correctPin) return null;
+    if (phase !== 'reveal' || !playerPin || !correctPin || correctArea) return null;
     const dx = playerPin.svgX - correctPin.svgX;
     const dy = playerPin.svgY - correctPin.svgY;
     const dist = Math.sqrt(dx * dx + dy * dy);
@@ -62,7 +65,7 @@ export default function WhereIsItMapView({
       viewBox: `${cx - contentHalf} ${cy - contentHalf} ${contentHalf * 2} ${contentHalf * 2}`,
       playerPin, correctPin,
     };
-  }, [phase, playerPin, correctPin, vbWidth, vbHeight]);
+  }, [phase, playerPin, correctPin, correctArea, vbWidth, vbHeight]);
 
   const handleClick = useCallback(
     (e: React.MouseEvent<SVGSVGElement>) => {
@@ -93,6 +96,14 @@ export default function WhereIsItMapView({
         {/* Background map image */}
         <image href={svgSrc} x={0} y={0} width={vbWidth} height={vbHeight} />
 
+        {/* Answer area outline (reveal phase) */}
+        {phase === 'reveal' && correctArea && (
+          <path
+            d={correctArea.d}
+            className={`correct-area${correctArea.hit ? ' correct-area--hit' : ' correct-area--miss'}`}
+          />
+        )}
+
         {/* Confidence circle around the player pin */}
         {playerPin && claimRadius && (
           <circle
@@ -104,7 +115,7 @@ export default function WhereIsItMapView({
         )}
 
         {/* Dashed line from player pin to correct location (reveal phase) */}
-        {phase === 'reveal' && playerPin && correctPin && (
+        {phase === 'reveal' && playerPin && correctPin && !correctArea && (
           <line
             x1={playerPin.svgX}
             y1={playerPin.svgY}
@@ -127,7 +138,7 @@ export default function WhereIsItMapView({
         )}
 
         {/* Correct pin (green) — shown only on reveal */}
-        {phase === 'reveal' && correctPin && (
+        {phase === 'reveal' && correctPin && !correctArea && (
           <PinMarker
             svgX={correctPin.svgX}
             svgY={correctPin.svgY}

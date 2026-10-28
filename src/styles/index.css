@@ -502,3 +502,6 @@ main { max-width: 900px; margin: 0 auto; padding: 16px; }
 .claim-circle { fill: rgba(33, 150, 243, 0.12); stroke: #2196F3; stroke-width: 2; stroke-dasharray: 6 4; pointer-events: none; }
 .claim-circle--hit { fill: rgba(76, 175, 80, 0.15); stroke: #4CAF50; }
 .claim-circle--miss { fill: rgba(244, 67, 54, 0.12); stroke: #F44336; }
+.correct-area { stroke-width: 2.5; stroke-linejoin: round; pointer-events: none; }
+.correct-area--hit { fill: rgba(76, 175, 80, 0.45); stroke: #2E7D32; }
+.correct-area--miss { fill: rgba(255, 152, 0, 0.45); stroke: #E65100; }

@@ -7,7 +7,7 @@ import useWhereIsRegionEngine from '../../hooks/landmark/useWhereIsRegionEngine'
 import WhereIsItMapView from '../../components/landmark/WhereIsItMapView';
 import ConfidencePicker from '../../components/landmark/ConfidencePicker';
 import DistanceFeedback from '../../components/landmark/DistanceFeedback';
-import { kmToSvgPx, parseViewBox } from '../../utils/landmark/coordTransform';
+import { geoToSvg, kmToSvgPx, parseViewBox } from '../../utils/landmark/coordTransform';
 
 const DIFFICULTY_LABELS: Record<Difficulty, string> = {
   1: 'Tourist',
@@ -64,6 +64,21 @@ function GameContent({
     : null;
   const claimHit = revealedRound?.finalScore !== undefined && revealedRound.finalScore > 0;
 
+  // Regions are areas, so the reveal outlines the whole region rather than a centroid pin
+  const correctArea = revealedRound && 'polygons' in target
+    ? {
+        d: target.polygons
+          .map((poly) => 'M' + poly
+            .map(([lat, lon]) => {
+              const p = geoToSvg(lat, lon, dataset.bounds, parseViewBox(dataset.viewBox));
+              return `${p.svgX.toFixed(1)},${p.svgY.toFixed(1)}`;
+            })
+            .join('L') + 'Z')
+          .join(''),
+        hit: !!revealedRound.insideRegion,
+      }
+    : undefined;
+
   return (
     <div className="pinpoint">
       {/* Header row */}
@@ -96,6 +111,7 @@ function GameContent({
             ? { svgX: target.svgX, svgY: target.svgY }
             : undefined
         }
+        correctArea={correctArea}
         phase={engine.phase}
         claimRadius={claimRadiusPx}
         claimHit={claimHit}
