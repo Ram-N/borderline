@@ -529,6 +529,27 @@
       "defaultDifficulty": 1
     },
     {
+      "id": "usa",
+      "label": "United States",
+      "geojson": "scripts/geo-data/cities/usa_states.geojson",
+      "featureNameProp": "name",
+      "fills": {},
+      "palette": null,
+      "tolerance": 1,
+      "strokeWidth": null,
+      "maxLabels": null,
+      "hideLabels": ["Vermont", "Connecticut", "Rhode Island", "Delaware", "Maryland"],
+      "suppressFeatureLabels": false,
+      "customLabels": null,
+      "keepIslands": true,
+      "group": "Countries",
+      "gameModes": [
+        "pinpoint",
+        "match-the-map"
+      ],
+      "defaultDifficulty": 1
+    },
+    {
       "id": "africa_cities",
       "label": "African Cities",
       "geojson": null,
@@ -859,6 +880,170 @@
           "lat": 17.686,
           "lon": 83.218,
           "hint": "Jewel of the East Coast, major port city"
+        }
+      ]
+    },
+    {
+      "id": "usa",
+      "label": "United States",
+      "geojson": "scripts/geo-data/cities/usa_states.geojson",
+      "featureNameProp": "name",
+      "featureFilter": null,
+      "nameOverrides": null,
+      "bounds": {
+        "minLat": 24.34,
+        "maxLat": 49.57,
+        "minLon": -124.93,
+        "maxLon": -66.78
+      },
+      "viewBox": "0 0 1000 600",
+      "tolerance": 2,
+      "geoTolerance": 0.05,
+      "fills": null,
+      "palette": null,
+      "gameModes": [
+        "where-is-region"
+      ],
+      "cities": [
+        {
+          "id": "seattle",
+          "name": "Seattle",
+          "lat": 47.606,
+          "lon": -122.332,
+          "hint": "Rainy Pacific Northwest port, home of the Space Needle"
+        },
+        {
+          "id": "san-francisco",
+          "name": "San Francisco",
+          "lat": 37.775,
+          "lon": -122.419,
+          "hint": "Hilly bay city of cable cars and the Golden Gate"
+        },
+        {
+          "id": "los-angeles",
+          "name": "Los Angeles",
+          "lat": 34.052,
+          "lon": -118.244,
+          "hint": "Sprawling Southern California home of Hollywood"
+        },
+        {
+          "id": "las-vegas",
+          "name": "Las Vegas",
+          "lat": 36.17,
+          "lon": -115.14,
+          "hint": "Desert gambling capital famous for its neon Strip"
+        },
+        {
+          "id": "phoenix",
+          "name": "Phoenix",
+          "lat": 33.448,
+          "lon": -112.074,
+          "hint": "Sun-baked desert capital of the Grand Canyon State"
+        },
+        {
+          "id": "salt-lake-city",
+          "name": "Salt Lake City",
+          "lat": 40.761,
+          "lon": -111.891,
+          "hint": "Mountain capital beside a great salty inland lake"
+        },
+        {
+          "id": "denver",
+          "name": "Denver",
+          "lat": 39.739,
+          "lon": -104.99,
+          "hint": "The Mile High City at the foot of the Rockies"
+        },
+        {
+          "id": "dallas",
+          "name": "Dallas",
+          "lat": 32.777,
+          "lon": -96.797,
+          "hint": "North Texas city of oil, cowboys and the Cowboys"
+        },
+        {
+          "id": "houston",
+          "name": "Houston",
+          "lat": 29.76,
+          "lon": -95.37,
+          "hint": "Gulf Coast giant and home of NASA Mission Control"
+        },
+        {
+          "id": "new-orleans",
+          "name": "New Orleans",
+          "lat": 29.951,
+          "lon": -90.072,
+          "hint": "Birthplace of jazz near the mouth of the Mississippi"
+        },
+        {
+          "id": "chicago",
+          "name": "Chicago",
+          "lat": 41.878,
+          "lon": -87.63,
+          "hint": "The Windy City on the shore of Lake Michigan"
+        },
+        {
+          "id": "minneapolis",
+          "name": "Minneapolis",
+          "lat": 44.978,
+          "lon": -93.265,
+          "hint": "Twin City in the Land of 10,000 Lakes"
+        },
+        {
+          "id": "detroit",
+          "name": "Detroit",
+          "lat": 42.331,
+          "lon": -83.046,
+          "hint": "Motor City, birthplace of the American car industry"
+        },
+        {
+          "id": "nashville",
+          "name": "Nashville",
+          "lat": 36.163,
+          "lon": -86.781,
+          "hint": "Music City, the heart of country music"
+        },
+        {
+          "id": "atlanta",
+          "name": "Atlanta",
+          "lat": 33.749,
+          "lon": -84.388,
+          "hint": "Southern hub, home of Coca-Cola and a giant airport"
+        },
+        {
+          "id": "miami",
+          "name": "Miami",
+          "lat": 25.762,
+          "lon": -80.192,
+          "hint": "Tropical city of Art Deco beaches near the tip of a peninsula"
+        },
+        {
+          "id": "washington-dc",
+          "name": "Washington, D.C.",
+          "lat": 38.907,
+          "lon": -77.037,
+          "hint": "The nation's capital on the Potomac River"
+        },
+        {
+          "id": "philadelphia",
+          "name": "Philadelphia",
+          "lat": 39.953,
+          "lon": -75.165,
+          "hint": "Where the Declaration of Independence was signed"
+        },
+        {
+          "id": "new-york-city",
+          "name": "New York City",
+          "lat": 40.713,
+          "lon": -74.006,
+          "hint": "The Big Apple, the country's largest city"
+        },
+        {
+          "id": "boston",
+          "name": "Boston",
+          "lat": 42.36,
+          "lon": -71.059,
+          "hint": "Historic New England city of the famous Tea Party"
         }
       ]
     },

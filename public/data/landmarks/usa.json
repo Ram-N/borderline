@@ -1,0 +1,25 @@
+{
+  "id": "usa",
+  "name": "United States",
+  "bounds": {
+    "minLat": 24.34,
+    "maxLat": 49.57,
+    "minLon": -124.93,
+    "maxLon": -66.78
+  },
+  "viewBox": "0 0 800 700",
+  "landmarks": [
+    { "id": "statue-of-liberty", "name": "Statue of Liberty", "lat": 40.689, "lon": -74.045, "svgX": 700, "svgY": 286, "hint": "Copper lady holding a torch, a gift from France in New York Harbor" },
+    { "id": "us-capitol", "name": "U.S. Capitol", "lat": 38.89, "lon": -77.009, "svgX": 659, "svgY": 317, "hint": "Domed building where Congress meets, at the end of the National Mall" },
+    { "id": "golden-gate-bridge", "name": "Golden Gate Bridge", "lat": 37.82, "lon": -122.478, "svgX": 34, "svgY": 335, "hint": "Orange-red suspension bridge spanning a foggy Pacific strait" },
+    { "id": "grand-canyon", "name": "Grand Canyon", "lat": 36.107, "lon": -112.113, "svgX": 176, "svgY": 365, "hint": "Mile-deep gorge carved by the Colorado River over millions of years" },
+    { "id": "old-faithful", "name": "Old Faithful", "lat": 44.428, "lon": -110.588, "svgX": 197, "svgY": 221, "hint": "Geyser in the first national park that erupts like clockwork" },
+    { "id": "mount-rushmore", "name": "Mount Rushmore", "lat": 43.879, "lon": -103.459, "svgX": 295, "svgY": 231, "hint": "Four presidents' faces carved into a granite mountainside in the Black Hills" },
+    { "id": "cloud-gate", "name": "Cloud Gate", "lat": 41.882, "lon": -87.624, "svgX": 513, "svgY": 265, "hint": "Mirrored steel sculpture nicknamed 'The Bean' in the Windy City" },
+    { "id": "french-quarter", "name": "French Quarter", "lat": 29.979, "lon": -90.071, "svgX": 480, "svgY": 470, "hint": "Jazz-filled historic district with iron balconies and Mardi Gras parades" },
+    { "id": "kennedy-space-center", "name": "Kennedy Space Center", "lat": 28.573, "lon": -80.649, "svgX": 609, "svgY": 494, "hint": "Launch site of the Apollo Moon missions on Florida's Atlantic coast" },
+    { "id": "the-alamo", "name": "The Alamo", "lat": 29.426, "lon": -98.486, "svgX": 364, "svgY": 480, "hint": "Old Spanish mission famous for an 1836 battle in Texas history" },
+    { "id": "space-needle", "name": "Space Needle", "lat": 47.62, "lon": -122.349, "svgX": 36, "svgY": 166, "hint": "Saucer-topped observation tower built for a 1962 World's Fair" },
+    { "id": "hollywood-sign", "name": "Hollywood Sign", "lat": 34.134, "lon": -118.322, "svgX": 91, "svgY": 399, "hint": "Giant white letters on a hillside above the movie capital" }
+  ]
+}
