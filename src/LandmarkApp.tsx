@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, Link, useLocation } from 'react-router-dom';
 import LandMarkHome from './routes/landmark/Home';
 import PinPoint from './routes/landmark/PinPoint';
 import WhereIsRegion from './routes/landmark/WhereIsRegion';
@@ -13,10 +13,22 @@ import ZoomIn from './routes/landmark/ZoomIn';
 import DailyLandmarkSelect from './routes/landmark/DailyLandmarkSelect';
 
 export default function LandmarkApp() {
+  const { pathname } = useLocation();
+  // Game and daily pages hold in-progress state that is lost on navigation
+  const inGame = pathname.startsWith('/landmark/games/') || pathname === '/landmark/daily';
+
   return (
     <div className='app-wrap'>
       <header className='app-header'>
-        <span className='brand'>LandMark</span>
+        <Link
+          to='/landmark'
+          className='brand'
+          onClick={(e) => {
+            if (inGame && !window.confirm('Leave this game? Your progress will be lost.')) e.preventDefault();
+          }}
+        >
+          LandMark
+        </Link>
       </header>
       <main>
         <Routes>
